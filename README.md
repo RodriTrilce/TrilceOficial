@@ -1,4 +1,4 @@
-**Creation repository Wev Trilce**
+**Creation repository Web Trilce**
 
 Creation of the repository for the website of the Trilce group. Frontend and backend.
 

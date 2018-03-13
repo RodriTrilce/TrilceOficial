@@ -147,7 +147,9 @@
   background-image: url("/static/images/home/bg.png");
   width: 100%;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.4;
+  position: absolute;
+  top: 0.1px;
 }
 
 /*loader open*/
@@ -309,4 +311,165 @@
 }
 
 /* loader close */
+
+.all {
+  position: relative;
+}
+
+.all .content {
+  position: absolute;
+  width: 100%;
+}
+
+.all .content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2.2%;
+  margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+  .all .content header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.all .content header .logo {
+  background: url(/images/logo.png?cca11e5f6187ee6c16fb8520d703d778);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 70px;
+}
+
+@media (max-width: 700px) {
+  .all .content header .logo {
+    margin: 0 auto;
+    width: 160px;
+    height: 50px;
+  }
+}
+
+.all .content header nav {
+  padding-right: 35px;
+}
+
+.all .content header nav ul a,
+.all .content header nav ul a:link {
+  color: white;
+}
+
+.all .content header nav ul li {
+  display: inline;
+  font-size: 24px;
+  padding-left: 13px;
+}
+
+@media (max-width: 700px) {
+  .all .content header nav {
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+}
+
+.all .content section.slogan {
+  margin-top: 18%;
+}
+
+.all .content section.slogan h1 {
+  text-align: center;
+  font-family: "Geogrotesque-SmBd";
+  color: white;
+  font-size: 40px;
+  letter-spacing: 11px;
+}
+
+.all .content section.slogan h1 span {
+  border-collapse: collapse;
+  border-spacing: 35px;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 700px) {
+  .all .content section.slogan h1 span {
+    border: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .all .content section.slogan h1 {
+    letter-spacing: 4px;
+    font-size: 17px;
+  }
+}
+
+.all .content section.cta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.all .content section.cta .boton {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.all .content section.cta .boton:nth-child(1) {
+  background-color: white;
+}
+
+.all .content section.cta .boton:nth-child(1) a {
+  color: #53565a;
+}
+
+.all .content section.cta .boton:nth-child(2) {
+  background-color: #f4633a;
+}
+
+.all .content section.cta .boton:nth-child(2) a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .all .content section.cta .boton {
+    width: 100%;
+  }
+}
+
+.all .content section.cta .boton a {
+  margin: 20px;
+  font-family: 'Geogrotesque-Rg';
+  font-size: 55px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .all .content section.cta .boton a {
+    font-size: 2em;
+    padding: 5px;
+  }
+}
+
+#k {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 

@@ -6,7 +6,9 @@
   background-image: url('/static/images/home/bg.png');
   width: 100%;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.4;
+  position: absolute;
+  top: 0.1px
 }
 
 /*loader open*/
@@ -144,3 +146,144 @@
     transition: all 0.3s 1s ease-out;
 }
 /* loader close */
+
+.all{
+  position: relative;
+  
+  .content{
+    position: absolute;
+    width: 100%;
+    
+    header{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 2.2%;
+      margin-top: 50px;
+
+      @media (max-width: 700px){
+        flex-wrap: wrap;
+      }
+      
+      .logo{
+        background: url('../images/logo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 220px;
+        height: 70px;
+        @media (max-width: 700px){
+          margin: 0 auto;
+          width: 160px;
+          height: 50px;
+        }
+
+      } //end logo
+      
+      nav{
+        padding-right: 35px;
+        
+        ul{
+          a,a:link{
+            color: white;
+          }
+          
+          li{
+            display: inline;
+            font-size: 24px;
+            padding-left: 13px;
+          }
+        } //end ul
+        
+        @media (max-width: 700px){
+          margin: 0 auto;
+          padding-top: 25px;
+        }
+        
+      } //end nav
+      
+    }//end header
+    
+    section.slogan{
+      margin-top: 18%;
+      h1{
+        text-align: center;
+        font-family: "Geogrotesque-SmBd";
+        color: white;
+        font-size: 40px;
+        letter-spacing: 11px;
+        
+        span{
+          border-collapse: collapse;
+          border-spacing: 35px;
+          border-bottom: 2px solid white;
+          @media (max-width: 700px){
+            border: 0;
+          }
+        }
+        @media (max-width: 700px){
+          letter-spacing: 4px;
+          font-size: 17px;
+        }
+      }
+      
+    }//end slogan
+    
+    section.cta{
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      position: fixed;
+      bottom: 0;
+      
+      .boton{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        &:nth-child(1){
+          background-color: white;
+          a{color: $trilce-gris;}
+        }
+        &:nth-child(2){
+          background-color: $trilce-naranja;
+          a{color: white;}
+        }
+
+        @media (max-width: 768px){
+          width: 100%;
+        }
+                
+        a{
+          margin: 20px;
+          font-family: 'Geogrotesque-Rg';
+          font-size: 55px;
+          
+          text-transform: uppercase;
+          text-decoration: none;
+
+          @media (max-width: 700px){
+            font-size: 2em;
+            padding: 5px;
+          }
+          
+        }//end a
+
+
+      }
+      
+
+    }
+    
+    
+  }//end container
+  
+}//end all
+
+#k{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}

@@ -29,6 +29,6 @@ var home = new Vue({
      this.loader()
    },
    beforeMount() {
-     console.log("ss")
+     console.log("end mount")
    }
  })

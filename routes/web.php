@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('academia', function() {
+  return view('academia/index');
+});
+
+

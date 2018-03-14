@@ -1,0 +1,15 @@
+/**
+  Trilce SASS MAIN FILE
+*/
+
+@import 'base/all';
+@import 'vendor/all';
+@import 'helpers/all';
+@import 'components/all';
+@import 'layout/all';
+
+
+
+// Pages
+@import 'pages/home';
+@import 'pages/academia/main';

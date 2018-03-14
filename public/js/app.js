@@ -95,8 +95,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-__webpack_require__(17);
-module.exports = __webpack_require__(18);
+module.exports = __webpack_require__(17);
 
 
 /***/ }),
@@ -124,7 +123,7 @@ Vue.component('video-bg', _vueVideobg2.default);
 
 // or
 var home = new Vue({
-  el: '#k',
+  el: '#h-k',
   data: {
     message: 'CHCHC'
   },
@@ -12248,12 +12247,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 /* 17 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 18 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

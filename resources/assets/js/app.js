@@ -10,7 +10,7 @@
  
  // or
 var home = new Vue({
-   el: '#k',
+   el: '#h-k',
    data: {
      message: 'CHCHC'
    },

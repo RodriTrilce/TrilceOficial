@@ -312,16 +312,16 @@
 
 /* loader close */
 
-.all {
+.h-all {
   position: relative;
 }
 
-.all .content {
+.h-all .h-content {
   position: absolute;
   width: 100%;
 }
 
-.all .content header {
+.h-all .h-content header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,13 +335,13 @@
 }
 
 @media (max-width: 700px) {
-  .all .content header {
+  .h-all .h-content header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.all .content header .logo {
+.h-all .h-content header .h-logo {
   background: url(/images/logo.png?cca11e5f6187ee6c16fb8520d703d778);
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,67 +350,80 @@
 }
 
 @media (max-width: 700px) {
-  .all .content header .logo {
+  .h-all .h-content header .h-logo {
     margin: 0 auto;
     width: 160px;
     height: 50px;
   }
 }
 
-.all .content header nav {
+.h-all .h-content header nav {
   padding-right: 35px;
 }
 
-.all .content header nav ul a,
-.all .content header nav ul a:link {
+.h-all .h-content header nav ul a,
+.h-all .h-content header nav ul a:link {
   color: white;
 }
 
-.all .content header nav ul li {
+.h-all .h-content header nav ul li {
   display: inline;
   font-size: 24px;
   padding-left: 13px;
 }
 
 @media (max-width: 700px) {
-  .all .content header nav {
-    margin: 0 auto;
-    padding-top: 25px;
+  .h-all .h-content header nav ul {
+    text-align: center;
   }
 }
 
-.all .content section.slogan {
+@media (max-width: 700px) {
+  .h-all .h-content header nav {
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 100%;
+  }
+}
+
+.h-all .h-content section.h-slogan {
   margin-top: 18%;
 }
 
-.all .content section.slogan h1 {
+.h-all .h-content section.h-slogan h1 {
   text-align: center;
   font-family: "Geogrotesque-SmBd";
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   letter-spacing: 11px;
 }
 
-.all .content section.slogan h1 span {
+.h-all .h-content section.h-slogan h1 span {
   border-collapse: collapse;
   border-spacing: 35px;
   border-bottom: 2px solid white;
 }
 
 @media (max-width: 700px) {
-  .all .content section.slogan h1 span {
+  .h-all .h-content section.h-slogan h1 span {
     border: 0;
   }
 }
 
 @media (max-width: 700px) {
-  .all .content section.slogan h1 {
+  .h-all .h-content section.h-slogan h1 {
     letter-spacing: 4px;
-    font-size: 17px;
+    font-size: 22px;
   }
 }
 
-.all .content section.cta {
+@media (max-width: 700px) {
+  .h-all .h-content section.h-slogan {
+    margin-top: 28%;
+  }
+}
+
+.h-all .h-content section.h-cta {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,50 +437,56 @@
   bottom: 0;
 }
 
-.all .content section.cta .boton {
+.h-all .h-content section.h-cta .h-boton {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
-.all .content section.cta .boton:nth-child(1) {
+.h-all .h-content section.h-cta .h-boton:nth-child(1) {
   background-color: white;
 }
 
-.all .content section.cta .boton:nth-child(1) a {
+.h-all .h-content section.h-cta .h-boton:nth-child(1) a {
   color: #53565a;
 }
 
-.all .content section.cta .boton:nth-child(2) {
+.h-all .h-content section.h-cta .h-boton:nth-child(2) {
   background-color: #f4633a;
 }
 
-.all .content section.cta .boton:nth-child(2) a {
+.h-all .h-content section.h-cta .h-boton:nth-child(2) a {
   color: white;
 }
 
 @media (max-width: 768px) {
-  .all .content section.cta .boton {
+  .h-all .h-content section.h-cta .h-boton {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-.all .content section.cta .boton a {
+.h-all .h-content section.h-cta .h-boton a {
   margin: 20px;
   font-family: 'Geogrotesque-Rg';
-  font-size: 55px;
+  font-size: 40px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 @media (max-width: 700px) {
-  .all .content section.cta .boton a {
+  .h-all .h-content section.h-cta .h-boton a {
     font-size: 2em;
     padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-#k {
+#h-k {
   position: absolute;
   width: 100%;
   height: 100%;

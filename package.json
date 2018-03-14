@@ -23,6 +23,8 @@
     "vue": "^2.5.7"
   },
   "dependencies": {
+    "bourbon": "^5.0.0",
+    "vue-carousel": "^0.6.9",
     "vue-videobg": "^2.0.0"
   },
   "presets": [

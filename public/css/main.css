@@ -253,8 +253,10 @@ th {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  /*
   margin-right: -0.5rem;
   margin-left: -0.5rem;
+  */
 }
 
 .row.reverse {
@@ -280,8 +282,8 @@ th {
   -moz-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  /*  padding-right: 0.5rem;
+  padding-left: 0.5rem;*/
 }
 
 .col-xs-1 {
@@ -1121,7 +1123,7 @@ th {
 }
 
 .h-all .h-content header .h-logo {
-  background: url(/images/logo.png?cca11e5f6187ee6c16fb8520d703d778);
+  background: url("/static/images/home/logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 220px;
@@ -1146,9 +1148,23 @@ th {
 }
 
 .h-all .h-content header nav ul li {
-  display: inline;
+  display: inline-block;
   font-size: 24px;
   padding-left: 13px;
+}
+
+.h-all .h-content header nav ul li:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.h-all .h-content header nav ul li:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 700px) {
@@ -1269,5 +1285,98 @@ th {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.logo img {
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 10rem;
+}
+
+@media screen and (max-width: 359px) {
+  .logo img {
+    max-width: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    max-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header section {
+    display: none;
+  }
+}
+
+header nav label {
+  background: #f4633a;
+  cursor: pointer;
+  float: right;
+  padding: 15px;
+  display: none;
+  height: 25px;
+  width: 50px;
+  padding-bottom: 4rem;
+  padding-top: 4%;
+}
+
+header nav label i {
+  margin-top: 1rem;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li:nth-child(1) {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    position: relative;
+  }
+
+  header nav .toogle-content {
+    background-color: #f4633a;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav label {
+    display: block;
+  }
+
+  header nav #menu-toggle:checked ~ ul {
+    margin-top: 9vh;
+    display: block;
+    text-align: center;
+    background-color: #f4633a;
+    position: absolute;
+    height: 92vh;
+    width: 100vw;
+    left: -50vw;
+  }
+
+  header nav #menu-toggle:checked ~ ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+header nav #menu-toggle {
+  display: none;
+}
+
+footer {
+  background: #53565a;
+  height: 20vh;
+  width: 100%;
+  color: #d4d6d8;
 }
 

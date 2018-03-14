@@ -1,4 +1,4 @@
-@extends('academia.layouts.app')
+@extends('academia.layouts.template')
 
 @section('title', 'Page Title')
 

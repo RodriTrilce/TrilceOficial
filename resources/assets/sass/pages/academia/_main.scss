@@ -1,0 +1,107 @@
+
+.logo{
+  
+  img{
+    margin-top: 10px;
+    margin-left: 10px;
+
+    max-width: 10rem;
+    
+    @media screen and (max-width: 359px) {
+      max-width: 5rem;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 8rem;
+    }
+    
+  }
+}
+
+header{
+  
+  @media screen and (max-width: 768px) {
+    section{
+      display: none;
+    }
+  }
+  
+  nav{
+    
+    label {
+      background: $orange;
+      cursor: pointer;
+      float: right;
+      padding: 15px;
+      display: none;
+      height: 25px;
+      width: 50px;
+      padding-bottom: 4rem;
+      padding-top: 4%;
+      
+      i{
+        margin-top: 1rem;
+      }
+    }
+
+    ul{
+      
+      li{
+        display: inline-block;
+        
+        &:nth-child(1){
+          display: none;
+        }
+      }
+      
+    }
+    
+    @media screen and (max-width: 768px) {
+      // nav media screen init
+      position: relative;
+      
+      .toogle-content{
+        background-color: $orange;
+      }
+      
+      ul{
+        display: none;
+      }
+      
+      label{
+        display: block;
+      }
+
+      #menu-toggle:checked ~ ul {
+        margin-top: 9vh;
+        display: block;
+        text-align: center;
+        background-color: $orange;
+        position: absolute;
+        height: 92vh;
+        width: 100vw;
+        left: -50vw;
+        
+        li{
+          display: block;
+          width: 100%;
+        }
+        
+      }//end ul
+      
+    }//end media screen
+    
+    #menu-toggle{
+      display: none;
+    }
+
+  }//end nav
+}
+
+
+footer{
+  background: $gray;
+  height: 20vh;
+  width: 100%;
+  
+  color: lighten($gray, 50%);
+}

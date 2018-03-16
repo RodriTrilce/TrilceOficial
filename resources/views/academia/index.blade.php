@@ -4,10 +4,94 @@
 
 @section('sidebar')
     @parent
-
     <p>This is appended to the master sidebar.</p>
 @endsection
 
 @section('content')
-    <p>This is my body content.</p>
+  <div class="nuevos-i">
+    <div class="row center-xs">
+      <div class="col-xs-9 start-xs nuevos-i-title">
+        <div class="box">
+          <h2>Nuevos Inicios</h2>
+          <p>Elija la preparacion universitaria, exclusiva que está buscando</p>
+        </div>
+      </div>
+      <div class="row nuevos-i-box col-xs-12 col-sm-12 between-xs center-sm center-md center-lg">
+        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+          <a href="">
+            <div class="nuevos-i-top">
+              <img src="/static/images/academia/ico-logo-uni.jpg" alt="UNI">
+              <h4>Preparación</h4>
+              <h3>UNI</h3>
+            </div>
+            <div class="nuevos-i-bottom">
+              <hr>
+              <span>Más información <i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+          <a href="">
+            <div class="nuevos-i-top">
+              <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
+              <h4>Preparación</h4>
+              <h3>San Marcos</h3>
+            </div>
+            <div class="nuevos-i-bottom">
+              <hr>
+              <span>Más información <i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+          <a href="">
+            <div class="nuevos-i-top">
+              <img src="/static/images/academia/ico-logo-cato.jpg" alt="PUCP">
+              <h4>Preparación</h4>
+              <h3>PUCP</h3>
+            </div>
+            <div class="nuevos-i-bottom">
+              <hr>
+              <span>Más información <i class="fa fa-search"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#">
+            <i class="fa fa-map-marker"></i>
+            <h3>Simulacros</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#">
+            <i class="fa fa-bullhorn"></i>
+            <h3>Solucionarios</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+        </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a href="#">
+              <i class="fa fa-paperclip"></i>
+              <h3>Lista de cachimbos</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a href="#">
+              <i class="fa fa-lightbulb-o"></i>
+              <h3>Olimpiadas Matemática</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
 @endsection

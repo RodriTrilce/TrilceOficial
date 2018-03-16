@@ -3,11 +3,14 @@
  * (c) 2018 Fraco Salcedo
  * Released under the Trilce Group.
  */
- window.Vue = require('vue');
+ import Vue from 'vue'
  import VideoBg from 'vue-videobg'
+ import VueAgile from 'vue-agile'
 
  Vue.component('video-bg', VideoBg)
- 
+ Vue.use(VueAgile)
+ Vue.component('VueAgile', VueAgile)
+
  // or
 var home = new Vue({
    el: '#h-k',
@@ -15,7 +18,8 @@ var home = new Vue({
      message: 'CHCHC'
    },
    components: {
-     VideoBg
+     VideoBg,
+     VueAgile
    },
    methods: {
      loader: function(){

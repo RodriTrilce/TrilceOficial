@@ -1,0 +1,140 @@
+
+.nav-info span{
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+  background-color: $orange;
+  
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+nav{
+  .toogle-content{
+    display: none;
+  }
+  
+  > ul{
+    margin-top: 30px;
+    
+    .menu-click-sedes{
+      display: none;
+    }
+    
+    li{
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 1.4rem;
+      
+      &:first-child{
+        display: none;
+      }
+      
+      a{
+        display: block;
+        color: $gray;
+        font-family: 'Geogrotesque-Rg';
+        transition: ease-out 0.01s;
+      }
+
+    }
+    
+    a:hover{
+      font-size: 2rem;
+      color: $orange;
+    }
+    
+  }
+  
+  // Sedes ul
+  li.menu-sedes-ul{
+    display: none;
+  }
+  
+  .label-toggle{
+    color: $orange;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid $orange;
+    padding: 0.56em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .toogle-content{
+      display: block;
+    }
+    
+    ul{
+      display: none;
+      position: relative;
+      
+      .menu-click-sedes{
+        display: block;
+      }
+      
+      li{
+        display: block;
+        border-top: 0.4px solid transparentize($gray, 0.2);
+        margin-right: 0;
+        font-size: 0.9rem;
+        height: auto;
+        
+        &:first-child{
+          display: block;
+          background-color: $orange;
+          color: white;
+          padding: 1rem;
+          border-top: 0;
+        }
+        
+        &:nth-child(3){
+          display: none;
+        }
+        
+        
+        a{
+          padding: 1rem;
+        }
+        
+      }
+    }
+    
+    .menu-sedes{
+      display: block;
+      padding: 1rem;
+      cursor: pointer;
+    }
+      
+  }
+  
+  .toogle-content{
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  
+  
+  #menu-toggle:checked ~ ul {
+    position: absolute;
+    display: block;
+    top:0;
+    bottom: 0;
+    left: 0px;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    margin-top: 11.9vh;
+    background-color: white;
+    z-index: 9999999999;
+    text-align: center;
+    
+  }//end ul
+  
+  #menu-toggle, #menu-sedes-ul{
+    display: none;
+  }
+}
+
+

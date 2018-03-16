@@ -24,7 +24,9 @@
   },
   "dependencies": {
     "bourbon": "^5.0.0",
+    "vue": "^2.5.16",
     "vue-carousel": "^0.6.9",
+    "vue-template-compiler": "^2.5.16",
     "vue-videobg": "^2.0.0"
   },
   "presets": [

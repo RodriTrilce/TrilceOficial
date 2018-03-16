@@ -1,0 +1,17 @@
+.logo{
+    img{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        max-width: 10rem;
+                    
+        @media screen and (max-width: 480px) {
+          max-width: 5rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+          margin-top: 1.3rem;
+          margin-left: 0.5rem;
+          max-width: 6rem;
+        }
+    }
+}

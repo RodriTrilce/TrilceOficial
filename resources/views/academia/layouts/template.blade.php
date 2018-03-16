@@ -16,7 +16,7 @@
       <div class="col-xs-6 logo">
         <img src="{{{ asset('static/images/academia/logo.png') }}}" alt="">
       </div>
-      <div class="col-xs-6 end-xs">
+      <div class="col-xs-6 end-xs pre-nav">
           <div class="col-xs12 nav-info">
               <span>Intranet para alumnos | Call center: <b>6198100</b></span>
           </div>
@@ -119,26 +119,25 @@
 
 <script src="http://www.trilce.edu.pe/assets/vendor/jquery/jquery.min.js"></script>
 <script src="http://www.trilce.edu.pe/ztrilce/assets/vendor/sliderjs/jquery.slides.min.js"></script>
-
+  
 <script type="text/javascript">
-
-/*slider open*/
-$(function() {
-  $('#slides').slidesjs({
-      width: 1500,
-      height: 400,
-      navigation: false,
-      play: {
-          active: true,
-          auto: true,
-          interval: 3000,
-          swap: true,
-          pauseOnHover: true,
-          restartDelay: 2500
-      }
+  /*slider open*/
+  $(function() {
+    $('#slides').slidesjs({
+        width: 1500,
+        height: 400,
+        navigation: false,
+        play: {
+            active: true,
+            auto: true,
+            interval: 3000,
+            swap: true,
+            pauseOnHover: true,
+            restartDelay: 2500
+        }
+    });
   });
-});
-/*slider close*/
+  /*slider close*/
 </script>
 </body>
 </html>

@@ -1,7 +1,12 @@
+.nav-info{
+  margin-top: 10px;
+}
 
 .nav-info span{
   color: white;
-  padding: 15px;
+  padding-top: 30px;
+  
+  padding: 20px;
   font-size: 0.9rem;
   background-color: $orange;
   
@@ -10,13 +15,22 @@
   }
 }
 
+.pre-nav{
+  padding-right: 2%;
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+  }
+}
+
 nav{
+  margin-bottom: 6%;
+  
   .toogle-content{
     display: none;
   }
   
   > ul{
-    margin-top: 30px;
+    margin-top: 8%;
     
     .menu-click-sedes{
       display: none;
@@ -41,7 +55,6 @@ nav{
     }
     
     a:hover{
-      font-size: 2rem;
       color: $orange;
     }
     

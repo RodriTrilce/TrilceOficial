@@ -230,14 +230,15 @@ a {
 }
 
 .nav-info {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .nav-info span {
   color: white;
-  padding-top: 30px;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.8rem;
   background-color: #f4633a;
 }
 
@@ -275,8 +276,8 @@ nav > ul .menu-click-sedes {
 
 nav > ul li {
   display: inline-block;
-  margin-right: 20px;
-  font-size: 1.4rem;
+  margin-right: 1.8rem;
+  font-size: 1.15rem;
 }
 
 nav > ul li:first-child {
@@ -289,10 +290,33 @@ nav > ul li a {
   font-family: 'Geogrotesque-Rg';
   -webkit-transition: ease-out 0.01s;
   transition: ease-out 0.01s;
+  text-transform: uppercase;
 }
 
-nav > ul a:hover {
+nav > ul li a:hover {
+  position: relative;
   color: #f4633a;
+}
+
+nav > ul li a:hover::after {
+  /*
+            font-family: 'FontAwesome';
+            color: $gray;
+            width: 5px;
+            content: "\f28e";
+            font-size: 50px;
+*/
+  content: "sss";
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+nav > ul li:nth-last-child(1) {
+  margin-right: 0px;
 }
 
 nav li.menu-sedes-ul {
@@ -1246,9 +1270,10 @@ nav #menu-sedes-ul {
 }
 
 .logo img {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  max-width: 15rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  max-width: 16rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1275,6 +1300,10 @@ footer {
   padding-top: 3%;
 }
 
+footer a {
+  color: white;
+}
+
 footer .footer-menu {
   width: 100%;
 }
@@ -1283,6 +1312,7 @@ footer .footer-top {
   border-bottom: 1px solid #85898e;
   padding-bottom: 5px;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 footer .footer-top span {
@@ -1728,6 +1758,10 @@ footer .footer-right-icons li::after {
   margin-bottom: 5%;
 }
 
+.nuevos-i .nuevos-i-title {
+  margin-bottom: 1.8rem;
+}
+
 .nuevos-i .nuevos-i-title h2 {
   font-size: 3rem;
   font-family: 'CaeciliaLTPro-75Bold';
@@ -1767,6 +1801,15 @@ footer .footer-right-icons li::after {
   border-color: #f4633a;
 }
 
+.nuevos-i .nuevos-i-box > div:hover img {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+
+.nuevos-i .nuevos-i-box > div:hover .nuevos-i-bottom {
+  font-weight: bold;
+}
+
 .nuevos-i .nuevos-i-box > div .nuevos-i-top {
   color: #53565a;
   font-family: 'Geogrotesque-Rg';
@@ -1781,13 +1824,18 @@ footer .footer-right-icons li::after {
   font-size: 1.3rem;
 }
 
+.nuevos-i .nuevos-i-box > div .nuevos-i-top > img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
 .nuevos-i .nuevos-i-box > div .nuevos-i-bottom {
   color: #f4633a;
 }
 
 .nuevos-i .nuevos-i-box > div .nuevos-i-bottom hr {
   margin: 15px auto;
-  width: 50%;
+  width: 40%;
   border: 0.5px solid #f4633a;
 }
 

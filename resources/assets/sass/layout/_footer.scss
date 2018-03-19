@@ -6,6 +6,10 @@ footer{
   font-size: 0.8rem;
   padding-bottom: 3%;
   padding-top: 3%;
+  
+  a{
+    color: white;
+  }
     
   .footer-menu{
     width: 100%;
@@ -15,6 +19,7 @@ footer{
     border-bottom: 1px solid lighten($gray, 20%);
     padding-bottom: 5px;
     margin-bottom: 10px;
+    font-size: 1rem;
     
     span{
       margin-left: 14.7%;

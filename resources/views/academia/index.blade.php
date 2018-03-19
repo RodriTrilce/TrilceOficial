@@ -8,6 +8,7 @@
 @endsection
 
 @section('content')
+
   <div class="nuevos-i">
     <div class="row center-xs">
       <div class="col-xs-9 start-xs nuevos-i-title">

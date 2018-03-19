@@ -1,13 +1,13 @@
 .nav-info{
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .nav-info span{
   color: white;
-  padding-top: 30px;
-  
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.8rem;
   background-color: $orange;
   
   @media screen and (max-width: 768px) {
@@ -38,8 +38,8 @@ nav{
     
     li{
       display: inline-block;
-      margin-right: 20px;
-      font-size: 1.4rem;
+      margin-right: 1.8rem;
+      font-size: 1.15rem;
       
       &:first-child{
         display: none;
@@ -50,13 +50,42 @@ nav{
         color: $gray;
         font-family: 'Geogrotesque-Rg';
         transition: ease-out 0.01s;
+        text-transform: uppercase;
+        
+        &:hover{
+          position: relative;
+          color: $orange;
+          
+          &::after{
+/*
+            font-family: 'FontAwesome';
+            color: $gray;
+            width: 5px;
+            content: "\f28e";
+            font-size: 50px;
+*/
+
+content: "sss";
+height: 5px;
+border-bottom: 1px solid white;
+border-top: 1px solid white;
+            
+            
+                    
+            position: absolute;
+            top: 50px;
+            left: 10px;
+          }
+        }
       }
 
+      &:nth-last-child(1){
+        margin-right: 0px;
+      }
     }
     
-    a:hover{
-      color: $orange;
-    }
+
+    
     
   }
   

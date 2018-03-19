@@ -6,6 +6,7 @@
   margin-bottom: 5%;
   
   .nuevos-i-title{
+    margin-bottom: 1.8rem;
     h2{
       font-size: 3rem;
       font-family: 'CaeciliaLTPro-75Bold';
@@ -37,9 +38,16 @@
         padding-top: 65px;
         padding-bottom: 65px;
       }
-      
+
       &:hover{
         border-color: $orange;
+        img{
+          opacity:1 !important;
+          filter: alpha(opacity=100) !important;
+        }
+        .nuevos-i-bottom{
+          font-weight: bold;
+        }
       }
       
       .nuevos-i-top{
@@ -54,6 +62,11 @@
           letter-spacing: 0.25rem;
           font-size: 1.3rem;
         }
+        
+        >img{
+          opacity: 0.4;
+          filter: alpha(opacity=40);
+        }
       }
       
       .nuevos-i-bottom{
@@ -61,7 +74,7 @@
         
         hr{
           margin: 15px auto;
-          width: 50%;
+          width: 40%;
           border: 0.5px solid $orange;
         }
       

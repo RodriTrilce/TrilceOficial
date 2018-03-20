@@ -1,3 +1,107 @@
+/**
+  *  Extendes Utils
+*/
+
+%dropdown-desk-active {
+  display: block;
+  line-height: initial;
+  padding-top: 50px;
+  z-index: 12;
+  text-align: left;
+}
+
+.dropdown-desk{
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  
+  .dropdown-desk-content{
+    border-top: 8px solid $orange;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    background: white;
+    padding: 3rem;
+    
+    >div{
+      width: 20%;
+      font-family: 'Geogrotesque-Rg';
+      
+      h3{
+        color: $gray;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      
+      ul{
+        display: inline-block;
+        
+        li{
+          font-size: 1.3rem;
+          position: relative;
+          &::before{
+            position: absolute;
+            top: 5px;
+            content: "\f112";
+            color: transparentize($gray, 0.5);
+            font-family: 'FontAwesome';
+            font-size: 15px;
+            margin-right: 5px;
+          }
+          
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            margin-left: 17px;
+            color: $gray;
+          }
+          
+          &:hover{
+            a{
+              font-weight: bold;
+              color: $orange;
+            }
+            &::before{
+              color: $orange;
+            }
+          }
+
+        }// end li
+        
+      }//  end ul
+      
+      // Line right
+      &::before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 43%;
+        width: 1px;
+        height: 34%;
+        margin-left: -45px;
+        background: transparentize($gray, 0.8);
+      }
+      
+      &:first-child{
+        &::before{
+          width: 0px;
+        }
+      }
+      
+    }// end div
+    
+  }
+  
+  
+  &:hover{
+    @extend %dropdown-desk-active;
+  }
+}
+
 .nav-info{
   margin-top: 5px;
 }
@@ -22,12 +126,19 @@
   }
 }
 
+/**
+      Nav
+*/
 nav{
   margin-bottom: 6%;
   
   .toogle-content{
     display: none;
   }
+  
+  /**
+    *  Ul  - no responsive
+  */
   
   > ul{
     margin-top: 8%;
@@ -36,7 +147,7 @@ nav{
       display: none;
     }
     
-    li{
+    > li{
       display: inline-block;
       margin-right: 1.8rem;
       font-size: 1.15rem;
@@ -45,6 +156,7 @@ nav{
         display: none;
       }
       
+            
       a{
         display: block;
         color: $gray;
@@ -55,29 +167,29 @@ nav{
         &:hover{
           position: relative;
           color: $orange;
-          
-          &::after{
-/*
-            font-family: 'FontAwesome';
-            color: $gray;
-            width: 5px;
-            content: "\f28e";
-            font-size: 50px;
-*/
 
-content: "sss";
-height: 5px;
-border-bottom: 1px solid white;
-border-top: 1px solid white;
-            
-            
-                    
+          &::after{
+            content: "";
+            width: 23px;
+            height: 10px;
+            background: $gray;
+            top: 30px;
+            right: 30%;
             position: absolute;
-            top: 50px;
-            left: 10px;
+            display: inline-block;
           }
         }
       }
+      
+      /**
+        Menu desktop Sedes
+      */
+      &:nth-child(3){
+        position: relative;
+        &:hover + .dropdown-desk{
+          @extend %dropdown-desk-active;
+        }
+      }// fin menu desktop sedes
 
       &:nth-last-child(1){
         margin-right: 0px;
@@ -85,14 +197,10 @@ border-top: 1px solid white;
     }
     
 
-    
-    
   }
   
+  
   // Sedes ul
-  li.menu-sedes-ul{
-    display: none;
-  }
   
   .label-toggle{
     color: $orange;
@@ -102,12 +210,16 @@ border-top: 1px solid white;
     padding: 0.56em;
   }
   
+  
+  /**
+    * UL > responsive
+  */
   @media screen and (max-width: 768px) {
     .toogle-content{
       display: block;
     }
     
-    ul{
+    >ul{
       display: none;
       position: relative;
       
@@ -115,7 +227,7 @@ border-top: 1px solid white;
         display: block;
       }
       
-      li{
+      >li{
         display: block;
         border-top: 0.4px solid transparentize($gray, 0.2);
         margin-right: 0;
@@ -134,27 +246,62 @@ border-top: 1px solid white;
           display: none;
         }
         
-        
         a{
+          display: block;
+          width: 100%;
+          height: 100%;
           padding: 1rem;
-        }
+
+          i{
+            color: $orange
+          }
+
+          &:hover{
+            color: $orange;
+            i{
+              color: white;
+            }
+
+            &::after{
+              width: 0;
+              height: 0;
+            }
+
+          }
+        }// Fin > a
         
       }
-    }
-    
-    .menu-sedes{
-      display: block;
-      padding: 1rem;
-      cursor: pointer;
-    }
       
+      li.menu-click-sedes{
+        &:hover .menu-sedes-ul{
+          display: block;
+        }
+        
+        >a{
+          &::after{
+            font-family: 'FontAwesome';
+            content: "\f110";
+            font-size: 15px;
+            color: $orange;
+            position: absolute;
+            margin-left: 6px;
+          }
+          
+          &:hover::after{
+            content: "";
+          }
+
+        }
+      }// Fin li.menu-click-sedes
+      
+    }
+  
   }
   
   .toogle-content{
     margin-top: 2rem;
     margin-right: 1rem;
   }
-
   
   
   #menu-toggle:checked ~ ul {
@@ -174,8 +321,32 @@ border-top: 1px solid white;
     
   }//end ul
   
-  #menu-toggle, #menu-sedes-ul{
+  #menu-toggle{
     display: none;
+  }
+  
+  /**
+    * Submenu Sedes >UL
+  */
+  .menu-sedes-ul{
+    display: none;
+    >li{
+      background-color: white !important;
+      display: block;
+      border:0px;
+      margin-right: 0;
+      font-size: 0.8rem;
+      height: auto;
+      
+      a{
+        color: $orange;
+      
+        &:link{
+          text-transform: none;
+          padding: 0.2rem;
+        }
+      }
+    }
   }
 }
 

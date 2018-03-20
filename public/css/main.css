@@ -229,6 +229,104 @@ a {
   text-decoration: none;
 }
 
+/**
+  *  Extendes Utils
+*/
+
+.dropdown-desk:hover,
+nav > ul > li:nth-child(3):hover + .dropdown-desk {
+  display: block;
+  line-height: initial;
+  padding-top: 50px;
+  z-index: 12;
+  text-align: left;
+}
+
+.dropdown-desk {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.dropdown-desk .dropdown-desk-content {
+  border-top: 8px solid #f4633a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  background: white;
+  padding: 3rem;
+}
+
+.dropdown-desk .dropdown-desk-content > div {
+  width: 20%;
+  font-family: 'Geogrotesque-Rg';
+}
+
+.dropdown-desk .dropdown-desk-content > div h3 {
+  color: #53565a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.dropdown-desk .dropdown-desk-content > div ul {
+  display: inline-block;
+}
+
+.dropdown-desk .dropdown-desk-content > div ul li {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.dropdown-desk .dropdown-desk-content > div ul li::before {
+  position: absolute;
+  top: 5px;
+  content: "\F112";
+  color: rgba(83, 86, 90, 0.5);
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.dropdown-desk .dropdown-desk-content > div ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-left: 17px;
+  color: #53565a;
+}
+
+.dropdown-desk .dropdown-desk-content > div ul li:hover a {
+  font-weight: bold;
+  color: #f4633a;
+}
+
+.dropdown-desk .dropdown-desk-content > div ul li:hover::before {
+  color: #f4633a;
+}
+
+.dropdown-desk .dropdown-desk-content > div::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 43%;
+  width: 1px;
+  height: 34%;
+  margin-left: -45px;
+  background: rgba(83, 86, 90, 0.2);
+}
+
+.dropdown-desk .dropdown-desk-content > div:first-child::before {
+  width: 0px;
+}
+
 .nav-info {
   margin-top: 5px;
 }
@@ -258,8 +356,21 @@ a {
   }
 }
 
+/**
+      Nav
+*/
+
 nav {
   margin-bottom: 6%;
+  /**
+    *  Ul  - no responsive
+  */
+  /**
+    * UL > responsive
+  */
+  /**
+    * Submenu Sedes >UL
+  */
 }
 
 nav .toogle-content {
@@ -274,17 +385,20 @@ nav > ul .menu-click-sedes {
   display: none;
 }
 
-nav > ul li {
+nav > ul > li {
   display: inline-block;
   margin-right: 1.8rem;
   font-size: 1.15rem;
+  /**
+        Menu desktop Sedes
+      */
 }
 
-nav > ul li:first-child {
+nav > ul > li:first-child {
   display: none;
 }
 
-nav > ul li a {
+nav > ul > li a {
   display: block;
   color: #53565a;
   font-family: 'Geogrotesque-Rg';
@@ -293,34 +407,28 @@ nav > ul li a {
   text-transform: uppercase;
 }
 
-nav > ul li a:hover {
+nav > ul > li a:hover {
   position: relative;
   color: #f4633a;
 }
 
-nav > ul li a:hover::after {
-  /*
-            font-family: 'FontAwesome';
-            color: $gray;
-            width: 5px;
-            content: "\f28e";
-            font-size: 50px;
-*/
-  content: "sss";
-  height: 5px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+nav > ul > li a:hover::after {
+  content: "";
+  width: 23px;
+  height: 10px;
+  background: #53565a;
+  top: 30px;
+  right: 30%;
   position: absolute;
-  top: 50px;
-  left: 10px;
+  display: inline-block;
 }
 
-nav > ul li:nth-last-child(1) {
+nav > ul > li:nth-child(3) {
+  position: relative;
+}
+
+nav > ul > li:nth-last-child(1) {
   margin-right: 0px;
-}
-
-nav li.menu-sedes-ul {
-  display: none;
 }
 
 nav .label-toggle {
@@ -336,16 +444,16 @@ nav .label-toggle {
     display: block;
   }
 
-  nav ul {
+  nav > ul {
     display: none;
     position: relative;
   }
 
-  nav ul .menu-click-sedes {
+  nav > ul .menu-click-sedes {
     display: block;
   }
 
-  nav ul li {
+  nav > ul > li {
     display: block;
     border-top: 0.4px solid rgba(83, 86, 90, 0.8);
     margin-right: 0;
@@ -353,7 +461,7 @@ nav .label-toggle {
     height: auto;
   }
 
-  nav ul li:first-child {
+  nav > ul > li:first-child {
     display: block;
     background-color: #f4633a;
     color: white;
@@ -361,18 +469,49 @@ nav .label-toggle {
     border-top: 0;
   }
 
-  nav ul li:nth-child(3) {
+  nav > ul > li:nth-child(3) {
     display: none;
   }
 
-  nav ul li a {
+  nav > ul > li a {
+    display: block;
+    width: 100%;
+    height: 100%;
     padding: 1rem;
   }
 
-  nav .menu-sedes {
+  nav > ul > li a i {
+    color: #f4633a;
+  }
+
+  nav > ul > li a:hover {
+    color: #f4633a;
+  }
+
+  nav > ul > li a:hover i {
+    color: white;
+  }
+
+  nav > ul > li a:hover::after {
+    width: 0;
+    height: 0;
+  }
+
+  nav > ul li.menu-click-sedes:hover .menu-sedes-ul {
     display: block;
-    padding: 1rem;
-    cursor: pointer;
+  }
+
+  nav > ul li.menu-click-sedes > a::after {
+    font-family: 'FontAwesome';
+    content: "\F110";
+    font-size: 15px;
+    color: #f4633a;
+    position: absolute;
+    margin-left: 6px;
+  }
+
+  nav > ul li.menu-click-sedes > a:hover::after {
+    content: "";
   }
 }
 
@@ -395,9 +534,30 @@ nav #menu-toggle:checked ~ ul {
   text-align: center;
 }
 
-nav #menu-toggle,
-nav #menu-sedes-ul {
+nav #menu-toggle {
   display: none;
+}
+
+nav .menu-sedes-ul {
+  display: none;
+}
+
+nav .menu-sedes-ul > li {
+  background-color: white !important;
+  display: block;
+  border: 0px;
+  margin-right: 0;
+  font-size: 0.8rem;
+  height: auto;
+}
+
+nav .menu-sedes-ul > li a {
+  color: #f4633a;
+}
+
+nav .menu-sedes-ul > li a:link {
+  text-transform: none;
+  padding: 0.2rem;
 }
 
 /* slider open*/

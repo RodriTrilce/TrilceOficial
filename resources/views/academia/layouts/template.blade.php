@@ -32,22 +32,62 @@
                 <li>Intranet para alumnos | Call center: <b>6198100</b></li>
                 <li><a href="#">Nosotros</a></li>
                 
-                <li><a href="#">Sedes</a></li>
+                
+                <li>
+                  <a href="#">Sedes</a>
+                  
+                </li>
+                <div class="dropdown-desk">
+                  <div class="dropdown-desk-content">
+                    <div>
+                      <h3>San Marcos - UNI - PUCP</h3>
+                      <ul>
+                        <li><a href="">Los Olivos</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3>San Marcos - UNI</h3>
+                      <ul>
+                        <li><a href="">Santa Beatriz</a></li>
+                        <li><a href="">Comas</a></li>
+                        <li><a href="">Villa el Salvador</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3>UNI - PUCP</h3>
+                      <ul>
+                        <li><a href="">Torrico</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3>San Marcos</h3>
+                      <ul>
+                        <li><a href="">Marsano</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3>PUCP</h3>
+                      <ul>
+                        <li><a href="">San Isidro</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
                 
                 <li class="menu-click-sedes">
-                <a class='aaa' href="#menu-sedes-ul">Sedes <i class="fa fa-angle-down"></i></a>
-                </li>
-                
-                <li id="menu-sedes-ul">
-                  <ul>
-                    <li>Torrico</li>
-                    <li>Torrico</li>
-                    <li>Torrico</li>
-                    <li>Torrico</li>
-                    <li>Torrico</li>
-                    <li>Torrico</li>
+                  <a>Sedes </a>
+                  <ul class="menu-sedes-ul">
+                    <li><a href="#">Los Olivos</a></li>
+                    <li><a href="#">Torrico</a></li>
+                    <li><a href="#">Santa Beatriz</a></li>
+                    <li><a href="#">Villa el Salvador</a></li>
+                    <li><a href="#">Torrico</a></li>
+                    <li><a href="#">Marsano</a></li>
+                    <li><a href="#">San Isidro</a></li>
                   </ul>
                 </li>
+                
                 
                 
                 <li><a href="#">Blog</a></li>

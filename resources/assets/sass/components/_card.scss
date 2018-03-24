@@ -32,6 +32,7 @@
       h3{
         font-size: 1.3rem;
         font-weight: bold;
+        color: white;
       }
       
       p{
@@ -69,6 +70,28 @@
   
 }
 
+
+
+
+.card-force-minus .row > div{
+  text-align: center;
+  
+  a{
+    padding: 20px;
+  }
+  i{
+    font-size: 1rem;
+  }
+  
+  h3{
+    display: inline;
+    font-size: 1rem;
+  }
+  
+  p{
+    display: none;
+  }
+}
 
 
 

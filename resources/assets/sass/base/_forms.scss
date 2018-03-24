@@ -1,0 +1,16 @@
+select{
+  font-family: 'CaeciliaLTPro-45Light';
+  font-size: 1rem;
+  color: black;
+  padding: 10px;
+  padding-right: 4rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  width: 100%;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaAgMAAADZOtQaAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA9GM67WpFdPrSVgAAAAN0Uk5TAP//RFDWIQAAABpJREFUeJxjYKA5YA1tANOMoVCBECgtQAPLAKFWAZUBQ2MRAAAAAElFTkSuQmCC') no-repeat right #FEFEFE;
+  overflow: hidden;
+  border: 1px solid transparentize($gray, 0.7);
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance: none;
+}

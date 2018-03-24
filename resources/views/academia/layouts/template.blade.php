@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>App Name - @yield('title')</title>
+  <title>@yield('title') - Academia Trilce</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href=" {{{ asset('static/images/icons/favicon.ico') }}}" type="image/x-icon" />
@@ -14,7 +14,7 @@
   <header>
     <div class="row between-xs">
       <div class="col-xs-6 logo">
-        <img src="{{{ asset('static/images/academia/logo.png') }}}" alt="">
+        <a href="/"><img src="{{{ asset('static/images/academia/logo.png') }}}" alt="Trilce"></a>
       </div>
       <div class="col-xs-6 end-xs pre-nav">
           <div class="col-xs12 nav-info">
@@ -42,33 +42,33 @@
                     <div>
                       <h3>San Marcos - UNI - PUCP</h3>
                       <ul>
-                        <li><a href="">Los Olivos</a></li>
+                        <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                       </ul>
                     </div>
                     <div>
                       <h3>San Marcos - UNI</h3>
                       <ul>
-                        <li><a href="">Santa Beatriz</a></li>
-                        <li><a href="">Comas</a></li>
-                        <li><a href="">Villa el Salvador</a></li>
+                        <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
+                        <li><a href="/academia/sede/comas">Comas</a></li>
+                        <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
                       </ul>
                     </div>
                     <div>
                       <h3>UNI - PUCP</h3>
                       <ul>
-                        <li><a href="">Torrico</a></li>
+                        <li><a href="/academia/sede/torrico">Torrico</a></li>
                       </ul>
                     </div>
                     <div>
                       <h3>San Marcos</h3>
                       <ul>
-                        <li><a href="">Marsano</a></li>
+                        <li><a href="/academia/sede/marsano">Marsano</a></li>
                       </ul>
                     </div>
                     <div>
                       <h3>PUCP</h3>
                       <ul>
-                        <li><a href="">San Isidro</a></li>
+                        <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
                       </ul>
                     </div>
                   </div>
@@ -78,21 +78,21 @@
                 <li class="menu-click-sedes">
                   <a>Sedes </a>
                   <ul class="menu-sedes-ul">
-                    <li><a href="#">Los Olivos</a></li>
-                    <li><a href="#">Torrico</a></li>
-                    <li><a href="#">Santa Beatriz</a></li>
-                    <li><a href="#">Villa el Salvador</a></li>
-                    <li><a href="#">Torrico</a></li>
-                    <li><a href="#">Marsano</a></li>
-                    <li><a href="#">San Isidro</a></li>
+                    <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
+                    <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
+                    <li><a href="/academia/sede/comas">Comas</a></li>
+                    <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
+                    <li><a href="/academia/sede/torrico">Torrico</a></li>
+                    <li><a href="/academia/sede/marsano">Marsano</a></li>
+                    <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
                   </ul>
                 </li>
                 
                 
                 
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">Contáctenos</a></li>
+                <li><a href="/academia/blog">Blog</a></li>
+                <li><a href="/academia/multimedia">Multimedia</a></li>
+                <li><a href="/contacto">Contáctenos</a></li>
               </ul>
             </nav>
             
@@ -101,27 +101,7 @@
     </div>
   </header>
   
-  
-  
-<section>
-        <div id="slides">
-            <a href="http://www.trilce.edu.pe/">
-                <img src="http://www.trilce.edu.pe/assets/img/slider/concurso-de-becas-uni-21-de-febrero.png" alt="#">
-            </a>
-            <img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#">
-            <img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#">
-            <img src="http://www.trilce.edu.pe/assets/img/slider/felicidades-primer-puesto-uni-2018-i-ingenieria-minas.png" alt="#">
-        </div>
-</section>
 
-
-    
-  <!--
-  @section('sidebar')
-      This is the master sidebar.
-      asas
-  @show
--->
   
 @yield('content')
 
@@ -157,6 +137,12 @@
   </div>
 </footer>
 
+
+@section('scripts')
+
+
+
+
 <script src="http://www.trilce.edu.pe/assets/vendor/jquery/jquery.min.js"></script>
 <script src="http://www.trilce.edu.pe/ztrilce/assets/vendor/sliderjs/jquery.slides.min.js"></script>
   
@@ -179,5 +165,7 @@
   });
   /*slider close*/
 </script>
+@show
+
 </body>
 </html>

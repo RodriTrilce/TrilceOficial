@@ -1,0 +1,93 @@
+.venue{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: nowrap;
+  margin: 3rem auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-wrap:wrap;
+  }
+  
+  >div{
+
+    &:first-child{
+      width: 50%;
+      padding-left: 10px;
+    }
+    
+    &:nth-child(2){
+      width: 40%;
+      height: 400px;
+      border: 1px solid transparentize($gray, 0.6)
+    }
+    
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+  
+  h2{
+    color: $orange;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  div.hr{
+    border: 0.5px solid transparentize($gray, 0.85);
+    margin: 1.5rem;
+    margin-right: 0;
+    margin-left: -0.5rem;
+    position: relative;
+    width: 100%;
+    
+    &::after{
+      content: "";
+      position: absolute;
+      height: 14px;
+      width: 2.6rem;
+      background: $orange;
+      top:-5px;
+      left: 0.5rem;
+    }
+  }
+  
+  ul{
+    margin-left: 15px;
+    
+    li{
+      margin-bottom: 1rem;
+      position: relative;
+      
+      &::before{
+        position: absolute;
+        left: -15px;
+        font-family: 'FontAwesome';
+        font-size: 0.7rem;
+        color: $orange;
+      }
+      
+      &:nth-child(1){
+        &::before(){
+          content: "\F18F";
+        }
+      }
+      
+      &:nth-child(2){
+        &::before(){
+          content: "\F15C";
+        }
+      }
+      
+      &:nth-child(3){
+        &::before(){
+          content: "\f2b3";
+        }
+      }
+      
+    }
+  }
+}
+
+

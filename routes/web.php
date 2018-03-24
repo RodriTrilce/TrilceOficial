@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routes Trilce
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -11,12 +11,23 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('academia', function() {
+
+/**
+ *  Rutas Academia
+ */
+Route::get('/academia', function() {
   return view('academia/index');
 });
 
+Route::get('/academia/preparacion-{university}', 'Academia\Preparation@index');
+
+Route::get('/academia/sede/{barrack}', 'Academia\Venue@index');
+Route::get('/academia/sede', function(){
+  return redirect('/academia');
+});
 

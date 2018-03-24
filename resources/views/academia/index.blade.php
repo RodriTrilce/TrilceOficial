@@ -1,13 +1,26 @@
 @extends('academia.layouts.template')
 
-@section('title', 'Page Title')
-
-@section('sidebar')
-    @parent
-    <p>This is appended to the master sidebar.</p>
-@endsection
+@section('title', '')
 
 @section('content')
+  
+  
+  
+  <section>
+          <div id="slides">
+              <a href="http://www.trilce.edu.pe/">
+                  <img src="http://www.trilce.edu.pe/assets/img/slider/concurso-de-becas-uni-21-de-febrero.png" alt="#">
+              </a>
+              <img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#">
+              <img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#">
+              <img src="http://www.trilce.edu.pe/assets/img/slider/felicidades-primer-puesto-uni-2018-i-ingenieria-minas.png" alt="#">
+          </div>
+  </section >
+
+    
+  
+  
+  
 
   <div class="nuevos-i">
     <div class="row center-xs">
@@ -19,7 +32,7 @@
       </div>
       <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg">
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-          <a href="">
+          <a href="/academia/preparacion-uni">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-uni.jpg" alt="UNI">
               <h4>Preparación</h4>
@@ -32,7 +45,7 @@
           </a>
         </div>
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-          <a href="">
+          <a href="/academia/preparacion-san-marcos">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
               <h4>Preparación</h4>
@@ -45,7 +58,7 @@
           </a>
         </div>
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-          <a href="">
+          <a href="/academia/preparacion-pucp">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-cato.jpg" alt="PUCP">
               <h4>Preparación</h4>

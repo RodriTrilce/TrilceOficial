@@ -21,7 +21,7 @@ class CreateVenuesTable extends Migration
             $table->string('phone');
             $table->string('logitude');
             $table->string('latitude');
-            $table->int('status')->default('1');
+            $table->integer('status')->default('1');
             $table->enum('sector', ['noli', 'lazo', 'rivero'])->default('noli');
             $table->timestamps();
         });

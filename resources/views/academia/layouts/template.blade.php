@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>@yield('title') - Academia Trilce</title>
+  <title>@hasSection('title')@yield('title') - @endif Academia Trilce</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href=" {{{ asset('static/images/icons/favicon.ico') }}}" type="image/x-icon" />
@@ -14,14 +14,13 @@
   <header>
     <div class="row between-xs">
       <div class="col-xs-6 logo">
-        <a href="/"><img src="{{{ asset('static/images/academia/logo.png') }}}" alt="Trilce"></a>
+        <a href="/academia/"><img src="{{{ asset('static/images/academia/logo.png') }}}" alt="Trilce"></a>
       </div>
       <div class="col-xs-6 end-xs pre-nav">
           <div class="col-xs12 nav-info">
               <span>Intranet para alumnos | Call center: <b>6198100</b></span>
           </div>
           <div class="col-xs-12">
-            
             <nav>
               <input type="checkbox" id="menu-toggle" />
               <div class="toogle-content">
@@ -32,49 +31,46 @@
                 <li>Intranet para alumnos | Call center: <b>6198100</b></li>
                 <li><a href="#">Nosotros</a></li>
                 
-                
                 <li>
                   <a href="#">Sedes</a>
-                  
-                </li>
-                <div class="dropdown-desk">
-                  <div class="dropdown-desk-content">
-                    <div>
-                      <h3>San Marcos - UNI - PUCP</h3>
-                      <ul>
-                        <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3>San Marcos - UNI</h3>
-                      <ul>
-                        <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
-                        <li><a href="/academia/sede/comas">Comas</a></li>
-                        <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3>UNI - PUCP</h3>
-                      <ul>
-                        <li><a href="/academia/sede/torrico">Torrico</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3>San Marcos</h3>
-                      <ul>
-                        <li><a href="/academia/sede/marsano">Marsano</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3>PUCP</h3>
-                      <ul>
-                        <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
-                      </ul>
+                  <div class="dropdown-desk">
+                    <div class="dropdown-desk-content">
+                      <div>
+                        <h3>San Marcos - UNI - PUCP</h3>
+                        <ul>
+                          <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3>San Marcos - UNI</h3>
+                        <ul>
+                          <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
+                          <li><a href="/academia/sede/comas">Comas</a></li>
+                          <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3>UNI - PUCP</h3>
+                        <ul>
+                          <li><a href="/academia/sede/torrico">Torrico</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3>San Marcos</h3>
+                        <ul>
+                          <li><a href="/academia/sede/marsano">Marsano</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3>PUCP</h3>
+                        <ul>
+                          <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </li>
 
-                
                 <li class="menu-click-sedes">
                   <a>Sedes </a>
                   <ul class="menu-sedes-ul">
@@ -88,8 +84,6 @@
                   </ul>
                 </li>
                 
-                
-                
                 <li><a href="/academia/blog">Blog</a></li>
                 <li><a href="/academia/multimedia">Multimedia</a></li>
                 <li><a href="/contacto">Contáctenos</a></li>
@@ -101,11 +95,7 @@
     </div>
   </header>
   
-
-  
 @yield('content')
-
-
 
 <footer>
   <div class="row">
@@ -113,10 +103,9 @@
     <div class="row between-xs center-xs footer-menu">
       <div class="col-xs-6">
         <ul>
-            <li><a href="/colegio">Colegios</a></li>
-            <li><a href="/academia">Academias</a></li>
+            <li><a href="/colegio">Colegio</a></li>
+            <li><a href="/academia">Academia</a></li>
             <li><a href="#">Vacaciones útiles</a></li>
-            <li><a href="#">Locales</a></li>
             <li><a href="#">Menú</a></li>
         </ul>
       </div>
@@ -127,21 +116,17 @@
             <li><a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Danos like en Facebook" target="_blank" rel="nofollow"><i class="fa fa-facebook-f"></i></a></li>
             <li><a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" title="Suscribete en Youtube" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
             <li><a href="https://www.instagram.com/trilcecolegioacademia/" title="Siguenos en Instagram" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
-            <li>© 2018 Trilce. Todos los derechos reservados</li>
+            <li>© {{date("Y")}} Trilce. Todos los derechos reservados</li>
           </ul>
       </div>
     </div>
     <div class="col-xs-12 center-xs footer-bottom">
-      © 2018 Trilce. Todos los derechos reservados | <a href="/academia/contacto">Contáctenos</a>
+      © {{date("Y")}} Trilce. Todos los derechos reservados | <a href="/academia/contacto">Contáctenos</a>
     </div>
   </div>
 </footer>
 
-
 @section('scripts')
-
-
-
 
 <script src="http://www.trilce.edu.pe/assets/vendor/jquery/jquery.min.js"></script>
 <script src="http://www.trilce.edu.pe/ztrilce/assets/vendor/sliderjs/jquery.slides.min.js"></script>

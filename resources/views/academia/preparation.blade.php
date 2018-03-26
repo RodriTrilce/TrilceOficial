@@ -22,7 +22,7 @@
 
   <div class="nuevos-i nuevos-i-force-minus">
     <div class="row center-xs">
-      <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg nuevos-i-preparacion nuevos-i-border">
+      <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg nuevos-i-border">
 
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='uni') nuevos-i-active @endif">
           <a href="/academia/preparacion-uni">
@@ -169,39 +169,6 @@
   
 </div>
     
-  <div class="card">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <a href="#">
-            <i class="fa fa-bullhorn"></i>
-            <h3>Simulacros</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <a href="#">
-            <i class="fa fa-paperclip"></i>
-            <h3>Solucionarios</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </a>
-        </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="#">
-              <i class="fa fa-cut"></i>
-              <h3>Lista de cachimbos</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="#">
-              <i class="fa fa-lightbulb-o"></i>
-              <h3>Olimpiadas Matemática</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-            </a>
-          </div>
-      </div>
-    </div>
-  </div>
-  
+@include('academia.partials.card_bottom')
+
 @endsection

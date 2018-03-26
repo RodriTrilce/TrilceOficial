@@ -255,7 +255,7 @@ a {
 */
 
 .dropdown-desk:hover,
-nav > ul > li:nth-child(3):hover + .dropdown-desk {
+nav > ul > li:nth-child(3):hover > .dropdown-desk {
   display: block;
   line-height: initial;
   padding-top: 50px;
@@ -265,9 +265,6 @@ nav > ul > li:nth-child(3):hover + .dropdown-desk {
 
 .dropdown-desk {
   display: none;
-  position: absolute;
-  left: 0;
-  width: 100%;
 }
 
 .dropdown-desk .dropdown-desk-content {
@@ -337,9 +334,9 @@ nav > ul > li:nth-child(3):hover + .dropdown-desk {
   content: "";
   position: absolute;
   z-index: 1;
-  top: 43%;
+  top: 120%;
   width: 1px;
-  height: 34%;
+  height: 85%;
   margin-left: -45px;
   background: rgba(83, 86, 90, 0.2);
 }
@@ -419,21 +416,12 @@ nav > ul > li:first-child {
   display: none;
 }
 
-nav > ul > li a {
-  display: block;
-  color: #53565a;
-  font-family: 'Geogrotesque-Rg';
-  -webkit-transition: ease-out 0.01s;
-  transition: ease-out 0.01s;
-  text-transform: uppercase;
-}
-
-nav > ul > li a:hover {
+nav > ul > li:hover > a {
   position: relative;
   color: #f4633a;
 }
 
-nav > ul > li a:hover::after {
+nav > ul > li:hover > a::after {
   content: "";
   width: 23px;
   height: 10px;
@@ -444,8 +432,33 @@ nav > ul > li a:hover::after {
   display: inline-block;
 }
 
-nav > ul > li:nth-child(3) {
-  position: relative;
+nav > ul > li > a {
+  display: block;
+  color: #53565a;
+  font-family: 'Geogrotesque-Rg';
+  -webkit-transition: ease-out 0.01s;
+  transition: ease-out 0.01s;
+  text-transform: uppercase;
+}
+
+nav > ul > li:nth-child(3):hover > .dropdown-desk {
+  width: 100vw;
+  margin-left: -50vw;
+  height: 100px;
+  left: 49.58%;
+  position: absolute;
+}
+
+@media screen and (max-width: 1683px) {
+  nav > ul > li:nth-child(3):hover > .dropdown-desk {
+    left: 49.55%;
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  nav > ul > li:nth-child(3):hover > .dropdown-desk {
+    left: 49.55%;
+  }
 }
 
 nav > ul > li:nth-last-child(1) {
@@ -580,8 +593,6 @@ nav .menu-sedes-ul > li a:link {
   text-transform: none;
   padding: 0.2rem;
 }
-
-/* slider open*/
 
 #slides {
   display: none;
@@ -1963,6 +1974,11 @@ footer .footer-right-icons li::after {
   padding-left: 13px;
 }
 
+.h-all .h-content header nav ul li:hover a::after {
+  content: "";
+  display: none;
+}
+
 @media (max-width: 700px) {
   .h-all .h-content header nav ul {
     text-align: center;
@@ -2030,10 +2046,6 @@ footer .footer-right-icons li::after {
 
 .h-all .h-content section.h-cta .h-boton {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 31px;
-  padding-right: 31px;
 }
 
 .h-all .h-content section.h-cta .h-boton:nth-child(1) {
@@ -2061,9 +2073,15 @@ footer .footer-right-icons li::after {
 }
 
 .h-all .h-content section.h-cta .h-boton a {
-  margin: 20px;
   font-family: 'Geogrotesque-Rg';
   font-size: 40px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 31px;
+  padding-right: 31px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -2283,12 +2301,13 @@ footer .footer-right-icons li::after {
 
   .nuevos-i-force-minus .nuevos-i-box > div:nth-child(1) {
     position: relative;
+    margin-right: -10px;
   }
 
   .nuevos-i-force-minus .nuevos-i-box > div:nth-child(1)::before {
     content: "";
     position: absolute;
-    right: 5%;
+    right: 13%;
     z-index: 1;
     top: 20%;
     width: 1px;
@@ -2493,7 +2512,7 @@ footer .footer-right-icons li::after {
   margin-right: 0;
   margin-left: -0.5rem;
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 
 .venue div.hr::after {

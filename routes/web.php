@@ -12,22 +12,45 @@
 */
 
 
-Route::get('/', function () {
-    return view('home');
-});
 
 
 /**
- *  Rutas Academia
+ *  Academia
  */
+
+// Home
+Route::get('/', function () {
+   return view('home');
+});
+
+// Index
 Route::get('/academia', function() {
   return view('academia/index');
 });
 
-Route::get('/academia/preparacion-{university}', 'Academia\Preparation@index');
+// Preparación
+Route::get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
-Route::get('/academia/sede/{barrack}', 'Academia\Venue@index');
+// Sedes
+Route::get('/academia/sede/{barrack}', 'Academia\VenueController@index');
 Route::get('/academia/sede', function(){
   return redirect('/academia');
 });
+
+// Simulacros
+Route::get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -12,9 +12,6 @@
 
 .dropdown-desk{
   display: none;
-  position: absolute;
-  left: 0;
-  width: 100%;
   
   .dropdown-desk-content{
     border-top: 8px solid $orange;
@@ -79,9 +76,9 @@
         content: "";
         position: absolute;
         z-index: 1;
-        top: 43%;
+        top: 120%;
         width: 1px;
-        height: 34%;
+        height: 85%;
         margin-left: -45px;
         background: transparentize($gray, 0.8);
       }
@@ -156,18 +153,11 @@ nav{
         display: none;
       }
       
-            
-      a{
-        display: block;
-        color: $gray;
-        font-family: 'Geogrotesque-Rg';
-        transition: ease-out 0.01s;
-        text-transform: uppercase;
+      &:hover{
         
-        &:hover{
+        >a{
           position: relative;
           color: $orange;
-
           &::after{
             content: "";
             width: 23px;
@@ -181,13 +171,41 @@ nav{
         }
       }
       
+            
+      >a{
+        display: block;
+        color: $gray;
+        font-family: 'Geogrotesque-Rg';
+        transition: ease-out 0.01s;
+        text-transform: uppercase;
+        
+      }
+      
       /**
         Menu desktop Sedes
       */
       &:nth-child(3){
-        position: relative;
-        &:hover + .dropdown-desk{
+//        position: relative;
+
+        &:hover > .dropdown-desk{
+
           @extend %dropdown-desk-active;
+          
+          width: 100vw;
+          margin-left: -50vw;
+          height: 100px;
+          left: 49.58%;
+          position: absolute;
+          
+          @media screen and (max-width: 1683px) {
+            left: 49.55%;
+          }
+          
+          @media screen and (max-width: 1570px) {
+            left: 49.55%;
+          }
+          
+          
         }
       }// fin menu desktop sedes
 

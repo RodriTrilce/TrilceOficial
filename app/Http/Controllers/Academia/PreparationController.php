@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class Preparation extends Controller
+class PreparationController extends Controller
 {
     
     public function index($university)

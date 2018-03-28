@@ -43,6 +43,14 @@ Route::get('/academia/simulacros', function(){
   return redirect('/academia');
 });
 
+// Solucionarios
+Route::get('/academia/solucionarios-{university}', 'Academia\SolutionsController@index');
+Route::get('/academia/solucionarios', function(){
+  return redirect('/academia');
+});
+
+
+
 
 
 

@@ -17,12 +17,14 @@ var gid = (elem) => {
 
 // Simulacrum -> Signup Form
 ~(($,_)=>{
-  const step1 = gid('f1_validate');
-  step1.addEventListener('click', ()=>{
-    hide(gid('step1'));
-    show(gid('step2'));
+  if(gid('f1_validate')){
+    const step1 = gid('f1_validate');
+    step1.addEventListener('click', ()=>{
+      hide(gid('step1'));
+      show(gid('step2'));
 
-    gid('s2_dni').value = gid('s1_dni').value
-    
-  })
+      gid('s2_dni').value = gid('s1_dni').value
+      
+    });
+  }
 })(document,window);

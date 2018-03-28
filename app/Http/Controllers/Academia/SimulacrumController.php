@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Academia;
 
-use App\Models\Academia\SimulacrumModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+
+use App\Models\Academia\SimulacrumModel as Simulacrum;
+use App\Models\UniversityModel as University;
+
 
 class SimulacrumController extends Controller
 {
@@ -15,35 +18,30 @@ class SimulacrumController extends Controller
      */
      public function index($university)
      {
-       switch ($university) {
-         case 'san-marcos':
-             $var = [
-               'title' => 'San Marcos',
-               'type'  => $university
-             ];
-           break;
-         
-         case 'uni':
-             $var = [
-               'title' => 'UNI',
-               'type'  => $university
-             ];
-           break;
+        $university = University::where('short_name', $this->l($university))->first();
+        
+        if(empty($university->name))
+          return abort(404);
+        
+        $results = Simulacrum::where('university_id', $university->id)->get();
 
-         case 'pucp':
-             $var = [
-               'title' => 'Pucp',
-               'type'  => $university
-             ];
-           break;
-         
-         default:
-             abort(404);
-           break;
-       }
-       return view('/academia/simulacrum')->with($var);
+       return view('/academia/simulacrum')->with([
+         'university' => $university,
+         'data' => $results
+       ]);
      }
 
+     /**
+      * Clear slug string
+      *
+      * @return string
+      */
+     private function l($str)
+     {
+       return ucwords(str_replace('-', ' ', $str));
+     }
+     
+     
     /**
      * Show the form for creating a new resource.
      *

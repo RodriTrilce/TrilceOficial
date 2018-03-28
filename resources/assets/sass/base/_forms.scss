@@ -3,13 +3,16 @@ select,input, textarea{
   font-size: 1rem;
   color: black;
   padding: 10px;
-  padding-right: 4rem;
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
   width: 100%;
 }
 
+textarea, input{
+  margin: 0 0 0 0;
+}
+
+
 select{
+  padding-right: 4rem;
   border: 1px solid transparentize($gray, 0.7);
   overflow: hidden;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaAgMAAADZOtQaAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA9GM67WpFdPrSVgAAAAN0Uk5TAP//RFDWIQAAABpJREFUeJxjYKA5YA1tANOMoVCBECgtQAPLAKFWAZUBQ2MRAAAAAElFTkSuQmCC') no-repeat right #FEFEFE;

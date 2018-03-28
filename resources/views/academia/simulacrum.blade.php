@@ -1,6 +1,6 @@
 @extends('academia.layouts.template')
 
-@section('title', 'Simulacros de '. $title)
+@section('title', 'Simulacros de '. $university->name)
 
 @section('content')
 
@@ -11,7 +11,7 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Simulacros</h1>
-        <p class="header-double-p-up">Inscripción a los simulacros {{$title}} y Resultados de los examenes</p>
+        <p class="header-double-p-up">Inscripción a los simulacros y Resultados de los examenes</p>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
     <div class="row center-xs">
       <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg nuevos-i-border">
 
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='uni') nuevos-i-active @endif">
+        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='UNI') nuevos-i-active @endif">
           <a href="/academia/simulacros-uni">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-uni.jpg" alt="UNI">
@@ -33,7 +33,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='san-marcos') nuevos-i-active @endif">
+        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='San Marcos') nuevos-i-active @endif">
           <a href="/academia/simulacros-san-marcos">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
@@ -46,7 +46,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='pucp') nuevos-i-active @endif">
+        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='PUCP') nuevos-i-active @endif">
           <a href="/academia/simulacros-pucp">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-cato.jpg" alt="PUCP">
@@ -68,7 +68,7 @@
     <div class="col-xs-12 col-sm-9">
       <div class="row">
         <div class="col-xs-12 col-sm simulacrum-info">
-          <h1>Sobre el simulacro {{ strtoupper($title)}}</h1>
+          <h1>Sobre el simulacro {{ strtoupper($university->short_name)}}</h1>
           <ul>
             <li>
               <span>Inscripciones:</span>
@@ -88,7 +88,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-xs-12 col-sm simulacrum-form">
+        <div class="col-xs-12 col-sm-5 simulacrum-form">
           <div class="row start-xs step-1" id="step1">
             <h2>Regístrate para participar</h2>
             <ul>
@@ -97,14 +97,14 @@
               <li>3. Al final del registro, no olvides anotar tu código de inscripción</li>
             </ul>
             <div class="col-xs-6 text-init">
-              <input type="text" name="f1_dni" id="s1_dni" placeholder="colocar DNI">
+              <input type="text" name="f1_dni" id="s1_dni" placeholder="DNI">
               <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
             </div>
           </div>
 
           <div class="row start-x step-2" id="step2">
             <h2>Déjanos tus datos</h2>
-            <div class="col-xs-8 text-init">
+            <div class="col-xs-12 col-sm-11 text-init">
               <fieldset>
                 <input type="text" name="s2_dni" id="s2_dni" readonly>
               </fieldset>
@@ -127,43 +127,51 @@
           
               
               <fieldset>
-                <label>Local Inscripción</label>
-                <select>
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
+                <label for="s2_venue">Local Inscripción</label>
+                <div>
+                  <select id="s2_venue" name="s2_venue">
+                    <option value="volvo">Ciclos...</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
               </fieldset>
               
               <fieldset>
-                <label>Tipo de examen</label>
-                <select>
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
+                <label for="s2_type_exam">Tipo de examen</label>
+                <div>
+                  <select id="s2_type_exam" name="s2_type_exam">
+                    <option value="volvo">Ciclos...</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
               </fieldset>
               
               <fieldset>
-                <label>Área</label>
-                <select>
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
+                <label for="s2_area">Área</label>
+                <div>
+                  <select id="s2_area" name="s2_area">
+                    <option value="volvo">Ciclos...</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
               </fieldset>
               
               <fieldset>
-              <label>Carrera</label>
-                <select>
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
+              <label for="s2_career">Carrera</label>
+                <div>
+                  <select id="s2_career" name="s2_career">
+                    <option value="volvo">Ciclos...</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
               </fieldset>
               
               <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
@@ -178,8 +186,24 @@
   
   <div class="row center-xs center-sm text-init simulacrum">
     <div class="col-xs-12 col-sm-9">
-      <div class="row">
+      <div class="row simulacrum-results">
         
+        @foreach ($data as $key => $v)
+        <div class="col-xs-12 col-sm-2">
+          <a href="{{ $v->url }}" target="_blank">
+            <div class="simulacrum-results-pdf">
+              <i class="fa fa-file-pdf-o"></i>
+            </div>
+            <div class="simulacrum-results-text">
+              <span>{{ $v->name }}</span>
+              <span>{{ $v->description }}</span>
+              <span>{{ date('d-m-Y', strtotime($v->created_at)) }}</span>
+            </div>
+          </a>
+        </div>
+        
+      @endforeach
+              
       </div>
     </div>
   </div>

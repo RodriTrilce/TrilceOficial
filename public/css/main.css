@@ -2,8 +2,6 @@
   Trilce SASS MAIN FILE
 */
 
-/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
-
 html,
 body,
 p,
@@ -228,13 +226,16 @@ textarea {
   font-size: 1rem;
   color: black;
   padding: 10px;
-  padding-right: 4rem;
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
   width: 100%;
 }
 
+textarea,
+input {
+  margin: 0 0 0 0;
+}
+
 select {
+  padding-right: 4rem;
   border: 1px solid rgba(83, 86, 90, 0.3);
   overflow: hidden;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaAgMAAADZOtQaAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA9GM67WpFdPrSVgAAAAN0Uk5TAP//RFDWIQAAABpJREFUeJxjYKA5YA1tANOMoVCBECgtQAPLAKFWAZUBQ2MRAAAAAElFTkSuQmCC") no-repeat right #FEFEFE;
@@ -2594,21 +2595,46 @@ footer .footer-right-icons li::after {
 .simulacrum .simulacrum-info h1 {
   color: #f4633a;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: 'CaeciliaLTPro-85Heavy';
   margin-bottom: 40px;
 }
 
-.simulacrum .simulacrum-info h1::before {
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-info h1 {
+    width: 80%;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+  }
+}
+
+.simulacrum .simulacrum-info p {
+  text-indent: 1.2rem;
+}
+
+.simulacrum .simulacrum-info ul {
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.simulacrum .simulacrum-info ul::before {
   content: "";
   background: #f4633a;
   position: absolute;
   width: 33px;
   height: 11px;
-  margin-top: 3%;
+  margin-top: -4.7rem;
+  margin-left: -1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-info ul::before {
+    margin-top: -30px;
+    margin-left: -1rem;
+  }
 }
 
 .simulacrum .simulacrum-info ul li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .simulacrum .simulacrum-info ul li span {
@@ -2616,6 +2642,7 @@ footer .footer-right-icons li::after {
 }
 
 .simulacrum .simulacrum-info ul li::before {
+  color: #f4633a;
   font-family: "FontAwesome";
 }
 
@@ -2633,6 +2660,26 @@ footer .footer-right-icons li::after {
 
 .simulacrum .simulacrum-info ul li:nth-child(4)::before {
   content: "\F155";
+}
+
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-info ul {
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+.simulacrum .simulacrum-form {
+  background: #ededed;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-form {
+    padding: 2rem;
+  }
 }
 
 .simulacrum .simulacrum-form h2 {
@@ -2661,15 +2708,208 @@ footer .footer-right-icons li::after {
 .simulacrum .simulacrum-form fieldset {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .simulacrum .simulacrum-form fieldset label {
-  display: inline-block;
+  width: auto;
+  float: left;
+  margin: 0.8rem;
+}
+
+.simulacrum .simulacrum-form fieldset > div {
+  overflow: hidden;
   width: auto;
 }
 
-.simulacrum .simulacrum-form fieldset select {
-  display: inline-block;
-  width: auto;
+.simulacrum .simulacrum-form fieldset > div select {
+  width: 100%;
+}
+
+.simulacrum .simulacrum-form button {
+  background: #ededed;
+}
+
+.simulacrum .simulacrum-results > div {
+  padding: 1rem;
+}
+
+.simulacrum .simulacrum-results > div a {
+  color: #53565a;
+}
+
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-results > div a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.simulacrum .simulacrum-results > div a:hover {
+  color: #f4633a;
+  font-weight: bold;
+}
+
+.simulacrum .simulacrum-results > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 1px;
+  height: 8%;
+  background: rgba(83, 86, 90, 0.2);
+  margin-left: 13rem;
+  margin-top: -5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-results > div::after {
+    width: 80%;
+    height: 1px;
+    margin-left: 1px;
+    margin-top: 1rem;
+  }
+}
+
+.simulacrum .simulacrum-results > div:last-child::after {
+  display: none;
+}
+
+.simulacrum .simulacrum-results .simulacrum-results-pdf {
+  font-size: 1.6rem;
+}
+
+.simulacrum .simulacrum-results .simulacrum-results-text span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .simulacrum .simulacrum-results .simulacrum-results-text {
+    margin-left: 1.5rem;
+  }
+}
+
+.soluion-header-p {
+  width: 28%;
+}
+
+.solution-h1 {
+  color: #f4633a;
+  font-size: 2rem;
+  font-family: 'CaeciliaLTPro-85Heavy';
+}
+
+@media screen and (max-width: 768px) {
+  .solution-h1 {
+    width: 80%;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+}
+
+.solution-h1::before {
+  content: '';
+  width: 35px;
+  height: 10px;
+  position: absolute;
+  background: #f4633a;
+  margin-top: 3rem;
+}
+
+.solution-table {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-family: 'Geogrotesque-Rg';
+  font-size: 1.1rem;
+  color: #53565a;
+}
+
+.solution-table .solution-title {
+  margin-bottom: 0.5rem;
+}
+
+.solution-table .solution-title > div {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .solution-table .solution-title > div {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+}
+
+.solution-table .solution-title > div:nth-child(2) {
+  background: #f4633a;
+}
+
+.solution-table .solution-title > div:nth-child(3) {
+  background: #53565a;
+}
+
+.solution-table .solution-title > div:nth-child(4) {
+  background: black;
+}
+
+.solution-table i {
+  color: #f4633a;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .solution-table {
+    margin-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  .solution-table span {
+    display: none;
+  }
+}
+
+.solution-table .col-xs-3 {
+  margin-top: 0.5rem;
+}
+
+.solution-table .col-xs-3 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.solution-table .col-xs-3 a:link,
+.solution-table .col-xs-3 a:visited {
+  color: #53565a;
+}
+
+.solution-table .col-xs-3 a:hover {
+  color: #f4633a;
+}
+
+.solution-table .solution-year {
+  color: #f4633a;
+}
+
+.solution-hr {
+  border: 1px solid #f4633a;
+  width: 67%;
+  margin: 0 auto 4rem;
+}
+
+.solution-pagination {
+  font-family: 'Geogrotesque-Rg';
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.solution-pagination span {
+  background: #f4633a;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-family: 'Geogrotesque-Bd';
 }
 

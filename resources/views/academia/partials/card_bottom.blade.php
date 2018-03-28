@@ -9,7 +9,7 @@
           </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <a href="#">
+          <a href="/academia/solucionarios-pucp">
             <i class="fa fa-paperclip"></i>
             <h3>Solucionarios</h3>
             <p>Area de descarga UNI, San Marcos, Católica.</p>

@@ -36,3 +36,6 @@ var home = new Vue({
      console.log("end mount")
    }
  })
+
+
+alert(1)

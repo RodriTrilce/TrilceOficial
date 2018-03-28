@@ -150,6 +150,7 @@
   });
   /*slider close*/
 </script>
+<script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>
 @show
 
 </body>

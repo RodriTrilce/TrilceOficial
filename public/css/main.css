@@ -221,7 +221,9 @@ th {
   src: url("/static/fonts/33FA0F_15_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_15_0.woff2") format("woff2"), url("/static/fonts/33FA0F_15_0.woff") format("woff"), url("/static/fonts/33FA0F_15_0.ttf") format("truetype");
 }
 
-select {
+select,
+input,
+textarea {
   font-family: 'CaeciliaLTPro-45Light';
   font-size: 1rem;
   color: black;
@@ -230,12 +232,28 @@ select {
   margin-left: 0.1rem;
   margin-right: 0.1rem;
   width: 100%;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaAgMAAADZOtQaAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA9GM67WpFdPrSVgAAAAN0Uk5TAP//RFDWIQAAABpJREFUeJxjYKA5YA1tANOMoVCBECgtQAPLAKFWAZUBQ2MRAAAAAElFTkSuQmCC") no-repeat right #FEFEFE;
-  overflow: hidden;
+}
+
+select {
   border: 1px solid rgba(83, 86, 90, 0.3);
+  overflow: hidden;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaAgMAAADZOtQaAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA9GM67WpFdPrSVgAAAAN0Uk5TAP//RFDWIQAAABpJREFUeJxjYKA5YA1tANOMoVCBECgtQAPLAKFWAZUBQ2MRAAAAAElFTkSuQmCC") no-repeat right #FEFEFE;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+button.validate {
+  background-color: white;
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4633a;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 0px;
 }
 
 * {
@@ -896,6 +914,12 @@ nav .menu-sedes-ul > li a:link {
     border: 0.3rem solid white;
     bottom: -50%;
   }
+}
+
+.header-double-p-up {
+  font-size: 1.1rem;
+  font-weight: bold;
+  max-width: 25rem;
 }
 
 .map-container {
@@ -1607,6 +1631,10 @@ nav .menu-sedes-ul > li a:link {
         -ms-flex-order: 1;
             order: 1;
   }
+}
+
+.text-init {
+  text-align: initial;
 }
 
 .logo img {
@@ -2552,5 +2580,96 @@ footer .footer-right-icons li::after {
 
 .venue ul li:nth-child(3)::before {
   content: "\F2B3";
+}
+
+/**
+ *  Simulacro Sass file
+ */
+
+.simulacrum {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.simulacrum .simulacrum-info h1 {
+  color: #f4633a;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.simulacrum .simulacrum-info h1::before {
+  content: "";
+  background: #f4633a;
+  position: absolute;
+  width: 33px;
+  height: 11px;
+  margin-top: 3%;
+}
+
+.simulacrum .simulacrum-info ul li {
+  margin-bottom: 1.2rem;
+}
+
+.simulacrum .simulacrum-info ul li span {
+  font-weight: bold;
+}
+
+.simulacrum .simulacrum-info ul li::before {
+  font-family: "FontAwesome";
+}
+
+.simulacrum .simulacrum-info ul li:nth-child(1)::before {
+  content: "\F2B1";
+}
+
+.simulacrum .simulacrum-info ul li:nth-child(2)::before {
+  content: "\F15C";
+}
+
+.simulacrum .simulacrum-info ul li:nth-child(3)::before {
+  content: "\F18F";
+}
+
+.simulacrum .simulacrum-info ul li:nth-child(4)::before {
+  content: "\F155";
+}
+
+.simulacrum .simulacrum-form h2 {
+  color: #53565a;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.simulacrum .simulacrum-form ul li {
+  margin-bottom: 1.2rem;
+}
+
+.simulacrum .simulacrum-form div.step-1 {
+  margin-top: 1rem;
+}
+
+.simulacrum .simulacrum-form div.step-1 button {
+  margin-top: 1rem;
+}
+
+.simulacrum .simulacrum-form div.step-2 {
+  display: none;
+}
+
+.simulacrum .simulacrum-form fieldset {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.simulacrum .simulacrum-form fieldset label {
+  display: inline-block;
+  width: auto;
+}
+
+.simulacrum .simulacrum-form fieldset select {
+  display: inline-block;
+  width: auto;
 }
 

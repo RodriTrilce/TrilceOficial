@@ -1,4 +1,3 @@
-// https://github.com/hugeinc/flexboxgrid-sass
 .wrapper {
   box-sizing: border-box;
   max-width: 1200px;
@@ -611,3 +610,7 @@
     order: -1; }
   .last-md {
     order: 1; } }
+  
+  .text-init{
+    text-align: initial;
+  }

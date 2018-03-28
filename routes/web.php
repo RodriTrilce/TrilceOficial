@@ -39,6 +39,9 @@ Route::get('/academia/sede', function(){
 
 // Simulacros
 Route::get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
+Route::get('/academia/simulacros', function(){
+  return redirect('/academia');
+});
 
 
 

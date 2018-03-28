@@ -1,0 +1,105 @@
+/**
+ *  Simulacro Sass file
+ */
+.simulacrum{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  
+  .simulacrum-info{
+    h1{
+      color: $orange;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      
+      &::before{
+        content: "";
+        background: $orange;
+        
+        position: absolute;
+        width: 33px;
+        height: 11px;
+        margin-top: 3%;
+      }
+    }
+    
+    h2{
+      
+    }
+    
+    ul{
+      li{
+        margin-bottom: 1.2rem;
+        
+        span{
+          font-weight: bold;
+        }
+        
+        &::before{
+          font-family: $font_icon;
+        }
+        
+        &:nth-child(1)::before {
+          content: "\f2b1";
+        }
+
+        &:nth-child(2)::before {
+          content: "\F15C";
+        }
+
+        &:nth-child(3)::before {
+          content: "\F18F";
+        }
+        
+        &:nth-child(4)::before {
+          content: "\f155";
+        }
+        
+      }
+    }
+  }
+  
+  .simulacrum-form{
+    h2{
+      color: $gray;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    ul{
+      li{
+        margin-bottom: 1.2rem;
+      }
+    }
+    
+    div.step-1{
+      margin-top: 1rem;
+      
+      button{
+        margin-top: 1rem;
+      }
+    }
+    
+    div.step-2{
+      display: none;
+    }
+    
+    fieldset{
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      
+      label{
+        display: inline-block;
+        width: auto;
+      }
+
+      select{
+        display: inline-block;
+        width: auto;
+      }
+
+    }
+    
+  }
+}

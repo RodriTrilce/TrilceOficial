@@ -154,8 +154,6 @@ var home = new _vue2.default({
   }
 });
 
-alert(1);
-
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {

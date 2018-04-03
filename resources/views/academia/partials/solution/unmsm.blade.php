@@ -2,11 +2,22 @@
   <div class="col-xs-12 col-sm-8 center-xs center-sm text-init solution-table">
     
     <!--  headers table-->
-    <div class="row solution-title solution-pucp">
+    <div class="row solution-title solution-unmsm">
       <div class="col-xs-3"></div>
-      <div class="col-xs-3">Evaluación II</div>
-      <div class="col-xs-3">Evaluación DEL TALENTO II</div>
-      <div class="col-xs-3">PRIMERA OPCIÓN</div>
+      <div class="col-xs-4">
+        <div class="row center-xs solution-boders">
+          <div class="col-xs-12">II</div>
+          <div class="col-xs-6">ÁREA A, B y D</div>
+          <div class="col-xs-6">ÁREA C y E</div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row center-xs solution-boders">
+          <div class="col-xs-12">I</div>
+          <div class="col-xs-6">ÁREA A, B y D</div>
+          <div class="col-xs-6">ÁREA C y E</div>
+        </div>
+      </div>
     </div>
     
     <!-- Content table -->

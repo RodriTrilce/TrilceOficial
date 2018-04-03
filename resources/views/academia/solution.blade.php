@@ -64,7 +64,7 @@
     </div>
   </div>
   
-  <div class="row center-xs center-sm text-init">
+  <div class="row center-xs center-sm text-init h-mtop">
     <div class="col-xs-12 col-sm-8">
       <h1 class="solution-h1">
         Descarga los exámenes de admisión resultos

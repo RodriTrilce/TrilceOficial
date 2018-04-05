@@ -265,10 +265,6 @@ fieldset {
   border: 0px;
 }
 
-* {
-  outline: none;
-}
-
 body {
   font-family: 'CaeciliaLTPro-45Light';
 }
@@ -2941,5 +2937,89 @@ footer .footer-right-icons li::after {
   padding: 0.5rem;
   font-weight: bold;
   font-family: 'Geogrotesque-Bd';
+}
+
+.entering-top {
+  background: #f4633a;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "\A     font-family: " Geogrotesque-Rg ";";
+  color: white;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.entering-top ul > li {
+  font-size: 1.4rem;
+  padding-right: 1rem;
+  display: inline;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.entering-top ul > li:first-child::before {
+  content: "";
+}
+
+.entering-top ul > li::before {
+  content: "|";
+  padding-right: 0.7rem;
+  cursor: default;
+}
+
+.entering-top .select {
+  font-size: 1.8rem;
+  font-family: 'Geogrotesque-Bd';
+}
+
+.entering-top .select::before {
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-family: 'Geogrotesque-Rg';
+}
+
+.entering-top .select::after {
+  content: "";
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -45px;
+  background: white;
+}
+
+.entering-table {
+  font-family: 'Geogrotesque-Rg';
+}
+
+.entering-table-top {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #f4633a;
+  color: #f4633a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.entering-table-top > div:first-child {
+  text-align: center;
+}
+
+.entering-table-row > div {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(83, 86, 90, 0.3);
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+}
+
+.entering-table-row > div > div:first-child {
+  text-align: center;
+}
+
+.entering-table-row > div:last-child {
+  border: 0;
 }
 

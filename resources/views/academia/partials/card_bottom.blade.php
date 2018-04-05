@@ -16,14 +16,14 @@
           </a>
         </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="#">
+            <a href="/academia/lista-de-cachimbos-san-marcos">
               <i class="fa fa-cut"></i>
               <h3>Lista de cachimbos</h3>
               <p>Todos nuestros ingresantes.</p>
             </a>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="#">
+            <a href="/academia/olimpiadas-matematicas">
               <i class="fa fa-lightbulb-o"></i>
               <h3>Olimpiadas Matemática</h3>
               <p>Fechas y lugares.</p>

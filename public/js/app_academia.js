@@ -96,7 +96,30 @@ var gid = function gid(elem) {
   return document.getElementById(elem);
 };
 
-// Simulacrum -> Signup Form
+var get = function get(url) {
+  return new Promise(function (resolve, reject) {
+    var req = new XMLHttpRequest();
+    req.open('GET', url);
+
+    req.onload = function () {
+      if (req.status == 200) {
+        resolve(req.response);
+      } else {
+        reject(Error(req.statusText));
+      }
+    };
+
+    req.onerror = function () {
+      reject(Error("Network Error"));
+    };
+
+    req.send();
+  });
+};
+
+/**!
+ *  Simulacrum: Formulario de registro
+ */
 ~function ($, _) {
   if (gid('f1_validate')) {
     var step1 = gid('f1_validate');
@@ -108,6 +131,50 @@ var gid = function gid(elem) {
     });
   }
 }(document, window);
+
+/**!
+ *  Entering: Lista de cachimbos
+ */
+~function ($) {
+  if (page !== 'entering') return;
+
+  function getEntering(university, year) {
+    get('/api/academia/entering/' + university + '/' + year).then(function (response) {
+      response = JSON.parse(response).data;
+      var bind = '';
+      response.forEach(function (e, i) {
+        bind += '\n          <div class="row col-xs-12">\n            <div class="col-xs-1">' + e.entering + '</div>\n            <div class="col-xs">' + e.lastname + '</div>\n            <div class="col-xs">' + e.lastname_second + '</div>\n            <div class="col-xs">' + e.name + '</div>\n            <div class="col-xs-3">' + e.profession + '</div>\n          </div>\n          ';
+      });
+      document.getElementById('entering').innerHTML = bind;
+    }, function (error) {
+      console.error("Failed!", error);
+    });
+  }
+
+  var x = $.getElementById('year_list');
+  var v = x.querySelectorAll('li');
+
+  var _loop = function _loop(i) {
+    v[i].addEventListener('click', function (evt) {
+
+      for (var k = 0; k < v.length; k++) {
+        v[k].classList.remove('select');
+      }
+
+      v[i].classList.add('select');
+      var year = v[i].getAttribute("data-year");
+
+      getEntering(university, year);
+    });
+  };
+
+  for (var i = 0; i < v.length; i++) {
+    _loop(i);
+  }
+
+  // Default
+  getEntering(university, '2018');
+}(document);
 
 /***/ })
 

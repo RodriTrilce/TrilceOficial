@@ -18,9 +18,9 @@ class SimulacrumController extends Controller
      */
      public function index($university)
      {
-        $university = University::where('short_name', $this->l($university))->first();
+        $university = University::validate($this->l($university));
         
-        if(empty($university->name))
+        if(!$university)
           return abort(404);
         
         $results = Simulacrum::where('university_id', $university->id)->get();

@@ -132,6 +132,10 @@
 <script src="http://www.trilce.edu.pe/ztrilce/assets/vendor/sliderjs/jquery.slides.min.js"></script>
   
 <script type="text/javascript">
+  if (typeof page == 'undefined') {
+    var page = '';
+  }
+
   /*slider open*/
   $(function() {
     $('#slides').slidesjs({

@@ -28,34 +28,35 @@ Route::get('/academia', function() {
   return view('academia/index');
 });
 
-// Preparación
+// Preparación (Preparation)
 Route::get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
-// Sedes
+// Sedes (Venue)
 Route::get('/academia/sede/{barrack}', 'Academia\VenueController@index');
 Route::get('/academia/sede', function(){
   return redirect('/academia');
 });
 
-// Simulacros
+// Simulacros (Simulacrum)
 Route::get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
 Route::get('/academia/simulacros', function(){
   return redirect('/academia');
 });
 
-// Solucionarios
+// Solucionarios (Solutions)
 Route::get('/academia/solucionarios-{university}', 'Academia\SolutionsController@index');
 Route::get('/academia/solucionarios', function(){
   return redirect('/academia');
 });
 
+// Lista de Cachimbos (Entering)
+Route::get('/academia/lista-de-cachimbos-{university}', 'Academia\EnteringController@index');
+Route::get('/academia/lista-de-cachimbos', function(){
+  return redirect('/academia');
+});
 
-
-
-
-
-
-
+// Olimpiadas Matematicas (MathOlympics)
+Route::get('/academia/olimpiadas-matematicas', 'Academia\MathOlympicsController@index');
 
 
 

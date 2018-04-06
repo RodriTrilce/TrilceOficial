@@ -15,6 +15,14 @@ class CreateMathOlympicsModelsTable extends Migration
     {
         Schema::create('math_olympics_models', function (Blueprint $table) {
             $table->increments('id');
+            $table->enum('type', ['colegio', 'academia'])->default('academia');
+            $table->string('sede');
+            $table->string('title');
+            $table->string('grade');
+            $table->string('base_url');
+            $table->string('inscription_url');
+            $table->string('inscription_group_url');
+            $table->string('results_url');
             $table->timestamps();
         });
     }

@@ -1,0 +1,102 @@
+.math-olympic{
+  margin-top: 2rem;
+}
+
+.math-olympic-table{
+  >.row{
+    border-bottom: 1px solid transparentize($gray, 0.7);
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    
+    >.math-olympic-title{
+      color: $orange;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem;
+      
+    }
+    
+    >.math-olympic-content{
+      color: $gray;
+      font-size: 0.9rem;
+      font-family: 'Geogrotesque-Rg';
+      
+        >div{
+          padding-right: 5px;
+      }
+    }// end math olympic content
+  }// end div.row
+}
+
+.math-olympic-list{
+  margin-left: 1.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  @media screen and (max-width: 768px) {
+    margin:0;
+    margin-top: 1rem;
+  }
+
+  .active{
+    font-weight: bold;
+  }
+    
+  li{
+    display: inline;
+    margin-right: 1.5rem;
+    padding-left: 18px;
+    
+    @media screen and (max-width: 768px) {
+      margin-left: 7px;
+      margin-right: 0rem;
+      font-size: 0.65rem;
+    }
+    
+    &::before{
+        position: absolute;
+        color: $orange;
+        font-family: 'FontAwesome';
+        font-size: 15px;
+        margin-left: -18PX;
+        @media screen and (max-width: 768px) {
+          margin-top: -1px;
+          font-size: 12px;
+        }
+      }
+
+          
+    &:nth-child(1){
+      &::before{
+        content: "\f2eb";
+      }
+    }
+
+    &:nth-child(2){
+      &::before{
+        content: "\f364";
+      }
+    }
+
+    &:nth-child(3){
+      &::before{
+        content: "\f369";
+      }
+    }
+
+    &:nth-child(4){
+      &::before{
+        content: "\f156";
+      }
+    }
+    
+  }
+  
+  a,a:link{
+    color: $gray;
+  }
+  a:hover{
+    color: black;
+  }
+}

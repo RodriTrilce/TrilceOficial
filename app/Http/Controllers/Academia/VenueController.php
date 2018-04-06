@@ -12,7 +12,7 @@ class VenueController extends Controller
     {
       $venue = VenueDB::where('name', $this->l($barrack))->first();
       
-      if(!$venue->name)
+      if(!isset($venue->name))
         return abort(404);
 
       return view('/academia/venue')->with([

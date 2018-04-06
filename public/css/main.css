@@ -880,7 +880,7 @@ nav .menu-sedes-ul > li a:link {
 
 @media screen and (max-width: 768px) {
   .header-double-top > .row .header-double-title h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 0.1rem;
   }
 }
@@ -3021,5 +3021,108 @@ footer .footer-right-icons li::after {
 
 .entering-table-row > div:last-child {
   border: 0;
+}
+
+.math-olympic {
+  margin-top: 2rem;
+}
+
+.math-olympic-table > .row {
+  border-bottom: 1px solid rgba(83, 86, 90, 0.3);
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.math-olympic-table > .row > .math-olympic-title {
+  color: #f4633a;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.math-olympic-table > .row > .math-olympic-content {
+  color: #53565a;
+  font-size: 0.9rem;
+  font-family: 'Geogrotesque-Rg';
+}
+
+.math-olympic-table > .row > .math-olympic-content > div {
+  padding-right: 5px;
+}
+
+.math-olympic-list {
+  margin-left: 1.3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .math-olympic-list {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+
+.math-olympic-list .active {
+  font-weight: bold;
+}
+
+.math-olympic-list li {
+  display: inline;
+  margin-right: 1.5rem;
+  padding-left: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .math-olympic-list li {
+    margin-left: 7px;
+    margin-right: 0rem;
+    font-size: 0.65rem;
+  }
+}
+
+.math-olympic-list li::before {
+  position: absolute;
+  color: #f4633a;
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  margin-left: -18PX;
+}
+
+@media screen and (max-width: 768px) {
+  .math-olympic-list li::before {
+    margin-top: -1px;
+    font-size: 12px;
+  }
+}
+
+.math-olympic-list li:nth-child(1)::before {
+  content: "\F2EB";
+}
+
+.math-olympic-list li:nth-child(2)::before {
+  content: "\F364";
+}
+
+.math-olympic-list li:nth-child(3)::before {
+  content: "\F369";
+}
+
+.math-olympic-list li:nth-child(4)::before {
+  content: "\F156";
+}
+
+.math-olympic-list a,
+.math-olympic-list a:link {
+  color: #53565a;
+}
+
+.math-olympic-list a:hover {
+  color: black;
 }
 

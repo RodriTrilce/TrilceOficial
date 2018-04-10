@@ -15,8 +15,6 @@
       </div>
     </div>
   </div>
-
-
   
   <div class="row center-xs center-sm about-top">
     <div class="col-xs-11 col-sm-10 text-init">
@@ -79,7 +77,6 @@
     </div>
   </div>
   <!-- End blocks top -->
-
   
   <div class="row center-xs center-sm about-mission-vision">
     <div class="col-xs-11 col-sm-10 col-md-8 text-init">
@@ -110,9 +107,6 @@
       </div>
     </div>
   </div>
-
-
-
   
   <div class="row center-xs center-sm about-values">
     <div class="col-xs-11 col-sm-9">
@@ -147,17 +141,13 @@
     </div>
   </div>
   </div>
-  
-  
-  
-  
-  
-  
-  
 
   @include('academia.partials.card_bottom')
 @endsection
 
 @section('scripts')
+  <script>
+    page = 'about_us';
+  </script>
   @parent
 @endsection

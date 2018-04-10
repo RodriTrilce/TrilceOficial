@@ -85,8 +85,8 @@
                   </ul>
                 </li>
                 
-                <li><a href="/academia/blog">Blog</a></li>
-                <li><a href="/academia/multimedia">Multimedia</a></li>
+                <li class="disable"><a>Blog</a></li>
+                <li class="disable"><a>Multimedia</a></li>
                 <li><a href="/academia/contacto">Contáctenos</a></li>
               </ul>
             </nav>

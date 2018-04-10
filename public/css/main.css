@@ -271,7 +271,8 @@ body {
   font-family: 'CaeciliaLTPro-45Light';
 }
 
-a {
+a,
+a:link {
   text-decoration: none;
 }
 
@@ -440,6 +441,30 @@ nav > ul {
 }
 
 nav > ul .menu-click-sedes {
+  display: none;
+}
+
+nav > ul .disable {
+  cursor: default;
+}
+
+nav > ul .disable a,
+nav > ul .disable a:link {
+  color: rgba(83, 86, 90, 0.6);
+}
+
+nav > ul .disable a:hover,
+nav > ul .disable a:link:hover {
+  color: rgba(83, 86, 90, 0.6);
+}
+
+nav > ul .disable a:hover a,
+nav > ul .disable a:link:hover a {
+  color: rgba(83, 86, 90, 0.6);
+}
+
+nav > ul .disable a:hover::after,
+nav > ul .disable a:link:hover::after {
   display: none;
 }
 
@@ -3214,6 +3239,89 @@ footer .footer-right-icons li::after {
 
 .math-olympic-list a:hover {
   color: black;
+}
+
+.math-olympic-onam {
+  margin-top: 2rem;
+}
+
+.math-olympic-onam i {
+  color: #f4633a;
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+
+.math-olympic-onam .title h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.math-olympic-onam .data {
+  color: #f4633a;
+  font-family: 'Geogrotesque-Rg';
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.math-olympic-onam .inscription {
+  font-family: 'Geogrotesque-Rg';
+}
+
+.math-olympic-onam .center-onam {
+  margin-top: 1.5rem;
+}
+
+.math-olympic-onam .basics {
+  background: #ededed;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .math-olympic-onam .basics {
+    padding: 0.6rem;
+  }
+}
+
+.math-olympic-onam .block-onam > div {
+  background: rgba(83, 86, 90, 0.2);
+  padding: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .math-olympic-onam .block-onam > div {
+    padding: 0.5rem;
+  }
+}
+
+.math-olympic-onam .block-onam > div a {
+  color: #53565a;
+  font-weight: bold;
+}
+
+.math-olympic-onam .block-onam > div:nth-child(even) {
+  background: rgba(83, 86, 90, 0.35);
+}
+
+.math-olympic-onam .sponsor {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .math-olympic-onam .sponsor > div:first-child {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.math-olympic-onam .sponsor > div:first-child span {
+  color: #f4633a;
+  font-weight: bold;
+}
+
+.math-olympic-onam .sponsor .title {
+  color: #f4633a;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .about-top {

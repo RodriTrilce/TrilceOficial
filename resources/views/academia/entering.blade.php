@@ -75,7 +75,7 @@
   
   <div class="row center-xs center-sm entering-table">
     <div class="row col-sm-8 col-xs-12 text-init">
-      
+
       <div class="row col-xs-12 entering-table-top">
         <div class="col-xs-1">#</div>
         <div class="col-xs">A. Paterno</div>
@@ -85,37 +85,10 @@
       </div>
     
       <div class="row col-sm-12 col-xs-12 text-init entering-table-row" id="entering">
-<!--
-        <div class="row col-xs-12">
-          <div class="col-xs-1">1</div>
-          <div class="col-xs">SALCEDO</div>
-          <div class="col-xs">CASTRO</div>
-          <div class="col-xs">FRANCO MANUEL</div>
-          <div class="col-xs-3">ING DE SOFTWARE</div>
-        </div>
-        <div class="row col-xs-12">
-          <div class="col-xs-1">1</div>
-          <div class="col-xs">SALCEDO</div>
-          <div class="col-xs">CASTRO</div>
-          <div class="col-xs">FRANCO MANUEL</div>
-          <div class="col-xs-3">ING DE SOFTWARE</div>
-        </div>
-        <div class="row col-xs-12">
-          <div class="col-xs-1">1</div>
-          <div class="col-xs">SALCEDO</div>
-          <div class="col-xs">CASTRO</div>
-          <div class="col-xs">FRANCO MANUEL</div>
-          <div class="col-xs-3">ING DE SOFTWARE</div>
-        </div>
-      -->
       </div>
-      
-      
-      
+    
     </div>
   </div>
-  
-  
 
 
   @include('academia.partials.card_bottom')

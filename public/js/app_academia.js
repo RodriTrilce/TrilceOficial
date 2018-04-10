@@ -180,6 +180,8 @@ var get = function get(url) {
  *  Contact: get Hover state on nav to list Sedes
  */
 (function ($) {
+  if (page !== 'about_us') return;
+
   var elem = $.getElementById('getSedes');
   elem.addEventListener('click', function (evt) {
     console.log(1);

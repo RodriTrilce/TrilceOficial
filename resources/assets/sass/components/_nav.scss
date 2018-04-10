@@ -143,11 +143,30 @@ nav{
     .menu-click-sedes{
       display: none;
     }
-    
+
+    .disable{
+      cursor: default;
+      
+      a,a:link{
+        color: $disable_link;
+        &:hover{
+          color: $disable_link;
+          a{
+            color: $disable_link;
+          }
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+        
     > li{
       display: inline-block;
       margin-right: 1.8rem;
       font-size: 1.15rem;
+      
+
       
       &:first-child{
         display: none;

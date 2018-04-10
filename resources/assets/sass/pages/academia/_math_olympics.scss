@@ -100,3 +100,92 @@
     color: black;
   }
 }
+
+.math-olympic-onam{
+  margin-top: 2rem;
+  
+  i{
+    color: $orange;
+    font-size: 1rem;
+    margin-right: 0.2rem;
+  }
+
+  .title{
+    h2{
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+  
+  .data{
+    color: $orange;
+    font-family: 'Geogrotesque-Rg';
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .inscription{
+    font-family: 'Geogrotesque-Rg';
+  }
+  
+  .center-onam{
+    margin-top: 1.5rem;
+  }
+  
+  .basics{
+    background: $background-form;
+    font-weight: bold;
+    @media screen and (max-width: 768px){
+      padding: 0.6rem;
+    }
+  }
+  
+  .block-onam{
+    >div{
+      background: transparentize($gray, 0.8);
+      padding: 2.5rem;
+      @media screen and (max-width: 768px){
+        padding: 0.5rem;
+      }
+
+      a{
+        color: $gray;
+        font-weight: bold;
+      }
+      
+      &:nth-child(even){
+        background: transparentize($gray, 0.65);
+      }
+    }
+  }
+    
+    
+  .sponsor{
+    margin-top: 2rem;
+    
+    >div{
+      &:first-child{
+        @media screen and (max-width: 768px){
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+        }
+
+        span{
+          color: $orange;
+          font-weight: bold;
+        }
+      }
+      
+      &:last-child{
+        
+      }
+    }
+    
+    .title{
+      color: $orange;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+  
+}

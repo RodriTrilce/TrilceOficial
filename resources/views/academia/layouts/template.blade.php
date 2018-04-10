@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>@hasSection('title')@yield('title') - @endif Academia Trilce</title>
@@ -30,9 +30,9 @@
               
               <ul>
                 <li>Intranet para alumnos | Call center: <b>6198100</b></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="/academia/nosotros">Nosotros</a></li>
                 
-                <li>
+                <li id="sedes">
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content">
@@ -87,7 +87,7 @@
                 
                 <li><a href="/academia/blog">Blog</a></li>
                 <li><a href="/academia/multimedia">Multimedia</a></li>
-                <li><a href="/contacto">Contáctenos</a></li>
+                <li><a href="/academia/contacto">Contáctenos</a></li>
               </ul>
             </nav>
             
@@ -98,34 +98,7 @@
   
 @yield('content')
 
-<footer>
-  <div class="row">
-    <div class="col-xs-12 footer-top"><span>Usted está aquí: <b>Academia</b></span></div>
-    <div class="row between-xs center-xs footer-menu">
-      <div class="col-xs-6">
-        <ul>
-            <li><a href="/colegio">Colegio</a></li>
-            <li><a href="/academia">Academia</a></li>
-            <li><a href="#">Vacaciones útiles</a></li>
-            <li><a href="#">Menú</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-6">
-          <ul class="footer-right-icons">
-            <li><a href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" title="Chatea con nosotros" target="_blank" rel="nofollow"><i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="https://twitter.com/TRILCEtweet" title="Siguenos en Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Danos like en Facebook" target="_blank" rel="nofollow"><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" title="Suscribete en Youtube" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
-            <li><a href="https://www.instagram.com/trilcecolegioacademia/" title="Siguenos en Instagram" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
-            <li>© {{date("Y")}} Trilce. Todos los derechos reservados</li>
-          </ul>
-      </div>
-    </div>
-    <div class="col-xs-12 center-xs footer-bottom">
-      © {{date("Y")}} Trilce. Todos los derechos reservados | <a href="/academia/contacto">Contáctenos</a>
-    </div>
-  </div>
-</footer>
+@include('academia.layouts.parts.footer')
 
 @section('scripts')
 
@@ -133,11 +106,9 @@
 <script src="http://www.trilce.edu.pe/ztrilce/assets/vendor/sliderjs/jquery.slides.min.js"></script>
   
 <script type="text/javascript">
-  if (typeof page == 'undefined') {
+  if (typeof page == 'undefined')
     var page = '';
-  }
 
-  /*slider open*/
   $(function() {
     $('#slides').slidesjs({
         width: 1500,
@@ -153,7 +124,6 @@
         }
     });
   });
-  /*slider close*/
 </script>
 <script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>
 @show

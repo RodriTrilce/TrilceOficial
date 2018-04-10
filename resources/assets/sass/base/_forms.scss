@@ -23,7 +23,7 @@ select{
 
 
 button.validate{
-  background-color: white;
+  background-color: transparent;
   border-color: transparent;
   font-size: 1.5rem;
   font-weight: bold;
@@ -33,4 +33,7 @@ button.validate{
 
 fieldset{
   border: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
+

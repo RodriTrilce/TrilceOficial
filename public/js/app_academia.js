@@ -176,6 +176,18 @@ var get = function get(url) {
   getEntering(university, '2018');
 }(document);
 
+/**!
+ *  Contact: get Hover state on nav to list Sedes
+ */
+(function ($) {
+  var elem = $.getElementById('getSedes');
+  elem.addEventListener('click', function (evt) {
+    console.log(1);
+    var go = $.getElementById('sedes');
+    go.focus();
+  });
+})(document);
+
 /***/ })
 
 /******/ });

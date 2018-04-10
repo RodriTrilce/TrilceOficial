@@ -106,10 +106,17 @@ var get = (url) => {
   
 })(document);
 
-
-
-
-
+/**!
+ *  Contact: get Hover state on nav to list Sedes
+ */
+(function($){
+  const elem = $.getElementById('getSedes');
+  elem.addEventListener('click', (evt) => {
+    console.log(1)
+    let go = $.getElementById('sedes');
+    go.focus();
+  })
+})(document);
 
 
 

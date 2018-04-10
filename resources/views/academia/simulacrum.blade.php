@@ -188,7 +188,7 @@
     <div class="col-xs-12 col-sm-9">
       <div class="row simulacrum-results">
         
-        @foreach ($data as $key => $v)
+      @foreach ($data as $key => $v)
         <div class="col-xs-12 col-sm-2">
           <a href="{{ $v->url }}" target="_blank">
             <div class="simulacrum-results-pdf">

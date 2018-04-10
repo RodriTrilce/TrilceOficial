@@ -12,18 +12,22 @@
 */
 
 
+/**
+ * General
+ */
+ 
+ // Inicio (Home)
+ Route::get('/', function () {
+    return view('home');
+ });
+
 
 
 /**
  *  Academia
  */
 
-// Home
-Route::get('/', function () {
-   return view('home');
-});
-
-// Index
+// Página Princial (Index)
 Route::get('/academia', function() {
   return view('academia/index');
 });
@@ -58,9 +62,12 @@ Route::get('/academia/lista-de-cachimbos', function(){
 // Olimpiadas Matematicas (MathOlympics)
 Route::get('/academia/olimpiadas-matematicas', 'Academia\MathOlympicsController@index');
 
+// Nosotros (AboutUs)
+Route::get('/academia/nosotros', 'Academia\AboutUsController@index');
 
-
-
+// Contactenos (Contact)
+Route::get('/academia/contacto', 'Academia\ContactController@index');
+Route::post('/academia/contacto/send', 'Academia\ContactController@send');
 
 
 

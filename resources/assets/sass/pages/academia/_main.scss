@@ -38,16 +38,17 @@
       }
 
       .nuevos-i-top{
-        color: transparentize($gray, 0.4);
         font-family: 'Geogrotesque-Rg';
         
         h3{
           font-size: 2.2rem;
+          color: transparentize($gray, 0.4);
         }
         
         h4{
           letter-spacing: 0.25rem;
           font-size: 1.3rem;
+          color: transparentize($gray, 0.4);
         }
         
         >img{
@@ -68,6 +69,9 @@
       }// end class:nuevos-i-botttom
       
       &:hover{
+        h3,h4{
+          color: $gray;
+        }
         border-color: $orange;
         img{
           opacity:1 !important;
@@ -239,9 +243,11 @@
   }
   
   .nuevos-i-top{
-    color: $gray !important;
+    h3,h4{
+      color: $gray !important;
+    }
+
   }
-  
   
   &::after{
     position: absolute;

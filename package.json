@@ -23,6 +23,7 @@
     "vue": "^2.5.7"
   },
   "dependencies": {
+    "ajv": "^6.4.0",
     "bourbon": "^5.0.0",
     "vue": "^2.5.16",
     "vue-carousel": "^0.6.9",

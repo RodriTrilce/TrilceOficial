@@ -17,14 +17,15 @@
 
   <div class="nuevos-i">
     <div class="row center-xs">
-      <div class="col-xs-9 start-xs nuevos-i-title">
+      <div class="col-xs-9 col-sm-11 col-md-10 start-xs nuevos-i-title">
         <div class="box">
           <h2>Nuevos Inicios</h2>
           <p>Elija la preparacion universitaria, exclusiva que está buscando</p>
         </div>
       </div>
-      <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg">
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+      
+      <div class="row nuevos-i-box col-xs-12 col-sm-11 col-md-10 col-lg-9 between-xs center-sm center-md center-lg">
+        <div class="col-xs">
           <a href="/academia/preparacion-uni">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-uni.jpg" alt="UNI">
@@ -37,7 +38,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="col-xs">
           <a href="/academia/preparacion-san-marcos">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
@@ -50,7 +51,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="col-xs">
           <a href="/academia/preparacion-pucp">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-cato.jpg" alt="PUCP">
@@ -64,6 +65,7 @@
           </a>
         </div>
       </div>
+      
     </div>
   </div>
   

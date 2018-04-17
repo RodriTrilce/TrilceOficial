@@ -5,11 +5,13 @@
  */
  import Vue from 'vue'
  import VideoBg from 'vue-videobg'
- import VueAgile from 'vue-agile'
+// import VueAgile from 'vue-agile'
 
  Vue.component('video-bg', VideoBg)
+ /*
  Vue.use(VueAgile)
  Vue.component('VueAgile', VueAgile)
+*/
 
  // or
 var home = new Vue({

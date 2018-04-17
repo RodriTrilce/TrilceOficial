@@ -39,6 +39,7 @@
         li{
           font-size: 1.3rem;
           position: relative;
+          
           &::before{
             position: absolute;
             top: 5px;
@@ -59,7 +60,6 @@
           
           &:hover{
             a{
-              font-weight: bold;
               color: $orange;
             }
             &::before{

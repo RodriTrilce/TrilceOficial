@@ -287,8 +287,14 @@ h6 {
 
 a,
 li {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+a:hover,
+li:hover {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 /**
@@ -363,7 +369,6 @@ nav > ul > li:nth-child(3):hover > .dropdown-desk {
 }
 
 .dropdown-desk .dropdown-desk-content > div ul li:hover a {
-  font-weight: bold;
   color: #f4633a;
 }
 
@@ -2273,8 +2278,10 @@ footer .footer-right-icons li::after {
 }
 
 .nuevos-i .nuevos-i-box > div {
-  border: 0.6rem solid rgba(83, 86, 90, 0.3);
+  border: 0.55rem solid rgba(83, 86, 90, 0.3);
   margin-right: 6%;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .nuevos-i .nuevos-i-box > div > a {
@@ -2317,6 +2324,8 @@ footer .footer-right-icons li::after {
 }
 
 .nuevos-i .nuevos-i-box > div:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
   border-color: #f4633a;
 }
 

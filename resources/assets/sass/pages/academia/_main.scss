@@ -25,8 +25,9 @@
     margin-top: 15px;
 
     >div {
-      border: 0.6rem solid transparentize($gray, .7);
+      border: 0.55rem solid transparentize($gray, .7);
       margin-right: 6%;
+      transition: 0.1s ease-out;
       
       >a{
         width: 100%;
@@ -69,14 +70,18 @@
       }// end class:nuevos-i-botttom
       
       &:hover{
+        transition: 0.2s ease-in;
+        border-color: $orange;
+        
         h3,h4{
           color: $gray;
         }
-        border-color: $orange;
+        
         img{
           opacity:1 !important;
           filter: alpha(opacity=100) !important;
         }
+        
         .nuevos-i-bottom{
           font-weight: bold;
         }

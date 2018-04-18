@@ -135,8 +135,7 @@ var home = new _vue2.default({
     message: 'CHCHC'
   },
   components: {
-    VideoBg: _vueVideobg2.default,
-    VueAgile: VueAgile
+    VideoBg: _vueVideobg2.default
   },
   methods: {
     loader: function loader() {

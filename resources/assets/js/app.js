@@ -20,8 +20,7 @@ var home = new Vue({
      message: 'CHCHC'
    },
    components: {
-     VideoBg,
-     VueAgile
+     VideoBg
    },
    methods: {
      loader: function(){

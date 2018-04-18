@@ -344,14 +344,14 @@ nav{
   #menu-toggle:checked ~ ul {
     position: absolute;
     display: block;
-    top:0;
-    bottom: 0;
+//    top:0;
+//    bottom: 0;
     left: 0px;
     
     width: 100vw;
     height: 100vh;
     
-    margin-top: 11.9vh;
+//    margin-top: 11.9vh;
     background-color: white;
     z-index: 9999999999;
     text-align: center;
@@ -382,8 +382,8 @@ nav{
           text-transform: none;
           padding: 0.2rem;
         }
-      }
-    }
+      }//end a
+    }//en li
   }
 }
 

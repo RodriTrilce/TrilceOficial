@@ -16,3 +16,10 @@ mix.js('resources/assets/js/app.js', 'public/js/app.js')
 mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js')
 mix.sass('resources/assets/sass/main.scss','public/css');
 
+
+// Assets to public
+mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
+mix.copyDirectory('resources/assets/images', 'public/static/images');
+mix.copyDirectory('resources/assets/fonts', 'public/static/fonts');
+mix.copyDirectory('resources/assets/video', 'public/static/video');
+

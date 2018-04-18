@@ -18,7 +18,7 @@ mix.sass('resources/assets/sass/main.scss','public/css');
 
 
 // Assets to public
-mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
+//mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
 mix.copyDirectory('resources/assets/images', 'public/static/images');
 mix.copyDirectory('resources/assets/fonts', 'public/static/fonts');
 mix.copyDirectory('resources/assets/video', 'public/static/video');

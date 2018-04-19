@@ -17,8 +17,8 @@
       <div class="col-xs-6 logo">
         <a href="/academia/"><img src="{{{ asset('static/images/academia/logo.png') }}}" alt="Trilce"></a>
       </div>
-      <div class="col-xs-6 end-xs pre-nav">
-          <div class="col-xs12 nav-info">
+      <div class="row col-xs-6 end-xs pre-nav">
+          <div class="col-xs-12 nav-info">
               <span>Intranet para alumnos | Call center: <b>6198100</b></span>
           </div>
           <div class="col-xs-12">
@@ -37,13 +37,13 @@
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content">
                       <div>
-                        <h3>San Marcos - UNI - PUCP</h3>
+                        <h3>UNMSM - UNI - PUCP</h3>
                         <ul>
                           <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                         </ul>
                       </div>
                       <div>
-                        <h3>San Marcos - UNI</h3>
+                        <h3>UNMSM - UNI</h3>
                         <ul>
                           <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
                           <li><a href="/academia/sede/comas">Comas</a></li>
@@ -57,7 +57,7 @@
                         </ul>
                       </div>
                       <div>
-                        <h3>San Marcos</h3>
+                        <h3>UNMSM</h3>
                         <ul>
                           <li><a href="/academia/sede/marsano">Marsano</a></li>
                         </ul>

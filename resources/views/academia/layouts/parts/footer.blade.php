@@ -8,6 +8,7 @@
             <li><a href="/academia">Academia</a></li>
             <li><a href="#">Vacaciones útiles</a></li>
             <li><a href="#">Menú</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
         </ul>
       </div>
       <div class="col-xs-6">

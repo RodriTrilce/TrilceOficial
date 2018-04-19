@@ -8,27 +8,30 @@
   padding-top: 50px;
   z-index: 12;
   text-align: left;
+  transition: 0.3s all;
+  visibility: visible;
 }
 
 .dropdown-desk{
-  display: none;
-  
+  right: 0;
+  position: absolute;
+  visibility: hidden;
+    
   .dropdown-desk-content{
-    border-top: 8px solid $orange;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     width: 100%;
+    padding: 3vw;
+    border-top: 8px solid $orange;
     background: white;
-    padding: 3rem;
     
     >div{
-      width: 20%;
       font-family: 'Geogrotesque-Rg';
       
       h3{
         color: $gray;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: 1rem;
       }
@@ -79,7 +82,7 @@
         top: 120%;
         width: 1px;
         height: 85%;
-        margin-left: -45px;
+        margin-left: -3%;
         background: transparentize($gray, 0.8);
       }
       
@@ -93,27 +96,23 @@
     
   }
   
-  
-  &:hover{
-    @extend %dropdown-desk-active;
-  }
 }
 
 .nav-info{
-  margin-top: 5px;
-}
-
-.nav-info span{
-  color: white;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 0.8rem;
-  background-color: $orange;
-  
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+    margin-top: 5px;
+    
+    >span{
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+    background-color: $orange;
+    
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }//end span
 }
 
 .pre-nav{
@@ -127,8 +126,6 @@
       Nav
 */
 nav{
-  margin-bottom: 6%;
-  
   .toogle-content{
     display: none;
   }
@@ -138,14 +135,6 @@ nav{
   */
   
   > ul{
-    margin-top: 8%;
-    
-    @media screen and (max-width: 500px) {
-      margin-top: 8%;
-    }
-    @media screen and (max-width: 768px) {
-      margin-top: 6%;
-    }
     
     .menu-click-sedes{
       display: none;
@@ -214,24 +203,9 @@ nav{
 //        position: relative;
 
         &:hover > .dropdown-desk{
-
           @extend %dropdown-desk-active;
-          
           width: 100vw;
-          margin-left: -50vw;
           height: 100px;
-          left: 49.58%;
-          position: absolute;
-          
-          @media screen and (max-width: 1683px) {
-            left: 49.55%;
-          }
-          
-          @media screen and (max-width: 1570px) {
-            left: 49.55%;
-          }
-          
-          
         }
       }// fin menu desktop sedes
 
@@ -350,19 +324,15 @@ nav{
   
   
   #menu-toggle:checked ~ ul {
-    position: absolute;
     display: block;
-//    top:0;
-//    bottom: 0;
+    position: absolute;
+    z-index: 9999999999;
     left: 0px;
-    
     width: 100vw;
     height: 100vh;
-    
-//    margin-top: 11.9vh;
     background-color: white;
-    z-index: 9999999999;
     text-align: center;
+    margin-top: 15px;
     
   }//end ul
   

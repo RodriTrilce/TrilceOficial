@@ -28,9 +28,7 @@
  */
 
 // Página Princial (Index)
-Route::get('/academia', function() {
-  return view('academia/index');
-});
+Route::get('/academia', 'Academia\IndexController@index');
 
 // Preparación (Preparation)
 Route::get('/academia/preparacion-{university}', 'Academia\PreparationController@index');

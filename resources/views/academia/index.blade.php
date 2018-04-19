@@ -1,7 +1,7 @@
 @extends('academia.layouts.template')
 
 @section('title', '')
-
+@section('afterBody', $print)
 @section('content')
   
   <section>
@@ -70,4 +70,10 @@
   </div>
   
   @include('academia.partials.card_bottom')
+@endsection
+@section('scripts')
+  <script>
+    page = 'index';
+  </script>
+  @parent
 @endsection

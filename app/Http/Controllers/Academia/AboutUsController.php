@@ -7,8 +7,13 @@ use App\Http\Controllers\Controller;
 
 class AboutUsController extends Controller
 {
-    public function index()
-    {
-      return view('/academia/about_us');
-    }
+  /**
+   * Display a listing of the resource.
+   *
+   * @return \Illuminate\Http\Response
+   */
+   public function index()
+   {
+     return view('/academia/about_us');
+   }
 }

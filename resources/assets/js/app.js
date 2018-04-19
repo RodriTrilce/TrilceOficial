@@ -5,15 +5,9 @@
  */
  import Vue from 'vue'
  import VideoBg from 'vue-videobg'
-// import VueAgile from 'vue-agile'
 
  Vue.component('video-bg', VideoBg)
- /*
- Vue.use(VueAgile)
- Vue.component('VueAgile', VueAgile)
-*/
 
- // or
 var home = new Vue({
    el: '#h-k',
    data: {
@@ -24,7 +18,6 @@ var home = new Vue({
    },
    methods: {
      loader: function(){
-       let a = this;
        setTimeout(function(){
          document.body.className += ' loaded'
        }, 1000)

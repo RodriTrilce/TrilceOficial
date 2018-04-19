@@ -108,11 +108,17 @@
     padding-right: 20px;
     font-size: 0.8rem;
     background-color: $orange;
-    
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
   }//end span
+  
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  
+  .fa-home{
+    color: white;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
 }
 
 .pre-nav{
@@ -135,7 +141,9 @@ nav{
   */
   
   > ul{
-    
+    display: flex;
+    justify-content: flex-end;
+   
     .menu-click-sedes{
       display: none;
     }
@@ -167,33 +175,14 @@ nav{
       &:first-child{
         display: none;
       }
-      
-      &:hover{
-        
-        >a{
-          position: relative;
-          color: $orange;
-          &::after{
-            content: "";
-            width: 23px;
-            height: 10px;
-            background: $gray;
-            top: 30px;
-            right: 30%;
-            position: absolute;
-            display: inline-block;
-          }
-        }
-      }
-      
-            
       >a{
         display: block;
+        width: 100%;
+        height: 100%;
         color: $gray;
         font-family: 'Geogrotesque-Rg';
         transition: ease-out 0.01s;
         text-transform: uppercase;
-        
       }
       
       /**
@@ -240,7 +229,7 @@ nav{
     >ul{
       display: none;
       position: relative;
-      
+            
       .menu-click-sedes{
         display: block;
       }
@@ -332,7 +321,7 @@ nav{
     height: 100vh;
     background-color: white;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 35px;
     
   }//end ul
   
@@ -364,5 +353,6 @@ nav{
     }//en li
   }
 }
+
 
 

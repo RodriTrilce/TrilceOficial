@@ -11,7 +11,11 @@
   <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 </head>
 <body>
-  
+
+@hasSection('afterBody')
+  {!! $print !!}
+@endif
+
   <header>
     <div class="row between-xs">
       <div class="col-xs-6 logo">
@@ -19,7 +23,7 @@
       </div>
       <div class="row col-xs-6 end-xs pre-nav">
           <div class="col-xs-12 nav-info">
-              <span>Intranet para alumnos | Call center: <b>6198100</b></span>
+              <span><a href="/"><i class="fa fa-home"></i></a> | Intranet para alumnos | Call center: <b>6198100</b></span>
           </div>
           <div class="col-xs-12">
             <nav>

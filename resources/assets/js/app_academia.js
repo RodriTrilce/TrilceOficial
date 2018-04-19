@@ -1,5 +1,7 @@
-/**
- *  Main Academia Js File
+/*!
+ * App.js v0.1
+ * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
+ * Released under the Trilce Group.
  */
  
 // Utils
@@ -37,6 +39,19 @@ var get = (url) => {
   });
 }
 
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+
+
 /**!
  *  Simulacrum: Formulario de registro
  */
@@ -57,9 +72,8 @@ var get = (url) => {
  *  Entering: Lista de cachimbos
  */
 ~(($) => {
-  if(page !== 'entering') return;
+  if(page !== 'entering') return false;
 
-  
   function getEntering(university,year)
   {
     get(`/api/academia/entering/${university}/${year}`).then((response) => {
@@ -82,45 +96,32 @@ var get = (url) => {
     })
   }
   
-
-  
   var x = $.getElementById('year_list');
   var v = x.querySelectorAll('li');
   
-  for (let i = 0; i < v.length; i++) {
-    v[i].addEventListener('click', (evt) =>{
+  v.forEach(elem => {
+    elem.addEventListener('click', () => {
       
-      for(var k=0; k < v.length; k++){ v[k].classList.remove('select') }
-      
-      v[i].classList.add('select');
-      var year = v[i].getAttribute("data-year");
-      
-      getEntering(university, year);
+      v.forEach(e => e.classList.remove('select'));
+      elem.classList.add('select');
+      getEntering(university, elem.getAttribute('data-year'));
       
     });
-    
-  }
-  
+  });
+
   // Default
   getEntering(university, '2018');
   
 })(document);
 
-/**!
- *  Contact: get Hover state on nav to list Sedes
- */
-(function($){
-  if(page !== 'about_us') return;
 
-  const elem = $.getElementById('getSedes');
-  elem.addEventListener('click', (evt) => {
-    console.log(1)
-    let go = $.getElementById('sedes');
-    go.focus();
-  })
-})(document);
-
-
-
-
-
+~(function(w,d){
+  if(page !== 'index') return false;
+  
+  w.onload = function()
+  {
+    setTimeout(function(){
+      document.body.className += ' loaded'
+    }, 1000)
+  }
+})(window,document);

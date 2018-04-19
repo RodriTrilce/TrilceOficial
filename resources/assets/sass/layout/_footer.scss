@@ -30,12 +30,13 @@ footer{
   }
   
   .footer-bottom{
+    margin-top: 2rem;
     @media screen and (max-width: 768px) {
       display: none;
     }
-    
   }
 
+.links{
   ul{
     margin-top: 15px;
     
@@ -48,7 +49,8 @@ footer{
       }
 
       &::after{
-        padding-left: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         content:"|";
       }
       
@@ -80,6 +82,7 @@ footer{
     }// end media ul
 
   }//end ul
+}
   
   
   .footer-right-icons {
@@ -101,6 +104,7 @@ footer{
         
         &::after{
           content:"";
+          padding-left: 10px;
         }
         
         @media screen and (max-width: 768px) {

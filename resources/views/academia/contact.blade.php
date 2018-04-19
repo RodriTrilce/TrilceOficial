@@ -73,5 +73,8 @@
 @endsection
 
 @section('scripts')
+  <script>
+    page = 'contact';
+  </script>
   @parent
 @endsection

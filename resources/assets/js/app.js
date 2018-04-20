@@ -24,6 +24,7 @@
              console.log('Ready baby')
              video.play()
              document.body.className += ' loaded';
+             video.removeEventListener('loadeddata', this)
         });
         
       }

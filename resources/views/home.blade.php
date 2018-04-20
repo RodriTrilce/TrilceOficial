@@ -45,7 +45,7 @@
         </div>
         
         <div id="h-k">
-          <video-bg class="home-bg" :sources="['static/video/video_home.mp4']" img="static/images/home/home_movil.png">
+          <video-bg class="home-bg" :sources="['static/video/v.webm']" img="static/images/home/home_movil.png">
             <div class="home-overlay"></div>
           </video-bg>
         </div>

@@ -18,7 +18,7 @@
     },
     methods: {
       loader: function(){
-        const video = document.getElementById("videobackground");
+        const video = document.getElementsByTagName('video')[0];
         video.addEventListener('loadeddata', function() {
           if(video.readyState == 4)
              console.log('Ready baby')

@@ -4,16 +4,14 @@
 @section('afterBody', $print)
 @section('content')
   
-  <section>
-          <div id="slides">
-              <a href="http://www.trilce.edu.pe/">
-                  <img src="http://www.trilce.edu.pe/assets/img/slider/concurso-de-becas-uni-21-de-febrero.png" alt="#">
-              </a>
-              <img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#">
-              <img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#">
-              <img src="http://www.trilce.edu.pe/assets/img/slider/felicidades-primer-puesto-uni-2018-i-ingenieria-minas.png" alt="#">
-          </div>
-  </section >
+  <div class="index-banners">
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
+  </div>
 
   <div class="nuevos-i">
     <div class="row center-xs">
@@ -74,6 +72,9 @@
 @section('scripts')
   <script>
     page = 'index';
+    const images = {
+      
+    }
   </script>
   @parent
 @endsection

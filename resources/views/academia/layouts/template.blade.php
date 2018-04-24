@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="shortcut icon" href=" {{{ asset('static/images/icons/favicon.ico') }}}" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
   <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 </head>
@@ -106,29 +106,6 @@
 
 @section('scripts')
 
-<script src="http://www.trilce.edu.pe/assets/vendor/jquery/jquery.min.js"></script>
-<script src="http://www.trilce.edu.pe/ztrilce/assets/vendor/sliderjs/jquery.slides.min.js"></script>
-  
-<script type="text/javascript">
-  if (typeof page == 'undefined')
-    var page = '';
-
-  $(function() {
-    $('#slides').slidesjs({
-        width: 1500,
-        height: 400,
-        navigation: false,
-        play: {
-            active: true,
-            auto: true,
-            interval: 3000,
-            swap: true,
-            pauseOnHover: true,
-            restartDelay: 2500
-        }
-    });
-  });
-</script>
 <script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>
 @show
 

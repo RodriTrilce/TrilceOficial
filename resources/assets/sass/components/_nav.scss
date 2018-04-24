@@ -26,6 +26,11 @@
     border-top: 8px solid $orange;
     background: white;
     
+    // Error
+    a,li{
+      transition: none;
+    }
+    
     >div{
       font-family: 'Geogrotesque-Rg';
       
@@ -189,8 +194,6 @@ nav{
         Menu desktop Sedes
       */
       &:nth-child(3){
-//        position: relative;
-
         &:hover > .dropdown-desk{
           @extend %dropdown-desk-active;
           width: 100vw;

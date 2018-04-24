@@ -3,6 +3,27 @@
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
+
+// Imports
+import { tns } from "tiny-slider/src/tiny-slider.module"
+
+
+var slider = tns({
+  container: '.index-banners',
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  autoplayButtonOutput: false,
+  touch: true,
+  responsive: true,
+  mouseDrag: true,
+  controls: false,
+  nav: true,
+  autoplayHoverPause: true
+});
+
+console.log(slider)
+
  
 // Utils
 var show = function (elem) {

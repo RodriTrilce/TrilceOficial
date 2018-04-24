@@ -3,13 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>Colegio y Academia Trilce - Tu mejor opción</title>
         <meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal">
-        
-        <link rel="shortcut icon" href="static/images/icons/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="static/images/icons/favicon.ico">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="{{{ asset('favicon.ico') }}}">
         <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
         
         <link rel="stylesheet" href="{{ mix('/css/main.css') }}">

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>Colegio y Academia Trilce - Tu mejor opción</title>
-        <meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal">
+        <meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal.">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
         <link rel="apple-touch-icon" href="{{{ asset('favicon.ico') }}}">
@@ -38,8 +38,27 @@
           </section>
           
           <section class="h-cta">
-            <div class="h-boton"><a href="#">colegio</a></div>
-            <div class="h-boton"><a href="academia/">academia</a></div>
+<!--
+<div class="basicBox">
+  Hover
+  <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
+    <rect x='0' y='0' fill='none' width='130' height='65'/>
+  </svg>
+</div>
+-->
+
+            <div class="h-boton animation-svg-border01 az">
+              <a href="colegio">colegio</a>
+              <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <rect x='0' y='0' fill='none' width='100%' height='100%'/>
+              </svg>
+            </div>
+            <div class="h-boton animation-svg-border01">
+              <a href="academia">academia</a>
+              <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <rect x='0' y='0' fill='none' width='100%' height='100%'/>
+              </svg>
+            </div>
           </section>
         </div>
         

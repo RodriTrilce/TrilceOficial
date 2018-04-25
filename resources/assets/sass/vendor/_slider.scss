@@ -131,7 +131,6 @@
 
 .tns-slider{
   img{
-    height: 500px;
     // Quitar si la carga es asincrona
     width: 100%;
   }
@@ -187,6 +186,10 @@
   width: 100%;
   justify-content: center;
   margin-top: 15px;
+  
+  @media screen and (max-width: 768px){
+    display: none;
+  }
   
   button{
     border: 0;

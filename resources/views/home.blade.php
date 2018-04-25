@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
     </head>
     <body>
+      <img src="static/images/home/home-mobile.jpg" style="display:none;">
       <div id="loader-wrapper">
           <div id="loader"></div>
           <div class="loader-section section-left"></div>

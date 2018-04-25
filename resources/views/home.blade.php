@@ -70,7 +70,7 @@
           </video-bg>
         </div>
       </div>
-      <script src="{{ mix('/js/app.js') }}" charset="utf-8"></script>
+      <script src=" mix('/js/app.js') " charset="utf-8"></script>
     -->
       <script src="{{ mix('/js/app_home.js') }}" charset="utf-8"></script>
     </body>

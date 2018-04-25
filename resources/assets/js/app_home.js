@@ -84,16 +84,11 @@ function home(){
   }
   
   this.setContainerHeight = () => {
-    console.log(this.videoContainer)
     this.videoContainer.style.height = `${window.innerHeight}px`
   }
   
   this.setVideoSize = () => {
     var width, height, containerRatio = this.videoContainer.offsetWidth / this.videoContainer.offsetHeight
-    
-    console.log(containerRatio + " <-- containerRatio")
-    console.log(this.videoRatio + " <-- this.videoRatio")
-    
     
     if (containerRatio > this.videoRatio) {
       width = this.videoContainer.offsetWidth
@@ -134,5 +129,5 @@ function home(){
   }
 }
 
-let home = new home();
-home.init(); // run!
+let page_home = new home();
+page_home.init(); // run!

@@ -12,7 +12,7 @@ let mix = require('laravel-mix');
  */
 
 
-mix.js('resources/assets/js/app.js', 'public/js/app.js')
+mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js')
 mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js')
 mix.sass('resources/assets/sass/main.scss','public/css');
 

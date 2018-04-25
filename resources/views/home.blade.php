@@ -13,7 +13,7 @@
         
         <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
     </head>
-    <body>
+    <body class="home-background">
       <img src="static/images/home/home-mobile.jpg" style="display:none;">
       <div id="loader-wrapper">
           <div id="loader"></div>
@@ -37,7 +37,7 @@
           <section class="h-slogan">
             <h1><span>¡EL LÍMITE LO PONES TÚ!</span></h1>
           </section>
-          
+
           <section class="h-cta">
             <div class="h-boton animation-svg-border01 az">
               <a href="colegio">colegio</a>
@@ -54,6 +54,16 @@
           </section>
         </div>
         
+        <section class="home-VideoBg" id="videoContainer">
+          <video loop muted ref="video" id="videoTag">
+          </video>
+          <div class="home-VideoBg__content">
+            <div class="home-overlay"></div>
+          </div>
+        </section>
+        
+
+        <!--
         <div id="h-k">
           <video-bg class="home-bg" :sources="['static/video/home_a.webm', 'static/video/home_b.mp4']" img="static/images/home/home-mobile.jpg">
             <div class="home-overlay"></div>
@@ -61,5 +71,7 @@
         </div>
       </div>
       <script src="{{ mix('/js/app.js') }}" charset="utf-8"></script>
+    -->
+      <script src="{{ mix('/js/app_home.js') }}" charset="utf-8"></script>
     </body>
 </html>

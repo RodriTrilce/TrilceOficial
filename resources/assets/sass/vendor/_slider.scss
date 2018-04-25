@@ -112,26 +112,27 @@
 .tns-gallery>.tns-item{
     position:absolute;
     left:-100%;
-    -webkit-transition:transform 0s, opacity 0s;
-    -moz-transition:transform 0s, opacity 0s;
     transition:transform 0s, opacity 0s
 }
 
 .tns-gallery>.tns-moving{
-    -webkit-transition:all 0.25s;
-    -moz-transition:all 0.25s;
-    transition:all 0.25s
+    transition: all 0.25s
 }
 
 .tns-lazy-img{
-    -webkit-transition:opacity 0.6s;
-    -moz-transition:opacity 0.6s;
-    transition:opacity 0.6s;
-    opacity:0.6
+    transition: all 0.6s;
+    opacity:0.6;
 }
 
 .tns-lazy-img.loaded{
-    opacity:1
+    opacity:1;
+    width: 100%;
+}
+
+.tns-slider{
+  img{
+    height: 500px;
+  }
 }
 
 .tns-ah{
@@ -175,9 +176,7 @@
 }
 
 .tns-slider{
-  img{
-    width: 100% !important;
-  }
+//    width: 100% !important;
 }
 
 .tns-nav{

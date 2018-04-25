@@ -5,12 +5,18 @@
 @section('content')
   
   <div class="index-banners">
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
+    <!--(div>a[href="http://yahoo.com/"]>img[src="https://picsum.photos/1920/500?random"])*30-->
+
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&1"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&2"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&3"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&4"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&5"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&6"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&7"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&8"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&9"></a></div>
+    <div><a href="http://yahoo.com/"><img src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="tns-lazy-img" data-src="https://picsum.photos/1920/500?random&10"></a></div>
   </div>
 
   <div class="nuevos-i">

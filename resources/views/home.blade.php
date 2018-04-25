@@ -38,15 +38,6 @@
           </section>
           
           <section class="h-cta">
-<!--
-<div class="basicBox">
-  Hover
-  <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-    <rect x='0' y='0' fill='none' width='130' height='65'/>
-  </svg>
-</div>
--->
-
             <div class="h-boton animation-svg-border01 az">
               <a href="colegio">colegio</a>
               <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

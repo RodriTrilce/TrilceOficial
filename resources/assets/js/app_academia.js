@@ -19,11 +19,9 @@ var slider = tns({
   mouseDrag: true,
   controls: false,
   nav: true,
-  autoplayHoverPause: true
+  autoplayHoverPause: true,
+  lazyload: true
 });
-
-console.log(slider)
-
  
 // Utils
 var show = function (elem) {

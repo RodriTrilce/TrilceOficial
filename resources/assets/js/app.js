@@ -4,14 +4,14 @@
   * Released under the Trilce Group.
   */
   import Vue from 'vue'
-  import VideoBg from 'vue-videobg'
- 
+  import VideoBg from './vue/video-bg'
+
   Vue.component('video-bg', VideoBg)
- 
- var home = new Vue({
+  
+  var home = new Vue({
     el: '#h-k',
     data: {
-      message: 'CHCHC'
+      message: ''
     },
     components: {
       VideoBg
@@ -21,7 +21,6 @@
         const video = document.getElementsByTagName('video')[0];
         video.addEventListener('loadeddata', function() {
           if(video.readyState == 4)
-             console.log('Ready baby')
              video.play()
              document.body.className += ' loaded';
              video.removeEventListener('loadeddata', this)

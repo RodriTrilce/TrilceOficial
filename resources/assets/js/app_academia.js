@@ -20,7 +20,7 @@ var slider = tns({
   controls: false,
   nav: true,
   autoplayHoverPause: true,
-  lazyload: true
+//  lazyload: true
 });
  
 // Utils

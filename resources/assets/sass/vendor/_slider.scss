@@ -132,6 +132,8 @@
 .tns-slider{
   img{
     height: 500px;
+    // Quitar si la carga es asincrona
+    width: 100%;
   }
 }
 

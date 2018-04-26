@@ -8,7 +8,6 @@ function home(){
   this.videoContainer = document.getElementById('videoContainer');
   this.videoTag       = document.getElementById('videoTag');
   this.all            = document.getElementById("all")
-  this.img            = 'static/images/home-mobile.jpg'
   
   this.videoUrls      = [
                           {"url" : "static/video/home_a.webm"},
@@ -36,15 +35,8 @@ function home(){
       
       this.check();
     }else{
-      this.setImg();
       this.checkMobile();
     }
-  }
-  
-  this.setImg = () => {
-      if (this.img) {
-        this.videoContainer.style.backgroundImage = `url(${this.img})`
-      }
   }
   
   this.checkMobile = () => {

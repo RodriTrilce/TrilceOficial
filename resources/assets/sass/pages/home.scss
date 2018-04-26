@@ -2,6 +2,12 @@
   z-index: -2;
 }
 
+#videoContainer {
+  background: url('/static/images/home/home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .home-overlay {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAABlBMVEUAAABtamrXHerXAAAAC0lEQVR4AWPABxgBAB8AAjZ0DjUAAAAASUVORK5CYII=);
   width: 100%;
@@ -324,50 +330,6 @@
 
 // =========================================================
 // =========================================================
-// =========================================================
-
-/*
-.basicBox{
-  width: 130px;
-  height: 65px;
-  margin: 15px auto;
-  background: $orange;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.15rem;
-  line-height: 65px;
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    rect {
-      fill: none;
-      stroke: transparent;
-      stroke-width: 1;
-      stroke-dasharray: 400, 0;
-      transition: all 0.8s ease-in-out;
-    }
-  }
-  
-  &:hover svg rect {
-    stroke: white;
-    stroke-width: 3;
-    stroke-dasharray: 35, 245;
-    stroke-dashoffset: 38;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-  }
-}
-
-*/
-
 
 
 

@@ -25,6 +25,7 @@
   "dependencies": {
     "ajv": "^6.4.0",
     "bourbon": "^5.0.0",
+    "line-awesome": "github:icons8/line-awesome",
     "tiny-slider": "^2.6.0",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"

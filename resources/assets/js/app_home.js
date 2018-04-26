@@ -8,7 +8,7 @@ function home(){
   this.videoContainer = document.getElementById('videoContainer');
   this.videoTag       = document.getElementById('videoTag');
   this.all            = document.getElementById("all")
-  //this.img            = ``
+  this.img            = 'static/images/home-mobile.jpg'
   
   this.videoUrls      = [
                           {"url" : "static/video/home_a.webm"},
@@ -16,7 +16,6 @@ function home(){
                         ];
 
   this.init = () => {
-    //this.setImg();
     this.setContainerHeight();
     
     // Return false is no mobile
@@ -37,6 +36,7 @@ function home(){
       
       this.check();
     }else{
+      this.setImg();
       this.checkMobile();
     }
   }

@@ -70,6 +70,9 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     }
 }
 
+NodeList.prototype.forEach = Array.prototype.forEach;
+
+
 
 /**!
  *  Simulacrum: Formulario de registro
@@ -119,14 +122,19 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
   var v = x.querySelectorAll('li');
   
   v.forEach(elem => {
+      
     elem.addEventListener('click', () => {
       
       v.forEach(e => e.classList.remove('select'));
+      
       elem.classList.add('select');
       getEntering(university, elem.getAttribute('data-year'));
       
     });
+
   });
+  
+
 
   // Default
   getEntering(university, '2018');

@@ -2,8 +2,14 @@
   Trilce SASS MAIN FILE
 */
 
+// p1 include
 @import 'helpers/all';
 @import 'base/all';
+
+//Page home
+@import 'pages/home';
+
+// p2 include
 @import 'vendor/all';
 @import 'components/all';
 @import 'layout/all';
@@ -11,6 +17,5 @@
 
 
 // Pages
-@import 'pages/home';
 @import 'pages/404';
 @import 'pages/academia/all';

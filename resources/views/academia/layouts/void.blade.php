@@ -7,7 +7,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href=" {{{ asset('static/images/icons/favicon.ico') }}}" type="image/x-icon" />
-  <link rel="preload" href="{{ mix('/css/others/_icons.css') }}" as="style">
+  <link rel="prefetch" href="{{ mix('/css/others/_icons.css') }}" as="style">
   <link rel="stylesheet" href="{{ mix('/css/main_academia.css') }}">
 </head>
 <body>

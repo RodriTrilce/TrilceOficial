@@ -9,7 +9,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
         <link rel="apple-touch-icon" href="{{{ asset('favicon.ico') }}}">
-        <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
+        <link rel="stylesheet" href="{{ mix('/css/others/_icons.css') }}">
+        <link rel="stylesheet" href="{{ mix('/css/main_home.css') }}">
     </head>
     <body class="home-background">
       <div id="loader-wrapper">

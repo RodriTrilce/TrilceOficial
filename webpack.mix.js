@@ -12,13 +12,18 @@ let mix = require('laravel-mix');
  */
 
 
-mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js')
+// mix:Academia
 mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js')
-mix.sass('resources/assets/sass/main.scss','public/css');
+mix.sass('resources/assets/sass/main_academia.scss','public/css');
 
+// mix:Home
+mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js')
+mix.sass('resources/assets/sass/main_home.scss','public/css');
+
+// mix:all
+mix.sass('resources/assets/sass/vendor/_icons.scss','public/css/others');
 
 // Assets to public
-//mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
 mix.copyDirectory('resources/assets/images', 'public/static/images');
 mix.copyDirectory('resources/assets/fonts', 'public/static/fonts');
 mix.copyDirectory('resources/assets/video', 'public/static/video');

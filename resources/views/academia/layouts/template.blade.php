@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
 <head>
   <meta charset="UTF-8">
   <title>@hasSection('title')@yield('title') - @endif Academia Trilce</title>
@@ -7,7 +7,8 @@
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
-  <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/others/_icons.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/main_academia.css') }}">
 </head>
 <body>
 

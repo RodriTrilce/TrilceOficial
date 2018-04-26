@@ -1,20 +1,15 @@
 /**
-  Trilce SASS MAIN FILE
+  Trilce SASS MAIN ACADEMIA FILE
 */
 
 // p1 include
 @import 'helpers/all';
 @import 'base/all';
 
-//Page home
-@import 'pages/home';
-
 // p2 include
 @import 'vendor/all';
 @import 'components/all';
 @import 'layout/all';
-
-
 
 // Pages
 @import 'pages/404';

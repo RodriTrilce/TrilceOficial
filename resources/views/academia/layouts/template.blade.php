@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
-  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 </head>
 <body>
 

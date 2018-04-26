@@ -1,3 +1,13 @@
+<!--
+<div id="h-k">
+  <video-bg class="home-bg" :sources="['static/video/home_a.webm', 'static/video/home_b.mp4']" img="static/images/home/home-mobile.jpg">
+    <div class="home-overlay"></div>
+  </video-bg>
+</div>
+</div>
+<script src=" mix('/js/app.js') " charset="utf-8"></script>
+-->
+
 <template>
   <section class="VideoBg">
     <video loop muted ref="video">

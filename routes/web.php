@@ -68,7 +68,7 @@ Route::get('/academia/contacto', 'Academia\ContactController@index');
 Route::post('/academia/contacto/send', 'Academia\ContactController@send');
 
 // Matricula en linea (EnrolmentOnline)
-Route::get('/matricula-en-linea', 'Academia\EnrolmenOnlineController@index');
+Route::get('/academia/matricula-en-linea', 'Academia\EnrolmenController@index');
 
 
 

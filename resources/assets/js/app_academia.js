@@ -165,3 +165,22 @@ var get = (url) => {
     }, 1000)
   }
 })(window,document);
+
+
+
+
+// Elrolmen
+!(($) => {
+  if(page !== 'enrolmen') return false;
+
+  document.querySelector('#step1_photo').addEventListener('change',function(){
+
+    //$(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, '') );
+    let val = document.querySelector("#step1_photo").value;
+    
+    this.setAttribute("data-text", val)
+      
+  });
+  
+})(document);
+

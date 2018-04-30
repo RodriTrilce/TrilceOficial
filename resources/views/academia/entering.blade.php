@@ -96,7 +96,7 @@
 
 @section('scripts')
   <script>
-    page = 'entering';
+    var page = 'entering';
     var university = '{{str_replace(' ','-',strtolower($university->short_name))}}'
   </script>
 

@@ -99,6 +99,9 @@
 @endsection
 
 @section('scripts')
+  <script>
+    var page = 'solution';
+  </script>
   @parent
 
 @endsection

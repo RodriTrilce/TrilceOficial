@@ -34,6 +34,9 @@
 @endsection
 
 @section('scripts')
+  <script>
+    var page = 'venue';
+  </script>
   @parent
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp" charset="utf-8"></script>
   <script type="text/javascript">

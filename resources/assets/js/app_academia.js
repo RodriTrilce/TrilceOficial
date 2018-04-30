@@ -7,21 +7,51 @@
 // Imports
 import { tns } from "tiny-slider/src/tiny-slider.module"
 
+// Define methods utils
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
 
-var slider = tns({
-  container: '.index-banners',
-  items: 1,
-  slideBy: 'page',
-  autoplay: true,
-  autoplayButtonOutput: false,
-  touch: true,
-  responsive: true,
-  mouseDrag: true,
-  controls: false,
-  nav: true,
-  autoplayHoverPause: true,
-//  lazyload: true
-});
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+
+NodeList.prototype.forEach = Array.prototype.forEach;
+
+
+
+
+try{ page; }
+catch(e){
+  if(e.name == 'ReferenceError') var page = "undefined";
+}
+
+
+
+
+
+if(page == 'index'){
+  var slider = tns({
+    container: '.index-banners',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    autoplayButtonOutput: false,
+    touch: true,
+    responsive: true,
+    mouseDrag: true,
+    controls: false,
+    nav: true,
+    autoplayHoverPause: true,
+  //  lazyload: true
+  });
+}
+
+
  
 // Utils
 var show = function (elem) {
@@ -57,22 +87,6 @@ var get = (url) => {
     req.send();
   });
 }
-
-Element.prototype.remove = function() {
-    this.parentElement.removeChild(this);
-}
-
-NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-    for(var i = this.length - 1; i >= 0; i--) {
-        if(this[i] && this[i].parentElement) {
-            this[i].parentElement.removeChild(this[i]);
-        }
-    }
-}
-
-NodeList.prototype.forEach = Array.prototype.forEach;
-
-
 
 /**!
  *  Simulacrum: Formulario de registro

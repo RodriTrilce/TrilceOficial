@@ -74,7 +74,7 @@
 
 @section('scripts')
   <script>
-    page = 'contact';
+    var page = 'contact';
   </script>
   @parent
 @endsection

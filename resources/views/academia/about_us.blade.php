@@ -147,7 +147,7 @@
 
 @section('scripts')
   <script>
-    page = 'about_us';
+    var page = 'about_us';
   </script>
   @parent
 @endsection

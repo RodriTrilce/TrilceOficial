@@ -95,5 +95,8 @@
 @endsection
 
 @section('scripts')
+  <script>
+    var page = 'about_us';
+  </script>
   @parent
 @endsection

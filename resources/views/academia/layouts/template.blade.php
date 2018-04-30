@@ -105,7 +105,6 @@
 @include('academia.layouts.parts.footer')
 
 @section('scripts')
-
 <script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>
 @show
 

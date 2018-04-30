@@ -71,10 +71,7 @@
 @endsection
 @section('scripts')
   <script>
-    page = 'index';
-    const images = {
-      
-    }
+    var page = 'index';
   </script>
   @parent
 @endsection

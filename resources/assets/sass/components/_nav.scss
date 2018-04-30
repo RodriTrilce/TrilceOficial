@@ -174,12 +174,12 @@ nav{
       display: inline-block;
       margin-right: 1.8rem;
       font-size: 1.15rem;
-      
+//      position: relative;
 
-      
       &:first-child{
         display: none;
       }
+      
       >a{
         display: block;
         width: 100%;
@@ -188,6 +188,7 @@ nav{
         font-family: 'Geogrotesque-Rg';
         transition: ease-out 0.01s;
         text-transform: uppercase;
+        text-align: center;
       }
       
       /**
@@ -204,9 +205,30 @@ nav{
       &:nth-last-child(1){
         margin-right: 0px;
       }
-    }
-    
+      
+      
+      
 
+      // Hover de li menu
+      @media screen and (min-width: 768px) {
+        &:hover{
+          >a{
+            color: $orange;
+          }
+          &::before{
+            content: "";
+            width: 20px;
+            height: 5px;
+            background: $gray;
+            position: absolute;
+            left: 0;
+          }
+        }
+
+      }//end mediascreen
+    
+      
+    }
   }
   
   

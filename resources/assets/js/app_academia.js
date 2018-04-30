@@ -22,41 +22,13 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 
 NodeList.prototype.forEach = Array.prototype.forEach;
 
-
-
-/*
-var barIsDeclared = true;
-try{ page; }
-catch(e) {
-    if(e.name == "ReferenceError") {
-        barIsDeclared = false;
-        var page = 22
-        console.log("ss")
-    }
-}
-*/
-
-
-
-if(page == 'index'){
-  var slider = tns({
-    container: '.index-banners',
-    items: 1,
-    slideBy: 'page',
-    autoplay: true,
-    autoplayButtonOutput: false,
-    touch: true,
-    responsive: true,
-    mouseDrag: true,
-    controls: false,
-    nav: true,
-    autoplayHoverPause: true,
-  //  lazyload: true
-  });
+// Safari fix hover touch
+var supportsTouch = (typeof Touch == "object");
+if(supportsTouch){
+    document.addEventListener('touchstart', function() {},false);
 }
 
 
- 
 // Utils
 var show = function (elem) {
 	elem.style.display = 'block';
@@ -91,6 +63,30 @@ var get = (url) => {
     req.send();
   });
 }
+
+
+/**!
+ *  Index Slider
+ */
+ if(page == 'index'){
+   var slider = tns({
+     container: '.index-banners',
+     items: 1,
+     slideBy: 'page',
+     autoplay: true,
+     autoplayButtonOutput: false,
+     touch: true,
+     responsive: true,
+     mouseDrag: true,
+     controls: false,
+     nav: true,
+     autoplayHoverPause: true,
+   //  lazyload: true
+   });
+ }
+ 
+ 
+ 
 
 /**!
  *  Simulacrum: Formulario de registro
@@ -152,7 +148,6 @@ var get = (url) => {
 
   });
   
-
 
   // Default
   getEntering(university, '2018');

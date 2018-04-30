@@ -41,6 +41,7 @@
       position: absolute;
       width: 60%;
       @include margin(6rem, initial, initial, 11.5%);
+      left: 0;
       
       @media screen and (max-width: 768px){
         bottom:0px;
@@ -48,7 +49,7 @@
       }
       
       h1{
-        font-size: 2.7em;
+        font-size: 2.5em;
         font-family: 'CaeciliaLTPro-85Heavy';
         color: white;
         display: inline-block;
@@ -56,7 +57,7 @@
         padding: 0.8rem;
         
         @media screen and (max-width: 768px){
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           padding: 0.1rem;
         }
         
@@ -83,6 +84,7 @@
       width: 60%;
       @include margin(3rem, 20%, 2%, 20%);
       height: 70%;
+      left: 0;
       
       @media screen and (max-width: 768px){
         border: 0.3rem solid white;

@@ -89,6 +89,7 @@
                   </ul>
                 </li>
                 
+                <li><a href="/academia/matricula">Matrícula en linea</a></li>
                 <li class="disable"><a>Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
                 <li><a href="/academia/contacto">Contáctenos</a></li>

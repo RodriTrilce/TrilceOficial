@@ -70,8 +70,8 @@
   @include('academia.partials.card_bottom')
 @endsection
 @section('scripts')
-  <script>
-    var page = 'index';
-  </script>
-  @parent
+  
+    page = 'index';
+    
+    @parent
 @endsection

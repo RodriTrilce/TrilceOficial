@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
 <head>
   <meta charset="UTF-8">
   <title>404 - La página que buscas no existe - Trilce</title>
@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href=" {{{ asset('static/images/icons/favicon.ico') }}}" type="image/x-icon" />
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
-  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+  <link rel="stylesheet" href="{{ mix('/css/main_academia.css') }}">
 </head>
 <body>
   <header>
     <div class="row between-xs">
       <div class="col-xs-6 logo">
-        <a href="/"><img src="{{{ asset('static/images/logo-void.png') }}}" alt="Trilce"></a>
+        <a href="/academia/"><img src="{{{ asset('static/images/logo-void.png') }}}" alt="Trilce"></a>
       </div>
       <div class="col-xs-6 end-xs pre-nav"></div>
     </div>

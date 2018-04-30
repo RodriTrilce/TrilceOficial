@@ -5,7 +5,7 @@
  */
 
 // Imports
-import { tns } from "tiny-slider/src/tiny-slider.module"
+import { tns } from 'tiny-slider/src/tiny-slider.module'
 
 // Define methods utils
 Element.prototype.remove = function() {
@@ -24,13 +24,17 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 
 
 
-
+/*
+var barIsDeclared = true;
 try{ page; }
-catch(e){
-  if(e.name == 'ReferenceError') var page = "undefined";
+catch(e) {
+    if(e.name == "ReferenceError") {
+        barIsDeclared = false;
+        var page = 22
+        console.log("ss")
+    }
 }
-
-
+*/
 
 
 

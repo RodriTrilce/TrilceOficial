@@ -211,9 +211,7 @@
 @endsection
 
 @section('scripts')
-  <script>
-    var page = 'simulacrum';
-  </script>
+    page = 'simulacrum';
   @parent
 
 @endsection

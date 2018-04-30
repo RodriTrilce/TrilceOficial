@@ -73,8 +73,6 @@
 @endsection
 
 @section('scripts')
-  <script>
-    var page = 'contact';
-  </script>
+    page = 'contact';
   @parent
 @endsection

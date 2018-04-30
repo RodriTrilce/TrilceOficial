@@ -34,9 +34,8 @@
 @endsection
 
 @section('scripts')
-  <script>
-    var page = 'venue';
-  </script>
+    page = 'venue';
+
   @parent
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp" charset="utf-8"></script>
   <script type="text/javascript">
@@ -47,8 +46,8 @@
             center: myLatlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     var infowindow = new google.maps.InfoWindow({
         content  : 'Times Square, Manhattan',
         maxWidth : 500

@@ -95,8 +95,6 @@
 @endsection
 
 @section('scripts')
-  <script>
-    var page = 'about_us';
-  </script>
+    page = 'math_olympics';
   @parent
 @endsection

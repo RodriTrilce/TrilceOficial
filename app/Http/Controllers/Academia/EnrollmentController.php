@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Academia;
 
-use App\Models\Academia\EnrolmenModel;
+use App\Models\Academia\EnrollmentModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class EnrolmenController extends Controller
+class EnrollmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class EnrolmenController extends Controller
      */
     public function index()
     {
-      return view('/academia/enrolmen');
+      return view('/academia/enrollment');
     }
 
     /**

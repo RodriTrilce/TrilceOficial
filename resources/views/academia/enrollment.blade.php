@@ -1,6 +1,6 @@
 @extends('academia.layouts.template')
 
-@section('title', 'Acerca de Nosotros')
+@section('title', 'Pre Matrícula en linea')
 
 @section('content')
 
@@ -25,7 +25,7 @@
 
   <div class="row col-xs-11 col-sm-9 center-sm enrolmen-forms">
     <div class="col-xs-12 col-sm-5 center-sm xs-hide">
-      <img src="/static/images/academia/img-enrolmen-01.jpg" alt="">
+      <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
     </div>
     <div class="col-xs-12 col-sm-5 text-init step1">
       <h3>Bienvenido</h3>

@@ -1,6 +1,6 @@
 @extends('academia.layouts.template')
 
-@section('title', 'Acerca de Nosotros')
+@section('title', 'Contáctenos')
 
 @section('content')
 

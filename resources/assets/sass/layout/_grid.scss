@@ -614,3 +614,12 @@
   .text-init{
     text-align: initial;
   }
+
+
+// hide columns
+  .xs-hide{
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+  

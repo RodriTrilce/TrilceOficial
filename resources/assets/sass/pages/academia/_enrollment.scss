@@ -1,0 +1,94 @@
+// Header double background
+.header-double-w-2{
+  background-image: url('/static/images/academia/img-titulo-matriculaen-linea.jpg');
+}
+
+// General
+
+
+// Setps guide
+.enrollment-steps{
+  display: flex;
+  margin: 3rem auto;
+  width: 80%;
+  background: linear-gradient(white 4%, black 6%, white 1%);
+  background-position-y: 45px;
+  justify-content: center;
+  
+  >div{
+    width: 30px;
+    height: 30px;
+    background: $gray;
+    color: $gray;
+    font-weight: bold;
+    font-size: 1px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-right: 3%;
+  }
+  
+  .active{
+    background: $orange;
+    color: white;
+    font-size: 1.5rem;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.enrollment-img{
+  img{
+    padding: 1rem;
+    padding-top: 0;
+  }
+}
+
+
+// Block of forms
+.enrollment-forms {
+  margin: 5rem auto 5rem auto;
+  
+  // form force style
+  .form{
+    input{
+      width: 95%;
+    }
+  }
+  
+  
+  //  Step 1
+  //
+  #step1{
+    h3,h2{
+      font-weight: bold;
+    }
+    
+    h2{
+      font-size: 2rem;
+      color: $gray;
+      span{
+        color: $orange;
+      }
+    }
+    
+    p{
+      margin: 1rem;
+    }
+  }
+  
+  #step2{
+    display: none;
+  }
+  
+  #step3{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+}

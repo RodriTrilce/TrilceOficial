@@ -1,6 +1,7 @@
 <footer>
   <div class="row">
     <div class="col-xs-12 footer-top"><span>Usted está aquí: <b>Academia</b></span></div>
+    
     <div class="row col-xs-12 between-xs center-xs footer-menu">
       <div class="col-xs-6 links">
         <ul>
@@ -22,6 +23,7 @@
           </ul>
       </div>
     </div>
+    
     <div class="col-xs-12 center-xs footer-bottom">
       © {{date("Y")}} Trilce. Todos los derechos reservados
     </div>

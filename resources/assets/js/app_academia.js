@@ -64,6 +64,17 @@ var get = (url) => {
   });
 }
 
+const extractFormData = ({ form, add }) => {
+  return [].slice.call(form.children).filter(node => node.nodeName === 'INPUT')
+  .reduce((formData, input) => {
+    const value = input.value
+    return {
+      ...formData,
+      [input.name]: value
+    }
+  }, add)
+}
+
 
 /**!
  *  Index Slider
@@ -170,17 +181,46 @@ var get = (url) => {
 
 
 // Elrolmen
-!(($) => {
-  if(page !== 'enrolmen') return false;
+(() => {
+  if(page !== 'enrollment') return false;
 
-  document.querySelector('#step1_photo').addEventListener('change',function(){
-
-    //$(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, '') );
-    let val = document.querySelector("#step1_photo").value;
-    
-    this.setAttribute("data-text", val)
-      
-  });
   
-})(document);
+  function enrollment() {
+    this.currentStep = 1;
+    this.submit = new FormData();
+    this.request = new XMLHttpRequest();
+
+    
+    this.init = function() {
+      this.uploadFix();
+
+      document.querySelector('#nextStep'+ this.currentStep).addEventListener('submit', this.submit );
+    }
+    
+    this.submit = (evt) => {
+        evt.preventDefault();
+        this.collectData(evt.target);
+        
+        if(this.currentStep == 3)
+          this.sendEnrolment();
+    }
+    
+    this.collectData = (form) => {
+      console.log(form)
+      let a = {id : 1};
+      console.log(extractFormData({form, a }))
+    }
+    
+    this.uploadFix = () => {
+      document.querySelector('#step1_photo').addEventListener('change',function(){
+        this.setAttribute("data-text", document.querySelector("#step1_photo").value.replace(/.*(\/|\\)/, ''))
+      });
+    }
+  }
+  
+  let a = new enrollment();
+  a.init();
+  
+})();
+
 

@@ -1,6 +1,6 @@
 @extends('academia.layouts.template')
 
-@section('title', 'Solucionarios de '. $university->name)
+@section('title', 'Ingresantes de '. $university->name)
 
 @section('content')
 

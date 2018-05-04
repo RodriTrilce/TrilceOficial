@@ -27,15 +27,18 @@
           <div class="col-xs-3">{{$v->grade}}</div>
         </div>
         
+
+
         <div class="row col-xs-12 col-sm">
           <ul class="math-olympic-list">
-            <li class="active"><a href="{{$v->base_url}}" target="_blank">Bases</a></li>
-            <li><a href="{{$v->inscription_url}}" target="_blank">Inscripción individial</a></li>
-            <li><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
-            <li><a href="{{$v->results_url}}" target="_blank">Resultados</a></li>
+            <li {!! ($v->base_url!==''?"class=\"active\"":'') !!}><a href="{{$v->base_url}}" target="_blank">Bases</a></li>
+            <li {!! ($v->inscription_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individial</a></li>
+            <li {!! ($v->inscription_group_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
+            <li {!! ($v->results_url!==''?'class="active"':'') !!}><a href="{{$v->results_url}}" target="_blank">Resultados</a></li>
           </ul>
         </div>
-
+        
+        
       </div>
       @endforeach
       

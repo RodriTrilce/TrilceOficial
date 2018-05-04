@@ -1,9 +1,14 @@
 <footer>
   <div class="row">
-    <div class="col-xs-12 footer-top"><span>Usted está aquí: <b>Academia</b></span></div>
+    <div class="row col-xs-12 center-xs footer-top">
+      <div class="col-xs-12 col-sm-4 start-xs">
+        <span>Usted está aquí: <b>Academia</b></span>
+      </div>
+      <div class="col-sm-6 xs-hide"></div>
+    </div>
     
-    <div class="row col-xs-12 between-xs center-xs footer-menu">
-      <div class="col-xs-6 links">
+    <div class="row col-xs-12 center-xs footer-menu">
+      <div class="col-xs-4 start-xs links">
         <ul>
             <li><a href="/colegio">Trilce Colegio</a></li>
             <li><a href="/academia">Trilce Academia</a></li>

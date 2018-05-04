@@ -24,7 +24,7 @@
         <h1>INFORMACIÓN DE CONTACTO</h1>
         <p>Para cualquier consulta comuníquese con nosotros:</p>
         <ul>
-          <li>Central Telefónica: +511 619-8100</li>
+          <li>Central Telefónica: 619-8100</li>
           <li>Correo: atencionalcliente@trilce.edu.pe</li>
           <li>Ubíquenos: En nuestras <a href="#" id="getSedes">Sedes</a></li>
         </ul>
@@ -32,7 +32,7 @@
         <br />
         <div class="workTrilce">
           <h1>TRABAJA CON NOSOTROS</h1>
-          <a href="#">Postúla <i class="fa fa-pencil"></i></a>
+          <a href="#">Postula <i class="fa fa-pencil"></i></a>
         </div>
 
       </div>

@@ -11,7 +11,7 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Simulacros</h1>
-        <p class="header-double-p-up">Inscripción a los simulacros y Resultados de los examenes</p>
+        <p class="header-double-p-up">Inscripción a los simulacros y Resultados de los exámenes</p>
       </div>
     </div>
   </div>

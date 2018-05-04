@@ -10,7 +10,7 @@
       <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>Olimpiada matemática</h1>
+        <h1>Olimpiadas de matemáticas</h1>
       </div>
     </div>
   </div>
@@ -43,10 +43,10 @@
   </div>
   
   <div class="row center-xs center-sm math-olympic-onam">
-    <div class="col-xs-12 title"><h2>ONAM</h2></div>
+    <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
     <div class="row col-xs-12 col-sm-8 between-xs between-sm data">
-      <div class="col-xs">27 de noviembre</div>
-      <div class="col-xs">XXVII OLIMPIADA NACIONAL DE MATEMATICA - ONAM TRILCE</div>
+      <div class="col-xs">25 de noviembre</div>
+      <div class="col-xs">XXX OLIMPIADA NACIONAL DE MATEMÁTICA</div>
       <div class="col-xs">2.° prim a 5.° sec.</div>
     </div>
     
@@ -76,7 +76,7 @@
         <div class="col-xs-12 col-sm-12 center-xs">
           <p>
             <span>Informes e inscripciones</span> <br/>
-            Av. Arequipa 1250, Santa Beatriz ° olimpiadas@trilce.edu.pe
+            Av. Arequipa 1381, Santa Beatriz - olimpiadas@trilce.edu.pe
           </p>
         </div>
       </div>

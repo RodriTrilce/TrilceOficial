@@ -41,13 +41,13 @@
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content">
                       <div>
-                        <h3>UNMSM - UNI - PUCP</h3>
+                        <h3>UNI - San Marcos - PUCP</h3>
                         <ul>
                           <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                         </ul>
                       </div>
                       <div>
-                        <h3>UNMSM - UNI</h3>
+                        <h3>UNI - San Marcos</h3>
                         <ul>
                           <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
                           <li><a href="/academia/sede/comas">Comas</a></li>
@@ -61,7 +61,7 @@
                         </ul>
                       </div>
                       <div>
-                        <h3>UNMSM</h3>
+                        <h3>San Marcos</h3>
                         <ul>
                           <li><a href="/academia/sede/marsano">Marsano</a></li>
                         </ul>

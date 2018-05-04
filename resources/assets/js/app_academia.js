@@ -64,15 +64,108 @@ var get = (url) => {
   });
 }
 
-const extractFormData = ({ form, add }) => {
-  return [].slice.call(form.children).filter(node => node.nodeName === 'INPUT')
-  .reduce((formData, input) => {
-    const value = input.value
-    return {
-      ...formData,
-      [input.name]: value
+function enrollment(nextBtn,prevBtn,form, type){
+  this.currentTab = 0; // Current tab is set to be the first tab (0)
+  this.nextBtn = nextBtn;
+  this.prevBtn = prevBtn;
+  this.form    = form;
+  this.blockType = type;
+  
+  this.init = function(){
+    this.showTab(this.currentTab); // Display the current tab
+    
+    document.getElementById(this.prevBtn).addEventListener('click', function(){
+      this.nextPrev(-1);
+    }.bind(this));
+    
+    document.getElementById(this.nextBtn).addEventListener('click', function(){
+      this.nextPrev(1);
+      //document.getElementById(this.form).submit();
+    }.bind(this));
+  }
+
+  this.showTab = function(n) {
+    // This function will display the specified tab of the form ...
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = this.blockType;
+    //x[n].style.visibility = 'visible';
+    // ... and fix the Previous/Next buttons:
+
+    if (n == 0) {
+      document.getElementById(this.prevBtn).style.display = "none";
+    } else {
+      document.getElementById(this.prevBtn).style.display = "inline";
     }
-  }, add)
+    
+    if (n == (x.length - 1)) {
+      document.getElementById(this.nextBtn).innerHTML = "Enviar";
+    } else {
+      document.getElementById(this.nextBtn).innerHTML = `Siguiente <i class="fa fa-angle-right"></i>`;
+    }
+    
+    // ... and run a function that displays the correct step indicator:
+    this.fixStepIndicator(n)
+  }
+
+  this.nextPrev = function(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName("tab");
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !this.validateForm()) return false;
+    // Hide the current tab:
+    x[this.currentTab].style.display = "none";
+    // x[this.currentTab].style.visibility = "hidden";
+    // Increase or decrease the current tab by 1:
+    this.currentTab = this.currentTab + n;
+    // if you have reached the end of the form... :
+    if (this.currentTab >= x.length) {
+      //...the form gets submitted:
+      //document.getElementById("regForm").submit();
+      console.log("finish")
+      return false;
+    }
+    // Otherwise, display the correct tab:
+    this.showTab(this.currentTab);
+  }
+
+  this.validateForm = function() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[this.currentTab].getElementsByTagName("input");
+    
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+      if (y[i].value == "") {
+        // add an "invalid" class to the field:
+        y[i].className += " invalid";
+        // and set the current valid status to false:
+        valid = false;
+      }else{
+        y[i].removeAttribute("required");
+      }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    /*if (valid) {
+      document.getElementsByClassName("step")[this.currentTab].className += " finish";
+    }*/
+    
+    return valid; // return the valid status
+  }
+
+  this.fixStepIndicator = function(n) {
+    let v = document.getElementById("steps-guide");
+    let z = v.getElementsByTagName("div")
+    
+    Array.from(z).forEach(function(a,i){
+      a.classList = a.classList.remove('active');
+      if(i==n) a.classList.add('active');
+      if(i<n) a.classList.add('visited');
+      (i<n)
+    })
+  }
+
 }
 
 
@@ -147,14 +240,10 @@ const extractFormData = ({ form, add }) => {
   var v = x.querySelectorAll('li');
   
   v.forEach(elem => {
-      
     elem.addEventListener('click', () => {
-      
       v.forEach(e => e.classList.remove('select'));
-      
       elem.classList.add('select');
       getEntering(university, elem.getAttribute('data-year'));
-      
     });
 
   });
@@ -165,17 +254,17 @@ const extractFormData = ({ form, add }) => {
   
 })(document);
 
-
-~(function(w,d){
+// Index
+(() => {
   if(page !== 'index') return false;
   
-  w.onload = function()
+  window.onload = function()
   {
     setTimeout(function(){
       document.body.className += ' loaded'
     }, 1000)
   }
-})(window,document);
+})();
 
 
 
@@ -184,42 +273,18 @@ const extractFormData = ({ form, add }) => {
 (() => {
   if(page !== 'enrollment') return false;
 
-  
-  function enrollment() {
-    this.currentStep = 1;
-    this.submit = new FormData();
-    this.request = new XMLHttpRequest();
+  // Upload fix
+  document.querySelector('#step1_photo').addEventListener('change',function(){
+    this.setAttribute("data-text", document.querySelector("#step1_photo").value.replace(/.*(\/|\\)/, ''))
+  });
 
-    
-    this.init = function() {
-      this.uploadFix();
-
-      document.querySelector('#nextStep'+ this.currentStep).addEventListener('submit', this.submit );
-    }
-    
-    this.submit = (evt) => {
-        evt.preventDefault();
-        this.collectData(evt.target);
-        
-        if(this.currentStep == 3)
-          this.sendEnrolment();
-    }
-    
-    this.collectData = (form) => {
-      console.log(form)
-      let a = {id : 1};
-      console.log(extractFormData({form, a }))
-    }
-    
-    this.uploadFix = () => {
-      document.querySelector('#step1_photo').addEventListener('change',function(){
-        this.setAttribute("data-text", document.querySelector("#step1_photo").value.replace(/.*(\/|\\)/, ''))
-      });
-    }
-  }
-  
-  let a = new enrollment();
+  let a = new enrollment('next', 'prev', 'enrollment-form', 'flex');
   a.init();
+  
+  document.querySelector("#termsActive").addEventListener('click', () => {
+    console.log(1)
+    document.querySelector("#terms").style.display = 'block';
+  });
   
 })();
 

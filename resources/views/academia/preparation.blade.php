@@ -14,7 +14,7 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Nuevos Inicios</h1>
-        <p>Elje la preparación universitaria,<br /> exclusivaque está buscando</p>
+        <p>Elije la preparación universitaria,<br /> exclusiva que está buscando</p>
       </div>
     </div>
     
@@ -99,7 +99,7 @@
 
     
     <div class="row col-xs-12 around-xs nuevos-i-list-data">
-      <div class="row col-xs-12 col-sm-6 ii-ul">
+      <div class="row col-xs-12 col-sm-8 ii-ul">
         
         <!-- bucle -->
         <div class="col-xs-12">

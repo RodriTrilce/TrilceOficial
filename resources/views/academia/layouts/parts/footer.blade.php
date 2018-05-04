@@ -5,8 +5,8 @@
     <div class="row col-xs-12 between-xs center-xs footer-menu">
       <div class="col-xs-6 links">
         <ul>
-            <li><a href="/colegio">Colegio</a></li>
-            <li><a href="/academia">Academia</a></li>
+            <li><a href="/colegio">Trilce Colegio</a></li>
+            <li><a href="/academia">Trilce Academia</a></li>
             <li><a href="#">Vacaciones útiles</a></li>
             <li><a href="#">Menú</a></li>
             <li><a href="#">Trabaja con nosotros</a></li>
@@ -25,7 +25,7 @@
     </div>
     
     <div class="col-xs-12 center-xs footer-bottom">
-      © {{date("Y")}} Trilce. Todos los derechos reservados
+      © {{date("Y")}} Trilce Colegio y Academia. Todos los derechos reservados
     </div>
   </div>
 </footer>

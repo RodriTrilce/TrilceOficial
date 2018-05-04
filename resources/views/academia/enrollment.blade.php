@@ -60,7 +60,7 @@
                         <option value="" selected>Universidad</option>
                         <option value="UNI">UNI</option>
                         <option value="San Marcos">San Marcos</option>
-                        <option value="Catolica">Catolica</option>
+                        <option value="PUCP">PUCP</option>
                       </select>
                     </fieldset>
 
@@ -68,7 +68,7 @@
                   
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
-                      <input type="text" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
+                      <input type="text" class="condition" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
                     </fieldset>
                   </div>
                 </div>
@@ -77,8 +77,8 @@
                   <div class="file-upload-wrapper" data-text="Select your file!">
                       <input type="file" accept="image/jpeg, image/png" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
                   </div>
-                  <p>
-                    <span>- Formatos: .jpg y .png</span><br>
+                  <p class="formats">
+                    <span>- Formatos: .jpg, .png</span><br>
                     <span>- Peso máximo: 700kb</span>
                   </p>
                 </div>

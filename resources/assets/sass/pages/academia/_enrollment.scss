@@ -93,12 +93,18 @@
       }
     }
     
-    p{
+    .condition{
+      cursor: not-allowed;
+    }
+    
+    .formats{
       margin-bottom: 1rem;
       margin-top: 1rem;
       max-width: 80%;
+      font-size: 0.8rem;
     }
-  }
+    
+}
   
   //  Step 2,3
   .tab2, .tab3{

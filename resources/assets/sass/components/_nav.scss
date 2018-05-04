@@ -215,6 +215,8 @@ nav{
           >a{
             color: $orange;
           }
+/*
+// EFECTO NAV HOVER LI DESKTOP
           &::before{
             content: "";
             width: 20px;
@@ -223,6 +225,7 @@ nav{
             position: absolute;
             left: 0;
           }
+*/
         }
 
       }//end mediascreen

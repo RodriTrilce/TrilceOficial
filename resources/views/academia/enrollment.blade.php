@@ -23,339 +23,345 @@
   </div>
 
   <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms">
-    
-  <form class="col-xs-12" id="enrollment-form">
-    
-  <div class="tab tab1 row">
-      <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
-        <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
-      </div>
-      
-      <div class="col-xs-12 col-sm-6 col-md-5 text-init blockb">
-        <h2>Ficha de inscripción <span>2018</span></h2>
-        <h3>Nuevos inicios</h3>
-        <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
-        
-        <div class="form">
-            <div class="row col-xs-12 col-sm-10">
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="mumber" name="step1_dni" placeholder="DNI" pattern="([0-9]+)" required>
-                </fieldset>
-              </div>
-              
+    <form class="col-xs-12" id="enrollment-form">
 
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step1_ciclo" placeholder="Ciclo" pattern="[A-Za-z ]+" required>
-                </fieldset>
-              </div>
-              
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step1_universidad" placeholder="Univerisdad" pattern="[A-Za-z ]+" required>
-                </fieldset>
-              </div>
-              
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" required>
-                </fieldset>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-10">
-              <div class="file-upload-wrapper" data-text="Select your file!">
-                  <input type="file" accept="image/jpeg, image/png" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
-              </div>
-              <p>
-                <span>- Formatos: .jpg y .png</span><br>
-                <span>- Peso máximo: 700kb</span>
-              </p>
-            </div>
+      <div class="tab tab1 row">
+          <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
+            <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-5 text-init blockb">
+            <h2>Ficha de inscripción <span>2018</span></h2>
+            <h3>Nuevos inicios</h3>
+            <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
             
+            <div class="form">
+                <div class="row col-xs-12 col-sm-10">
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="mumber" name="step1_dni" placeholder="DNI" pattern="([0-9]+)" required>
+                    </fieldset>
+                  </div>
+                  
+
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <select name="step1_ciclo" required>
+                        <option value="" selected>Ciclo</option>
+                        <option value="Anual">Anual</option>
+                        <option value="Semestral">Semestral</option>
+                      </select>
+                    </fieldset>
+                  </div>
+                  
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <select name="step1_universidad" required>
+                        <option value="" selected>Universidad</option>
+                        <option value="UNI">UNI</option>
+                        <option value="San Marcos">San Marcos</option>
+                        <option value="Catolica">Catolica</option>
+                      </select>
+                    </fieldset>
+
+                  </div>
+                  
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-10">
+                  <div class="file-upload-wrapper" data-text="Select your file!">
+                      <input type="file" accept="image/jpeg, image/png" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
+                  </div>
+                  <p>
+                    <span>- Formatos: .jpg y .png</span><br>
+                    <span>- Peso máximo: 700kb</span>
+                  </p>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      <!-- end step1 -->
+      
+      <div class="tab tab2 row center-xs">
+        
+          <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
+              <h2>Datos generales del <i>Alumno</i></h2>
+              <h4>Generalidades</h4>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12">
+                    <fieldset>
+                      <input type="text" name="step2_names" placeholder="Apellido paterno / apellido materno / nombres" required>
+                    </fieldset>
+                  </div>
+                </div>
+              
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-3">
+                    <fieldset>
+                      <select name="step2_district" required>
+                        <option value="" selected>Distrito</option>
+                        <option value="Los Olivos">Los Olivos</option>
+                        <option value="Santa Beatriz">Santa Beatriz</option>
+                        <option value="Comas">Comas</option>
+                        <option value="Villa el Salvador ">Villa el Salvador </option>
+                        <option value="Torrico">Torrico</option>
+                        <option value="Marsano">Marsano</option>
+                        <option value="San Isidro">San Isidro</option>
+                      </select>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" class="inputfull" name="step2_address" placeholder="Dirección" required>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" name="step2_phonehome" placeholder="Telf. Casa" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" name="step2_mobile" placeholder="Celular" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" name="step2_email" placeholder="Correo Electronico" required>
+                    </fieldset>
+                  </div>
+                </div>
+                
+                <br />
+                <h4>Datos académicos</h4>
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step2_school" placeholder="Colegio" required>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step2_universitypostulate" placeholder="Universidad a la que postula" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step2_profession" placeholder="Carrera" required>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12">
+                    <fieldset>
+                      <input type="text" name="step2_oldacademy" placeholder="Academia de preparación anterior">
+                    </fieldset>
+                  </div>
+                </div>
+
+          </div>
+        
+      </div>
+      <!-- end step2 -->
+      
+      <div class="tab tab3 row center-xs">
+        
+          <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
+              <h2>Datos generales del <i>Padre y/o apoderado</i></h2>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs start-xs">
+                    <fieldset>
+                      <label class="radio-inline">
+                        <span>Padre</span> <input type="radio" name="step3_apoderate" value="father" required>
+                      </label>
+                      <label class="radio-inline">
+                        <span>Madre</span> <input type="radio" name="step3_apoderate" value="mother">
+                      </label>
+                      <label class="radio-inline">
+                        <span>Otro</span> <input type="radio" name="step3_apoderate" value="other">
+                      </label>
+                    </fieldset>
+                  </div>
+                </div>
+              
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-9">
+                    <fieldset>
+                      <input type="text" name="step3_names" placeholder="Apellidos y nombres" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" name="step3_dni" placeholder="DNI" required>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" name="step3_phonehome" placeholder="Telf. Casa" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset>
+                      <input type="text" name="step3_mobile" placeholder="Celular" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step3_address" placeholder="Domicilio actual" required>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step3_email" placeholder="Correo electronico" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step3_work" placeholder="Centro de trabajo" required>
+                    </fieldset>
+                  </div>
+                </div>
+                
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step3_profession" placeholder="Ocupación" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset>
+                      <input type="text" name="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
+                    </fieldset>
+                  </div>
+                </div>
+                
+                <div class="row col-xs-12">
+                  <div class="col col-xs-12">
+                    <fieldset>
+                      <label><span>Si acepto los términos y condiciones</span> <input class="checkterms" type="checkbox" name="checkbox" value="value" required></label>
+                    </fieldset>
+                    <span><a id="termsActive">Leer términos y condiciones</a></span>
+                  </div>
+                  <div class="terms" id="terms">
+                    <h1>CONDICIONES ECONÓMICAS Y DEL SERVICIO DE LA ACADEMIA PREUNIVERSITARIA</h1>
+                    <ol>
+                    <li>La hora de ingreso es de lunes a sábado de 7:30 a. m. a 8:00 a. m. y se considerará
+                    tardanza entre las 8:01 a. m. a 8:15 a. m. Posterior a esa hora, no se permitirá el ingreso a
+                    la institución.</li>
+
+                    <li>De realizarse el pago del ciclo de forma fraccionada en dos cuotas, este tendrá un recargo
+                    adicional de S/.____. Este monto será recargado en la primera cuota, debiéndose cancelar
+                    la segunda cuota en un lapso de ____ días.</li>
+
+                    <li>En el caso de que el padre de familia, apoderado o alumno mayor de edad opte por
+                    retirarse habiéndose iniciado las clases, se le hará un cobro de S/.____ por concepto de
+                    penalidad y un cobro de S/.____ por concepto de materiales, así como también se le
+                    retendrá el monto de días asistidos y no asistidos sin justificación.</li>
+
+                    <li>En caso el alumno solicite traslado de sede o traslado a otro turno o ciclo dentro del local
+                    en donde se le presta servicio, se procederá a descontar los días asistidos y no asistidos sin
+                    justificación. El monto restante podrá ser utilizado para las inscripciones en otro ciclo,
+                    debiéndose abonar la diferencia.</li>
+
+                    <li>En el caso de que el padre de familia, apoderado o alumno mayo de edad requiera la
+                    devolución del dinero antes de iniciado el periodo de clases, la institución realizará el
+                    cobro de S/.____ por concepto de gastos administrativos.</li>
+
+                    <li>Para el trámite de postergación de matrícula, se procederá a descontar los días asistidos y
+                    no asistidos sin justificación. El monto restante será reservado para el siguiente ciclo
+                    académico inmediato en el cual al alumno se matricule. En caso decida no retomar la
+                    preparación al ciclo siguiente, el monto reservado se le será restituido, a solicitud del
+                    padre de familia, apoderado o alumno mayor de edad.</li>
+
+                    <li>El ingreso a la academia se realiza portando la tarjeta de control con el recibo original de
+                    pago adjunto: en caso de no estar al día en el pago de la pensión, no se le permitirá el
+                    ingreso. Por la pérdida de la tarjeta o del recibo, se deberá cancelar S/.10.00 por concepto
+                    de duplicado.</li>
+
+                    <li>El alumno será evaluado en forma constante por medio de exámenes de entrada,
+                    simulacros de admisión, participación en clases, desarrollo de prácticas, tareas y buena
+                    conducta. Dichas condiciones se tomarán en cuenta para las calificaciones de aula o
+                    reagrupaciones.</li>
+
+                    <li>La pérdida del libro que otorga la institución dará lugar al cobro de S/.____ por concepto
+                    de duplicado.
+                    10. La institución realiza maratones académicas en horario diurno y nocturno, sin ser
+                    obligatoria la asistencia para el alumno. En caso asista, tendrá que efectuar el pago
+                    adicional de S/.____.</li>
+
+                    <li> El dictado de clases iniciará siempre que se alcance el número mínimo de alumnos
+                    matriculados establecido por la institución.
+                    12. Manifiesto mi conformidad en caso la institución cambie la fecha de inicio del dictado de
+                    clases del ciclo en cuestión.</li>
+
+                    <li> En los casos de los ciclos anuales, semestrales o intensivos, el cobro de la pensión se hace
+                    en 30 días; si pasado el vencimiento de dicha pensión el alumno opta por reingresar a la
+                    academia deberá cancelar la pensión en los 30 días siguientes de vencida la pensión
+                    anterior.</li>
+
+                    <li> En el caso de que el alumno pida traslado de pago de la pensión mensual a otro alumno,
+                    ya sea que se trate de un alumno nuevo o ya matriculado (en el ciclo anual, semestral,
+                    intensivo, o en el ciclo de verano o repaso), se descontará de dicho monto la cantidad de
+                    S/.____ por concepto de traslado de titularidad. Cabe precisar que el traslado de pago se
+                    realizará única y exclusivamente por las pensiones que corresponden a los meses
+                    pendientes de clases.</li>
+                    </ol>
+
+                    <p><strong>“Declaro tener conocimiento de que la Academia Preuniversitaria Trilce incluirá la información
+                    personal de mi menor hijo (a), padres y/o apoderados en su base de datos en un tiempo indefinido
+                    para fines de la actividad que desarrolla de acuerdo a la ley N° 29733"</strong></p>
+                  </div>
+                </div>
+                
+                <div class="row col-xs-12 capcha">
+                  <div class="g-recaptcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"></div>
+                </div>
+
+          </div>
+
+      </div>
+      <!-- end step3 -->
+      
+      <div class="row col-xs-12 col-sm-10 col-md-10 end-xs">
+        <div class="row col-xs-10 between-xs">
+          <fieldset>
+            <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atras</button>
+          </fieldset>
+          <fieldset>
+            <button type="submit" id="next" class="validate">Siguiente <i class="fa fa-angle-right"></i></button>
+          </fieldset>
         </div>
       </div>
-    </div>
-  <!-- end step1 -->
-  
-  <div class="tab tab2 row center-xs">
-    
-      <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
-          <h2>Datos generales del <i>Alumno</i></h2>
-          <h4>Generalidades</h4>
+      <!-- end steps -->
 
-            <div class="row col-xs-12">
-              <div class="col-xs-12">
-                <fieldset>
-                  <input type="text" name="step2_names" placeholder="Apellido paterno / apellido materno / nombres" required>
-                </fieldset>
-              </div>
-            </div>
-          
-          
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-3">
-                <fieldset>
-                  <select name="step2_district" required>
-                    <option value="" selected>Distrito</option>
-                    <option value="Cercado de Lima">Cercado de Lima</option>
-                    <option value="Cercado de Lima">Cercado de Lima</option>
-                    <option value="Cercado de Lima">Cercado de Lima</option>
-                    <option value="Cercado de Lima">Cercado de Lima</option>
-                    <option value="Cercado de Lima">Cercado de Lima</option>
-                  </select>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" class="inputfull" name="step2_address" placeholder="Dirección" required>
-                </fieldset>
-              </div>
-            </div>
-
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" name="step2_phonehome" placeholder="Telf. Casa" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" name="step2_mobile" placeholder="Celular" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" name="step2_email" placeholder="Correo Electronico" required>
-                </fieldset>
-              </div>
-            </div>
-            
-            <br />
-            <h4>Datos académicos</h4>
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step2_school" placeholder="Colegio" required>
-                </fieldset>
-              </div>
-            </div>
-
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step2_universitypostulate" placeholder="Universidad a la que postula" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step2_profession" placeholder="Carrera" required>
-                </fieldset>
-              </div>
-            </div>
-
-            <div class="row col-xs-12">
-              <div class="col-xs-12">
-                <fieldset>
-                  <input type="text" name="step2_oldacademy" placeholder="Academia de preparación anterior">
-                </fieldset>
-              </div>
-            </div>
-
-      </div>
-    
+    </form>
   </div>
-  <!-- end step2 -->
-  
-  <div class="tab tab3 row center-xs">
-    
-      <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
-          <h2>Datos generales del <i>Padre y/o apoderado</i></h2>
-
-            <div class="row col-xs-12">
-              <div class="col-xs start-xs">
-                <fieldset>
-                  <label class="radio-inline">
-                    <span>Padre</span> <input type="radio" name="step3_apoderate" value="father">
-                  </label>
-                  <label class="radio-inline">
-                    <span>Madre</span> <input type="radio" name="step3_apoderate" value="mother">
-                  </label>
-                  <label class="radio-inline">
-                    <span>Otro</span> <input type="radio" name="step3_apoderate" value="other">
-                  </label>
-                </fieldset>
-              </div>
-            </div>
-          
-          
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-9">
-                <fieldset>
-                  <input type="text" name="step3_names" placeholder="Apellidos y nombres" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" name="step3_dni" placeholder="DNI" required>
-                </fieldset>
-              </div>
-            </div>
-
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" name="step3_phonehome" placeholder="Telf. Casa" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm">
-                <fieldset>
-                  <input type="text" name="step3_mobile" placeholder="Celular" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step3_address" placeholder="Domicilio actual" required>
-                </fieldset>
-              </div>
-            </div>
-
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step3_email" placeholder="Correo electronico" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step3_work" placeholder="Centro de trabajo" required>
-                </fieldset>
-              </div>
-            </div>
-            
-            <div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step3_profession" placeholder="Ocupación" required>
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <fieldset>
-                  <input type="text" name="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
-                </fieldset>
-              </div>
-            </div>
-            
-            <div class="row col-xs-12">
-              <div class="col col-xs-12">
-                <fieldset>
-                  <label><span>Si acepto los términos y condiciones</span> <input class="checkterms" type="checkbox" name="checkbox" value="value" required></label>
-                </fieldset>
-                <span><a id="termsActive">Leer términos y condiciones</a></span>
-              </div>
-              <div class="terms" id="terms">
-                <h1>CONDICIONES ECONÓMICAS Y DEL SERVICIO DE LA ACADEMIA PREUNIVERSITARIA</h1>
-                <ol>
-                <li>La hora de ingreso es de lunes a sábado de 7:30 a. m. a 8:00 a. m. y se considerará
-                tardanza entre las 8:01 a. m. a 8:15 a. m. Posterior a esa hora, no se permitirá el ingreso a
-                la institución.</li>
-
-                <li>De realizarse el pago del ciclo de forma fraccionada en dos cuotas, este tendrá un recargo
-                adicional de S/.____. Este monto será recargado en la primera cuota, debiéndose cancelar
-                la segunda cuota en un lapso de ____ días.</li>
-
-                <li>En el caso de que el padre de familia, apoderado o alumno mayor de edad opte por
-                retirarse habiéndose iniciado las clases, se le hará un cobro de S/.____ por concepto de
-                penalidad y un cobro de S/.____ por concepto de materiales, así como también se le
-                retendrá el monto de días asistidos y no asistidos sin justificación.</li>
-
-                <li>En caso el alumno solicite traslado de sede o traslado a otro turno o ciclo dentro del local
-                en donde se le presta servicio, se procederá a descontar los días asistidos y no asistidos sin
-                justificación. El monto restante podrá ser utilizado para las inscripciones en otro ciclo,
-                debiéndose abonar la diferencia.</li>
-
-                <li>En el caso de que el padre de familia, apoderado o alumno mayo de edad requiera la
-                devolución del dinero antes de iniciado el periodo de clases, la institución realizará el
-                cobro de S/.____ por concepto de gastos administrativos.</li>
-
-                <li>Para el trámite de postergación de matrícula, se procederá a descontar los días asistidos y
-                no asistidos sin justificación. El monto restante será reservado para el siguiente ciclo
-                académico inmediato en el cual al alumno se matricule. En caso decida no retomar la
-                preparación al ciclo siguiente, el monto reservado se le será restituido, a solicitud del
-                padre de familia, apoderado o alumno mayor de edad.</li>
-
-                <li>El ingreso a la academia se realiza portando la tarjeta de control con el recibo original de
-                pago adjunto: en caso de no estar al día en el pago de la pensión, no se le permitirá el
-                ingreso. Por la pérdida de la tarjeta o del recibo, se deberá cancelar S/.10.00 por concepto
-                de duplicado.</li>
-
-                <li>El alumno será evaluado en forma constante por medio de exámenes de entrada,
-                simulacros de admisión, participación en clases, desarrollo de prácticas, tareas y buena
-                conducta. Dichas condiciones se tomarán en cuenta para las calificaciones de aula o
-                reagrupaciones.</li>
-
-                <li>La pérdida del libro que otorga la institución dará lugar al cobro de S/.____ por concepto
-                de duplicado.
-                10. La institución realiza maratones académicas en horario diurno y nocturno, sin ser
-                obligatoria la asistencia para el alumno. En caso asista, tendrá que efectuar el pago
-                adicional de S/.____.</li>
-
-                <li> El dictado de clases iniciará siempre que se alcance el número mínimo de alumnos
-                matriculados establecido por la institución.
-                12. Manifiesto mi conformidad en caso la institución cambie la fecha de inicio del dictado de
-                clases del ciclo en cuestión.</li>
-
-                <li> En los casos de los ciclos anuales, semestrales o intensivos, el cobro de la pensión se hace
-                en 30 días; si pasado el vencimiento de dicha pensión el alumno opta por reingresar a la
-                academia deberá cancelar la pensión en los 30 días siguientes de vencida la pensión
-                anterior.</li>
-
-                <li> En el caso de que el alumno pida traslado de pago de la pensión mensual a otro alumno,
-                ya sea que se trate de un alumno nuevo o ya matriculado (en el ciclo anual, semestral,
-                intensivo, o en el ciclo de verano o repaso), se descontará de dicho monto la cantidad de
-                S/.____ por concepto de traslado de titularidad. Cabe precisar que el traslado de pago se
-                realizará única y exclusivamente por las pensiones que corresponden a los meses
-                pendientes de clases.</li>
-                </ol>
-
-                <p><strong>“Declaro tener conocimiento de que la Academia Preuniversitaria Trilce incluirá la información
-                personal de mi menor hijo (a), padres y/o apoderados en su base de datos en un tiempo indefinido
-                para fines de la actividad que desarrolla de acuerdo a la ley N° 29733"</strong></p>
-              </div>
-            </div>
-            
-            <div class="row col-xs-12 capcha">
-              <div class="g-recaptcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"></div>
-            </div>
-
-      </div>
-
-  </div>
-  <!-- end step3 -->
-  
-  
-    <div class="row col-xs-12 col-sm-10 col-md-10 end-xs">
-      
-      <div class="row col-xs-10 between-xs">
-        <fieldset>
-          <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atras</button>
-        </fieldset>
-        <fieldset>
-          <button type="submit" id="next" class="validate">Siguiente <i class="fa fa-angle-right"></i></button>
-        </fieldset>
-
-      </div>
-    </div>
-    
-    
-  </form>
-</div>
 
 
   @include('academia.partials.card_bottom')

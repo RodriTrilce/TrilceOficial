@@ -1,6 +1,7 @@
 <?php
-
 namespace App\Http\Controllers\Academia;
+
+setlocale(LC_TIME, 'es_ES.UTF-8');
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

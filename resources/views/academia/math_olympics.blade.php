@@ -16,20 +16,20 @@
   </div>
   
   <div class="row center-xs center-sm math-olympic">
-    <div class="col-xs-11 col-sm-9 text-init math-olympic-table">
+    <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 text-init math-olympic-table">
       
       @foreach ($data as $key => $v)
       <div class="row col-xs">
-        <div class="col-xs-12 math-olympic-title">{{$v->sede}}</div>
-        <div class="row col-xs-12 col-sm math-olympic-content">
-          <div class="col-sm-1 col-xs-2">{{ date('d \d\e F', strtotime($v->created_at)) }}</div>
-          <div class="col-xs">{{$v->title}}</div>
-          <div class="col-xs-3">{{$v->grade}}</div>
-        </div>
         
+        <div class="col-xs-12 math-olympic-title">{{$v->sede}}</div>
+        
+        <div class="row col-xs-12 col-sm col-md-7 math-olympic-content">
+          <div class="col-sm-1 col-xs-2"><span class="a">{{ date('d \d\e F', strtotime($v->created_at)) }}</span><span class="b">{{ date('j/n', strtotime($v->created_at)) }}</span></div>
+          <div class="col-xs-7 col-sm-8">{{$v->title}}</div>
+          <div class="col-xs">{{$v->grade}}</div>
+        </div>
 
-
-        <div class="row col-xs-12 col-sm">
+        <div class="row col-xs-12 col-sm col-md">
           <ul class="math-olympic-list">
             <li {!! ($v->base_url!==''?"class=\"active\"":'') !!}><a href="{{$v->base_url}}" target="_blank">Bases</a></li>
             <li {!! ($v->inscription_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individial</a></li>
@@ -87,7 +87,7 @@
       <div class="row col-xs-12 col-sm-6">
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-artesco.jpg') }}}" alt="Aresto"></div>
-        <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-chocolisto.jpg') }}}" alt="Chocolisto"></div>
+        <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-dgnotas.jpg') }}}" alt="Gnotas"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>
       </div>
     </div>

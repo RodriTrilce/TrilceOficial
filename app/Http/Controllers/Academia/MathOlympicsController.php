@@ -1,7 +1,8 @@
 <?php
 namespace App\Http\Controllers\Academia;
 
-setlocale(LC_TIME, 'es_ES.UTF-8');
+//setlocale(LC_ALL, "es_ES", "Spanish_Spain", "Spanish");
+use \Carbon\Carbon;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

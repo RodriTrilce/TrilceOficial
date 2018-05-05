@@ -17,14 +17,13 @@
   
   <div class="row center-xs center-sm math-olympic">
     <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 text-init math-olympic-table">
-      
       @foreach ($data as $key => $v)
       <div class="row col-xs">
         
         <div class="col-xs-12 math-olympic-title">{{$v->sede}}</div>
         
         <div class="row col-xs-12 col-sm col-md-7 math-olympic-content">
-          <div class="col-sm-1 col-xs-2"><span class="a">{{ date('d \d\e F', strtotime($v->created_at)) }}</span><span class="b">{{ date('j/n', strtotime($v->created_at)) }}</span></div>
+          <div class="col-sm-1 col-xs-2"><span class="a">{{ Date::parse($v->created_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->created_at)) }}</span></div>
           <div class="col-xs-7 col-sm-8">{{$v->title}}</div>
           <div class="col-xs">{{$v->grade}}</div>
         </div>

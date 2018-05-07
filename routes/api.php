@@ -20,3 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Academia/Entering = Lista de cachimbos api
 Route::get('/academia/entering/{university}/{year}', 'Academia\EnteringResourceController@show');
 
+// Academia/Enrollment = Matricula en linea
+Route::get('/academia/enrollment/{university}', 'Academia\EnrollmentResourceController@university');
+Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentResourceController@venue');

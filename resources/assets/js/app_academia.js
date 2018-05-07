@@ -28,130 +28,193 @@ if(supportsTouch){
     document.addEventListener('touchstart', function() {},false);
 }
 
-
-// Utils
-var show = function (elem) {
-	elem.style.display = 'block';
-};
-
-var hide = function (elem) {
-	elem.style.display = 'none';
-};
-
-var gid = (elem) => {
-  return document.getElementById(elem);
+// capitalize frist letter upper
+String.prototype.capitalize = function(){
+    return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
 }
 
+// Utils
+var show  = (elem) => elem.style.display = 'block';
+var hide  = (elem) => elem.style.display = 'none';
+var gid   = (elem) => document.getElementById(elem);
+
 var get = (url) => {
-  return new Promise(function(resolve, reject) {
+  return new Promise((resolve, reject) => {
     var req = new XMLHttpRequest();
     req.open('GET', url);
-
-    req.onload = function() {
+    req.onload = () => {
       if (req.status == 200) {
         resolve(req.response);
-      }
-      else {
+      }else{
         reject(Error(req.statusText));
       }
     };
-
-    req.onerror = function() {
-      reject(Error("Network Error"));
-    };
-
+    req.onerror = () => reject(Error('Network Error'));
     req.send();
   });
 }
 
 function enrollment(nextBtn,prevBtn,form, type){
-  this.currentTab = 0; // Current tab is set to be the first tab (0)
+  this.currentTab = 0;
   this.nextBtn = nextBtn;
   this.prevBtn = prevBtn;
   this.form    = form;
   this.blockType = type;
+  this.step1University;
+  this.step1Venue;
+  this.cost = [{
+    one : {
+      "pucp" : {
+        "san isidro" : {
+          "cost" : 100,
+          "time" : 30
+        },
+        "los olivos" : {
+          "cost" : 50,
+          "time" : 15
+        },
+        "torrico" : {
+          "cost" : 50,
+          "time" : 15
+        }
+      },
+      "uni" : {
+        "all" : {
+          "cost" : 50,
+          "time" : 15
+        }
+      },
+      "san marcos" : {
+        "all" : {
+          "cost" : 50,
+          "time" : 15
+        }
+      }
+    },
+    nine : {
+      "uni" : {
+        "ciencia" : 12,
+        "letras" : 15
+      },
+      "san marcos" : {
+        "ciencia" : 12,
+        "letras" : 15
+      },
+      "pucp" : {
+        "all" : 30,
+      }
+    }
+  }];
   
   this.init = function(){
-    this.showTab(this.currentTab); // Display the current tab
+    this.showTab(this.currentTab);
+    this.hearUniversity();
+    this.hearVenue();
     
-    document.getElementById(this.prevBtn).addEventListener('click', function(){
-      this.nextPrev(-1);
-    }.bind(this));
+    document.getElementById(this.prevBtn).addEventListener('click', (e) => this.nextPrev(-1,e));
+    document.getElementById(this.nextBtn).addEventListener('click', (e) => this.nextPrev(1,e));;
+  }
+  
+  this.hearUniversity = function(){
+    var elem = document.querySelector('#step1_university');
+    var select = document.getElementById('step1_venue');
     
-    document.getElementById(this.nextBtn).addEventListener('click', function(){
-      this.nextPrev(1);
-      //document.getElementById(this.form).submit();
-    }.bind(this));
+    elem.addEventListener('change', () => {
+      this.step1University = elem.options[elem.selectedIndex].value;
+
+      this.cleanSelect(select, 'Sede');
+      this.cleanSelect(document.getElementById('step1_cycle'), 'Ciclo');
+      
+      get(`/api/academia/enrollment/${this.step1University}/`).then((response) => {
+          response = JSON.parse(response).data;
+          for(var k in response){
+              let s = document.createElement('option');
+              s.text = k.capitalize();
+              s.value = response[k];
+              select.add(s);
+          }
+      }, (error) => console.error('error', error));
+      
+    });
+    
+  }
+  
+  this.hearVenue = function(){
+    let elem = document.querySelector('#step1_venue');
+    const select = document.querySelector('#step1_cycle');
+    elem.addEventListener('change' , () => {
+      this.step1Venue = elem.options[elem.selectedIndex].value;
+      
+      this.cleanSelect(select, 'Ciclo');
+      
+      get(`/api/academia/enrollment/${this.step1University}/${this.step1Venue}`).then((response) => {
+          response = JSON.parse(response).data;
+          for(var k in response){
+              let s = document.createElement('option');
+              s.text = response[k].capitalize();
+              s.value = k;
+              select.add(s);
+          }
+      }, (error) => console.error('error', error));
+    })
+  }
+  
+  this.cleanSelect = function(select, title){
+    while (select.options.length) select.remove(0);
+    let v = document.createElement('option');
+    v.text = title;
+    v.selected = true;
+    v.disabled = true;
+    select.add(v);
+    return select;
   }
 
   this.showTab = function(n) {
-    // This function will display the specified tab of the form ...
     var x = document.getElementsByClassName("tab");
     x[n].style.display = this.blockType;
-    //x[n].style.visibility = 'visible';
-    // ... and fix the Previous/Next buttons:
-
-    if (n == 0) {
-      document.getElementById(this.prevBtn).style.display = "none";
-    } else {
-      document.getElementById(this.prevBtn).style.display = "inline";
-    }
-    
-    if (n == (x.length - 1)) {
-      document.getElementById(this.nextBtn).innerHTML = "Enviar";
-    } else {
-      document.getElementById(this.nextBtn).innerHTML = `Siguiente <i class="fa fa-angle-right"></i>`;
-    }
-    
-    // ... and run a function that displays the correct step indicator:
+    document.getElementById(this.prevBtn).style.display = (n==0?'none':'inline');
+    document.getElementById(this.nextBtn).innerHTML = (n == (x.length - 1)?'Enviar':`Siguiente <i class="fa fa-angle-right"></i>`);
     this.fixStepIndicator(n)
   }
 
-  this.nextPrev = function(n) {
-    // This function will figure out which tab to display
-    var x = document.getElementsByClassName("tab");
-    // Exit the function if any field in the current tab is invalid:
+  this.nextPrev = function(n,e) {
+    var x = document.getElementsByClassName('tab');
     if (n == 1 && !this.validateForm()) return false;
-    // Hide the current tab:
-    x[this.currentTab].style.display = "none";
-    // x[this.currentTab].style.visibility = "hidden";
+    x[this.currentTab].style.display = 'none';
     // Increase or decrease the current tab by 1:
     this.currentTab = this.currentTab + n;
-    // if you have reached the end of the form... :
     if (this.currentTab >= x.length) {
+      e.preventDefault();
       //...the form gets submitted:
       //document.getElementById("regForm").submit();
       console.log("finish")
       return false;
     }
-    // Otherwise, display the correct tab:
     this.showTab(this.currentTab);
   }
 
   this.validateForm = function() {
-    // This function deals with validation of the form fields
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[this.currentTab].getElementsByTagName("input");
+    var s = [], x, i, valid = true;
+    x = document.getElementsByClassName('tab');
+    s = Array.prototype.concat.apply(s, x[this.currentTab].getElementsByTagName("input"));
+    s = Array.prototype.concat.apply(s, x[this.currentTab].getElementsByTagName("select"));
     
-    // A loop that checks every input field in the current tab:
-    for (i = 0; i < y.length; i++) {
-      // If a field is empty...
-      if (y[i].value == "") {
-        // add an "invalid" class to the field:
-        y[i].className += " invalid";
-        // and set the current valid status to false:
+    for (i = 0; i < s.length; i++) {
+      
+      if (!s[i].validity.valid) {
+        s[i].classList.add('invalid');
         valid = false;
       }else{
-        y[i].removeAttribute("required");
+        s[i].removeAttribute('required');
+        s[i].classList.remove('invalid');
       }
+      
     }
     // If the valid status is true, mark the step as finished and valid:
     /*if (valid) {
       document.getElementsByClassName("step")[this.currentTab].className += " finish";
     }*/
-    
-    return valid; // return the valid status
+    return valid;
   }
 
   this.fixStepIndicator = function(n) {
@@ -163,11 +226,10 @@ function enrollment(nextBtn,prevBtn,form, type){
       if(i==n) a.classList.add('active');
       if(i<n) a.classList.add('visited');
       (i<n)
-    })
+    });
   }
 
 }
-
 
 /**!
  *  Index Slider
@@ -188,9 +250,7 @@ function enrollment(nextBtn,prevBtn,form, type){
    //  lazyload: true
    });
  }
- 
- 
- 
+
 
 /**!
  *  Simulacrum: Formulario de registro

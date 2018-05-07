@@ -21,7 +21,6 @@ class EnteringResourceController extends Controller
       $request = EnteringModel::where('university_id_entering', '=', $university->id)
                               ->whereYear('created_at', '=', $year)
                               ->get();
-
       return new EnteringResource($request);
     }
     

@@ -37,40 +37,42 @@
             
             <div class="form">
                 <div class="row col-xs-12 col-sm-10">
+                  
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
                       <input type="mumber" name="step1_dni" placeholder="DNI" pattern="([0-9]+)" required>
                     </fieldset>
                   </div>
-                  
 
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
-                      <select name="step1_ciclo" required>
-                        <option value="" selected>Ciclo</option>
-                        <option value="Anual">Anual</option>
-                        <option value="Semestral">Semestral</option>
+                      <select name="step1_university" id="step1_university" required>
+                        <option value="" selected disabled>Universidad</option>
+                        <option value="uni">UNI</option>
+                        <option value="sm">San Marcos</option>
+                        <option value="pucp">PUCP</option>
                       </select>
                     </fieldset>
                   </div>
                   
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
-                      <select name="step1_universidad" required>
-                        <option value="" selected>Universidad</option>
-                        <option value="UNI">UNI</option>
-                        <option value="San Marcos">San Marcos</option>
-                        <option value="PUCP">PUCP</option>
+                      <select name="step1_venue" id="step1_venue" required>
+                        <option value="" selected disabled>Sede</option>
                       </select>
                     </fieldset>
-
                   </div>
-                  
+
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
-                      <input type="text" class="condition" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
+                      <select name="step1_cycle" id="step1_cycle" required>
+                        <option value="" selected disabled>Ciclo</option>
+                      </select>
                     </fieldset>
                   </div>
+                  
+                  <input hidden type="text" class="condition" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
+
                 </div>
 
                 <div class="col-xs-12 col-sm-10">
@@ -89,7 +91,6 @@
       <!-- end step1 -->
       
       <div class="tab tab2 row center-xs">
-        
           <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
               <h2>Datos generales del <i>Alumno</i></h2>
               <h4>Generalidades</h4>
@@ -106,14 +107,50 @@
                   <div class="col-xs-12 col-sm-3">
                     <fieldset>
                       <select name="step2_district" required>
-                        <option value="" selected>Distrito</option>
-                        <option value="Los Olivos">Los Olivos</option>
-                        <option value="Santa Beatriz">Santa Beatriz</option>
+                        <option value="" selected disabled>Distrito</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Ancon">Ancon</option>
+                        <option value="Ate">Ate</option>
+                        <option value="Barranco">Barranco</option>
+                        <option value="Brena">Bre&ntilde;a</option>
+                        <option value="Carabayllo">Carabayllo</option>
+                        <option value="Chaclacayo">Chaclacayo</option>
+                        <option value="Chorrillos">Chorrillos</option>
+                        <option value="Cieneguilla">Cieneguilla</option>
                         <option value="Comas">Comas</option>
-                        <option value="Villa el Salvador ">Villa el Salvador </option>
-                        <option value="Torrico">Torrico</option>
-                        <option value="Marsano">Marsano</option>
+                        <option value="El Agustino">El Agustino</option>
+                        <option value="Independencia">Independencia</option>
+                        <option value="Jesus Maria">Jesus Maria</option>
+                        <option value="La Molina">La Molina</option>
+                        <option value="La Victoria">La Victoria</option>
+                        <option value="Lince">Lince</option>
+                        <option value="Los Olivos">Los Olivos</option>
+                        <option value="Lurigancho">Lurigancho</option>
+                        <option value="Lurin">Lurin</option>
+                        <option value="Magdalena Del Mar">Magdalena Del Mar</option>
+                        <option value="Magdalena Vieja">Magdalena Vieja</option>
+                        <option value="Miraflores">Miraflores</option>
+                        <option value="Pachacamac">Pachacamac</option>
+                        <option value="Pucusana">Pucusana</option>
+                        <option value="Puente Piedra">Puente Piedra</option>
+                        <option value="Punta Hermosa">Punta Hermosa</option>
+                        <option value="Punta Negra">Punta Negra</option>
+                        <option value="Rimac">Rimac</option>
+                        <option value="San Bartolo">San Bartolo</option>
+                        <option value="San Borja">San Borja</option>
                         <option value="San Isidro">San Isidro</option>
+                        <option value="San Juan De Lurigancho">San Juan De Lurigancho</option>
+                        <option value="San Juan De Miraflores">San Juan De Miraflores</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="San Martin De Porres">San Martin De Porres</option>
+                        <option value="San Miguel">San Miguel</option>
+                        <option value="Santa Anita">Santa Anita</option>
+                        <option value="Santa Maria Del Mar">Santa Maria Del Mar</option>
+                        <option value="Santa Rosa">Santa Rosa</option>
+                        <option value="Santiago De Surco">Santiago De Surco</option>
+                        <option value="Surquillo">Surquillo</option>
+                        <option value="Villa El Salvador">Villa El Salvador</option>
+                        <option value="Villa Maria Del Triunfo">Villa Maria Del Triunfo</option>
                       </select>
                     </fieldset>
                   </div>
@@ -347,12 +384,14 @@
 
       </div>
       <!-- end step3 -->
-      
-      <div class="row col-xs-12 col-sm-10 col-md-10 end-xs">
-        <div class="row col-xs-10 between-xs">
+            
+      <div class="row col-xs-12 col-sm-8 center-sm stepsarrows">
+        <div class="col-xs start-xs">
           <fieldset>
             <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atras</button>
           </fieldset>
+        </div>
+        <div class="col-xs end-xs">
           <fieldset>
             <button type="submit" id="next" class="validate">Siguiente <i class="fa fa-angle-right"></i></button>
           </fieldset>

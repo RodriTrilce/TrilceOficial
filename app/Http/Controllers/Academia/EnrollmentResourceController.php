@@ -29,7 +29,7 @@ class EnrollmentResourceController extends Controller
      public function university($university)
      {
        $urlU     = $this->url[$university];
-       $data     = file_get_contents($urlU);
+       $data     = $this->getUrl($urlU);
        $data     = collect($this->getOptionsVenue($data));
        return new EnrollmentResource($data);
      }
@@ -37,7 +37,7 @@ class EnrollmentResourceController extends Controller
      public function venue($university, $key)
      {
        $urlU     = $this->url[$university];
-       $data     = file_get_contents($urlU);
+       $data     = $this->getUrl($urlU);
        $venue    = $this->getOptionsVenue($data);
        $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
        return new EnrollmentResource($collection);
@@ -51,7 +51,7 @@ class EnrollmentResourceController extends Controller
        return $t2[0];
      }
 
-     function post_to_url($url, $data)
+     function postUrl($url, $data)
      {
         $fields = '';
         foreach($data as $key => $value) {
@@ -62,10 +62,21 @@ class EnrollmentResourceController extends Controller
         curl_setopt($post, CURLOPT_URL, $url);
         curl_setopt($post, CURLOPT_POST, count($data));
         curl_setopt($post, CURLOPT_POSTFIELDS, $fields);
+        curl_setopt($post, CURLOPT_FOLLOWLOCATION, TRUE);
         curl_setopt($post, CURLOPT_RETURNTRANSFER, 1);
         $result = curl_exec($post);
         curl_close($post);
         return $result;
+     }
+     
+     function getUrl($url){
+       $ch = curl_init();
+       curl_setopt($ch, CURLOPT_URL, $url);
+       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+       $result = curl_exec($ch);
+       curl_close($ch);
+       return $result;
      }
 
      function getOptionsVenue($data)
@@ -83,7 +94,7 @@ class EnrollmentResourceController extends Controller
          'intidturno'  => 0
        ];
        
-       $url = $this->post_to_url($url, $opt);
+       $url = $this->postUrl($url, $opt);
        preg_match_all("#<strong>(.*?)</strong>#", $url, $cycles);
        $cycles = array_unique($cycles[1]);
        return $cycles;

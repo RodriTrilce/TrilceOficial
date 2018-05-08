@@ -11,7 +11,7 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Solucionarios</h1>
-        <p class="header-double-p-up soluion-header-p">Los examenes de admisión resueltos de Uni, San Marcos y PUCP.</p>
+        <p class="header-double-p-up soluion-header-p">Los examenes de admisión resueltos de UNI, San Marcos y PUCP.</p>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
   <div class="row center-xs center-sm text-init h-mtop">
     <div class="col-xs-12 col-sm-8">
       <h1 class="solution-h1">
-        Descarga los exámenes de admisión resultos
+        Descarga los exámenes de admisión resueltos
       </h1>
     </div>
   </div>

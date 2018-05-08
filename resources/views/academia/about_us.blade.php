@@ -99,7 +99,7 @@
               <h3 class="rocket">Misión</h3>
             </div>
             <div class="col-xs-12 col-sm-6">
-              <p>Somos una organización educativa que forma líderes con un altpo nivel académico y una sólida formación en valores que les permita afrontar con éxito los retos de su vida personal y profesional.</p>
+              <p>Somos una organización educativa que forma líderes con un alto nivel académico y una sólida formación en valores que les permita afrontar con éxito los retos de su vida personal y profesional.</p>
             </div>
           </div>
         

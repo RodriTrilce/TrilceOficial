@@ -18,10 +18,10 @@
 
   <header>
     <div class="row between-xs">
-      <div class="col-xs-2 col-md-3 col-sm logo">
+      <div class="col-xs-2 logo">
         <a href="/academia/"><img src="{{{ asset('static/images/academia/logo.png') }}}" alt="Trilce"></a>
       </div>
-      <div class="row col-xs end-xs pre-nav">
+      <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
           <div class="col-xs-12 nav-info">
               <span><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b>6198100</b></span>
           </div>

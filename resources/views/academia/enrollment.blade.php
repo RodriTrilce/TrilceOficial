@@ -174,7 +174,7 @@
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset>
-                      <input type="text" name="step2_email" placeholder="Correo Electronico" required>
+                      <input type="text" name="step2_email" placeholder="Correo electrónico" required>
                     </fieldset>
                   </div>
                 </div>
@@ -275,7 +275,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
-                      <input type="text" name="step3_email" placeholder="Correo electronico" required>
+                      <input type="text" name="step3_email" placeholder="Correo electrónico" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">

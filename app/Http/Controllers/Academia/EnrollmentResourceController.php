@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Academia;
 
+use Cache;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -28,21 +29,46 @@ class EnrollmentResourceController extends Controller
      */
      public function university($university)
      {
-       $urlU     = $this->url[$university];
-       $data     = $this->getUrl($urlU);
-       $data     = collect($this->getOptionsVenue($data));
-       return new EnrollmentResource($data);
+       
+      if(Cache::has($university)){
+        $data = Cache::get($university);
+      }else{
+        $data = $this->getDataUniversity($university);
+      }
+      
+      return new EnrollmentResource($data);
      }
      
      public function venue($university, $key)
      {
-       $urlU     = $this->url[$university];
-       $data     = $this->getUrl($urlU);
-       $venue    = $this->getOptionsVenue($data);
-       $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
-       return new EnrollmentResource($collection);
+       if(Cache::has($key.$university)){
+         $data = Cache::get($key.$university);
+       }else{
+         $data = $this->getDataVenue($university,$key);
+       }
+       
+       return new EnrollmentResource($data);
      }
      
+     private function getDataVenue($university, $key)
+     {
+        $urlU     = $this->url[$university];
+        $data     = $this->getUrl($urlU);
+        $venue    = $this->getOptionsVenue($data);
+        $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
+        
+        Cache::put($key.$university, $collection, 120);
+        return new EnrollmentResource($collection);
+     }
+
+     private function getDataUniversity($university)
+     {
+       $urlU     = $this->url[$university];
+       $data     = $this->getUrl($urlU);
+       $collection = collect($this->getOptionsVenue($data));
+       Cache::put($university, $collection, 120); //120 minutes
+       return $collection;
+     }
      
      function explodeDiv($a,$b,$c)
      {

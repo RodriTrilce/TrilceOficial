@@ -47,7 +47,7 @@
                   <div class="col-xs-12 col-sm-6">
                     <fieldset>
                       <select name="step1_university" id="step1_university" required>
-                        <option value="" selected disabled>Universidad</option>
+                        <option value="">Universidad</option>
                         <option value="uni">UNI</option>
                         <option value="sm">San Marcos</option>
                         <option value="pucp">PUCP</option>

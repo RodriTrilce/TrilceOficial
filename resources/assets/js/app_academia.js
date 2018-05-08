@@ -125,7 +125,7 @@ function enrollment(nextBtn,prevBtn,form, type){
       this.cleanSelect(select, 'Sede');
       this.cleanSelect(document.getElementById('step1_cycle'), 'Ciclo');
       
-      get(`/api/academia/enrollment/${this.step1University}/`).then((response) => {
+      get(`/api/academia/enrollment/${this.step1University}`).then((response) => {
           response = JSON.parse(response).data;
           for(var k in response){
               let s = document.createElement('option');
@@ -208,6 +208,7 @@ function enrollment(nextBtn,prevBtn,form, type){
         s[i].removeAttribute('required');
         s[i].classList.remove('invalid');
       }
+
       
     }
     // If the valid status is true, mark the step as finished and valid:

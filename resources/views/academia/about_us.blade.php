@@ -35,7 +35,7 @@
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>Crecimiento</h2>
-          <p>Trilce fundó el primer colegio preuniversitario del Perú en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador</p>
+          <p>Trilce fundó el primer colegio preuniversitario del Perú en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador.</p>
         </div>
         
         <div class="col-xs-12 col-sm-2 col-md">

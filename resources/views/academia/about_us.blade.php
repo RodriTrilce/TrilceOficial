@@ -23,7 +23,7 @@
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>La sociedad</h2>
-          <p>El 7 de diciembre de 1979, un grupo de amigos, estudiantes de la UNI, decidieron fundar una academia preuniversitaria para postulantes a esa universidad.FFFFue así que el primer lunes de enero de 1980 y con menos de una centena de estudiantes, la Academia Trilce abrió sus puertas en un local ubicado en Jr. Callao 209, Cercado de Lima.</p>
+          <p>El 7 de diciembre de 1979, un grupo de amigos, estudiantes de la UNI, decidieron fundar una academia preuniversitaria para postulantes a esa universidad. Fue así que el primer lunes de enero de 1980 y con menos de una centena de estudiantes, la Academia Trilce abrió sus puertas en un local ubicado en Jr. Callao 209, Cercado de Lima.</p>
         </div>
         
         <div class="col-xs-12 col-sm-2 col-md">

@@ -143,6 +143,9 @@
   
   .inscription{
     font-family: 'Geogrotesque-Rg';
+    @media screen and (max-width: 768px){
+      font-size: 0.8rem;
+    }
   }
   
   .center-onam{
@@ -168,6 +171,10 @@
       a{
         color: $gray;
         font-weight: bold;
+        @media screen and (max-width: 768px){
+          font-size: 0.6rem;
+        }
+
       }
       
       &:nth-child(even){

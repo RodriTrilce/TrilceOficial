@@ -39,13 +39,13 @@
                 <div class="row col-xs-12 col-sm-10">
                   
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
-                      <input type="mumber" name="step1_dni" placeholder="DNI" pattern="([0-9]+)" required>
+                    <fieldset class="form-group">
+                      <input type="number" name="step1_dni" placeholder="DNI" minlength="8" required>
                     </fieldset>
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <select name="step1_university" id="step1_university" required>
                         <option value="">Universidad</option>
                         <option value="uni">UNI</option>
@@ -56,7 +56,7 @@
                   </div>
                   
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <select name="step1_venue" id="step1_venue" required>
                         <option value="" selected disabled>Sede</option>
                       </select>
@@ -64,7 +64,7 @@
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <select name="step1_cycle" id="step1_cycle" required>
                         <option value="" selected disabled>Ciclo</option>
                       </select>
@@ -76,8 +76,8 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-10">
-                  <div class="file-upload-wrapper" data-text="Select your file!">
-                      <input type="file" accept="image/jpeg, image/png" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
+                  <div class="file-upload-wrapper form-group" data-text="Select your file!">
+                      <input type="file" accept="image/jpeg, image/png" maxfilesize="0.700" mindimensions="500x500" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
                   </div>
                   <p class="formats">
                     <span>- Formatos: .jpg, .png</span><br>
@@ -97,7 +97,7 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs-12">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_names" placeholder="Apellido paterno / apellido materno / nombres" required>
                     </fieldset>
                   </div>
@@ -105,7 +105,7 @@
               
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <select name="step2_district" required>
                         <option value="" selected disabled>Distrito</option>
                         <option value="Lima">Lima</option>
@@ -155,7 +155,7 @@
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" class="inputfull" name="step2_address" placeholder="Dirección" required>
                     </fieldset>
                   </div>
@@ -163,18 +163,18 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_phonehome" placeholder="Telf. Casa" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_mobile" placeholder="Celular" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
-                      <input type="text" name="step2_email" placeholder="Correo electrónico" required>
+                    <fieldset class="form-group">
+                      <input type="email" name="step2_email" placeholder="Correo electrónico" required>
                     </fieldset>
                   </div>
                 </div>
@@ -183,12 +183,12 @@
                 <h4>Datos académicos</h4>
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_school" placeholder="Colegio" required>
                     </fieldset>
                   </div>
@@ -196,12 +196,12 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_universitypostulate" placeholder="Universidad a la que postula" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_profession" placeholder="Carrera" required>
                     </fieldset>
                   </div>
@@ -209,7 +209,7 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs-12">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step2_oldacademy" placeholder="Academia de preparación anterior">
                     </fieldset>
                   </div>
@@ -227,7 +227,7 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs start-xs">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <label class="radio-inline">
                         <span>Padre</span> <input type="radio" name="step3_apoderate" value="father" required>
                       </label>
@@ -243,12 +243,12 @@
               
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-9">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_names" placeholder="Apellidos y nombres" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_dni" placeholder="DNI" required>
                     </fieldset>
                   </div>
@@ -256,17 +256,17 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_phonehome" placeholder="Telf. Casa" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_mobile" placeholder="Celular" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_address" placeholder="Domicilio actual" required>
                     </fieldset>
                   </div>
@@ -274,12 +274,12 @@
 
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_email" placeholder="Correo electrónico" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_work" placeholder="Centro de trabajo" required>
                     </fieldset>
                   </div>
@@ -287,12 +287,12 @@
                 
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_profession" placeholder="Ocupación" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <input type="text" name="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
                     </fieldset>
                   </div>
@@ -300,7 +300,7 @@
                 
                 <div class="row col-xs-12">
                   <div class="col col-xs-12">
-                    <fieldset>
+                    <fieldset class="form-group">
                       <label><span>Si acepto los términos y condiciones</span> <input class="checkterms" type="checkbox" name="checkbox" value="value" required></label>
                     </fieldset>
                     <span><a id="termsActive">Leer términos y condiciones</a></span>

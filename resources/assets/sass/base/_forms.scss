@@ -44,7 +44,6 @@ fieldset{
 
 // File upload
 .file-upload-wrapper{
-  border: 1px solid #a9a9a9;
   width: 97.5%;
 }
 
@@ -74,6 +73,11 @@ fieldset{
     line-height: 25px;
     color: #999;
     font-weight: 300;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid #a9a9a9;
   }
   
   &:before {
@@ -122,4 +126,10 @@ fieldset{
 
 .invalid{
 //  border: 1px solid #e08435;
+}
+
+form{
+  .text-help{
+    color: #de4c23;
+  }
 }

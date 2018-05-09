@@ -3,43 +3,49 @@
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
+ 
+ // Imports
+ import { tns } from 'tiny-slider/src/tiny-slider.module'
+ export const ValidationLang = {
+   required: "'{label}' is required! XD",
+   email: "'{label}' should be a valid e-mail address!",
+ };
+ import { Validation } from 'bunnyjs/src/Validation';
+ 
+ 
 
-// Imports
-import { tns } from 'tiny-slider/src/tiny-slider.module'
-import { Validation } from 'bunnyjs/src/Validation';
 
-
-// Define methods utils
-Element.prototype.remove = function() {
-    this.parentElement.removeChild(this);
-}
-
-NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-    for(var i = this.length - 1; i >= 0; i--) {
-        if(this[i] && this[i].parentElement) {
-            this[i].parentElement.removeChild(this[i]);
-        }
-    }
-}
-
-NodeList.prototype.forEach = Array.prototype.forEach;
-
-// Safari fix hover touch
-/*var supportsTouch = (typeof Touch == "object");
-if(supportsTouch){
-}
-*/
-    document.addEventListener('touchstart', function() {},false);
-
-// capitalize frist letter upper
-String.prototype.capitalize = function(){
-    return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
-}
+ // Define methods utils
+ Element.prototype.remove = function() {
+     this.parentElement.removeChild(this);
+ }
+ 
+ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+     for(var i = this.length - 1; i >= 0; i--) {
+         if(this[i] && this[i].parentElement) {
+             this[i].parentElement.removeChild(this[i]);
+         }
+     }
+ }
+ 
+ NodeList.prototype.forEach = Array.prototype.forEach;
+ 
+ // Safari fix hover touch
+ document.addEventListener('touchstart', function() {},false);
+ /*var supportsTouch = (typeof Touch == "object");
+ if(supportsTouch){
+ }
+ */
+ 
+ // capitalize frist letter upper
+ String.prototype.capitalize = function(){
+     return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
+ }
 
 // Utils
-var show  = (elem) => elem.style.display = 'block';
-var hide  = (elem) => elem.style.display = 'none';
-var gid   = (elem) => document.getElementById(elem);
+var show  = elem => elem.style.display = 'block';
+var hide  = elem => elem.style.display = 'none';
+var gid   = elem => document.getElementById(elem);
 
 var get = (url) => {
   return new Promise((resolve, reject) => {
@@ -110,6 +116,7 @@ function enrollment(nextBtn,prevBtn,form, type){
   }];
   
   this.init = function(){
+    Validation.init(document.forms[0], true);
     this.showTab(this.currentTab);
     this.hearUniversity();
     this.hearVenue();
@@ -139,7 +146,6 @@ function enrollment(nextBtn,prevBtn,form, type){
       }, (error) => console.error('error', error));
       
     });
-    
   }
   
   this.hearVenue = function(){
@@ -182,21 +188,53 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   this.nextPrev = function(n,e) {
     var x = document.getElementsByClassName('tab');
-    if (n == 1 && !this.validateForm()) return false;
-    x[this.currentTab].style.display = 'none';
-    // Increase or decrease the current tab by 1:
-    this.currentTab = this.currentTab + n;
-    if (this.currentTab >= x.length) {
-      e.preventDefault();
-      //...the form gets submitted:
-      //document.getElementById("regForm").submit();
-      console.log("finish")
-      return false;
+    var tb;
+    
+    switch (this.currentTab) {
+      case 0:
+        tb = '.tab1';
+      break;
+
+      case 1:
+        tb = '.tab2';
+      break;
+
+      case 3:
+        tb = '.tab3';
+      break;
     }
-    this.showTab(this.currentTab);
+    
+    Validation.validateSection(document.querySelector(tb)).then(result => {
+      /*
+        [].forEach.call(submitBtns, submitBtn => {
+            submitBtn.disabled = false;
+        });
+      */
+      
+      if(n === -1){
+        x[this.currentTab].style.display = 'none';
+        this.currentTab = this.currentTab + n;
+        this.showTab(this.currentTab);
+      }
+      
+        if (result === true) {
+            x[this.currentTab].style.display = 'none';
+            this.currentTab = this.currentTab + n;
+            if (this.currentTab >= x.length) {
+              e.preventDefault();
+              console.log("finish")
+              return false;
+            }
+            this.showTab(this.currentTab);
+        } else {
+            Validation.focusInput(result[0]);
+        }
+    })
+    
   }
 
-  this.validateForm = function() {
+  /*
+  this.validateForm = function(tabname) {
     var s = [], x, i, valid = true;
     x = document.getElementsByClassName('tab');
     s = Array.prototype.concat.apply(s, x[this.currentTab].getElementsByTagName("input"));
@@ -215,11 +253,13 @@ function enrollment(nextBtn,prevBtn,form, type){
       
     }
     // If the valid status is true, mark the step as finished and valid:
-    /*if (valid) {
-      document.getElementsByClassName("step")[this.currentTab].className += " finish";
-    }*/
+    //if (valid) {
+    //  document.getElementsByClassName("step")[this.currentTab].className += " finish";
+    //}
     return valid;
+    return this.stateTab;
   }
+  */
 
   this.fixStepIndicator = function(n) {
     let v = document.getElementById("steps-guide");

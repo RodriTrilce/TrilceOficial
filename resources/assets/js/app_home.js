@@ -7,7 +7,7 @@
 function home(){
   this.videoContainer = document.getElementById('videoContainer');
   this.videoTag       = document.getElementById('videoTag');
-  this.all            = document.getElementById("all")
+  this.all            = document.getElementById("all");
   
   this.videoUrls      = [
                           {"url" : "static/video/home_a.webm"},
@@ -25,8 +25,8 @@ function home(){
         this.videoTag.oncanplay = () => {
           if (!this.videoTag) return
 
-          this.videoRatio = this.videoTag.videoWidth / this.videoTag.videoHeight
-          this.setVideoSize()
+          this.videoRatio = this.videoTag.videoWidth / this.videoTag.videoHeight;
+          this.setVideoSize();
           this.videoTag.style.visibility = 'visible'
         }
       }
@@ -40,7 +40,6 @@ function home(){
   }
   
   this.checkMobile = () => {
-    
     document.body.className += ' loaded';
   }
   
@@ -66,9 +65,9 @@ function home(){
   }
   
   this.resize = () => {
-    this.setContainerHeight()
+    this.setContainerHeight();
     if (this.videoCanPlay()) {
-      this.setVideoSize()
+      this.setVideoSize();
     }
   }
 

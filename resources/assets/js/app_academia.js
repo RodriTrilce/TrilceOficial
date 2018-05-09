@@ -6,6 +6,8 @@
 
 // Imports
 import { tns } from 'tiny-slider/src/tiny-slider.module'
+import { Validation } from 'bunnyjs/src/Validation';
+
 
 // Define methods utils
 Element.prototype.remove = function() {
@@ -23,10 +25,11 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 NodeList.prototype.forEach = Array.prototype.forEach;
 
 // Safari fix hover touch
-var supportsTouch = (typeof Touch == "object");
+/*var supportsTouch = (typeof Touch == "object");
 if(supportsTouch){
-    document.addEventListener('touchstart', function() {},false);
 }
+*/
+    document.addEventListener('touchstart', function() {},false);
 
 // capitalize frist letter upper
 String.prototype.capitalize = function(){

@@ -12,14 +12,14 @@
           <a href="/academia/solucionarios-pucp">
             <i class="fa fa-paperclip"></i>
             <h3>Solucionarios</h3>
-            <p>Area de descarga UNI, San Marcos, Católica.</p>
+            <p>Area de descarga UNI, San Marcos y PUCP.</p>
           </a>
         </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="/academia/lista-de-cachimbos-san-marcos">
-              <i class="fa fa-cut"></i>
-              <h3>Lista de cachimbos</h3>
-              <p>Todos nuestros ingresantes.</p>
+            <a href="/academia/matricula-en-linea">
+              <i class="fa fa-edit"></i>
+              <h3>Matrícula en linea</h3>
+              <p>Ahora es más facil inscribirse.</p>
             </a>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">

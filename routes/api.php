@@ -23,3 +23,4 @@ Route::get('/academia/entering/{university}/{year}', 'Academia\EnteringResourceC
 // Academia/Enrollment = Matricula en linea
 Route::get('/academia/enrollment/{university}', 'Academia\EnrollmentResourceController@university');
 Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentResourceController@venue');
+//Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');

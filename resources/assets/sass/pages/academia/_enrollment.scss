@@ -9,7 +9,7 @@
 // Setps guide
 .enrollment-steps{
   display: flex;
-  margin: 3rem auto;
+  margin: 3rem auto 1rem;
   width: 85%;
   height: 110px;
   background: linear-gradient(white 4%, transparentize($gray, 0.7) 6%, white 1%);
@@ -60,7 +60,7 @@
 
 // Block of forms
 .enrollment-forms {
-  margin: 5rem auto 5rem auto;
+  margin: 1rem auto 5rem auto;
 
   [class*="col-xs"] {
     padding-right: 0.5rem;
@@ -174,12 +174,28 @@
     background: transparentize($gray, 0.9);
     overflow: auto;
     padding: 1rem;
-    ol{
+    font-size: 0.9rem;
+    
+    .list{
       padding: 1rem;
       li{
         padding: 0.5rem;
       }
     }
+    
+    div{
+      display: inline-block;
+    }
+    
+    .terms-9{
+      display: none;
+      select{
+        width: auto;
+        padding: 5px;
+        padding-right: 2.5rem;
+      }
+    }
+
   }
   
   .capcha{
@@ -194,8 +210,6 @@
     cursor: pointer;
   }
   
-  
-
 }
 
 .tab{

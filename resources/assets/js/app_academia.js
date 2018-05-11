@@ -6,13 +6,28 @@
  
  // Imports
  import { tns } from 'tiny-slider/src/tiny-slider.module'
- export const ValidationLang = {
-   required: "'{label}' is required! XD",
-   email: "'{label}' should be a valid e-mail address!",
- };
- import { Validation } from 'bunnyjs/src/Validation';
  
+export const ValidationLang = {
+  required: "'{label}' es requerido",
+  email: "'{label}' debe ser una dirección de e-mail valida!",
+  maxLength: "'{label}' debe tener maximo {maxLength} digitos",
+  minLength: "'{label}' debe tener minimo {minLength} digitos",
+  confirmation: "'{label}' is not equal to '{originalLabel}'"
+};
  
+export const ValidationConfig = {
+  classInputGroup: 'form-group',
+  classInputGroupError: 'has-danger',
+  classLabel: 'form-control-label',
+  tagNameError: 'small',
+  classError: 'text-help',
+  selectorInput: '[name]'
+};
+
+import { Validation, } from 'bunnyjs/src/Validation';
+
+Validation.ui.config = ValidationConfig;
+Validation.lang = ValidationLang;
 
 
  // Define methods utils
@@ -64,11 +79,11 @@ var get = (url) => {
 }
 
 function enrollment(nextBtn,prevBtn,form, type){
-  this.currentTab = 0;
-  this.nextBtn = nextBtn;
-  this.prevBtn = prevBtn;
-  this.form    = form;
-  this.blockType = type;
+  this.currentTab   = 0;
+  this.nextBtn      = nextBtn;
+  this.prevBtn      = prevBtn;
+  this.form         = form;
+  this.blockType    = type;
   this.step1University;
   this.step1Venue;
   this.cost = [{
@@ -110,7 +125,8 @@ function enrollment(nextBtn,prevBtn,form, type){
         "letras" : 15
       },
       "pucp" : {
-        "all" : 30,
+        "ciencia" : 30,
+        "letras" : 30,
       }
     }
   }];
@@ -168,25 +184,80 @@ function enrollment(nextBtn,prevBtn,form, type){
     })
   }
   
-  this.cleanSelect = function(select, title){
+  this.cleanSelect = function(select, title)
+  {
     while (select.options.length) select.remove(0);
     let v = document.createElement('option');
     v.text = title;
     v.selected = true;
     v.disabled = true;
+    v.hidden   = true;
     select.add(v);
     return select;
   }
 
-  this.showTab = function(n) {
-    var x = document.getElementsByClassName("tab");
+  this.showTab = function(n)
+  {
+    if(this.currentTab == 2) this.drawTerms();
+    var x = document.getElementsByClassName('tab');
     x[n].style.display = this.blockType;
     document.getElementById(this.prevBtn).style.display = (n==0?'none':'inline');
     document.getElementById(this.nextBtn).innerHTML = (n == (x.length - 1)?'Enviar':`Siguiente <i class="fa fa-angle-right"></i>`);
-    this.fixStepIndicator(n)
+    this.fixStepIndicator(n);
+  }
+  
+  this.drawTerms = function()
+  {
+    var term2  = document.getElementById('terms-2');
+    var term21 = document.getElementById('terms-21');
+    var term9  = document.getElementById('terms-9');
+    var term9a = document.getElementById('terms-9-s');
+    var term91 = document.getElementById('terms-91');
+    
+    var university = document.getElementById('step1_university');
+    university = university.options[university.selectedIndex].text.toLowerCase();
+
+    var route = this.cost[0].one[university];
+    
+    var routeNine = this.cost[0].nine[university];
+    var sede = document.getElementById('step1_venue');
+    
+    sede = sede.options[sede.selectedIndex].text;
+    sede = sede.toLowerCase();
+    
+    var time, cost, science, letter;
+    if(Object.keys(route).length > 1){
+      cost = route[sede].cost;
+      time = route[sede].time;
+    }else{
+      cost = route.all.cost;
+      time = route.all.time;
+    }
+    
+    science = routeNine.ciencia;
+    letter  = routeNine.letras;
+    
+    // Set
+    term2.innerHTML = cost;
+    term21.innerHTML = time;
+    
+    if(university !== 'pucp'){
+      term9.style.display = 'inline-block';
+      let b = term9a.options[term9a.selectedIndex].value;
+      term91.innerHTML = '12';
+      term9a.addEventListener('change', () => {
+        let b = term9a.options[term9a.selectedIndex].value;
+        term91.innerHTML = (b=='letras'?15:12);
+      });
+    }else{
+      term9.style.display = 'none';
+      term91.innerHTML = '30';
+    }
+    
   }
 
-  this.nextPrev = function(n,e) {
+  this.nextPrev = function(n,e)
+  {
     var x = document.getElementsByClassName('tab');
     var tb;
     
@@ -199,24 +270,18 @@ function enrollment(nextBtn,prevBtn,form, type){
         tb = '.tab2';
       break;
 
-      case 3:
+      case 2:
         tb = '.tab3';
       break;
+      
     }
     
-    Validation.validateSection(document.querySelector(tb)).then(result => {
-      /*
-        [].forEach.call(submitBtns, submitBtn => {
-            submitBtn.disabled = false;
-        });
-      */
-      
+    Validation.validateSection(document.querySelector(tb)).then((result,e) => {
       if(n === -1){
         x[this.currentTab].style.display = 'none';
         this.currentTab = this.currentTab + n;
         this.showTab(this.currentTab);
-      }
-      
+      }else{
         if (result === true) {
             x[this.currentTab].style.display = 'none';
             this.currentTab = this.currentTab + n;
@@ -229,37 +294,10 @@ function enrollment(nextBtn,prevBtn,form, type){
         } else {
             Validation.focusInput(result[0]);
         }
-    })
-    
-  }
-
-  /*
-  this.validateForm = function(tabname) {
-    var s = [], x, i, valid = true;
-    x = document.getElementsByClassName('tab');
-    s = Array.prototype.concat.apply(s, x[this.currentTab].getElementsByTagName("input"));
-    s = Array.prototype.concat.apply(s, x[this.currentTab].getElementsByTagName("select"));
-    
-    for (i = 0; i < s.length; i++) {
-      
-      if (!s[i].validity.valid) {
-        s[i].classList.add('invalid');
-        valid = false;
-      }else{
-        s[i].removeAttribute('required');
-        s[i].classList.remove('invalid');
       }
-
-      
-    }
-    // If the valid status is true, mark the step as finished and valid:
-    //if (valid) {
-    //  document.getElementsByClassName("step")[this.currentTab].className += " finish";
-    //}
-    return valid;
-    return this.stateTab;
+    });
+    
   }
-  */
 
   this.fixStepIndicator = function(n) {
     let v = document.getElementById("steps-guide");
@@ -378,15 +416,14 @@ function enrollment(nextBtn,prevBtn,form, type){
   if(page !== 'enrollment') return false;
 
   // Upload fix
-  document.querySelector('#step1_photo').addEventListener('change',function(){
+/*  document.querySelector('#step1_photo').addEventListener('change',function(){
     this.setAttribute("data-text", document.querySelector("#step1_photo").value.replace(/.*(\/|\\)/, ''))
-  });
+  });*/
 
   let a = new enrollment('next', 'prev', 'enrollment-form', 'flex');
   a.init();
   
   document.querySelector("#termsActive").addEventListener('click', () => {
-    console.log(1)
     document.querySelector("#terms").style.display = 'block';
   });
   

@@ -38,16 +38,16 @@
             <div class="form">
                 <div class="row col-xs-12 col-sm-10">
                   
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
-                      <input type="number" name="step1_dni" placeholder="DNI" minlength="8" required>
+                      <input type="number" name="DNI" id="step1_dni" placeholder="DNI" minlength="8" maxLength="8" required>
                     </fieldset>
                   </div>
 
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
-                      <select name="step1_university" id="step1_university" required>
-                        <option value="">Universidad</option>
+                      <select name="Universidad" id="step1_university" placeholder="Universidad" required>
+                        <option value="" selected disabled hidden>Universidad</option>
                         <option value="uni">UNI</option>
                         <option value="sm">San Marcos</option>
                         <option value="pucp">PUCP</option>
@@ -55,18 +55,29 @@
                     </fieldset>
                   </div>
                   
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
-                      <select name="step1_venue" id="step1_venue" required>
+                      <select name="Sede" id="step1_venue" required>
                         <option value="" selected disabled>Sede</option>
                       </select>
                     </fieldset>
                   </div>
 
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
-                      <select name="step1_cycle" id="step1_cycle" required>
+                      <select name="Ciclo" id="step1_cycle" required>
                         <option value="" selected disabled>Ciclo</option>
+                      </select>
+                    </fieldset>
+                  </div>
+
+                  
+                  <div class="col-xs-12 col-sm-12">
+                    <fieldset class="form-group">
+                      <select name="Turno" id="step1_turn" required>
+                        <option value="" selected disabled hidden >Turno</option>
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
                       </select>
                     </fieldset>
                   </div>
@@ -74,7 +85,8 @@
                   <input hidden type="text" class="condition" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
 
                 </div>
-
+                
+                <!--
                 <div class="col-xs-12 col-sm-10">
                   <div class="file-upload-wrapper form-group" data-text="Select your file!">
                       <input type="file" accept="image/jpeg, image/png" maxfilesize="0.700" mindimensions="500x500" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
@@ -84,7 +96,8 @@
                     <span>- Peso máximo: 700kb</span>
                   </p>
                 </div>
-                
+              -->
+
             </div>
           </div>
         </div>
@@ -106,7 +119,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <select name="step2_district" required>
+                      <select name="Distrito" id="step2_district" required>
                         <option value="" selected disabled>Distrito</option>
                         <option value="Lima">Lima</option>
                         <option value="Ancon">Ancon</option>
@@ -229,13 +242,13 @@
                   <div class="col-xs start-xs">
                     <fieldset class="form-group">
                       <label class="radio-inline">
-                        <span>Padre</span> <input type="radio" name="step3_apoderate" value="father" required>
+                        <span>Padre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="father" kk required>
                       </label>
                       <label class="radio-inline">
-                        <span>Madre</span> <input type="radio" name="step3_apoderate" value="mother">
+                        <span>Madre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="mother" required>
                       </label>
                       <label class="radio-inline">
-                        <span>Otro</span> <input type="radio" name="step3_apoderate" value="other">
+                        <span>Otro</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="other" required>
                       </label>
                     </fieldset>
                   </div>
@@ -301,24 +314,28 @@
                 <div class="row col-xs-12">
                   <div class="col col-xs-12">
                     <fieldset class="form-group">
-                      <label><span>Si acepto los términos y condiciones</span> <input class="checkterms" type="checkbox" name="checkbox" value="value" required></label>
+                      <label>
+                        <span>Si acepto los términos y condiciones</span>
+                        <input class="checkterms" type="checkbox" name="checkbox" id="checkbox_confirmation" value="value" required>
+                      </label>
                     </fieldset>
                     <span><a id="termsActive">Leer términos y condiciones</a></span>
                   </div>
+                  
                   <div class="terms" id="terms">
                     <h1>CONDICIONES ECONÓMICAS Y DEL SERVICIO DE LA ACADEMIA PREUNIVERSITARIA</h1>
-                    <ol>
+                    <ol class="list">
                     <li>La hora de ingreso es de lunes a sábado de 7:30 a. m. a 8:00 a. m. y se considerará
                     tardanza entre las 8:01 a. m. a 8:15 a. m. Posterior a esa hora, no se permitirá el ingreso a
                     la institución.</li>
 
                     <li>De realizarse el pago del ciclo de forma fraccionada en dos cuotas, este tendrá un recargo
-                    adicional de S/.____. Este monto será recargado en la primera cuota, debiéndose cancelar
-                    la segunda cuota en un lapso de ____ días.</li>
+                    adicional de S/.<div id="terms-2"></div>. Este monto será recargado en la primera cuota, debiéndose cancelar
+                    la segunda cuota en un lapso de <div id="terms-21"></div> días.</li>
 
                     <li>En el caso de que el padre de familia, apoderado o alumno mayor de edad opte por
-                    retirarse habiéndose iniciado las clases, se le hará un cobro de S/.____ por concepto de
-                    penalidad y un cobro de S/.____ por concepto de materiales, así como también se le
+                    retirarse habiéndose iniciado las clases, se le hará un cobro de S/.<div id="terms-3">50</div> por concepto de
+                    penalidad y un cobro de S/.<div id="terms-31">30</div> por concepto de materiales, así como también se le
                     retendrá el monto de días asistidos y no asistidos sin justificación.</li>
 
                     <li>En caso el alumno solicite traslado de sede o traslado a otro turno o ciclo dentro del local
@@ -328,7 +345,7 @@
 
                     <li>En el caso de que el padre de familia, apoderado o alumno mayo de edad requiera la
                     devolución del dinero antes de iniciado el periodo de clases, la institución realizará el
-                    cobro de S/.____ por concepto de gastos administrativos.</li>
+                    cobro de S/.<div id="terms-5">50</div> por concepto de gastos administrativos.</li>
 
                     <li>Para el trámite de postergación de matrícula, se procederá a descontar los días asistidos y
                     no asistidos sin justificación. El monto restante será reservado para el siguiente ciclo
@@ -346,18 +363,20 @@
                     conducta. Dichas condiciones se tomarán en cuenta para las calificaciones de aula o
                     reagrupaciones.</li>
 
-                    <li>La pérdida del libro que otorga la institución dará lugar al cobro de S/.____ por concepto
-                    de duplicado.
-                    10. La institución realiza maratones académicas en horario diurno y nocturno, sin ser
+                    <li>La pérdida del libro <div id="terms-9"><select id="terms-9-s"><option value="ciencia" selected>Ciencia</option><option value="letras">Letras</option></select></div> que otorga la institución dará lugar al cobro de S/.<div id="terms-91"></div> por concepto
+                    de duplicado.</li>
+                    
+                    <li>La institución realiza maratones académicas en horario diurno y nocturno, sin ser
                     obligatoria la asistencia para el alumno. En caso asista, tendrá que efectuar el pago
-                    adicional de S/.____.</li>
+                    adicional de S/.<div id="terms-10">5</div>.</li>
 
                     <li> El dictado de clases iniciará siempre que se alcance el número mínimo de alumnos
-                    matriculados establecido por la institución.
-                    12. Manifiesto mi conformidad en caso la institución cambie la fecha de inicio del dictado de
+                    matriculados establecido por la institución.</li>
+                    
+                    <li>Manifiesto mi conformidad en caso la institución cambie la fecha de inicio del dictado de
                     clases del ciclo en cuestión.</li>
 
-                    <li> En los casos de los ciclos anuales, semestrales o intensivos, el cobro de la pensión se hace
+                    <li>En los casos de los ciclos anuales, semestrales o intensivos, el cobro de la pensión se hace
                     en 30 días; si pasado el vencimiento de dicha pensión el alumno opta por reingresar a la
                     academia deberá cancelar la pensión en los 30 días siguientes de vencida la pensión
                     anterior.</li>
@@ -365,7 +384,7 @@
                     <li> En el caso de que el alumno pida traslado de pago de la pensión mensual a otro alumno,
                     ya sea que se trate de un alumno nuevo o ya matriculado (en el ciclo anual, semestral,
                     intensivo, o en el ciclo de verano o repaso), se descontará de dicho monto la cantidad de
-                    S/.____ por concepto de traslado de titularidad. Cabe precisar que el traslado de pago se
+                    S/.<div id="terms-14">50</div> por concepto de traslado de titularidad. Cabe precisar que el traslado de pago se
                     realizará única y exclusivamente por las pensiones que corresponden a los meses
                     pendientes de clases.</li>
                     </ol>

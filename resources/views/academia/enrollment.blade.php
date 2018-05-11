@@ -1,7 +1,5 @@
 @extends('academia.layouts.template')
-
 @section('title', 'Pre Matrícula en linea')
-
 @section('content')
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
@@ -23,7 +21,7 @@
   </div>
 
   <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms">
-    <form class="col-xs-12" id="enrollment-form">
+    <form class="col-xs-12" id="enrollment-form" method="post" url="matricula-en-linea">
 
       <div class="tab tab1 row">
           <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
@@ -197,12 +195,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
+                      <input type="number"  minlength="2" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_school" placeholder="Colegio" required>
+                      <input type="text"  minlength="5" name="step2_school" placeholder="Colegio" required>
                     </fieldset>
                   </div>
                 </div>
@@ -210,12 +208,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_universitypostulate" placeholder="Universidad a la que postula" required>
+                      <input type="text" minlength="3" name="step2_universitypostulate" placeholder="Universidad a la que postula" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_profession" placeholder="Carrera" required>
+                      <input type="text" minlength="3" name="step2_profession" placeholder="Carrera" required>
                     </fieldset>
                   </div>
                 </div>
@@ -242,7 +240,7 @@
                   <div class="col-xs start-xs">
                     <fieldset class="form-group">
                       <label class="radio-inline">
-                        <span>Padre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="father" kk required>
+                        <span>Padre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="father" required>
                       </label>
                       <label class="radio-inline">
                         <span>Madre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="mother" required>
@@ -257,12 +255,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-9">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_names" placeholder="Apellidos y nombres" required>
+                      <input type="text"  minlength="2" name="step3_names" placeholder="Apellidos y nombres" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_dni" placeholder="DNI" required>
+                      <input type="number" minlength="8" maxLength="8" name="step3_dni" placeholder="DNI" required>
                     </fieldset>
                   </div>
                 </div>
@@ -270,17 +268,17 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_phonehome" placeholder="Telf. Casa" required>
+                      <input type="number" name="step3_phonehome"  minlength="6" maxLength="15" placeholder="Telf. Casa" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_mobile" placeholder="Celular" required>
+                      <input type="number"  minlength="6" maxLength="15" name="step3_mobile" placeholder="Celular" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_address" placeholder="Domicilio actual" required>
+                      <input type="text"  minlength="10" name="step3_address" placeholder="Domicilio actual" required>
                     </fieldset>
                   </div>
                 </div>
@@ -288,7 +286,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_email" placeholder="Correo electrónico" required>
+                      <input type="email" name="step3_email" placeholder="Correo electrónico" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">

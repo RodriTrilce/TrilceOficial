@@ -1,7 +1,5 @@
 @extends('academia.layouts.template')
-
 @section('title', $data->name)
-
 @section('content')
 
   <div class="header-double-top">

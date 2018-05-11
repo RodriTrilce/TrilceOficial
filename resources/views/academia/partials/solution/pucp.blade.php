@@ -4,8 +4,8 @@
     <!--  headers table-->
     <div class="row solution-title solution-pucp">
       <div class="col-xs-3"></div>
-      <div class="col-xs-3">Evaluación II</div>
-      <div class="col-xs-3">Evaluación DEL TALENTO II</div>
+      <div class="col-xs-3">EVALUACIÓN DEL TALENTO I</div>
+      <div class="col-xs-3">EVALUACIÓN DEL TALENTO II</div>
       <div class="col-xs-3">PRIMERA OPCIÓN</div>
     </div>
     

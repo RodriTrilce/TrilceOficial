@@ -8,7 +8,6 @@ function home(){
   this.videoContainer = document.getElementById('videoContainer');
   this.videoTag       = document.getElementById('videoTag');
   this.all            = document.getElementById("all");
-  
   this.videoUrls      = [
                           {"url" : "static/video/home_a.webm"},
                           {"url" : "static/video/home_b.mp4"}
@@ -27,7 +26,7 @@ function home(){
 
           this.videoRatio = this.videoTag.videoWidth / this.videoTag.videoHeight;
           this.setVideoSize();
-          this.videoTag.style.visibility = 'visible'
+          this.videoTag.style.visibility = 'visible';
         }
       }
 
@@ -47,9 +46,9 @@ function home(){
     const video = document.getElementsByTagName('video')[0];
     video.addEventListener('loadeddata', function() {
       if(video.readyState == 4)
-         video.play()
+         video.play();
          document.body.className += ' loaded';
-         video.removeEventListener('loadeddata', this)
+         video.removeEventListener('loadeddata', this);
     });
   }
   
@@ -59,9 +58,8 @@ function home(){
       source.setAttribute('src', elem.url);
       source.setAttribute('type', this.getMediaType(elem.url));
       this.videoTag.appendChild(source);
-      this.videoTag.play()
+      this.videoTag.play();
     });
-    
   }
   
   this.resize = () => {
@@ -122,4 +120,4 @@ function home(){
 }
 
 let page_home = new home();
-page_home.init(); // run!
+page_home.init();

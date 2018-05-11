@@ -1,7 +1,5 @@
 @extends('academia.layouts.template')
-
 @section('title', 'Solucionarios de '. $university->name)
-
 @section('content')
 
   <div class="header-double-top">
@@ -89,11 +87,10 @@
   <hr class="solution-hr">
   
   <div class="row center-xs">
-    <div class="col-xs12 solution-pagination">
+    <div class="col-xs-12 pagination">
       <span>1</span> de 3 | Siguiente
     </div>
   </div>
-
 
   @include('academia.partials.card_bottom')
 @endsection

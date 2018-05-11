@@ -6,6 +6,12 @@ a,a:link{
   text-decoration: none;
 }
 
+a:visited{
+}
+
+a:active{
+}
+
 h1,h2,h3,h4,h5,h6{
   color: $orange;
   font-size:100%;

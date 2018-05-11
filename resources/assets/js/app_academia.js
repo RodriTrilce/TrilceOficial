@@ -8,10 +8,10 @@
  import { tns } from 'tiny-slider/src/tiny-slider.module'
  
 export const ValidationLang = {
-  required: "'{label}' es requerido",
-  email: "'{label}' debe ser una dirección de e-mail valida!",
-  maxLength: "'{label}' debe tener maximo {maxLength} digitos",
-  minLength: "'{label}' debe tener minimo {minLength} digitos",
+  required: "'{label}' es obligatorio.",
+  email: "'{label}' debe ser una dirección de e-mail valida.",
+  maxLength: "'{label}' debe tener maximo {maxLength} digitos.",
+  minLength: "'{label}' debe tener minimo {minLength} digitos.",
   confirmation: "'{label}' is not equal to '{originalLabel}'"
 };
  
@@ -26,8 +26,6 @@ export const ValidationConfig = {
 
 import { Validation, } from 'bunnyjs/src/Validation';
 
-Validation.ui.config = ValidationConfig;
-Validation.lang = ValidationLang;
 
 
  // Define methods utils
@@ -132,13 +130,18 @@ function enrollment(nextBtn,prevBtn,form, type){
   }];
   
   this.init = function(){
+    
+    Validation.ui.config = ValidationConfig;
+    Validation.lang = ValidationLang;
     Validation.init(document.forms[0], true);
+    
     this.showTab(this.currentTab);
     this.hearUniversity();
     this.hearVenue();
     
     document.getElementById(this.prevBtn).addEventListener('click', (e) => this.nextPrev(-1,e));
     document.getElementById(this.nextBtn).addEventListener('click', (e) => this.nextPrev(1,e));;
+
   }
   
   this.hearUniversity = function(){
@@ -147,7 +150,6 @@ function enrollment(nextBtn,prevBtn,form, type){
     
     elem.addEventListener('change', () => {
       this.step1University = elem.options[elem.selectedIndex].value;
-
       this.cleanSelect(select, 'Sede');
       this.cleanSelect(document.getElementById('step1_cycle'), 'Ciclo');
       
@@ -279,17 +281,24 @@ function enrollment(nextBtn,prevBtn,form, type){
     Validation.validateSection(document.querySelector(tb)).then((result,e) => {
       if(n === -1){
         x[this.currentTab].style.display = 'none';
-        this.currentTab = this.currentTab + n;
+        this.currentTab = this.currentTab +
+         n;
         this.showTab(this.currentTab);
       }else{
         if (result === true) {
             x[this.currentTab].style.display = 'none';
             this.currentTab = this.currentTab + n;
+
+            console.log("ajasjasj"+ this.currentTab + " ---- " + x.length);
+
             if (this.currentTab >= x.length) {
+/*
               e.preventDefault();
-              console.log("finish")
+              console.log("finish");
               return false;
+*/
             }
+            
             this.showTab(this.currentTab);
         } else {
             Validation.focusInput(result[0]);
@@ -307,7 +316,7 @@ function enrollment(nextBtn,prevBtn,form, type){
       a.classList = a.classList.remove('active');
       if(i==n) a.classList.add('active');
       if(i<n) a.classList.add('visited');
-      (i<n)
+      
     });
   }
 

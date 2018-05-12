@@ -15,13 +15,9 @@ class EnrollmentResourceController extends Controller
       'uni'   => 'http://app.trilce.edu.pe/informacion-ciclos-uni/registro/',
       'pucp'  => 'http://app.trilce.edu.pe/informacion-ciclos-cat/registro/'
     ];
+
     public $urlCombo = 'combo.php';
 
-    public function __construct()
-    {
-      
-    }
-  
     /**
      * Display a listing of the resource.
      *
@@ -57,7 +53,7 @@ class EnrollmentResourceController extends Controller
         $venue    = $this->getOptionsVenue($data);
         $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
         
-        Cache::put($key.$university, $collection, 120);
+        Cache::put($key.$university, $collection, 4320);
         return new EnrollmentResource($collection);
      }
 
@@ -66,7 +62,7 @@ class EnrollmentResourceController extends Controller
        $urlU     = $this->url[$university];
        $data     = $this->getUrl($urlU);
        $collection = collect($this->getOptionsVenue($data));
-       Cache::put($university, $collection, 120); //120 minutes
+       Cache::put($university, $collection, 4320);
        return $collection;
      }
      

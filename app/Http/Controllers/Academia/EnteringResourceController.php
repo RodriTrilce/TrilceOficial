@@ -25,9 +25,10 @@ class EnteringResourceController extends Controller
     }
     
     /**
-     * Clear slug string
+     * Clear string url
      *
-     * @return string
+     * @param  String  $request
+     * @return Response
      */
     private function l($str)
     {

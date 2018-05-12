@@ -22,7 +22,6 @@
  });
 
 
-
 /**
  *  Academia
  */
@@ -67,8 +66,9 @@ Route::get('/academia/nosotros', 'Academia\AboutUsController@index');
 Route::get('/academia/contacto', 'Academia\ContactController@index');
 Route::post('/academia/contacto/send', 'Academia\ContactController@send');
 
-// Matricula en linea (EnrollmentOnline)
-Route::get('/academia/matricula-en-linea', 'Academia\EnrollmentController@index');
+// Matricula en linea (Enrollment)
+Route::get('/academia/matricula-en-linea', 'Academia\EnrollmentController@create');
+Route::post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store');
 
 
 

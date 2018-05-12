@@ -133,3 +133,30 @@ form{
     color: #de4c23;
   }
 }
+
+// Errors list top form
+.form-error{
+  .form-error-ul{
+  }
+  
+  .form-li{
+    padding: 0.2rem;
+    margin: 0.3rem;
+    color: $gray;
+    span{
+      text-decoration: underline;
+      color: $orange;
+    }
+    
+    &::before{
+      margin-right: 0.5rem;
+      content: "\f376";
+      font-family: 'FontAwesome';
+    }
+
+    @media (max-width: 700px){
+      font-size: 0.8rem;
+    }
+  }
+  
+}

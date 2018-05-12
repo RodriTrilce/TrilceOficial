@@ -5,27 +5,18 @@ namespace App\Http\Controllers\Academia;
 use App\Models\Academia\EnrollmentModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Academia\StoreEnrollment as StoreEnrollment;
 
 class EnrollmentController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-      return view('/academia/enrollment');
-    }
-
-    /**
-     * Show the form for creating a new resource.
+     * Create new enrollment.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('/academia/enrollment');
     }
 
     /**
@@ -34,11 +25,12 @@ class EnrollmentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
+     public function store(StoreEnrollment $request)
+     {
+         $validatedData = $request->validated();
+         return view('/academia/enrollment_finish');         
+     }
+         
     /**
      * Display the specified resource.
      *

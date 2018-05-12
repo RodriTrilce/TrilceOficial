@@ -12,9 +12,9 @@ export const ValidationLang = {
   email: "'{label}' debe ser una dirección de e-mail valida.",
   maxLength: "'{label}' debe tener maximo {maxLength} digitos.",
   minLength: "'{label}' debe tener minimo {minLength} digitos.",
-  confirmation: "'{label}' is not equal to '{originalLabel}'"
+  tel: "{label} debe ser un numero telefónico."
 };
- 
+
 export const ValidationConfig = {
   classInputGroup: 'form-group',
   classInputGroupError: 'has-danger',
@@ -24,9 +24,32 @@ export const ValidationConfig = {
   selectorInput: '[name]'
 };
 
-import { Validation, } from 'bunnyjs/src/Validation';
+import { Validation } from 'bunnyjs/src/Validation';
+Validation.ui.config  = ValidationConfig;
+Validation.lang       = ValidationLang;
 
+Validation.lang.onlytext = 'Solo es permitido texto';
 
+Validation.validators.onlytext = input => {
+  return new Promise((valid, invalid) => {
+      if (input.value.length > 0 && input.getAttribute('type') === 'onlytext') {
+          const Regex = /(^[a-zA-Z ]+$)/i;
+          if (Regex.test(input.value)) {
+              valid();
+          } else {
+              invalid();
+          }
+      } else {
+          valid();
+      }
+  });
+};
+
+console.log(Validation);
+
+/*
+
+*/
 
  // Define methods utils
  Element.prototype.remove = function() {
@@ -130,9 +153,6 @@ function enrollment(nextBtn,prevBtn,form, type){
   }];
   
   this.init = function(){
-    
-    Validation.ui.config = ValidationConfig;
-    Validation.lang = ValidationLang;
     Validation.init(document.forms[0], true);
     
     this.showTab(this.currentTab);
@@ -292,14 +312,11 @@ function enrollment(nextBtn,prevBtn,form, type){
             console.log("ajasjasj"+ this.currentTab + " ---- " + x.length);
 
             if (this.currentTab >= x.length) {
-/*
-              e.preventDefault();
-              console.log("finish");
+//              e.preventDefault();
               return false;
-*/
+            }else{
+              this.showTab(this.currentTab);
             }
-            
-            this.showTab(this.currentTab);
         } else {
             Validation.focusInput(result[0]);
         }

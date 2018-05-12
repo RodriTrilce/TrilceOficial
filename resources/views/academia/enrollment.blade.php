@@ -20,9 +20,30 @@
     <div>Paso 3</div>
   </div>
 
+@if ($errors->any())
+  <div class="row col-xs-12 center-xs">
+    <div class="form-error">
+        <ul class="form-error-ul">
+        @foreach ($errors->all() as $error)
+          <li class="form-li">{{ $error }}</li>
+        @endforeach
+
+          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+        </ul>
+    </div>
+  </div>
+@endif
+
   <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms">
     <form class="col-xs-12" id="enrollment-form" method="post" url="matricula-en-linea">
-
+      
+      @csrf
+      
       <div class="tab tab1 row">
           <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
             <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
@@ -100,7 +121,7 @@
           </div>
         </div>
       <!-- end step1 -->
-      
+
       <div class="tab tab2 row center-xs">
           <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
               <h2>Datos generales del <i>Alumno</i></h2>
@@ -109,7 +130,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_names" placeholder="Apellido paterno / apellido materno / nombres" required>
+                      <input type="onlytext" minlength="3" name="step2_names" placeholder="Apellido paterno / apellido materno / nombres" required>
                     </fieldset>
                   </div>
                 </div>
@@ -175,12 +196,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_phonehome" placeholder="Telf. Casa" required>
+                      <input type="tel" minlength="6" name="step2_phonehome" placeholder="Telf. Casa" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="text" name="step2_mobile" placeholder="Celular" required>
+                      <input type="tel" minlength="9" name="step2_mobile" placeholder="Celular" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
@@ -195,7 +216,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="number"  minlength="2" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
+                      <input type="number"  minlength="4" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
@@ -213,7 +234,7 @@
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" minlength="3" name="step2_profession" placeholder="Carrera" required>
+                      <input type="onlytext" minlength="5" name="step2_profession" placeholder="Carrera" required>
                     </fieldset>
                   </div>
                 </div>
@@ -230,7 +251,7 @@
         
       </div>
       <!-- end step2 -->
-      
+
       <div class="tab tab3 row center-xs">
         
           <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
@@ -240,13 +261,13 @@
                   <div class="col-xs start-xs">
                     <fieldset class="form-group">
                       <label class="radio-inline">
-                        <span>Padre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="father" required>
+                        <span>Apoderado</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="apoderate" required>
                       </label>
                       <label class="radio-inline">
-                        <span>Madre</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="mother" required>
+                        <span>Madre</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="mother" required>
                       </label>
                       <label class="radio-inline">
-                        <span>Otro</span> <input type="radio" name="Apoderado" id="step3_apoderate" value="other" required>
+                        <span>Padre</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="father" required>
                       </label>
                     </fieldset>
                   </div>
@@ -255,7 +276,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-9">
                     <fieldset class="form-group">
-                      <input type="text"  minlength="2" name="step3_names" placeholder="Apellidos y nombres" required>
+                      <input type="onlytext"  minlength="2" name="step3_names" placeholder="Apellidos y nombres" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
@@ -268,17 +289,17 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="number" name="step3_phonehome"  minlength="6" maxLength="15" placeholder="Telf. Casa" required>
+                      <input type="tel" minlength="6" name="step3_phonehome" placeholder="Telf. Casa" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="number"  minlength="6" maxLength="15" name="step3_mobile" placeholder="Celular" required>
+                      <input type="tel" minlength="6" name="step3_mobile" placeholder="Celular" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text"  minlength="10" name="step3_address" placeholder="Domicilio actual" required>
+                      <input type="text" minlength="5" name="step3_address" placeholder="Domicilio actual" required>
                     </fieldset>
                   </div>
                 </div>
@@ -299,12 +320,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_profession" placeholder="Ocupación" required>
+                      <input type="onlytext" name="step3_profession" placeholder="Ocupación" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
+                      <input type="tel" minlength="6" name="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
                     </fieldset>
                   </div>
                 </div>
@@ -314,7 +335,7 @@
                     <fieldset class="form-group">
                       <label>
                         <span>Si acepto los términos y condiciones</span>
-                        <input class="checkterms" type="checkbox" name="checkbox" id="checkbox_confirmation" value="value" required>
+                        <input class="checkterms" type="checkbox" name="checkbox" id="checkbox_confirmation" aria-label="Terminos y condiciones" placeholder="ccc" required>
                       </label>
                     </fieldset>
                     <span><a id="termsActive">Leer términos y condiciones</a></span>
@@ -401,7 +422,7 @@
 
       </div>
       <!-- end step3 -->
-            
+      
       <div class="row col-xs-12 col-sm-8 center-sm stepsarrows">
         <div class="col-xs start-xs">
           <fieldset>

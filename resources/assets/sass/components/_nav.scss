@@ -159,6 +159,7 @@ nav{
 
     .disable{
       cursor: default;
+      pointer-events: none;
       
       a,a:link{
         color: $disable_link;
@@ -173,6 +174,26 @@ nav{
         }
       }
     }
+
+    .active{
+      cursor: default;
+      pointer-events: none;
+
+      a,a:link{
+        color: $orange;
+        &:hover{
+          color: $orange;
+          a{
+            color: $orange;
+          }
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+        
+    
         
     > li{
       display: inline-block;

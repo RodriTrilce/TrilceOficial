@@ -14,6 +14,6 @@ class AboutUsController extends Controller
    */
    public function index()
    {
-     return view('/academia/about_us');
+     return view('/academia/about_us')->with(['page' => 'about_us']);
    }
 }

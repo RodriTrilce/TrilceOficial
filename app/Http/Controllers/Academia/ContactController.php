@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
   public function index()
   {
-    return view('/academia/contact');
+    return view('/academia/contact')->with(['page' => 'contact']);
   }
   
   public function send()

@@ -16,7 +16,8 @@ class VenueController extends Controller
         return abort(404);
 
       return view('/academia/venue')->with([
-        'data' => $venue
+        'data' => $venue,
+        'page' => 'venue'
       ]);
     }
     

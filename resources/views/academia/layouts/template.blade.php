@@ -34,9 +34,9 @@
               
               <ul>
                 <li>Intranet para alumnos | Call center: <b>6198100</b></li>
-                <li><a href="/academia/nosotros">Nosotros</a></li>
-                
-                <li id="sedes">
+                <li class="{{ (Request::is('academia/nosotros')?'active':'') }}"><a href="/academia/nosotros">Nosotros</a></li>
+
+                <li class="{{ (Request::is('academia/sede/*')?'active':'') }}" id="sedes">
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content">
@@ -89,10 +89,10 @@
                   </ul>
                 </li>
                 
-                <li><a href="/academia/matricula-en-linea">Matrícula en linea</a></li>
+                <li class="{{ (Request::is('academia/matricula-en-linea')?'active':'') }}"><a href="/academia/matricula-en-linea">Matrícula en linea</a></li>
                 <li class="disable"><a>Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
-                <li><a href="/academia/contacto">Contáctenos</a></li>
+                <li class="{{ (Request::is('academia/contacto')?'active':'') }}"><a href="/academia/contacto">Contáctenos</a></li>
               </ul>
             </nav>
             

@@ -72,8 +72,12 @@ Route::post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store
 
 
 
+/**
+ *  Colegio
+ */
 
-
+// Página Princial (Index)
+Route::get('/colegio', 'Colegio\IndexController@index');
 
 
 

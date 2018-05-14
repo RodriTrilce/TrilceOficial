@@ -1,7 +1,6 @@
 @extends('academia.layouts.template')
 @section('title', 'Pre Matrícula en linea')
 @section('content')
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <div class="header-double-top">
     <div class="row">
@@ -28,19 +27,15 @@
           <li class="form-li">{{ $error }}</li>
         @endforeach
 
-          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
-          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
-          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
-          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
-          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
-          <li class="form-li">El campo <span>Nombres</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Test</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Test</span> debe ser mayor a 3 caracteres</li>
         </ul>
     </div>
   </div>
 @endif
 
   <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms">
-    <form class="col-xs-12" id="enrollment-form" method="post" url="matricula-en-linea">
+    <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
       
       @csrf
       
@@ -59,7 +54,7 @@
                   
                   <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
-                      <input type="number" name="DNI" id="step1_dni" placeholder="DNI" minlength="8" maxLength="8" required>
+                      <input type="number" min="0" name="DNI" id="step1_dni" placeholder="DNI" minlength="8" maxLength="8" required>
                     </fieldset>
                   </div>
 
@@ -104,7 +99,7 @@
                   <input hidden type="text" class="condition" name="step1_condicion" placeholder="Condición" pattern="[A-Za-z ]+" value="P" readonly>
 
                 </div>
-                
+
                 <!--
                 <div class="col-xs-12 col-sm-10">
                   <div class="file-upload-wrapper form-group" data-text="Select your file!">
@@ -216,7 +211,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="number"  minlength="4" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
+                      <input type="number" min="0" minlength="4" maxlength="4" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
@@ -281,7 +276,7 @@
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="number" minlength="8" maxLength="8" name="step3_dni" placeholder="DNI" required>
+                      <input type="number" min="0" minlength="8" maxLength="8" name="step3_dni" placeholder="DNI" required>
                     </fieldset>
                   </div>
                 </div>
@@ -415,7 +410,16 @@
                 </div>
                 
                 <div class="row col-xs-12 capcha">
-                  <div class="g-recaptcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"></div>
+                  <div class="col-xs-12">
+                    <fieldset class="form-group">
+                      <label>Verificación</label>
+                      <input type="captcha" class="captcha" name="captcha" id="captcha">
+                    </fieldset>
+                  </div>
+                  
+                  <div class="col-xs-12">
+                    <div class="g-recaptcha" data-callback="captcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"></div>
+                  </div>
                 </div>
 
           </div>
@@ -431,7 +435,7 @@
         </div>
         <div class="col-xs end-xs">
           <fieldset>
-            <button type="submit" id="next" class="validate">Siguiente <i class="fa fa-angle-right"></i></button>
+            <button type="button" id="next" class="validate">Siguiente <i class="fa fa-angle-right"></i></button>
           </fieldset>
         </div>
       </div>
@@ -446,5 +450,12 @@
 
 @section('scripts')
     page = 'enrollment';
+    
+    function captcha(){
+      if(grecaptcha.getResponse().length > 0){
+        document.getElementById("captcha").value = 'valid';
+      }
+    }
   @parent
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection

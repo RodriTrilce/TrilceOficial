@@ -216,6 +216,16 @@
   display: none;
 }
 
+input[type=number]{
+  &::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -moz-appearance: textfield;
+}
+
+
 .stepsarrows{
   margin: 0 auto;
 }
@@ -228,4 +238,14 @@
     font-size: 1.8rem;
     
   }
+}
+
+.captcha{
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }

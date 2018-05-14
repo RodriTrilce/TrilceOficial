@@ -5,6 +5,7 @@
  */
  
  // Imports
+ import { Validation } from 'bunnyjs/src/Validation';
  import { tns } from 'tiny-slider/src/tiny-slider.module'
  
 export const ValidationLang = {
@@ -12,7 +13,10 @@ export const ValidationLang = {
   email: "'{label}' debe ser una dirección de e-mail valida.",
   maxLength: "'{label}' debe tener maximo {maxLength} digitos.",
   minLength: "'{label}' debe tener minimo {minLength} digitos.",
-  tel: "{label} debe ser un numero telefónico."
+  tel: "{label} debe ser un numero telefónico.",
+  onlytext: "Solo es permitido texto",
+  captcha: "Verfica el captcha"
+  
 };
 
 export const ValidationConfig = {
@@ -24,11 +28,22 @@ export const ValidationConfig = {
   selectorInput: '[name]'
 };
 
-import { Validation } from 'bunnyjs/src/Validation';
 Validation.ui.config  = ValidationConfig;
 Validation.lang       = ValidationLang;
 
-Validation.lang.onlytext = 'Solo es permitido texto';
+Validation.validators.captcha = input => {
+  return new Promise((valid, invalid) => {
+      if (input.getAttribute('type') === 'captcha') {
+              if(input.value == 'valid'){
+                valid();
+              }else{
+                invalid();
+              }
+      } else {
+          valid();
+      }
+  });
+};
 
 Validation.validators.onlytext = input => {
   return new Promise((valid, invalid) => {
@@ -220,7 +235,10 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   this.showTab = function(n)
   {
-    if(this.currentTab == 2) this.drawTerms();
+    if(this.currentTab == 2){
+      this.drawTerms();
+    }
+
     var x = document.getElementsByClassName('tab');
     x[n].style.display = this.blockType;
     document.getElementById(this.prevBtn).style.display = (n==0?'none':'inline');
@@ -280,6 +298,10 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   this.nextPrev = function(n,e)
   {
+    
+    //      document.getElementById(this.nextBtn).type = 'submit';
+
+    
     var x = document.getElementsByClassName('tab');
     var tb;
     
@@ -295,23 +317,20 @@ function enrollment(nextBtn,prevBtn,form, type){
       case 2:
         tb = '.tab3';
       break;
-      
     }
     
-    Validation.validateSection(document.querySelector(tb)).then((result,e) => {
+    Validation.validateSection(document.querySelector(tb)).then(result => {
       if(n === -1){
         x[this.currentTab].style.display = 'none';
-        this.currentTab = this.currentTab +
-         n;
+        this.currentTab = this.currentTab + n;
         this.showTab(this.currentTab);
       }else{
         if (result === true) {
             x[this.currentTab].style.display = 'none';
             this.currentTab = this.currentTab + n;
 
-            console.log("ajasjasj"+ this.currentTab + " ---- " + x.length);
-
             if (this.currentTab >= x.length) {
+              document.formenrollment.submit();
 //              e.preventDefault();
               return false;
             }else{
@@ -437,7 +456,7 @@ function enrollment(nextBtn,prevBtn,form, type){
 
 
 
-// Elrolmen
+// Enrollment
 (() => {
   if(page !== 'enrollment') return false;
 
@@ -454,5 +473,11 @@ function enrollment(nextBtn,prevBtn,form, type){
   });
   
 })();
+
+
+
+
+
+
 
 

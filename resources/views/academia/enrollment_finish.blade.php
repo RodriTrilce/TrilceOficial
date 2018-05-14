@@ -26,6 +26,6 @@
 @endsection
 
 @section('scripts')
-    page = 'enrollment';
+    page = 'enrollment_finish';
   @parent
 @endsection

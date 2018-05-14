@@ -188,12 +188,9 @@
     }
     
     .terms-9{
-      display: none;
-      select{
-        width: auto;
-        padding: 5px;
-        padding-right: 2.5rem;
-      }
+      width: auto;
+      padding: 2px;
+      padding-right: 1.6rem;
     }
 
   }
@@ -214,17 +211,26 @@
 
 .tab{
   display: none;
-}
 
-input[type=number]{
-  &::-webkit-inner-spin-button,
-  ::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+  input[type=number]{
+    &::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    -moz-appearance: textfield;
+  }
+  
+  .captcha{
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    display: block;
+    border: 0;
+    padding: 0;
     margin: 0;
   }
-  -moz-appearance: textfield;
 }
-
 
 .stepsarrows{
   margin: 0 auto;
@@ -240,12 +246,3 @@ input[type=number]{
   }
 }
 
-.captcha{
-  visibility: hidden;
-  width: 1px;
-  height: 1px;
-  display: block;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}

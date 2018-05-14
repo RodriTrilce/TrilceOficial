@@ -4,22 +4,21 @@
  * Released under the Trilce Group.
  */
  
- // Imports
- import { Validation } from 'bunnyjs/src/Validation';
- import { tns } from 'tiny-slider/src/tiny-slider.module'
- 
-export const ValidationLang = {
+// Imports
+import { Validation } from 'bunnyjs/src/Validation';
+import { tns } from 'tiny-slider/src/tiny-slider.module'
+
+const ValidationLang = {
   required: "'{label}' es obligatorio.",
   email: "'{label}' debe ser una dirección de e-mail valida.",
   maxLength: "'{label}' debe tener maximo {maxLength} digitos.",
   minLength: "'{label}' debe tener minimo {minLength} digitos.",
-  tel: "{label} debe ser un numero telefónico.",
+  tel: "{label} debe ser un número telefónico.",
   onlytext: "Solo es permitido texto",
   captcha: "Verfica el captcha"
-  
 };
 
-export const ValidationConfig = {
+const ValidationConfig = {
   classInputGroup: 'form-group',
   classInputGroupError: 'has-danger',
   classLabel: 'form-control-label',
@@ -282,6 +281,7 @@ function enrollment(nextBtn,prevBtn,form, type){
     term21.innerHTML = time;
     
     if(university !== 'pucp'){
+      console.log("olll")
       term9.style.display = 'inline-block';
       let b = term9a.options[term9a.selectedIndex].value;
       term91.innerHTML = '12';

@@ -328,10 +328,8 @@
                 <div class="row col-xs-12">
                   <div class="col col-xs-12">
                     <fieldset class="form-group">
-                      <label>
-                        <span>Si acepto los términos y condiciones</span>
-                        <input class="checkterms" type="checkbox" name="checkbox" id="checkbox_confirmation" aria-label="Terminos y condiciones" placeholder="ccc" required>
-                      </label>
+                      <label><span>Términos y Condiciones</span></label>
+                      <input type="checkbox" name="checkbox" class="checkterms" required>
                     </fieldset>
                     <span><a id="termsActive">Leer términos y condiciones</a></span>
                   </div>
@@ -344,12 +342,12 @@
                     la institución.</li>
 
                     <li>De realizarse el pago del ciclo de forma fraccionada en dos cuotas, este tendrá un recargo
-                    adicional de S/.<div id="terms-2"></div>. Este monto será recargado en la primera cuota, debiéndose cancelar
+                    adicional de S/<div id="terms-2"></div>. Este monto será recargado en la primera cuota, debiéndose cancelar
                     la segunda cuota en un lapso de <div id="terms-21"></div> días.</li>
 
                     <li>En el caso de que el padre de familia, apoderado o alumno mayor de edad opte por
-                    retirarse habiéndose iniciado las clases, se le hará un cobro de S/.<div id="terms-3">50</div> por concepto de
-                    penalidad y un cobro de S/.<div id="terms-31">30</div> por concepto de materiales, así como también se le
+                    retirarse habiéndose iniciado las clases, se le hará un cobro de S/<div id="terms-3">50</div> por concepto de
+                    penalidad y un cobro de S/<div id="terms-31">30</div> por concepto de materiales, así como también se le
                     retendrá el monto de días asistidos y no asistidos sin justificación.</li>
 
                     <li>En caso el alumno solicite traslado de sede o traslado a otro turno o ciclo dentro del local
@@ -359,7 +357,7 @@
 
                     <li>En el caso de que el padre de familia, apoderado o alumno mayo de edad requiera la
                     devolución del dinero antes de iniciado el periodo de clases, la institución realizará el
-                    cobro de S/.<div id="terms-5">50</div> por concepto de gastos administrativos.</li>
+                    cobro de S/<div id="terms-5">50</div> por concepto de gastos administrativos.</li>
 
                     <li>Para el trámite de postergación de matrícula, se procederá a descontar los días asistidos y
                     no asistidos sin justificación. El monto restante será reservado para el siguiente ciclo
@@ -369,7 +367,7 @@
 
                     <li>El ingreso a la academia se realiza portando la tarjeta de control con el recibo original de
                     pago adjunto: en caso de no estar al día en el pago de la pensión, no se le permitirá el
-                    ingreso. Por la pérdida de la tarjeta o del recibo, se deberá cancelar S/.10.00 por concepto
+                    ingreso. Por la pérdida de la tarjeta o del recibo, se deberá cancelar S/10.00 por concepto
                     de duplicado.</li>
 
                     <li>El alumno será evaluado en forma constante por medio de exámenes de entrada,
@@ -377,12 +375,12 @@
                     conducta. Dichas condiciones se tomarán en cuenta para las calificaciones de aula o
                     reagrupaciones.</li>
 
-                    <li>La pérdida del libro <div id="terms-9"><select id="terms-9-s"><option value="ciencia" selected>Ciencia</option><option value="letras">Letras</option></select></div> que otorga la institución dará lugar al cobro de S/.<div id="terms-91"></div> por concepto
+                    <li>La pérdida del libro <div id="terms-9"><select id="terms-9-s" class="terms-9"><option value="ciencia" selected>Ciencia</option><option value="letras">Letras</option></select></div> que otorga la institución dará lugar al cobro de S/<div id="terms-91"></div> por concepto
                     de duplicado.</li>
                     
                     <li>La institución realiza maratones académicas en horario diurno y nocturno, sin ser
                     obligatoria la asistencia para el alumno. En caso asista, tendrá que efectuar el pago
-                    adicional de S/.<div id="terms-10">5</div>.</li>
+                    adicional de S/<div id="terms-10">5</div>.</li>
 
                     <li> El dictado de clases iniciará siempre que se alcance el número mínimo de alumnos
                     matriculados establecido por la institución.</li>
@@ -398,7 +396,7 @@
                     <li> En el caso de que el alumno pida traslado de pago de la pensión mensual a otro alumno,
                     ya sea que se trate de un alumno nuevo o ya matriculado (en el ciclo anual, semestral,
                     intensivo, o en el ciclo de verano o repaso), se descontará de dicho monto la cantidad de
-                    S/.<div id="terms-14">50</div> por concepto de traslado de titularidad. Cabe precisar que el traslado de pago se
+                    S/<div id="terms-14">50</div> por concepto de traslado de titularidad. Cabe precisar que el traslado de pago se
                     realizará única y exclusivamente por las pensiones que corresponden a los meses
                     pendientes de clases.</li>
                     </ol>

@@ -104,10 +104,12 @@ var get = (url) => {
 
 
 /**!
- *  Index Slider
+ *  Index
  */
  (function(){
-   if(page !== 'index'){ return;}
+   if(page !== 'index') return false;
+   
+   // Slider
    var slider = tns({
      container: '.index-banners',
      items: 1,
@@ -121,4 +123,13 @@ var get = (url) => {
      nav: true,
      autoplayHoverPause: true,
    });
+
+  // Loader wrap
+  window.onload = function()
+  {
+   setTimeout(function(){
+     document.body.className += ' loaded'
+   }, 1000)
+  }
+
  })();

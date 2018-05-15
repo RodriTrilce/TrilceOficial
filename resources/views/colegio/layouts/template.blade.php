@@ -42,9 +42,9 @@
                     <div class="dropdown-desk-content dropdown-desk-colegio">
                                         
                     <div class="row col-xs-12">
-                      <div class="row col-xs-7">
+                      <div class="row col-xs-8">
                         
-                        <div class="col-xs-4 venues-in">
+                        <div class="col-xs-3 venues-in">
                           <h3 class="title"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Lima</strong></h3>
                         </div>
                         
@@ -78,8 +78,8 @@
                         </div>
                       </div>
                       
-                      <div class="row col-xs-5 xs-end">
-                        <div class="col-xs-3 venues-in">
+                      <div class="row col-xs-4">
+                        <div class="col-xs venues-in">
                           <h3 class="title provincia"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Provincia</strong></h3>
                         </div>
                         <div class="col-xs linksprovincia">

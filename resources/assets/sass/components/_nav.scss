@@ -116,12 +116,14 @@
     }
     
     .linkslima{
+      align-self: center;
       a:hover{
         color: $orange;
       }
     }
     
     .linksprovincia{
+      align-self: center;
       a:hover{
         color: $colegio_blue;
       }
@@ -130,7 +132,7 @@
     .venues-in{
       display: flex;
       align-self: center;
-      margin-left: 1rem;
+      margin-left: 2rem;
       
       .title{
         font-size: 2rem;

@@ -1,10 +1,10 @@
 /**
-  Trilce SASS MAIN ACADEMIA
+  Trilce SASS MAIN COLEGIO
 */
 
 // p1 include
 @import 'helpers/all';
-@import 'base/all_academia';
+@import 'base/all_colegio';
 
 // p2 include
 @import 'vendor/all';
@@ -13,4 +13,4 @@
 
 // Pages
 @import 'pages/404';
-@import 'pages/academia/all';
+@import 'pages/colegio/all';

@@ -94,3 +94,6 @@ Route::get('/colegio', 'Colegio\IndexController@index');
 
 
 
+
+
+

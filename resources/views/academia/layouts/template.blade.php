@@ -23,7 +23,7 @@
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
           <div class="col-xs-12 nav-info">
-              <span><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b>6198100</b></span>
+              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b class="phone">6198100</b></span>
           </div>
           <div class="col-xs-12">
             <nav>
@@ -36,10 +36,10 @@
                 <li>Intranet para alumnos | Call center: <b>6198100</b></li>
                 <li class="{{ (Request::is('academia/nosotros')?'active':'') }}"><a href="/academia/nosotros">Nosotros</a></li>
 
-                <li class="{{ (Request::is('academia/sede/*')?'active':'') }}" id="sedes">
+                <li class="nav-venues {{ (Request::is('academia/sede/*')?'active':'') }}" id="sedes">
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">
-                    <div class="dropdown-desk-content">
+                    <div class="dropdown-desk-content dropdown-desk-academia">
                       <div>
                         <h3>UNI - San Marcos - PUCP</h3>
                         <ul>

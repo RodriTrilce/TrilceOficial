@@ -11,6 +11,9 @@ let mix = require('laravel-mix');
  |
  */
 
+// mix:Colegio
+mix.js('resources/assets/js/app_colegio.js', 'public/js/app_colegio.js')
+mix.sass('resources/assets/sass/main_colegio.scss','public/css');
 
 // mix:Academia
 mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js')
@@ -28,8 +31,6 @@ mix.copyDirectory('resources/assets/images', 'public/static/images');
 mix.copyDirectory('resources/assets/fonts', 'public/static/fonts');
 mix.copyDirectory('resources/assets/video', 'public/static/video');
 mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
-
-
 
 
 

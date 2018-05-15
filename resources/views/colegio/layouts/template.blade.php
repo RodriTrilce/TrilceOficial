@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+  <meta charset="UTF-8">
+  <title>@hasSection('title')@yield('title') - @endif Colegio Trilce</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}">
+</head>
+<body>
+
+@hasSection('afterBody')
+  {!! $print !!}
+@endif
+
+  <header>
+    <div class="row between-xs">
+      <div class="col-xs-2 logo">
+        <a href="/colegio"><img src="{{{ asset('static/images/colegio/logo-colegio.png') }}}" alt="Trilce"></a>
+      </div>
+      <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
+          <div class="col-xs-12 nav-info">
+              <span class="nav-info-content nav-info-colegio"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b class="phone">6198100</b></span>
+          </div>
+          <div class="col-xs-12">
+            <nav>
+              <input type="checkbox" id="menu-toggle" />
+              <div class="toogle-content">
+                <label for="menu-toggle" class="label-toggle"><i class="fa fa-bars"></i></label>
+              </div>
+              
+              <ul>
+                <li>Intranet para alumnos | Call center: <b>6198100</b></li>
+                <li class="{{ (Request::is('colegio/nosotros')?'active':'') }}"><a href="/colegio/nosotros">Nosotros</a></li>
+
+                <li class="nav-venues {{ (Request::is('colegio/sede/*')?'active':'') }}" id="sedes">
+                  <a href="#">Sedes</a>
+                  <div class="dropdown-desk">
+                    <div class="dropdown-desk-content dropdown-desk-colegio">
+                                        
+                    <div class="row col-xs-12">
+                      <div class="row col-xs-7">
+                        
+                        <div class="col-xs-4 venues-in">
+                          <h3 class="title"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Lima</strong></h3>
+                        </div>
+                        
+                        <div class="row col-xs linkslima">
+                          <div class="col-xs">
+                            <ul class="ul-venue">
+                              <li class="item"><a href="">Breña</a></li>
+                              <li class="item"><a href="">Callao</a></li>
+                              <li class="item"><a href="">Chorrillos</a></li>
+                              <li class="item"><a href="">Comas</a></li>
+                              <li class="item"><a href="">Los Olivos</a></li>
+                              <li class="item"><a href="">Maranga</a></li>
+                              <li class="item"><a href="">Pro</a></li>
+                              <li class="item"><a href="">Santa Beatriz (Roma)</a></li>
+                              <li class="item"><a href="">Jesús María (Salaverry)</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs">
+                            <ul class="ul-venue">
+                              <li class="item"><a href="">Surco</a></li>
+                              <li class="item"><a href="">San Isidro</a></li>
+                              <li class="item"><a href="">Villa María</a></li>
+                              <li class="item"><a href="">Villa el Salvador</a></li>
+                              <li class="item"><a href="">La Molina</a></li>
+                              <li class="item"><a href="">Salamanca</a></li>
+                              <li class="item"><a href="">Santa Anita</a></li>
+                              <li class="item"><a href="">San Juan de Lurigancho</a></li>
+                              <li class="item"><a href="">Wiesse (SJL)</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="row col-xs-5 xs-end">
+                        <div class="col-xs-3 venues-in">
+                          <h3 class="title provincia"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Provincia</strong></h3>
+                        </div>
+                        <div class="col-xs linksprovincia">
+                          <ul class="ul-venue">
+                            <li class="item item2"><a href="">Arequipa</a></li>
+                            <li class="item item2"><a href="">Chiclayo</a></li>
+                            <li class="item item2"><a href="">Chanchamayo</a></li>
+                            <li class="item item2"><a href="">Huancayo</a></li>
+                            <li class="item item2"><a href="">Piura</a></li>
+                            <li class="item item2"><a href="">Trujillo</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                      
+                    </div>
+                  </div>
+                </li>
+
+                <li class="{{ (Request::is('colegio/admision')?'active':'') }}"><a href="/colegio/admision">Admisión</a></li>
+
+                <!-- Only mobile -->
+                <li class="menu-click-sedes">
+                  <a>Sedes </a>
+                  <ul class="menu-sedes-ul">
+                    <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
+                    <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
+                    <li><a href="/academia/sede/comas">Comas</a></li>
+                    <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
+                    <li><a href="/academia/sede/torrico">Torrico</a></li>
+                    <li><a href="/academia/sede/marsano">Marsano</a></li>
+                    <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
+                  </ul>
+                </li>
+
+                <li class="disable"><a>Blog</a></li>
+                <li class="disable"><a>Multimedia</a></li>
+                <li class="{{ (Request::is('colegio/contacto')?'active':'') }}"><a href="/colegio/contacto">Contáctenos</a></li>
+              </ul>
+            </nav>
+            
+          </div>
+      </div>
+    </div>
+  </header>
+  
+@yield('content')
+
+@include('colegio.layouts.parts.footer')
+
+<script>
+  var page;
+  
+  @section('scripts')
+</script>
+<script src="{{ mix('/js/app_colegio.js') }}" charset="utf-8"></script>
+@show
+
+</body>
+</html>

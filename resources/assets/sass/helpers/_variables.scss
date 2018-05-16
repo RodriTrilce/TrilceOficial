@@ -2,9 +2,17 @@
 $orange: hsl(13.2, 89.4%, 59.2%);
 $gray: hsl(214.3, 4%, 33.9%);
 $toggle_color: blue;
-$font_icon: 'FontAwesome';
 $background-form: #ededed;
 $disable_link: transparentize($gray, 0.4);
 
 $colegio_blue: #0087bf;
 $colegio_yellow: #ff902a;
+
+
+// Fonts alis
+$font_icon: 'FontAwesome';
+$font_cae_bold : 'CaeciliaLTPro-75Bold';
+$font_cae_heavy: 'CaeciliaLTPro-85Heavy';
+$font_cae_reg : 'CaeciliaLTPro-45Light';
+$font_geo_reg : 'Geogrotesque-Rg';
+$font_geo_bold: 'Geogrotesque-SmBd';

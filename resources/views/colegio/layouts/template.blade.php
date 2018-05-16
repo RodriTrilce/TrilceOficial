@@ -120,7 +120,7 @@
                   </div>
                 </li>
 
-                <li class="{{ (Request::is('colegio/admision')?'active':'') }}"><a href="/colegio/admision">Admisión</a></li>
+                <li class="{{ (Request::is('colegio/admision*')?'active':'') }}"><a href="/colegio/admision-nuevo">Admisión</a></li>
 
                 <!-- Only mobile -->
                 <li class="menu-click-sedes">

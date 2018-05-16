@@ -99,3 +99,97 @@
   font-weight: bold;
   max-width: 25rem;
 }
+
+
+
+
+
+
+
+.header-double-top-colegio{
+  >.row{
+    position: relative;
+    height: 255px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    @media screen and (max-width: 768px){
+      height: auto;
+    }
+    
+    >div.col-xs-12,div.col-sm-6,div.col-md-12{
+      &:nth-child(1){
+
+        @media screen and (max-width: 768px){
+          height: 4rem;
+        }
+      }
+      
+      &:nth-child(2){
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (max-width: 768px){
+          order: -1;
+          height: 10rem;
+        }
+      }
+
+    }
+    
+    .header-double-title{
+      position: absolute;
+      width: 60%;
+      @include margin(5rem, initial, initial, 11.5%);
+      left: 0;
+      
+      @media screen and (max-width: 768px){
+        bottom:0px;
+        margin-left: 10%
+      }
+      
+      h1{
+        font-size: 4em;
+        font-family: 'CaeciliaLTPro-85Heavy';
+        color: $orange;
+        display: inline-block;
+        background-color: white;
+        padding: 0.8rem;
+        
+        @media screen and (max-width: 768px){
+          font-size: 1.3rem;
+          padding: 0.1rem;
+        }
+        
+        @media screen and(max-width: 320px){
+          font-size: 1.3rem;
+        }
+      }
+      
+      p{
+        color: white;
+        display: inline-block;
+        margin-left: 2rem;
+        
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    
+    }
+    
+    .header-double-border{
+      position: absolute;
+      border: 0.7rem solid $orange;
+      width: 60%;
+      @include margin(3rem, 20%, 2%, 20%);
+      height: 70%;
+      left: 0;
+      
+      @media screen and (max-width: 768px){
+        border: 0.3rem solid white;
+        bottom: -50%;
+      }
+    }
+  }
+}

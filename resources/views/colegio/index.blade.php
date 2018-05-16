@@ -12,18 +12,6 @@
   </div>
 
   <hr class="grayhr" />
-  
-  <!--
-  <div class="row col-xs-12 center-xs">
-    <div class="col-xs-11 col-sm-9 start-xs start-sm indexblock1">
-      <h1 class="title">Admisión 2018</h1>
-      <h3 class="subtitle">Elija la preparación universitaria, exclusiva que está buscando</h3>
-
-    </div>
-  </div>
-  --->
-  
-
 
   <div class="nuevos-i">
     <div class="row center-xs">
@@ -36,7 +24,7 @@
       
       <div class="row col-xs-12 col-sm-11 col-md-10 col-lg-9 between-xs center-sm center-md center-lg nuevos-i-box">
         <div class="col-xs">
-          <a href="/academia/preparacion-uni">
+          <a href="/colegio/admision-nuevo">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/ico-alumno-nuevo.jpg') }}" alt="UNI">
               <h3>Alumno <span class="modality modality-blue">Nuevo</span></h3>
@@ -48,7 +36,7 @@
           </a>
         </div>
         <div class="col-xs">
-          <a href="/academia/preparacion-san-marcos">
+          <a href="/colegio/admision-traslado">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/ico-alumno-regular.jpg') }}" alt="UNMSM">
               <h3>Alumno <span class="modality modality-yellow">Traslado</span></h3>
@@ -60,7 +48,7 @@
           </a>
         </div>
         <div class="col-xs">
-          <a href="/academia/preparacion-pucp">
+          <a href="/colegio/admision-regular">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/ico-alumno-traslado.jpg') }}" alt="PUCP">
               <h3>Alumno <span class="modality modality-orange">Regular</span></h3>
@@ -75,8 +63,10 @@
       
     </div>
   </div>
-    
-
+  
+  <hr class="grayhr xs-hide" />
+  
+  @include('colegio.partials.card_bottom')
 @endsection
 @section('scripts')
   

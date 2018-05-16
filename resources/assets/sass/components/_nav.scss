@@ -104,7 +104,6 @@
   border-top: 8px solid $gray;
   border-bottom: 3px solid $gray;
   background: white;
-  padding: 2vw;
   min-height: 37vh;
   justify-content: space-between;
   
@@ -172,6 +171,14 @@
     }
   }
 
+  .block-capital{
+    padding: 2vw;
+  }
+  
+  .block-province{
+    background: #f3f3f3;
+    padding: 2vw;
+  }
 
 }
 // end .dropdown-desk-colegio

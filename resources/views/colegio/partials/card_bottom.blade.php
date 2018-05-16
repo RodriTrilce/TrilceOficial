@@ -3,30 +3,30 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
         <a href="/academia/simulacros-uni">
-          <i class="fa fa-bullhorn"></i>
-          <h3>Simulacros</h3>
-          <p>Inscripciones a los simulacros y resultados.</p>
+          <i class="fa fa-map-marker"></i>
+          <h3>Sedes</h3>
+          <p>Ubique el colegio Trilce de su preferencia.</p>
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
         <a href="/academia/solucionarios-pucp">
-          <i class="fa fa-paperclip"></i>
-          <h3>Solucionarios</h3>
-          <p>Area de descarga UNI, San Marcos y PUCP.</p>
+          <i class="fa fa-graduation-cap"></i>
+          <h3>Propuesta educativa</h3>
+          <p>La filosofía Trilce.</p>
         </a>
       </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="/academia/matricula-en-linea">
-            <i class="fa fa-edit"></i>
-            <h3>Matrícula en linea</h3>
-            <p>Ahora es más facil inscribirse.</p>
+            <i class="fa fa-credit-card"></i>
+            <h3>Guía de pagos en línea</h3>
+            <p>Todos los pasos a seguir.</p>
           </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="/academia/olimpiadas-matematicas">
-            <i class="fa fa-lightbulb-o"></i>
-            <h3>Olimpiadas Matemática</h3>
-            <p>Fechas y lugares.</p>
+            <i class="fa fa-share-alt"></i>
+            <h3>Intranet</h3>
+            <p>Para padres y alumnos.</p>
           </a>
         </div>
     </div>

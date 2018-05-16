@@ -60,62 +60,61 @@
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content dropdown-desk-colegio">
-                                        
-                    <div class="row col-xs-12">
-                      <div class="row col-xs-8">
-                        
-                        <div class="col-xs-3 venues-in">
-                          <h3 class="title"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Lima</strong></h3>
+
+                      <div class="row col-xs-12">
+                        <div class="row col-xs-8">
+                          
+                          <div class="col-xs-3 venues-in">
+                            <h3 class="title"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Lima</strong></h3>
+                          </div>
+                          
+                          <div class="row col-xs linkslima block-capital">
+                            <div class="col-xs">
+                              <ul class="ul-venue">
+                                <li class="item"><a href="">Breña</a></li>
+                                <li class="item"><a href="">Callao</a></li>
+                                <li class="item"><a href="">Chorrillos</a></li>
+                                <li class="item"><a href="">Comas</a></li>
+                                <li class="item"><a href="">Los Olivos</a></li>
+                                <li class="item"><a href="">Maranga</a></li>
+                                <li class="item"><a href="">Pro</a></li>
+                                <li class="item"><a href="">Santa Beatriz (Roma)</a></li>
+                                <li class="item"><a href="">Jesús María (Salaverry)</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-xs">
+                              <ul class="ul-venue">
+                                <li class="item"><a href="">Surco</a></li>
+                                <li class="item"><a href="">San Isidro</a></li>
+                                <li class="item"><a href="">Villa María</a></li>
+                                <li class="item"><a href="">Villa el Salvador</a></li>
+                                <li class="item"><a href="">La Molina</a></li>
+                                <li class="item"><a href="">Salamanca</a></li>
+                                <li class="item"><a href="">Santa Anita</a></li>
+                                <li class="item"><a href="">San Juan de Lurigancho</a></li>
+                                <li class="item"><a href="">Wiesse (SJL)</a></li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                         
-                        <div class="row col-xs linkslima">
-                          <div class="col-xs">
-                            <ul class="ul-venue">
-                              <li class="item"><a href="">Breña</a></li>
-                              <li class="item"><a href="">Callao</a></li>
-                              <li class="item"><a href="">Chorrillos</a></li>
-                              <li class="item"><a href="">Comas</a></li>
-                              <li class="item"><a href="">Los Olivos</a></li>
-                              <li class="item"><a href="">Maranga</a></li>
-                              <li class="item"><a href="">Pro</a></li>
-                              <li class="item"><a href="">Santa Beatriz (Roma)</a></li>
-                              <li class="item"><a href="">Jesús María (Salaverry)</a></li>
-                            </ul>
+                        <div class="row col-xs-4 block-province">
+                          <div class="col-xs venues-in">
+                            <h3 class="title provincia"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Provincia</strong></h3>
                           </div>
-                          <div class="col-xs">
+                          <div class="col-xs linksprovincia">
                             <ul class="ul-venue">
-                              <li class="item"><a href="">Surco</a></li>
-                              <li class="item"><a href="">San Isidro</a></li>
-                              <li class="item"><a href="">Villa María</a></li>
-                              <li class="item"><a href="">Villa el Salvador</a></li>
-                              <li class="item"><a href="">La Molina</a></li>
-                              <li class="item"><a href="">Salamanca</a></li>
-                              <li class="item"><a href="">Santa Anita</a></li>
-                              <li class="item"><a href="">San Juan de Lurigancho</a></li>
-                              <li class="item"><a href="">Wiesse (SJL)</a></li>
+                              <li class="item item2"><a href="">Arequipa</a></li>
+                              <li class="item item2"><a href="">Chiclayo</a></li>
+                              <li class="item item2"><a href="">Chanchamayo</a></li>
+                              <li class="item item2"><a href="">Huancayo</a></li>
+                              <li class="item item2"><a href="">Piura</a></li>
+                              <li class="item item2"><a href="">Trujillo</a></li>
                             </ul>
                           </div>
                         </div>
                       </div>
-                      
-                      <div class="row col-xs-4">
-                        <div class="col-xs venues-in">
-                          <h3 class="title provincia"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Provincia</strong></h3>
-                        </div>
-                        <div class="col-xs linksprovincia">
-                          <ul class="ul-venue">
-                            <li class="item item2"><a href="">Arequipa</a></li>
-                            <li class="item item2"><a href="">Chiclayo</a></li>
-                            <li class="item item2"><a href="">Chanchamayo</a></li>
-                            <li class="item item2"><a href="">Huancayo</a></li>
-                            <li class="item item2"><a href="">Piura</a></li>
-                            <li class="item item2"><a href="">Trujillo</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
                     
-                      
                     </div>
                   </div>
                 </li>

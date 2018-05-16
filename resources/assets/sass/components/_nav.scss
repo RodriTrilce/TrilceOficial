@@ -1,5 +1,5 @@
 /**
-  *  Extendes Utils
+  *  Nav
 */
 
 %dropdown-desk-active {
@@ -22,160 +22,214 @@
     flex-wrap: nowrap;
     width: 100%;
     font-family: 'Geogrotesque-Rg';
-    a,li{ transition: none; }// Error
-  }// End .dropdown-desk-content
-
-  .dropdown-desk-academia{
-    padding: 3vw;
-    border-top: 8px solid $orange;
-    background: white;
-    justify-content: space-around;
-    
-    >div{
-      
-      h3{
-        color: $gray;
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-      
-      ul{
-        display: inline-block;
-        
-        li{
-          font-size: 1.3rem;
-          position: relative;
-          
-          &::before{
-            position: absolute;
-            top: 5px;
-            content: "\f112";
-            color: transparentize($gray, 0.5);
-            font-family: 'FontAwesome';
-            font-size: 15px;
-            margin-right: 5px;
-          }
-          
-          a{
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            margin-left: 17px;
-            color: $gray;
-          }
-          
-          &:hover{
-            a{
-              color: $orange;
-            }
-            &::before{
-              color: $orange;
-            }
-          }
-
-        }// end li
-        
-      }//  end ul
-      
-      // Line right
-      &::before{
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: 120%;
-        width: 1px;
-        height: 85%;
-        margin-left: -3%;
-        background: transparentize($gray, 0.8);
-      }
-      
-      &:first-child{
-        &::before{
-          width: 0px;
-        }
-      }
-      
-    }// end div
-  }// End .dropdown-desk-academia
-  
-  .dropdown-desk-colegio{
-    border-top: 8px solid $gray;
-    border-bottom: 3px solid $gray;
-    background: white;
-    padding: 2vw;
-    min-height: 37vh;
-    justify-content: space-between;
-    
-    a:hover{
-      font-weight: bold;
-    }
-    
-    a:link,a:visited{
-      color: $gray;
-    }
-    
-    .linkslima{
-      align-self: center;
-      a:hover{
-        color: $orange;
-      }
-    }
-    
-    .linksprovincia{
-      align-self: center;
-      a:hover{
-        color: $colegio_blue;
-      }
-    }
-
-    .venues-in{
-      display: flex;
-      align-self: center;
-      margin-left: 2rem;
-      
-      .title{
-        font-size: 2rem;
-      }
-      
-      .provincia{
-        color: $colegio_blue;
-      }
-      
-      .marker{
-        font-weight: bold;
-      }
-    }
-    
-    .ul-venue{
-      .item{
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
-        
-        &::before{
-          content: "\f112";
-          color: transparentize($gray, 0.5);
-          font-family: 'FontAwesome';
-          font-size: 14px;
-          font-weight: bold;
-          margin-right: 5px;
-        }
-        
-        &:hover::before{
-            color: $orange;
-        }
-      }
-      
-      .item2:hover::before{
-        color: $colegio_blue;
-      }
-    }
-
-
-  }// End .dropdown-desk-colegio
+    a,li{ transition: none; }
+  }
 
 }// End .dropdown-desk
 
+// dropdown-desk-academia
+.dropdown-desk-academia{
+  padding: 3vw;
+  border-top: 8px solid $orange;
+  background: white;
+  justify-content: space-around;
+  
+  >div{
+    
+    h3{
+      color: $gray;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    ul{
+      display: inline-block;
+      
+      li{
+        font-size: 1.3rem;
+        position: relative;
+        
+        &::before{
+          position: absolute;
+          top: 5px;
+          content: "\f112";
+          color: transparentize($gray, 0.5);
+          font-family: 'FontAwesome';
+          font-size: 15px;
+          margin-right: 5px;
+        }
+        
+        a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          margin-left: 17px;
+          color: $gray;
+        }
+        
+        &a:hover{
+          color: $orange;
+        }
+        
+        &a:hover::before{
+            color: $orange;
+        }
+
+      }// end li
+      
+    }//  end ul
+    
+    // Line right
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 120%;
+      width: 1px;
+      height: 85%;
+      margin-left: -3%;
+      background: transparentize($gray, 0.8);
+    }
+    
+    &:first-child::before{
+      width: 0px;
+    }
+    
+  }// end div
+}// end .dropdown-desk-academia
+
+// dropdown-desk-colegio
+.dropdown-desk-colegio{
+  border-top: 8px solid $gray;
+  border-bottom: 3px solid $gray;
+  background: white;
+  padding: 2vw;
+  min-height: 37vh;
+  justify-content: space-between;
+  
+  a:hover{
+    font-weight: bold;
+  }
+  
+  a:link,a:visited{
+    color: $gray;
+  }
+  
+  .linkslima{
+    align-self: center;
+    a:hover{
+      color: $orange;
+    }
+  }
+  
+  .linksprovincia{
+    align-self: center;
+    a:hover{
+      color: $colegio_blue;
+    }
+  }
+
+  .venues-in{
+    display: flex;
+    align-self: center;
+    margin-left: 2rem;
+    
+    .title{
+      font-size: 2rem;
+    }
+    
+    .provincia{
+      color: $colegio_blue;
+    }
+    
+    .marker{
+      font-weight: bold;
+    }
+  }
+  
+  .ul-venue{
+    .item{
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      
+      &::before{
+        content: "\f112";
+        color: transparentize($gray, 0.5);
+        font-family: 'FontAwesome';
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+      
+      &:hover::before{
+          color: $orange;
+      }
+    }
+    
+    .item2:hover::before{
+      color: $colegio_blue;
+    }
+  }
+
+
+}
+// end .dropdown-desk-colegio
+
+.dropdown-desk-colegio-aboutus{
+  border-top: 8px solid $gray;
+  border-bottom: 3px solid $gray;
+  min-height: 15vh;
+  justify-content: space-between;
+  
+  background: $orange;
+  
+  a:hover{
+    font-weight: bold;
+  }
+  
+  a:link,a:visited{
+    color: $gray;
+  }
+  
+  .dd-colegio-aboutus-link{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+    
+  .dd-colegio-aboutus-rocket{
+    background: $colegio_gray;
+    background-image: url('/static/images/colegio/imagen-menu-pe.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .dd-colegio-aboutus-textleft{
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4.5rem;
+    
+    h2{
+      color: white;
+      font-size: 1.9rem;
+    }
+  }
+
+  .dd-colegio-aboutus-textright{
+    background: $colegio_gray;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    
+    h2{
+      color: $gray;
+      font-size: 1.5rem;
+    }
+  }
+  
+}
 
 
 // ================================================================
@@ -221,7 +275,6 @@
     display: none;
   }
   
-  
 }
 
 .pre-nav{
@@ -231,31 +284,29 @@
   }
 }
 
-/**
-      Nav
-*/
+// nav
 nav{
   .toogle-content{
     display: none;
   }
     
-  /**
-    Menu desktop Sedes
-  */
+  // menu desktop Sedes
   .nav-venues{
     &:hover > .dropdown-desk{
       @extend %dropdown-desk-active;
       width: 100vw;
       height: 100px;
     }
-  }// fin menu desktop sedes
+  }
   
+  .nav-colegio-aboutus{
+    &:hover > .dropdown-desk{
+      @extend %dropdown-desk-active;
+      width: 100vw;
+    }
+  }
   
-  
-  /**
-    *  Ul  - no responsive
-  */
-  
+  // ul no responsive
   > ul{
     display: flex;
     justify-content: flex-end;
@@ -306,11 +357,11 @@ nav{
       display: inline-block;
       margin-right: 1.2rem;
       font-size: 1.15rem;
+      
       @media screen and (max-width: 900px) {
         font-size: 1rem;
         margin-right: 1rem;
       }
-//      position: relative;
 
       &:first-child{
         display: none;

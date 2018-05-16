@@ -34,8 +34,28 @@
               
               <ul>
                 <li>Intranet para alumnos | Call center: <b>6198100</b></li>
-                <li class="{{ (Request::is('colegio/nosotros')?'active':'') }}"><a href="/colegio/nosotros">Nosotros</a></li>
-
+                
+                <li class="nav-colegio-aboutus {{ (Request::is('colegio/nosotros')?'active':'') }}">
+                  <a href="/colegio/nosotros">Nosotros</a>
+                  <div class="dropdown-desk">
+                    <div class="dropdown-desk-content dropdown-desk-colegio-aboutus">
+                      <div class="row col-xs-12">
+                        <a href="/colegio/propuesta-educativa" class="dd-colegio-aboutus-link">
+                          <div class="row col-xs-4 dd-colegio-aboutus-textleft">
+                            <h2><i class="fa fa-graduation-cap"></i> Propuesta educativa</h2>
+                          </div>
+                          
+                          <div class="col-xs dd-colegio-aboutus-rocket"></div>
+                          
+                          <div class="row col-xs dd-colegio-aboutus-textright">
+                            <h2>Vive la aventura de estudiar en Trilce.<br /> Comienza el viaje..</h2>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
                 <li class="nav-venues {{ (Request::is('colegio/sede/*')?'active':'') }}" id="sedes">
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">

@@ -87,7 +87,7 @@
                                 <li class="item"><a href="">Surco</a></li>
                                 <li class="item"><a href="">San Isidro</a></li>
                                 <li class="item"><a href="">Villa María</a></li>
-                                <li class="item"><a href="">Villa el Salvador</a></li>
+                                <li class="item"><a href="">Villa El Salvador</a></li>
                                 <li class="item"><a href="">La Molina</a></li>
                                 <li class="item"><a href="">Salamanca</a></li>
                                 <li class="item"><a href="">Santa Anita</a></li>

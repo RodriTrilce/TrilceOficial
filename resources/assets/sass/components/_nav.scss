@@ -132,10 +132,26 @@
   .venues-in{
     display: flex;
     align-self: center;
-    margin-left: 2rem;
+    margin-left: 3rem;
+    padding-left: 2rem;
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 2rem;
+      padding-left: .5rem;
+    }
+    @media screen and (max-width: 700px) {
+      margin-left: 1rem;
+      padding-left: .5rem;
+    }
     
     .title{
       font-size: 2rem;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 1.2rem;
+      }
     }
     
     .provincia{
@@ -163,6 +179,10 @@
       
       &:hover::before{
           color: $orange;
+      }
+      
+      @media screen and (max-width: 1000px) {
+        font-size: 0.9rem;
       }
     }
     

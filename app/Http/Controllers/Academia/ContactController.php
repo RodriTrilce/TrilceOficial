@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Academia;
 
 use Illuminate\Http\Request;
-use Mail;
 use App\Http\Controllers\Controller;
+
+use App\Mail\ContactForm;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -16,21 +18,14 @@ class ContactController extends Controller
   public function send()
   {
     $request = (object)$_POST;
-    
-    $data = array(
-              'name' => $request->contact_names,
-              'mail' => $request->contact_email,
-              'message' => $request->contact_message,
-              'category' => 'none',
-              'company' => 'none'
-   );
-   
-    
-    Mail::send('resources.mail.academia.contact', $data, function ($message) use($request) {
-        $message->from('atencionalcliente@trilce.edu.pe');
-        $message->to('atencionalcliente@trilce.edu.pe')->subject('Mensaje de formulario/Academia');
-        echo "yes";
-    });
+  
+    $data = new \stdClass();
+    $data->content = $request->contact_message;
+    $data->name = $request->contact_names;
+    $data->phone = $request->contact_phone;
+    $data->email = $request->contact_email;
+
+    Mail::send(new ContactForm($data));
     
   }
 }

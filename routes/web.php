@@ -17,7 +17,7 @@
  */
  
  // Inicio (Home)
- Route::get('/', function () {
+ Route::name('home')->get('/', function () {
     return view('home');
  });
 
@@ -27,48 +27,48 @@
  */
 
 // Página Princial (Index)
-Route::get('/academia', 'Academia\IndexController@index');
+Route::name('academia-index')->get('/academia', 'Academia\IndexController@index');
 
 // Preparación (Preparation)
-Route::get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
+Route::name('academia-preparation')->get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
 // Sedes (Venue)
-Route::get('/academia/sede/{barrack}', 'Academia\VenueController@index');
+Route::name('academia-venue')->get('/academia/sede/{barrack}', 'Academia\VenueController@index');
 Route::get('/academia/sede', function(){
   return redirect('/academia');
 });
 
 // Simulacros (Simulacrum)
-Route::get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
+Route::name('academia-simulacrum')->get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
 Route::get('/academia/simulacros', function(){
   return redirect('/academia');
 });
 
 // Solucionarios (Solutions)
-Route::get('/academia/solucionarios-{university}', 'Academia\SolutionsController@index');
+Route::name('academia-solutions')->get('/academia/solucionarios-{university}', 'Academia\SolutionsController@index');
 Route::get('/academia/solucionarios', function(){
   return redirect('/academia');
 });
 
 // Lista de Cachimbos (Entering)
-Route::get('/academia/lista-de-cachimbos-{university}', 'Academia\EnteringController@index');
+Route::name('academia-entering')->get('/academia/lista-de-cachimbos-{university}', 'Academia\EnteringController@index');
 Route::get('/academia/lista-de-cachimbos', function(){
   return redirect('/academia');
 });
 
 // Olimpiadas Matematicas (MathOlympics)
-Route::get('/academia/olimpiadas-matematicas', 'Academia\MathOlympicsController@index');
+Route::name('academia-matholympics')->get('/academia/olimpiadas-matematicas', 'Academia\MathOlympicsController@index');
 
 // Nosotros (AboutUs)
-Route::get('/academia/nosotros', 'Academia\AboutUsController@index');
+Route::name('academia-aboutus')->get('/academia/nosotros', 'Academia\AboutUsController@index');
 
 // Contactenos (Contact)
-Route::get('/academia/contacto', 'Academia\ContactController@index');
+Route::name('academia-contact')->get('/academia/contacto', 'Academia\ContactController@index');
 Route::post('/academia/contacto/send', 'Academia\ContactController@send');
 
 // Matricula en linea (Enrollment)
-Route::get('/academia/matricula-en-linea', 'Academia\EnrollmentController@create');
-Route::post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store');
+Route::name('academia-enollment')->get('/academia/matricula-en-linea', 'Academia\EnrollmentController@create');
+Route::name('academia-enollment-finish')->post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store');
 
 
 
@@ -77,13 +77,13 @@ Route::post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store
  */
 
 // Página Princial (Index)
-Route::get('/colegio', 'Colegio\IndexController@index');
+Route::name('colegio-index')->get('/colegio', 'Colegio\IndexController@index');
 
 // Admisión (Admission)
-Route::get('/colegio/admision-{modality}', 'Colegio\AdmissionController@index');
+Route::name('colegio-admission')->get('/colegio/admision-{modality}', 'Colegio\AdmissionController@index');
 
 // Nosotros (AboutUs)
-Route::get('/colegio/nosotros', 'Colegio\AboutUsController@index');
+Route::name('colegio-aboutus')->get('/colegio/nosotros', 'Colegio\AboutUsController@index');
 
 
 

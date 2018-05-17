@@ -139,6 +139,7 @@
       margin-left: 2rem;
       padding-left: .5rem;
     }
+    
     @media screen and (max-width: 700px) {
       margin-left: 1rem;
       padding-left: .5rem;
@@ -233,7 +234,7 @@
     
     backface-visibility: hidden;
     transform: translateZ(0) scale(1.0, 1.0);
-    filter: blur(0);    
+    filter: blur(0);
   }
   
   .dd-colegio-aboutus-textleft{
@@ -261,7 +262,7 @@
   }
   
 }
-
+// end .dropdown-desk-colegio-aboutus
 
 // ================================================================
 // ================================================================
@@ -314,6 +315,7 @@
     padding-right: 0;
   }
 }
+
 
 // nav
 nav{

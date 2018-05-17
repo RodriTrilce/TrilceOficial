@@ -1,9 +1,10 @@
+{{! $breadcrumbs = Breadcrumbs::render('colegio-admission', $type) }}
+
 @extends('colegio.layouts.template')
 
 @section('title', 'Admisión ' . $title)
 
 @section('content')
-
 
   <div class="header-double-top-colegio">
     <div class="row">
@@ -16,7 +17,6 @@
         <h1>Admisión 2019</h1>
       </div>
     </div>
-    
   </div>
 
   <hr class="grayhr2" />
@@ -84,7 +84,7 @@
   @endswitch
     
   <hr class="grayhr2" />
-  
+    
 @include('colegio.partials.card_bottom')
 
 @endsection

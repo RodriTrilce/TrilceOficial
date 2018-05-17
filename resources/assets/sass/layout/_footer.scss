@@ -7,6 +7,10 @@ footer{
   padding-bottom: 3%;
   padding-top: 3%;
   
+  @media screen and (max-width: 700px) {
+    font-size: 11px;
+  }
+  
   a{
     color: white;
   }
@@ -24,15 +28,13 @@ footer{
     span{
       @media screen and (max-width: 768px) {
         margin-left: 3%;
+        font-size: 11px;
       }
     }
   }
   
   .footer-bottom{
     margin-top: 2rem;
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
   }
 
 .links{
@@ -83,38 +85,28 @@ footer{
   }//end ul
 }
   
-  
-  .footer-right-icons {
-      @media screen and (max-width: 768px) {
-      }
-      
-      li{
-        display: inline-block;
-        
-        a{
-          font-size: 1.5rem;
-        }
-        
-        &:last-child{
-          margin-right: 15px;
-          display: none;
-          text-align: right;
-        }
-        
-        &::after{
-          content:"";
-          padding-left: 10px;
-        }
-        
-        @media screen and (max-width: 768px) {
-          &:last-child{
-            display: block;
-          }
-        }// end media
-
-      }
-        
+.footer-right-icons {
+  @media screen and (max-width: 768px) {
   }
-  
+
+  li{
+    display: inline-block;
+
+    a{
+      font-size: 1.5rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    &::after{
+      content:"";
+      padding-left: 10px;
+    }
+  }
+}
 }
 
+.followconnect{
+  padding: 0.5rem;
+}

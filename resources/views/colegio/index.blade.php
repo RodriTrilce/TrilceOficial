@@ -12,7 +12,7 @@
   </div>
   <!--    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>-->
 
-  <hr class="grayhr" />
+  <hr class="grayhr xs-hide" />
 
   <div class="nuevos-i">
     <div class="row center-xs">

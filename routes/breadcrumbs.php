@@ -1,29 +1,29 @@
 <?php
 
-// Home
+// Colegio > Index
 Breadcrumbs::for('colegio-index', function ($trail) {
     $trail->push('Inicio', route('colegio-index'));
 });
 
-// Home > About
+// Colegio > Admission
 Breadcrumbs::for('colegio-admission', function ($trail, $modality) {
     $trail->parent('colegio-index');
     $trail->push('Admision ' . ucwords($modality), route('colegio-admission', $modality));
 });
 
-// Home > Blog
-Breadcrumbs::for('blog', function ($trail) {
-    $trail->parent('home');
-    $trail->push('Blog', route('blog'));
+// Colegio > AboutUs
+Breadcrumbs::for('colegio-aboutus', function ($trail) {
+    $trail->parent('colegio-index');
+    $trail->push('Nosotros', route('colegio-aboutus'));
 });
 
-// Home > Blog > [Category]
+// Colegio > Blog > [Category]
 Breadcrumbs::for('category', function ($trail, $category) {
     $trail->parent('blog');
     $trail->push($category->title, route('category', $category->id));
 });
 
-// Home > Blog > [Category] > [Post]
+// Colegio > Blog > [Category] > [Post]
 Breadcrumbs::for('post', function ($trail, $post) {
     $trail->parent('category', $post->category);
     $trail->push($post->title, route('post', $post->id));

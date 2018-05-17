@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('colegio-index') }}
 @extends('colegio.layouts.template')
 
 @section('title', '')

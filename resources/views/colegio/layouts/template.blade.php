@@ -26,14 +26,14 @@
               <span class="nav-info-content nav-info-colegio"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b class="phone">6198100</b></span>
           </div>
           <div class="col-xs-12">
-            <nav>
+            <nav class="nav-colegio-structure">
               <input type="checkbox" id="menu-toggle" />
               <div class="toogle-content">
                 <label for="menu-toggle" class="label-toggle"><i class="fa fa-bars"></i></label>
               </div>
               
               <ul>
-                <li>Intranet para alumnos | Call center: <b>6198100</b></li>
+                <li class="nav-info-responsive nav-info-colegio">Intranet para alumnos | Call center: <b class="phone">6198100</b></li>
                 
                 <li class="nav-colegio-aboutus {{ (Request::is('colegio/nosotros')?'active':'') }}">
                   <a href="/colegio/nosotros">Nosotros</a>
@@ -55,8 +55,12 @@
                     </div>
                   </div>
                 </li>
+
+                <li class="nav-colegio-aboutusmobile">
+                  <a href="/colegio/propuesta-educativa" class="aboutusmobile-link"><img src="{{url('static/images/colegio/imagen-menu-pe-movil.jpg')}}" alt="Propuesta educativa"></a>
+                </li>
                 
-                <li class="nav-venues {{ (Request::is('colegio/sede/*')?'active':'') }}" id="sedes">
+                <li class="nav-venues {{ (Request::is('colegio/sede/*')?'active':'') }} xs-hide" id="sedes">
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content dropdown-desk-colegio">
@@ -99,7 +103,7 @@
                         </div>
                         
                         <div class="row col-xs-4 block-province">
-                          <div class="col-xs venues-in">
+                          <div class="col-xs venues-in titleblockprovincia">
                             <h3 class="title provincia"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Provincia</strong></h3>
                           </div>
                           <div class="col-xs linksprovincia">
@@ -124,15 +128,38 @@
                 <!-- Only mobile -->
                 <li class="menu-click-sedes">
                   <a>Sedes </a>
-                  <ul class="menu-sedes-ul">
-                    <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
-                    <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
-                    <li><a href="/academia/sede/comas">Comas</a></li>
-                    <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
-                    <li><a href="/academia/sede/torrico">Torrico</a></li>
-                    <li><a href="/academia/sede/marsano">Marsano</a></li>
-                    <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
-                  </ul>
+                  <div class="menu-colegio-sedes">
+                    <select class="menu-colegio-sedes-select">
+                       <option value="" selected disabled hidden>Colegios en Lima</option>
+                       <option value="Breña">Breña</option>
+                       <option value="Callao">Callao</option>
+                       <option value="Chorrillos">Chorrillos</option>
+                       <option value="Comas">Comas</option>
+                       <option value="Los Olivos">Los Olivos</option>
+                       <option value="Maranga">Maranga</option>
+                       <option value="Pro">Pro</option>
+                       <option value="Santa Beatriz (Roma)">Santa Beatriz (Roma)</option>
+                       <option value="Jesús María (Salaverry)">Jesús María (Salaverry)</option>
+                       <option value="Surco">Surco</option>
+                       <option value="San Isidro">San Isidro</option>
+                       <option value="Villa María">Villa María</option>
+                       <option value="Villa El Salvador">Villa El Salvador</option>
+                       <option value="La Molina">La Molina</option>
+                       <option value="Salamanca">Salamanca</option>
+                       <option value="Santa Anita">Santa Anita</option>
+                       <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                       <option value="Wiesse (SJL)">Wiesse (SJL)</option>
+                    </select>
+                    <select class="menu-colegio-sedes-select">
+                       <option value="" selected disabled hidden>Colegios en Provincia</option>
+                       <option value="Arequipa">Arequipa</option>
+                       <option value="Chiclayo">Chiclayo</option>
+                       <option value="Chanchamayo">Chanchamayo</option>
+                       <option value="Huancayo">Huancayo</option>
+                       <option value="Piura">Piura</option>
+                       <option value="Trujillo">Trujillo</option>
+                    </select>
+                  </div>
                 </li>
 
                 <li class="disable"><a>Blog</a></li>

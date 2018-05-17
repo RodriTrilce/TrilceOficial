@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('colegio-aboutus') }}
 @extends('colegio.layouts.template')
 
 @section('title', 'Acerca de Nosotros')

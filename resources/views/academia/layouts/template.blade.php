@@ -33,10 +33,10 @@
               </div>
               
               <ul>
-                <li>Intranet para alumnos | Call center: <b>6198100</b></li>
+                <li class="nav-info-responsive">Intranet para alumnos | Call center: <b>6198100</b></li>
                 <li class="{{ (Request::is('academia/nosotros')?'active':'') }}"><a href="/academia/nosotros">Nosotros</a></li>
 
-                <li class="nav-venues {{ (Request::is('academia/sede/*')?'active':'') }}" id="sedes">
+                <li class="nav-venues xs-hide {{ (Request::is('academia/sede/*')?'active':'') }}" id="sedes">
                   <a href="#">Sedes</a>
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content dropdown-desk-academia">

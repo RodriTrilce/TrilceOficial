@@ -27,8 +27,8 @@ class ContactController extends Controller
    
     
     Mail::send('resources.mail.academia.contact', $data, function ($message) use($request) {
-        $message->from('fsalcedo@trilce.edu.pe', 'hi');
-        $message->to('fsalcedo@trilce.edu.pe')->subject('Mensaje de formulario/Academia');
+        $message->from('atencionalcliente@trilce.edu.pe');
+        $message->to('atencionalcliente@trilce.edu.pe')->subject('Mensaje de formulario/Academia');
         echo "yes";
     });
     

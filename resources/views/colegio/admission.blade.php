@@ -88,3 +88,9 @@
 @include('colegio.partials.card_bottom')
 
 @endsection
+@section('scripts')
+  
+    page = 'admission';
+    
+    @parent
+@endsection

@@ -230,6 +230,10 @@
     background-image: url('/static/images/colegio/imagen-menu-pe.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+    filter: blur(0);    
   }
   
   .dd-colegio-aboutus-textleft{

@@ -86,19 +86,20 @@ $gray_candy: transparentize($gray, 0.6);
       }
     }
     
+    /*
     &:nth-child(3){
       &::before{
         content: "\f2f1";
       }
-    }
+    }*/
     
-    &:nth-child(4){
+    &:nth-child(3){
       &::before{
         content: "\f21e";
       }
     }
     
-    &:nth-child(5){
+    &:nth-child(4){
       &::before{
         content: "\f2a9";
       }
@@ -177,7 +178,7 @@ $gray_candy: transparentize($gray, 0.6);
         
         // Mobile
         @media screen and (min-width: 768px){
-          border: 10px solid transparentize($gray, 0.8);
+          //border: 10px solid transparentize($gray, 0.8);
         }
         
         .rocket{
@@ -250,6 +251,11 @@ $gray_candy: transparentize($gray, 0.6);
   .values{
     >div{
       margin-bottom: 3rem;
+      
+      @media screen and (max-width: 768px){
+        margin-bottom: 1.3rem;
+        text-align: center;
+      }
     }
     
     h4{
@@ -258,6 +264,15 @@ $gray_candy: transparentize($gray, 0.6);
       font-size: 1.1rem;
       @media screen and (max-width: 768px){
         font-size: 0.9rem;
+
+        &::before{
+          content: "\F112";
+          color: $orange;
+          font-family: 'FontAwesome';
+          font-size: 14px;
+          font-weight: bold;
+          margin-right: 5px;
+        }
       }
     }
     

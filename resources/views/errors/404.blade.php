@@ -14,7 +14,7 @@
   <header>
     <div class="row between-xs">
       <div class="col-xs-6 logo">
-        <a href="/academia/"><img src="{{{ asset('static/images/logo-void.png') }}}" alt="Trilce"></a>
+        <a href="/"><img src="{{{ asset('static/images/logo-void.png') }}}" alt="Trilce"></a>
       </div>
       <div class="col-xs-6 end-xs pre-nav"></div>
     </div>

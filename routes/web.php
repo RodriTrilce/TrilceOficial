@@ -82,7 +82,8 @@ Route::get('/colegio', 'Colegio\IndexController@index');
 // Admisión (Admission)
 Route::get('/colegio/admision-{modality}', 'Colegio\AdmissionController@index');
 
-
+// Nosotros (AboutUs)
+Route::get('/colegio/nosotros', 'Colegio\AboutUsController@index');
 
 
 

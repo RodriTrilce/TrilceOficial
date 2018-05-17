@@ -6,10 +6,11 @@
   
   <div class="index-banners">
     <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/admision/header/banner-registro-colegio2.png" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>
     <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/alumnos_mejor_preparados-matricula-2018.png" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/admision/header/banner-registro-colegio2.png" alt=""></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/alumnos_mejor_preparados-matricula-2018.png" alt=""></a></div>
   </div>
+  <!--    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>-->
 
   <hr class="grayhr" />
 
@@ -22,7 +23,9 @@
         </div>
       </div>
       
-      <div class="row col-xs-12 col-sm-11 col-md-10 col-lg-9 between-xs center-sm center-md center-lg nuevos-i-box">
+      
+      
+      <div class="row col-xs-12 col-sm-8 col-md-8 between-xs center-sm center-md center-lg nuevos-i-box nuevos-colegio">
         <div class="col-xs">
           <a href="/colegio/admision-nuevo">
             <div class="nuevos-i-top">
@@ -60,6 +63,8 @@
           </a>
         </div>
       </div>
+      
+      
       
     </div>
   </div>

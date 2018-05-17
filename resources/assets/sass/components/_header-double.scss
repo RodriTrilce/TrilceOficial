@@ -67,7 +67,7 @@
       }
       
       p{
-        color: white;
+        color: $gray;
         display: inline-block;
         margin-left: 2rem;
         
@@ -167,7 +167,8 @@
       }
       
       p{
-        color: white;
+        font-family: $font_geo_reg;
+        color: $gray;
         display: inline-block;
         margin-left: 2rem;
         

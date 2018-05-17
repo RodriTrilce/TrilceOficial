@@ -37,7 +37,7 @@
                 
                 <li class="nav-colegio-aboutus {{ (Request::is('colegio/nosotros')?'active':'') }}">
                   <a href="/colegio/nosotros">Nosotros</a>
-                  <div class="dropdown-desk">
+                  <div class="dropdown-desk xs-hide-force">
                     <div class="dropdown-desk-content dropdown-desk-colegio-aboutus">
                       <div class="row col-xs-12">
                         <a href="/colegio/propuesta-educativa" class="dd-colegio-aboutus-link">
@@ -56,6 +56,7 @@
                   </div>
                 </li>
 
+                <!-- Only mobile -->
                 <li class="nav-colegio-aboutusmobile">
                   <a href="/colegio/propuesta-educativa" class="aboutusmobile-link"><img src="{{url('static/images/colegio/imagen-menu-pe-movil.jpg')}}" alt="Propuesta educativa"></a>
                 </li>

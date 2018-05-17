@@ -64,7 +64,7 @@ Route::name('academia-aboutus')->get('/academia/nosotros', 'Academia\AboutUsCont
 
 // Contactenos (Contact)
 Route::name('academia-contact')->get('/academia/contacto', 'Academia\ContactController@index');
-Route::post('/academia/contacto/send', 'Academia\ContactController@send');
+Route::post('/academia/contacto', 'Academia\ContactController@send');
 
 // Matricula en linea (Enrollment)
 Route::name('academia-enollment')->get('/academia/matricula-en-linea', 'Academia\EnrollmentController@create');
@@ -85,6 +85,9 @@ Route::name('colegio-admission')->get('/colegio/admision-{modality}', 'Colegio\A
 // Nosotros (AboutUs)
 Route::name('colegio-aboutus')->get('/colegio/nosotros', 'Colegio\AboutUsController@index');
 
+// Contactenos (Contact)
+Route::name('colegio-contact')->get('/colegio/contacto', 'Colegio\ContactController@index');
+Route::post('/colegio/contacto', 'Colegio\ContactController@send');
 
 
 

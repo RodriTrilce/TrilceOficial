@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Academia;
+namespace App\Http\Controllers\Colegio;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -12,7 +12,7 @@ class ContactController extends Controller
 {
   public function index()
   {
-    return view('/academia/contact')->with(['page' => 'contact']);
+    return view('/colegio/contact')->with(['page' => 'contact']);
   }
   
   public function send()

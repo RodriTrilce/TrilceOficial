@@ -17,10 +17,10 @@ Breadcrumbs::for('colegio-aboutus', function ($trail) {
     $trail->push('Nosotros', route('colegio-aboutus'));
 });
 
-// Colegio > Blog > [Category]
-Breadcrumbs::for('category', function ($trail, $category) {
-    $trail->parent('blog');
-    $trail->push($category->title, route('category', $category->id));
+// Colegio > Contact
+Breadcrumbs::for('colegio-contact', function ($trail) {
+    $trail->parent('colegio-index');
+    $trail->push('Contáctenos', route('colegio-contact'));
 });
 
 // Colegio > Blog > [Category] > [Post]

@@ -1,7 +1,6 @@
-@extends('academia.layouts.template')
-
+{{! $breadcrumbs = Breadcrumbs::render('colegio-contact', $type) }}
+@extends('colegio.layouts.template')
 @section('title', 'Contáctenos')
-
 @section('content')
 
   <div class="header-double-top">
@@ -51,7 +50,7 @@
         <div class="col-xs-12 step1">
           <h2>Déjanos tu consulta</h2>
           
-          <form action="/academia/contacto/send" method="post">
+          <form action="/colegio/contacto/send" method="post">
             {{ csrf_field() }}
             <fieldset>
               <input type="text" name="contact_names" placeholder="Nombres y Apellidos" pattern="[A-Za-z ]+" required>
@@ -80,7 +79,7 @@
 
 
 
-  @include('academia.partials.card_bottom')
+  @include('colegio.partials.card_bottom')
 @endsection
 
 @section('scripts')

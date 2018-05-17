@@ -1,4 +1,4 @@
-{{! $breadcrumbs = Breadcrumbs::render('colegio-contact', $type) }}
+{{! $breadcrumbs = Breadcrumbs::render('colegio-contact') }}
 @extends('colegio.layouts.template')
 @section('title', 'Contáctenos')
 @section('content')

@@ -86,20 +86,20 @@ $gray_candy: transparentize($gray, 0.6);
       }
     }
     
-    /*
+    
     &:nth-child(3){
       &::before{
         content: "\f2f1";
       }
-    }*/
+    }
     
-    &:nth-child(3){
+    &:nth-child(4){
       &::before{
         content: "\f21e";
       }
     }
     
-    &:nth-child(4){
+    &:nth-child(5){
       &::before{
         content: "\f2a9";
       }
@@ -176,23 +176,25 @@ $gray_candy: transparentize($gray, 0.6);
         height: 8rem;
         text-align: center;
         
+        .rocket::after{
+          content: "\f2df";
+        }
+        
+        .binoculars::after{
+          content: "\f145";
+        }
+
         // Mobile
-        @media screen and (min-width: 768px){
+        @media screen and (max-width: 768px){
           //border: 10px solid transparentize($gray, 0.8);
-        }
-        
-        .rocket{
-          &::after{
-            content: "\f2df";
+          .rocket::after, .binoculars::after{
+            display:none;
           }
+          
+          text-align: left;
+          
         }
-        
-        .binoculars{
-          &::after{
-            content: "\f145";
-          }
-        }
-        
+                
         h3{
           color: $orange;
           font-family: "CaeciliaLTPro-75Bold";
@@ -254,7 +256,6 @@ $gray_candy: transparentize($gray, 0.6);
       
       @media screen and (max-width: 768px){
         margin-bottom: 1.3rem;
-        text-align: center;
       }
     }
     

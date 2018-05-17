@@ -24,31 +24,31 @@
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>La sociedad</h2>
-          <p>El 7 de diciembre de 1979, un grupo de amigos, estudiantes de la UNI, decidieron fundar una academia preuniversitaria para postulantes a esa universidad. Fue así que el primer lunes de enero de 1980 y con menos de una centena de estudiantes, la Academia Trilce abrió sus puertas en un local ubicado en Jr. Callao 209, Cercado de Lima.</p>
+          <p>El 7 de diciembre de 1979, un grupo de amigos, estudiantes de la UNI, decidieron fundar una academia preuniversitaria para postulantes a esa universidad.</p>
         </div>
         
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>Nace Trilce</h2>
-          <p>Siete años después Trilce contaba con más de 3000 alumnos y se dedicaba también a la preparación para San Marcos y Católica en sus respectivos locales exclusivos.</p>
+          <p>Fue así que el primer lunes de enero de 1980 y con menos de una centena de estudiantes, la Academia Trilce abrió sus puertas en un local ubicado en Jr. Callao 209, Cercado de Lima.</p>
         </div>
-        <!--
+        
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>Crecimiento</h2>
-          <p>Trilce fundó el primer colegio preuniversitario del Perú en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador.</p>
+          <p>Siete años después Trilce contaba con más de 3000 alumnos y se dedicaba también a la preparación para San Marcos y Católica en sus respectivos locales exclusivos.</p>
         </div>
-      -->
+      
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>El primer Colegio</h2>
-          <p>En el año 1996, Trilce fundó el primer colegio preuniversitario del Perú en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador.</p>
+          <p>El año 1996, Trilce fundó el primer colegio preuniversitario del Perú en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador.</p>
         </div>
         
         <div class="col-xs-12 col-sm-2 col-md">
           <div></div>
           <h2>#EstoEsTrilce</h2>
-          <p>Trilce cuenta con 18 colegios en Lima, 6 en provincia, 6 academias, 2000 trabajadores y más de 24 000 alumnos.</p>
+          <p>Trilce cuenta con 18 colegios en Lima, 6 en provincias, 6 academias, 2000 trabajadores y más de 24 000 alumnos.</p>
         </div>
         
       </div>
@@ -61,11 +61,11 @@
       <div class="col-xs-12 col-sm-2 col-md">
         1980
       </div>
-      <!--
+      
       <div class="col-xs-12 col-sm-2 col-md">
         1987
       </div>
-    -->
+    
       <div class="col-xs-12 col-sm-2 col-md">
         1996
       </div>

@@ -50,7 +50,7 @@
         <div class="col-xs-12 step1">
           <h2>Déjanos tu consulta</h2>
           
-          <form action="/colegio/contacto/send" method="post">
+          <form action="/colegio/contacto" method="post">
             {{ csrf_field() }}
             <fieldset>
               <input type="text" name="contact_names" placeholder="Nombres y Apellidos" pattern="[A-Za-z ]+" required>

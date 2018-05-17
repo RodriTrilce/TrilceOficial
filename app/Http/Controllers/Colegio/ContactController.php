@@ -35,7 +35,8 @@ class ContactController extends Controller
     return view('/academia/contact')->with([
                                               'page' => 'contact',
                                               'email' => $status,
-                                              'data' => $data
+                                              'data' => $data,
+                                              'status' => $status
                                             ]);
   }
 }

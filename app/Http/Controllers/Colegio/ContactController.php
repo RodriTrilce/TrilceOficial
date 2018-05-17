@@ -27,10 +27,10 @@ class ContactController extends Controller
 
     Mail::send(new ContactForm($data));
 
-    $status = false;
-    if(count(Mail::failures()) > 0){
-      $status = true;
-    }
+    //    $status = false;
+    //    if(count(Mail::failures()) > 0){
+          $status = true;
+    //    }
     
     return view('/academia/contact')->with([
                                               'page' => 'contact',

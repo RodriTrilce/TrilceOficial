@@ -76,28 +76,28 @@
                           <div class="row col-xs linkslima block-capital">
                             <div class="col-xs">
                               <ul class="ul-venue">
-                                <option value="/colegio/sede/brena">Breña</option>
-                                <option value="/colegio/sede/callao">Callao</option>
-                                <option value="/colegio/sede/chorrillos">Chorrillos</option>
-                                <option value="/colegio/sede/comas">Comas</option>
-                                <option value="/colegio/sede/los-olivos">Los Olivos</option>
-                                <option value="/colegio/sede/maranga">Maranga</option>
-                                <option value="/colegio/sede/pro">Pro</option>
-                                <option value="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</option>
-                                <option value="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</option>
+                                <li class="item"><a href="/colegio/sede/brena">Breña</a></li>
+                                <li class="item"><a href="/colegio/sede/callao">Callao</a></li>
+                                <li class="item"><a href="/colegio/sede/chorrillos">Chorrillos</a></li>
+                                <li class="item"><a href="/colegio/sede/comas">Comas</a></li>
+                                <li class="item"><a href="/colegio/sede/los-olivos">Los Olivos</a></li>
+                                <li class="item"><a href="/colegio/sede/maranga">Maranga</a></li>
+                                <li class="item"><a href="/colegio/sede/pro">Pro</a></li>
+                                <li class="item"><a href="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</a></li>
+                                <li class="item"><a href="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</a></li>
                               </ul>
                             </div>
                             <div class="col-xs">
                               <ul class="ul-venue">
-                                <option value="/colegio/sede/surco">Surco</option>
-                                <option value="/colegio/sede/san-isidro">San Isidro</option>
-                                <option value="/colegio/sede/villa-maria">Villa María</option>
-                                <option value="/colegio/sede/villa-el-salvador">Villa El Salvador</option>
-                                <option value="/colegio/sede/la-molina">La Molina</option>
-                                <option value="/colegio/sede/salamanca">Salamanca</option>
-                                <option value="/colegio/sede/santa-anita">Santa Anita</option>
-                                <option value="/colegio/sede/san-juan-de-lurigancho">San Juan de Lurigancho</option>
-                                <option value="/colegio/sede/san-juan-de-lurigancho-wiesse">San Juan de Lurigancho (Wiesse)</option>
+                                <li class="item"><a href="/colegio/sede/surco">Surco</a></li>
+                                <li class="item"><a href="/colegio/sede/san-isidro">San Isidro</a></li>
+                                <li class="item"><a href="/colegio/sede/villa-maria">Villa María</a></li>
+                                <li class="item"><a href="/colegio/sede/villa-el-salvador">Villa El Salvador</a></li>
+                                <li class="item"><a href="/colegio/sede/la-molina">La Molina</a></li>
+                                <li class="item"><a href="/colegio/sede/salamanca">Salamanca</a></li>
+                                <li class="item"><a href="/colegio/sede/santa-anita">Santa Anita</a></li>
+                                <li class="item"><a href="/colegio/sede/san-juan-de-lurigancho">San Juan de Lurigancho</a></li>
+                                <li class="item"><a href="/colegio/sede/san-juan-de-lurigancho-wiesse">San Juan de Lurigancho (Wiesse)</a></li>
                               </ul>
                             </div>
                           </div>

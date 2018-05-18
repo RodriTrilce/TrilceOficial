@@ -91,39 +91,30 @@
   @parent
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU9IczA6fujtDzHPy0xWnHLqHHMuB1vKM" charset="utf-8"></script>
   <script type="text/javascript">
-
   
           function initMap(){
-              // Map options
               var options = {
-                  zoom:16,
-                  center:{lat:-12.075226,lng:-77.038176}/*poner al centro para que se muestre las 2 cordenadas*/
+                  zoom:13,
+                  @foreach ($address as $k)
+                  center:{lat:{{ $k->logitude }},lng:{{ $k->latitude }}}/*poner al centro para que se muestre las 2 cordenadas*/
+                  @endforeach
               }
 
               var map = new google.maps.Map(document.getElementById('map'), options);
 
 
               var markers = [
-                  {
-                      coords:{lat:-12.074882,lng:-77.039687},
-                      iconImage:'http://www.trilce.edu.pe/assets/img/map-marker_1.png',
-                      content:'<span style="color:#f4633a">Sede Salaverry</span><br>Nivel Primaia <br> Av. Cuba 414-438 <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> 619-8118'
-                  },
-                  {
-                      coords:{lat:-12.074607,lng:-77.039725},
-                      iconImage:'http://www.trilce.edu.pe/assets/img/map-marker_1.png',
-                      content:'<span style="color:#f4633a">Sede Salaverry</span><br>Nivel Secundaria 1.<sup>o</sup> a 3.<sup>o</sup><br> Calle Almte. Guisse 964 <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> 619-8118 '
-                  },
-                  {
-                      coords:{lat:-12.078227,lng:-77.035225},
-                      iconImage:'http://www.trilce.edu.pe/assets/img/map-marker_1.png',
-                      content:'<span style="color:#f4633a">Sede Salaverry</span><br>Nivel Secundaria 4.<sup>o</sup> a 5.<sup>o</sup><br> Av. Arequipa 1381 <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> 727-1590'
-                  }
+                @foreach ($address as $k)
+                {
+                  coords:{lat:{{ $k->logitude }},lng: {{ $k->latitude }} },
+                  content:'<span style="color:#f4633a">{{ $data->name }}</span><br>{{ $k->grades }} <br> {{ $k->address }} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $k->phone }}'
+                },
+                @endforeach
+
               ];
 
               // Loop through markers
               for(var i = 0;i < markers.length;i++){
-                  // Add marker
                   addMarker(markers[i]);
               }
 

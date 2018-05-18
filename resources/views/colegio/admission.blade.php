@@ -20,15 +20,14 @@
 
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes.jpg') }}" alt="">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-admision.jpg') }}" alt="">
     </div>
     <div class="header-double-image-mobile">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes-movil.jpg') }}" alt="">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-admision-movil.jpg') }}" alt="">
     </div>
   </div>
 
 
-  <hr class="grayhr2" />
 
   <div class="nuevos-i">
     <div class="row center-xs">

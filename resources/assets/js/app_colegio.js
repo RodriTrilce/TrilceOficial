@@ -99,6 +99,12 @@ var get = (url) => {
   });
 }
 
+/*
+var lima = document.getElementById("selectRedirectLima");
+console.log(lima)
+lima.addEventListener("onchange", () => {
+  location.href = this.value;
+})*/
 
 
 

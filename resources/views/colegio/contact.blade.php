@@ -2,15 +2,13 @@
 @extends('colegio.layouts.template')
 @section('title', 'Contáctenos')
 @section('content')
-
-  <div class="header-double-top">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
-      <div class="header-double-border"></div>
-      <div class="header-double-title">
-        <h1>Contáctanos</h1>
-      </div>
+  
+  <div class="header-double-image">
+    <div class="row col-xs-12 header-double-image-desk">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-contactenos.jpg') }}" alt="">
+    </div>
+    <div class="header-double-image-mobile">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-contactenos-movil.jpg') }}" alt="">
     </div>
   </div>
 

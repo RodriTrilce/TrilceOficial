@@ -1,19 +1,14 @@
 {{! $breadcrumbs = Breadcrumbs::render('colegio-aboutus') }}
 @extends('colegio.layouts.template')
-
 @section('title', 'Acerca de Nosotros')
-
 @section('content')
 
-  <div class="header-double-top-colegio">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
-      <div class="header-double-border"></div>
-      <div class="header-double-title">
-        <h1>Nosotros</h1>
-        <p>Trilce desde sus inicios. <br> #EstoEsTrilce</p>
-      </div>
+  <div class="header-double-image">
+    <div class="row col-xs-12 header-double-image-desk">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-nosotros.jpg') }}" alt="">
+    </div>
+    <div class="header-double-image-mobile">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-nosotros-movil.jpg') }}" alt="">
     </div>
   </div>
   

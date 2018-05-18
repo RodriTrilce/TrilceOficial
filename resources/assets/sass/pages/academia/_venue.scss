@@ -15,6 +15,7 @@
     &:first-child{
       width: 50%;
       padding-left: 10px;
+      margin-bottom: 2rem;
     }
     
     &:nth-child(2){
@@ -34,7 +35,7 @@
     font-weight: bold;
   }
   
-  div.hr{
+  div.venues-hr{
     border: 0.5px solid transparentize($gray, 0.85);
     margin: 1.5rem;
     margin-right: 0;
@@ -89,5 +90,120 @@
     }
   }
 }
+
+.venue-colegio{
+  margin-bottom: 1rem;
+}
+
+.venue-colegio-h2{
+  color: $gray !important;
+}
+
+.venue-colegio-icon{
+  font-size: 0.7rem;
+  color: $orange;
+}
+
+.venue-colegio-title-span{
+  color: $gray;
+  font-size: 0.9rem;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+}
+
+.venue-colegio-table-block{
+  @media screen and (min-width: 768px) {
+    margin-left: 1rem;
+  }
+  
+  &:first-child{
+    margin-left: 0;
+  }
+  
+  >div{
+    padding: 0.3rem;
+  }
+}
+
+.venue-colegio-table-block1{
+  padding: 0;
+  font-weight: bold;
+}
+
+.venue-colegio-table-line{
+  position: relative;
+  &::after{
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 95%;
+    right: 0;
+    background: $colegio_gray;
+  }
+}
+
+.venue-colegio-table-title{
+  color: $orange;
+  font-weight: bold;
+}
+
+.venue-colegio-investment{
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-family: $font_geo_reg;
+}
+
+.investment-container{
+  background: $colegio_gray_gray;
+}
+
+.investment-title{
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (max-width: 768px) {
+    height: 70px !important;
+  }
+  
+  h3{
+    color: $orange;
+    font-size: 1.8rem;
+  }
+}
+
+.investment-block-item{
+  padding: 1.7rem;
+  height: fit-content;
+  
+  >div{
+    padding: 0.3rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem !important;
+  
+    >div{
+      padding: 0.2rem;
+    }
+  }
+  
+}
+
+
+.investment-block-item:nth-of-type(odd) {
+background-color: $table_gray_one;
+}
+    
+.investment-block-item:nth-of-type(even) {
+background-color: $table_gray_two;
+}
+
+
+
+
+
 
 

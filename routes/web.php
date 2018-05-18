@@ -89,8 +89,11 @@ Route::name('colegio-aboutus')->get('/colegio/nosotros', 'Colegio\AboutUsControl
 Route::name('colegio-contact')->get('/colegio/contacto', 'Colegio\ContactController@index');
 Route::post('/colegio/contacto', 'Colegio\ContactController@send');
 
-
-
+// Sedes (Venue)
+Route::name('colegio-venue')->get('/colegio/sede/{barrack}', 'Colegio\VenueController@index');
+Route::get('/colegio/sede', function(){
+  return redirect('/colegio');
+});
 
 
 

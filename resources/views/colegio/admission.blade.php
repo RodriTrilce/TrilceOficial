@@ -1,11 +1,9 @@
 {{! $breadcrumbs = Breadcrumbs::render('colegio-admission', $type) }}
-
 @extends('colegio.layouts.template')
-
 @section('title', 'Admisión ' . $title)
-
 @section('content')
 
+  <!--
   <div class="header-double-top-colegio">
     <div class="row">
       
@@ -18,6 +16,17 @@
       </div>
     </div>
   </div>
+-->
+
+  <div class="header-double-image">
+    <div class="row col-xs-12 header-double-image-desk">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes.jpg') }}" alt="">
+    </div>
+    <div class="header-double-image-mobile">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes-movil.jpg') }}" alt="">
+    </div>
+  </div>
+
 
   <hr class="grayhr2" />
 

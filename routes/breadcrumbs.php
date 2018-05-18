@@ -8,7 +8,7 @@ Breadcrumbs::for('colegio-index', function ($trail) {
 // Colegio > Admission
 Breadcrumbs::for('colegio-admission', function ($trail, $modality) {
     $trail->parent('colegio-index');
-    $trail->push('Admision ' . ucwords($modality), route('colegio-admission', $modality));
+    $trail->push('Admisión alumno ' . ucwords($modality), route('colegio-admission', $modality));
 });
 
 // Colegio > AboutUs
@@ -23,12 +23,9 @@ Breadcrumbs::for('colegio-contact', function ($trail) {
     $trail->push('Contáctenos', route('colegio-contact'));
 });
 
-// Colegio > Blog > [Category] > [Post]
-Breadcrumbs::for('post', function ($trail, $post) {
-    $trail->parent('category', $post->category);
-    $trail->push($post->title, route('post', $post->id));
+// Colegio > Venue
+Breadcrumbs::for('colegio-venue', function ($trail, $data) {
+    $trail->parent('colegio-index');
+    $trail->push($data->name, route('colegio-venue'));
 });
-
-
-
 

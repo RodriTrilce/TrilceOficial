@@ -24,8 +24,7 @@ Breadcrumbs::for('colegio-contact', function ($trail) {
 });
 
 // Colegio > Venue
-Breadcrumbs::for('colegio-venue', function ($trail, $data) {
+Breadcrumbs::for('colegio-venue', function ($trail, $venue) {
     $trail->parent('colegio-index');
-    $trail->push($data->name, route('colegio-venue'));
+    $trail->push('Sede ' . ucwords($venue), route('colegio-venue', $venue));
 });
-

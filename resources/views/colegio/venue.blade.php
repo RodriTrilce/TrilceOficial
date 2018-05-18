@@ -1,4 +1,4 @@
-{{! $breadcrumbs = Breadcrumbs::render('colegio-admission', $data->name) }}
+{{! $breadcrumbs = Breadcrumbs::render('colegio-venue', $data->name) }}
 @extends('colegio.layouts.template')
 @section('title', $data->name)
 @section('content')

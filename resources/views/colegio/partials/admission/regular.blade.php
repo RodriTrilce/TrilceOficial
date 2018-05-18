@@ -9,15 +9,18 @@
 </div>
 
 <div class="row col-xs-12 center-xs admission-new-table admission-transfer-table">
-  <div class="col-xs-12">
-    <h3 class="admission-regular-title">Inscripción</h3>
-    <div class="col-xs-12">
+  <div class="row col-xs-12 center-xs">
+    <div class="col-xs-12">    <h3 class="admission-regular-title">Inscripción</h3></div>
+    <div style=" max-width:500px; text-align:left;">
       <ul>
         <li>Actualizar ficha de matricula Trilce 2018.</li>
         <li>Firma de compromiso de Honor 2018.</li>
       </ul>
     </div>
+    
   </div>
 </div>
 
-<div class="col-xs-12 center-xs admission-new-superindex"><sub>1</sub> Plazo de entrega: Hasta el día de la Evaluación.</div>
+@if($type!=='regular')
+  <div class="col-xs-12 center-xs admission-new-superindex"><sub>1</sub> Plazo de entrega: Hasta el día de la Evaluación.</div>
+@endif

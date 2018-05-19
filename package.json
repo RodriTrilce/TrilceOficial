@@ -28,6 +28,7 @@
     "bunnyjs": "^0.14.41",
     "line-awesome": "github:icons8/line-awesome",
     "tiny-slider": "^2.6.0",
+    "vanilla-modal": "^1.6.5",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
   },

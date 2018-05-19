@@ -197,6 +197,14 @@
       @media screen and (max-width: 1000px) {
         font-size: 0.9rem;
       }
+      
+      >a,a:link,a:visited{
+        color: $gray;
+      }
+      
+      >a:hover{
+        color: $orange;
+      }
     }
     
     .item2:hover::before{
@@ -378,14 +386,11 @@ nav{
       }
 
       .active{
-        cursor: default;
-        pointer-events: none;
-
-        a,a:link{
+        >a,a:link{
           color: $orange;
           &:hover{
             color: $orange;
-            a{
+            >a{
               color: $orange;
             }
             &::after{
@@ -393,6 +398,11 @@ nav{
             }
           }
         }
+      }
+      
+      .active-noclick{
+        cursor: default;
+        pointer-events: none;
       }
           
       

@@ -10,7 +10,7 @@ class VenueController extends Controller
 {
   public function index($barrack)
   {
-    $venue = VenueDB::where('name', $this->l($barrack))->first();
+    $venue = VenueDB::where('slug', $barrack)->first();
     
     if(!isset($venue->name))
       return abort(404);
@@ -21,15 +21,5 @@ class VenueController extends Controller
       'investment' => $venue->investment,
       'page' => 'venue'
     ]);
-  }
-  
-  /**
-   * Clear slug string
-   *
-   * @return string
-   */
-  private function l($str)
-  {
-    return ucwords(str_replace('-', ' ', $str));
   }
 }

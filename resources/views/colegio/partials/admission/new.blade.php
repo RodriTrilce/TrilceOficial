@@ -1,7 +1,7 @@
 <div class="row col-xs-12 center-xs admission-new-title xs-hide">
   <div class="col-xs-12">
     <h2 class="new-t-title">Alumnos Nuevo</h2>
-    <h3 class="new-t-subtitle">Periodo: Julio 2017 a Abril 2018</h3>
+    <h3 class="new-t-subtitle">Periodo: Julio 2018 a Abril 2019</h3>
   </div>
   <div class="col-xs-12 col-sm-4 new-t-p">
     <p>Modalidad por la cual Alumnos de otras entidades educativas deciden iniciar un nuevo año escolar en los Colegios TRILCE.</p>
@@ -27,7 +27,7 @@
           <ul>
             <li>01 copia de DNI</li>
             <li>01 copia de libreta de notas</li>
-            <li>(Bimestre culminado) <sub>1</sub></li>
+            <li>(Bimestre culminado) <sup>1</sup></li>
           </ul>
         </ul>
       </div>
@@ -43,8 +43,8 @@
       <div class="col-xs admission-new-item-content">
         <h3 class="item-content-title">Evaluación y entrevista</h3>
         <ul>
-          <li>1.o de primaria: Entrevista.</li>
-          <li>De 2.o de primaria a 5.o de secundaria: <br /> Evaluación psicopedagógica y académica.</li>
+          <li>1.<sup>o</sup> de primaria: Entrevista.</li>
+          <li>De 2.<sup>o</sup> de primaria a 5.<sup>o</sup> de secundaria: <br /> Evaluación psicopedagógica y académica.</li>
         </ul>
       </div>
     </div>
@@ -86,7 +86,7 @@
             <li>02 fotos tamaño de carné</li>
             <li>01 Copia del DNI de ambos padres o apoderados</li>
             <li>01 Copia de la Partida de Nacimiento del alumno</li>
-            <li>Constancia de matricula emitida por SIAGIE</li>
+            <li>Constancia de matrícula emitida por SIAGIE</li>
           </ul>
         </ul>
       </div>
@@ -95,4 +95,4 @@
   </div>
 </div>
 
-<div class="col-xs-12 center-xs admission-new-superindex"><sub>1</sub> Plazo de entrega: Hasta el día de la Evaluación.</div>
+<div class="col-xs-12 center-xs admission-new-superindex"><sup>1</sup> Plazo de entrega: Hasta el día de la Evaluación.</div>

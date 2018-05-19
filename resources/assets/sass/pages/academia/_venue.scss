@@ -97,6 +97,9 @@
 
 .venue-colegio-h2{
   color: $gray !important;
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem !important;
+  }
 }
 
 .venue-colegio-icon{

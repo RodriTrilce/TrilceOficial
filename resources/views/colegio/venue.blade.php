@@ -17,12 +17,12 @@
       <h2 class="venue-colegio-h2">{{ $data->name }}</h2>
       <div class="venues-hr"></div>
       
-      <div class="row col-xs-12 col-sm-11">
+      <div class="row col-xs-12 col-sm-12">
         
         <div class="row col-xs venue-colegio-table-block venue-colegio-table-line venue-colegio-table-block1">
           <div class="col-xs-12"></div>
           @foreach ($address as $k)
-            <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->grades }}</span></div>
+            <div class="col-xs-12"><span class="venue-colegio-title-span">{!! $k->grades !!}</span></div>
           @endforeach
         </div>
         
@@ -60,18 +60,18 @@
         
         @foreach ($investment as $k)
           <div class="row col-xs-12 investment-block-item">
-            <div class="col-xs"><span class="venue-colegio-title-span"><strong>{{$k->range}}</strong></span></div>
+            <div class="col-xs"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
             
             @if($k->admissionfee)
-            <div class="col-xs"><span class="venue-colegio-title-span">Cuota de ingreso: {{ $k->admissionfee }}</span></div>
+            <div class="col-xs"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
             @endif
 
             @if($k->enrollment)
-            <div class="col-xs"><span class="venue-colegio-title-span">Matrícula: {{ $k->enrollment }}</span></div>
+            <div class="col-xs"><span class="venue-colegio-title-span">Matrícula: {!! $k->enrollment !!}</span></div>
             @endif
 
             @if($k->monthlypayment)
-            <div class="col-xs"><span class="venue-colegio-title-span">Mensualidad: {{ $k->monthlypayment }}</span></div>
+            <div class="col-xs"><span class="venue-colegio-title-span">Mensualidad: {!! $k->monthlypayment !!}</span></div>
             @endif
           </div>
         @endforeach
@@ -91,62 +91,50 @@
   @parent
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU9IczA6fujtDzHPy0xWnHLqHHMuB1vKM" charset="utf-8"></script>
   <script type="text/javascript">
-  
-          function initMap(){
-              var options = {
-                  zoom:13,
-                  @foreach ($address as $k)
-                  center:{lat:{{ $k->logitude }},lng:{{ $k->latitude }}}/*poner al centro para que se muestre las 2 cordenadas*/
-                  @endforeach
-              }
+    function initMap(){
+        var options = {
+            zoom:13,
+            @foreach ($address as $k)
+            center:{lat:{{ $k->logitude }},lng:{{ $k->latitude }}},
+            @endforeach
+        }
 
-              var map = new google.maps.Map(document.getElementById('map'), options);
+        var map = new google.maps.Map(document.getElementById('map'), options);
 
+        var markers = [
+          @foreach ($address as $k)
+          {
+            coords:{lat:{{ $k->logitude }},lng: {{ $k->latitude }} },
+            content: `<span style="color:#f4633a">{{ $data->name }}</span><br>{!! $k->grades !!} <br> {{ $k->address }} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $k->phone }}`
+          },
+          @endforeach
 
-              var markers = [
-                @foreach ($address as $k)
-                {
-                  coords:{lat:{{ $k->logitude }},lng: {{ $k->latitude }} },
-                  content:'<span style="color:#f4633a">{{ $data->name }}</span><br>{{ $k->grades }} <br> {{ $k->address }} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $k->phone }}'
-                },
-                @endforeach
+        ];
 
-              ];
+        for(var i = 0;i < markers.length;i++){
+            addMarker(markers[i]);
+        }
 
-              // Loop through markers
-              for(var i = 0;i < markers.length;i++){
-                  addMarker(markers[i]);
-              }
+        function addMarker(props){
+            var marker = new google.maps.Marker({
+                position:props.coords,
+                map:map
+            });
 
-              // Add Marker Function
-              function addMarker(props){
-                  var marker = new google.maps.Marker({
-                      position:props.coords,
-                      map:map,
-                      //icon:props.iconImage
-                  });
+            marker.setIcon('{{url('/static/images/map-marker.png')}}');
+            
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content:props.content
+                });
 
-  /*
-                  // Check for customicon
-                  if(props.iconImage){
-                      // Set icon image
-                      marker.setIcon(props.iconImage);
-                  }
-  */
-                  // Check content
-                  if(props.content){
-                      var infoWindow = new google.maps.InfoWindow({
-                          content:props.content
-                      });
-
-                      marker.addListener('click', function(){
-                          infoWindow.open(map, marker);
-                          map.setCenter(marker.getPosition());
-                      });
-                  }
-              }
-          }
-
-initMap()
+                marker.addListener('click', function(){
+                    infoWindow.open(map, marker);
+                    map.setCenter(marker.getPosition());
+                });
+            }
+        }
+    }
+    initMap();
   </script>
 @endsection

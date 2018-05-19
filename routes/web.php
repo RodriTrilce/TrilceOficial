@@ -95,8 +95,11 @@ Route::get('/colegio/sede', function(){
   return redirect('/colegio');
 });
 
+// Preguntas Frecuentes (FrequentQuestions)
+Route::name('colegio-frequentquestions')->get('/colegio/preguntas-frecuentes', 'Colegio\FrequentQuestionsController@index');
 
-
+// Guia de pagos en linea (PaymentGuide)
+Route::name('colegio-paymentguide')->get('/colegio/guia-de-pagos-en-linea', 'Colegio\PaymentGuideController@index');
 
 
 

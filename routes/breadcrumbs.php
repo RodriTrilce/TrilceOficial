@@ -28,3 +28,16 @@ Breadcrumbs::for('colegio-venue', function ($trail, $venue) {
     $trail->parent('colegio-index');
     $trail->push('Sede ' . ucwords($venue), route('colegio-venue', $venue));
 });
+
+// Colegio > FrequentQuestions
+Breadcrumbs::for('colegio-frequentquestions', function ($trail) {
+    $trail->parent('colegio-index');
+    $trail->push('Preguntas Frecuentes', route('colegio-frequentquestions'));
+});
+
+// Colegio > PaymentGuide
+Breadcrumbs::for('colegio-paymentguide', function ($trail) {
+    $trail->parent('colegio-index');
+    $trail->push('Guia de pagos en linea', route('colegio-paymentguide'));
+});
+

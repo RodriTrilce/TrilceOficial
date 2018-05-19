@@ -35,7 +35,7 @@
               <ul>
                 <li class="nav-info-responsive nav-info-colegio">Intranet para alumnos | Call center: <b class="phone">6198100</b></li>
                 
-                <li class="nav-colegio-aboutus {{ (Request::is('colegio/nosotros')?'active':'') }}">
+                <li class="nav-colegio-aboutus {{ (Request::is('colegio/nosotros')?'active active-noclick':'') }}">
                   <a href="/colegio/nosotros">Nosotros</a>
                   <div class="dropdown-desk xs-hide-force">
                     <div class="dropdown-desk-content dropdown-desk-colegio-aboutus">
@@ -124,7 +124,7 @@
                   </div>
                 </li>
 
-                <li class="{{ (Request::is('colegio/admision*')?'active':'') }}"><a href="/colegio/admision-nuevo">Admisión</a></li>
+                <li class="{{ (Request::is('colegio/admision*')?'active active-noclick':'') }}"><a href="/colegio/admision-nuevo">Admisión</a></li>
 
                 <!-- Only mobile -->
                 <li class="menu-click-sedes">
@@ -165,7 +165,7 @@
 
                 <li class="disable"><a>Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
-                <li class="{{ (Request::is('colegio/contacto')?'active':'') }}"><a href="/colegio/contacto">Contáctenos</a></li>
+                <li class="{{ (Request::is('colegio/contacto')?'active active-noclick':'') }}"><a href="/colegio/contacto">Contáctenos</a></li>
               </ul>
             </nav>
             

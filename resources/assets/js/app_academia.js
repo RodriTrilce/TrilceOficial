@@ -59,7 +59,6 @@ Validation.validators.onlytext = input => {
   });
 };
 
-console.log(Validation);
 
 /*
 

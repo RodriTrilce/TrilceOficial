@@ -99,15 +99,6 @@ var get = (url) => {
   });
 }
 
-/*
-var lima = document.getElementById("selectRedirectLima");
-console.log(lima)
-lima.addEventListener("onchange", () => {
-  location.href = this.value;
-})*/
-
-
-
 
 /**!
  *  Index
@@ -139,3 +130,8 @@ lima.addEventListener("onchange", () => {
   }
 
  })();
+
+  
+  Validation.init(document.forms[0], true);
+  
+  console.log(Validation);

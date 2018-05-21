@@ -25,7 +25,7 @@
 @endif
 
   <div class="row center-xs center-sm contact">
-    <div class="row col-xs-11 col-sm-9 text-init">
+    <div class="row col-xs-12 col-sm-9 text-init">
       
       <div class="col-xs-12 col-sm contact-info">
         <h1>INFORMACIÓN DE CONTACTO</h1>
@@ -37,9 +37,15 @@
         </ul>
         
         <br />
-        <div class="workTrilce">
-          <h1>TRABAJA CON NOSOTROS</h1>
-          <a href="#">Postula <i class="fa fa-pencil"></i></a>
+        <div class="worktrilce">
+          <a href="#">
+            
+            <div class="row col-xs-12 worktrilce-div">
+              <div class="col-xs worktrilce-line"><i class="fa fa-briefcase"></i></div>
+              <div class="col-xs">TRABAJA<span class="about">con nosotros</span><span class="postulate">Postúla</span></div>
+            </div>
+
+          </a>
         </div>
 
       </div>
@@ -49,22 +55,34 @@
           <h2>Déjanos tu consulta</h2>
           
           <form action="/colegio/contacto" method="post">
-            {{ csrf_field() }}
-            <fieldset>
-              <input type="text" name="contact_names" placeholder="Nombres y Apellidos" pattern="[A-Za-z ]+" required>
+            @csrf
+            <fieldset class="form-group">
+              <input type="onlytext" name="contact_names" placeholder="Nombres y Apellidos" pattern="[A-Za-z ]+" required>
             </fieldset>
 
-            <fieldset>
-              <input type="mumber" name="contact_phone" placeholder="Télefono" pattern="([0-9]+)" required>
+            <fieldset class="form-group">
+              <input type="tel" type="tel" minlength="6" min="0" name="contact_phone" placeholder="Télefono" pattern="([0-9]+)" required>
             </fieldset>
             
-            <fieldset>
-              <input type="text" name="contact_email" class="email" placeholder="E-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <fieldset class="form-group">
+              <input type="email" name="contact_email" class="email" placeholder="E-mail" required>
             </fieldset>
             
-            <fieldset>
+            <fieldset class="form-group">
               <textarea name="contact_message" rows="8" cols="80" placeholder="Consulta" required></textarea>
             </fieldset>
+            
+            <div class="row col-xs-12 capcha">
+              <div class="col-xs-12">
+                <fieldset class="form-group">
+                  <input type="captcha" class="captcha" name="captcha" id="captcha">
+                </fieldset>
+              </div>
+              
+              <div class="col-xs-12">
+                <div class="g-recaptcha" data-callback="captcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"></div>
+              </div>
+            </div>
 
             <button type="submit" name="contact_validate" id="contact_validate" class="validate">Enviar <i class="fa fa-check"></i></button>
           </form>
@@ -82,5 +100,12 @@
 
 @section('scripts')
     page = 'contact';
+    
+    function captcha(){
+      if(grecaptcha.getResponse().length > 0){
+        document.getElementById("captcha").value = 'valid';
+      }
+    }
   @parent
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection

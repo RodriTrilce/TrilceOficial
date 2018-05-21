@@ -36,9 +36,8 @@
 
   <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms">
     <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
-      
       @csrf
-      
+
       <div class="tab tab1 row">
           <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
             <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">

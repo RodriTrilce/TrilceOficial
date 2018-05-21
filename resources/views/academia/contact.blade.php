@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-contact') }}
 @extends('academia.layouts.template')
 @section('title', 'Contáctenos')
 @section('content')

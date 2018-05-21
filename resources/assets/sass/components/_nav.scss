@@ -66,14 +66,16 @@
           height: 100%;
           margin-left: 17px;
           color: $gray;
+          transition: all 0.25s;
         }
         
-        &a:hover{
-          color: $orange;
-        }
-        
-        &a:hover::before{
+        &:hover{
+          a,a:link{
             color: $orange;
+          }
+          &::before{
+            color: $orange;
+          }
         }
 
       }// end li
@@ -427,6 +429,7 @@ nav{
           text-transform: uppercase;
           text-align: center;
         }
+        
 
         &:nth-last-child(1){
           margin-right: 0px;

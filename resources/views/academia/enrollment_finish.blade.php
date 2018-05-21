@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-enrollment') }}
 @extends('academia.layouts.template')
 @section('title', 'Pre Matrícula en linea')
 @section('content')

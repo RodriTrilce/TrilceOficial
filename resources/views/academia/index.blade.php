@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-index') }}
 @extends('academia.layouts.template')
 
 @section('title', '')

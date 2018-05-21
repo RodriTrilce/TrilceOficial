@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('errors.404') }}
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -36,6 +37,6 @@
     </div>
   </div>
 
-  @include('academia.layouts.parts.footer')
+  @include('colegio.layouts.parts.footer')
 </body>
 </html>

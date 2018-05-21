@@ -1,13 +1,10 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-preparation', $type) }}
 @extends('academia.layouts.template')
-
 @section('title', 'Preparación ' . $title)
-
 @section('content')
-
 
   <div class="header-double-top">
     <div class="row">
-      
       <div class="col-xs-12 col-sm-12 col-md-6"></div>
       <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
       
@@ -17,7 +14,6 @@
         <p>Elije la preparación universitaria,<br /> exclusiva que está buscando</p>
       </div>
     </div>
-    
   </div>
 
   <div class="nuevos-i nuevos-i-force-minus">
@@ -170,5 +166,10 @@
 </div>
     
 @include('academia.partials.card_bottom')
+@endsection
+
+@section('scripts')
+  page = 'preparation';
+@parent
 
 @endsection

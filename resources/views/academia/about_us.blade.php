@@ -1,7 +1,6 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-aboutus') }}
 @extends('academia.layouts.template')
-
 @section('title', 'Acerca de Nosotros')
-
 @section('content')
 
   <div class="header-double-top">

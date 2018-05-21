@@ -1,5 +1,14 @@
 <?php
 
+// Error 404
+Breadcrumbs::for('errors.404', function ($trail) {
+    $trail->push('Página no encontrada');
+});
+
+/**
+ *  Colegio migajas de pan
+ */
+
 // Colegio > Index
 Breadcrumbs::for('colegio-index', function ($trail) {
     $trail->push('Inicio', route('colegio-index'));
@@ -41,3 +50,67 @@ Breadcrumbs::for('colegio-paymentguide', function ($trail) {
     $trail->push('Guia de pagos en linea', route('colegio-paymentguide'));
 });
 
+
+/**
+ *  Academia migajas de pan
+ */
+
+// Academia > Index
+Breadcrumbs::for('academia-index', function ($trail) {
+   $trail->push('Inicio', route('academia-index'));
+});
+
+// Academia > AboutUs
+Breadcrumbs::for('academia-aboutus', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Nosotros', route('academia-aboutus'));
+});
+
+// Academia > Preparation
+Breadcrumbs::for('academia-preparation', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Preparación ' . ucwords($modality), route('academia-preparation', $modality));
+});
+
+// Academia > Venue
+Breadcrumbs::for('academia-venue', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Sede ' . ucwords($modality), route('academia-venue', $modality));
+});
+
+// Academia > Simulacrum
+Breadcrumbs::for('academia-simulacrum', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Simulacro ' . ucwords($modality), route('academia-simulacrum', $modality));
+});
+
+// Academia > Solutions
+Breadcrumbs::for('academia-solutions', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Solucionarios ' . ucwords($modality), route('academia-solutions', $modality));
+});
+
+// Academia > Enrollment
+Breadcrumbs::for('academia-enrollment', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Pre matrícula en linea', route('academia-enrollment'));
+});
+
+// Academia > Math Olympics
+Breadcrumbs::for('academia-matholympics', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Olimpiadas Matematicas', route('academia-matholympics'));
+});
+
+// Academia > Contact
+Breadcrumbs::for('academia-contact', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Contáctenos', route('academia-contact'));
+});
+
+
+
+
+
+ 
+ 

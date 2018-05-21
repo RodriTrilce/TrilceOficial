@@ -1,7 +1,6 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-simulacrum', $university->short_name) }}
 @extends('academia.layouts.template')
-
 @section('title', 'Simulacros de '. $university->name)
-
 @section('content')
 
   <div class="header-double-top">

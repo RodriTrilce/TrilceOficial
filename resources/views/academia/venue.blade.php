@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-venue', $data->name) }}
 @extends('academia.layouts.template')
 @section('title', $data->name)
 @section('content')

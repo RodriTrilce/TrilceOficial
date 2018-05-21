@@ -2,7 +2,7 @@
   <div class="row col-xs-12 center-xs">
     <div class="row col-xs-12 center-xs footer-top">
       <div class="col-xs-12 col-sm-5 start-xs">
-        <span>Usted está aquí: {$breadcrumbs}</span>
+        <span>Usted está aquí: {{$breadcrumbs}}</span>
       </div>
       <div class="col-sm-6 xs-hide"></div>
     </div>

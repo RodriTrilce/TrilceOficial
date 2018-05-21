@@ -1,7 +1,6 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-matholympics') }}
 @extends('academia.layouts.template')
-
 @section('title', 'Olimpiadas Matemáticas')
-
 @section('content')
 
   <div class="header-double-top">

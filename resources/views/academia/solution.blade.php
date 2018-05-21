@@ -1,3 +1,4 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-solutions', $university->short_name) }}
 @extends('academia.layouts.template')
 @section('title', 'Solucionarios de '. $university->name)
 @section('content')

@@ -18,6 +18,8 @@
 
 .frequentquestions-question{
   margin-bottom: 1rem;
+  counter-increment: item;
+  color: $gray;
   
   .question-number{
     justify-content: center;
@@ -28,16 +30,26 @@
     @media screen and (max-width: 700px){
       font-size: 1rem;
     }
+    
+    &::before{
+      color: $gray;
+      content: counter(item);
+    }
   }
   
   .question-content{
     margin-bottom: 1rem;
+    font-family: $font_geo_reg !important;
+    p{
+      font-family: inherit;
+    }
     &:first-child{
       margin-top: 1rem;
     }
   }
   
   .question-title{
+    font-family: $font_cae_reg;
     font-size: 1.2rem;
     @media screen and (max-width: 700px){
       font-size: 1rem;
@@ -47,7 +59,14 @@
   .question-answer{
     text-align: justify;
     font-size: 0.9rem;
-    font-family: $font_geo_reg;
   }
   
+  ul{
+    list-style: square;
+  }
+  ul,ol{
+    margin-left: 1rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
 }

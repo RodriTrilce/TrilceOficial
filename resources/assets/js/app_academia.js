@@ -381,7 +381,7 @@ function enrollment(nextBtn,prevBtn,form, type){
 /**!
  *  Simulacrum: Formulario de registro
  */
-~(($,_)=>{
+(()=>{
   if(gid('f1_validate')){
     const step1 = gid('f1_validate');
     step1.addEventListener('click', ()=>{
@@ -392,12 +392,13 @@ function enrollment(nextBtn,prevBtn,form, type){
       
     });
   }
-})(document,window);
+})();
 
 /**!
  *  Entering: Lista de cachimbos
  */
-~(($) => {
+ /*
+(() => {
   if(page !== 'entering') return false;
 
   function getEntering(university,year)
@@ -422,7 +423,7 @@ function enrollment(nextBtn,prevBtn,form, type){
     })
   }
   
-  var x = $.getElementById('year_list');
+  var x = document.getElementById('year_list');
   var v = x.querySelectorAll('li');
   
   v.forEach(elem => {
@@ -437,8 +438,9 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   // Default
   getEntering(university, '2018');
-  
-})(document);
+})();
+*/
+
 
 // Index
 (() => {
@@ -451,8 +453,6 @@ function enrollment(nextBtn,prevBtn,form, type){
     }, 1000)
   }
 })();
-
-
 
 
 // Enrollment
@@ -475,6 +475,13 @@ function enrollment(nextBtn,prevBtn,form, type){
 
 
 
+/**!
+ *  Contact
+ */
+(function(){
+ if(page !== 'contact'){ return false;}
+ Validation.init(document.forms[0], true);
+})();
 
 
 

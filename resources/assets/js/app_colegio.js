@@ -131,7 +131,14 @@ var get = (url) => {
 
  })();
 
-  
+ /**!
+  *  Contact
+  */
+(function(){
+  if(page !== 'contact'){ return false;}
   Validation.init(document.forms[0], true);
-  
-  console.log(Validation);
+})();
+
+
+
+

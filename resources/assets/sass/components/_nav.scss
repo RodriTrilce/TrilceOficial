@@ -387,28 +387,8 @@ nav{
         }
       }
 
-      .active{
-        >a,a:link{
-          color: $orange;
-          &:hover{
-            color: $orange;
-            >a{
-              color: $orange;
-            }
-            &::after{
-              display: none;
-            }
-          }
-        }
-      }
       
-      .active-noclick{
-        cursor: default;
-        pointer-events: none;
-      }
-          
-      
-          
+        
       > li{
         display: inline-block;
         margin-right: 1.2rem;
@@ -655,3 +635,26 @@ nav{
 .menu-colegio-sedes-select{
   margin-bottom: 0.5rem;
 }
+
+.active{
+
+    >a,a:link{
+      color: $orange;
+      &:hover{
+        color: $orange;
+        >a{
+          color: $orange;
+        }
+        &::after{
+          display: none;
+        }
+      }
+    }
+  
+}
+
+.active-noclick{
+  cursor: default;
+  pointer-events: none;
+}
+    

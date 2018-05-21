@@ -1,0 +1,70 @@
+.playmentguide-content{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 0.5rem;
+  font-family: $font_geo_reg;
+  color: $gray;
+}
+
+.playmentguide-title{
+  font-family: $font_geo_bold;
+  font-size: 2.5rem;
+  color: inherit;
+  @media screen and (max-width: 700px){
+    font-size: 1.3rem;
+  }
+}
+
+.playmentguide-titlesub{
+  @media screen and (max-width: 700px){
+    font-size: 0.9rem;
+  }
+}
+
+.playmentguide-option{
+  margin-top: 120px;
+  margin-bottom: 50px;
+  
+  &:hover{
+    .playmentguide-optionitem:not(:hover){
+        img{
+          opacity: 0.3;
+        }
+    }
+  }
+  
+}
+
+.playmentguide-optionitem{
+  position: relative;
+  
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  img{
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50%;
+    width: 1px;
+    background: $colegio_gray;
+    height: 200%;
+  }
+  
+  &:last-child::after{
+    display: none;
+  }
+  
+  @media screen and (max-width: 700px){
+    img{
+      max-width: 75%;
+    }
+  }
+}

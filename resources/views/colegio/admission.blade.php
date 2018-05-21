@@ -3,21 +3,6 @@
 @section('title', 'Admisión ' . $title)
 @section('content')
 
-  <!--
-  <div class="header-double-top-colegio">
-    <div class="row">
-      
-      <div class="col-xs-12 col-sm-12 col-md-6 frist-block"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
-      
-      <div class="header-double-border"></div>
-      <div class="header-double-title">
-        <h1>Admisión 2019</h1>
-      </div>
-    </div>
-  </div>
--->
-
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
       <img src="{{ url('/static/images/colegio/pages-banners/banner-admision.jpg') }}" alt="">

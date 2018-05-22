@@ -16,17 +16,17 @@
           </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <a href="http://intranet.trilce.edu.pe/" target="_blank">
-            <i class="fa fa-share-alt"></i>
-            <h3>Intranet</h3>
-            <p>Para padres y alumnos.</p>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="/colegio/preguntas-frecuentes">
             <i class="fa fa-question"></i>
             <h3>Preguntas frecuentes</h3>
             <p>En colegio Trilce resolvemos sus dudas.</p>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="http://intranet.trilce.edu.pe/" target="_blank">
+            <i class="fa fa-share-alt"></i>
+            <h3>Intranet</h3>
+            <p>Para padres y alumnos.</p>
           </a>
         </div>
     </div>

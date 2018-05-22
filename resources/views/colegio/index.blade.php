@@ -23,10 +23,8 @@
         </div>
       </div>
       
-      
-      
-      <div class="row col-xs-12 col-sm-8 col-md-8 between-xs center-sm center-md center-lg nuevos-i-box nuevos-colegio">
-        <div class="col-xs">
+      <div class="row col-xs-12 col-sm-8 col-md-8 between-xs center-sm center-md center-lg nuevos-i-box nuevos-colegio block-effecthover">
+        <div class="col-xs block-effecthover-item">
           <a href="/colegio/admision-nuevo">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/ico-alumno-nuevo.jpg') }}" alt="UNI">
@@ -38,7 +36,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs">
+        <div class="col-xs block-effecthover-item">
           <a href="/colegio/admision-traslado">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/ico-alumno-regular.jpg') }}" alt="UNMSM">
@@ -50,7 +48,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs">
+        <div class="col-xs block-effecthover-item">
           <a href="/colegio/admision-regular">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/ico-alumno-traslado.jpg') }}" alt="PUCP">
@@ -63,9 +61,7 @@
           </a>
         </div>
       </div>
-      
-      
-      
+
     </div>
   </div>
   

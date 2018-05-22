@@ -50,6 +50,18 @@ Breadcrumbs::for('colegio-paymentguide', function ($trail) {
     $trail->push('Guia de pagos en linea', route('colegio-paymentguide'));
 });
 
+// Colegio > Blog
+Breadcrumbs::for('colegio-blog', function ($trail) {
+    $trail->parent('colegio-index');
+    $trail->push('Blog', route('colegio-blog'));
+});
+
+// Colegio > Blog > Post
+Breadcrumbs::for('colegio-blogpost', function ($trail, $post) {
+    $trail->parent('colegio-blog');
+    $trail->push(ucwords($post), route('colegio-blogpost', $post));
+});
+
 
 /**
  *  Academia migajas de pan

@@ -34,42 +34,42 @@
               
               <ul>
                 <li class="nav-info-responsive">Intranet para alumnos | Call center: <b>6198100</b></li>
-                <li class="{{ (Request::is('academia/nosotros')?'active':'') }}"><a href="/academia/nosotros">Nosotros</a></li>
+                <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
 
-                <li class="nav-venues xs-hide {{ (Request::is('academia/sede/*')?'active':'') }}" id="sedes">
-                  <a href="#">Sedes</a>
+                <li class="nav-venues xs-hide" id="sedes">
+                  <a href="#" class="{{ (Request::is('academia/sede/*')?'nav-item-active':'') }}">Sedes</a>
                   <div class="dropdown-desk">
                     <div class="dropdown-desk-content dropdown-desk-academia">
                       <div>
                         <h3>UNI - San Marcos - PUCP</h3>
                         <ul>
-                          <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
+                          <li><a href="/academia/sede/los-olivos" class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active nav-item-noclick':'') }}">Los Olivos</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>UNI - San Marcos</h3>
                         <ul>
-                          <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
-                          <li><a href="/academia/sede/comas">Comas</a></li>
-                          <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
+                          <li><a href="/academia/sede/santa-beatriz" class="{{ (Request::is('academia/sede/santa-beatriz')?'nav-item-active nav-item-noclick':'') }}">Santa Beatriz</a></li>
+                          <li><a href="/academia/sede/comas" class="{{ (Request::is('academia/sede/comas')?'nav-item-active nav-item-noclick':'') }}">Comas</a></li>
+                          <li><a href="/academia/sede/villa-el-salvador" class="{{ (Request::is('academia/sede/villa-el-salvador')?'nav-item-active nav-item-noclick':'') }}">Villa el Salvador</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>UNI - PUCP</h3>
                         <ul>
-                          <li><a href="/academia/sede/torrico">Torrico</a></li>
+                          <li><a href="/academia/sede/torrico" class="{{ (Request::is('academia/sede/torrico')?'nav-item-active nav-item-noclick':'') }}">Torrico</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>San Marcos</h3>
                         <ul>
-                          <li><a href="/academia/sede/marsano">Marsano</a></li>
+                          <li><a href="/academia/sede/marsano" class="{{ (Request::is('academia/sede/marsano')?'nav-item-active nav-item-noclick':'') }}">Marsano</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>PUCP</h3>
                         <ul>
-                          <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
+                          <li><a href="/academia/sede/san-isidro" class="{{ (Request::is('academia/sede/san-isidro')?'nav-item-active nav-item-noclick':'') }}">San Isidro</a></li>
                         </ul>
                       </div>
                     </div>
@@ -89,10 +89,10 @@
                   </ul>
                 </li>
                 
-                <li class="{{ (Request::is('academia/matricula-en-linea')?'active':'') }}"><a href="/academia/matricula-en-linea">Matrícula en linea</a></li>
+                <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Matrícula en linea</a></li>
                 <li class="disable"><a>Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
-                <li class="{{ (Request::is('academia/contacto')?'active':'') }}"><a href="/academia/contacto">Contáctenos</a></li>
+                <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>
             </nav>
             

@@ -12,39 +12,43 @@
     </div>
   </div>
   
-  <div class="venue venue-colegio">
-    <div>
-      <h2 class="venue-colegio-h2">{{ $data->name }}</h2>
-      <div class="venues-hr"></div>
+  <div class="row col-xs-12 center-xs venue">
+    <div class="row col-xs-12 col-sm-9 start-xs">
       
-      <div class="row col-xs-12 col-sm-12">
+      <div class="col-xs-12 col-sm venue-content-left">
+        <h2 class="venue-colegio-h2">{{ $data->name }}</h2>
+        <div class="venues-hr"></div>
         
-        <div class="row col-xs venue-colegio-table-block venue-colegio-table-line venue-colegio-table-block1">
-          <div class="col-xs-12"></div>
-          @foreach ($address as $k)
-            <div class="col-xs-12"><span class="venue-colegio-title-span">{!! $k->grades !!}</span></div>
-          @endforeach
+        <div class="row col-xs-12 col-sm-12">
+          
+          <div class="row col-xs venue-colegio-table-block venue-colegio-table-line venue-colegio-table-block1">
+            <div class="col-xs-12"></div>
+            @foreach ($address as $k)
+              <div class="col-xs-12"><span class="venue-colegio-title-span">{!! $k->grades !!}</span></div>
+            @endforeach
+          </div>
+          
+          <div class="row col-xs venue-colegio-table-block venue-colegio-table-line">
+            <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-building"></i> Dirección</div>
+            @foreach ($address as $k)
+              <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->address }}</span></div>
+            @endforeach
+          </div>
+          
+          <div class="row col-xs venue-colegio-table-block">
+            <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-phone"></i> Teléfono</div>
+            @foreach ($address as $k)
+              <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->phone }}</span></div>
+            @endforeach
+          </div>
+          
         </div>
-        
-        <div class="row col-xs venue-colegio-table-block venue-colegio-table-line">
-          <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-building"></i> Dirección</div>
-          @foreach ($address as $k)
-            <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->address }}</span></div>
-          @endforeach
-        </div>
-        
-        <div class="row col-xs venue-colegio-table-block">
-          <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-phone"></i> Teléfono</div>
-          @foreach ($address as $k)
-            <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->phone }}</span></div>
-          @endforeach
-        </div>
-        
+              
       </div>
-            
-    </div>
-    <div class="map-container">
-      <div id="map"></div>
+      <div class="col-xs-12 col-sm map-container">
+        <div id="map"></div>
+      </div>
+    
     </div>
   </div>
   

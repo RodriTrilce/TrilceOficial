@@ -636,24 +636,18 @@ nav{
   margin-bottom: 0.5rem;
 }
 
-.active{
+.nav-item-active{
+  color: $orange !important;
+  &:hover{
+    color: $orange !important;
+  }
+  &::before{
+    color: $orange !important;
+  }
 
-    >a,a:link{
-      color: $orange;
-      &:hover{
-        color: $orange;
-        >a{
-          color: $orange;
-        }
-        &::after{
-          display: none;
-        }
-      }
-    }
-  
 }
 
-.active-noclick{
+.nav-item-noclick{
   cursor: default;
   pointer-events: none;
 }

@@ -14,20 +14,25 @@
     </div>
   </div>
   
-  <div class="venue">
-    <div>
-      <h2>Información general</h2>
-      <div class="hr"></div>
-      <ul class='venue-ul'>
-        <li><b>Horario de Atención:</b> <br>{{ $data->horary }}</li>
-        <li><b>Dirección:</b> <br>{{ $data->direction }}</li>
-        <li><b>Teléfono:</b> <br>{{ $data->phone }}</li>
-      </ul>
-    </div>
-    <div class="map-container">
-      <div id="map"></div>
+  <div class="row col-xs-12 center-xs venue">
+    <div class="row col-xs-12 col-sm-9 start-xs">
+      
+      <div class="col-xs-12 col-sm venue-content-left">
+        <h2>Información general</h2>
+        <div class="hr"></div>
+        <ul class='venue-ul'>
+          <li><b>Horario de Atención:</b> <br>{{ $data->horary }}</li>
+          <li><b>Dirección:</b> <br>{{ $data->direction }}</li>
+          <li><b>Teléfono:</b> <br>{{ $data->phone }}</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm map-container">
+        <div id="map"></div>
+      </div>
+    
     </div>
   </div>
+    
 
   @include('academia.partials.card_bottom')
 @endsection
@@ -38,33 +43,46 @@
   @parent
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU9IczA6fujtDzHPy0xWnHLqHHMuB1vKM" charset="utf-8"></script>
   <script type="text/javascript">
-  google.maps.event.addDomListener(window, 'load', function(){
-    var myLatlng = new google.maps.LatLng({{$data->logitude}},{{$data->latitude}}),
-        mapOptions = {
-            zoom: 15,
-            center: myLatlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-        
-    var infowindow = new google.maps.InfoWindow({
-        content  : 'Times Square, Manhattan',
-        maxWidth : 500
-    });
+  function initMap(){
+      var options = {
+          zoom:13,
+          center:{lat:{{$data->logitude}},lng:{{$data->latitude}}},
+      }
 
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map
-    });
+      var map = new google.maps.Map(document.getElementById('map'), options);
 
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
-    });
+      var markers = [
+        {
+          coords:{lat:{{ $data->logitude }},lng: {{ $data->latitude }} },
+          content: `<span style="color:#f4633a">{{ $data->name }}</span><br>{!! $data->direction !!} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $data->phone }}`
+        },
 
-    google.maps.event.addDomListener(window, "resize", function() {
-        google.maps.event.trigger(map, "resize");
-        map.setCenter(map.getCenter());
-    });
-  });
+      ];
+
+      for(var i = 0;i < markers.length;i++){
+          addMarker(markers[i]);
+      }
+
+      function addMarker(props){
+          var marker = new google.maps.Marker({
+              position:props.coords,
+              map:map
+          });
+
+          marker.setIcon('{{url('/static/images/map-marker.png')}}');
+          
+          if(props.content){
+              var infoWindow = new google.maps.InfoWindow({
+                  content:props.content
+              });
+
+              marker.addListener('click', function(){
+                  infoWindow.open(map, marker);
+                  map.setCenter(marker.getPosition());
+              });
+          }
+      }
+  }
+  initMap();
   </script>
 @endsection

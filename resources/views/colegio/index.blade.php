@@ -7,9 +7,9 @@
   
   <div class="index-banners">
     <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/admision/header/banner-registro-colegio2.png" alt=""></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-quieromibeca.jpg')}}" alt=""></a></div>
     <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/admision/header/banner-registro-colegio2.png" alt=""></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-quieromibeca.jpg')}}" alt=""></a></div>
   </div>
 
   <hr class="grayhr xs-hide" />

@@ -83,7 +83,7 @@
                                 <li class="item"><a class="{{ (Request::is('colegio/sede/los-olivos*')?'nav-item-active nav-item-noclick':'') }}" href="/colegio/sede/los-olivos">Los Olivos</a></li>
                                 <li class="item"><a class="{{ (Request::is('colegio/sede/maranga*')?'nav-item-active nav-item-noclick':'') }}" href="/colegio/sede/maranga">Maranga</a></li>
                                 <li class="item"><a class="{{ (Request::is('colegio/sede/pro*')?'nav-item-active nav-item-noclick':'') }}" href="/colegio/sede/pro">Pro</a></li>
-                                <li class="item"><a class="{{ (Request::is('colegio/sede/santa-beatris-roma*')?'nav-item-active nav-item-noclick':'') }}" href="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</a></li>
+                                <li class="item"><a class="{{ (Request::is('colegio/sede/santa-beatriz-roma*')?'nav-item-active nav-item-noclick':'') }}" href="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</a></li>
                                 <li class="item"><a class="{{ (Request::is('colegio/sede/jesus-maria-salaverry*')?'nav-item-active nav-item-noclick':'') }}" href="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</a></li>
                               </ul>
                             </div>

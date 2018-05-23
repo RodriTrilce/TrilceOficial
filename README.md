@@ -18,7 +18,7 @@ Creation of the repository for the website of the Trilce group. Frontend, Backen
 Technologies to use:
 
 1. SASS >3.2
-2. Vue.js >2.5
+2. Vanilla Javascript ES6
 3. Webpack >4
 
 ---

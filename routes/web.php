@@ -13,6 +13,14 @@
 
 
 /**
+ *  Auth
+ */
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+/**
  * General
  */
  
@@ -71,7 +79,6 @@ Route::name('academia-enrollment')->get('/academia/matricula-en-linea', 'Academi
 Route::name('academia-enrollment-finish')->post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store');
 
 
-
 /**
  *  Colegio
  */
@@ -104,6 +111,9 @@ Route::name('colegio-paymentguide')->get('/colegio/guia-de-pagos-en-linea', 'Col
 // Blog (Blog)
 Route::name('colegio-blogpost')->get('/colegio/blog/{id}-{post}', 'Colegio\BlogController@post');
 Route::name('colegio-blog')->get('/colegio/blog', 'Colegio\BlogController@index');
+
+
+
 
 
 

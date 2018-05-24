@@ -9,7 +9,7 @@
       <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-2"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>Pre-matrícula</h1>
+        <h1>Prematrícula</h1>
       </div>
     </div>
   </div>

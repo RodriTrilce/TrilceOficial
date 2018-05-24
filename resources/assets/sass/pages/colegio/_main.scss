@@ -440,32 +440,115 @@
 }
 
 
-.i-cycle{
-  &::before{
-    content: "\f21e";
-  }
+.i-cycle::before{
+  content: "\f21e";
 }
 
-.i-turn{
-  &::before{
-    content: "\f236";
-  }
+.i-turn::before{
+  content: "\f236";
 }
 
-.i-date{
-  &::before{
-    content: "\f15c";
-  }
+.i-date::before{
+  content: "\f15c";
 }
 
-.i-money{
-  &::before{
-    content: "\f294";
-  }
+.i-money::before{
+  content: "\f294";
 }
 
-.i-horary{
-  &::before{
-    content: "\f18f";
-  }
+.i-horary::before{
+  content: "\f18f";
 }
+
+
+
+
+
+.block-effecthover{
+
+  &:hover{
+    .block-effecthover-item:not(:hover){
+          img{
+            opacity: 0.3 !important;
+            filter: alpha(opacity=3) !important;
+          }
+          
+          .modality-blue, .nuevos-hr-blue{
+            color: transparentize($colegio_blue, 0.7) !important;
+          }
+          
+          .modality-yellow, .nuevos-hr-yellow{
+            color: transparentize($colegio_yellow, 0.7) !important;
+          }
+          
+          .modality-orange{
+            color: transparentize($orange, 0.7) !important;
+          }
+          
+          .nuevos-hr-orange{
+            background: transparentize($orange, 0.7) !important;
+          }
+          
+          .nuevos-hr-blue{
+            background: transparentize($colegio_blue, 0.7) !important;
+          }
+          
+          .nuevos-hr-yellow{
+            background: transparentize($colegio_yellow, 0.7) !important;
+          }
+          
+          h3,h4{
+            color: transparentize($gray, 0.3) !important;
+            transition: opacity 0.4s ease-in-out !important;
+          }
+          
+          .nuevos-i-bottom span{
+            color: transparentize($gray, 0.3) !important;
+          }
+
+      }
+  }
+  
+  .block-effecthover-item{
+    img{
+      transition: opacity 0.4s ease-in-out !important;
+      opacity: 1 !important;
+    }
+    
+    .modality-blue{
+      color: $colegio_blue !important;
+      transition: opacity 0.4s ease-in-out !important;
+    }
+
+    .modality-yellow{
+      color: $colegio_yellow !important;
+      transition: opacity 0.4s ease-in-out !important;
+    }
+
+    .modality-orange{
+      color: $orange !important;
+      transition: opacity 0.4s ease-in-out !important;
+    }
+
+
+    transition: 0.2s ease-in !important;
+    border-color: $orange !important;
+    
+    h3,h4{
+      color: $gray !important;
+      transition: opacity 0.4s ease-in-out !important;
+    }
+    
+
+    .nuevos-i-bottom{
+      font-weight: bold !important;
+    }
+    
+    .nuevos-i-top{
+      color: $gray !important;
+    }
+    
+  }
+  
+}
+

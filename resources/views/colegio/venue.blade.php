@@ -22,7 +22,7 @@
         <div class="row col-xs-12 col-sm-12">
           
           <div class="row col-xs venue-colegio-table-block venue-colegio-table-line venue-colegio-table-block1">
-            <div class="col-xs-12"></div>
+            <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-graduation-cap"></i> Nivel</div>
             @foreach ($address as $k)
               <div class="col-xs-12"><span class="venue-colegio-title-span">{!! $k->grades !!}</span></div>
             @endforeach

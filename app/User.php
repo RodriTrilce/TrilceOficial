@@ -27,6 +27,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
+    public function roles()
+    {
+        return $this
+            ->belongsToMany('App\Role')
+            ->withTimestamps();
+    }
+    
     public function authorizeRoles($roles)
     {
         if ($this->hasAnyRole($roles)) {

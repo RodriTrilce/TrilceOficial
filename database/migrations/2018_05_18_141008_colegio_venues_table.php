@@ -13,10 +13,10 @@ class ColegioVenuesTable extends Migration
      */
     public function up()
     {
-      Schema::create('colegio_venues', function (Blueprint $table) {
+      Schema::create('colegio_venue', function (Blueprint $table) {
           $table->increments('id');
           $table->string('name');
-          $table->string('slug');          
+          $table->string('slug');
           $table->integer('status')->default('1');
           $table->enum('sector', ['noli', 'lazo', 'rivero'])->default('noli');
           $table->timestamps();
@@ -30,6 +30,6 @@ class ColegioVenuesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colegio_venues');
+        Schema::dropIfExists('colegio_venue');
     }
 }

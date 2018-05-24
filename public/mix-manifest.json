@@ -1,10 +1,10 @@
 {
     "/js/app_colegio.js": "/js/app_colegio.js",
+    "/css/main_colegio.css": "/css/main_colegio.css",
     "/css/main_academia.css": "/css/main_academia.css",
     "/css/main_home.css": "/css/main_home.css",
     "/css/main.css": "/css/main.css",
     "/js/app_academia.js": "/js/app_academia.js",
     "/js/app_home.js": "/js/app_home.js",
-    "/favicon.ico": "/favicon.ico",
-    "/css/main_colegio.css": "/css/main_colegio.css"
+    "/favicon.ico": "/favicon.ico"
 }

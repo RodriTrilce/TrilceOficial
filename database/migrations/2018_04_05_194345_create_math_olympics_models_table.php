@@ -13,7 +13,7 @@ class CreateMathOlympicsModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('math_olympics_models', function (Blueprint $table) {
+        Schema::create('academia_math_olympics', function (Blueprint $table) {
             $table->increments('id');
             $table->enum('type', ['colegio', 'academia'])->default('academia');
             $table->string('sede');
@@ -34,6 +34,6 @@ class CreateMathOlympicsModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('math_olympics_models');
+        Schema::dropIfExists('academia_math_olympics');
     }
 }

@@ -15,7 +15,7 @@ class CreateBlogPostTable extends Migration
     {
       Schema::create('blog_post', function (Blueprint $table) {
           $table->increments('id');
-          $table->integer('id_user')->default(1);
+          $table->integer('id_user')->unsigned()->nullable();
           $table->string('title');
           $table->string('image_default');
           $table->enum('category', ['academia', 'colegio']);

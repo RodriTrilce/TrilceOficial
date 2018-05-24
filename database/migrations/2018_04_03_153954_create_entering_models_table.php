@@ -13,7 +13,7 @@ class CreateEnteringModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('entering_models', function (Blueprint $table)
+        Schema::create('academia_entering', function (Blueprint $table)
         {
             $table->increments('id');
             $table->integer('university_id_entering')->unsigned();
@@ -25,7 +25,7 @@ class CreateEnteringModelsTable extends Migration
             $table->timestamps();
         });
         
-        Schema::table('entering_models', function(Blueprint $table)
+        Schema::table('academia_entering', function(Blueprint $table)
         {
           $table->foreign('university_id_entering')->references('id')->on('universities');
         });
@@ -38,6 +38,6 @@ class CreateEnteringModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('entering_models');
+        Schema::dropIfExists('academia_entering');
     }
 }

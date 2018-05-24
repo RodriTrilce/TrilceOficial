@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class VenueModel extends Model
 {
-  protected $table = 'colegio_venues';
+  protected $table = 'colegio_venue';
   
   public function address()
   {

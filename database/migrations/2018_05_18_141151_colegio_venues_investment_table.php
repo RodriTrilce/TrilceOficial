@@ -13,7 +13,7 @@ class ColegioVenuesInvestmentTable extends Migration
      */
     public function up()
     {
-      Schema::create('colegio_venues_investment', function (Blueprint $table) {
+      Schema::create('colegio_venue_investment', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('idvenue')->unsigned()->nullable();
             $table->string('range');
@@ -23,9 +23,9 @@ class ColegioVenuesInvestmentTable extends Migration
             $table->timestamps();
         });
         
-        Schema::table('colegio_venues_investment', function(Blueprint $table)
+        Schema::table('colegio_venue_investment', function(Blueprint $table)
         {
-          $table->foreign('idvenue')->references('id')->on('colegio_venues');
+          $table->foreign('idvenue')->references('id')->on('colegio_venue');
         });
     }
 
@@ -36,6 +36,6 @@ class ColegioVenuesInvestmentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colegio_venues_investment');
+        Schema::dropIfExists('colegio_venue_investment');
     }
 }

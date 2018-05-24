@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class EnteringModel extends Model
 {
-  protected $table = 'entering_models';
+  protected $table = 'academia_entering';
 }

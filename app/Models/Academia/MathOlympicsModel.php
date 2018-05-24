@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class MathOlympicsModel extends Model
 {
-  protected $table = 'math_olympics_models';
+  protected $table = 'academia_math_olympics';
 }

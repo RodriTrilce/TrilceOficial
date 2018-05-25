@@ -26,8 +26,6 @@ class AcademiaMathOlympicsTableSeeder extends Seeder
         array('id' => '5','type' => 'academia','sede' => 'Barranco','title' => 'I OLIMPIADA DE MATEMÁTICA - IE ENRIQUE ARNÁEZ NAVEDA
       ','grade' => '1.° sec. a 5.° sec.
       ','base_url' => '','inscription_url' => '','inscription_group_url' => '','results_url' => '','created_at' => '2018-08-17 19:00:00','updated_at' => NULL),
-        array('id' => '6','type' => 'academia','sede' => 'Mala','title' => 'I OLIMPIADA DE MATEMÁTICA - IEP "VIRGEN DE GUADALUPE"','grade' => '1.° prim. a 5.° sec.
-      ','base_url' => '','inscription_url' => '','inscription_group_url' => '','results_url' => '','created_at' => '2018-09-07 19:00:00','updated_at' => NULL),
         array('id' => '7','type' => 'academia','sede' => 'Cercado de Lima','title' => 'I OLIMPIADA DE MATEMÁTICA - IE N.° 105 PEDRO CORONADO ARRASCUE
       ','grade' => '1.° sec. a 5.° sec.
       ','base_url' => '','inscription_url' => '','inscription_group_url' => '','results_url' => '','created_at' => '2018-09-14 19:00:00','updated_at' => NULL),

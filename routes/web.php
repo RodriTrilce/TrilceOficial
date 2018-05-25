@@ -13,11 +13,11 @@
 
 
 /**
- *  Auth
+ *  Admin
  */
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'Admin\IndexController@index')->name('admin-index');
 
 
 /**
@@ -106,7 +106,7 @@ Route::get('/colegio/sede', function(){
 Route::name('colegio-frequentquestions')->get('/colegio/preguntas-frecuentes', 'Colegio\FrequentQuestionsController@index');
 
 // Guia de pagos en linea (PaymentGuide)
-Route::name('colegio-paymentguide')->get('/colegio/guia-de-pagos-en-linea', 'Colegio\PaymentGuideController@index');
+Route::name('colegio-paymentguide')->get('/colegio/guia-de-pagos-en-linea', 'Colegio\PaymentGuideController@index')->middleware('auth');
 
 // Blog (Blog)
 Route::name('colegio-blogpost')->get('/colegio/blog/{id}-{post}', 'Colegio\BlogController@post');

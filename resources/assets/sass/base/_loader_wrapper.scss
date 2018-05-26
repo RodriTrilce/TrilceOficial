@@ -134,3 +134,18 @@
   opacity: 0;
   transition: all 0.7s;
 }
+
+.loader-trilce{
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -100px 0 0 -31px;
+  z-index: 1001;
+}
+
+.loader-trilce img{
+  max-width: 40%;
+}

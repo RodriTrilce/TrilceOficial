@@ -67,8 +67,6 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2.5rem;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .blog-home-top-section--section{
@@ -102,31 +100,108 @@
 
 .blog-home-aftertop{
   margin-top: 0.6rem;
-  
-  .blog-home-aftertop--item{
-    border-bottom: 1px solid white;
-  }
-  
-  .blog-home-aftertop--item-image{
-    img{
-      height: 100%;
-      width: 100%;
-    }
-  }
-  
-  .blog-home-aftertop--item-title{
-    height: 100%;
-    background: $gray;
-    padding: 1.8rem;
-    h2{
-      color: white;
-      font-size: 1.4em;
-      font-weight: bold;
-      @media screen and (max-width: 700px){
-        font-size: 1.1rem;
-      }
-    }
-  }
-  
-  
 }
+
+.blog-home-aftertop--item{
+  border-bottom: 1px solid white;
+}
+
+.blog-home-aftertop--item-image{
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.blog-home-aftertop--item-title{
+  height: 100%;
+  background: $gray;
+  padding: 1.8rem;
+  h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    @media screen and (max-width: 700px){
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+.blog-home-grid{
+  margin-top: 4rem;
+}
+
+.blog-home-grid--item{
+  padding: 0.8rem;
+}
+
+.blog-home-grid--item-content{
+  padding: 0.5rem;
+}
+
+.blog-home-grid--item-title{
+    color: $gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+    @media screen and (max-width: 700px){
+      font-size: 1.28rem;
+    }
+    
+    a,a:link,a:visited{
+      color: $gray;
+    }
+    
+    a:hover{
+      color: $orange;
+    }
+}
+
+.blog-home-grid--item-text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 75px;
+
+  @media screen and (max-width: 700px){
+    display: none;
+  }
+}
+
+.blog-home-grid--item-date{
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.blog-home-grid--item-op{
+  margin-top: 20px;
+  align-self: flex-end;
+  @media screen and (max-width: 700px){
+    margin-top: 5px;
+  }
+
+  a,a:link,a:visited,i{
+    color: $orange;
+  }
+  a{
+    font-weight: bold;
+  }
+  i{
+    margin-right: 5px;
+  }
+  span{
+    font-family: $font_geo_reg;
+  }
+  
+  .blog-home-grid--item-op-more{
+  }
+}
+
+

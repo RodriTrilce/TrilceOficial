@@ -39,19 +39,41 @@
   </div>
   
   
-  <div class="row col-xs-12 center-xs">
-    <div class="col-xs-12 col-sm-9 start-sm">
+  <div class="row col-xs-12 center-xs blog-home-grid">
+    <div class="row col-xs-12 col-sm-8 start-sm">
       
-      <div class="row col-xs-12 col-sm-6">
-        <div class="col-xs"><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></div>
-        <div class="col-xs"></div>
+      <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
+        <div class="col-xs-6 blog-home-grid--item-image"><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></div>
+        <div class="row col-xs blog-home-grid--item-content start-xs">
+          <h3 class="blog-home-grid--item-title"><a href="">Desayuno y firma de compromisos para las Olimpiadas</a></h3>
+          <div class="blog-home-grid--item-date">Abr 20, 2018 <i class="fa fa-calendar"></i></div>
+          <div class="blog-home-grid--item-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, possimus. Earum nihil accusantium fugit perferendis impedit debitis quis nulla, exercitationem, dolores, ut quo enim quam at commodi. Dicta, maiores, voluptates.
+          </div>
+          <div class="row col-xs-12 blog-home-grid--item-op between-sm start-xs">
+            <div class="row col-xs-6 xs-hide"><a href="#">Leer más <i class="fa fa-search"></i></a></div>
+            <div class="row col-xs-6 start-xs end-sm blog-home-grid--item-op-more"><i class="fa fa-eye"></i> <span>65</span></div>
+          </div>
+        </div>
       </div>
-      
+
     </div>
   </div>
   
   
   <hr class="grayhr2 xs-hide" />
+  
+  <div class="container">
+    @foreach ($posts as $post)
+        {{ $post->title }}
+    @endforeach
+</div>
+
+{{ $posts->links() }}
+  
+  <hr class="grayh2 xs-hide" />
+  
+  
 
   @include('colegio.partials.card_bottom')
 @endsection

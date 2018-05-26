@@ -17,6 +17,26 @@
           <div id="loader"></div>
           <div class="loader-section section-left"></div>
           <div class="loader-section section-right"></div>
+          
+          <style media="screen">
+            .loader-trilce{
+              display: block;
+              position: relative;
+              left: 50%;
+              top: 50%;
+              width: 150px;
+              height: 150px;
+              margin: -100px 0 0 -31px;
+              z-index: 1001;
+            }
+            
+            .loader-trilce img{
+              max-width: 40%;
+            }
+          </style>
+          <div class="loader-trilce">
+            <img src="{{ url('/static/images/t-trilce.png') }}" alt="">
+          </div>
       </div>
       <div class="h-all">
         <div class="h-content">

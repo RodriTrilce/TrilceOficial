@@ -130,3 +130,7 @@
     transition: all 0.3s 1s ease-out;
 }
 
+.loaded .loader-trilce {
+  opacity: 0;
+  transition: all 0.7s;
+}

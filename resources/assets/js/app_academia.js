@@ -280,7 +280,6 @@ function enrollment(nextBtn,prevBtn,form, type){
     term21.innerHTML = time;
     
     if(university !== 'pucp'){
-      console.log("olll")
       term9.style.display = 'inline-block';
       let b = term9a.options[term9a.selectedIndex].value;
       term91.innerHTML = '12';
@@ -297,9 +296,7 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   this.nextPrev = function(n,e)
   {
-    
     //      document.getElementById(this.nextBtn).type = 'submit';
-
     
     var x = document.getElementsByClassName('tab');
     var tb;

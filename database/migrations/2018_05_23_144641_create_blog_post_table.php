@@ -23,7 +23,8 @@ class CreateBlogPostTable extends Migration
           $table->text('tags');
           $table->integer('view')->default('0');
           $table->enum('marker', [0, 1])->default('0');
-          $table->enum('status', [0, 1])->default('1');
+          $table->enum('visible', [0, 1])->default('1');
+          $table->enum('approved', [0, 1])->default('0');
           $table->timestamps();
       });
       

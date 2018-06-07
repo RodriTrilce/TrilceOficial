@@ -151,7 +151,8 @@ $simulacrum-form-background: #ededed;
   .simulacrum-results{
     
     >div{
-      padding: 1rem;;
+      padding: 1rem;
+      
       a{
         color: $gray;
         @media screen and (max-width: 768px) {
@@ -173,7 +174,6 @@ $simulacrum-form-background: #ededed;
         background: transparentize($gray, 0.8);
         margin-left: 13rem;
         margin-top: -5rem;
-        
         
         @media screen and (max-width: 768px) {
           width: 80%;

@@ -106,7 +106,7 @@ Route::get('/colegio/sede', function(){
 Route::name('colegio-frequentquestions')->get('/colegio/preguntas-frecuentes', 'Colegio\FrequentQuestionsController@index');
 
 // Guia de pagos en linea (PaymentGuide)
-Route::name('colegio-paymentguide')->get('/colegio/guia-de-pagos-en-linea', 'Colegio\PaymentGuideController@index')->middleware('auth');
+Route::name('colegio-paymentguide')->get('/colegio/guia-de-pagos-en-linea', 'Colegio\PaymentGuideController@index');
 
 // Blog (Blog)
 Route::name('colegio-blogpost')->get('/colegio/blog/{id}-{post}', 'Colegio\BlogController@post');
@@ -114,8 +114,11 @@ Route::name('colegio-blog')->get('/colegio/blog', 'Colegio\BlogController@index'
 
 
 
+//                                          ->middleware('auth')
 
 
+Route::name('prueba')->get('/prueba', 'Colegio\PruebaController@index');
+Route::name('prueba')->get('/prueba-download', 'Colegio\PruebaController@download');
 
 
 

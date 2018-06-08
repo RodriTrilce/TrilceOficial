@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
       Schema::defaultStringLength(191);
-      Validator::extend('recaptcha', 'ReCaptcha@validate');
+      Validator::extend('recaptcha', 'App\Rules\ReCaptcha@passes');
     }
 
     /**

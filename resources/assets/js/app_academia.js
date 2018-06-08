@@ -205,13 +205,17 @@ function enrollment(nextBtn,prevBtn,form, type){
     elem.addEventListener('change' , () => {
       this.step1Venue = elem.options[elem.selectedIndex].value;
       
+      let key = this.step1Venue.split('|');
+      
       this.cleanSelect(select, 'Ciclo');
       
-      get(`/api/academia/enrollment/${this.step1University}/${this.step1Venue}`).then((response) => {
+      get(`/api/academia/enrollment/${this.step1University}/${key[1]}`).then((response) => {
+        console.log(response)
           response = JSON.parse(response).data;
           for(var k in response){
-              let s = document.createElement('option');
-              s.text = response[k].capitalize();
+              let s   = document.createElement('option');
+              s.text  = response[k].capitalize();
+              console.log(k)
               s.value = k;
               select.add(s);
           }
@@ -235,7 +239,15 @@ function enrollment(nextBtn,prevBtn,form, type){
   {
     if(this.currentTab == 2){
       this.drawTerms();
+
+      // Hide Errors on two change tab after submit
+      let errorContainer = document.getElementById('error-container');
+      if(errorContainer){
+        errorContainer.style.display = 'none';
+      }
     }
+    
+
 
     var x = document.getElementsByClassName('tab');
     x[n].style.display = this.blockType;
@@ -289,7 +301,7 @@ function enrollment(nextBtn,prevBtn,form, type){
       });
     }else{
       term9.style.display = 'none';
-      term91.innerHTML = '30';
+      term91.innerHTML    = '30';
     }
     
   }

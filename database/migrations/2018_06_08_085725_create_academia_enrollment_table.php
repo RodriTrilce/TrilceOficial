@@ -15,24 +15,24 @@ class CreateAcademiaEnrollmentTable extends Migration
     {
         Schema::create('academia_enrollment', function (Blueprint $table) {
           $table->increments('id')->unique();
-          $table->string('interest_university');
-          $table->string('interest_venue');
-          $table->string('interest_cycle');
-          $table->string('interest_turn');
-          
-          $table->string('student_lastname');
-          $table->string('student_lastname_mother');
+
+          $table->string('student_dni');
+          $table->string('student_names');
           $table->string('student_district');
           $table->string('student_address');
           $table->string('student_phone_home');
           $table->string('student_phone_cell');
           $table->string('student_email');
-          
-          $table->integer('student_year_finish_school');
+          $table->integer('student_year_finish_school'); // <--  NO ESTA
           $table->string('student_school');
           $table->string('student_postulate_university');
           $table->string('student_postulate_profession');
-          $table->string('student_last_academy');
+          $table->string('student_last_academy')->nullable();
+          
+          $table->string('interest_university');
+          $table->string('interest_venue');
+          $table->string('interest_cycle');
+          $table->string('interest_turn');
           
           $table->enum('attorney_type', ['mother', 'father', 'attorney']);
           $table->string('attorney_names');

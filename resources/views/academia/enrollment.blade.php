@@ -21,15 +21,15 @@
   </div>
 
 @if ($errors->any())
-  <div class="row col-xs-12 center-xs">
+  <div class="row col-xs-12 center-xs" id="error-container">
     <div class="form-error">
         <ul class="form-error-ul">
         @foreach ($errors->all() as $error)
           <li class="form-li">{{ $error }}</li>
         @endforeach
 
-          <li class="form-li">El campo <span>Test</span> debe ser mayor a 3 caracteres</li>
-          <li class="form-li">El campo <span>Test</span> debe ser mayor a 3 caracteres</li>
+          {{-- <li class="form-li">El campo <span>Test</span> debe ser mayor a 3 caracteres</li>
+          <li class="form-li">El campo <span>Test</span> debe ser mayor a 3 caracteres</li> --}}
         </ul>
     </div>
   </div>
@@ -209,7 +209,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="number" min="0" minlength="4" maxlength="4" name="step2_yearpostulate" placeholder="Año en que terminó el colegio" required>
+                      <input type="number" min="0" minlength="4" maxlength="4" name="step2_year_finish_school" placeholder="Año en que terminó el colegio" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
@@ -253,13 +253,13 @@
                 <div class="row col-xs-12">
                   <div class="col-xs start-xs">
                     <fieldset class="form-group">
-                      <label class="radio-inline" for="step3_apoderate">
+                      <label class="radio-inline">
                         <span>Apoderado</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="attorney" aria-label="Apoderado" required>
                       </label>
-                      <label class="radio-inline" for="step3_apoderate">
+                      <label class="radio-inline">
                         <span>Madre</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="mother" aria-label="Apoderado" required>
                       </label>
-                      <label class="radio-inline" for="step3_apoderate">
+                      <label class="radio-inline">
                         <span>Padre</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="father" aria-label="Apoderado" required>
                       </label>
                     </fieldset>

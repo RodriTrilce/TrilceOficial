@@ -50,7 +50,7 @@ class EnrollmentResourceController extends Controller
      {
         $urlU     = $this->url[$university];
         $data     = $this->getUrl($urlU);
-        $venue    = $this->getOptionsVenue($data);
+        //$venue    = $this->getOptionsVenue($data);
         $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
         
         Cache::put($key.$university, $collection, 4320);
@@ -105,7 +105,13 @@ class EnrollmentResourceController extends Controller
      {
        $options = $this->explodeDiv('<select name="cboLocal','</select', $data);
        preg_match_all("# value=([0-9]+)>(.*?)</#", $options, $options);
-       return array_combine(array_map('strtolower', $options[2]), $options[1]);
+       $data =  array_combine(array_map('strtolower', $options[2]), $options[1]);
+
+       foreach ($data as $k => $v) {
+         $data[$k] = $k.'|'.$v;
+       }
+       
+       return $data;
      }
 
      function getInfoVenue($url, $venue)
@@ -118,7 +124,11 @@ class EnrollmentResourceController extends Controller
        
        $url = $this->postUrl($url, $opt);
        preg_match_all("#<strong>(.*?)</strong>#", $url, $cycles);
-       $cycles = array_unique($cycles[1]);
+       $cycles = array_flip(array_unique($cycles[1]));
+
+       foreach ($cycles as $k => $v) {
+         $cycles[$k] = $k;
+       }
        return $cycles;
      }
      

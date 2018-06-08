@@ -72,7 +72,7 @@
               <textarea name="contact_message" rows="8" cols="80" placeholder="Consulta" required></textarea>
             </fieldset>
             
-            <div class="row col-xs-12 capcha">
+            <div class="row col-xs-12 captcha">
               <div class="col-xs-12">
                 <fieldset class="form-group">
                   <input type="captcha" class="captcha" name="captcha" id="captcha">

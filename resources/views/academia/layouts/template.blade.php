@@ -23,10 +23,10 @@
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
           <div class="col-xs-12 nav-info">
-              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b class="phone">6198100</b></span>
+              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <b class="phone">6198100</b></span>
           </div>
           <div class="col-xs-12">
-            <nav>
+            <nav class="nav-burger">
               <input type="checkbox" id="menu-toggle" />
               <div class="toogle-content">
                 <label for="menu-toggle" class="label-toggle"><i class="fa fa-bars"></i></label>

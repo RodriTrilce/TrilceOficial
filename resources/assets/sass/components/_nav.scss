@@ -5,7 +5,7 @@
 %dropdown-desk-active {
   display: block;
   line-height: initial;
-  padding-top: 50px;
+  padding-top: 30px;
   z-index: 12;
   text-align: left;
   transition: 0.3s all;
@@ -305,6 +305,11 @@
     padding-right: 20px;
     font-size: 0.8rem;
     background-color: $orange;
+    
+    span{
+      margin-left: 3px;
+      margin-right: 3px;
+    }
   }
 
   .fa-home{
@@ -519,10 +524,18 @@ nav{
     }
     
     .toogle-content{
-      margin-top: 2rem;
       margin-right: 1rem;
+      width: 100px;
     }
     
+    #menu-toggle:checked ~ .toogle-content {
+      .label-toggle{
+        background: $orange;
+      }
+      .fa-bars{
+        color: white;
+      }
+    }//end ul
     
     #menu-toggle:checked ~ ul {
       display: block;
@@ -533,7 +546,8 @@ nav{
       height: 100vh;
       background-color: white;
       text-align: center;
-      margin-top: 28px;
+      margin-top: 95px;
+      top: 0;
       
     }//end ul
     
@@ -651,4 +665,10 @@ nav{
   cursor: default;
   pointer-events: none;
 }
-    
+
+.nav-burger{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}

@@ -146,14 +146,11 @@ class EnrollmentController extends Controller
        $terms_time = $terms_route->all->time;
      }
      
- 
-
-
      $storagePath  = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
      $theme        = Storage::disk('local')->url('formato_matricula.pdf');
 
      $pdf = new FPDI();
-     $pdf->AddFont('33FA0F_E_0','','33FA0F_E_0.php');
+     $pdf->AddFont('33FA0F_9_0','','33FA0F_9_0.php');
      $pdf->AddPage('L','A4');
      $pdf->SetAutoPageBreak(false);
 
@@ -163,7 +160,7 @@ class EnrollmentController extends Controller
      $pdf->setSourceFile($storagePath.'academia/pdf/formato_matricula_terminos-y-condiciones.pdf');
      $pdf->useTemplate($pdf->importPage(1), 140, 3, 150);
 
-     $pdf->SetFont('33FA0F_E_0');
+     $pdf->SetFont('33FA0F_9_0');
      $pdf->SetFontSize(8.5);
      $pdf->SetTextColor(0, 0, 0);
      /*
@@ -304,15 +301,33 @@ class EnrollmentController extends Controller
      $pdf->SetXY(237.5, 44.3);
      $pdf->Write(0, '30');
 
-     // Terms 2:
-     $pdf->SetXY(237.4, 44.3);
-     $pdf->Write(0, '50');
+    // Terms 2:
+    $pdf->SetXY(261.8, 33); // HERE!
+    $pdf->Write(0, $terms_cost);
 
-     // Terms:
-     $pdf->SetXY(200, 193.5);
-     $pdf->Write(0, '50');
-     
-     
+    // Terms 2.1:
+    $pdf->SetXY(253, 36.0);
+    $pdf->Write(0, $terms_time);
+    
+    if($enrollment->interest_university == 'pucp'){
+      $pdf->SetXY(240.5, 109.2);
+      $pdf->Write(0, "30");
+
+      $pdf->SetFontSize(6.5);
+
+      $pdf->SetXY(160.5, 115.2);
+      $pdf->Write(0, utf8_decode("9.1 La pérdida del libro de Letras que otorga la institución dará lugar al cobro de S/ 30 por concepto de duplicado."));
+    }else{
+      $pdf->SetXY(240.5, 109.2);
+      $pdf->Write(0, "12");
+
+      $pdf->SetFontSize(6.5);
+
+      $pdf->SetXY(160.5, 115.2);
+      $pdf->Write(0, utf8_decode("9.1 La pérdida del libro de Letras que otorga la institución dará lugar al cobro de S/ 15 por concepto de duplicado."));
+    }
+    
+    $pdf->SetFontSize(8.5);
 
      $pdf->SetTitle("Ficha de inscripción", true);
      $pdf->SetAuthor("Trilce");

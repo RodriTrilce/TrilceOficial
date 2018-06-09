@@ -38,7 +38,7 @@
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
               <h4>Preparación</h4>
-              <h3>San Marcos</h3>
+              <h3>UNMSM</h3>
             </div>
             <div class="nuevos-i-bottom">
               <hr>

@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Colegio;
 
-define('FPDF_FONTPATH', '/var/www/html/trilce/storage/app/academia/pdf/fonts/');
+//define('FPDF_FONTPATH', '/var/www/html/trilce/storage/app/academia/pdf/fonts/');
 
 use Storage;
 use Illuminate\Http\Request;
@@ -11,6 +11,7 @@ use \setasign\Fpdi\Fpdi;
 class PruebaController extends Controller
 {
     public function index(){
+      
 
       $storagePath  = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
       $theme        = Storage::disk('local')->url('formato_matricula.pdf');

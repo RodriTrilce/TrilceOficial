@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Academia;
 
-define('FPDF_FONTPATH', '/var/www/html/trilce/storage/app/academia/pdf/fonts/');
+define('FPDF_FONTPATH', str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/fonts/');
 
 use Storage;
 use Illuminate\Http\Request;
@@ -80,7 +80,8 @@ class EnrollmentController extends Controller
     */
    public function download(Request $request)
    {
-
+     
+     $internal_path = str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/';
      $cost = json_decode('{
          "one" : {
            "pucp" : {
@@ -146,18 +147,19 @@ class EnrollmentController extends Controller
        $terms_time = $terms_route->all->time;
      }
      
-     $storagePath  = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
-     $theme        = Storage::disk('local')->url('formato_matricula.pdf');
+     //$storagePath  = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
+     //$theme        = Storage::disk('local')->url('formato_matricula.pdf');
+     $theme = $internal_path.'formato_matricula.pdf';
 
      $pdf = new FPDI();
      $pdf->AddFont('33FA0F_9_0','','33FA0F_9_0.php');
      $pdf->AddPage('L','A4');
      $pdf->SetAutoPageBreak(false);
 
-     $pdf->setSourceFile($storagePath.'academia/pdf/formato_matricula.pdf');
+     $pdf->setSourceFile($internal_path.'formato_matricula.pdf');
      $pdf->useTemplate($pdf->importPage(1), 1, 3, 150);
 
-     $pdf->setSourceFile($storagePath.'academia/pdf/formato_matricula_terminos-y-condiciones.pdf');
+     $pdf->setSourceFile($internal_path.'formato_matricula_terminos-y-condiciones.pdf');
      $pdf->useTemplate($pdf->importPage(1), 140, 3, 150);
 
      $pdf->SetFont('33FA0F_9_0');

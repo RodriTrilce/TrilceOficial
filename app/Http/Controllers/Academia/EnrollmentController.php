@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Academia;
 
 define('FPDF_FONTPATH', str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/fonts/');
 
-use Storage;
+//use Storage;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Academia\EnrollmentModel as Enrollment;
@@ -150,7 +150,7 @@ class EnrollmentController extends Controller
      //$storagePath  = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
      //$theme        = Storage::disk('local')->url('formato_matricula.pdf');
      $theme = $internal_path.'formato_matricula.pdf';
-
+//
      $pdf = new FPDI();
      $pdf->AddFont('33FA0F_9_0','','33FA0F_9_0.php');
      $pdf->AddPage('L','A4');

@@ -94,65 +94,67 @@
     </div>
 
     
-    <div class="row col-xs-12 around-xs nuevos-i-list-data">
-      <div class="row col-xs-12 col-sm-8 ii-ul">
+    <div class="row col-xs-12 col-sm-10 col-md-10 around-xs nuevos-i-list-data">
+      <div class="row col-xs-12 ii-ul">
         
         <!-- bucle -->
-        <div class="col-xs-12">
+        <div class="col-xs-12 ii-ul-bucle-item">
           <div class="col-xs-12"><h3>Comas</h3></div>
           <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-md ii i-cycle">Anual</div>
-            <div class="col-md ii i-turn">Mañana</div>
-            <div class="col-md ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-md ii i-money">S/250</div>
-            <div class="col-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
+            <div class="col-xs-3 col-md ii i-cycle">Anual</div>
+            <div class="col-xs-3 col-md ii i-turn">Mañana</div>
+            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
+            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
+            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
           </div>
           <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-md ii i-cycle">Anual</div>
-            <div class="col-md ii i-turn">Mañana</div>
-            <div class="col-md ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-md ii i-money">S/250</div>
-            <div class="col-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
+            <div class="col-xs-3 col-md ii i-cycle">Anual</div>
+            <div class="col-xs-3 col-md ii i-turn">Mañana</div>
+            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
+            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
+            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
           </div>
         </div>
         <!-- end bucle -->
         
+        
         <!-- bucle -->
-        <div class="col-xs-12">
+        <div class="col-xs-12 ii-ul-bucle-item">
           <div class="col-xs-12"><h3>Comas</h3></div>
           <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-md ii i-cycle">Anual</div>
-            <div class="col-md ii i-turn">Mañana</div>
-            <div class="col-md ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-md ii i-money">S/250</div>
-            <div class="col-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
+            <div class="col-xs-3 col-md ii i-cycle">Anual</div>
+            <div class="col-xs-3 col-md ii i-turn">Mañana</div>
+            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
+            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
+            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
           </div>
           <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-md ii i-cycle">Anual</div>
-            <div class="col-md ii i-turn">Mañana</div>
-            <div class="col-md ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-md ii i-money">S/250</div>
-            <div class="col-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
+            <div class="col-xs-3 col-md ii i-cycle">Anual</div>
+            <div class="col-xs-3 col-md ii i-turn">Mañana</div>
+            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
+            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
+            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
           </div>
         </div>
         <!-- end bucle -->
+
         
         <!-- bucle -->
-        <div class="col-xs-12">
+        <div class="col-xs-12 ii-ul-bucle-item">
           <div class="col-xs-12"><h3>Comas</h3></div>
           <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-md ii i-cycle">Anual</div>
-            <div class="col-md ii i-turn">Mañana</div>
-            <div class="col-md ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-md ii i-money">S/250</div>
-            <div class="col-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
+            <div class="col-xs-3 col-md ii i-cycle">Anual</div>
+            <div class="col-xs-3 col-md ii i-turn">Mañana</div>
+            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
+            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
+            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
           </div>
           <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-md ii i-cycle">Anual</div>
-            <div class="col-md ii i-turn">Mañana</div>
-            <div class="col-md ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-md ii i-money">S/250</div>
-            <div class="col-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
+            <div class="col-xs-3 col-md ii i-cycle">Anual</div>
+            <div class="col-xs-3 col-md ii i-turn">Mañana</div>
+            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
+            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
+            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
           </div>
         </div>
         <!-- end bucle -->

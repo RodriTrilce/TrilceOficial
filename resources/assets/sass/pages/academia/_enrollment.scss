@@ -35,7 +35,7 @@
     margin-right: 3%;
     transition: ease-in-out 0.5s;
   }
-  
+
   .active{
     background: $orange;
     color: white;
@@ -48,12 +48,12 @@
       font-size: 1rem;
     }
   }
-  
+
   .visited{
     background: $orange;
     color: $orange;
   }
-  
+
 }
 
 .enrollment-img{
@@ -66,18 +66,17 @@
 
 // Block of forms
 .enrollment-forms {
-  margin: 1rem auto 5rem auto;
 
   [class*="col-xs"] {
     padding-right: 0.5rem;
   }
-  
+
   @media screen and (max-width: 768px) {
     [class*="col-xs"] {
       padding-right: 0rem;
     }
   }
-  
+
   //  Step 1
   .tab1{
     .blockb{
@@ -86,11 +85,11 @@
         padding: 0;
       }
     }
-    
+
     h3, h2{
       font-weight: bold;
     }
-    
+
     h2{
       font-size: 2rem;
       margin-bottom: 0.2rem;
@@ -102,31 +101,31 @@
         color: $orange;
       }
     }
-    
+
     p{
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
-    
+
     .condition{
       cursor: not-allowed;
     }
-    
+
     .formats{
       margin-bottom: 1rem;
       margin-top: 1rem;
       max-width: 80%;
       font-size: 0.8rem;
     }
-    
+
 }
-  
+
   //  Step 2,3
   .tab2, .tab3{
     h2,h4{
       font-family: 'CaeciliaLTPro-85Heavy';
     }
-    
+
     h2{
       font-size: 1.6rem;
       margin-bottom: 1rem;
@@ -134,11 +133,11 @@
         color: $gray;
       }
     }
-    
+
     h4{
       color: $gray;
     }
-    
+
     .radio-inline{
       border: 1px solid transparentize($gray, .7);
       display: inline-flex;
@@ -153,24 +152,24 @@
       @media screen and (max-width: 768px) {
         width: 30%;
       }
-  
+
       input{
         width: auto;
       }
-      
+
       span{
         display: inline-block;
         font-family: 'Geogrotesque-Md';
       }
     }
-    
+
   }
-  
+
   .checkterms{
     display: inline-block;
     width:5%;
   }
-  
+
   .terms{
     display: none;
     width: 100%;
@@ -181,18 +180,18 @@
     overflow: auto;
     padding: 1rem;
     font-size: 0.9rem;
-    
+
     .list{
       padding: 1rem;
       li{
         padding: 0.5rem;
       }
     }
-    
+
     div{
       display: inline-block;
     }
-    
+
     .terms-9{
       width: auto;
       padding: 2px;
@@ -200,12 +199,12 @@
     }
 
   }
-  
+
   .captcha_enrollment{
     margin-top: 1rem;
     overflow: hidden;
   }
-  
+
   #termsActive{
     color: $orange;
     background: none;
@@ -213,7 +212,7 @@
     padding-bottom: 2rem;
     cursor: pointer;
   }
-  
+
 }
 
 .tab{
@@ -227,10 +226,9 @@
 .enrollment-finish{
   margin-top: 2rem;
   margin-bottom: 2rem;
-  
+
   .title{
     font-size: 1.8rem;
-    
+
   }
 }
-

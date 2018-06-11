@@ -1,5 +1,5 @@
-<div class="row center-xs center-sm">
-  <div class="col-xs-12 col-sm-8 center-xs center-sm text-init solution-table">
+<div class="row center-xs center-sm container-base">
+  <div class="col-xs-12 col-sm-8 start-xs center-sm solution-table">
     
     <!--  headers table-->
     <div class="row solution-title solution-unmsm">
@@ -17,7 +17,7 @@
     <div class="row">
 
       <div class="row col-xs-12">
-        <div class="col-xs-3 solution-year">Año <b>2020</b></div>
+        <div class="col-xs-3 start-xs solution-year">Año <b>2020</b></div>
       
         <div class="col-xs">
           <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>
@@ -29,19 +29,7 @@
       
       <!-- fila -->
       <div class="row col-xs-12">
-        <div class="col-xs-3">Año <b>2020</b></div>
-      
-        <div class="col-xs">
-          <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>
-        </div>
-        <div class="col-xs">
-          <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>
-        </div>
-      </div>
-      <!-- fila -->
-
-      <div class="row col-xs-12">
-        <div class="col-xs-3 solution-year">Año <b>2020</b></div>
+        <div class="col-xs-3 start-xs">Año <b>2020</b></div>
       
         <div class="col-xs">
           <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>
@@ -53,7 +41,19 @@
       <!-- fila -->
 
       <div class="row col-xs-12">
-        <div class="col-xs-3">Año <b>2020</b></div>
+        <div class="col-xs-3 start-xs solution-year">Año <b>2020</b></div>
+      
+        <div class="col-xs">
+          <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>
+        </div>
+        <div class="col-xs">
+          <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>
+        </div>
+      </div>
+      <!-- fila -->
+
+      <div class="row col-xs-12">
+        <div class="col-xs-3 start-xs">Año <b>2020</b></div>
       
         <div class="col-xs">
           <a href=""><i class="fa fa-file-pdf-o"></i> <span>Descargar</span></a>

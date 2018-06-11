@@ -7,204 +7,189 @@ $simulacrum-form-background: #ededed;
 .simulacrum{
   margin-top: 4rem;
   margin-bottom: 2rem;
-  
-  .simulacrum-info{
-    
-    h1{
+}
+
+.simulacrum-info{
+  p{
+    text-indent: 1.2rem;
+  }
+}
+
+.simulacrum-info-ul{
+  margin-top: 50px;
+
+  li{
+    margin-bottom: 2rem;
+
+    span{
+      font-weight: bold;
+    }
+
+    &::before{
       color: $orange;
-      font-size: 2rem;
-      font-family: 'CaeciliaLTPro-85Heavy';
-      margin-bottom: 40px;
-      
-
-      
-      @media screen and (max-width: 768px) {
-        width: 80%;
-        font-size: 1.6rem;
-        margin-left: 1rem;
-      }
+      font-family: $font_icon;
     }
-    
-    p{
-      text-indent: 1.2rem;
+
+    &:nth-child(1)::before {
+      content: "\f2b1";
     }
-    
-    ul{
-      margin-left: 2rem;
-      margin-top: 5rem;
 
-      //squeared adorn
-      &::before{
-        content: "";
-        background: $orange;
-        
-        position: absolute;
-        width: 33px;
-        height: 11px;
-        margin-top: -4.7rem;
-        margin-left: -1.8rem;
-        @media screen and (max-width: 768px) {
-          margin-top: -30px;
-          margin-left: -1rem;
-        }
-      }
-      
-      li{
-        margin-bottom: 2rem;
-        
-        span{
-          font-weight: bold;
-        }
-        
-        &::before{
-          color: $orange;
-          font-family: $font_icon;
-        }
-        
-        &:nth-child(1)::before {
-          content: "\f2b1";
-        }
+    &:nth-child(2)::before {
+      content: "\F15C";
+    }
 
-        &:nth-child(2)::before {
-          content: "\F15C";
-        }
+    &:nth-child(3)::before {
+      content: "\F18F";
+    }
 
-        &:nth-child(3)::before {
-          content: "\F18F";
-        }
-        
-        &:nth-child(4)::before {
-          content: "\f155";
-        }
-        
-      }
-      
-      @media screen and (max-width: 768px) {
-        margin-left: 2rem;
-        margin-top: 3rem;;
-      }
+    &:nth-child(4)::before {
+      content: "\f155";
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;;
+  }
+}
+
+.simulacrum-info-title{
+  position: relative;
+  color: $orange;
+  font-size: 2rem;
+  font-family: 'CaeciliaLTPro-85Heavy';
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  &::before{
+    content: "";
+    background: $orange;
+    position: absolute;
+    width: 22px;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+.simulacrum-form{
+  background: $simulacrum-form-background;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  h2{
+    color: $gray;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: $font_geo_bold;
+  }
+
+
+  div.step-1{
+    margin-top: 1rem;
+
+    button{
+      margin-top: 1rem;
     }
   }
-  
-  .simulacrum-form{
-    background: $simulacrum-form-background;
-    padding: 2rem;
-    padding-left: 3rem;
-    padding-right: 0px;
 
-    @media screen and (max-width: 768px) {
-      padding: 2rem;
+  div.step-2{
+    display: none;
+  }
+
+  fieldset{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+
+    label{
+      width: auto;
+      float: left;
+      margin: 0.8rem;
     }
-    
-    h2{
-      color: $gray;
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    
-    ul{
-      li{
-        margin-bottom: 1.2rem;
+
+    >div{
+      overflow: hidden;
+      width: auto;
+      select{
+        width: 100%;
       }
     }
-    
-    div.step-1{
-      margin-top: 1rem;
-      
-      button{
+
+  }
+
+  button{
+    background: $simulacrum-form-background;
+    font-family: $font_geo_reg;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2{
+      font-size: 1rem;
+    }
+    ul > li{
+      font-size: 0.8rem;
+    }
+  }
+
+
+}
+
+.simulacrum-results{
+
+  >div{
+    padding: 1rem;
+
+    a{
+      color: $gray;
+      @media screen and (max-width: 768px) {
+        display: flex;
+      }
+
+      &:hover{
+        color: $orange;
+        font-weight: bold;
+      }
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 1px;
+      height: 8%;
+      background: transparentize($gray, 0.8);
+      margin-left: 13rem;
+      margin-top: -5rem;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        height: 1px;
+        margin-left: 1px;
         margin-top: 1rem;
       }
     }
-    
-    div.step-2{
-      display: none;
-    }
-    
-    fieldset{
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      width: 100%;
-      
-      label{
-        width: auto;
-        float: left;
-        margin: 0.8rem;
-      }
-  
-      >div{
-        overflow: hidden;
-        width: auto;
-        select{
-          width: 100%;
-        }
-      }
 
-    }
-    
-    button{
-      background: $simulacrum-form-background;
-    }
-    
-  }
-  
-  .simulacrum-results{
-    
-    >div{
-      padding: 1rem;
-      
-      a{
-        color: $gray;
-        @media screen and (max-width: 768px) {
-          display: flex;
-        }
-        
-        &:hover{
-          color: $orange;
-          font-weight: bold;
-        }
-      }
-      
+    &:last-child{
       &::after{
-        content: "";
-        position: absolute;
-        z-index: 1;
-        width: 1px;
-        height: 8%;
-        background: transparentize($gray, 0.8);
-        margin-left: 13rem;
-        margin-top: -5rem;
-        
-        @media screen and (max-width: 768px) {
-          width: 80%;
-          height: 1px;
-          margin-left: 1px;
-          margin-top: 1rem;
-        }
-      }
-      
-      &:last-child{
-        &::after{
-          display: none;
-        }
+        display: none;
       }
     }
-    
-    .simulacrum-results-pdf{
-      font-size: 1.6rem;
+  }
+
+  .simulacrum-results-pdf{
+    font-size: 1.6rem;
+  }
+
+  .simulacrum-results-text{
+    span{
+      display: block;
     }
-    
-    .simulacrum-results-text{
-      span{
-        display: block;
-      }
 
-      @media screen and (max-width: 768px) {
-        margin-left: 1.5rem;
-      }
+    @media screen and (max-width: 768px) {
+      margin-left: 1.5rem;
     }
-  }// End simulacrum-results
-
-}// End simulacrum
-
-
+  }
+}// End simulacrum-results

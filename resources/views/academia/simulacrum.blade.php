@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div class="nuevos-i nuevos-i-force-minus">
+  <div class="nuevos-i nuevos-i-force-minus container-base">
     <div class="row center-xs">
       <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg nuevos-i-border">
 
@@ -58,135 +58,135 @@
             </div>
           </a>
         </div>
-        
+
       </div>
     </div>
   </div>
 
-  <div class="row center-xs center-sm text-init simulacrum">
-    <div class="col-xs-12 col-sm-9">
-      <div class="row">
-        <div class="col-xs-12 col-sm simulacrum-info">
-          <h1>Sobre el simulacro {{ strtoupper($university->short_name)}}</h1>
+  <div class="row col-xs-12 start-xs center-sm simulacrum">
+    <div class="row col-xs-12 col-sm-8 start-xs start-sm">
+
+      <div class="col-xs-12 col-sm simulacrum-info container-base">
+        <h1 class="simulacrum-info-title">Sobre el simulacro {{ strtoupper($university->short_name)}}</h1>
+        <ul class="simulacrum-info-ul">
+          <li>
+            <span>Inscripciones:</span>
+            <p>{$data->date_signup}</p>
+          </li>
+          <li>
+            <span>Fecha del examen:</span>
+            <p>{$data->date_exam}</p>
+          </li>
+          <li>
+            <span>Hora:</span>
+            <p>$date->hour</p>
+          </li>
+          <li>
+            <span>Locales</span>
+            <p>$date->avenue</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm simulacrum-form container-base">
+        <div class="row start-xs step-1" id="step1">
+          <h2>Regístrate para participar</h2>
           <ul>
-            <li>
-              <span>Inscripciones:</span>
-              <p>{$data->date_signup}</p>
-            </li>
-            <li>
-              <span>Fecha del examen:</span>
-              <p>{$data->date_exam}</p>
-            </li>
-            <li>
-              <span>Hora:</span>
-              <p>$date->hour</p>
-            </li>
-            <li>
-              <span>Locales</span>
-              <p>$date->avenue</p>
-            </li>
+            <li>1. Ingresa tu DNI</li>
+            <li>2. Presiona "Validar Datos"</li>
+            <li>3. Al final del registro, no olvides anotar tu código de inscripción</li>
           </ul>
-        </div>
-        <div class="col-xs-12 col-sm-5 simulacrum-form">
-          <div class="row start-xs step-1" id="step1">
-            <h2>Regístrate para participar</h2>
-            <ul>
-              <li>1. Ingresa tu DNI</li>
-              <li>2. Presiona "Validar Datos"</li>
-              <li>3. Al final del registro, no olvides anotar tu código de inscripción</li>
-            </ul>
-            <div class="col-xs-6 text-init">
-              <input type="text" name="f1_dni" id="s1_dni" placeholder="DNI">
-              <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
-            </div>
+          <div class="col-xs-6 text-init">
+            <input type="text" name="f1_dni" id="s1_dni" placeholder="DNI">
+            <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
           </div>
+        </div>
 
-          <div class="row start-x step-2" id="step2">
-            <h2>Déjanos tus datos</h2>
-            <div class="col-xs-12 col-sm-11 text-init">
-              <fieldset>
-                <input type="text" name="s2_dni" id="s2_dni" readonly>
-              </fieldset>
-              
-              <fieldset>
-                <input type="text" name="" id="" placeholder="Apellido paterno">
-              </fieldset>
-          
-              <fieldset>
-                <input type="text" name="" id="" placeholder="Apellido materno">
-              </fieldset>
-          
-              <fieldset>
-                <input type="text" name="" id="" placeholder="Nombres">
-              </fieldset>
-          
-              <fieldset>
-                <input type="text" name="" id="" placeholder="Email">
-              </fieldset>
-          
-              
-              <fieldset>
-                <label for="s2_venue">Local Inscripción</label>
-                <div>
-                  <select id="s2_venue" name="s2_venue">
-                    <option value="volvo">Ciclos...</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </fieldset>
-              
-              <fieldset>
-                <label for="s2_type_exam">Tipo de examen</label>
-                <div>
-                  <select id="s2_type_exam" name="s2_type_exam">
-                    <option value="volvo">Ciclos...</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </fieldset>
-              
-              <fieldset>
-                <label for="s2_area">Área</label>
-                <div>
-                  <select id="s2_area" name="s2_area">
-                    <option value="volvo">Ciclos...</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </fieldset>
-              
-              <fieldset>
-              <label for="s2_career">Carrera</label>
-                <div>
-                  <select id="s2_career" name="s2_career">
-                    <option value="volvo">Ciclos...</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </fieldset>
-              
-              <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
-              
-              <button type="button" name="s2_validate" id="s2_validate" class="validate">Registrar <i class="fa fa-check"></i></button>
-            </div>
+        <div class="row start-x step-2" id="step2">
+          <h2>Déjanos tus datos</h2>
+          <div class="col-xs-12 col-sm-11 text-init">
+            <fieldset>
+              <input type="text" name="s2_dni" id="s2_dni" readonly>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="" id="" placeholder="Apellido paterno">
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="" id="" placeholder="Apellido materno">
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="" id="" placeholder="Nombres">
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="" id="" placeholder="Email">
+            </fieldset>
+
+
+            <fieldset>
+              <label for="s2_venue">Local Inscripción</label>
+              <div>
+                <select id="s2_venue" name="s2_venue">
+                  <option value="volvo">Ciclos...</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <label for="s2_type_exam">Tipo de examen</label>
+              <div>
+                <select id="s2_type_exam" name="s2_type_exam">
+                  <option value="volvo">Ciclos...</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <label for="s2_area">Área</label>
+              <div>
+                <select id="s2_area" name="s2_area">
+                  <option value="volvo">Ciclos...</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+            <label for="s2_career">Carrera</label>
+              <div>
+                <select id="s2_career" name="s2_career">
+                  <option value="volvo">Ciclos...</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
+
+            <button type="button" name="s2_validate" id="s2_validate" class="validate">Registrar <i class="fa fa-check"></i></button>
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  
+
   <div class="row center-xs center-sm text-init simulacrum">
     <div class="col-xs-12 col-sm-9">
       <div class="row simulacrum-results">
-        
+
       @foreach ($data as $key => $v)
         <div class="col-xs-12 col-sm-2">
           <a href="{{ $v->url }}" target="_blank">
@@ -201,7 +201,7 @@
           </a>
         </div>
       @endforeach
-              
+
       </div>
     </div>
   </div>

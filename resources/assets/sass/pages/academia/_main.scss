@@ -12,8 +12,7 @@
   margin-bottom: 5%;
 
   @media screen and (max-width: 768px) {
-    max-width: 85%;
-    margin: 3% auto;
+    max-width: 100%;
   }
   
   .nuevos-i-title{
@@ -122,7 +121,6 @@
           
           h3{
             font-size: 1.3rem;
-            line-height: 1rem;
           }
           
           h4{
@@ -191,7 +189,7 @@
         
         .nuevos-i-top{
           text-align: left;
-          text-transform: uppercase;
+          
           
           img{
             max-width: 25%;
@@ -204,7 +202,7 @@
           }
           
           h4{
-            letter-spacing: 0;
+            letter-spacing: 3px;
             font-size: 1rem;
           }
         }
@@ -258,10 +256,10 @@
     position: absolute;
     content: "";
     background: $orange;
-    width: 2rem;
-    height: 1rem;
+    width: 1.6rem;
+    height: .7rem;
     z-index: 1;
-    bottom: -48px;
+    bottom: -46px;
     left: 10px;
   }
 
@@ -288,10 +286,12 @@
   
   select{
     max-width: auto;
+    
   }
   
 }
 .nuevos-i-list-selects{
+  margin-bottom: 20px;
 
   @media screen and (max-width: 768px){
     margin-top: 2rem;
@@ -307,7 +307,6 @@
     select{
       @media screen and (max-width: 768px) {
         margin: 0;
-        max-width: 75%;
       }
       
     }
@@ -316,8 +315,6 @@
 
 .nuevos-i-list-data{
   margin-top: 1rem;
-  max-width: 75%;
-  margin: 2% auto;
   
   h3{
     color: $orange;
@@ -329,7 +326,7 @@
 
 .ii{
    @media screen and (max-width: 768px) {
-     font-size: 0.8rem;
+     font-size: 0.7rem;
      margin-top: 0.3rem;
      padding-right: 1rem;
    }
@@ -346,7 +343,7 @@
 }
 
 .ii-li{
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .ii-ul-bucle-item{

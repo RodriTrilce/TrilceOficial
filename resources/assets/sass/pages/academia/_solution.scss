@@ -8,9 +8,7 @@
   font-family: 'CaeciliaLTPro-85Heavy';
 
   @media screen and (max-width: 768px) {
-    width: 80%;
     font-size: 1rem;
-    margin-left: 2rem;
   }
   
   &::before{
@@ -24,12 +22,24 @@
   
 }
 
+.solution-h1-title{
+  margin-top: 30px;
+}
+
 .solution-table{
   margin-top: 4rem;
   margin-bottom: 3rem;
   font-family: 'Geogrotesque-Rg';
   font-size: 1.1rem;
   color: $gray;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
+    font-size: .9rem;
+    span{
+      display: none;
+    }
+  }
   
   .solution-title{
     margin-bottom: 0.5rem;
@@ -42,7 +52,7 @@
       
       @media screen and (max-width: 768px) {
         padding: 0.3rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
       
       &:nth-child(2){
@@ -86,14 +96,7 @@
     font-size: 2rem;
   }
   
-  @media screen and (max-width: 768px) {
-    margin-top: 2rem;
-    padding-left: 1rem;
-    span{
-      display: none;
-    }
-  }
-  
+
   .col-xs-3, .col-xs{
     margin-top: 0.5rem;
     
@@ -119,13 +122,19 @@
 
 .solution-hr{
   border: 1px solid $orange;
-  width: 67%;
+  width: 95%;
   margin: 0 auto 4rem;
+}
+
+.fa-file-pdf-o{
+  font-size: 1.3rem;
 }
 
 
 
-
+.pagination-botton-padding{
+  margin-bottom: 20px;
+}
 
 
 

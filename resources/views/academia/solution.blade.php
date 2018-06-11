@@ -10,12 +10,12 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Solucionarios</h1>
-        <p class="header-double-p-up soluion-header-p">Los exámenes de admisión resueltos de UNI, San Marcos y PUCP.</p>
+        <p class="header-double-p-up soluion-header-p">Los exámenes de admisión resueltos de UNI, UNMSM y PUCP.</p>
       </div>
     </div>
   </div>
 
-  <div class="nuevos-i nuevos-i-force-minus">
+  <div class="nuevos-i nuevos-i-force-minus container-base">
     <div class="row center-xs">
       <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg nuevos-i-border">
 
@@ -63,8 +63,8 @@
     </div>
   </div>
   
-  <div class="row center-xs center-sm text-init h-mtop">
-    <div class="col-xs-12 col-sm-8">
+  <div class="row start-xs center-sm solution-h1-title container-base">
+    <div class="col-xs-12 col-sm-8 start-xs start-sm">
       <h1 class="solution-h1">
         Descarga los exámenes de admisión resueltos
       </h1>
@@ -87,9 +87,9 @@
   
   <hr class="solution-hr">
   
-  <div class="row center-xs">
+  <div class="row center-xs pagination-botton-padding">
     <div class="col-xs-12 pagination">
-      <span>1</span> de 3 | Siguiente
+      <div class="pagination-item">1</div> de 3 | Siguiente
     </div>
   </div>
 

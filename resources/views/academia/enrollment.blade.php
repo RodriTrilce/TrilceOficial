@@ -35,7 +35,7 @@
   </div>
 @endif
 
-  <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms">
+  <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms container-base">
     <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
       @csrf
 
@@ -43,15 +43,15 @@
           <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
             <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
           </div>
-          
+
           <div class="col-xs-12 col-sm-6 col-md-5 text-init blockb">
             <h2>Ficha de inscripción <span>2018</span></h2>
             <h3>Nuevos inicios</h3>
             <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
-            
+
             <div class="form">
                 <div class="row col-xs-12 col-sm-10">
-                  
+
                   <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
                       <input type="number" min="0" name="step1_dni" placeholder="DNI" aria-label="DNI" minlength="8" maxLength="8" required>
@@ -68,7 +68,7 @@
                       </select>
                     </fieldset>
                   </div>
-                  
+
                   <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
                       <select name="step1_venue" id="step1_venue" aria-label="Sede" required>
@@ -84,7 +84,7 @@
                       </select>
                     </fieldset>
                   </div>
-                  
+
                   <div class="col-xs-12 col-sm-12">
                     <fieldset class="form-group">
                       <select name="step1_turn" id="step1_turn" aria-label="Turno" required>
@@ -94,7 +94,7 @@
                       </select>
                     </fieldset>
                   </div>
-                  
+
                   <input type="text" class="condition" name="step1_condition" placeholder="Condición" value="P" hidden readonly>
                 </div>
 
@@ -127,7 +127,7 @@
                     </fieldset>
                   </div>
                 </div>
-              
+
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
@@ -203,7 +203,7 @@
                     </fieldset>
                   </div>
                 </div>
-                
+
                 <br />
                 <h4>Datos académicos</h4>
                 <div class="row col-xs-12">
@@ -241,12 +241,12 @@
                 </div>
 
           </div>
-        
+
       </div>
       <!-- end step2 -->
 
       <div class="tab tab3 row center-xs">
-        
+
           <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
               <h2>Datos generales del <i>Padre y/o apoderado</i></h2>
 
@@ -265,7 +265,7 @@
                     </fieldset>
                   </div>
                 </div>
-              
+
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-9">
                     <fieldset class="form-group">
@@ -309,7 +309,7 @@
                     </fieldset>
                   </div>
                 </div>
-                
+
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
@@ -322,7 +322,7 @@
                     </fieldset>
                   </div>
                 </div>
-                
+
                 <div class="row col-xs-12">
                   <div class="col col-xs-12">
                     <fieldset class="form-group">
@@ -331,7 +331,7 @@
                     </fieldset>
                     <span><a id="termsActive">Leer términos y condiciones</a></span>
                   </div>
-                  
+
                   <div class="terms" id="terms">
                     <h1>CONDICIONES ECONÓMICAS Y DEL SERVICIO DE LA ACADEMIA PREUNIVERSITARIA</h1>
                     <ol class="list">
@@ -375,14 +375,14 @@
 
                     <li>La pérdida del libro <div id="terms-9"><select id="terms-9-s" class="terms-9"><option value="ciencia" selected>Ciencia</option><option value="letras">Letras</option></select></div> que otorga la institución dará lugar al cobro de S/<div id="terms-91"></div> por concepto
                     de duplicado.</li>
-                    
+
                     <li>La institución realiza maratones académicas en horario diurno y nocturno, sin ser
                     obligatoria la asistencia para el alumno. En caso asista, tendrá que efectuar el pago
                     adicional de S/<div id="terms-10">5</div>.</li>
 
                     <li> El dictado de clases iniciará siempre que se alcance el número mínimo de alumnos
                     matriculados establecido por la institución.</li>
-                    
+
                     <li>Manifiesto mi conformidad en caso la institución cambie la fecha de inicio del dictado de
                     clases del ciclo en cuestión.</li>
 
@@ -404,14 +404,14 @@
                     para fines de la actividad que desarrolla de acuerdo a la ley N° 29733"</strong></p>
                   </div>
                 </div>
-                
+
                 <div class="row col-xs-12 captcha_enrollment">
                   <div class="col-xs-12">
                     <fieldset class="form-group">
                       <input type="captcha" class="captcha" name="captcha" id="captcha" aria-label="Captcha">
                     </fieldset>
                   </div>
-                  
+
                   <div class="col-xs-12">
                     <div class="g-recaptcha" data-callback="captcha" data-sitekey="{{env('GOOGLE_RECAPTCHA_KEY')}}"></div>
                   </div>
@@ -421,7 +421,7 @@
 
       </div>
       <!-- end step3 -->
-      
+
       <div class="row col-xs-12 col-sm-8 center-sm stepsarrows">
         <div class="col-xs start-xs">
           <fieldset>
@@ -445,7 +445,7 @@
 
 @section('scripts')
     page = 'enrollment';
-    
+
     function captcha(){
       if(grecaptcha.getResponse().length > 0){
         document.getElementById("captcha").value = 'valid';

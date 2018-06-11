@@ -591,8 +591,15 @@ nav{
   }
 }
 
+
 .nav-colegio-structure{
   @media screen and (max-width: 768px) {
+    
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    
     >ul{
       >li{
         border: 0;

@@ -23,8 +23,8 @@
         </div>
       </div>
       
-      <div class="row nuevos-i-box col-xs-12 col-sm-11 col-md-10 col-lg-9 between-xs center-sm center-md center-lg">
-        <div class="col-xs">
+      <div class="row nuevos-i-box col-xs-12 col-sm-11 col-md-10 col-lg-9 between-xs center-sm center-md center-lg block-effecthover">
+        <div class="col-xs block-effecthover-item">
           <a href="/academia/preparacion-uni">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-uni.jpg" alt="UNI">
@@ -37,7 +37,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs">
+        <div class="col-xs block-effecthover-item">
           <a href="/academia/preparacion-san-marcos">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
@@ -50,7 +50,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs">
+        <div class="col-xs block-effecthover-item">
           <a href="/academia/preparacion-pucp">
             <div class="nuevos-i-top">
               <img src="/static/images/academia/ico-logo-cato.jpg" alt="PUCP">

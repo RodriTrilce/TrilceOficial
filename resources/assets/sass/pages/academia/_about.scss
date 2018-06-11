@@ -5,7 +5,7 @@ $gray_candy: transparentize($gray, 0.6);
   margin-top: 10rem;
   margin-bottom: 2rem;
   @media screen and (max-width: 768px){
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -13,23 +13,9 @@ $gray_candy: transparentize($gray, 0.6);
   
   // Block
   >div{
-    padding: 1.2rem;
+    padding: 0.5rem;
     position: relative;
-
-    // Only Desktop border left and bottom
-    @media screen and (min-width: 768px){
-      border-left: 1.2px solid $orange;
-      border-bottom: 1.2px solid $gray_candy;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-    }
     
-    @media screen and (max-width: 768px){
-      margin-top: 1rem;
-      padding-left: 2.2rem;
-      padding-right: 0;
-    }// end @media
-
     h2{
       color: $orange;
       font-size: 1.5rem;
@@ -41,6 +27,30 @@ $gray_candy: transparentize($gray, 0.6);
       font-size: 0.9rem;
     }
     
+    // Only Desktop border left and bottom
+    @media screen and (min-width: 768px){
+      border-left: 1.2px solid $orange;
+      border-bottom: 1.2px solid $gray_candy;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    
+    // Only mobile
+    @media screen and (max-width: 768px){
+      margin-top: 1rem;
+      padding-left: 2.2rem;
+      padding-right: 0;
+      
+      h2{
+        font-size: 1rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+      
+    }// end @media
+
+
     // Only desktop colors variant left and bottom
     @media screen and (min-width: 768px){
       &:nth-child(even){
@@ -122,7 +132,7 @@ $gray_candy: transparentize($gray, 0.6);
       @media screen and (max-width: 768px){
         padding: 0.5rem;
         left: -0.5rem;
-        top: 1.2rem;
+        top: 0.5rem;
         font-size: 1.3rem;
       }
     }

@@ -380,3 +380,53 @@
 
 
 
+.block-effecthover-item {
+  transition: all 2s ease-out;
+  border-color: $orange !important;
+  
+  h3,h4{
+    color: $gray !important;
+  }
+  
+  img{
+    opacity:1 !important;
+    filter: alpha(opacity=100) !important;
+  }
+  
+  .nuevos-i-bottom{
+    font-weight: bold !important;
+  }
+  
+  .nuevos-i-top{
+    color: $gray !important;
+  }
+}// End block-effecthover-item
+
+.block-effecthover{
+  transition: all 0.2s ease-out !important;
+  &:hover{
+    .block-effecthover-item:not(:hover){
+      border: 0.55rem solid transparentize($gray, .7) !important;
+
+      h3{
+        color: transparentize($gray, 0.4) !important;
+      }
+      
+      h4{
+        color: transparentize($gray, 0.4) !important;
+      }
+      
+      img{
+        opacity: 0.4 !important;
+        filter: alpha(opacity=40) !important;
+      }
+      
+      .nuevos-i-bottom{
+        color: transparentize($gray, 0.4) !important;
+      }
+    }
+      
+  }// End block-effecthover-item not hover
+  
+}
+

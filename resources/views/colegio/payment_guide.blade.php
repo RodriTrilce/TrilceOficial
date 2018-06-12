@@ -11,8 +11,8 @@
       <img src="{{ url('/static/images/colegio/pages-banners/banner-pagosenlinea-movil.jpg') }}" alt="">
     </div>
   </div>
-  
-  <div class="row col-xs-12 center-xs playmentguide-content">
+
+  <div class="row col-xs-12 center-xs container-base playmentguide-content">
     <div class="row col-xs-12 col-sm-10 col-md-8 start-xs start-sm start-md ">
 
       <div class="col-xs-12">
@@ -25,11 +25,11 @@
         <div class="col-xs playmentguide-optionitem"><a href="" target="_blank"><img src="{{ url('/static/images/colegio/logo-bbva.jpg') }}" alt="Guía de pagos para "></a></div>
         <div class="col-xs playmentguide-optionitem"><a href="" target="_blank"><img src="{{ url('/static/images/colegio/logo-bcp.jpg') }}" alt="Guía de pagos para "></a></div>
       </div>
-      
+
     </div>
   </div>
-    
-  
+
+
   <hr class="grayhr2 xs-hide" />
 
   @include('colegio.partials.card_bottom')

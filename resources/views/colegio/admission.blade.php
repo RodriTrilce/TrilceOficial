@@ -16,9 +16,9 @@
 
   <div class="nuevos-i">
     <div class="row center-xs">
-      
+
       <div class="row col-xs-12 col-sm-6 col-md-6 between-xs center-sm center-md center-lg nuevos-i-box nuevos-i-force-minus">
-        
+
         <div class="col-xs @if($type=='nuevo') hover-active hover-blue @endif">
           <a href="/colegio/admision-nuevo">
             <div class="nuevos-i-top">
@@ -31,7 +31,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="col-xs @if($type=='traslado') hover-active hover-yellow @endif">
           <a href="/colegio/admision-traslado">
             <div class="nuevos-i-top">
@@ -44,7 +44,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="col-xs @if($type=='regular') hover-active hover-orange @endif">
           <a href="/colegio/admision-regular">
             <div class="nuevos-i-top">
@@ -58,10 +58,10 @@
           </a>
         </div>
       </div>
-      
+
     </div>
   </div>
-  
+
   @switch($type)
     @case('nuevo')
       @include('colegio.partials.admission.new')
@@ -75,15 +75,15 @@
       @include('colegio.partials.admission.regular')
       @break
   @endswitch
-    
+
   <hr class="grayhr2" />
-    
+
 @include('colegio.partials.card_bottom')
 
 @endsection
 @section('scripts')
-  
+
     page = 'admission';
-    
+
     @parent
 @endsection

@@ -1,18 +1,18 @@
 .admission-new-title{
   font-family: $font_geo_reg;
   margin-bottom: 1.5rem;
-  
+
   .new-t-title{
     font-family: $font_geo_bold;
     color: $gray;
     font-size: 2rem;
     line-height: 1.5rem;
   }
-  
+
   .new-t-subtitle{
     font-size: 1.2rem;
   }
-  
+
   .new-t-p{
     margin-top: 0.5rem;
     color: $gray;
@@ -31,13 +31,13 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .step-guide{
     padding: 0.3rem;
     font-size: 1rem;
     background: $colegio_gray;
   }
-  
+
   .step-number{
     font-weight: bold;
     font-size: 2rem;
@@ -46,9 +46,8 @@
 }
 
 .admission-new-item{
-  padding: 0.5rem;
   padding-bottom: 2rem;
-  
+
   @media (min-width: 700px){
     padding-bottom: 5rem;
   }
@@ -56,12 +55,12 @@
 
 .admission-new-item-content{
   margin-left: 1rem;
-  
+
   .item-content-title{
     font-family: $font_cae_bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    
+
     @media (max-width: 700px){
       font-size: 1.2rem;
     }
@@ -71,7 +70,7 @@
 .admission-new-table{
   ul{
     margin-left: 0.6rem;
-    
+
     li{
       color: $gray;
       font-size: 1.1rem;
@@ -79,7 +78,7 @@
         font-size: 0.8rem;
       }
     }
-    
+
     li::before{
       content: "\F186";
       color: $colegio_blue;
@@ -88,7 +87,7 @@
       font-weight: bold;
       margin-right: 5px;
     }
-    
+
     >ul{
       li{
         &::before{
@@ -101,7 +100,7 @@
         }
       }
     }
-    
+
   }
 }
 
@@ -114,7 +113,7 @@
     li::before{
       color: $colegio_yellow !important;
     }
-    
+
     >ul li::before{
       color: $colegio_yellow !important;
     }

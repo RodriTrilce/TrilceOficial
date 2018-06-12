@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div class="row col-xs-12 center-xs admission-new-table admission-transfer-table">
+<div class="row col-xs-12 center-xs container-base admission-new-table admission-transfer-table">
   <div class="row col-xs-12 col-sm-10 col-md-7 start-xs">
 
     <div class="row col-xs-12 col-sm-6 admission-new-item">
@@ -91,8 +91,8 @@
         </ul>
       </div>
     </div>
-    
+
   </div>
 </div>
 
-<div class="col-xs-12 center-xs admission-new-superindex"><sup>1</sup> Plazo de entrega: Hasta el día de la Evaluación.</div>
+<div class="col-xs-12 start-xs container-base admission-new-superindex"><sup>1</sup> Plazo de entrega: Hasta el día de la Evaluación.</div>

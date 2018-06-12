@@ -1,7 +1,6 @@
 .playmentguide-content{
   margin-top: 3rem;
   margin-bottom: 5rem;
-  padding: 0.5rem;
   font-family: $font_geo_reg;
   color: $gray;
 }
@@ -22,9 +21,9 @@
 }
 
 .playmentguide-option{
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 50px;
-  
+
   &:hover{
     .playmentguide-optionitem:not(:hover){
         img{
@@ -32,24 +31,24 @@
         }
     }
   }
-  
+
 }
 
 .playmentguide-optionitem{
   position: relative;
   padding-right: 20px;
   padding-left: 20px;
-  
+
   a{
     display: block;
     width: 100%;
     height: 100%;
   }
-  
+
   img{
     transition: opacity 0.4s ease-in-out;
   }
-  
+
   &::after{
     content: "";
     position: absolute;
@@ -59,11 +58,11 @@
     background: $colegio_gray;
     height: 200%;
   }
-  
+
   &:last-child::after{
     display: none;
   }
-  
+
   @media screen and (max-width: 700px){
     img{
       max-width: 75%;

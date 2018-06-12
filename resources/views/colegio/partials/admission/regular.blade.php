@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div class="row col-xs-12 center-xs admission-new-table admission-transfer-table">
+<div class="row col-xs-12 center-xs container-base admission-new-table admission-transfer-table">
   <div class="row col-xs-12 center-xs">
     <div class="col-xs-12">    <h3 class="admission-regular-title">Inscripción</h3></div>
     <div style="max-width:500px; text-align:left;">
@@ -17,7 +17,6 @@
         <li>Firma de compromiso de Honor 2019.</li>
       </ul>
     </div>
-    
+
   </div>
 </div>
-

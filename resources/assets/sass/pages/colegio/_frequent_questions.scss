@@ -1,7 +1,6 @@
 .frequentquestions{
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 0.4rem;
   color: $gray;
 }
 
@@ -20,7 +19,7 @@
   margin-bottom: 1rem;
   counter-increment: item;
   color: $gray;
-  
+
   .question-number{
     justify-content: center;
     align-items: center;
@@ -30,13 +29,13 @@
     @media screen and (max-width: 700px){
       font-size: 1rem;
     }
-    
+
     &::before{
       color: $gray;
       content: counter(item);
     }
   }
-  
+
   .question-content{
     margin-bottom: 1rem;
     font-family: $font_geo_reg !important;
@@ -47,7 +46,7 @@
       margin-top: 1rem;
     }
   }
-  
+
   .question-title{
     font-family: $font_cae_reg;
     font-size: 1.2rem;
@@ -55,12 +54,12 @@
       font-size: 1rem;
     }
   }
-  
+
   .question-answer{
     text-align: justify;
     font-size: 0.9rem;
   }
-  
+
   ul{
     list-style: square;
   }

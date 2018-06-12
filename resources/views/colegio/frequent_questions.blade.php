@@ -11,14 +11,14 @@
       <img src="{{ url('/static/images/colegio/pages-banners/banner-pregunta-frecuente-movil.jpg') }}" alt="">
     </div>
   </div>
-  
-  <div class="row col-xs-12 center-xs frequentquestions">
+
+  <div class="row col-xs-12 center-xs container-base frequentquestions">
     <div class="col-xs-12">
       <h1 class="frequentquestions-title">Preguntas frecuentes</h1>
     </div>
-    
+
     <div class="col-xs-12 col-sm-8 col-md-6 start-xs start-sm start-md frequentquestions-block">
-    
+
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 col-sm-2 question-number"></div>
       <div class="col-xs-10 question-content">
@@ -127,7 +127,7 @@
     1° a 4° grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
     *A partir de 5° grado cuentas con un profesor por curso (Polidocencia).<br>
     *Religión: Se dicta el curso de religión a los alumnos de inicial (Pre-Kinder y Kinder) y primaria de 1° a 6° grado.<br><br>
-                                                    
+
     <strong>Secundaria:</strong><br>
     Formación de valores: Se trabaja un valor por mes de 1° a 5° de secundaria.</p>
             </div>
@@ -419,11 +419,11 @@
             </div>
           </div>
 
-      
+
     </div>
   </div>
-    
-  
+
+
   <hr class="grayhr2 xs-hide" />
 
   @include('colegio.partials.card_bottom')

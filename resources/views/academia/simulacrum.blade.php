@@ -17,7 +17,7 @@
 
   <div class="nuevos-i nuevos-i-force-minus container-base">
     <div class="row center-xs">
-      <div class="row nuevos-i-box col-xs-12 col-md-9 col-sm-12 between-xs center-sm center-md center-lg nuevos-i-border">
+      <div class="row nuevos-i-box col-xs-12 col-sm-9 col-md-8 between-xs center-sm center-md center-lg nuevos-i-border">
 
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='UNI') nuevos-i-active @endif">
           <a href="/academia/simulacros-uni">
@@ -67,22 +67,22 @@
     <div class="row col-xs-12 col-sm-8 start-xs start-sm">
 
       <div class="col-xs-12 col-sm simulacrum-info container-base">
-        <h1 class="simulacrum-info-title">Sobre el simulacro {{ strtoupper($university->short_name)}}</h1>
+        <h2 class="simulacrum-info-title">Sobre el simulacro {{ strtoupper($university->short_name)}}</h2>
         <ul class="simulacrum-info-ul">
           <li>
-            <span>Inscripciones:</span>
+            <span class="simulacrum-info-li-title">Inscripciones:</span>
             <p>{$data->date_signup}</p>
           </li>
           <li>
-            <span>Fecha del examen:</span>
+            <span class="simulacrum-info-li-title">Fecha del examen:</span>
             <p>{$data->date_exam}</p>
           </li>
           <li>
-            <span>Hora:</span>
+            <span class="simulacrum-info-li-title">Hora:</span>
             <p>$date->hour</p>
           </li>
           <li>
-            <span>Locales</span>
+            <span class="simulacrum-info-li-title">Locales</span>
             <p>$date->avenue</p>
           </li>
         </ul>
@@ -183,10 +183,8 @@
     </div>
   </div>
 
-  <div class="row center-xs center-sm text-init simulacrum">
-    <div class="col-xs-12 col-sm-9">
-      <div class="row simulacrum-results">
-
+  <div class="row center-xs center-sm text-init simulacrum container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 simulacrum-results">
       @foreach ($data as $key => $v)
         <div class="col-xs-12 col-sm-2">
           <a href="{{ $v->url }}" target="_blank">
@@ -201,8 +199,6 @@
           </a>
         </div>
       @endforeach
-
-      </div>
     </div>
   </div>
 

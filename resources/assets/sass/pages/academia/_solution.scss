@@ -4,22 +4,18 @@
 
 .solution-h1{
   color: $orange;
-  font-size: 2rem;
   font-family: 'CaeciliaLTPro-85Heavy';
 
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
-  
-  &::before{
-    content: '';
-    width: 35px;
-    height: 10px;
-    position: absolute;
-    background: $orange;
-    margin-top: 3rem;
-  }
-  
+
+  // &::before{
+  //   content: '';
+  //   width: 35px;
+  //   height: 10px;
+  //   position: absolute;
+  //   background: $orange;
+  //   margin-top: 3rem;
+  // }
+
 }
 
 .solution-h1-title{
@@ -27,7 +23,7 @@
 }
 
 .solution-table{
-  margin-top: 4rem;
+  margin-top: 20px;
   margin-bottom: 3rem;
   font-family: 'Geogrotesque-Rg';
   font-size: 1.1rem;
@@ -40,7 +36,7 @@
       display: none;
     }
   }
-  
+
   .solution-title{
     margin-bottom: 0.5rem;
     font-family: 'CaeciliaLTPro-45Light';
@@ -49,12 +45,12 @@
       color: white;
       text-align: center;
       padding: 1.3rem;
-      
+
       @media screen and (max-width: 768px) {
         padding: 0.3rem;
         font-size: 0.7rem;
       }
-      
+
       &:nth-child(2){
         background: $orange;
       }
@@ -68,7 +64,7 @@
       }
     }// End Div
   }
-  
+
   .solution-unmsm{
     font-size: 1.3rem;
     @media screen and (max-width: 768px) {
@@ -76,7 +72,7 @@
       font-size: 0.8rem;
     }
   }
-  
+
   .solution-boders{
     >div{
       &:nth-child(1){
@@ -90,31 +86,31 @@
       }
     }
   }
-  
+
   i{
     color: $orange;
     font-size: 2rem;
   }
-  
+
 
   .col-xs-3, .col-xs{
     margin-top: 0.5rem;
-    
+
     a{
       display: block;
       width: 100%;
       height: 100%;
     }
-    
+
     a:link, a:visited{
       color: $gray;
     }
-    
+
     a:hover{
       color: $orange;
     }
   }
-  
+
   .solution-year{
     color: $orange;
   }
@@ -135,7 +131,3 @@
 .pagination-botton-padding{
   margin-bottom: 20px;
 }
-
-
-
-

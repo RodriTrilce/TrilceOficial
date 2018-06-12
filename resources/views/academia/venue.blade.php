@@ -13,26 +13,26 @@
       </div>
     </div>
   </div>
-  
+
   <div class="row col-xs-12 center-xs venue">
-    <div class="row col-xs-12 col-sm-9 start-xs">
-      
-      <div class="col-xs-12 col-sm venue-content-left">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs">
+
+      <div class="col-xs-12 col-sm container-base">
         <h2>Información general</h2>
         <div class="hr"></div>
-        <ul class='venue-ul'>
-          <li><b>Horario de Atención:</b> <br>{{ $data->horary }}</li>
-          <li><b>Dirección:</b> <br>{{ $data->direction }}</li>
-          <li><b>Teléfono:</b> <br>{{ $data->phone }}</li>
+        <ul class="venue-ul">
+          <li><b class="venue-li-title">Horario de Atención:</b> <br>{{ $data->horary }}</li>
+          <li><b class="venue-li-title">Dirección:</b> <br>{{ $data->direction }}</li>
+          <li><b class="venue-li-title">Teléfono:</b> <br>{{ $data->phone }}</li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm map-container">
         <div id="map"></div>
       </div>
-    
+
     </div>
   </div>
-    
+
 
   @include('academia.partials.card_bottom')
 @endsection
@@ -70,7 +70,7 @@
           });
 
           marker.setIcon('{{url('/static/images/map-marker.png')}}');
-          
+
           if(props.content){
               var infoWindow = new google.maps.InfoWindow({
                   content:props.content

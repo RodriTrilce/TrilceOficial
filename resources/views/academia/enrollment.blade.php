@@ -35,7 +35,8 @@
   </div>
 @endif
 
-  <div class="row col-xs-11 col-sm-11 col-md-9 center-sm enrollment-forms container-base">
+  <div class="row col-xs-12 center-xs">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-md enrollment-forms container-base">
     <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
       @csrf
 
@@ -438,7 +439,7 @@
 
     </form>
   </div>
-
+  </div>
 
   @include('academia.partials.card_bottom')
 @endsection

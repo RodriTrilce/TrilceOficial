@@ -58,8 +58,9 @@
 
 .enrollment-img{
   img{
-    padding: 1rem;
-    padding-top: 0;
+    padding: 5px;
+    padding-top: 20px;
+    max-width: 80%;
   }
 }
 
@@ -68,6 +69,17 @@
 .enrollment-forms {
   margin-bottom: 20px;
 
+  fieldset{
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    [class*="col-xs"] {
+      margin-right: 0px;
+    }
+  }
+
+/*
   [class*="col-xs"] {
     padding-right: 0.5rem;
   }
@@ -77,11 +89,12 @@
       padding-right: 0rem;
     }
   }
+*/
 
   //  Step 1
   .tab1{
     .blockb{
-      padding-top: 4rem;
+      padding-top: 30px;
       @media screen and (max-width: 768px) {
         padding: 0;
       }
@@ -120,6 +133,7 @@
     }
 
 }
+
 
   //  Step 2,3
   .tab2, .tab3{

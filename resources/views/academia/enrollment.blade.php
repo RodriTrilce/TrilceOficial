@@ -35,17 +35,17 @@
   </div>
 @endif
 
-  <div class="row col-xs-12 center-xs">
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-md enrollment-forms container-base">
+  <div class="row col-xs-12 center-xs container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-md enrollment-forms">
     <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
       @csrf
 
       <div class="tab tab1 row">
-          <div class="col-xs-12 col-sm-5 col-md-6 center-sm xs-hide enrollment-img">
+          <div class="col-xs center-xs xs-hide enrollment-img">
             <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-5 text-init blockb">
+          <div class="col-xs start-xs blockb">
             <h2>Ficha de inscripción <span>2018</span></h2>
             <h3>Nuevos inicios</h3>
             <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
@@ -423,7 +423,7 @@
       </div>
       <!-- end step3 -->
 
-      <div class="row col-xs-12 col-sm-8 center-sm stepsarrows">
+      <div class="row col-xs-12 col-sm-9 col-md-8 center-sm center-md stepsarrows">
         <div class="col-xs start-xs">
           <fieldset>
             <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atras</button>

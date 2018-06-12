@@ -17,7 +17,7 @@
 
   <div class="nuevos-i nuevos-i-force-minus container-base">
     <div class="row center-xs">
-      <div class="row nuevos-i-box col-xs-12 col-sm-9 col-md-8 between-xs center-sm center-md center-lg nuevos-i-border">
+      <div class="row nuevos-i-box col-xs-12 col-sm-9 col-md-8 between-xs center-sm center-md nuevos-i-border">
 
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='UNI') nuevos-i-active @endif">
           <a href="/academia/simulacros-uni">
@@ -63,10 +63,10 @@
     </div>
   </div>
 
-  <div class="row col-xs-12 start-xs center-sm simulacrum">
-    <div class="row col-xs-12 col-sm-8 start-xs start-sm">
+  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-      <div class="col-xs-12 col-sm simulacrum-info container-base">
+      <div class="col-xs-12 col-sm simulacrum-info">
         <h2 class="simulacrum-info-title">Sobre el simulacro {{ strtoupper($university->short_name)}}</h2>
         <ul class="simulacrum-info-ul">
           <li>
@@ -184,7 +184,7 @@
   </div>
 
   <div class="row center-xs center-sm text-init simulacrum container-base">
-    <div class="row col-xs-12 col-sm-9 col-md-8 simulacrum-results">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs simulacrum-results">
       @foreach ($data as $key => $v)
         <div class="col-xs-12 col-sm-2">
           <a href="{{ $v->url }}" target="_blank">

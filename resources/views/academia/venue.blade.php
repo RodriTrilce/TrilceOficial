@@ -15,7 +15,7 @@
   </div>
 
   <div class="row col-xs-12 center-xs venue">
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-md">
 
       <div class="col-xs-12 col-sm container-base">
         <h2>Información general</h2>

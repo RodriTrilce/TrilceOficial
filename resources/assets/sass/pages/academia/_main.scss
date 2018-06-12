@@ -297,19 +297,12 @@
     margin-top: 2rem;
   }
 
-  >div{
-    margin-left: 2.5rem;
+  select{
+      max-width: 90%;
       @media screen and (max-width: 768px) {
-      margin:0;
-      margin-bottom: 10px;
-    }
-
-    select{
-      @media screen and (max-width: 768px) {
-        margin: 0;
+        max-width: 100%;
+        margin-bottom: 10px;
       }
-
-    }
   }
 }//Fin list-selects
 
@@ -411,6 +404,10 @@
   &:hover{
     .block-effecthover-item:not(:hover){
       border: 0.55rem solid transparentize($gray, .7) !important;
+
+      @media screen and (max-width: 768px){
+        border: 0 !important;
+      }
 
       h3{
         color: transparentize($gray, 0.4) !important;

@@ -2,7 +2,7 @@
 @extends('colegio.layouts.template')
 @section('title', $data->name)
 @section('content')
-  
+
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
       <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes.jpg') }}" alt="">
@@ -11,61 +11,61 @@
       <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes-movil.jpg') }}" alt="">
     </div>
   </div>
-  
+
   <div class="row col-xs-12 center-xs venue">
-    <div class="row col-xs-12 col-sm-9 start-xs">
-      
-      <div class="col-xs-12 col-sm venue-content-left">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+
+      <div class="col-xs-12 col-sm container-base">
         <h2 class="venue-colegio-h2">{{ $data->name }}</h2>
         <div class="venues-hr"></div>
-        
+
         <div class="row col-xs-12 col-sm-12">
-          
+
           <div class="row col-xs venue-colegio-table-block venue-colegio-table-line venue-colegio-table-block1">
             <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-graduation-cap"></i> Nivel</div>
             @foreach ($address as $k)
               <div class="col-xs-12"><span class="venue-colegio-title-span">{!! $k->grades !!}</span></div>
             @endforeach
           </div>
-          
+
           <div class="row col-xs venue-colegio-table-block venue-colegio-table-line">
             <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-building"></i> Dirección</div>
             @foreach ($address as $k)
               <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->address }}</span></div>
             @endforeach
           </div>
-          
+
           <div class="row col-xs venue-colegio-table-block">
             <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-phone"></i> Teléfono</div>
             @foreach ($address as $k)
               <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->phone }}</span></div>
             @endforeach
           </div>
-          
+
         </div>
-              
+
       </div>
       <div class="col-xs-12 col-sm map-container">
         <div id="map"></div>
       </div>
-    
+
     </div>
   </div>
-  
-  
+
+
   <div class="row col-xs-12 center-xs venue-colegio-investment">
-    <div class="row col-xs-12 col-sm-9 start-xs investment-container">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md investment-container">
 
       <div class="row col-xs-12 col-sm-3 investment-title">
         <h3>Inversión</h3>
       </div>
-      
+
       <div class="row col-xs-12 col-sm investment-block">
-        
+
         @foreach ($investment as $k)
           <div class="row col-xs-12 investment-block-item">
             <div class="col-xs"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
-            
+
             @if($k->admissionfee)
             <div class="col-xs"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
             @endif
@@ -81,10 +81,10 @@
         @endforeach
 
       </div>
-      
+
     </div>
   </div>
-  
+
 
   @include('colegio.partials.card_bottom')
 @endsection
@@ -126,7 +126,7 @@
             });
 
             marker.setIcon('{{url('/static/images/map-marker.png')}}');
-            
+
             if(props.content){
                 var infoWindow = new google.maps.InfoWindow({
                     content:props.content

@@ -125,9 +125,12 @@
                 map:map
             });
 
-            let ico = {url:'{{url('/static/images/map-marker.svg')}}', size: new google.maps.Size(22, 22)};
-
-            marker.setIcon(icon);
+            let ico = {url:'{{url('/static/images/map-marker.svg')}}',
+            scaledSize: new google.maps.Size(50, 50), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+            };
+            marker.setIcon(ico);
 
             if(props.content){
                 var infoWindow = new google.maps.InfoWindow({

@@ -118,8 +118,6 @@
       <div class="tab tab2 row center-xs">
           <div class="row col-xs-12 start-xs">
               <h2>Datos generales del <i>Alumno</i></h2>
-              <h4>Generalidades</h4>
-
                 <div class="row col-xs-12">
                   <div class="col-xs-12">
                     <fieldset class="form-group">

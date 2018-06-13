@@ -67,6 +67,8 @@
         >img{
           opacity: 0.4;
           filter: alpha(opacity=40);
+          max-width: 120px;
+          min-height: 120px;
         }
       }
 
@@ -117,6 +119,7 @@
           img{
             max-width: 50%;
             margin-bottom: 10%;
+            min-height: 100px;
           }
 
           h3{

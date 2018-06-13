@@ -19,7 +19,7 @@
   <header>
     <div class="row between-xs">
       <div class="col-xs-2 logo">
-        <a href="/academia/"><img src="{{{ asset('static/images/academia/logo.png') }}}" alt="Trilce"></a>
+        <a href="/academia/"><img src="{{{ asset('static/images/logos/logo-trilce-academia.svg') }}}" alt="Trilce"></a>
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
           <div class="col-xs-12 nav-info">
@@ -31,7 +31,7 @@
               <div class="toogle-content">
                 <label for="menu-toggle" class="label-toggle"><i class="fa fa-bars"></i></label>
               </div>
-              
+
               <ul>
                 <li class="nav-info-responsive">Intranet para alumnos | Call center: <b>6198100</b></li>
                 <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
@@ -88,26 +88,26 @@
                     <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
                   </ul>
                 </li>
-                
+
                 <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Matrícula en linea</a></li>
                 <li class="disable"><a>Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
                 <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>
             </nav>
-            
+
           </div>
       </div>
     </div>
   </header>
-  
+
 @yield('content')
 
 @include('academia.layouts.parts.footer')
 
 <script>
   var page;
-  
+
 @section('scripts')
 </script>
 <script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>

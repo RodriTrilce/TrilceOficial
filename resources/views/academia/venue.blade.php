@@ -69,7 +69,7 @@
               map:map
           });
 
-          marker.setIcon('{{url('/static/images/map-marker.png')}}');
+          marker.setIcon('{{url('/static/images/map-marker.svg')}}');
 
           if(props.content){
               var infoWindow = new google.maps.InfoWindow({

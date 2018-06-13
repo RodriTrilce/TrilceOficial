@@ -62,7 +62,7 @@
   &:before{
     border-top-color: $colegio_blue !important;
   }
-  
+
   &:after{
     border-top-color: $colegio_yellow !important;
   }
@@ -146,6 +146,6 @@
   z-index: 1001;
 }
 
-.loader-trilce img{
+.loader-trilce svg{
   max-width: 40%;
 }

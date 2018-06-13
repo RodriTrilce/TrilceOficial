@@ -22,7 +22,7 @@
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='UNI') nuevos-i-active @endif">
           <a href="/academia/solucionarios-uni">
             <div class="nuevos-i-top">
-              <img src="/static/images/academia/ico-logo-uni.jpg" alt="UNI">
+              <img src="/static/images/svg/university_logo_uni.svg" alt="UNI">
               <h4>Simulacro</h4>
               <h3>UNI</h3>
             </div>
@@ -35,7 +35,7 @@
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='San Marcos') nuevos-i-active @endif">
           <a href="/academia/solucionarios-san-marcos">
             <div class="nuevos-i-top">
-              <img src="/static/images/academia/ico-logo-sm.jpg" alt="UNMSM">
+              <img src="/static/images/svg/university_logo_unmsm.svg" alt="UNMSM">
               <h4>Simulacro</h4>
               <h3>UNMSM</h3>
             </div>
@@ -48,7 +48,7 @@
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='PUCP') nuevos-i-active @endif">
           <a href="/academia/solucionarios-pucp">
             <div class="nuevos-i-top">
-              <img src="/static/images/academia/ico-logo-cato.jpg" alt="PUCP">
+              <img src="/static/images/svg/university_logo_pucp.svg" alt="PUCP">
               <h4>Simulacro</h4>
               <h3>PUCP</h3>
             </div>

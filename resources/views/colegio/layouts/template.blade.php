@@ -19,7 +19,7 @@
   <header>
     <div class="row between-xs">
       <div class="col-xs-2 logo">
-        <a href="/colegio"><img src="{{{ asset('static/images/colegio/logo-colegio.png') }}}" alt="Trilce"></a>
+        <a href="/colegio"><img src="{{{ asset('static/images/logos/logo-trilce-colegio.svg') }}}" alt="Trilce"></a>
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
           <div class="col-xs-12 nav-info">
@@ -31,10 +31,10 @@
               <div class="toogle-content">
                 <label for="menu-toggle" class="label-toggle"><i class="fa fa-bars"></i></label>
               </div>
-              
+
               <ul>
                 <li class="nav-info-responsive nav-info-colegio">Intranet para alumnos | Call center: <b class="phone">6198100</b></li>
-                
+
                 <li class="nav-colegio-aboutus">
                   <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>
                   <div class="dropdown-desk xs-hide-force">
@@ -44,9 +44,9 @@
                           <div class="row col-xs-4 dd-colegio-aboutus-textleft">
                             <h2><i class="fa fa-graduation-cap"></i> Propuesta educativa</h2>
                           </div>
-                          
+
                           <div class="col-xs dd-colegio-aboutus-rocket"></div>
-                          
+
                           <div class="row col-xs dd-colegio-aboutus-textright">
                             <h2>Vive la aventura de estudiar en Trilce.<br /> Comienza el viaje..</h2>
                           </div>
@@ -60,7 +60,7 @@
                 <li class="nav-colegio-aboutusmobile">
                   <a href="/colegio/propuesta-educativa" class="aboutusmobile-link"><img src="{{url('static/images/colegio/imagen-menu-pe-movil.jpg')}}" alt="Propuesta educativa"></a>
                 </li>
-                
+
                 <li class="nav-venues xs-hide" id="sedes">
                   <a href="#" class="{{ (Request::is('colegio/sede/*')?'nav-item-active':'') }}">Sedes</a>
                   <div class="dropdown-desk">
@@ -68,11 +68,11 @@
 
                       <div class="row col-xs-12">
                         <div class="row col-xs-8">
-                          
+
                           <div class="col-xs-3 venues-in">
                             <h3 class="title"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Lima</strong></h3>
                           </div>
-                          
+
                           <div class="row col-xs linkslima block-capital">
                             <div class="col-xs">
                               <ul class="ul-venue">
@@ -102,7 +102,7 @@
                             </div>
                           </div>
                         </div>
-                        
+
                         <div class="row col-xs-4 block-province">
                           <div class="col-xs venues-in titleblockprovincia">
                             <h3 class="title provincia"><i class="fa fa-map-marker marker"></i><br> Sedes en <br><strong>Provincia</strong></h3>
@@ -119,7 +119,7 @@
                           </div>
                         </div>
                       </div>
-                    
+
                     </div>
                   </div>
                 </li>
@@ -168,19 +168,19 @@
                 <li><a href="/colegio/contacto" class="{{ (Request::is('colegio/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>
             </nav>
-            
+
           </div>
       </div>
     </div>
   </header>
-  
+
 @yield('content')
 
 @include('colegio.layouts.parts.footer')
 
 <script>
   var page;
-  
+
   @section('scripts')
 </script>
 <script src="{{ mix('/js/app_colegio.js') }}" charset="utf-8"></script>

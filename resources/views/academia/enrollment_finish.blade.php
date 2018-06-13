@@ -16,7 +16,7 @@
   </div>
 
   <div class="row col-xs-12 center-xs enrollment-finish">
-    <div class="col-xs-12 center-xs col-sm-6 center-sm">
+    <div class="col-xs-12 col-sm-9 col-md-8 center-xs center-sm center-md">
       <h2 class="title">Gracias por registrarse</h2>
       <p>
         Puede descargar su ficha de inscripción prematrícula aquí: <br />
@@ -26,7 +26,7 @@
           <button type="submit">Descargar PDF</button>
         </form>
       </p>
-      
+
     </div>
   </div>
 

@@ -36,7 +36,7 @@
 @endif
 
   <div class="row col-xs-12 center-xs container-base">
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-md enrollment-forms">
+    <div class="row col-xs-12 col-sm-9 start col-md-8 start-sm start-md enrollment-forms">
     <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
       @csrf
 
@@ -51,15 +51,15 @@
             <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
 
             <div class="form">
-                <div class="row col-xs-12 col-sm-10">
+                <div class="row col-xs-12">
 
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-xs-12">
                     <fieldset class="form-group">
                       <input type="number" min="0" name="step1_dni" placeholder="DNI" aria-label="DNI" minlength="8" maxLength="8" required>
                     </fieldset>
                   </div>
 
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-xs-12">
                     <fieldset class="form-group">
                       <select name="step1_university" id="step1_university" aria-label="Universidad" required>
                         <option value="" selected disabled hidden>Universidad</option>
@@ -70,7 +70,7 @@
                     </fieldset>
                   </div>
 
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-xs-12">
                     <fieldset class="form-group">
                       <select name="step1_venue" id="step1_venue" aria-label="Sede" required>
                         <option value="" selected disabled>Sede</option>
@@ -78,7 +78,7 @@
                     </fieldset>
                   </div>
 
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-xs-12">
                     <fieldset class="form-group">
                       <select name="step1_cycle" id="step1_cycle" aria-label="Ciclo" required>
                         <option value="" selected disabled>Ciclo</option>
@@ -86,7 +86,7 @@
                     </fieldset>
                   </div>
 
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-xs-12">
                     <fieldset class="form-group">
                       <select name="step1_turn" id="step1_turn" aria-label="Turno" required>
                         <option value="" selected disabled hidden >Turno</option>
@@ -114,10 +114,9 @@
             </div>
           </div>
         </div>
-      <!-- end step1 -->
 
       <div class="tab tab2 row center-xs">
-          <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
+          <div class="row col-xs-12 start-xs">
               <h2>Datos generales del <i>Alumno</i></h2>
               <h4>Generalidades</h4>
 
@@ -244,11 +243,10 @@
           </div>
 
       </div>
-      <!-- end step2 -->
 
       <div class="tab tab3 row center-xs">
 
-          <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 text-init">
+          <div class="row col-xs-12 start-xs">
               <h2>Datos generales del <i>Padre y/o apoderado</i></h2>
 
                 <div class="row col-xs-12">
@@ -421,9 +419,8 @@
           </div>
 
       </div>
-      <!-- end step3 -->
 
-      <div class="row col-xs-12 col-sm-9 col-md-8 center-sm center-md stepsarrows">
+      <div class="row col-xs-12 between-xs stepsarrows">
         <div class="col-xs start-xs">
           <fieldset>
             <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atras</button>

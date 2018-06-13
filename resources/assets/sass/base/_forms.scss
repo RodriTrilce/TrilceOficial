@@ -1,30 +1,59 @@
-select,input, textarea{
+select,input,textarea{
   font-family: 'CaeciliaLTPro-45Light';
   font-size: 0.8rem;
   color: $gray;
   padding: 10px;
   width: 100%;
-  
+}
+
+select,input,textarea{
+  border: 0.5px solid #a9a9a9;
+  background: white;
 }
 
 textarea, input{
   margin: 0 0 0 0;
 }
 
-
-select{
-  padding-right: 4rem;
-  border: 1px solid transparentize($gray, 0.7);
-  overflow: hidden;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaAgMAAADZOtQaAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA9GM67WpFdPrSVgAAAAN0Uk5TAP//RFDWIQAAABpJREFUeJxjYKA5YA1tANOMoVCBECgtQAPLAKFWAZUBQ2MRAAAAAElFTkSuQmCC') no-repeat right #FEFEFE;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  appearance: none;
-  @media screen and (max-width: 768px) {
-    padding-right: 1.2rem;
-  }
+option{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+// Chrome autocomplete color remove
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+select{
+  appearance: none;
+  padding-right: 25px;
+  padding: 10px;
+  overflow: hidden;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='18px'><path d='M12.51,45.55l87.49,88,87.49-88,11.17,11.17-93.08,93.07L100,154.45l-5.58-4.66L1.34,56.72Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+  background-position-y: center;
+  background-position-x: 99%;
+
+  &:active{
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='18px'><path d='M100,45.55l5.59,4.66,93.07,93.07-11.17,11.17L100,66.49l-87.49,88L1.34,143.28,94.42,50.21Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+    background-position-x: 99%;
+  }
+
+  @media screen and (max-width: 768px) {
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='13px'><path d='M12.51,45.55l87.49,88,87.49-88,11.17,11.17-93.08,93.07L100,154.45l-5.58-4.66L1.34,56.72Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+    background-position-x: 98%;
+
+    &:active{
+      background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='13px'><path d='M100,45.55l5.59,4.66,93.07,93.07-11.17,11.17L100,66.49l-87.49,88L1.34,143.28,94.42,50.21Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+      background-position-x: 98%;
+    }
+  }
+
+}
+
+button{
+  font-family: 'CaeciliaLTPro-45Light';
+}
 
 button.validate{
   background-color: transparent;
@@ -39,7 +68,7 @@ fieldset{
   border: 0px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  
+
 }
 
 // File upload
@@ -52,11 +81,11 @@ fieldset{
 .file-upload-field{
   $height: 60px;
   width: 100% !important;
-  
+
   position: relative;
   width: 100%;
   height: 40px;
-  
+
   &:after {
     content: attr(data-text);
     font-size: 18px;
@@ -79,7 +108,7 @@ fieldset{
     text-overflow: ellipsis;
     border: 1px solid #a9a9a9;
   }
-  
+
   &:before {
     content: 'Subir';
     position: absolute;
@@ -97,7 +126,7 @@ fieldset{
     padding: 0 15px;
     pointer-events: none;
   }
-  
+
   &:hover {
     &:before {
       background: darken($orange, 10%);
@@ -131,36 +160,37 @@ fieldset{
 form{
   .text-help{
     color: #de4c23;
+    font-size: .73rem;
+    font-family: 'Geogrotesque-Rg';
   }
 }
 
 // Errors list top form
 .form-error{
-  .form-error-ul{
-  }
-  
-  .form-li{
-    padding: 0.2rem;
-    margin: 0.3rem;
-    color: $gray;
-    span{
-      text-decoration: underline;
-      color: $orange;
-    }
-    
-    &::before{
-      margin-right: 0.5rem;
-      content: "\f376";
-      font-family: 'FontAwesome';
-    }
-
-    @media (max-width: 700px){
-      font-size: 0.8rem;
-    }
-  }
-  
 }
 
+.form-error-ul{
+}
+
+.form-li{
+  padding: 0.2rem;
+  margin: 0.3rem;
+  color: $gray;
+  span{
+    text-decoration: underline;
+    color: $orange;
+  }
+
+  &::before{
+    margin-right: 0.5rem;
+    content: "\f376";
+    font-family: 'FontAwesome';
+  }
+
+  @media (max-width: 700px){
+    font-size: 0.8rem;
+  }
+}
 
 input[type=number]{
   &::-webkit-inner-spin-button,

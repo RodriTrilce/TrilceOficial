@@ -21,7 +21,7 @@
         background: $orange;
 
         @media screen and (max-width: 768px){
-          height: 4rem;
+          height: 64px;
         }
       }
 
@@ -50,7 +50,7 @@
 
   @media screen and (max-width: 768px){
     transform: translate(-80%, 220%);
-    right: -82%;
+    right: -83%;
     width: 100%;
     left: unset;
   }
@@ -99,7 +99,7 @@
   @media screen and (max-width: 768px){
     border: 0.3rem solid white;
     transform: translate(-50%, 38%);
-    width: 95%;
+    width: 93%;
   }
 }
 

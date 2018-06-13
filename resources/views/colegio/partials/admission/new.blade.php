@@ -95,4 +95,4 @@
   </div>
 </div>
 
-<div class="col-xs-12 start-xs container-base admission-new-superindex"><sup>1</sup> Plazo de entrega: Hasta el día de la Evaluación.</div>
+<div class="col-xs-12 center-xs container-base admission-new-superindex"><sup>1</sup> Plazo de entrega: Hasta el día de la Evaluación.</div>

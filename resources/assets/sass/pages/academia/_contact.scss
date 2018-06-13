@@ -9,7 +9,6 @@
 }
 
 .contact-info{
-  padding: 0.7rem;
 }
 
 .contant-info-subtitle{
@@ -67,7 +66,7 @@
   background: $background-form;
   padding: 2rem;
   @media screen and (max-width: 768px) {
-    padding: 0.7rem;
+    padding: 0;
   }
 
   h2{
@@ -76,9 +75,10 @@
     font-weight: bold;
   }
 
-  .email{
-    width: 50%;
-  }
+}
+
+.contant-form-phone{
+  width: 50%;
 }
 
 .worktrilce{

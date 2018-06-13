@@ -15,7 +15,7 @@
   <div class="row col-xs-12 center-xs venue">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-      <div class="col-xs-12 col-sm container-base">
+      <div class="col-xs-12 col-sm container-base venue-info-container">
         <h2 class="venue-colegio-h2">{{ $data->name }}</h2>
         <div class="venues-hr"></div>
 

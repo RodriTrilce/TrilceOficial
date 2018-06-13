@@ -23,7 +23,8 @@
   </div>
   @endif
 @endif
-<div class="row center-xs center-sm contact">
+
+<div class="row center-xs center-sm container-base contact">
   <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
     <div class="col-xs-12 col-sm contact-info">
@@ -60,11 +61,11 @@
           </fieldset>
 
           <fieldset class="form-group">
-            <input type="tel" type="tel" minlength="6" min="0" name="contact_phone" placeholder="Télefono" pattern="([0-9]+)" required>
+            <input type="email" name="contact_email" placeholder="E-mail" required>
           </fieldset>
 
           <fieldset class="form-group">
-            <input type="email" name="contact_email" class="email" placeholder="E-mail" required>
+            <input type="tel" type="tel" class="contant-form-phone" minlength="6" min="0" name="contact_phone" placeholder="Télefono" pattern="([0-9]+)" required>
           </fieldset>
 
           <fieldset class="form-group">

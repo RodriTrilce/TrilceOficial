@@ -16,7 +16,7 @@
     color: $gray;
     font-weight: bold;
   }
-  
+
   .subtitle{
     color: $gray;
   }
@@ -26,12 +26,12 @@
 .nuevos-i{
   margin-top: 3%;
   margin-bottom: 3%;
-  
+
   @media screen and (max-width: 768px) {
     margin-top: 1%;
     margin-bottom: 1%;
   }
-  
+
   .nuevos-i-title{
     margin-bottom: 1.8rem;
     font-family: $font_geo_reg;
@@ -41,12 +41,12 @@
       font-weight: bold;
       color: $gray;
     }
-    
+
     p{
       font-size: 1rem;
       width: auto;
     }
-    
+
     @media screen and (max-width: 768px) {
       text-align: center;
       h2{
@@ -66,7 +66,7 @@
     margin-right: 6%;
     transition: 0.2s ease-out;
     position: relative;
-    
+
     >a{
       width: 100%;
       height: 100%;
@@ -78,105 +78,108 @@
 
     .nuevos-i-top{
       font-family: 'Geogrotesque-Rg';
-      
+
       h3{
         font-size: 1.5rem;
         color: transparentize($gray, 0.4);
         transition: 0.2s ease-in;
       }
-      
+
       h4{
         letter-spacing: 0.25rem;
         font-size: 1.3rem;
         color: transparentize($gray, 0.4);
       }
-      
+
       >img{
         opacity: 0.4;
         filter: alpha(opacity=40);
         transition: 0.2s ease-in;
+        max-width: 90px;
       }
-      
+
       .modality{
         font-family: $font_cae_bold;
         font-size: 2.6rem;
+        display: inline-block;
         @media screen and (max-width: 768px) {
           font-size: 1.4rem;
+          display: block;
         }
       }
-      
+
       .modality-orange{
         color: transparentize($orange, 0.7);
       }
-      
+
       .modality-blue{
         color: transparentize($colegio_blue, 0.7);
       }
-      
+
       .modality-yellow{
         color: transparentize($colegio_yellow, 0.7);
       }
-      
+
     }
-    
+
     .nuevos-i-bottom{
       color: $gray;
-      
+
       .nuevos-hr{
         margin: 15px auto;
         width: 5%;
         height: 8px;
       }
-      
+
       .nuevos-hr-blue{
         background: $colegio_blue;
       }
-      
+
       .nuevos-hr-yellow{
         background: $colegio_yellow;
       }
-      
+
       .nuevos-hr-orange{
         background: $orange;
       }
-    
+
     }
-    
+
     &:hover{
       border-color: $orange;
-      
+
       h3,h4{
         color: $gray;
       }
-      
+
       img{
         opacity:1 !important;
         filter: alpha(opacity=100) !important;
       }
-      
+
       .nuevos-i-bottom{
         font-weight: bold;
-        
+
 
       }
-      
+
       .nuevos-i-top{
         color: $gray;
         .modality-orange{
           color: $orange;
         }
-        
+
         .modality-blue{
           color: $colegio_blue;
         }
-        
+
         .modality-yellow{
           color: $colegio_yellow;
         }
       }
 
     }
-    
+
 
     // Lineas
     &::before{
@@ -189,47 +192,47 @@
       height: 45%;
       background: transparentize($gray, 0.65);
     }
-    
+
     &:last-child{
       &::before{
         width: 0;
       }
     }
-    
+
     //end lines
-    
+
     @media screen and (max-width: 768px) {
       border: 0px;
       margin-right: 0;
-      
+
       >a{
         padding: 0;
       }
-      
+
       .nuevos-i-top{
         img{
           max-width: 50%;
           margin-bottom: 10%;
         }
-        
+
         h3{
           font-size: 1rem;
           line-height: 1.5rem;
         }
-        
+
         h4{
           letter-spacing: 0;
           font-size: 0.9rem;
         }
 
       }
-      
+
       .nuevos-i-bottom{
         display: none;
       }
-      
+
     }
-    
+
   }// end >div
 }
 
@@ -243,17 +246,17 @@
   >div{
       border: 0px;
       margin-right: 0;
-      
+
       >a{
         padding: 0;
       }
-      
+
       .nuevos-i-top{
         img{
-          max-width: 50%;
+          max-width: 30%;
           margin-bottom: 10%;
         }
-        
+
         h3{
           font-size: 1rem;
           line-height: 1.5rem;
@@ -261,49 +264,49 @@
             font-size: 1.5rem;
           }
         }
-        
+
         h4{
           letter-spacing: 0;
           font-size: 0.9rem;
         }
 
       }
-      
+
       .nuevos-i-bottom{
         display: none;
       }
-      
+
   }
 }//end force minus
 
 .hover-active{
   position: relative;
   border-color: $orange;
-  
+
   h3,h4{
     color: $gray !important;
   }
-  
+
   img{
     opacity:1 !important;
     filter: alpha(opacity=100) !important;
   }
-  
+
   .nuevos-i-top{
     color: $gray;
     .modality-orange{
       color: $orange !important;
     }
-    
+
     .modality-blue{
       color: $colegio_blue !important;
     }
-    
+
     .modality-yellow{
       color: $colegio_yellow !important;
     }
   }
-  
+
   @media screen and (min-width: 768px) {
     &::after{
       content: "";
@@ -340,13 +343,13 @@
     opacity:1 !important;
     filter: alpha(opacity=100) !important;
   }
-  
+
   .nuevos-i-top{
     h3,h4{
       color: $gray !important;
     }
   }
-  
+
   &::after{
     position: absolute;
     content: "";
@@ -378,7 +381,7 @@
   select{
     max-width: auto;
   }
-  
+
   .nuevos-i-list-selects{
 
     @media screen and (max-width: 768px){
@@ -391,20 +394,20 @@
         margin:0;
         margin-bottom: 10px;
       }
-      
+
       select{
         @media screen and (max-width: 768px) {
           margin: 0;
           max-width: 65%;
         }
-        
+
       }
     }
   }//Fin list-selects
-  
+
   .nuevos-i-list-data{
     margin-top: 1rem;
-    
+
     h3{
       color: $orange;
       font-size: 1.4rem;
@@ -433,7 +436,7 @@
     }
     margin-bottom: 1rem;
   }
-  
+
   .ii-li{
     margin-bottom: 1rem;
   }
@@ -472,49 +475,49 @@
             opacity: 0.3 !important;
             filter: alpha(opacity=3) !important;
           }
-          
+
           .modality-blue, .nuevos-hr-blue{
             color: transparentize($colegio_blue, 0.7) !important;
           }
-          
+
           .modality-yellow, .nuevos-hr-yellow{
             color: transparentize($colegio_yellow, 0.7) !important;
           }
-          
+
           .modality-orange{
             color: transparentize($orange, 0.7) !important;
           }
-          
+
           .nuevos-hr-orange{
             background: transparentize($orange, 0.7) !important;
           }
-          
+
           .nuevos-hr-blue{
             background: transparentize($colegio_blue, 0.7) !important;
           }
-          
+
           .nuevos-hr-yellow{
             background: transparentize($colegio_yellow, 0.7) !important;
           }
-          
+
           h3,h4{
             color: transparentize($gray, 0.3) !important;
             transition: opacity 0.4s ease-in-out !important;
           }
-          
+
           .nuevos-i-bottom span{
             color: transparentize($gray, 0.3) !important;
           }
 
       }
   }
-  
+
   .block-effecthover-item{
     img{
       transition: opacity 0.4s ease-in-out !important;
       opacity: 1 !important;
     }
-    
+
     .modality-blue{
       color: $colegio_blue !important;
       transition: opacity 0.4s ease-in-out !important;
@@ -533,22 +536,21 @@
 
     transition: 0.2s ease-in !important;
     border-color: $orange !important;
-    
+
     h3,h4{
       color: $gray !important;
       transition: opacity 0.4s ease-in-out !important;
     }
-    
+
 
     .nuevos-i-bottom{
       font-weight: bold !important;
     }
-    
+
     .nuevos-i-top{
       color: $gray !important;
     }
-    
-  }
-  
-}
 
+  }
+
+}

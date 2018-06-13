@@ -14,7 +14,7 @@
 
 
 
-  <div class="nuevos-i">
+  <div class="nuevos-i container-base">
     <div class="row center-xs">
 
       <div class="row col-xs-12 col-sm-6 col-md-6 between-xs center-sm center-md center-lg nuevos-i-box nuevos-i-force-minus">
@@ -22,8 +22,8 @@
         <div class="col-xs @if($type=='nuevo') hover-active hover-blue @endif">
           <a href="/colegio/admision-nuevo">
             <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/ico-alumno-nuevo.jpg') }}" alt="Alumno nuevo">
-              <h3>Alumno <br /><span class="modality modality-blue">Nuevo</span></h3>
+              <img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="Alumno nuevo">
+              <h3>Alumno <br /><div class="modality modality-blue">Nuevo</div></h3>
             </div>
             <div class="nuevos-i-bottom">
               <span>Leer más <i class="fa fa-search"></i></span>
@@ -35,8 +35,8 @@
         <div class="col-xs @if($type=='traslado') hover-active hover-yellow @endif">
           <a href="/colegio/admision-traslado">
             <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/ico-alumno-regular.jpg') }}" alt="Alumno Traslado">
-              <h3>Alumno <br /><span class="modality modality-yellow">Traslado</span></h3>
+              <img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="Alumno Traslado">
+              <h3>Alumno <br /><div class="modality modality-yellow">Traslado</div></h3>
             </div>
             <div class="nuevos-i-bottom">
               <span>Leer más <i class="fa fa-search"></i></span>
@@ -48,8 +48,8 @@
         <div class="col-xs @if($type=='regular') hover-active hover-orange @endif">
           <a href="/colegio/admision-regular">
             <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/ico-alumno-traslado.jpg') }}" alt="Alumno Regular">
-              <h3>Alumno <br /><span class="modality modality-orange">Regular</span></h3>
+              <img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="Alumno Regular">
+              <h3>Alumno <br /><div class="modality modality-orange">Regular</div></h3>
             </div>
             <div class="nuevos-i-bottom">
               <span>Leer más <i class="fa fa-search"></i></span>

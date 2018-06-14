@@ -25,16 +25,16 @@ class EnrollmentResourceController extends Controller
      */
      public function university($university)
      {
-       
+
       if(Cache::has($university)){
         $data = Cache::get($university);
       }else{
         $data = $this->getDataUniversity($university);
       }
-      
+
       return new EnrollmentResource($data);
      }
-     
+
      public function venue($university, $key)
      {
        if(Cache::has($key.$university)){
@@ -42,18 +42,18 @@ class EnrollmentResourceController extends Controller
        }else{
          $data = $this->getDataVenue($university,$key);
        }
-       
+
        return new EnrollmentResource($data);
      }
-     
+
      private function getDataVenue($university, $key)
      {
         $urlU     = $this->url[$university];
         $data     = $this->getUrl($urlU);
         //$venue    = $this->getOptionsVenue($data);
         $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
-        
-        Cache::put($key.$university, $collection, 4320);
+
+        Cache::put($key.$university, $collection, 20160);
         return new EnrollmentResource($collection);
      }
 
@@ -62,10 +62,10 @@ class EnrollmentResourceController extends Controller
        $urlU     = $this->url[$university];
        $data     = $this->getUrl($urlU);
        $collection = collect($this->getOptionsVenue($data));
-       Cache::put($university, $collection, 4320);
+       Cache::put($university, $collection, 20160);
        return $collection;
      }
-     
+
      function explodeDiv($a,$b,$c)
      {
        $t = explode($a,$c);
@@ -90,7 +90,7 @@ class EnrollmentResourceController extends Controller
         curl_close($post);
         return $result;
      }
-     
+
      function getUrl($url){
        $ch = curl_init();
        curl_setopt($ch, CURLOPT_URL, $url);
@@ -110,7 +110,7 @@ class EnrollmentResourceController extends Controller
        foreach ($data as $k => $v) {
          $data[$k] = $k.'|'.$v;
        }
-       
+
        return $data;
      }
 
@@ -121,7 +121,7 @@ class EnrollmentResourceController extends Controller
          'intidciclol' => 0,
          'intidturno'  => 0
        ];
-       
+
        $url = $this->postUrl($url, $opt);
        preg_match_all("#<strong>(.*?)</strong>#", $url, $cycles);
        $cycles = array_flip(array_unique($cycles[1]));
@@ -131,6 +131,6 @@ class EnrollmentResourceController extends Controller
        }
        return $cycles;
      }
-     
-    
+
+
 }

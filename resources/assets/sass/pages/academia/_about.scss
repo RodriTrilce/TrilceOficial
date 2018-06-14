@@ -171,15 +171,11 @@
     h3{
       color: $gray;
       font-family: $font_cae_bold;
-      font-size: 1.2rem;
+      font-size: .9rem;
       transition: all 0.3s ease-in;
       margin:7px 0;
 
       @media (max-width: 1400px) {
-        font-size: 1rem;
-      }
-
-      @media (max-width: 1300px) {
         font-size: 0.9;
       }
 
@@ -190,10 +186,10 @@
 
     p{
       font-family: $font_cae_reg;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
 
       @media (max-width: 1200px) {
-        font-size: 0.8;
+        font-size: 0.75;
       }
 
       @media (max-width: 900px) {

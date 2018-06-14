@@ -7,28 +7,28 @@
     border-bottom: 1px solid transparentize($gray, 0.7);
     padding-bottom: 0.8rem;
     margin-bottom: 0.8rem;
-    
+
     >.math-olympic-title{
       color: $orange;
       text-transform: uppercase;
       font-size: 1.2rem;
       padding-bottom: 0.5rem;
-      
+
     }
-    
+
     >.math-olympic-content{
       color: $gray;
       font-size: 0.9rem;
-      font-family: 'Geogrotesque-Rg';
-      
+      font-family: $font_geo_reg;
+
       >div{
           padding-right: 5px;
       }
-      
+
       .b{
         display: none;
       }
-      
+
       @media screen and (max-width: 768px) {
         .a{
           display: none;
@@ -37,7 +37,7 @@
           display: block;
         }
       }//end media
-      
+
     }// end math olympic content
   }// end div.row
 }
@@ -47,7 +47,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
+
   @media screen and (max-width: 768px) {
     margin:0;
     margin-top: 1rem;
@@ -56,23 +56,23 @@
   .active{
     font-weight: bold;
   }
-    
+
   li{
     display: inline;
     margin-right: 1.3rem;
     padding-left: 14px;
     font-size: 0.8rem;
-    
+
     @media screen and (max-width: 768px) {
       margin-left: 7px;
       margin-right: 0rem;
       font-size: 0.65rem;
     }
-    
+
     &::before{
         position: absolute;
         color: $orange;
-        font-family: 'FontAwesome';
+        font-family: $font_icon;
         font-size: 15px;
         margin-left: -18PX;
         @media screen and (max-width: 768px) {
@@ -81,7 +81,7 @@
         }
       }
 
-          
+
     &:nth-child(1){
       &::before{
         content: "\f2eb";
@@ -105,9 +105,9 @@
         content: "\f156";
       }
     }
-    
+
   }
-  
+
   a,a:link{
     color: $gray;
   }
@@ -118,7 +118,7 @@
 
 .math-olympic-onam{
   margin-top: 2rem;
-  
+
   i{
     color: $orange;
     font-size: 1rem;
@@ -130,28 +130,28 @@
       font-weight: bold;
       font-size: 1.7rem;
       color: $gray;
-      font-family: 'Geogrotesque-Rg';
+      font-family: $font_geo_reg;
     }
   }
-  
+
   .data{
     color: $orange;
-    font-family: 'Geogrotesque-Rg';
+    font-family: $font_geo_reg;
     font-size: 1rem;
     margin-top: 0.5rem;
   }
-  
+
   .inscription{
-    font-family: 'Geogrotesque-Rg';
+    font-family: $font_geo_reg;
     @media screen and (max-width: 768px){
       font-size: 0.8rem;
     }
   }
-  
+
   .center-onam{
     margin-top: 1.5rem;
   }
-  
+
   .basics{
     background: $background-form;
     font-weight: bold;
@@ -159,7 +159,7 @@
       padding: 0.6rem;
     }
   }
-  
+
   .block-onam{
     >div{
       background: transparentize($gray, 0.8);
@@ -176,17 +176,17 @@
         }
 
       }
-      
+
       &:nth-child(even){
         background: transparentize($gray, 0.65);
       }
     }
   }
-    
-    
+
+
   .sponsor{
     margin-top: 2rem;
-    
+
     >div{
       &:first-child{
         @media screen and (max-width: 768px){
@@ -199,17 +199,17 @@
           font-weight: bold;
         }
       }
-      
+
       &:last-child{
-        
+
       }
     }
-    
+
     .title{
       color: $orange;
       font-size: 0.8rem;
       font-weight: bold;
     }
   }
-  
+
 }

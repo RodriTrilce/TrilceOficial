@@ -19,7 +19,7 @@
     margin-bottom: 1.8rem;
     h2{
       font-size: 3rem;
-      font-family: 'CaeciliaLTPro-75Bold';
+      font-family: $font_cae_bold;
       font-weight: bold;
       color: $gray;
     }
@@ -51,7 +51,7 @@
       }
 
       .nuevos-i-top{
-        font-family: 'Geogrotesque-Rg';
+        font-family: $font_geo_reg;
 
         h3{
           font-size: 1.7rem;
@@ -328,7 +328,7 @@
    }
 
   &::before{
-    font-family: 'FontAwesome';
+    font-family: $font_icon;
     font-size: 15px;
     color: $orange;
     padding-left: 2px;

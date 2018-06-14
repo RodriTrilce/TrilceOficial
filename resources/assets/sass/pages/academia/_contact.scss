@@ -34,7 +34,7 @@
     }
 
     &::before{
-      font-family: 'FontAwesome';
+      font-family: $font_icon;
       font-family: 0.7rem;
       color: $orange;
       padding-right: 0.2rem;

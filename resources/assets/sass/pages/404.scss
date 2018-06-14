@@ -3,11 +3,11 @@ $gray_opaque: transparentize($gray, 0.8);
 .error-404{
   margin-top: 15vh;
   margin-bottom: 20vh;
-  
-  
+
+
   >div{
     .row{
-      
+
       >div{
         &:nth-child(1){
           border-bottom: 1.2px solid $gray_opaque;
@@ -16,7 +16,7 @@ $gray_opaque: transparentize($gray, 0.8);
           padding-right: 2rem;
           padding-left: 0;
           text-align: right;
-          
+
           &::before{
             content: "";
             position: absolute;
@@ -27,7 +27,7 @@ $gray_opaque: transparentize($gray, 0.8);
             border-radius: 5px;
             background: $orange;
           }
-          
+
           &::after{
             content: "\f108";
             position: absolute;
@@ -37,29 +37,29 @@ $gray_opaque: transparentize($gray, 0.8);
             height: 3.4rem;
             padding: 0.5rem;
 
-            font-family: 'FontAwesome';
+            font-family: $font_icon;
             font-size: 2.3rem;
             background: $orange;
             color: white;
 
           }
         }
-        
+
         &:last-child{
           text-align: initial;
           padding-left: 1rem;
           border-bottom: 1.2px solid $gray_opaque;
         }
-        
+
         >div{
           width: 100%;
           margin-top: 3rem;
         }//up
-        
+
       }
     }
   }
-  
+
   .text{
     h1{
       color: $orange;
@@ -67,7 +67,7 @@ $gray_opaque: transparentize($gray, 0.8);
       font-weight: bold;
       width: 8rem;
     }
-    
+
     p{
       font-size: 1rem;
       margin-top: 2rem;

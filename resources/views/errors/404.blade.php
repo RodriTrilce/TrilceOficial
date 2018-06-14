@@ -21,14 +21,14 @@
     </div>
   </header>
 
-  <div class="row center-xs center-sm error-404">
-    <div class="col-xs-10 col-sm-4 ">
+  <div class="row col-xs-12 center-xs center-sm container-base error-404">
+    <div class="col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
       <div class="row col-xs">
-        <div class="col-xs">
+        <div class="col-xs col-sm-6">
           <div></div>
           <img src="{{{ asset('/static/images/oops-404.png') }}}" alt="La página que buscas no existe.">
         </div>
-        <div class="col-xs-4 text">
+        <div class="col-xs col-sm-4 text">
           <div></div>
           <h1>La página que buscas no existe.</h1>
           <p>Te invitamos a seguir navegando en nuestra web en el siguiente enlace <br /> <a href="http://www.trilce.edu.pe/">#EstoEsTrilce</a></p>

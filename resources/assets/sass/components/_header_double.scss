@@ -57,7 +57,7 @@
 
   h1{
     font-size: 2.5em;
-    font-family: 'CaeciliaLTPro-85Heavy';
+    font-family: $font_cae_heavy;
     color: white;
     display: inline-block;
     background-color: $orange;
@@ -158,7 +158,7 @@
 
       h1{
         font-size: 3.5em;
-        font-family: 'CaeciliaLTPro-85Heavy';
+        font-family: $font_cae_heavy;
         color: $orange;
         display: inline-block;
         background-color: white;

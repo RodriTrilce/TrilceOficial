@@ -21,7 +21,7 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    font-family: 'Geogrotesque-Rg';
+    font-family: $font_geo_reg;
     a,li{ transition: none; }
   }
 
@@ -55,7 +55,7 @@
           top: 5px;
           content: "\f112";
           color: transparentize($gray, 0.5);
-          font-family: 'FontAwesome';
+          font-family: $font_icon;
           font-size: 15px;
           margin-right: 5px;
         }
@@ -186,7 +186,7 @@
       &::before{
         content: "\f112";
         color: transparentize($gray, 0.5);
-        font-family: 'FontAwesome';
+        font-family: $font_icon;
         font-size: 14px;
         font-weight: bold;
         margin-right: 5px;
@@ -409,7 +409,7 @@ nav{
           width: 100%;
           height: 100%;
           color: $gray;
-          font-family: 'Geogrotesque-Rg';
+          font-family: $font_geo_reg;
           transition: ease-out 0.01s;
           text-transform: uppercase;
           text-align: center;
@@ -503,7 +503,7 @@ nav{
 
           >a{
             &::after{
-              font-family: 'FontAwesome';
+              font-family: $font_icon;
               content: "\f110";
               font-size: 15px;
               color: $orange;

@@ -57,7 +57,7 @@
 
       &::before{
         position: absolute;
-        font-family: 'FontAwesome';
+        font-family: $font_icon;
         font-size: 1rem;
         color: $orange;
         left: -2px;

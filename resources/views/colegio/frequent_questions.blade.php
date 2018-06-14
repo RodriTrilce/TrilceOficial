@@ -17,7 +17,7 @@
       <h1 class="frequentquestions-title">Preguntas frecuentes</h1>
     </div>
 
-    <div class="col-xs-12 col-sm-8 col-md-6 start-xs start-sm start-md frequentquestions-block">
+    <div class="col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md frequentquestions-block">
 
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 col-sm-2 question-number"></div>

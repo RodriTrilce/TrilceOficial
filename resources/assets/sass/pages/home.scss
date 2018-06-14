@@ -97,7 +97,7 @@
 
       h1{
         text-align: center;
-        font-family: "Geogrotesque-SmBd" !important;
+        font-family: $font_geo_smbold !important;
         color: white;
         font-size: 3rem;
         letter-spacing: 11px;
@@ -151,7 +151,7 @@
         }
 
         a{
-          font-family: 'Geogrotesque-Rg';
+          font-family: $font_geo_reg;
           font-size: 40px;
           display: block;
           width: 100%;

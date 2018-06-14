@@ -83,7 +83,7 @@
     li::before{
       content: "\F186";
       color: $colegio_blue;
-      font-family: 'FontAwesome';
+      font-family: $font_icon;
       font-size: 14px;
       font-weight: bold;
       margin-right: 5px;
@@ -94,7 +94,7 @@
         &::before{
           content: "\F112";
           color: $colegio_blue;
-          font-family: 'FontAwesome';
+          font-family: $font_icon;
           font-size: 14px;
           font-weight: bold;
           margin-right: 5px;

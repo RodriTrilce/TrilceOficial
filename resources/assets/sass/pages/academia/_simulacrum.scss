@@ -64,7 +64,7 @@ $simulacrum-form-background: #ededed;
 .simulacrum-info-title{
   position: relative;
   color: $orange;
-  font-family: 'CaeciliaLTPro-85Heavy';
+  font-family: $font_cae_heavy;
 
   &::before{
     content: "";

@@ -141,7 +141,7 @@
   //  Step 2,3
   .tab2, .tab3{
     h2,h4{
-      font-family: 'CaeciliaLTPro-85Heavy';
+      font-family: $font_cae_heavy;
     }
 
     h2{
@@ -177,7 +177,7 @@
 
       span{
         display: inline-block;
-        font-family: 'Geogrotesque-Md';
+        font-family: $font_geo_md;
       }
     }
 

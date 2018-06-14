@@ -59,206 +59,221 @@
         <div class="col-xs-12 start-xs">
           <h2 class="about-v--title">Nuestros Valores</h2>
         </div>
-        <div class="row col-xs-12 start-xs about-v--vgrid">
+        <div class="row col-xs-12 center-xs about-v--vgrid">
           {{-- (.vgrid-item>)*15 --}}
           {{-- (.vgrid-item>img[src='{{ url('/static/images/colegio/svg/ico-nosotros-0$@1.svg') }}']+)*15 --}}
 
-          {{-- (.vgrid-item>(.row.col-xs-12.start-xs>((.row.col-xs-2.col-sm-12.vgrid-item--img>img[src='{{ url('/static/images/colegio/svg/ico-nosotros-0$@1.svg') }}'])+(.row.col-xs-10.col-sm-12.vgrid-item--text>(h3>{valor})+(p>{Texto del valor que es textito})))))*15 --}}
+          {{-- (.vgrid-item>(.row.col-xs-12.start-xs>((.row.col-xs-2.col-sm-12.vgrid-item--img>img[src='{{ url('/static/images/colegio/svg/ico-nosotros-0$@1.svg') }}'])+(.row.col-xs-10.col-sm-12.vgrid-item--text>(h3>{valor})+(p>{texto})))))*15 --}}
 
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-01.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Generosidad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Con mi ayuda lograrás tus metas.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-02.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Honestidad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>El éxito solo perdura con la verdad.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-03.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Puntualidad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Para hacerlo bien, lo hago a tiempo.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-04.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Responsabilidad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Si hay que hacerlo depende de mi.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-05.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Fortaleza</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Las caídas son solo peldaños en el ascenso.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-06.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Identidad nacional</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Yo soy el Perú, por eso lo valoro y respeto.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-07.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Orden</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Soy eficiente porque soy ordenado.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-08.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Justicia</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Dar a cada uno lo que se merece y corresponde.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-09.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Honradez</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Si no es mío, lo cuido y lo devuelvo.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-10.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Perseverancia</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Nunca dejar de luchar por ser mejor.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-11.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Amistad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Un amigo es un nuevo hermano</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-12.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Solidaridad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>No me tiene que sobrar para compartir.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-13.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Gratitud</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Si hago un favor, no lo recuerdo; si lo recibo, nunca lo olvido.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-14.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Respeto</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Tus derechos y deberes son tan importantes como los míos.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="vgrid-item">
-            <div class="row col-xs-12 start-xs">
+            <div class="row col-xs-12 start-xs align-content-baseline">
               <div class="row col-xs-2 col-sm-12 vgrid-item--img"><img src="{{ url('/static/images/colegio/svg/ico-nosotros-15.svg') }}" alt=""></div>
               <div class="row col-xs-10 col-sm-12 vgrid-item--text">
                 <div class="col-xs-12">
-                  <h3>valor</h3>
+                  <h3>Lealtad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Texto del valor que es textito</p>
+                  <p>Si confías en mí, no te defraudaré.</p>
                 </div>
               </div>
             </div>
+
           </div>
 
 

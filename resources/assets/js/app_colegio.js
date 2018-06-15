@@ -3,7 +3,7 @@
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
- 
+
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider.module';
@@ -105,7 +105,7 @@ var get = (url) => {
  */
  (function(){
    if(page !== 'index') return false;
-   
+
    // Slider
    var slider = tns({
      container: '.index-banners',
@@ -116,9 +116,11 @@ var get = (url) => {
      touch: true,
      responsive: true,
      mouseDrag: true,
-     controls: false,
-     nav: true,
+     controls: true,
+     controlsText: ['&#xf111;','&#xf112;'],
+     nav: false,
      autoplayHoverPause: true,
+     loop: false
    });
 
   // Loader wrap
@@ -138,7 +140,3 @@ var get = (url) => {
   if(page !== 'contact'){ return false;}
   Validation.init(document.forms[0], true);
 })();
-
-
-
-

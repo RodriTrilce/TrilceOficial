@@ -12,8 +12,6 @@
     <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-quieromibeca.jpg')}}" alt=""></a></div>
   </div>
 
-  <hr class="grayhr xs-hide" />
-
   <div class="nuevos-i container-base">
     <div class="row center-xs">
       <div class="col-xs-12 col-sm-9 col-md-8 start-xs nuevos-i-title">

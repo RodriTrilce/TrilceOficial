@@ -3,7 +3,7 @@
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
- 
+
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider.module'
@@ -68,7 +68,7 @@ Validation.validators.onlytext = input => {
  Element.prototype.remove = function() {
      this.parentElement.removeChild(this);
  }
- 
+
  NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
      for(var i = this.length - 1; i >= 0; i--) {
          if(this[i] && this[i].parentElement) {
@@ -76,16 +76,16 @@ Validation.validators.onlytext = input => {
          }
      }
  }
- 
+
  NodeList.prototype.forEach = Array.prototype.forEach;
- 
+
  // Safari fix hover touch
  document.addEventListener('touchstart', function() {},false);
  /*var supportsTouch = (typeof Touch == "object");
  if(supportsTouch){
  }
  */
- 
+
  // capitalize frist letter upper
  String.prototype.capitalize = function(){
      return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
@@ -164,28 +164,28 @@ function enrollment(nextBtn,prevBtn,form, type){
       }
     }
   }];
-  
+
   this.init = function(){
     Validation.init(document.forms[0], true);
-    
+
     this.showTab(this.currentTab);
     this.hearUniversity();
     this.hearVenue();
-    
+
     document.getElementById(this.prevBtn).addEventListener('click', (e) => this.nextPrev(-1,e));
     document.getElementById(this.nextBtn).addEventListener('click', (e) => this.nextPrev(1,e));;
 
   }
-  
+
   this.hearUniversity = function(){
     var elem = document.querySelector('#step1_university');
     var select = document.getElementById('step1_venue');
-    
+
     elem.addEventListener('change', () => {
       this.step1University = elem.options[elem.selectedIndex].value;
       this.cleanSelect(select, 'Sede');
       this.cleanSelect(document.getElementById('step1_cycle'), 'Ciclo');
-      
+
       get(`/api/academia/enrollment/${this.step1University}`).then((response) => {
           response = JSON.parse(response).data;
           for(var k in response){
@@ -195,20 +195,20 @@ function enrollment(nextBtn,prevBtn,form, type){
               select.add(s);
           }
       }, (error) => console.error('error', error));
-      
+
     });
   }
-  
+
   this.hearVenue = function(){
     let elem = document.querySelector('#step1_venue');
     const select = document.querySelector('#step1_cycle');
     elem.addEventListener('change' , () => {
       this.step1Venue = elem.options[elem.selectedIndex].value;
-      
+
       let key = this.step1Venue.split('|');
-      
+
       this.cleanSelect(select, 'Ciclo');
-      
+
       get(`/api/academia/enrollment/${this.step1University}/${key[1]}`).then((response) => {
         console.log(response)
           response = JSON.parse(response).data;
@@ -222,7 +222,7 @@ function enrollment(nextBtn,prevBtn,form, type){
       }, (error) => console.error('error', error));
     })
   }
-  
+
   this.cleanSelect = function(select, title)
   {
     while (select.options.length) select.remove(0);
@@ -246,7 +246,7 @@ function enrollment(nextBtn,prevBtn,form, type){
         errorContainer.style.display = 'none';
       }
     }
-    
+
 
 
     var x = document.getElementsByClassName('tab');
@@ -255,7 +255,7 @@ function enrollment(nextBtn,prevBtn,form, type){
     document.getElementById(this.nextBtn).innerHTML = (n == (x.length - 1)?'Enviar':`Siguiente <i class="fa fa-angle-right"></i>`);
     this.fixStepIndicator(n);
   }
-  
+
   this.drawTerms = function()
   {
     var term2  = document.getElementById('terms-2');
@@ -263,18 +263,18 @@ function enrollment(nextBtn,prevBtn,form, type){
     var term9  = document.getElementById('terms-9');
     var term9a = document.getElementById('terms-9-s');
     var term91 = document.getElementById('terms-91');
-    
+
     var university = document.getElementById('step1_university');
     university = university.options[university.selectedIndex].text.toLowerCase();
 
     var route = this.cost[0].one[university];
-    
+
     var routeNine = this.cost[0].nine[university];
     var sede = document.getElementById('step1_venue');
-    
+
     sede = sede.options[sede.selectedIndex].text;
     sede = sede.toLowerCase();
-    
+
     var time, cost, science, letter;
     if(Object.keys(route).length > 1){
       cost = route[sede].cost;
@@ -283,14 +283,14 @@ function enrollment(nextBtn,prevBtn,form, type){
       cost = route.all.cost;
       time = route.all.time;
     }
-    
+
     science = routeNine.ciencia;
     letter  = routeNine.letras;
-    
+
     // Set
     term2.innerHTML = cost;
     term21.innerHTML = time;
-    
+
     if(university !== 'pucp'){
       term9.style.display = 'inline-block';
       let b = term9a.options[term9a.selectedIndex].value;
@@ -303,16 +303,16 @@ function enrollment(nextBtn,prevBtn,form, type){
       term9.style.display = 'none';
       term91.innerHTML    = '30';
     }
-    
+
   }
 
   this.nextPrev = function(n,e)
   {
     //      document.getElementById(this.nextBtn).type = 'submit';
-    
+
     var x = document.getElementsByClassName('tab');
     var tb;
-    
+
     switch (this.currentTab) {
       case 0:
         tb = '.tab1';
@@ -326,7 +326,7 @@ function enrollment(nextBtn,prevBtn,form, type){
         tb = '.tab3';
       break;
     }
-    
+
     Validation.validateSection(document.querySelector(tb)).then(result => {
       if(n === -1){
         x[this.currentTab].style.display = 'none';
@@ -349,18 +349,18 @@ function enrollment(nextBtn,prevBtn,form, type){
         }
       }
     });
-    
+
   }
 
   this.fixStepIndicator = function(n) {
     let v = document.getElementById("steps-guide");
     let z = v.getElementsByTagName("div")
-    
+
     Array.from(z).forEach(function(a,i){
       a.classList = a.classList.remove('active');
       if(i==n) a.classList.add('active');
       if(i<n) a.classList.add('visited');
-      
+
     });
   }
 
@@ -379,9 +379,11 @@ function enrollment(nextBtn,prevBtn,form, type){
      touch: true,
      responsive: true,
      mouseDrag: true,
-     controls: false,
-     nav: true,
+     controls: true,
+     controlsText: ['&#xf111;','&#xf112;'],
+     nav: false,
      autoplayHoverPause: true,
+     loop: false
    //  lazyload: true
    });
  }
@@ -398,7 +400,7 @@ function enrollment(nextBtn,prevBtn,form, type){
       show(gid('step2'));
 
       gid('s2_dni').value = gid('s1_dni').value
-      
+
     });
   }
 })();
@@ -431,10 +433,10 @@ function enrollment(nextBtn,prevBtn,form, type){
       console.error("Failed!", error);
     })
   }
-  
+
   var x = document.getElementById('year_list');
   var v = x.querySelectorAll('li');
-  
+
   v.forEach(elem => {
     elem.addEventListener('click', () => {
       v.forEach(e => e.classList.remove('select'));
@@ -443,7 +445,7 @@ function enrollment(nextBtn,prevBtn,form, type){
     });
 
   });
-  
+
 
   // Default
   getEntering(university, '2018');
@@ -454,7 +456,7 @@ function enrollment(nextBtn,prevBtn,form, type){
 // Index
 (() => {
   if(page !== 'index') return false;
-  
+
   window.onload = function()
   {
     setTimeout(function(){
@@ -475,11 +477,11 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   let a = new enrollment('next', 'prev', 'enrollment-form', 'flex');
   a.init();
-  
+
   document.querySelector("#termsActive").addEventListener('click', () => {
     document.querySelector("#terms").style.display = 'block';
   });
-  
+
 })();
 
 
@@ -491,8 +493,3 @@ function enrollment(nextBtn,prevBtn,form, type){
  if(page !== 'contact'){ return false;}
  Validation.init(document.forms[0], true);
 })();
-
-
-
-
-

@@ -616,7 +616,6 @@
   }
 
 
-// hide columns
   .xs-hide{
     @media screen and (max-width: 768px){
       display: none;
@@ -627,6 +626,11 @@
     @media screen and (max-width: 768px){
       display: none !important;
     }
+  }
+
+  .container-base{
+    width: 100%;
+    padding: 0 12px;
   }
 
   .align-content-baseline{

@@ -3,6 +3,53 @@ body {
   color: $gray;
 }
 
+@media screen and (min-width: 500px){
+  html{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 570px){
+  html{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 620px){
+  html{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 680px){
+  html{
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 720px){
+  html{
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 800px){
+  html{
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 860px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 920px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 15px;
+  }
+}
+
 a,a:link{
   text-decoration: none;
 }
@@ -44,9 +91,4 @@ a:hover,li:hover{
 
 *{
   outline: none;
-}
-
-.container-base{
-  width: 100%;
-  padding: 0 12px;
 }

@@ -173,9 +173,8 @@ function enrollment(nextBtn,prevBtn,form, type){
     this.hearUniversity();
     this.hearVenue();
 
-    document.getElementById(this.prevBtn).addEventListener('click', (e) => this.nextPrev(-1,e));
-    document.getElementById(this.nextBtn).addEventListener('click', (e) => this.nextPrev(1,e));;
-
+    document.getElementById(this.prevBtn).addEventListener('click', e => this.nextPrev(-1,e));
+    document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));;
   }
 
   this.hearUniversity = function(){
@@ -184,44 +183,56 @@ function enrollment(nextBtn,prevBtn,form, type){
 
     elem.addEventListener('change', () => {
       this.step1University = elem.options[elem.selectedIndex].value;
+
+      select.style.cursor  = 'wait';
+      select.disabled      = true;
+
       this.cleanSelect(select, 'Sede');
       this.cleanSelect(document.getElementById('step1_cycle'), 'Ciclo');
 
-      get(`/api/academia/enrollment/${this.step1University}`).then((response) => {
-          response = JSON.parse(response).data;
-          for(var k in response){
-              let s = document.createElement('option');
-              s.text = k.capitalize();
-              s.value = response[k];
-              select.add(s);
-          }
-      }, (error) => console.error('error', error));
-
+      get(`/api/academia/enrollment/${this.step1University}`).then(
+          response  => this.makeResponsehear(response, select),
+          error     => this.forceHearEvent(elem)
+        );
     });
   }
 
   this.hearVenue = function(){
     let elem = document.querySelector('#step1_venue');
     const select = document.querySelector('#step1_cycle');
+
     elem.addEventListener('change' , () => {
       this.step1Venue = elem.options[elem.selectedIndex].value;
-
-      let key = this.step1Venue.split('|');
+      let key         = this.step1Venue.split('|');
 
       this.cleanSelect(select, 'Ciclo');
 
-      get(`/api/academia/enrollment/${this.step1University}/${key[1]}`).then((response) => {
-        console.log(response)
-          response = JSON.parse(response).data;
-          for(var k in response){
-              let s   = document.createElement('option');
-              s.text  = response[k].capitalize();
-              console.log(k)
-              s.value = k;
-              select.add(s);
-          }
-      }, (error) => console.error('error', error));
-    })
+      select.style.cursor = 'wait';
+      select.disabled     = true;
+
+      get(`/api/academia/enrollment/${this.step1University}/${key[1]}`).then(
+          response  => this.makeResponsehear(response, select),
+          error     => this.forceHearEvent(elem)
+        );
+    });
+  }
+
+  this.makeResponsehear = function(response, select, wait=false){
+    response = JSON.parse(response).data;
+    for(var k in response){
+        let s = document.createElement('option');
+        s.text = k.capitalize();
+        s.value = response[k];
+        select.add(s);
+    }
+    select.style.cursor = 'default';
+    select.disabled     = false;
+  }
+
+  this.forceHearEvent = function(elem){
+    var evt = document.createEvent("HTMLEvents");
+    evt.initEvent("change", false, true);
+    elem.dispatchEvent(evt);
   }
 
   this.cleanSelect = function(select, title)

@@ -68,6 +68,7 @@
     </div>
   </div>
 
+
   @include('academia.partials.card_bottom')
 @endsection
 @section('scripts')

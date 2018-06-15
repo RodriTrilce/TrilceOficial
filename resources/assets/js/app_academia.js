@@ -7,6 +7,7 @@
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider.module'
+import 'datalist-polyfill/datalist-polyfill'
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",

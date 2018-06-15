@@ -1,6 +1,6 @@
 select,input,textarea{
   font-family: 'CaeciliaLTPro-45Light';
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: $gray;
   padding: 10px;
   width: 100%;
@@ -28,24 +28,24 @@ input:-webkit-autofill {
 select{
   appearance: none;
   padding-right: 25px;
-  padding: 10px;
+  padding: 12px;
   overflow: hidden;
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='18px'><path d='M12.51,45.55l87.49,88,87.49-88,11.17,11.17-93.08,93.07L100,154.45l-5.58-4.66L1.34,56.72Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='16px'><path d='M12.51,45.55l87.49,88,87.49-88,11.17,11.17-93.08,93.07L100,154.45l-5.58-4.66L1.34,56.72Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
   background-position-y: center;
-  background-position-x: 99%;
+  background-position-x: 98%;
 
-  &:active{
-    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='18px'><path d='M100,45.55l5.59,4.66,93.07,93.07-11.17,11.17L100,66.49l-87.49,88L1.34,143.28,94.42,50.21Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
-    background-position-x: 99%;
+  &:hover{
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='16px'><path d='M100,45.55l5.59,4.66,93.07,93.07-11.17,11.17L100,66.49l-87.49,88L1.34,143.28,94.42,50.21Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+    background-position-x: 98%;
   }
 
   @media screen and (max-width: 768px) {
-    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='13px'><path d='M12.51,45.55l87.49,88,87.49-88,11.17,11.17-93.08,93.07L100,154.45l-5.58-4.66L1.34,56.72Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
-    background-position-x: 98%;
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='12px'><path d='M12.51,45.55l87.49,88,87.49-88,11.17,11.17-93.08,93.07L100,154.45l-5.58-4.66L1.34,56.72Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+    background-position-x: 97%;
 
-    &:active{
-      background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='13px'><path d='M100,45.55l5.59,4.66,93.07,93.07-11.17,11.17L100,66.49l-87.49,88L1.34,143.28,94.42,50.21Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
-      background-position-x: 98%;
+    &:hover{
+      background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 197.32 108.9' fill='#{$orange_uri}' width='12px'><path d='M100,45.55l5.59,4.66,93.07,93.07-11.17,11.17L100,66.49l-87.49,88L1.34,143.28,94.42,50.21Z' transform='translate(-1.34 -45.55)'/></svg>") no-repeat right #fff;
+      background-position-x: 97%;
     }
   }
 

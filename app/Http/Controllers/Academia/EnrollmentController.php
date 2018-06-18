@@ -174,7 +174,7 @@ class EnrollmentController extends Controller
 
      // Ciclo
      $pdf->SetXY(47, 43);
-     $pdf->Write(0, $enrollment->interest_cycle);
+     $pdf->Write(0, utf8_decode($enrollment->interest_cycle));
 
      // Condición
      $pdf->SetXY(78, 43);
@@ -182,15 +182,15 @@ class EnrollmentController extends Controller
 
      // Sede
      $pdf->SetXY(16, 55);
-     $pdf->Write(0, ucwords($enrollment->interest_venue));
+     $pdf->Write(0, ucwords(utf8_decode($enrollment->interest_venue)));
 
      // Universidad
      $pdf->SetXY(47, 55);
-     $pdf->Write(0, strtoupper($enrollment->interest_university));
+     $pdf->Write(0, strtoupper(utf8_decode($enrollment->interest_university)));
 
      // Apellido paterno
      $pdf->SetXY(16, 76.5);
-     $pdf->Write(0, $enrollment->student_names);
+     $pdf->Write(0, utf8_decode($enrollment->student_names));
      /*
      // Apellido Materno
      $pdf->SetXY(47, 76.5);
@@ -202,59 +202,59 @@ class EnrollmentController extends Controller
      */
      // Telefono
      $pdf->SetXY(108, 76.5);
-     $pdf->Write(0, $enrollment->student_phone_cell);
+     $pdf->Write(0, utf8_decode($enrollment->student_phone_cell));
 
      // Direccion
      $pdf->SetXY(16, 88);
-     $pdf->Write(0, $enrollment->student_address);
+     $pdf->Write(0, utf8_decode($enrollment->student_address));
 
      // Email
      $pdf->SetXY(78, 88);
-     $pdf->Write(0, $enrollment->student_email);
+     $pdf->Write(0, utf8_decode($enrollment->student_email));
 
      // Finalizo Colegio
      $pdf->SetXY(23, 100);
-     $pdf->Write(0, $enrollment->student_year_finish_school);
+     $pdf->Write(0, utf8_decode($enrollment->student_year_finish_school));
 
      // Colegio
      $pdf->SetXY(47, 100);
-     $pdf->Write(0, $enrollment->student_school);
+     $pdf->Write(0, utf8_decode($enrollment->student_school));
 
      // Universidad postula
      $pdf->SetXY(16, 111.5);
-     $pdf->Write(0, strtoupper($enrollment->student_postulate_university));
+     $pdf->Write(0, strtoupper(utf8_decode($enrollment->student_postulate_university)));
 
      // Carrera postula
      $pdf->SetXY(78, 111.5);
-     $pdf->Write(0, $enrollment->student_postulate_profession);
+     $pdf->Write(0, utf8_decode($enrollment->student_postulate_profession));
 
      // Antigua academia
      $pdf->SetXY(16, 123);
-     $pdf->Write(0, $enrollment->student_last_academy);
+     $pdf->Write(0, utf8_decode($enrollment->student_last_academy));
 
      // Apoderado: Apellidos y nombres
      $pdf->SetXY(16, 145);
-     $pdf->Write(0, $enrollment->attorney_names);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_names));
 
      // Apoderado: Ocupacion
      $pdf->SetXY(78, 145);
-     $pdf->Write(0, $enrollment->attorney_occupation);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_occupation));
 
      // Apoderado: DNI
      $pdf->SetXY(16, 156.5);
-     $pdf->Write(0, $enrollment->attorney_dni);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_dni));
 
      // Apoderado: Centro de trabajo
      $pdf->SetXY(47, 156.5);
-     $pdf->Write(0, $enrollment->attorney_work_location);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_work_location));
 
      // Apoderado: Telefono trabajo
      $pdf->SetXY(78, 168);
-     $pdf->Write(0, $enrollment->attorney_work_phone);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_work_phone));
 
      // Apoderado: Telefono emergencia
      $pdf->SetXY(108, 168);
-     $pdf->Write(0, $enrollment->attorney_phone_emergency);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_phone_emergency));
 
      // Fecha: Día
      $pdf->SetXY(104.5, 180.5);
@@ -270,11 +270,11 @@ class EnrollmentController extends Controller
 
      // Apoderado Terms:
      $pdf->SetXY(200, 187.5);
-     $pdf->Write(0, $enrollment->attorney_names);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_names));
 
      // Apoderado Terms:
      $pdf->SetXY(200, 193.5);
-     $pdf->Write(0, $enrollment->attorney_dni);
+     $pdf->Write(0, utf8_decode($enrollment->attorney_dni));
 
 
      // Terms 14:

@@ -21,7 +21,7 @@ class EnrollmentApiResourceController extends Controller
 
       return new EnrollmentApiResource(collect([
         'register'  => ($enrollment?1:0),
-        'key'       => encrypt($enrollment->student_dni)
+        'key'       => ($enrollment?encrypt($enrollment->student_dni):'')
       ]));
   }
 }

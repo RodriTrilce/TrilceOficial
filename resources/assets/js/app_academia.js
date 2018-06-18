@@ -218,23 +218,29 @@ function enrollment(nextBtn,prevBtn,form, type){
     elem.addEventListener('keyup', () => {
       if(elem.value.length==8){
         post('/api/academia/enrollment/check', 'dni='+elem.value).then(
-            response  => this.hearDNIDownload(response),
+            response  => this.hearDNIAction(response),
             error     => console.log('Error API DNI checker')
           );
+      }else {
+        this.hearDNIAction(null, true);
       }
     });
   }
 
-  this.hearDNIDownload = function(response){
-    response = JSON.parse(response).data;
+  this.hearDNIAction = function(response, hide=false){
 
     var containerDownload = document.getElementById('dnidownload');
     var linkDownload      = document.getElementById('dnidownload-link');
     var next              = document.querySelector('.stepsarrows');
 
-    containerDownload.style.display   = 'flex';
-    next.style.display                = 'none';
-    linkDownload.href                 = `${ACADEMIA_DOWNLOAD_PDF_LINK}?token=${response.key}`;
+    if(hide){
+      containerDownload.style.display   = 'none';
+    }else{
+      response = JSON.parse(response).data;
+      containerDownload.style.display   = 'flex';
+      next.style.display                = 'none';
+      linkDownload.href                 = `${ACADEMIA_DOWNLOAD_PDF_LINK}?token=${response.key}`;
+    }
   }
 
   this.hearUniversity = function(){

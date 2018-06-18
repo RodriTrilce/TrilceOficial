@@ -19,12 +19,29 @@
 
       <div class="col-xs-12 col-sm container-base venue-info-container">
         <h2>Información general</h2>
-        <div class="hr"></div>
-        <ul class="venue-ul">
-          <li><b class="venue-li-title">Horario de Atención:</b> <br>{{ $data->horary }}</li>
-          <li><b class="venue-li-title">Dirección:</b> <br>{{ $data->direction }}</li>
-          <li><b class="venue-li-title">Teléfono:</b> <br>{{ $data->phone }}</li>
-        </ul>
+        <div class="venues-hr"></div>
+        
+        <div class="row col-xs-12 col-sm-12">
+          <table class="table-responsive venue-table">
+            <thead>
+              <tr>
+                <th>Horario de atención</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td data-label="Horario de atención"> {{ $data->horary }}</td>
+                  <td data-label="Dirección"> {{ $data->direction }}</td>
+                  <td data-label="Teléfono"> {{ $data->phone }}</td>
+                </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+
       </div>
       <div class="col-xs-12 col-sm map-container">
         <div id="map"></div>

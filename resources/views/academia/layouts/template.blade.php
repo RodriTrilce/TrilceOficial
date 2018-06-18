@@ -43,37 +43,37 @@
                       <div>
                         <h3>UNI - San Marcos - PUCP</h3>
                         <ul>
-                          <li><a href="/academia/sede/los-olivos" class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active nav-item-noclick':'') }}">Los Olivos</a></li>
+                          <li class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>UNI - San Marcos</h3>
                         <ul>
-                          <li><a href="/academia/sede/santa-beatriz" class="{{ (Request::is('academia/sede/santa-beatriz')?'nav-item-active nav-item-noclick':'') }}">Santa Beatriz</a></li>
-                          <li><a href="/academia/sede/comas" class="{{ (Request::is('academia/sede/comas')?'nav-item-active nav-item-noclick':'') }}">Comas</a></li>
-                          <li><a href="/academia/sede/villa-el-salvador" class="{{ (Request::is('academia/sede/villa-el-salvador')?'nav-item-active nav-item-noclick':'') }}">Villa el Salvador</a></li>
+                          <li class="{{ (Request::is('academia/sede/santa-beatriz')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
+                          <li class="{{ (Request::is('academia/sede/comas')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/comas">Comas</a></li>
+                          <li class="{{ (Request::is('academia/sede/villa-el-salvador')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>UNI - PUCP</h3>
                         <ul>
-                          <li><a href="/academia/sede/torrico" class="{{ (Request::is('academia/sede/torrico')?'nav-item-active nav-item-noclick':'') }}">Torrico</a></li>
+                          <li class="{{ (Request::is('academia/sede/torrico')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/torrico">Torrico</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>San Marcos</h3>
                         <ul>
-                          <li><a href="/academia/sede/marsano" class="{{ (Request::is('academia/sede/marsano')?'nav-item-active nav-item-noclick':'') }}">Marsano</a></li>
+                          <li class="{{ (Request::is('academia/sede/marsano')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/marsano">Marsano</a></li>
                         </ul>
                       </div>
                       <div>
                         <h3>PUCP</h3>
                         <ul>
-                          <li><a href="/academia/sede/san-isidro" class="{{ (Request::is('academia/sede/san-isidro')?'nav-item-active nav-item-noclick':'') }}">San Isidro</a></li>
+                          <li class="{{ (Request::is('academia/sede/san-isidro')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/san-isidro">San Isidro</a></li>
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div>                  
                 </li>
 
                 <li class="menu-click-sedes">

@@ -20,28 +20,24 @@
         <div class="venues-hr"></div>
 
         <div class="row col-xs-12 col-sm-12">
-
-          <div class="row col-xs venue-colegio-table-block venue-colegio-table-line venue-colegio-table-block1">
-            <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-graduation-cap"></i> Nivel</div>
-            @foreach ($address as $k)
-              <div class="col-xs-12"><span class="venue-colegio-title-span">{!! $k->grades !!}</span></div>
-            @endforeach
-          </div>
-
-          <div class="row col-xs venue-colegio-table-block venue-colegio-table-line">
-            <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-building"></i> Dirección</div>
-            @foreach ($address as $k)
-              <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->address }}</span></div>
-            @endforeach
-          </div>
-
-          <div class="row col-xs venue-colegio-table-block">
-            <div class="col-xs-12 venue-colegio-table-title"><i class="venue-colegio-icon fa fa-phone"></i> Teléfono</div>
-            @foreach ($address as $k)
-              <div class="col-xs-12"><span class="venue-colegio-title-span">{{ $k->phone }}</span></div>
-            @endforeach
-          </div>
-
+          <table class="table-responsive venue-table">
+            <thead>
+              <tr>
+                <th>Nivel</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+              @foreach ($address as $k)
+                <tr>
+                  <td data-label="Nivel">{!! $k->grades !!}</td>
+                  <td data-label="Dirección">{{ $k->address }}</td>
+                  <td data-label="Teléfono">{{ $k->phone }}</td>
+                </tr>
+              @endforeach
+            </tbody>
+          </table>
         </div>
 
       </div>

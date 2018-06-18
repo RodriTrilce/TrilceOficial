@@ -25,12 +25,12 @@
 
   div.venues-hr{
     border: 0.5px solid transparentize($gray, 0.85);
-    margin: 1.5rem;
-    margin-right: 0;
-    margin-left: -0.5rem;
+    margin: 1.5rem 0;
     position: relative;
     width: 90%;
-
+    @media (max-width: 767px) {
+      width: 100%;
+    }
     &::after{
       content: "";
       position: absolute;
@@ -38,52 +38,12 @@
       width: 2.6rem;
       background: $orange;
       top:-5px;
-      left: 0.5rem;
+      left: 0;
     }
   }
 
   .venue-li-title{
     font-size: .95rem;
-  }
-
-  ul{
-    font-size: .85rem;
-
-    li{
-      position: relative;
-      padding-left: 15px;
-      margin-bottom: 10px;
-
-
-      &::before{
-        position: absolute;
-        font-family: $font_icon;
-        font-size: 1rem;
-        color: $orange;
-        left: -2px;
-        height: 10px;
-        top: 0;
-      }
-
-      &:nth-child(1){
-        &::before(){
-          content: "\F18F";
-        }
-      }
-
-      &:nth-child(2){
-        &::before(){
-          content: "\F15C";
-        }
-      }
-
-      &:nth-child(3){
-        &::before(){
-          content: "\f2b3";
-        }
-      }
-
-    }
   }
 }
 
@@ -174,7 +134,7 @@
 }
 
 .investment-block-item{
-  padding: 1.7rem;
+  padding:.8vw;
   height: fit-content;
 
   >div{
@@ -202,4 +162,84 @@
 
 .venue-info-container{
   margin-bottom: 20px;
+}
+
+.venue-table{
+  width: 90% !important;
+
+  th{
+    color: $orange;
+    position: relative;
+
+    &::before{
+      font-family: $font_icon;
+      font-size: 15px;
+      color: $orange;
+      left: -2px;
+      height: 10px;
+      top: 0;
+    }
+
+    &:nth-child(1){
+      &::before(){
+        content: "\F18F";
+      }
+    }
+
+    &:nth-child(2){
+      &::before(){
+        content: "\f27d";
+      }
+    }
+
+    &:nth-child(3){
+      &::before(){
+        content: "\f2b3";
+      }
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    width: 100% !important;
+
+    td {
+      position: relative;
+
+      &:before{
+        color: $gray;
+        padding-left: 16px;
+      }
+
+      &:after {
+        color: $orange;
+        font-family: $font_icon;
+        font-size: 15px;
+        left: 0;
+        top: 9px;
+        padding-left: 10px;
+        position: absolute;
+      }
+
+      &:nth-child(1){
+        &::after(){
+          content: "\F18F";
+        }
+      }
+
+      &:nth-child(2){
+        &::after(){
+          content: "\f27d";
+        }
+      }
+
+      &:nth-child(3){
+        &::after(){
+          content: "\f2b3";
+        }
+      }
+
+    }
+  }
+
 }

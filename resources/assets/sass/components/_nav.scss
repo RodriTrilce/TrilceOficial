@@ -2,12 +2,16 @@
   *  Nav
 */
 
+// Variables
+$nav-li-hover-transition : unquote("all .1s ease-in");
+
 %dropdown-desk-active {
   display: block;
   line-height: initial;
   padding-top: 1%;
   z-index: 12;
   text-align: left;
+  transition: 0.3s all;
   visibility: visible;
 }
 
@@ -23,9 +27,12 @@
     font-family: $font_geo_reg;
     a,li{ transition: none; }
 
-    >div li a:link{
-      transition: all 0.3s ease-in;
+    &:hover{
+      >div li > a:link{
+        transition: all 0.3s ease-in;
+      }
     }
+
   }
 
 }// End .dropdown-desk
@@ -36,6 +43,12 @@
   border-top: 8px solid $orange;
   background: white;
   justify-content: space-around;
+
+  &:hover{
+    >div ul li::before{
+      transition: $nav-li-hover-transition;
+    }
+  }
 
   >div{
 
@@ -113,7 +126,6 @@
   justify-content: space-between;
 
   a:hover{
-    font-weight: bold;
   }
 
   a:link,a:visited{
@@ -142,19 +154,16 @@
 
   .venues-in{
     display: flex;
-
     margin-left: 3rem;
     padding-left: 2rem;
-
     margin-top: 1rem;
-
 
     @media screen and (max-width: 1000px) {
       margin-left: 2rem;
       padding-left: .5rem;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 750px) {
       margin-left: 1rem;
       padding-left: .5rem;
     }
@@ -182,6 +191,12 @@
     .item{
       font-size: 1.3rem;
       margin-bottom: 0.5rem;
+
+      &:hover{
+        &::before{
+          transition: $nav-li-hover-transition;
+        }
+      }
 
       &::before{
         content: "\f112";
@@ -660,6 +675,9 @@ nav{
 }
 
 .nav-item-active{
+  a,a:link,a:visited{
+
+  }
   color: $orange !important;
   &:hover{
     color: $orange !important;
@@ -668,6 +686,23 @@ nav{
     color: $orange !important;
   }
 
+}
+
+.nav-item-active--indeskblock{
+  a,a:link,a:visited,a:hover{
+    color: $orange !important;
+  }
+
+  &::before{
+    color: $orange !important;
+  }
+}
+
+.nav-item-noclick--indeskblock{
+  a{
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 .nav-item-noclick{

@@ -8,6 +8,10 @@
   li{
     display: inline;
 
+    a:link,a:visited{
+      color: white;
+    }
+
     &::before{
       content: "\F112";
       color: $orange;

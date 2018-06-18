@@ -147,8 +147,8 @@ class EnrollmentController extends Controller
 
      //$storagePath  = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
      //$theme        = Storage::disk('local')->url('formato_matricula.pdf');
-     $theme = $internal_path.'formato_matricula.pdf';
-//
+     $theme = $internal_path . 'formato_matricula.pdf';
+
      $pdf = new FPDI();
      $pdf->AddFont('33FA0F_9_0','','33FA0F_9_0.php');
      $pdf->AddPage('L','A4');

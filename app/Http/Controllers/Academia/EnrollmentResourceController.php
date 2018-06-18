@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Academia;
 
-use Cache;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Cache;
+use GuzzleHttp\Client;
 
 use App\Http\Resources\Academia\EnrollmentResource;
+use App\Models\Academia\EnrollmentModel as Enrollment;
 
 class EnrollmentResourceController extends Controller
 {
@@ -131,6 +133,8 @@ class EnrollmentResourceController extends Controller
        }
        return $cycles;
      }
+
+
 
 
 }

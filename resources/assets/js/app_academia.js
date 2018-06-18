@@ -1,5 +1,5 @@
 /*!
- * App.js v0.1
+ * App.js v1.0
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
@@ -9,14 +9,16 @@ import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider.module'
 import 'datalist-polyfill/datalist-polyfill'
 
+const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/matricula-en-linea/descargar-pdf'
+
 const ValidationLang = {
-  required: "'{label}' es obligatorio.",
-  email: "'{label}' debe ser una dirección de e-mail valida.",
-  maxLength: "'{label}' debe tener maximo {maxLength} digitos.",
-  minLength: "'{label}' debe tener minimo {minLength} digitos.",
-  tel: "{label} debe ser un número telefónico.",
-  onlytext: "Solo es permitido texto",
-  captcha: "Verfica el captcha"
+  required      : "'{label}' es obligatorio.",
+  email         : "'{label}' debe ser una dirección de e-mail valida.",
+  maxLength     : "'{label}' debe tener maximo {maxLength} digitos.",
+  minLength     : "'{label}' debe tener minimo {minLength} digitos.",
+  tel           : "{label} debe ser un número telefónico.",
+  onlytext      : "Solo es permitido texto",
+  captcha       : "Verfica el captcha"
 };
 
 const ValidationConfig = {
@@ -60,11 +62,6 @@ Validation.validators.onlytext = input => {
   });
 };
 
-
-/*
-
-*/
-
  // Define methods utils
  Element.prototype.remove = function() {
      this.parentElement.removeChild(this);
@@ -87,17 +84,23 @@ Validation.validators.onlytext = input => {
  }
  */
 
- // capitalize frist letter upper
- String.prototype.capitalize = function(){
-     return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
- }
 
 // Utils
 var show  = elem => elem.style.display = 'block';
 var hide  = elem => elem.style.display = 'none';
 var gid   = elem => document.getElementById(elem);
 
-var get = (url) => {
+// Capitalize frist letter upper
+String.prototype.capitalize = function(){
+  return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
+}
+
+/**
+ * Make a request get for purposes
+ * @param  {url} get
+ * @return {Promise}        The XHR request as a Promise
+ */
+var get = url => {
   return new Promise((resolve, reject) => {
     var req = new XMLHttpRequest();
     req.open('GET', url);
@@ -110,6 +113,32 @@ var get = (url) => {
     };
     req.onerror = () => reject(Error('Network Error'));
     req.send();
+  });
+}
+
+
+/**
+ * Make a request post for purposes
+ * @param  {url} post
+ * @param  {data}
+ * @return {Promise}        The XHR request as a Promise
+ */
+var post = (url, data) => {
+  return new Promise((resolve, reject) => {
+    var req = new XMLHttpRequest();
+    req.open('POST', url, true);
+    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    req.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name=csrf-token]').content);
+    req.onload  = () => {
+      if(req.status==200){
+        resolve(req.response);
+      }else{
+        reject(Error(req.statusText));
+      }
+    }
+
+    req.onerror = ()  => reject(Error('Network Error'));
+    req.send(data);
   });
 }
 
@@ -168,13 +197,44 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   this.init = function(){
     Validation.init(document.forms[0], true);
-
     this.showTab(this.currentTab);
-    this.hearUniversity();
-    this.hearVenue();
+    this.dispatcher();
 
     document.getElementById(this.prevBtn).addEventListener('click', e => this.nextPrev(-1,e));
     document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));;
+  }
+
+  this.dispatcher = function(){
+    this.hearUniversity();
+    this.hearVenue();
+    this.hearDNI();
+  }
+
+  this.hearDNI = function(){
+    var elem              = document.getElementById('step1_dni');
+    var containerDownload = document.getElementById('dnidownload');
+    containerDownload.style.display = 'none';
+
+    elem.addEventListener('keyup', () => {
+      if(elem.value.length==8){
+        post('/api/academia/enrollment/check', 'dni='+elem.value).then(
+            response  => this.hearDNIDownload(response),
+            error     => console.log('Error API DNI checker')
+          );
+      }
+    });
+  }
+
+  this.hearDNIDownload = function(response){
+    response = JSON.parse(response).data;
+
+    var containerDownload = document.getElementById('dnidownload');
+    var linkDownload      = document.getElementById('dnidownload-link');
+    var next              = document.querySelector('.stepsarrows');
+
+    containerDownload.style.display   = 'flex';
+    next.style.display                = 'none';
+    linkDownload.href                 = `${ACADEMIA_DOWNLOAD_PDF_LINK}?token=${response.key}`;
   }
 
   this.hearUniversity = function(){
@@ -259,8 +319,6 @@ function enrollment(nextBtn,prevBtn,form, type){
       }
     }
 
-
-
     var x = document.getElementsByClassName('tab');
     x[n].style.display = this.blockType;
     document.getElementById(this.prevBtn).style.display = (n==0?'none':'inline');
@@ -320,8 +378,6 @@ function enrollment(nextBtn,prevBtn,form, type){
 
   this.nextPrev = function(n,e)
   {
-    //      document.getElementById(this.nextBtn).type = 'submit';
-
     var x = document.getElementsByClassName('tab');
     var tb;
 
@@ -379,32 +435,43 @@ function enrollment(nextBtn,prevBtn,form, type){
 }
 
 /**!
- *  Index Slider
+ *  Index
  */
+
+ // Slider
  if(page == 'index'){
-   var slider = tns({
-     container: '.index-banners',
-     items: 1,
-     slideBy: 'page',
-     autoplay: true,
-     autoplayButtonOutput: false,
-     touch: true,
-     responsive: true,
-     mouseDrag: true,
-     controls: true,
-     controlsText: ['&#xf111;','&#xf112;'],
-     nav: false,
-     autoplayHoverPause: true,
-     loop: false
-   //  lazyload: true
-   });
+   // Show effect open page
+   window.onload = function()
+   {
+     setTimeout(function(){
+       document.body.className += ' loaded'
+     }, 1000)
+   }
+
+  // Slider
+  var slider = tns({
+   container: '.index-banners',
+   items: 1,
+   slideBy: 'page',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   touch: true,
+   responsive: true,
+   mouseDrag: true,
+   controls: true,
+   controlsText: ['&#xf111;','&#xf112;'],
+   nav: false,
+   autoplayHoverPause: true,
+   loop: false
+  //  lazyload: true
+  });
  }
 
 
 /**!
  *  Simulacrum: Formulario de registro
  */
-(()=>{
+(function(){
   if(gid('f1_validate')){
     const step1 = gid('f1_validate');
     step1.addEventListener('click', ()=>{
@@ -464,22 +531,8 @@ function enrollment(nextBtn,prevBtn,form, type){
 })();
 */
 
-
-// Index
-(() => {
-  if(page !== 'index') return false;
-
-  window.onload = function()
-  {
-    setTimeout(function(){
-      document.body.className += ' loaded'
-    }, 1000)
-  }
-})();
-
-
 // Enrollment
-(() => {
+(function(){
   if(page !== 'enrollment') return false;
 
   // Upload fix

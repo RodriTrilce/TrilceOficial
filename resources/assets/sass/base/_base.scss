@@ -59,9 +59,11 @@ body {
 
 a,a:link{
   text-decoration: none;
+  color: $orange;
 }
 
 a:visited{
+  color: $orange
 }
 
 a:active{

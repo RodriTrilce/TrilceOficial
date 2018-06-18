@@ -55,8 +55,12 @@
 
                   <div class="col-xs-12">
                     <fieldset class="form-group">
-                      <input type="number" min="0" name="step1_dni" placeholder="DNI" aria-label="DNI" minlength="8" maxLength="8" required>
+                      <input type="number" min="0" name="step1_dni" placeholder="DNI" aria-label="DNI" id="step1_dni" minlength="8" maxLength="8" required>
                     </fieldset>
+                  </div>
+
+                  <div class="col-xs-12 enrollment-forms--dnidownload" id="dnidownload">
+                    Usted ya se encuentra registrado &#32;<b><a id="dnidownload-link" target="_blank">descargue su ficha de inscripción</a></b>
                   </div>
 
                   <div class="col-xs-12">
@@ -645,7 +649,7 @@
                         <option value="Turismo Sostenible">
                         <option value="Turismo y Administración">
                         <option value="Turismo y Hoteleria">
-                        <option value="Zootecnia">                        
+                        <option value="Zootecnia">
                       </datalist>
                     </fieldset>
                   </div>

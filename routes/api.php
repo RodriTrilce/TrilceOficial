@@ -21,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/academia/entering/{university}/{year}', 'Academia\EnteringResourceController@show');
 
 // Academia/Enrollment = Matricula en linea
+Route::post('/academia/enrollment/check', 'Academia\EnrollmentApiResourceController@check');
 Route::get('/academia/enrollment/{university}', 'Academia\EnrollmentResourceController@university');
 Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentResourceController@venue');
 //Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');

@@ -16,11 +16,14 @@ Route::name('prueba')->get('/prueba', function () {
    return view('academia.test');
 });
 
+Route::get('/prueba2', 'Prueba2Controller@index');
+
 
 /**
  *  Admin
  */
 
+// Index
 Auth::routes();
 Route::get('/admin', 'Admin\IndexController@index')->name('admin-index');
 
@@ -28,7 +31,7 @@ Route::get('/admin', 'Admin\IndexController@index')->name('admin-index');
 /**
  * General
  */
- 
+
  // Inicio (Home)
  Route::name('home')->get('/', function () {
     return view('home');
@@ -50,7 +53,7 @@ Route::name('academia-preparation')
 // Sedes (Venue)
 Route::name('academia-venue')
       ->get('/academia/sede/{barrack}', 'Academia\VenueController@index');
-      
+
 Route::get('/academia/sede', function(){
   return redirect('/academia');
 });
@@ -58,7 +61,7 @@ Route::get('/academia/sede', function(){
 // Simulacros (Simulacrum)
 Route::name('academia-simulacrum')
       ->get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
-      
+
 Route::get('/academia/simulacros', function(){
   return redirect('/academia');
 });
@@ -66,7 +69,7 @@ Route::get('/academia/simulacros', function(){
 // Solucionarios (Solutions)
 Route::name('academia-solutions')
       ->get('/academia/solucionarios-{university}', 'Academia\SolutionsController@index');
-      
+
 Route::get('/academia/solucionarios', function(){
   return redirect('/academia');
 });
@@ -74,7 +77,7 @@ Route::get('/academia/solucionarios', function(){
 // Lista de Cachimbos (Entering)
 Route::name('academia-entering')
       ->get('/academia/lista-de-cachimbos-{university}', 'Academia\EnteringController@index');
-      
+
 Route::get('/academia/lista-de-cachimbos', function(){
   return redirect('/academia');
 });
@@ -95,12 +98,12 @@ Route::post('/academia/contacto', 'Academia\ContactController@send');
 // Matricula en linea (Enrollment)
 Route::name('academia-enrollment')
       ->get('/academia/matricula-en-linea', 'Academia\EnrollmentController@create');
-      
+
 Route::name('academia-enrollment-finish')
       ->post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store');
-      
+
 Route::name('academia-enrollment-download')
-      ->post('/academia/matricula-en-linea/descargar-pdf', 'Academia\EnrollmentController@download');
+      ->match(['get', 'post'], '/academia/matricula-en-linea/descargar-pdf', 'Academia\EnrollmentController@download');
 
 
 
@@ -123,13 +126,13 @@ Route::name('colegio-aboutus')
 // Contactenos (Contact)
 Route::name('colegio-contact')
       ->get('/colegio/contacto', 'Colegio\ContactController@index');
-      
+
 Route::post('/colegio/contacto', 'Colegio\ContactController@send');
 
 // Sedes (Venue)
 Route::name('colegio-venue')
       ->get('/colegio/sede/{barrack}', 'Colegio\VenueController@index');
-      
+
 Route::get('/colegio/sede', function(){
   return redirect('/colegio');
 });
@@ -145,9 +148,6 @@ Route::name('colegio-paymentguide')
 // Blog (Blog)
 Route::name('colegio-blogpost')
       ->get('/colegio/blog/{id}-{post}', 'Colegio\BlogController@post');
-      
+
 Route::name('colegio-blog')
       ->get('/colegio/blog', 'Colegio\BlogController@index');
-
-
-

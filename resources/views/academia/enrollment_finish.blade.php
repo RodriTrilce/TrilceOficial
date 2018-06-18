@@ -23,7 +23,7 @@
         <form action="/academia/matricula-en-linea/descargar-pdf" method="post">
           {{ csrf_field() }}
           <input name="token" type="hidden" value="{{ $dni }}">
-          <button type="submit">Descargar PDF</button>
+          <button type="submit" class="enrollment-finish--button">Descargar PDF</button>
         </form>
       </p>
 

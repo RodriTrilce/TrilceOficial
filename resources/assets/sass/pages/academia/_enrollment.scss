@@ -251,3 +251,15 @@
 
   }
 }
+
+.enrollment-forms--dnidownload{
+  display: none;
+  padding: 20px;
+  padding-left: 0;
+  font-size: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+#dnidownload-link{
+  margin-left: 5px;
+}

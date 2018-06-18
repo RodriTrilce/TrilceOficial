@@ -8,7 +8,6 @@
   padding-top: 1%;
   z-index: 12;
   text-align: left;
-  transition: 0.3s all;
   visibility: visible;
 }
 
@@ -23,6 +22,10 @@
     width: 100%;
     font-family: $font_geo_reg;
     a,li{ transition: none; }
+
+    >div li a:link{
+      transition: all 0.3s ease-in;
+    }
   }
 
 }// End .dropdown-desk
@@ -117,11 +120,8 @@
     color: $gray;
   }
 
-  .linkslima{
-
-    a:hover{
+  .linkslima a:hover{
       color: $orange;
-    }
   }
 
   .linksprovincia{
@@ -285,10 +285,7 @@
 // end .dropdown-desk-colegio-aboutus
 
 
-
 // ================================================================
-
-
 
 
 .nav-info{
@@ -413,6 +410,10 @@ nav{
           transition: ease-out 0.01s;
           text-transform: uppercase;
           text-align: center;
+        }
+
+        >a:link,a:visited{
+          color: $gray;
         }
 
 

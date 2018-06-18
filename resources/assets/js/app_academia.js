@@ -228,18 +228,21 @@ function enrollment(nextBtn,prevBtn,form, type){
   }
 
   this.hearDNIAction = function(response, hide=false){
-
     var containerDownload = document.getElementById('dnidownload');
     var linkDownload      = document.getElementById('dnidownload-link');
     var next              = document.querySelector('.stepsarrows');
 
     if(hide){
       containerDownload.style.display   = 'none';
+      
     }else{
       response = JSON.parse(response).data;
-      containerDownload.style.display   = 'flex';
-      next.style.display                = 'none';
-      linkDownload.href                 = `${ACADEMIA_DOWNLOAD_PDF_LINK}?token=${response.key}`;
+
+      if(response.register){
+        containerDownload.style.display   = 'flex';
+        next.style.display                = 'none';
+        linkDownload.href                 = `${ACADEMIA_DOWNLOAD_PDF_LINK}?token=${response.key}`;
+      }
     }
   }
 

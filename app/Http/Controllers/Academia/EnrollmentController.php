@@ -163,11 +163,13 @@ class EnrollmentController extends Controller
      $pdf->SetFont('33FA0F_9_0');
      $pdf->SetFontSize(8.5);
      $pdf->SetTextColor(0, 0, 0);
+
      /*
      // Inicio
      $pdf->SetXY(112, 24);
      $pdf->Write(0, '01/01/2222');
      */
+
      // DNI
      $pdf->SetXY(16, 43);
      $pdf->Write(0, $enrollment->student_dni);
@@ -181,15 +183,15 @@ class EnrollmentController extends Controller
      $pdf->Write(0, 'P');
 
      // Sede
-     $pdf->SetXY(16, 55);
+     $pdf->SetXY(16, 54);
      $pdf->Write(0, ucwords(utf8_decode($enrollment->interest_venue)));
 
      // Universidad
-     $pdf->SetXY(47, 55);
+     $pdf->SetXY(47, 54);
      $pdf->Write(0, strtoupper(utf8_decode($enrollment->interest_university)));
 
-     // Apellido paterno
-     $pdf->SetXY(16, 76.5);
+     // Nombres apellidos nombres
+     $pdf->SetXY(16, 73.5);
      $pdf->Write(0, utf8_decode($enrollment->student_names));
      /*
      // Apellido Materno
@@ -201,59 +203,59 @@ class EnrollmentController extends Controller
      $pdf->Write(0, 'Franco Manuel');
      */
      // Telefono
-     $pdf->SetXY(108, 76.5);
+     $pdf->SetXY(16, 96);
      $pdf->Write(0, utf8_decode($enrollment->student_phone_cell));
 
      // Direccion
-     $pdf->SetXY(16, 88);
+     $pdf->SetXY(16, 85);
      $pdf->Write(0, utf8_decode($enrollment->student_address));
 
      // Email
-     $pdf->SetXY(78, 88);
+     $pdf->SetXY(47, 96);
      $pdf->Write(0, utf8_decode($enrollment->student_email));
 
      // Finalizo Colegio
-     $pdf->SetXY(23, 100);
+     $pdf->SetXY(16, 107);
      $pdf->Write(0, utf8_decode($enrollment->student_year_finish_school));
 
      // Colegio
-     $pdf->SetXY(47, 100);
+     $pdf->SetXY(47, 107);
      $pdf->Write(0, utf8_decode($enrollment->student_school));
 
      // Universidad postula
-     $pdf->SetXY(16, 111.5);
-     $pdf->Write(0, strtoupper(utf8_decode($enrollment->student_postulate_university)));
+     $pdf->SetXY(16, 118.5);
+     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_postulate_university))));
 
      // Carrera postula
-     $pdf->SetXY(78, 111.5);
-     $pdf->Write(0, utf8_decode($enrollment->student_postulate_profession));
+     $pdf->SetXY(56.5, 129);
+     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_postulate_profession))));
 
      // Antigua academia
-     $pdf->SetXY(16, 123);
+     $pdf->SetXY(16, 129.5);
      $pdf->Write(0, utf8_decode($enrollment->student_last_academy));
 
      // Apoderado: Apellidos y nombres
-     $pdf->SetXY(16, 145);
+     $pdf->SetXY(16, 149);
      $pdf->Write(0, utf8_decode($enrollment->attorney_names));
 
      // Apoderado: Ocupacion
-     $pdf->SetXY(78, 145);
+     $pdf->SetXY(47, 160);
      $pdf->Write(0, utf8_decode($enrollment->attorney_occupation));
 
      // Apoderado: DNI
-     $pdf->SetXY(16, 156.5);
+     $pdf->SetXY(16, 160);
      $pdf->Write(0, utf8_decode($enrollment->attorney_dni));
 
      // Apoderado: Centro de trabajo
-     $pdf->SetXY(47, 156.5);
+     $pdf->SetXY(16, 170.5);
      $pdf->Write(0, utf8_decode($enrollment->attorney_work_location));
 
      // Apoderado: Telefono trabajo
-     $pdf->SetXY(78, 168);
+     $pdf->SetXY(78, 171);
      $pdf->Write(0, utf8_decode($enrollment->attorney_work_phone));
 
      // Apoderado: Telefono emergencia
-     $pdf->SetXY(108, 168);
+     $pdf->SetXY(108, 171);
      $pdf->Write(0, utf8_decode($enrollment->attorney_phone_emergency));
 
      // Fecha: Día

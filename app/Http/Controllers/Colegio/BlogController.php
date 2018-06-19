@@ -13,28 +13,29 @@ class BlogController extends Controller
     $posts_all = Blog::where([
       ['category', '=', 'colegio'],
       ['visible', '=', '1'],
-      ['approved', '=', '1']
+      ['approved', '=', '1'],
+      ['marker', '=', '0']
     ])->paginate(10);
-    
-    
+
     $posts_marker = Blog::where([
       ['category', '=', 'colegio'],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
       ['marker' , '=', '1']
-    ])->limit(1);
-    
-    
-    /*
+    ])->limit(1)->get();
+
+    dd($posts_marker);
+    die;
+
+
     return view('/colegio/blog')->with([
-                                        'posts' => $posts
+                                        'posts'         => $posts_all,
+                                        'posts_marker'  => $posts_marker
                                       ]);
-                                      */
   }
-  
+
   public function post($id, $post)
   {
     return view('/colegio/blog_post');
   }
 }
-

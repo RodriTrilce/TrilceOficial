@@ -5,7 +5,7 @@
 
   <div class="row col-xs-12 blog-home-top">
     <div class="col-xs-12 col-xs-12 col-md-6 blog-home-top-imge"><img src="{{ url('/static/images/colegio/blog/post-cover.png') }}" alt=""></div>
-    
+
     <div class="row col-xs-12 col-xs-12 col-md blog-home-top-section">
       <div class="col-xs-12">
         <section class="blog-home-top-section--section">
@@ -22,28 +22,29 @@
       </div>
     </div>
   </div>
-  
+
   <div class="row col-xs-12 blog-home-aftertop">
     <div class="row col-xs-12 col-sm blog-home-aftertop--item">
       <div class="col-xs blog-home-aftertop--item-image"><img src="{{ url('/static/images/colegio/blog/img-small.png') }}" alt=""></div>
-      <div class="col-xs blog-home-aftertop--item-title"><h2>Inicio de taller trilce 2018</h2></div>
+      <div class="col-xs blog-home-aftertop--item-title"><h2>¡Felicidades cachimbos San Marcos 2018-II!</h2></div>
     </div>
     <div class="row col-xs-12 col-sm blog-home-aftertop--item">
       <div class="col-xs blog-home-aftertop--item-image"><img src="{{ url('/static/images/colegio/blog/img-small.png') }}" alt=""></div>
-      <div class="col-xs blog-home-aftertop--item-title"><h2>Inicio de taller trilce 2018</h2></div>
+      <div class="col-xs blog-home-aftertop--item-title"><h2>¡Felicidades cachimbos San Marcos 2018-II!</h2></div>
     </div>
     <div class="row col-xs-12 col-sm blog-home-aftertop--item">
       <div class="col-xs blog-home-aftertop--item-image"><img src="{{ url('/static/images/colegio/blog/img-small.png') }}" alt=""></div>
-      <div class="col-xs blog-home-aftertop--item-title"><h2>Inicio de taller trilce 2018</h2></div>
+      <div class="col-xs blog-home-aftertop--item-title"><h2>¡Felicidades cachimbos San Marcos 2018-II!</h2></div>
     </div>
   </div>
-  
-  
+
+
   <div class="row col-xs-12 center-xs blog-home-grid">
     <div class="row col-xs-12 col-sm-8 start-sm">
+
       
       <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
-        <div class="col-xs-6 blog-home-grid--item-image"><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></div>
+        <div class="col-xs-6 blog-home-grid--item-image"><a href=""><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></a></div>
         <div class="row col-xs blog-home-grid--item-content start-xs">
           <h3 class="blog-home-grid--item-title"><a href="">Desayuno y firma de compromisos para las Olimpiadas</a></h3>
           <div class="blog-home-grid--item-date">Abr 20, 2018 <i class="fa fa-calendar"></i></div>
@@ -57,12 +58,14 @@
         </div>
       </div>
 
+
+
     </div>
   </div>
-  
-  
+
+
   <hr class="grayhr2 xs-hide" />
-  
+
   <div class="container">
     @foreach ($posts as $post)
         {{ $post->title }}
@@ -70,10 +73,8 @@
 </div>
 
 {{ $posts->links() }}
-  
-  <hr class="grayh2 xs-hide" />
-  
-  
+
+
 
   @include('colegio.partials.card_bottom')
 @endsection

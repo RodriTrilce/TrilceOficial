@@ -134,7 +134,7 @@ class EnrollmentController extends Controller
      if(empty($enrollment->student_names)){
        return abort(404);
      }
-
+     $enrollment->interest_university = ($enrollment->interest_university=='sm'?'san marcos':$enrollment->interest_university);
      $terms_route = $cost->one->{$enrollment->interest_university};
 
      if(count((array)$terms_route) > 1){

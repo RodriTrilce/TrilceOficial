@@ -60,7 +60,7 @@
                   </div>
 
                   <div class="col-xs-12 enrollment-forms--dnidownload" id="dnidownload">
-                    Usted ya se encuentra registrado &#32;<b><a id="dnidownload-link" target="_blank">descargue su ficha de inscripción</a></b>
+                    <a id="dnidownload-link" target="_blank">Usted ya se encuentra registrado, <b>descargue su ficha de inscripción.</b></a>
                   </div>
 
                   <div class="col-xs-12">

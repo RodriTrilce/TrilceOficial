@@ -26,7 +26,7 @@
       <div class="row col-xs">
         <div class="col-xs col-sm-6">
           <div></div>
-          <img src="{{{ asset('/static/images/oops-404.png') }}}" alt="La página que buscas no existe.">
+          <img class="error-404--image" src="{{{ asset('/static/images/error-404.svg') }}}" alt="La página que buscas no existe.">
         </div>
         <div class="col-xs col-sm-4 text">
           <div></div>

@@ -145,6 +145,8 @@ Route::name('colegio-frequentquestions')
 Route::name('colegio-paymentguide')
       ->get('/colegio/guia-de-pagos-en-linea', 'Colegio\PaymentGuideController@index');
 
+Route::get('/colegio/guia-de-pagos-en-linea/{guide}', 'Colegio\PaymentGuideController@download');
+
 // Blog (Blog)
 Route::name('colegio-blogpost')
       ->get('/colegio/blog/{id}-{post}', 'Colegio\BlogController@post');

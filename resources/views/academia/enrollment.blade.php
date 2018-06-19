@@ -103,8 +103,7 @@
                   <input type="text" class="condition" name="step1_condition" placeholder="Condición" value="P" hidden readonly>
                 </div>
 
-                <!--
-                <div class="col-xs-12 col-sm-10">
+                {{-- <div class="col-xs-12 col-sm-10">
                   <div class="file-upload-wrapper form-group" data-text="Select your file!">
                       <input type="file" accept="image/jpeg, image/png" maxfilesize="0.700" mindimensions="500x500" name="step1_photo" class="file-upload-field" id="step1_photo" data-text="Adjuntar foto" required>
                   </div>
@@ -112,8 +111,7 @@
                     <span>- Formatos: .jpg, .png</span><br>
                     <span>- Peso máximo: 700kb</span>
                   </p>
-                </div>
-              -->
+                </div> --}}
 
             </div>
           </div>
@@ -528,6 +526,7 @@
                         <option value="Ingeniería Económica">
                         <option value="Ingeniería Eléctrica">
                         <option value="Ingeniería Eléctrica y Electrónica">
+                        <option value="Ingeniería Electrónica">
                         <option value="Ingeniería Electricidad y Potencia">
                         <option value="Ingeniería Electromecánica">
                         <option value="Ingeniería Electrónica">

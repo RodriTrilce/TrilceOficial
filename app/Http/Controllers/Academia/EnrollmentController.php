@@ -224,7 +224,7 @@ class EnrollmentController extends Controller
 
      // Universidad postula
      $pdf->SetXY(16, 118.5);
-     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_postulate_university))));
+     $pdf->Write(0, ((utf8_decode($enrollment->student_postulate_university))));
 
      // Carrera postula
      $pdf->SetXY(56.5, 129);
@@ -232,15 +232,15 @@ class EnrollmentController extends Controller
 
      // Antigua academia
      $pdf->SetXY(16, 129.5);
-     $pdf->Write(0, utf8_decode($enrollment->student_last_academy));
+     $pdf->Write(0, ucwords(utf8_decode($enrollment->student_last_academy)));
 
      // Apoderado: Apellidos y nombres
      $pdf->SetXY(16, 149);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_names));
+     $pdf->Write(0, ucwords(utf8_decode($enrollment->attorney_names)));
 
      // Apoderado: Ocupacion
      $pdf->SetXY(47, 160);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_occupation));
+     $pdf->Write(0, ucwords(utf8_decode($enrollment->attorney_occupation)));
 
      // Apoderado: DNI
      $pdf->SetXY(16, 160);

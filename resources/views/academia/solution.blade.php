@@ -87,10 +87,15 @@
 
   <hr class="solution-hr">
 
-  <div class="row center-xs pagination-botton-padding">
-    <div class="col-xs-12 pagination">
-      <div class="pagination-item">1</div> de 3 | Siguiente
-    </div>
+  <div class="row col-xs-12 center-xs pagination-botton-padding">
+    <ul class="pagination" role="navigation">
+      <li class="page-item"><a class="page-link" href="#" rel="prev" aria-label="&laquo; Anterior">&lsaquo;</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#" rel="next" aria-label="Siguiente &raquo;">&rsaquo;</a></li>
+    </ul>
+
   </div>
 
   @include('academia.partials.card_bottom')

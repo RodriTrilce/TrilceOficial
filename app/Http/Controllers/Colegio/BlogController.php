@@ -15,7 +15,7 @@ class BlogController extends Controller
       ['visible', '=', '1'],
       ['approved', '=', '1'],
       ['marker', '=', '0']
-    ])->paginate(10);
+    ])->paginate(4);
 
     $posts_marker = Blog::where([
       ['category', '=', 'colegio'],

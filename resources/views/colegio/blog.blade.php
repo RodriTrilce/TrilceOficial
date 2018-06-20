@@ -26,53 +26,52 @@
   <div class="row col-xs-12 blog-home-aftertop">
     <div class="row col-xs-12 col-sm blog-home-aftertop--item">
       <div class="col-xs blog-home-aftertop--item-image"><img src="{{ url('/static/images/colegio/blog/img-small.png') }}" alt=""></div>
-      <div class="col-xs blog-home-aftertop--item-title"><h2>¡Felicidades cachimbos San Marcos 2018-II!</h2></div>
+      <div class="col-xs blog-home-aftertop--item-title"><a href="#">¡Felicidades cachimbos San Marcos 2018-II!</a></div>
     </div>
     <div class="row col-xs-12 col-sm blog-home-aftertop--item">
       <div class="col-xs blog-home-aftertop--item-image"><img src="{{ url('/static/images/colegio/blog/img-small.png') }}" alt=""></div>
-      <div class="col-xs blog-home-aftertop--item-title"><h2>¡Felicidades cachimbos San Marcos 2018-II!</h2></div>
+      <div class="col-xs blog-home-aftertop--item-title"><a href="#">¡Felicidades cachimbos San Marcos 2018-II!</a></div>
     </div>
     <div class="row col-xs-12 col-sm blog-home-aftertop--item">
       <div class="col-xs blog-home-aftertop--item-image"><img src="{{ url('/static/images/colegio/blog/img-small.png') }}" alt=""></div>
-      <div class="col-xs blog-home-aftertop--item-title"><h2>¡Felicidades cachimbos San Marcos 2018-II!</h2></div>
+      <div class="col-xs blog-home-aftertop--item-title"><a href="#">¡Felicidades cachimbos San Marcos 2018-II!</a></div>
     </div>
   </div>
 
 
   <div class="row col-xs-12 center-xs blog-home-grid">
-    <div class="row col-xs-12 col-sm-8 start-sm">
+    <div class="row col-xs-12 col-sm-10 col-md-9 start-sm">
 
-      
-      <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
-        <div class="col-xs-6 blog-home-grid--item-image"><a href=""><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></a></div>
-        <div class="row col-xs blog-home-grid--item-content start-xs">
-          <h3 class="blog-home-grid--item-title"><a href="">Desayuno y firma de compromisos para las Olimpiadas</a></h3>
-          <div class="blog-home-grid--item-date">Abr 20, 2018 <i class="fa fa-calendar"></i></div>
-          <div class="blog-home-grid--item-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, possimus. Earum nihil accusantium fugit perferendis impedit debitis quis nulla, exercitationem, dolores, ut quo enim quam at commodi. Dicta, maiores, voluptates.
-          </div>
-          <div class="row col-xs-12 blog-home-grid--item-op between-sm start-xs">
-            <div class="row col-xs-6 xs-hide"><a href="#">Leer más <i class="fa fa-search"></i></a></div>
-            <div class="row col-xs-6 start-xs end-sm blog-home-grid--item-op-more"><i class="fa fa-eye"></i> <span>65</span></div>
+
+
+      @foreach ($posts as $post)
+        <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
+          <div class="col-xs-6 blog-home-grid--item-image"><a href=""><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></a></div>
+          <div class="row col-xs blog-home-grid--item-content start-xs">
+            <h3 class="blog-home-grid--item-title"><a href="">{{ $post->title }}</a></h3>
+            <div class="blog-home-grid--item-date">Abr 20, 2018 <i class="fa fa-calendar"></i></div>
+            <div class="blog-home-grid--item-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, possimus. Earum nihil accusantium fugit perferendis impedit debitis quis nulla, exercitationem, dolores, ut quo enim quam at commodi. Dicta, maiores, voluptates.
+            </div>
+            <div class="row col-xs-12 blog-home-grid--item-op between-sm start-xs">
+              <div class="row col-xs-6 xs-hide"><a href="#">Leer más <i class="fa fa-search"></i></a></div>
+              <div class="row col-xs-6 start-xs end-sm blog-home-grid--item-op-more"><i class="fa fa-eye"></i> <span>65</span></div>
+            </div>
           </div>
         </div>
-      </div>
+      @endforeach
 
 
 
     </div>
   </div>
 
+  <div class="row col-xs-12 center-xs pagination-padding">
+    {{ $posts->links() }}
+  </div>
 
   <hr class="grayhr2 xs-hide" />
 
-  <div class="container">
-    @foreach ($posts as $post)
-        {{ $post->title }}
-    @endforeach
-</div>
-
-{{ $posts->links() }}
 
 
 

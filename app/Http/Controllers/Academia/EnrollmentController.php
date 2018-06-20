@@ -66,11 +66,19 @@ class EnrollmentController extends Controller
       $enrollment->attorney_phone_emergency = $request->step3_emergencyphone;
       $enrollment->save();
 
+      /*
       return view('/academia/enrollment_finish')
               ->with([
                 'page'  => 'enrollment',
                 'dni'   => encrypt($request->step1_dni)
               ]);
+              */
+      return view('/academia/index')
+                  ->with([
+                    'print'   => '',
+                    'action'  => 'enrollment_finish',
+                    'dni'     => encrypt($request->step1_dni)
+                  ]);
    }
 
    /**

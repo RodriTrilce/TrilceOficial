@@ -249,9 +249,65 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 
-  .title{
-    font-size: 1.8rem;
+  .finish-title{
+    font-size: 2rem;
+    font-family: $font_cae_heavy;
+    display: block;
 
+    @media (max-width: 767px){
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .finish-thanks{
+    max-width: 60px;
+    margin-left: 5px;
+
+    @media (max-width: 767px){
+      max-width: 50px;
+    }
+  }
+
+  .finish-text{
+    font-family: $font_cae_heavy;
+    font-size: 1.5rem;
+    @media (max-width: 767px){
+      font-size: 1.2rem;
+    }
+  }
+
+  .finish-button-container{
+    margin-top: 25px;
+  }
+
+  .enrollment-finish--button{
+    border: 0;
+    background: transparent;
+    color: white;
+    font-family: $font_cae_rom;
+    font-size: 2rem;
+    position: relative;
+    padding: 3vh;
+    cursor: pointer;
+    width: 300px;
+
+    @media (max-width: 767px){
+      font-size: 1.5rem;
+    }
+/*
+    &:after{
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 108px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 60px 135px 63px 135px;
+      border-color: $gray transparent transparent transparent;
+    }
+*/
   }
 }
 

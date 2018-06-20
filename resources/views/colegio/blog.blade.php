@@ -43,7 +43,6 @@
     <div class="row col-xs-12 col-sm-10 col-md-9 start-sm">
 
 
-
       @foreach ($posts as $post)
         <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
           <div class="col-xs-6 blog-home-grid--item-image"><a href=""><img src="{{ url('/static/images/colegio/blog/img-small-2.png') }}" alt=""></a></div>
@@ -60,7 +59,6 @@
           </div>
         </div>
       @endforeach
-
 
 
     </div>

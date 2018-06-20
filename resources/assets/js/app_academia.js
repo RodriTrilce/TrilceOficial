@@ -8,7 +8,9 @@
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider.module'
 import 'datalist-polyfill/datalist-polyfill'
+import VanillaModal from 'vanilla-modal';
 
+// Constants
 const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/matricula-en-linea/descargar-pdf'
 
 const ValidationLang = {
@@ -62,28 +64,30 @@ Validation.validators.onlytext = input => {
   });
 };
 
- // Define methods utils
- Element.prototype.remove = function() {
-     this.parentElement.removeChild(this);
- }
+// Modal Config
+var modal = new VanillaModal();
 
- NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-     for(var i = this.length - 1; i >= 0; i--) {
-         if(this[i] && this[i].parentElement) {
-             this[i].parentElement.removeChild(this[i]);
-         }
-     }
- }
+// Define methods utils
+Element.prototype.remove = function() {
+   this.parentElement.removeChild(this);
+}
 
- NodeList.prototype.forEach = Array.prototype.forEach;
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+   for(var i = this.length - 1; i >= 0; i--) {
+       if(this[i] && this[i].parentElement) {
+           this[i].parentElement.removeChild(this[i]);
+       }
+   }
+}
 
- // Safari fix hover touch
- document.addEventListener('touchstart', function() {},false);
- /*var supportsTouch = (typeof Touch == "object");
- if(supportsTouch){
- }
- */
+NodeList.prototype.forEach = Array.prototype.forEach;
 
+// Safari fix hover touch
+document.addEventListener('touchstart', function() {},false);
+/*var supportsTouch = (typeof Touch == "object");
+if(supportsTouch){
+}
+*/
 
 // Utils
 var show  = elem => elem.style.display = 'block';
@@ -448,7 +452,6 @@ function enrollment(nextBtn,prevBtn,form, type){
  *  Index
  */
 
- // Slider
  if(page == 'index'){
    // Show effect open page
    window.onload = function()
@@ -475,6 +478,11 @@ function enrollment(nextBtn,prevBtn,form, type){
    loop: false
   //  lazyload: true
   });
+
+  // For enrollment finish modal
+  if(modal_open.length){
+    modal.open(modal_open[0]);
+  }
  }
 
 

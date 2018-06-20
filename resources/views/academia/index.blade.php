@@ -2,8 +2,39 @@
 @extends('academia.layouts.template')
 
 @section('title', '')
-@section('afterBody', $print)
+
+@if($print)
+  @section('afterBody')
+    <div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div><div class="loader-trilce"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.9 100.3'><polygon points='0 0 0 22.6 14.6 22.6 14.6 16.7 36.9 16.7 36.9 85.7 30.2 85.7 30.2 100.3 61.8 100.3 61.8 85.7 55.1 85.7 55.1 16.7 77.4 16.7 77.4 22.6 91.9 22.6 91.9 0 0 0' fill='#f4633a'/></svg></div></div>
+  @endsection
+@endif
+
 @section('content')
+
+  @if($action == 'enrollment_finish')
+    <div id="modal-1" style="display:none;">
+      <div class="modal-b50">
+        <div class="row col-xs-12 center-xs enrollment-finish">
+            <div class="col-xs-12">
+              <h1 class="finish-title">Gracias por registrarse <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por inscribirse"></h1>
+            </div>
+            <div class="col-xs-12">
+              <p class="finish-text">Puede descargar su ficha de inscripción prematrícula aquí: </p>
+            </div>
+            <div class="col-xs-12 finish-button-container">
+              <form action="/academia/matricula-en-linea/descargar-pdf" method="post">
+                {{ csrf_field() }}
+                <input name="token" type="hidden" value="{{ $dni }}">
+                <button type="submit" class="enrollment-finish--button">
+                  <img src="{{url('/static/images/academia/svg/icon-thanks-download-enrollment.svg')}}" alt="">
+                </button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  @endif
+
 
   <div class="index-banners">
     <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
@@ -72,8 +103,10 @@
   @include('academia.partials.card_bottom')
 @endsection
 @section('scripts')
-
     page = 'index';
 
+    var modal_open = [@if($action == 'enrollment_finish') '#modal-1' @endif];
+
     @parent
+
 @endsection

@@ -12,9 +12,14 @@
 </head>
 <body>
 
-@hasSection('afterBody')
-  {!! $print !!}
-@endif
+  @yield('afterBody')
+
+  <div class="modal">
+    <div class="modal-inner">
+      <span data-modal-close>&times;</span>
+      <div class="modal-content"></div>
+    </div>
+  </div>
 
   <header>
     <div class="row between-xs">
@@ -73,7 +78,7 @@
                         </ul>
                       </div>
                     </div>
-                  </div>                  
+                  </div>
                 </li>
 
                 <li class="menu-click-sedes">
@@ -106,8 +111,7 @@
 @include('academia.layouts.parts.footer')
 
 <script>
-  var page;
-
+var page;
 @section('scripts')
 </script>
 <script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>

@@ -24,8 +24,6 @@ class BlogController extends Controller
       ['marker' , '=', '1']
     ])->limit(1)->get();
 
-    dd($posts_marker);
-    die;
 
 
     return view('/colegio/blog')->with([

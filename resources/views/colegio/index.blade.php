@@ -29,7 +29,6 @@
               <h3>Alumno <div class="modality modality-blue">Nuevo</div></h3>
             </div>
             <div class="nuevos-i-bottom">
-              <span>Leer más <i class="fa fa-search"></i></span>
               <div class="nuevos-hr nuevos-hr-blue"></div>
             </div>
           </a>
@@ -41,7 +40,6 @@
               <h3>Alumno <div class="modality modality-yellow">Traslado</div></h3>
             </div>
             <div class="nuevos-i-bottom">
-              <span>Leer más <i class="fa fa-search"></i></span>
               <div class="nuevos-hr nuevos-hr-yellow"></div>
             </div>
           </a>
@@ -53,7 +51,6 @@
               <h3>Alumno <div class="modality modality-orange">Regular</div></h3>
             </div>
             <div class="nuevos-i-bottom">
-              <span>Leer más <i class="fa fa-search"></i></span>
               <div class="nuevos-hr nuevos-hr-orange"></div>
             </div>
           </a>

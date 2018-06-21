@@ -72,7 +72,7 @@
             <textarea name="contact_message" rows="8" cols="80" placeholder="Consulta" required></textarea>
           </fieldset>
 
-          <div class="row col-xs-12 captcha">
+          <div class="row col-xs-12">
             <div class="col-xs-12">
               <fieldset class="form-group">
                 <input type="captcha" class="captcha" name="captcha" id="captcha">
@@ -84,7 +84,6 @@
             </div>
           </div>
           <br>
-
           <button type="submit" name="contact_validate" id="contact_validate" class="validate">Enviar <i class="fa fa-check"></i></button>
         </form>
       </div>

@@ -72,6 +72,11 @@
         font-size: 1.5rem;
         color: transparentize($gray, 0.4);
         transition: 0.2s ease-in;
+
+        @media (max-width: 768px) {
+          font-size: .9rem;
+        }
+
       }
 
       h4{
@@ -83,30 +88,48 @@
       >img{
         opacity: 0.4;
         filter: alpha(opacity=40);
-        transition: 0.2s ease-in;
-        max-width: 90px;
+        transition: 0.1s ease-in;
+        max-width: 50px;
+
+        @media (max-width: 768px) {
+          width: 60px;
+          height: 60px;
+        }
       }
 
       .modality{
         font-family: $font_cae_bold;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         display: inline-block;
-        @media screen and (max-width: 768px) {
-          font-size: 1.4rem;
+
+        @media (max-width: 1400px) {
+          font-size: 2.2rem;
+        }
+
+        @media (max-width: 1200px) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: 1100px) {
+          font-size: 1.9rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
           display: block;
         }
       }
 
       .modality-orange{
-        color: transparentize($orange, 0.7);
+        color: transparentize($gray, 0.7);
       }
 
       .modality-blue{
-        color: transparentize($colegio_blue, 0.7);
+        color: transparentize($gray, 0.7);
       }
 
       .modality-yellow{
-        color: transparentize($colegio_yellow, 0.7);
+        color: transparentize($gray, 0.7);
       }
 
     }
@@ -121,15 +144,15 @@
       }
 
       .nuevos-hr-blue{
-        background: $colegio_blue;
+        background: $gray;
       }
 
       .nuevos-hr-yellow{
-        background: $colegio_yellow;
+        background: $gray;
       }
 
       .nuevos-hr-orange{
-        background: $orange;
+        background: $gray;
       }
 
     }
@@ -155,15 +178,15 @@
       .nuevos-i-top{
         color: $gray;
         .modality-orange{
-          color: $orange;
+          color: $gray;
         }
 
         .modality-blue{
-          color: $colegio_blue;
+          color: $gray;
         }
 
         .modality-yellow{
-          color: $colegio_yellow;
+          color: $gray;
         }
       }
 
@@ -284,15 +307,15 @@
   .nuevos-i-top{
     color: $gray;
     .modality-orange{
-      color: $orange !important;
+      color: $gray !important;
     }
 
     .modality-blue{
-      color: $colegio_blue !important;
+      color: $gray !important;
     }
 
     .modality-yellow{
-      color: $colegio_yellow !important;
+      color: $gray !important;
     }
   }
 
@@ -316,13 +339,13 @@
 
 .hover-blue{
   &::after{
-    background: $colegio_blue;
+    background: $gray;
   }
 }
 
 .hover-yellow{
   &::after{
-    background: $colegio_yellow;
+    background: $gray;
   }
 }
 
@@ -419,6 +442,7 @@
       padding-left: 2px;
     }
   }//end
+
   .ii-ul{
     @media screen and (max-width: 768px) {
       padding-left: 1.3rem;
@@ -454,8 +478,6 @@
 
 
 
-
-
 .block-effecthover{
 
   &:hover{
@@ -466,27 +488,27 @@
           }
 
           .modality-blue, .nuevos-hr-blue{
-            color: transparentize($colegio_blue, 0.7) !important;
+            color: transparentize($gray, 0.7) !important;
           }
 
           .modality-yellow, .nuevos-hr-yellow{
-            color: transparentize($colegio_yellow, 0.7) !important;
+            color: transparentize($gray, 0.7) !important;
           }
 
           .modality-orange{
-            color: transparentize($orange, 0.7) !important;
+            color: transparentize($gray, 0.7) !important;
           }
 
           .nuevos-hr-orange{
-            background: transparentize($orange, 0.7) !important;
+            background: transparentize($gray, 0.7) !important;
           }
 
           .nuevos-hr-blue{
-            background: transparentize($colegio_blue, 0.7) !important;
+            background: transparentize($gray, 0.7) !important;
           }
 
           .nuevos-hr-yellow{
-            background: transparentize($colegio_yellow, 0.7) !important;
+            background: transparentize($gray, 0.7) !important;
           }
 
           h3,h4{
@@ -508,17 +530,17 @@
     }
 
     .modality-blue{
-      color: $colegio_blue !important;
+      color: $gray !important;
       transition: opacity 0.4s ease-in-out !important;
     }
 
     .modality-yellow{
-      color: $colegio_yellow !important;
+      color: $gray !important;
       transition: opacity 0.4s ease-in-out !important;
     }
 
     .modality-orange{
-      color: $orange !important;
+      color: $gray !important;
       transition: opacity 0.4s ease-in-out !important;
     }
 

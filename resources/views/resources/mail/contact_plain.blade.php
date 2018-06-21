@@ -1,5 +1,5 @@
 
-[Enviado desde el formulario de contacto de Trilce
+[Enviado desde el formulario de contacto de Trilce - {{ $type }}
 
 Nombre: {{ $name }}
 Email: {{ $email }}

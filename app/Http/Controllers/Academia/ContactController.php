@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Academia;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Http\Requests\ValidationFormContact as ValidationFormContact;
 use App\Mail\ContactForm;
 use Illuminate\Support\Facades\Mail;
 
@@ -14,30 +14,21 @@ class ContactController extends Controller
   {
     return view('/academia/contact')->with(['page' => 'contact']);
   }
-  
-  public function send()
+
+  public function send(ValidationFormContact $request)
   {
-    $request = (object)$_POST;
-  
-    $data = new \stdClass();
-    $data->content = $request->contact_message;
-    $data->name = $request->contact_names;
-    $data->phone = $request->contact_phone;
-    $data->email = $request->contact_email;
+    $request->validated();
 
-    Mail::send(new ContactForm($data));
+    Mail::send( new ContactForm( $request ) );
 
-    //    $status = false;
-    //    if(count(Mail::failures()) > 0){
-          $status = true;
-    //    }
-
-    
     return view('/academia/contact')->with([
-                                              'page' => 'contact',
-                                              'email' => $status,
-                                              'data' => $data,
-                                              'status' => $status
+                                              'data'    => $request,
+                                              'status'  => true
                                             ]);
+
+                                            // $status = false;
+                                            // if(count(Mail::failures()) > 0){
+                                            //  $status = true;
+                                            // }
   }
 }

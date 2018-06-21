@@ -28,16 +28,17 @@ class ContactForm extends Mailable
      */
     public function build()
     {
-        return $this->from('atencionalcliente@trilce.edu.pe')
-                    ->to('atencionalcliente@trilce.edu.pe')
+        return $this->from( env('MAIL_DEFAULT_SENDER') )
+                    ->to( env('MAIL_DEFAULT_SENDER') )
                     ->view('resources.mail.contact')
                     ->text('resources.mail.contact_plain')
                     ->with(
                       [
-                            'name'    => $this->data->name,
-                            'content' => $this->data->content,
-                            'phone'   => $this->data->phone,
-                            'email'   => $this->data->email
+                            'name'    => $this->data->contact_names,
+                            'content' => $this->data->contact_message,
+                            'phone'   => $this->data->contact_phone,
+                            'email'   => $this->data->contact_email,
+                            'type'    => $this->data->contact_type
                       ]);
     }
 }

@@ -6,7 +6,7 @@
     <title>Mensaje de forulario</title>
 </head>
 <body>
-    <p>[Enviado desde el formulario de contacto de Trilce</p>
+    <p>[Enviado desde el formulario de contacto de Trilce - {{ $type }}</p>
     <p>
       <ul>
         <li>Nombre: {{ $name }}</li>

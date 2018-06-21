@@ -265,8 +265,11 @@
 
       .nuevos-i-top{
         img{
-          max-width: 30%;
+          max-width: 80px;
           margin-bottom: 10%;
+          @media (max-width: 768px){
+            width: 50px !important;
+          }
         }
 
         h3{

@@ -16,7 +16,7 @@ class StoreEnrollment extends FormRequest
     {
       return true;
     }
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -46,7 +46,7 @@ class StoreEnrollment extends FormRequest
           'step3_dni' => 'required',
           'step3_phonehome' => 'required',
           'step3_mobile' => 'required',
-          'step3_email' => 'required',
+          'step3_email' => 'required|email',
           'step3_work_location' => 'required',
           'step3_work_phone' => 'required',
           'step3_profession' => 'required',
@@ -88,7 +88,7 @@ class StoreEnrollment extends FormRequest
           'step3_emergencyphone' => 'Paso 3: Télefono de emergencia',
           'checkbox' => 'Paso 3: Confirmación Términos y condiciones',
           'g-recaptcha-response' => 'Paso 3: Captcha'
-          
+
         ];
     }
 }

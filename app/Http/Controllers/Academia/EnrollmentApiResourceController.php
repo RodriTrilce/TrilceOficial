@@ -17,11 +17,11 @@ class EnrollmentApiResourceController extends Controller
    */
   public function check(Request $request)
   {
-      $enrollment = EnrollmentModel::find($request->dni);
+      $enrollment = EnrollmentModel::find( $request->dni );
 
       return new EnrollmentApiResource(collect([
-        'register'  => ($enrollment?1:0),
-        'key'       => ($enrollment?encrypt($enrollment->student_dni):'')
+        'register'  => ( $enrollment ? 1 : 0 ),
+        'key'       => ( $enrollment ? encrypt( $enrollment->student_dni ) : '' )
       ]));
   }
 }

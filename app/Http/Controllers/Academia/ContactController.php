@@ -19,20 +19,12 @@ class ContactController extends Controller
   {
     $request->validated();
 
-    dd($request);
-    die;
-
-    //Mail::send( new ContactForm( $request ) );
+    Mail::send( new ContactForm( $request ) );
 
     return view('/academia/contact')->with([
                                               'data'    => $request,
                                               'name'    => $request->contact_name,
                                               'status'  => true
                                             ]);
-
-                                            // $status = false;
-                                            // if(count(Mail::failures()) > 0){
-                                            //  $status = true;
-                                            // }
   }
 }

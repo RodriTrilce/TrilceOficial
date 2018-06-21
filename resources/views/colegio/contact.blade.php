@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="col-xs-12">
-            <input type="text" name="contact_type" value="colegio" hidden readonly>
+            <input type="text" name="contact_type" value="colegio" hidden readonly><br >
             <button type="submit" name="contact_validate" id="contact_validate" class="validate">Enviar <i class="fa fa-check"></i></button>
           </div>
         </form>

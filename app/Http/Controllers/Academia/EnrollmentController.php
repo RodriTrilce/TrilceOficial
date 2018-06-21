@@ -6,9 +6,11 @@ define('FPDF_FONTPATH', str_replace('/public','/',getcwd()).'resources/internal/
 
 //use Storage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Controller;
 use App\Models\Academia\EnrollmentModel as Enrollment;
 use App\Http\Requests\Academia\StoreEnrollment as StoreEnrollment;
+use App\Mail\Academia\EnrollmentMail;
 use \setasign\Fpdi\Fpdi;
 
 class EnrollmentController extends Controller
@@ -66,13 +68,8 @@ class EnrollmentController extends Controller
       $enrollment->attorney_phone_emergency = $request->step3_emergencyphone;
       $enrollment->save();
 
-      /*
-      return view('/academia/enrollment_finish')
-              ->with([
-                'page'  => 'enrollment',
-                'dni'   => encrypt($request->step1_dni)
-              ]);
-              */
+      Mail::send( new EnrollmentMail( $request ) );
+
       return view('/academia/index')
                   ->with([
                     'print'   => '',

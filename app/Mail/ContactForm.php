@@ -18,6 +18,8 @@ class ContactForm extends Mailable
      */
     public function __construct($data)
     {
+        dd($data);
+        die;
         $this->data = $data;
     }
 

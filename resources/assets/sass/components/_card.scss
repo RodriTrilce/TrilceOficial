@@ -150,6 +150,7 @@
         font-family: $font_geo_reg;
       }
 
+/*
       @media screen and (min-width: 768px) {
         position: relative;
 
@@ -169,14 +170,14 @@
           }
         }
       }
-
+*/
 
       @media screen and (max-width: 768px) {
         text-align: center;
         border-bottom: 1px solid transparentize($gray, 0.8);
 
         &:first-child{
-          border-top: 1px solid transparentize($gray, 0.8);          
+          border-top: 1px solid transparentize($gray, 0.8);
         }
 
         a{

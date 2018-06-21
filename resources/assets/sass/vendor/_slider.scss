@@ -12,8 +12,9 @@
   display: none;
   transition: all 0.3s ease-in-out;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+
+  @media (max-width: 768px){
+    display: none !important;
   }
 
   button{
@@ -200,7 +201,7 @@
   width: 100%;
   justify-content: center;
 
-  @media screen and (max-width: 768px){
+  @media (max-width: 768px){
     display: none;
   }
 

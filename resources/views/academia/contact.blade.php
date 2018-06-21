@@ -85,9 +85,11 @@
                 <div class="g-recaptcha" data-callback="captcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"></div>
               </div>
             </div>
-            <br>
-            <input type="text" name="contact_type" value="academia" hidden readonly>
-            <button type="submit" name="contact_validate" id="contact_validate" class="validate">Enviar <i class="fa fa-check"></i></button>
+            
+            <div class="col-xs-12">
+              <input type="text" name="contact_type" value="academia" hidden readonly>
+              <button type="submit" name="contact_validate" id="contact_validate" class="validate">Enviar <i class="fa fa-check"></i></button>
+            </div>
           </form>
         </div>
 

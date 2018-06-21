@@ -30,8 +30,8 @@ class EnrollmentMail extends Mailable
     {
       return $this->from( env('MAIL_DEFAULT_SENDER') )
                   ->to( $this->data->step2_email )
-                  ->view('resources.mail.academia.enrollment_finish')
-                  ->text('resources.mail.academia.enrollment_finish_plain')
+                  ->view('resources.mail.academia.enrollment.enrollment_finish')
+                  ->text('resources.mail.academia.enrollment.enrollment_finish_plain')
                   ->with(
                     [
                           'data'    => $this->data

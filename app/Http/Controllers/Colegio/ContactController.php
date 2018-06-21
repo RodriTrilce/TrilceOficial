@@ -22,7 +22,6 @@ class ContactController extends Controller
     Mail::send( new ContactForm( $request ) );
 
     return view('/colegio/contact')->with([
-                                              'data'    => $request,
                                               'name'    => $request->contact_name,
                                               'status'  => true
                                             ]);

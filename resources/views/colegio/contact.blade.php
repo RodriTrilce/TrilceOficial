@@ -15,7 +15,7 @@
 @if($_POST)
   @if($status)
   <div class="col-xs-12 center-xs contact-status contact-finish">
-    <h2>Gracias <strong>{{$data->name}}</strong>, nos pondremos en contacto con usted en la brevedad</h2>
+    <h2>Gracias <strong>{{$name}}</strong>, nos pondremos en contacto con usted en la brevedad</h2>
   </div>
   @else
   <div class="col-xs-12 center-xs contact-status contact-error">

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Academia;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ValidationFormContact as ValidationFormContact;
+use App\Http\Requests\ValidationFormContact;
 use App\Mail\ContactForm;
 use Illuminate\Support\Facades\Mail;
 

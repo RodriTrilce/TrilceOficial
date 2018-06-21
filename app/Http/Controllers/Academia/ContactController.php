@@ -19,6 +19,8 @@ class ContactController extends Controller
   {
     $request->validated();
 
+    dd($request);
+
     Mail::send( new ContactForm( $request ) );
 
     return view('/academia/contact')->with([

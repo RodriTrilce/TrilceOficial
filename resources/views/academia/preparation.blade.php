@@ -17,7 +17,7 @@
   </div>
 
   <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+    <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-sm center-md">
       <div class="row col-xs-12 col-sm-8 col-md-7 start-xs start-sm start-md beginning-container beginning-minus">
 
         <div class="col-xs beginning--item @if($type=='uni') beginning--item-active @endif">

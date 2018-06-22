@@ -19,8 +19,11 @@
   width: 1px;
   height: 50%;
   background: $gray;
-  margin-top: 8%;
+  margin-top: 5%;
 
+  @include breakpoint(baby){
+    margin-top: 8%;
+  }
 }
 
 .beginning--item{
@@ -75,9 +78,10 @@
     letter-spacing: 3px;
 
     @include breakpoint(baby){
-      font-size: .75rem;
+      font-size: .8rem;
       letter-spacing: 0;
     }
+
   }
 
   .item-a-university{
@@ -93,8 +97,14 @@
     }
 
     @include breakpoint(baby){
-      font-size: .9rem;
+      font-size: 1.1rem;
     }
+
+    @include breakpoint(minibaby){
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
   }
 }
 

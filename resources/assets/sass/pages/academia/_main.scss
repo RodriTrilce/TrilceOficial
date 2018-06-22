@@ -339,15 +339,13 @@
 
   select{
     max-width: auto;
-
   }
-
 }
 .nuevos-i-list-selects{
   margin-bottom: 20px;
 
   @media screen and (max-width: 768px){
-    margin-top: 2rem;
+    margin-top: 20px;;
   }
 
   select{
@@ -356,6 +354,12 @@
         max-width: 100%;
         margin-bottom: 10px;
       }
+  }
+
+  div:nth-child(3){
+    select{
+      max-width: 100% !important;
+    }
   }
 }//Fin list-selects
 

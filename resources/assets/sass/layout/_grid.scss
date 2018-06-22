@@ -617,13 +617,13 @@
 
 
   .xs-hide{
-    @media screen and (max-width: 768px){
+    @media (max-width: 768px){
       display: none;
     }
   }
 
   .xs-hide-force{
-    @media screen and (max-width: 768px){
+    @media (max-width: 768px){
       display: none !important;
     }
   }
@@ -632,6 +632,22 @@
     width: 100%;
     padding: 0 12px;
   }
+
+  .container-base-no-mobile{
+    width: 100%;
+    padding: 0 12px;
+
+    @media (max-width: 768px){
+      padding: 0;
+    }
+  }
+
+  .container-padding-mobile{
+    @media (max-width: 768px){
+      padding: 0 12px;
+    }
+  }
+
 
   .align-content-baseline{
     align-content: baseline;

@@ -88,7 +88,13 @@
   @else if $point == mom {
     @media (max-width: 1250px) { @content; }
   }
+  @else if $point == uncle {
+    @media (max-width: 900px) { @content; }
+  }
   @else if $point == baby {
     @media (max-width: 650px)  { @content; }
+  }
+  @else if $point == minibaby {
+    @media (max-width: 400px)  { @content; }
   }
 }

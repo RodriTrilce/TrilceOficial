@@ -24,10 +24,10 @@
   @endif
 @endif
 
-<div class="row center-xs center-sm container-base contact">
+<div class="row center-xs center-sm container-base-no-mobile contact">
   <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-    <div class="col-xs-12 col-sm contact-info">
+    <div class="col-xs-12 col-sm contact-info container-padding-mobile">
       <h2>Información de contacto</h2>
       <p class="contant-info-subtitle">Para cualquier consulta comuníquese con nosotros:</p>
       <ul class="contant-info-ul">
@@ -51,7 +51,7 @@
     </div>
     <div class="col-xs-12 col-sm-6 contact-form">
 
-      <div class="col-xs-12 step1">
+      <div class="col-xs-12 step1 container-padding-mobile">
         <h2>Déjanos tu consulta</h2>
 
         <form action="/colegio/contacto" method="post">

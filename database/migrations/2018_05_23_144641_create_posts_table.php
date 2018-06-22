@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBlogPostTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,28 +13,31 @@ class CreateBlogPostTable extends Migration
      */
     public function up()
     {
-      Schema::create('blog_post', function (Blueprint $table) {
+      Schema::create('posts', function (Blueprint $table) {
           $table->increments('id')->unique();
-          $table->integer('id_user')->unsigned()->nullable();
+          $table->integer('id_user')->unsigned();
+          $table->integer('id_image_marker')->unsigned();
+          $table->enum('site', ['academia', 'colegio']);
+          $table->string('type')->default('blog');
           $table->string('title');
-          $table->string('image_key');
-          $table->enum('category', ['academia', 'colegio']);
           $table->text('content');
-          $table->text('tags');
+          $table->text('slug');
+          $table->text('tags')->nullable();
           $table->integer('view')->default('0');
           $table->enum('marker', [0, 1])->default('0');
           $table->enum('visible', [0, 1])->default('1');
           $table->enum('approved', [0, 1])->default('0');
           $table->timestamps();
       });
-      
-      
-      Schema::table('blog_post', function(Blueprint $table)
+
+
+      Schema::table('posts', function(Blueprint $table)
       {
         $table->foreign('id_user')->references('id')->on('users');
+        $table->foreign('id_image_marker')->references('id')->on('files');
       });
-      
-      
+
+
     }
 
     /**
@@ -44,6 +47,6 @@ class CreateBlogPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blog_post');
+        Schema::dropIfExists('posts');
     }
 }

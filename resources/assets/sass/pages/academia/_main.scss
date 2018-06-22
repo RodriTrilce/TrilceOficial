@@ -38,9 +38,9 @@
     margin-top: 15px;
 
     >div {
-      border: 0.55rem solid transparentize($gray, .7);
+      border: 1px solid $gray;
       margin-right: 6%;
-      transition: 0.1s ease-out;
+      transition: 0.3s ease-out;
 
       >a{
         width: 100%;
@@ -49,10 +49,14 @@
         padding: 20px;
         padding-top: 65px;
         padding-bottom: 65px;
+        position: relative;
       }
 
       .nuevos-i-top{
         font-family: $font_geo_reg;
+        position: relative;
+        transition: all .3s;
+        top: 10px;
 
         h3{
           font-size: 1.7rem;
@@ -70,6 +74,7 @@
           filter: alpha(opacity=40);
           max-width: 120px;
           min-height: 120px;
+          transition: opacity .2s ease-in-out;
         }
       }
 
@@ -84,9 +89,24 @@
 
       }// end class:nuevos-i-botttom
 
+
+      position: relative;
+      // line down
+      &:after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 5px;
+        background: $orange;
+        transition: all .3s;
+        opacity: 0;
+        top: 80%;
+        left: 48%;
+      }
+
+
       &:hover{
-        transition: 0.2s ease-in;
-        border-color: $orange;
+        border-color: $gray;
 
         h3,h4{
           color: $gray;
@@ -104,12 +124,26 @@
         .nuevos-i-top{
           color: $gray;
         }
+
+        &:after{
+          top: 85%;
+          opacity: 1;
+        }
+
+        .nuevos-i-top{
+          top: 0px;
+        }
+
       }
 
 
       @media screen and (max-width: 768px) {
         border: 0px;
         margin-right: 0;
+
+        &:after{
+          display: none;
+        }
 
         >a{
           padding: 0;
@@ -149,7 +183,7 @@
           top: 20%;
           width: 1px;
           height: 45%;
-          background: $orange;
+          background: $gray;
         }
 
         &:nth-child(3){
@@ -164,7 +198,7 @@
           top: 20%;
           width: 1px;
           height: 45%;
-          background: $orange;
+          background: $gray;
         }
 
       }
@@ -175,6 +209,18 @@
 
 
 .nuevos-i-force-minus{
+
+  >div{
+
+    &:after{
+      display: none;
+    }
+
+    justify-content: center;
+    align-items: center;
+
+  }
+
   @media screen and (min-width: 768px) {
     .nuevos-i-title{
       display: none;
@@ -187,6 +233,10 @@
         border: 0px;
         margin-right: 0;
 
+        &:after{
+          display: none;
+        }
+
         >a{
           padding: 0;
         }
@@ -194,9 +244,8 @@
         .nuevos-i-top{
           text-align: left;
 
-
           img{
-            max-width: 25%;
+            width: 50px;
             margin-bottom: 1%;
           }
 
@@ -226,7 +275,7 @@
           top: 20%;
           width: 1px;
           height: 45%;
-          background: $orange;
+          background: $gray;
         }
 
         &:nth-child(3)::before{
@@ -336,6 +385,7 @@
     padding-right: 5px;
   }
 }//end
+
 .ii-ul{
 }
 
@@ -383,7 +433,6 @@
 
 .block-effecthover-item {
   transition: all 2s ease-out;
-  border-color: $orange !important;
 
   h3,h4{
     color: $gray !important;
@@ -407,7 +456,7 @@
   transition: all 0.2s ease-out !important;
   &:hover{
     .block-effecthover-item:not(:hover){
-      border: 0.55rem solid transparentize($gray, .7) !important;
+      border: 1px solid transparentize($gray, .7) !important;
 
       @media screen and (max-width: 768px){
         border: 0 !important;

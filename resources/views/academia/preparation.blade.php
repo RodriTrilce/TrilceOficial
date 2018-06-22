@@ -16,46 +16,40 @@
     </div>
   </div>
 
-  <div class="nuevos-i nuevos-i-force-minus container-base">
-    <div class="row center-xs">
-      <div class="row nuevos-i-box col-xs-12 col-sm-9 col-md-8 between-xs center-sm center-md nuevos-i-border">
+  <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+      <div class="row col-xs-12 col-sm-8 col-md-7 start-xs start-sm start-md beginning-container beginning-minus">
 
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='uni') nuevos-i-active @endif">
-          <a href="/academia/preparacion-uni">
-            <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_uni.svg" alt="UNI">
-              <h4>Preparación</h4>
-              <h3>UNI</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
+        <div class="col-xs beginning--item @if($type=='uni') beginning--item-active @endif">
+          <a href="/academia/preparacion-uni" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">UNI</span>
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='san-marcos') nuevos-i-active @endif">
-          <a href="/academia/preparacion-san-marcos">
-            <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_unmsm.svg" alt="UNMSM">
-              <h4>Preparación</h4>
-              <h3>UNMSM</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
+
+        <div class="beginning-breakline"></div>
+
+        <div class="col-xs beginning--item @if($type=='san-marcos') beginning--item-active @endif">
+          <a href="/academia/preparacion-san-marcos" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">SAN MARCOS</span>
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($type=='pucp') nuevos-i-active @endif">
-          <a href="/academia/preparacion-pucp">
-            <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_pucp.svg" alt="PUCP">
-              <h4>Preparación</h4>
-              <h3>PUCP</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
+
+        <div class="beginning-breakline"></div>
+
+        <div class="col-xs beginning--item @if($type=='pucp') beginning--item-active @endif">
+          <a href="/academia/preparacion-pucp" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">PUCP</span>
             </div>
           </a>
         </div>
@@ -63,6 +57,7 @@
       </div>
     </div>
   </div>
+
 
   <div class="row col-xs-12 center-xs nuevos-i-list container-base">
 

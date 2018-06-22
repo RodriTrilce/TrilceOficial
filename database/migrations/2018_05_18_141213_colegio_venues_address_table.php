@@ -15,7 +15,7 @@ class ColegioVenuesAddressTable extends Migration
     {
       Schema::create('colegio_venue_address', function (Blueprint $table) {
         $table->increments('id');
-        $table->integer('idvenue')->unsigned()->nullable();
+        $table->integer('idvenue')->unsigned();
         $table->string('grades');
         $table->text('address');
         $table->string('phone');
@@ -23,7 +23,7 @@ class ColegioVenuesAddressTable extends Migration
         $table->string('latitude');
         $table->timestamps();
       });
-      
+
       Schema::table('colegio_venue_address', function(Blueprint $table)
       {
         $table->foreign('idvenue')->references('id')->on('colegio_venue');

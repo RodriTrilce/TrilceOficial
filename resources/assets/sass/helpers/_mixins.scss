@@ -79,3 +79,16 @@
   padding-bottom: $bottom;
   padding-left: $left;
 }
+
+
+@mixin breakpoint($point) {
+  @if $point == dad {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == mom {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == baby {
+    @media (max-width: 650px)  { @content; }
+  }
+}

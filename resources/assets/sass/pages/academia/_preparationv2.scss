@@ -1,0 +1,132 @@
+.beginning{
+  margin: 40px 0;
+
+  @include breakpoint(mama){
+  }
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
+}
+
+.beginning-container{
+  position: relative;
+}
+
+.beginning-breakline{
+  position: relative;
+  width: 1px;
+  height: 50%;
+  background: $gray;
+  margin-top: 8%;
+
+}
+
+.beginning--item{
+  position: relative;
+  top: 0;
+  transition: all .3s;
+
+  &:hover{
+    top: -15px;
+
+    .item-a-preparation, .item-a-university{
+      color: $gray !important;
+    }
+
+    .item-a-img{
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+  }
+
+  @include breakpoint(baby){
+    padding: 5px;
+  }
+}
+
+.beginning--item .item-a{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .item-a-img{
+    width: 80px;
+    height: 80px;
+    transition: all .3s ease-in-out;
+
+    @include breakpoint(baby){
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .item-a-preparation, .item-a-university{
+    font-family: $font_geo_reg;
+    color: $gray;
+    transition: all .3s ease-in-out;
+  }
+
+  .item-a-preparation{
+    font-size: 1rem;
+    letter-spacing: 3px;
+
+    @include breakpoint(baby){
+      font-size: .75rem;
+      letter-spacing: 0;
+    }
+  }
+
+  .item-a-university{
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+
+    @include breakpoint(dad){
+      font-size: 1.7rem;
+    }
+
+    @include breakpoint(mom){
+      font-size: 1.4rem;
+    }
+
+    @include breakpoint(baby){
+      font-size: .9rem;
+    }
+  }
+}
+
+.beginning-opacity-hover:hover > .beginning--item:not(:hover){
+      .item-a-preparation, .item-a-university{
+        color: transparentize($gray, 0.4);
+      }
+
+      .item-a-img{
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+      }
+}
+
+.beginning-minus{
+  .item-a-preparation, .item-a-university{
+    color: transparentize($gray, 0.4) !important;
+  }
+
+  .item-a-img{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+  }
+}
+
+.beginning--item-active{
+  .item-a-preparation, .item-a-university{
+    color: $gray !important;
+  }
+
+  .item-a-img{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}

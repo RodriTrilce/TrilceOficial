@@ -58,39 +58,27 @@
         <div class="col-xs block-effecthover-item">
           <a href="/academia/preparacion-uni">
             <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_uni.svg" alt="UNI">
+              <img src="/static/images/academia/svg/logo-uni.svg" alt="UNI">
               <h4>Preparación</h4>
               <h3>UNI</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
             </div>
           </a>
         </div>
         <div class="col-xs block-effecthover-item">
           <a href="/academia/preparacion-san-marcos">
             <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_unmsm.svg" alt="UNMSM">
+              <img src="/static/images/academia/svg/logo-unmsm.svg" alt="UNMSM">
               <h4>Preparación</h4>
               <h3>San Marcos</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
             </div>
           </a>
         </div>
         <div class="col-xs block-effecthover-item">
           <a href="/academia/preparacion-pucp">
             <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_pucp.svg" alt="PUCP">
+              <img src="/static/images/academia/svg/logo-pucp.svg" alt="PUCP">
               <h4>Preparación</h4>
               <h3>PUCP</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
             </div>
           </a>
         </div>

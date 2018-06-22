@@ -26,14 +26,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-    
+
     public function roles()
     {
         return $this
             ->belongsToMany('App\Role')
             ->withTimestamps();
     }
-    
+
     public function authorizeRoles($roles)
     {
         if ($this->hasAnyRole($roles)) {
@@ -41,7 +41,7 @@ class User extends Authenticatable
         }
         abort(401, 'Esta acción no está autorizada.');
     }
-    
+
     public function hasAnyRole($roles)
     {
         if (is_array($roles)) {
@@ -57,7 +57,7 @@ class User extends Authenticatable
         }
         return false;
     }
-    
+
     public function hasRole($role)
     {
         if ($this->roles()->where('name', $role)->first()) {
@@ -65,4 +65,9 @@ class User extends Authenticatable
         }
         return false;
     }
+
+    // public function posts()
+    // {
+    //   return $this->hasMany('Post');
+    // }
 }

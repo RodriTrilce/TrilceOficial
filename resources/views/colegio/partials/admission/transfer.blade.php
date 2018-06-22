@@ -13,9 +13,8 @@
 
     <div class="row col-xs-12 col-sm-6 admission-new-item">
       <div class="col-xs-2 col-sm-2 admission-new-item-date">
-        <div class="col-xs-12 admission-new-step">
-          <div class="row col-xs-12 step-guide">Paso</div>
-          <div class="row col-xs-12 step-number">01</div>
+        <div class="row col-xs-12 admission-new-step">
+          <div class="row col-xs step-guide">Paso <span class="step-number">1</span></div>
         </div>
       </div>
       <div class="col-xs admission-new-item-content">
@@ -35,9 +34,8 @@
 
     <div class="row col-xs-12 col-sm-6 admission-new-item">
       <div class="col-xs-2 col-sm-2 admission-new-date">
-        <div class="col-xs-12 admission-new-step">
-          <div class="row col-xs-12 step-guide">Paso</div>
-          <div class="row col-xs-12 step-number">02</div>
+        <div class="row col-xs-12 admission-new-step">
+          <div class="row col-xs step-guide">Paso <span class="step-number">2</span></div>
         </div>
       </div>
       <div class="col-xs admission-new-item-content">
@@ -51,9 +49,8 @@
 
     <div class="row col-xs-12 col-sm-6 admission-new-item">
       <div class="col-xs-2 col-sm-2 admission-new-date">
-        <div class="col-xs-12 admission-new-step">
-          <div class="row col-xs-12 step-guide">Paso</div>
-          <div class="row col-xs-12 step-number">03</div>
+        <div class="row col-xs-12 admission-new-step">
+          <div class="row col-xs step-guide">Paso <span class="step-number">3</span></div>
         </div>
       </div>
       <div class="col-xs admission-new-item-content">
@@ -68,9 +65,8 @@
 
     <div class="row col-xs-12 col-sm-6 admission-new-item">
       <div class="col-xs-2 col-sm-2 admission-new-date">
-        <div class="col-xs-12 admission-new-step">
-          <div class="row col-xs-12 step-guide">Paso</div>
-          <div class="row col-xs-12 step-number">04</div>
+        <div class="row col-xs-12 admission-new-step">
+          <div class="row col-xs step-guide">Paso <span class="step-number">4</span></div>
         </div>
       </div>
       <div class="col-xs admission-new-item-content">

@@ -76,7 +76,6 @@
       @break
   @endswitch
 
-  <hr class="grayhr2" />
 
 @include('colegio.partials.card_bottom')
 

@@ -46,6 +46,8 @@ class EnrollmentController extends Controller
       $enrollment->interest_cycle = $request->step1_cycle;
       $enrollment->interest_turn = $request->step1_turn;
       $enrollment->student_names = $request->step2_names;
+      $enrollment->student_lastname = $request->step2_lastname;
+      $enrollment->student_lastname_mother = $request->step2_lastname_mother;
       $enrollment->student_district = $request->step2_district;
       $enrollment->student_address = $request->step2_address;
       $enrollment->student_phone_home = $request->step2_phonehome;
@@ -196,17 +198,13 @@ class EnrollmentController extends Controller
      $pdf->Write(0, strtoupper(utf8_decode($enrollment->interest_university)));
 
      // Nombres apellidos nombres
-     $pdf->SetXY(16, 73.5);
+     $pdf->SetXY(78, 73.5);
      $pdf->Write(0, utf8_decode($enrollment->student_names));
-     /*
-     // Apellido Materno
-     $pdf->SetXY(47, 76.5);
-     $pdf->Write(0, 'Castro');
 
-     // Nombres
-     $pdf->SetXY(78, 76.5);
-     $pdf->Write(0, 'Franco Manuel');
-     */
+     // Apellido Paterno y materno
+     $pdf->SetXY(16, 73.5);
+     $pdf->Write(0, utf8_decode($enrollment->student_lastname) . ' ' . utf8_decode($enrollment->student_lastname_mother));
+
      // Telefono
      $pdf->SetXY(16, 96);
      $pdf->Write(0, utf8_decode($enrollment->student_phone_cell));

@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers\Colegio;
 
-define('PATH', str_replace('/public','/',getcwd()).'resources/internal/colegio/payment-guide/');
-
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

@@ -121,9 +121,19 @@
           <div class="row col-xs-12 start-xs">
               <h2>Datos generales del <i>Alumno</i></h2>
                 <div class="row col-xs-12">
-                  <div class="col-xs-12">
+                  <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="onlytext" minlength="3" name="step2_names" aria-label="Nombres y apellidos" placeholder="Apellido paterno / apellido materno / nombres" required>
+                      <input type="onlytext" minlength="3" name="step2_names" aria-label="Nombres" placeholder="Nombres" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset class="form-group">
+                      <input type="onlytext" minlength="3" name="step2_lastname" aria-label="Apellido paterno" placeholder="Apellido paterno" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm">
+                    <fieldset class="form-group">
+                      <input type="onlytext" minlength="3" name="step2_lastname_mother" aria-label="Apellido materno" placeholder="Apellido materno" required>
                     </fieldset>
                   </div>
                 </div>

@@ -2,36 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>Gracias por su inscripción</title>
     <style>
 
     .mail{
-      position: relative;
+      max-width: 700px;
+      height: 675px;
       font-family: 'arial';
+      background-image: url('http://67.205.139.190/static/images/academia/mail/enrollment-template-bg.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-top: 15%;
     }
 
     @media (max-width:767px){
       .mail{
         font-size: 12px;
+        padding-top: 40%;
       }
     }
 
     .mail > *{
       margin:0;
       padding: 0;
-      max-width: 700px;
-      max-height: 675px
-    }
-
-    .mail img{
-      width: 100%;
-      height: 100%;
-      z-index: -1;
     }
 
     .text{
-      position: absolute;
+
       color: white;
       width: 100%;
     }
@@ -101,7 +100,6 @@
   <div class="text names">{{$data->step2_names}}</div>
   <div class="text for-register">por registrarte</div>
   <div class="text download"><a href="http://67.205.139.190/academia/matricula-en-linea/descargar-pdf?token={{ encrypt($data->step1_dni) }}" target="_blank">Descargue su ficha de inscripción <span class="here">aquí</span></a></div>
-  <img src="http://67.205.139.190/static/images/academia/mail/enrollment-template.jpg">
 </div>
 </body>
 </html>

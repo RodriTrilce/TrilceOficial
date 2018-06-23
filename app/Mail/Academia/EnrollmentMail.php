@@ -30,6 +30,7 @@ class EnrollmentMail extends Mailable
     {
       return $this->from( env('MAIL_DEFAULT_SENDER') )
                   ->to( $this->data->step2_email )
+                  ->subject('Ficha de Matrícula - Trilce Academia')
                   ->view('resources.mail.academia.enrollment.enrollment_finish')
                   ->text('resources.mail.academia.enrollment.enrollment_finish_plain')
                   ->with(

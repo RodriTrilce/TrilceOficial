@@ -141,7 +141,7 @@ class EnrollmentController extends Controller
      if(empty($enrollment->student_names)){
        return abort(404);
      }
-     
+
      $enrollment->interest_university = ($enrollment->interest_university=='sm'?'san marcos':$enrollment->interest_university);
      $terms_route = $cost->one->{$enrollment->interest_university};
 
@@ -198,13 +198,13 @@ class EnrollmentController extends Controller
      $pdf->SetXY(47, 54);
      $pdf->Write(0, strtoupper(utf8_decode($enrollment->interest_university)));
 
-     // Nombres apellidos nombres
+     // Nombres
      $pdf->SetXY(78, 73.5);
-     $pdf->Write(0, utf8_decode($enrollment->student_names));
+     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_names))));
 
      // Apellido Paterno y materno
      $pdf->SetXY(16, 73.5);
-     $pdf->Write(0, utf8_decode($enrollment->student_lastname) . ' ' . utf8_decode($enrollment->student_lastname_mother));
+     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_lastname) . ' ' . utf8_decode($enrollment->student_lastname_mother)));
 
      // Telefono
      $pdf->SetXY(16, 96);

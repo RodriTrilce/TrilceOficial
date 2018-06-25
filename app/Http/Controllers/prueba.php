@@ -18,13 +18,17 @@ class prueba extends Controller
         $font->size(22);
         $font->color('#FFFFFF');
       });
-
+      $img2 = $img;
       $img = $img->encode('jpg',80);
       $hash = md5($img->__toString());
 
-      Storage::put("public/mail/enrollment/{$hash}.jpg", $img);
+//      Storage::put("public/mail/enrollment/{$hash}.jpg", $img);
 
-      echo storage_path("app/public/mail/enrollment/{$hash}.jpg");
+//      echo storage_path("app/public/mail/enrollment/{$hash}.jpg");
+
+    $img2 = $img2->encode('data-url');
+
+        echo "<img src=\"$img2\"  />";
 
 
     }

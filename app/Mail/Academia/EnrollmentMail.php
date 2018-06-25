@@ -38,7 +38,7 @@ class EnrollmentMail extends Mailable
                   ->with(
                     [
                           'data'    => $this->data,
-                          'image'   => $this->image($this->data->contact_names)
+                          'image'   => $this->image($this->data->step2_names)
                     ]);
     }
 

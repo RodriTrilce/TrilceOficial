@@ -1,4 +1,4 @@
-Hola, {{ $this->data->step2_names }}.
+Hola, {{ $data->step2_names }}.
 
 Te enviamos tu ficha de inscripción - Trilce Academia
 

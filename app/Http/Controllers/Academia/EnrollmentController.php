@@ -204,7 +204,7 @@ class EnrollmentController extends Controller
 
      // Apellido Paterno y materno
      $pdf->SetXY(16, 73.5);
-     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_lastname))) . ' ' . ucwords(strtolower(utf8_decode($enrollment->student_lastname_mother)));
+     $pdf->Write(0, ucwords(strtolower(utf8_decode($enrollment->student_lastname))) . ' ' . ucwords(strtolower(utf8_decode($enrollment->student_lastname_mother))) );
 
      // Telefono
      $pdf->SetXY(16, 96);

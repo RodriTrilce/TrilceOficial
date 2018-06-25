@@ -32,7 +32,7 @@ class EnrollmentMail extends Mailable
     {
       return $this->from(env('MAIL_DEFAULT_SENDER'))
                   ->to($this->data->step2_email)
-                  ->subject('Ficha de Matrícula - Trilce Academia')
+                  ->subject('Te enviamos tu ficha de inscripción - Trilce Academia')
                   ->view('resources.mail.academia.enrollment.enrollment_finish')
                   ->text('resources.mail.academia.enrollment.enrollment_finish_plain')
                   ->with(
@@ -47,10 +47,12 @@ class EnrollmentMail extends Mailable
       $img = storage_path('app/public/mail/template-academia-enrollment.jpg');
 
       $img = Image::make($img);
-      $img = $img->text($name, 275, 342, function($font) {
+      $img = $img->text($name, 350, 326, function($font) {
         $font->file(resource_path('assets/fonts/33FA0F_E_0.ttf'));
         $font->size(22);
         $font->color('#FFFFFF');
+        $font->align('center');
+        $font->valign('top');
       });
 
       $img = $img->encode('jpg',80);

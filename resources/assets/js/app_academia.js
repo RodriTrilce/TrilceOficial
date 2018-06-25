@@ -24,12 +24,12 @@ const ValidationLang = {
 };
 
 const ValidationConfig = {
-  classInputGroup: 'form-group',
-  classInputGroupError: 'has-danger',
-  classLabel: 'form-control-label',
-  tagNameError: 'small',
-  classError: 'text-help',
-  selectorInput: '[name]'
+  classInputGroup       : 'form-group',
+  classInputGroupError  : 'has-danger',
+  classLabel            : 'form-control-label',
+  tagNameError          : 'small',
+  classError            : 'text-help',
+  selectorInput         : '[name]'
 };
 
 Validation.ui.config  = ValidationConfig;
@@ -416,14 +416,14 @@ function enrollment(nextBtn,prevBtn,form, type){
         this.showTab(this.currentTab);
       }else{
         if (result === true) {
-            x[this.currentTab].style.display = 'none';
+            var old_tab = this.currentTab;
             this.currentTab = this.currentTab + n;
 
             if (this.currentTab >= x.length) {
               document.formenrollment.submit();
-//              e.preventDefault();
               return false;
             }else{
+              x[old_tab].style.display = 'none';
               this.showTab(this.currentTab);
             }
         } else {

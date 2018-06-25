@@ -18,6 +18,8 @@ Route::name('prueba')->get('/prueba', function () {
 
 Route::get('/prueba2', 'Prueba2Controller@index');
 
+Route::get('/img', 'prueba@index');
+
 
 /**
  *  Admin

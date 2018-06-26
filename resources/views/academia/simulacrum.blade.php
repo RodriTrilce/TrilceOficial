@@ -6,7 +6,7 @@
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-simulacrum"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Simulacros</h1>

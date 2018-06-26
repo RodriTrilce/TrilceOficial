@@ -15,14 +15,16 @@ class CreateFilesTable extends Migration
     {
       Schema::create('files', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('file_id')->unique();
-          $table->string('type');
-          $table->string('mime');
-          $table->string('extension');
-          $table->string('location');
-          $table->string('name');
-          $table->text('description')->nullable();
-          $table->string('tag')->nullable();
+          $table->string('file_id')->unique();                      // s770s0d897a990390ds9a949
+          $table->string('type');                                   // image
+          $table->string('mime');                                   // image/png
+          $table->string('extension');                              // .png
+          $table->string('location_folder');                        // static/blog/
+          $table->string('location_driver')->default('local');      // static/blog/
+          $table->string('name');                                   // Pasacalle Trilce
+          $table->text('description')->nullable();                  // Foto principal del pasacalle
+          $table->integer('size')->nullable();                      // bytes
+          $table->string('dimension')->nullable();                  // 290x290 -> thumb | 960x650 -> cover
           $table->enum('trash', [0, 1])->default('0');
           $table->timestamps();
       });

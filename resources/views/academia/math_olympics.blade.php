@@ -6,21 +6,21 @@
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-matholympics"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Olimpiadas de matemáticas</h1>
       </div>
     </div>
   </div>
-  
+
   <div class="row center-xs center-sm math-olympic">
     <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 text-init math-olympic-table">
       @foreach ($data as $key => $v)
       <div class="row col-xs">
-        
+
         <div class="col-xs-12 math-olympic-title">{{$v->sede}}</div>
-        
+
         <div class="row col-xs-12 col-sm col-md-7 math-olympic-content">
           <div class="col-xs-2 "><span class="a">{{ Date::parse($v->created_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->created_at)) }}</span></div>
           <div class="col-xs-7 col-sm-8">{{$v->title}}</div>
@@ -35,14 +35,14 @@
             <li {!! ($v->results_url!==''?'class="active"':'') !!}><a href="{{$v->results_url}}" target="_blank">Resultados</a></li>
           </ul>
         </div>
-        
-        
+
+
       </div>
       @endforeach
-      
+
     </div>
   </div>
-  
+
   <div class="row center-xs center-sm math-olympic-onam">
     <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
     <div class="row col-xs-12 col-sm-8 between-xs between-sm data">
@@ -50,7 +50,7 @@
       <div class="col-xs">XXX OLIMPIADA NACIONAL DE MATEMÁTICA</div>
       <div class="col-xs">2.° prim a 5.° sec.</div>
     </div>
-    
+
     <div class="row col-xs-12 col-sm-9 text-init center-onam">
       <div class="row col-xs-12 col-sm-3 middle-sm middle-xs center-sm center-xs basics">
         <i class="fa fa-search"></i> Bases
@@ -70,9 +70,9 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row col-xs-12 col-sm-9 text-init sponsor">
-      
+
       <div class="row col-xs-12 col-sm-6 middle-sm information">
         <div class="col-xs-12 col-sm-12 center-xs">
           <p>
@@ -81,7 +81,7 @@
           </p>
         </div>
       </div>
-      
+
       <div class="row col-xs-12 col-sm-6">
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-artesco.jpg') }}}" alt="Aresto"></div>
@@ -90,7 +90,7 @@
       </div>
     </div>
   </div>
-  
+
 
   @include('academia.partials.card_bottom')
 @endsection

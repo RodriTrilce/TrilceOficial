@@ -168,6 +168,10 @@
 
   tr{
     border: 0 !important;
+
+    td{
+      font-family: $font_geo_lite;
+    }
   }
 
   td, th{

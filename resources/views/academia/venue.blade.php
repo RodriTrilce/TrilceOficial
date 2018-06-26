@@ -6,7 +6,7 @@
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-venues"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>{{ $data->name }}</h1>
@@ -20,7 +20,7 @@
       <div class="col-xs-12 col-sm container-base venue-info-container">
         <h2>Información general</h2>
         <div class="venues-hr"></div>
-        
+
         <div class="row col-xs-12 col-sm-12">
           <table class="table-responsive venue-table">
             <thead>
@@ -36,7 +36,6 @@
                   <td data-label="Dirección"> {{ $data->direction }}</td>
                   <td data-label="Teléfono"> {{ $data->phone }}</td>
                 </tr>
-
             </tbody>
           </table>
         </div>

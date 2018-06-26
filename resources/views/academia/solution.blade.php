@@ -15,46 +15,40 @@
     </div>
   </div>
 
-  <div class="nuevos-i nuevos-i-force-minus container-base">
-    <div class="row center-xs">
-      <div class="row nuevos-i-box col-xs-12 col-sm-9 col-md-8 between-xs center-sm center-md center-lg nuevos-i-border">
+  <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-sm center-md">
+      <div class="row col-xs-12 col-sm-8 col-md-7 start-xs start-sm start-md beginning-container beginning-minus">
 
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='UNI') nuevos-i-active @endif">
-          <a href="/academia/solucionarios-uni">
-            <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_uni.svg" alt="UNI">
-              <h4>Simulacro</h4>
-              <h3>UNI</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
+        <div class="col-xs beginning--item @if($university->short_name=='UNI') beginning--item-active @endif">
+          <a href="/academia/solucionarios-uni" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">UNI</span>
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='San Marcos') nuevos-i-active @endif">
-          <a href="/academia/solucionarios-san-marcos">
-            <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_unmsm.svg" alt="UNMSM">
-              <h4>Simulacro</h4>
-              <h3>UNMSM</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
+
+        <div class="beginning-breakline"></div>
+
+        <div class="col-xs beginning--item @if($university->short_name=='San Marcos') beginning--item-active @endif">
+          <a href="/academia/solucionarios-san-marcos" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">SAN MARCOS</span>
             </div>
           </a>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 @if($university->short_name=='PUCP') nuevos-i-active @endif">
-          <a href="/academia/solucionarios-pucp">
-            <div class="nuevos-i-top">
-              <img src="/static/images/svg/university_logo_pucp.svg" alt="PUCP">
-              <h4>Simulacro</h4>
-              <h3>PUCP</h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <hr>
-              <span>Más información <i class="fa fa-search"></i></span>
+
+        <div class="beginning-breakline"></div>
+
+        <div class="col-xs beginning--item @if($university->short_name=='PUCP') beginning--item-active @endif">
+          <a href="/academia/solucionarios-pucp" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">PUCP</span>
             </div>
           </a>
         </div>
@@ -62,6 +56,7 @@
       </div>
     </div>
   </div>
+
 
   <div class="row start-xs center-sm solution-h1-title container-base">
     <div class="col-xs-12 col-sm-9 col-md-8 start-xs start-sm">

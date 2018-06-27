@@ -164,9 +164,9 @@
                   </div>
                 </li>
 
-                <li><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active nav-item-noclick':'') }}">Blog</a></li>
+                <li class="disable"><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active nav-item-noclick':'') }}">Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
-                <li><a href="/colegio/contacto" class="{{ (Request::is('colegio/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
+                <li class=""><a href="/colegio/contacto" class="{{ (Request::is('colegio/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>
             </nav>
 

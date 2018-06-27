@@ -23,7 +23,7 @@ class CreateFilesTable extends Migration
           $table->string('location_driver')->default('local');      // static/blog/
           $table->string('name');                                   // Pasacalle Trilce
           $table->text('description')->nullable();                  // Foto principal del pasacalle
-          $table->integer('size')->nullable();                      // bytes
+          $table->integer('size')->nullable();                      // bytes - max 2gb = integer max column type ::  2147483647
           $table->string('dimension')->nullable();                  // 290x290 -> thumb | 960x650 -> cover
           $table->enum('trash', [0, 1])->default('0');
           $table->timestamps();

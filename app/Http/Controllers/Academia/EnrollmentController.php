@@ -321,16 +321,16 @@ class EnrollmentController extends Controller
 
       $pdf->SetFontSize(6.5);
 
-      $pdf->SetXY(160.5, 115.2);
-      $pdf->Write(0, utf8_decode("9.1 La pérdida del libro de Letras que otorga la institución dará lugar al cobro de S/ 30 por concepto de duplicado."));
+      $pdf->SetXY(162.1, 115.2);
+      $pdf->Write(0, utf8_decode("- La pérdida del libro de Letras que otorga la institución dará lugar al cobro de S/ 30 por concepto de duplicado."));
     }else{
       $pdf->SetXY(240.5, 109.2);
       $pdf->Write(0, "12");
 
       $pdf->SetFontSize(6.5);
 
-      $pdf->SetXY(160.5, 115.2);
-      $pdf->Write(0, utf8_decode("9.1 La pérdida del libro de Letras que otorga la institución dará lugar al cobro de S/ 15 por concepto de duplicado."));
+      $pdf->SetXY(162.1, 115.2);
+      $pdf->Write(0, utf8_decode("- La pérdida del libro de Letras que otorga la institución dará lugar al cobro de S/ 15 por concepto de duplicado."));
     }
 
     $pdf->SetFontSize(8.5);

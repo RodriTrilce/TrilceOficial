@@ -15,9 +15,7 @@
 Route::name('prueba')->get('/prueba', function () {
    return view('academia.test');
 });
-
 Route::get('/prueba2', 'Prueba2Controller@index');
-
 Route::get('/img', 'prueba@index');
 
 
@@ -26,9 +24,17 @@ Route::get('/img', 'prueba@index');
  */
 
 // Index
-Auth::routes();
-Route::get('/admin', 'Admin\IndexController@index')->name('admin-index');
+/*Auth::routes();
+Route::name('admin-index')
+      ->get('/admin', 'Admin\IndexController@index');
 
+Route::name('admin-blog')
+      ->get('/admin/blog', 'Admin\BlogController@index');
+
+Route::->get('/admin/create', 'Admin\BlogController@storage');
+
+Route::->get('/admin/blog', 'Admin\BlogController@index');
+*/
 
 /**
  * General

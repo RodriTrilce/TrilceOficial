@@ -23,14 +23,15 @@ mix.sass('resources/assets/sass/main_academia.scss','public/css');
 mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js')
 mix.sass('resources/assets/sass/main_home.scss','public/css');
 
-// mix:all
+// mix:All
 mix.sass('resources/assets/sass/main.scss','public/css');
+
+// mix:Admin
+mix.sass('resources/assets/sass/admin/main_admin.scss', 'public/css/admin_main.css');
+mix.js('resources/assets/js/admin/app.js', 'public/js/admin_main.js');
 
 // Assets to public
 mix.copyDirectory('resources/assets/images', 'public/static/images');
 mix.copyDirectory('resources/assets/fonts', 'public/static/fonts');
 mix.copyDirectory('resources/assets/video', 'public/static/video');
 mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
-
-
-

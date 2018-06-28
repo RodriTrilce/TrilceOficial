@@ -24,6 +24,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-      return view('/admin/index')->with(['page' => 'index']);
+      return view('admin.index')->with(['page' => 'index']);
     }
 }

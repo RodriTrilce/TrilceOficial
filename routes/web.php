@@ -24,17 +24,26 @@ Route::get('/img', 'prueba@index');
  */
 
 // Index
-/*Auth::routes();
-Route::name('admin-index')
-      ->get('/admin', 'Admin\IndexController@index');
+Auth::routes();
 
-Route::name('admin-blog')
-      ->get('/admin/blog', 'Admin\BlogController@index');
+Route::get('/admin', 'Admin\IndexController@index');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function() {
 
-Route::->get('/admin/create', 'Admin\BlogController@storage');
+  Route::get('/blog', 'BlogController@index');
+  Route::get('/blog/create', 'BlogController@create');
+  Route::post('/blog/create', 'BlogController@store');
 
-Route::->get('/admin/blog', 'Admin\BlogController@index');
+/*
+    Route::resource('/posts', 'PostController');
+    Route::put('/posts/{post}/publish', 'PostController@publish')->middleware('admin');
+    Route::resource('/categories', 'CategoryController', ['except' => ['show']]);
+    Route::resource('/tags', 'TagController', ['except' => ['show']]);
+    Route::resource('/comments', 'CommentController', ['only' => ['index', 'destroy']]);
+    Route::resource('/users', 'UserController', ['middleware' => 'admin', 'only' => ['index', 'destroy']]);
 */
+});
+
+
 
 /**
  * General

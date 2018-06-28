@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Controller;
 use App\Models\Academia\EnrollmentModel as Enrollment;
-use App\Http\Requests\Academia\StoreEnrollment as StoreEnrollment;
+use App\Http\Requests\Academia\StoreEnrollment;
 use App\Mail\Academia\EnrollmentMail;
 use \setasign\Fpdi\Fpdi;
 

@@ -15,7 +15,7 @@ class CreateFilesTable extends Migration
     {
       Schema::create('files', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('file_id')->unique();                      // s770s0d897a990390ds9a949
+          $table->string('token')->unique();                      // s770s0d897a990390ds9a949
           $table->string('type');                                   // image
           $table->string('mime');                                   // image/png
           $table->string('extension');                              // .png

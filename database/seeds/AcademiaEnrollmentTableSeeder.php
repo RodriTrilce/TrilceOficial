@@ -14,7 +14,7 @@ class AcademiaEnrollmentTableSeeder extends Seeder
 
     $c = array(
       array(
-        'student_dni' => '74065854',
+        'student_dni' => '74065855',
         'student_names' => 'Franco',
         'student_lastname' => 'Salcedo',
         'student_lastname_mother' => 'Castro',

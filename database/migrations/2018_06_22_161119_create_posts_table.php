@@ -15,13 +15,13 @@ class CreatePostsTable extends Migration
      {
        Schema::create('posts', function (Blueprint $table) {
            $table->increments('id');
-           $table->integer('id_user')->unsigned();
-           $table->integer('id_image_marker')->unsigned();
+           $table->integer('user_id')->unsigned();
+           $table->integer('file_id')->unsigned()->nullable();
            $table->enum('site', ['academia', 'colegio']);
            $table->string('type')->default('blog');
            $table->string('title');
-           $table->text('content');
-           $table->text('slug');
+           $table->longText('content');
+           $table->string('slug');
            $table->text('tags')->nullable();
            $table->integer('view')->default('0');
            $table->enum('marker', [0, 1])->default('0');
@@ -30,13 +30,13 @@ class CreatePostsTable extends Migration
            $table->timestamps();
        });
 
-
+/*
        Schema::table('posts', function(Blueprint $table)
        {
-         $table->foreign('id_user')->references('id')->on('users');
-         $table->foreign('id_image_marker')->references('id')->on('files');
+         //$table->foreign('id_user')->references('id')->on('users');
+         //$table->foreign('id_image_marker')->references('id')->on('files');
        });
-
+*/
      }
 
     /**

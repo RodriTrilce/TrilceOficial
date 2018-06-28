@@ -4,7 +4,9 @@
     "/css/main_academia.css": "/css/main_academia.css",
     "/css/main_home.css": "/css/main_home.css",
     "/css/main.css": "/css/main.css",
+    "/css/admin_main.css": "/css/admin_main.css",
     "/js/app_academia.js": "/js/app_academia.js",
     "/js/app_home.js": "/js/app_home.js",
+    "/js/admin_main.js": "/js/admin_main.js",
     "/favicon.ico": "/favicon.ico"
 }

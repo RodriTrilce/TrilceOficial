@@ -18,9 +18,8 @@ class BlogController extends Controller
     //   ['marker', '=', '0']
     // ])->paginate(10);
 
-    $a = Post::find(1);
-
-    dd($a->user);
+//    $a = Post::find(1);
+    //dd($a->user);
 
 
 //    dd($posts_all);
@@ -38,7 +37,8 @@ class BlogController extends Controller
                                         'posts'         => $posts_all,
                                         'posts_marker'  => $posts_marker
                                       ]);
-   */
+*/
+    return view('colegio.blog');
 
   }
 

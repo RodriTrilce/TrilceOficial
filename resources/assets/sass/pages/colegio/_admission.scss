@@ -84,10 +84,9 @@
 
     li::before{
       content: "\F186";
-      color: $colegio_blue;
+      color: $gray;
       font-family: $font_icon;
       font-size: 14px;
-      font-weight: bold;
       margin-right: 5px;
     }
 
@@ -95,10 +94,9 @@
       li{
         &::before{
           content: "\F112";
-          color: $colegio_blue;
+          color: $gray;
           font-family: $font_icon;
           font-size: 14px;
-          font-weight: bold;
           margin-right: 5px;
         }
       }
@@ -110,18 +108,18 @@
 .admission-new-superindex{
   margin-top: 2rem;
 }
-
-.admission-transfer-table{
-  ul{
-    li::before{
-      color: $colegio_yellow !important;
-    }
-
-    >ul li::before{
-      color: $colegio_yellow !important;
-    }
-  }
-}
+//
+// .admission-transfer-table{
+//   ul{
+//     li::before{
+//       color: $gray !important;
+//     }
+//
+//     >ul li::before{
+//       color: $gray !important;
+//     }
+//   }
+// }
 
 .admission-regular-title{
   font-size: 2rem;

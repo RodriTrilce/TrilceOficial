@@ -287,9 +287,6 @@
   </div>
 
 
-  <hr class="grayhr2 xs-hide" />
-
-
   @include('academia.partials.card_bottom')
 @endsection
 

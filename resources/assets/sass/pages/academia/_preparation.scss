@@ -55,10 +55,11 @@
   width: 100%;
   height: 100%;
   position: relative;
+  text-align: center;
 
   .item-a-img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     transition: all .3s ease-in-out;
 
     @include breakpoint(baby){
@@ -75,7 +76,6 @@
 
   .item-a-preparation{
     font-size: 1rem;
-    letter-spacing: 3px;
 
     @include breakpoint(baby){
       font-size: .8rem;
@@ -120,6 +120,7 @@
 }
 
 .beginning-minus{
+  margin: 25px 0;
   .item-a-preparation, .item-a-university{
     color: transparentize($gray, 0.4) !important;
   }
@@ -131,6 +132,8 @@
 }
 
 .beginning--item-active{
+  position: relative;
+
   .item-a-preparation, .item-a-university{
     color: $gray !important;
   }
@@ -138,5 +141,24 @@
   .item-a-img{
     opacity: 1;
     filter: alpha(opacity=100);
+  }
+
+  &::before{
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    width: 25px;
+    height: 8px;
+    background: $orange;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    @include breakpoint(baby){
+      bottom: -25px;
+    }
+
   }
 }

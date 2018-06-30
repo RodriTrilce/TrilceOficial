@@ -32,8 +32,8 @@
     &::after{
       content: "";
       position: absolute;
-      height: 14px;
-      width: 2.6rem;
+      height: 8px;
+      width: 30px;
       background: $orange;
       top:-5px;
       left: 0;
@@ -162,6 +162,8 @@
   margin-bottom: 20px;
 }
 
+
+/*
 .venue-table{
   width: 90% !important;
   border:0 !important;
@@ -220,6 +222,132 @@
 
     tr{
       border: 1px solid #ddd !important;
+    }
+
+    td {
+      position: relative;
+      border-right: 0 !important;
+
+      &:before{
+        color: $gray;
+        padding-left: 16px;
+      }
+
+      &:after {
+        color: $orange;
+        font-family: $font_icon;
+        font-size: 15px;
+        left: 0;
+        top: 9px;
+        padding-left: 10px;
+        position: absolute;
+      }
+
+      &:nth-child(1){
+        &::after(){
+          content: "\F18F";
+        }
+      }
+
+      &:nth-child(2){
+        &::after(){
+          content: "\f27d";
+        }
+      }
+
+      &:nth-child(3){
+        &::after(){
+          content: "\f2b3";
+        }
+      }
+
+    }
+  }
+
+}
+*/
+
+.venue-table{
+  width: 90% !important;
+  border:0 !important;
+
+  thead{
+    border-bottom: 1px dotted #ccc;
+  }
+
+  thead > tr{
+    border-bottom: 0 !important;
+    font-family: $font_geo_reg !important;
+  }
+
+  tbody > tr{
+    border-top: 0 !important;
+  }
+
+  tr{
+//    border: 0 !important;
+
+    td{
+      font-family: $font_geo_lite;
+      text-align: left !important;
+    }
+  }
+
+  td, th{
+//    border-right: 0.5px solid #ddd;
+
+    &:last-child{
+      border: 0 !important;
+    }
+  }
+
+  th{
+    color: $orange;
+    position: relative;
+    text-align: left !important;
+
+    &::before{
+      font-family: $font_icon;
+      font-size: 15px;
+      color: $orange;
+      left: -5px;
+      height: 10px;
+      top: 0;
+    }
+
+    &:nth-child(1){
+      &::before(){
+        content: "\F18F";
+      }
+    }
+
+    &:nth-child(2){
+      &::before(){
+        content: "\f27d";
+      }
+    }
+
+    &:nth-child(3){
+      &::before(){
+        content: "\f2b3";
+      }
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    width: 100% !important;
+
+    tr{
+      border: 1px solid #ddd !important;
+    }
+
+    tbody >  tr{
+      border-top: 1px solid #ddd !important;
+    }
+
+    tbody td{
+      text-align: right !important;
     }
 
     td {

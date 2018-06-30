@@ -141,6 +141,11 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
+                      <input type="date" class="inputfull" name="step2_birth" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <fieldset class="form-group">
                       <select name="step2_district" id="step2_district" aria-label="Distrito" required>
                         <option value="" selected disabled>Distrito</option>
                         <option value="Lima">Lima</option>
@@ -197,12 +202,12 @@
                 </div>
 
                 <div class="row col-xs-12">
-                  <div class="col-xs-12 col-sm">
+                  <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
                       <input type="tel" minlength="6" name="step2_phonehome" placeholder="Telf. Casa" aria-label="Telf. Casa" required>
                     </fieldset>
                   </div>
-                  <div class="col-xs-12 col-sm">
+                  <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
                       <input type="tel" minlength="9" name="step2_mobile" placeholder="Celular" aria-label="Celular" required>
                     </fieldset>
@@ -688,10 +693,7 @@
                         <span>Apoderado</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="attorney" aria-label="Apoderado" required>
                       </label>
                       <label class="radio-inline">
-                        <span>Madre</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="mother" aria-label="Apoderado" required>
-                      </label>
-                      <label class="radio-inline">
-                        <span>Padre</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="father" aria-label="Apoderado" required>
+                        <span>Ninguno</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="none" aria-label="Niguno" required>
                       </label>
                     </fieldset>
                   </div>

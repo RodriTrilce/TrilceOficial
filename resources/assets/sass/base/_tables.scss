@@ -16,8 +16,12 @@ table.table-responsive {
     text-align: center;
   }
 
+  tbody td{
+    vertical-align: top;
+  }
+
   th {
-    text-transform: uppercase;
+//    text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
   }
@@ -48,7 +52,7 @@ table.table-responsive {
       &:before {
         content: attr(data-label);
         float: left;
-        text-transform: uppercase;
+//        text-transform: uppercase;
         font-weight: bold;
       }
     }

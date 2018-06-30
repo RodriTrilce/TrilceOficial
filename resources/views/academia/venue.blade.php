@@ -39,9 +39,9 @@
             </tbody>
           </table>
         </div>
-
-
+        
       </div>
+
       <div class="col-xs-12 col-sm map-container">
         <div id="map"></div>
       </div>

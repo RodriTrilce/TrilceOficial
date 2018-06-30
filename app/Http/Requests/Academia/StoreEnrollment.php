@@ -34,6 +34,7 @@ class StoreEnrollment extends FormRequest
           'step2_names' => 'required',
           'step2_lastname' => 'required',
           'step2_lastname_mother' => 'required',
+          'step2_birth' => 'required',
           'step2_district' => 'required',
           'step2_address' => 'required',
           'step2_phonehome' => 'required',
@@ -43,20 +44,27 @@ class StoreEnrollment extends FormRequest
           'step2_school' => 'required',
           'step2_universitypostulate' => 'required',
           'step2_profession' => 'required',
+
           'step3_apoderate' => 'required',
-          'step3_names' => 'required',
-          'step3_dni' => 'required',
-          'step3_phonehome' => 'required',
-          'step3_mobile' => 'required',
-          'step3_email' => 'required|email',
-          'step3_work_location' => 'required',
-          'step3_work_phone' => 'required',
-          'step3_profession' => 'required',
-          'step3_emergencyphone' => 'required',
+
           'checkbox' => 'required',
           'g-recaptcha-response' => 'required|recaptcha'
         ];
     }
+
+/*
+
+'step3_names' => 'required',
+'step3_dni' => 'required',
+'step3_phonehome' => 'required',
+'step3_mobile' => 'required',
+'step3_email' => 'required|email',
+'step3_work_location' => 'required',
+'step3_work_phone' => 'required',
+'step3_profession' => 'required',
+'step3_emergencyphone' => 'required',
+
+*/
 
     public function attributes()
     {

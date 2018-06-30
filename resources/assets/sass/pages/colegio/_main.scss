@@ -69,7 +69,7 @@
       font-family: $font_geo_reg;
 
       h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: transparentize($gray, 0.4);
         transition: 0.2s ease-in;
 
@@ -103,15 +103,15 @@
         display: inline-block;
 
         @media (max-width: 1400px) {
-          font-size: 2.2rem;
+          font-size: 1.8rem;
         }
 
         @media (max-width: 1200px) {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
 
         @media (max-width: 1100px) {
-          font-size: 1.9rem;
+          font-size: 1.6rem;
         }
 
         @media (max-width: 768px) {
@@ -223,13 +223,13 @@
 
       .nuevos-i-top{
         img{
-          max-width: 50%;
-          margin-bottom: 10%;
+          max-width: 35px;
+          margin-bottom: 0 !important;
         }
 
         h3{
           font-size: 1rem;
-          line-height: 1.5rem;
+          line-height: 1.2rem;
         }
 
         h4{
@@ -265,16 +265,16 @@
 
       .nuevos-i-top{
         img{
-          max-width: 80px;
-          margin-bottom: 10%;
+          max-width: 50px;
+          margin-bottom: 15px;
           @media (max-width: 768px){
-            width: 50px !important;
+            width: 35px !important;
           }
         }
 
         h3{
           font-size: 1rem;
-          line-height: 1.5rem;
+          line-height: 1.3rem;
 
           @media (max-width: 768px){
             font-size: .9rem;
@@ -286,14 +286,14 @@
           }
 
           .modality{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
 
             @media (max-width: 768px){
-              font-size: 1.3rem;
+              font-size: 1.1rem;
             }
 
             @media (max-width: 320px){
-              font-size: 1.1rem;
+              font-size: 1rem;
             }
           }
 

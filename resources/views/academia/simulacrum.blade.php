@@ -61,7 +61,7 @@
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
       <div class="col-xs-12 col-sm simulacrum-info">
-        <h2 class="simulacrum-info-title">Sobre el simulacro {{ strtoupper($university->short_name)}}</h2>
+        <h2 class="simulacrum-info-title">Simulacro {{ strtoupper($university->short_name)}}</h2>
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Inscripciones:</span>
@@ -84,12 +84,14 @@
       <div class="col-xs-12 col-sm simulacrum-form container-base">
         <div class="row start-xs step-1" id="step1">
           <h2>Regístrate para participar</h2>
-          <ul>
-            <li>1. Ingresa tu DNI</li>
-            <li>2. Presiona "Validar Datos"</li>
-            <li>3. Al final del registro, no olvides anotar tu código de inscripción</li>
-          </ul>
-          <div class="col-xs-6 text-init">
+          <div class="col-xs-12 start-xs">
+            <ul>
+              <li>1. Ingresa tu DNI</li>
+              <li>2. Presiona "Validar Datos"</li>
+              <li>3. Al final del registro, no olvides anotar tu código de inscripción</li>
+            </ul>
+          </div>
+          <div class="col-xs-6 start-xs">
             <input type="text" name="f1_dni" id="s1_dni" placeholder="DNI">
             <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
           </div>
@@ -97,7 +99,7 @@
 
         <div class="row start-x step-2" id="step2">
           <h2>Déjanos tus datos</h2>
-          <div class="col-xs-12 col-sm-11 text-init">
+          <div class="col-xs-12 col-sm-11 start-xs">
             <fieldset>
               <input type="text" name="s2_dni" id="s2_dni" readonly>
             </fieldset>

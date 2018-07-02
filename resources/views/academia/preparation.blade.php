@@ -64,56 +64,107 @@
     <div class="row col-xs-12 col-sm-9 col-md-8 start-md start-xs start-sm nuevos-i-list-selects">
       <div class="col-xs-12 col-sm">
         <select>
-          <option value="volvo">Ciclos...</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
+          <option value="">Ciclos</option>
+          <option value="">Todos</option>
         </select>
       </div>
 
       <div class="col-xs-12 col-sm">
         <select>
-          <option value="volvo">Sedes...</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
+          <option value="">Sedes</option>
+          <option value="">Todos</option>
         </select>
       </div>
       <div class="col-xs-12 col-sm">
         <select>
-          <option value="volvo">Turnos...</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
+          <option value="">Turnos</option>
+          <option value="">Todos</option>
         </select>
       </div>
     </div>
 
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs around-xs nuevos-i-list-data">
-      <div class="row col-xs-12 ii-ul">
-
-        <!-- bucle -->
-        <div class="col-xs-12 ii-ul-bucle-item">
-          <div class="col-xs-12"><h3>Comas</h3></div>
-          <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-xs-4 col-sm-3 ii i-cycle">Anual</div>
-            <div class="col-xs col-sm-3 ii i-turn">Mañana</div>
-            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
-            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
-          </div>
-          <div class="row col-xs-12 col-md-12 ii-li">
-            <div class="col-xs-4 col-sm-3 ii i-cycle">Anual</div>
-            <div class="col-xs col-sm-3 ii i-turn">Mañana</div>
-            <div class="col-xs-12 col-md-3 ii i-date">12/03/2018 - 02/12/2018</div>
-            <div class="col-xs-4 col-md center-md ii i-money">S/250</div>
-            <div class="col-xs-8 col-md end-md ii i-horary"><b>L-S</b> 08:00-15:00</div>
-          </div>
-        </div>
-        <!-- end bucle -->
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs ">
 
 
-      </div>
+          <table class="table-responsive preparation-table">
+            <thead>
+              <tr>
+                <th>Ciclo</th>
+                <th>Turno</th>
+                <th>Inicio</th>
+                <th>Fin</th>
+                <th>Pago Mensual</th>
+                <th>Horario</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Ciclo"> Semestral</td>
+                <td data-label="Turno"> Mañana</td>
+                <td data-label="Inicio"> 1/01/2018</td>
+                <td data-label="Fin"> 12/03/2019</td>
+                <td data-label="Pago Mensual"> 250</td>
+                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
+                <td data-label="Estado"> Disponible</td>
+              </tr>
+
+              <tr>
+                <td data-label="Ciclo"> Anual</td>
+                <td data-label="Turno"> Mañana</td>
+                <td data-label="Inicio"> 1/01/2018</td>
+                <td data-label="Fin"> 12/03/2019</td>
+                <td data-label="Pago Mensual"> 250</td>
+                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
+                <td data-label="Estado"> Disponible</td>
+              </tr>
+
+              <tr>
+                <td data-label="Ciclo"> Semestral</td>
+                <td data-label="Turno"> Mañana</td>
+                <td data-label="Inicio"> 1/01/2018</td>
+                <td data-label="Fin"> 12/03/2019</td>
+                <td data-label="Pago Mensual"> 250</td>
+                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
+                <td data-label="Estado"> Disponible</td>
+              </tr>
+
+              <tr>
+                <td data-label="Ciclo"> Anual</td>
+                <td data-label="Turno"> Mañana</td>
+                <td data-label="Inicio"> 1/01/2018</td>
+                <td data-label="Fin"> 12/03/2019</td>
+                <td data-label="Pago Mensual"> 250</td>
+                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
+                <td data-label="Estado"> Disponible</td>
+              </tr>
+
+              <tr>
+                <td data-label="Ciclo"> Semestral</td>
+                <td data-label="Turno"> Mañana</td>
+                <td data-label="Inicio"> 1/01/2018</td>
+                <td data-label="Fin"> 12/03/2019</td>
+                <td data-label="Pago Mensual"> 250</td>
+                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
+                <td data-label="Estado"> Disponible</td>
+              </tr>
+
+              <tr>
+                <td data-label="Ciclo"> Anual</td>
+                <td data-label="Turno"> Mañana</td>
+                <td data-label="Inicio"> 1/01/2018</td>
+                <td data-label="Fin"> 12/03/2019</td>
+                <td data-label="Pago Mensual"> 250</td>
+                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
+                <td data-label="Estado"> Disponible</td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+
     </div><!--end list-data-->
 
   </div>

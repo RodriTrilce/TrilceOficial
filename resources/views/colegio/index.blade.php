@@ -6,10 +6,8 @@
 @section('content')
 
   <div class="index-banners">
-    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-quieromibeca.jpg')}}" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-index.jpg')}}" alt=""></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="{{ url('static/images/colegio/banners/banner-quieromibeca.jpg')}}" alt=""></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('colegio/banners/02071800.jpg')}}" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('colegio/banners/02071801.jpg')}}" alt="#"></a></div>
   </div>
 
   <div class="nuevos-i container-base">

@@ -35,14 +35,10 @@
     </div>
   @endif
 
-
   <div class="index-banners">
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/solucionario-uni-2018-fisica-y-quimica.png" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="http://www.trilce.edu.pe/assets/img/slider/felicitaciones-primer-puesto-pucp-2018-1.png" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('academia/banners/02071800.png')}}" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('academia/banners/02071801.png')}}" alt="#"></a></div>
+    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('academia/banners/02071802.png')}}" alt="#"></a></div>
   </div>
 
   <div class="nuevos-i">

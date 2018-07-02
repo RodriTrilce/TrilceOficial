@@ -90,7 +90,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12">
+            <div class="row col-xs-12 end-xs">
               <input type="text" name="contact_type" value="academia" hidden readonly> <br>
               <button type="submit" name="contact_validate" id="contact_validate" class="validate">Enviar <i class="fa fa-check"></i></button>
             </div>

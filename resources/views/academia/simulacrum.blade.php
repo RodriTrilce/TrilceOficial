@@ -84,14 +84,23 @@
       <div class="col-xs-12 col-sm simulacrum-form container-base">
         <div class="row start-xs step-1" id="step1">
           <h2>Regístrate para participar</h2>
-          <div class="col-xs-12 start-xs">
-            <ul>
-              <li>1. Ingresa tu DNI</li>
-              <li>2. Presiona "Validar Datos"</li>
-              <li>3. Al final del registro, no olvides anotar tu código de inscripción</li>
-            </ul>
+
+          <div class="row col-xs-12 start-xs simulacrum-step1-steps">
+            <div class="col-xs-4">
+              <div class="number">1</div>
+              <div class="text">Ingresa tu DNI</div>
+            </div>
+            <div class="col-xs-4">
+              <div class="number">2</div>
+              <div class="text">Presiona "Vallidar datos"</div>
+            </div>
+            <div class="col-xs-4">
+              <div class="number">3</div>
+              <div class="text">Anota tu código de Inscripción</div>
+            </div>
           </div>
-          <div class="col-xs-6 start-xs">
+
+          <div class="col-xs-12 col-sm-6 start-xs">
             <input type="text" name="f1_dni" id="s1_dni" placeholder="DNI">
             <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
           </div>
@@ -182,7 +191,7 @@
   <div class="row center-xs center-sm text-init simulacrum container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs simulacrum-results">
       @foreach ($data as $key => $v)
-        <div class="col-xs-12 col-sm-2">
+        <div class="col-xs-12 col-sm-3 col-md-2">
           <a href="{{ $v->url }}" target="_blank">
             <div class="simulacrum-results-pdf">
               <i class="fa fa-file-pdf-o"></i>

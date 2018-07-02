@@ -13,6 +13,8 @@
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .nuevos-i-title{
@@ -35,7 +37,6 @@
   }// end class:nuevos-i-title
 
   .nuevos-i-box{
-    margin-top: 15px;
 
     >div {
       border: 1px solid $gray;
@@ -64,7 +65,6 @@
         }
 
         h4{
-          letter-spacing: 0.25rem;
           font-size: 1.3rem;
           color: transparentize($gray, 0.4);
         }
@@ -72,8 +72,8 @@
         >img{
           opacity: 0.4;
           filter: alpha(opacity=40);
-          max-width: 120px;
-          min-height: 120px;
+          width: 120px;
+          height: 120px;
           transition: opacity .2s ease-in-out;
         }
       }
@@ -152,9 +152,8 @@
         .nuevos-i-top{
 
           img{
-            max-width: 50%;
-            margin-bottom: 10%;
-            min-height: 100px;
+            width: 50px;
+            height: 50px;
           }
 
           h3{
@@ -255,7 +254,6 @@
           }
 
           h4{
-            letter-spacing: 3px;
             font-size: 1rem;
           }
         }

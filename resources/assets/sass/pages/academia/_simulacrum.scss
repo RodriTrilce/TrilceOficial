@@ -79,15 +79,9 @@ $simulacrum-form-background: #ededed;
 
 .simulacrum-form{
   background: $simulacrum-form-background;
-  padding: 35px;
-
-  @include breakpoint(mom){
-    padding: 15px;
-  }
 
   @include breakpoint(baby){
     background: white;
-    padding: 12px;
     margin-top: 20px;
 
     button{
@@ -156,6 +150,18 @@ $simulacrum-form-background: #ededed;
   }
 
 
+}
+
+.step-container{
+  padding: 35px;
+
+  @include breakpoint(mom){
+    padding: 15px;
+  }
+
+  @include breakpoint(baby){
+    padding: 12px;
+  }
 }
 
 .simulacrum-results{
@@ -233,7 +239,7 @@ $simulacrum-form-background: #ededed;
     content: "";
     width: 98%;
     height: 1px;
-    background: $disable_link;
+    background: transparentize($gray, 0.8);
     bottom: -8px;
     position: absolute;
   }
@@ -242,7 +248,7 @@ $simulacrum-form-background: #ededed;
     padding: 10px;
 
     &:not(:last-child){
-      border-right: 1px solid $disable_link;
+      border-right: 1px solid transparentize($gray, 0.8);
     }
   }
 

@@ -81,8 +81,8 @@
           </li>
         </ul>
       </div>
-      <div class="col-xs-12 col-sm simulacrum-form container-base">
-        <div class="row start-xs step-1" id="step1">
+      <div class="col-xs-12 col-sm simulacrum-form">
+        <div class="row start-xs step-1 container-base step-container" id="step1">
           <h2>Regístrate para participar</h2>
 
           <div class="row col-xs-12 start-xs simulacrum-step1-steps">
@@ -101,7 +101,7 @@
           </div>
 
           <div class="col-xs-12 col-sm-6 start-xs">
-            <input type="text" name="f1_dni" id="s1_dni" placeholder="DNI">
+            <input type="text" name="f1_dni container-base step-container" id="s1_dni" placeholder="DNI">
             <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
           </div>
         </div>

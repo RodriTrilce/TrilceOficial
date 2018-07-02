@@ -20,7 +20,7 @@
 
       <div class="row col-xs-12 about-history">
         <div class="row col-xs-12 xs-hide col-sm-3 about-history--left">
-          <img src="/static/images/colegio/about-image-01.jpg" alt="Sobre nosotros">
+          <img src="{{ url('/static/images/academia/img-nosotros-academia.jpg') }}" alt="Sobre nosotros">
         </div>
         <div class="col-xs-12 col-sm about-history--right">
           <h1 class="about-history--title">Nuestra historia</h1>

@@ -243,27 +243,27 @@ class EnrollmentController extends Controller
 
      // Apoderado: Apellidos y nombres
      $pdf->SetXY(16, 149);
-     $pdf->Write(0, ucwords(utf8_decode($enrollment->attorney_names)));
+     $pdf->Write(0, (empty($enrollment->attorney_names) ? '-' : ucwords(utf8_decode($enrollment->attorney_names)) ));
 
      // Apoderado: Ocupacion
      $pdf->SetXY(47, 160);
-     $pdf->Write(0, ucwords(utf8_decode($enrollment->attorney_occupation)));
+     $pdf->Write(0, (empty($enrollment->attorney_occupation) ? '-' : ucwords(utf8_decode($enrollment->attorney_occupation))) );
 
      // Apoderado: DNI
      $pdf->SetXY(16, 160);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_dni));
+     $pdf->Write(0, (empty($enrollment->attorney_dni) ? '-' : $enrollment->attorney_dni) );
 
      // Apoderado: Centro de trabajo
      $pdf->SetXY(16, 170.5);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_work_location));
+     $pdf->Write(0, (empty($enrollment->attorney_work_location) ? '-' : utf8_decode($enrollment->attorney_work_location)) );
 
      // Apoderado: Telefono trabajo
      $pdf->SetXY(78, 171);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_work_phone));
+     $pdf->Write(0, (empty($enrollment->attorney_work_phone) ? '-' : $enrollment->attorney_work_phone ));
 
      // Apoderado: Telefono emergencia
      $pdf->SetXY(108, 171);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_phone_emergency));
+     $pdf->Write(0, (empty($enrollment->attorney_phone_emergency) ? '-' : utf8_decode($enrollment->attorney_phone_emergency)) );
 
      // Fecha: Día
      $pdf->SetXY(104.5, 180.5);
@@ -279,11 +279,11 @@ class EnrollmentController extends Controller
 
      // Apoderado Terms:
      $pdf->SetXY(200, 187.5);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_names));
+     $pdf->Write(0, (empty($enrollment->attorney_names) ? '-' : utf8_decode($enrollment->attorney_names)) );
 
      // Apoderado Terms:
      $pdf->SetXY(200, 193.5);
-     $pdf->Write(0, utf8_decode($enrollment->attorney_dni));
+     $pdf->Write(0, (empty($enrollment->attorney_dni) ? '-' : utf8_decode($enrollment->attorney_dni)) );
 
 
      // Terms 14:

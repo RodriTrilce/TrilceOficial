@@ -14,7 +14,7 @@
 // Nuevos inicios
 .nuevos-i{
   margin-top: 3%;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 
   @media screen and (max-width: 768px) {
     margin-top: 1%;
@@ -72,6 +72,7 @@
         font-size: 1.3rem;
         color: transparentize($gray, 0.4);
         transition: 0.2s ease-in;
+        margin-top: 10px;
 
         @media (max-width: 768px) {
           font-size: .9rem;
@@ -89,7 +90,7 @@
         opacity: 0.4;
         filter: alpha(opacity=40);
         transition: 0.1s ease-in;
-        max-width: 50px;
+        max-width: 40px;
 
         @media (max-width: 768px) {
           width: 60px;
@@ -99,7 +100,7 @@
 
       .modality{
         font-family: $font_cae_bold;
-        font-size: 2.4rem;
+        font-size: 2rem;
         display: inline-block;
 
         @media (max-width: 1400px) {
@@ -107,7 +108,7 @@
         }
 
         @media (max-width: 1200px) {
-          font-size: 1.8rem;
+          font-size: 1.7rem;
         }
 
         @media (max-width: 1100px) {
@@ -120,17 +121,6 @@
         }
       }
 
-      .modality-orange{
-        color: transparentize($gray, 0.7);
-      }
-
-      .modality-blue{
-        color: transparentize($gray, 0.7);
-      }
-
-      .modality-yellow{
-        color: transparentize($gray, 0.7);
-      }
 
     }
 
@@ -265,7 +255,7 @@
 
       .nuevos-i-top{
         img{
-          max-width: 50px;
+          max-width: 40px;
           margin-bottom: 15px;
           @media (max-width: 768px){
             width: 35px !important;
@@ -534,7 +524,7 @@
 
           h3,h4{
             color: transparentize($gray, 0.3) !important;
-            transition: opacity 0.4s ease-in-out !important;
+            transition: all 0.2s ease-in-out !important;
           }
 
           .nuevos-i-bottom span{
@@ -545,24 +535,26 @@
   }
 
   .block-effecthover-item{
+
+
     img{
-      transition: opacity 0.4s ease-in-out !important;
+      transition: all 0.2s ease-in-out !important;
       opacity: 1 !important;
     }
 
     .modality-blue{
       color: $gray !important;
-      transition: opacity 0.4s ease-in-out !important;
+      transition: all 0.2s ease-in-out !important;
     }
 
     .modality-yellow{
       color: $gray !important;
-      transition: opacity 0.4s ease-in-out !important;
+      transition: all 0.2s ease-in-out !important;
     }
 
     .modality-orange{
       color: $gray !important;
-      transition: opacity 0.4s ease-in-out !important;
+      transition: all 0.2s ease-in-out !important;
     }
 
 
@@ -571,7 +563,7 @@
 
     h3,h4{
       color: $gray !important;
-      transition: opacity 0.4s ease-in-out !important;
+      transition: all 0.2s ease-in-out !important;
     }
 
 
@@ -581,6 +573,16 @@
 
     .nuevos-i-top{
       color: $gray !important;
+    }
+
+    &:hover::after{
+      content: "";
+      font-size: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 20px;
+      height: 8px;
+      background: $orange;
     }
 
   }

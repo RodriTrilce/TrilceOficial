@@ -22,9 +22,17 @@
 }
 
 .about-history--right{
-  margin-left: 70px;
+  margin-left: 50px;
 
-  @media (max-width: 767px) {
+  @include breakpoint(dad){
+    margin-left: 70px;
+  }
+
+  @include breakpoint(mom){
+    margin-left: 40px;
+  }
+
+  @include breakpoint(baby){
     margin-left: 0;
   }
 }
@@ -174,8 +182,8 @@
     height: 50px;
 
     img{
-      width: 50px;
-      height: 50px
+      width: 40px;
+      height: 40px
     }
 
     @media (max-width: 767px){
@@ -184,8 +192,8 @@
       height: 100%;
 
       img{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
       }
     }
   }

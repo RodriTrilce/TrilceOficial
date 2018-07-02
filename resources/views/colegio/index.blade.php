@@ -26,9 +26,6 @@
               <img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="UNI">
               <h3>Alumno <div class="modality modality-blue">Nuevo</div></h3>
             </div>
-            <div class="nuevos-i-bottom">
-              <div class="nuevos-hr nuevos-hr-blue"></div>
-            </div>
           </a>
         </div>
         <div class="col-xs block-effecthover-item">
@@ -36,9 +33,6 @@
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="UNMSM">
               <h3>Alumno <div class="modality modality-yellow">Traslado</div></h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <div class="nuevos-hr nuevos-hr-yellow"></div>
             </div>
           </a>
         </div>
@@ -48,17 +42,12 @@
               <img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="PUCP">
               <h3>Alumno <div class="modality modality-orange">Regular</div></h3>
             </div>
-            <div class="nuevos-i-bottom">
-              <div class="nuevos-hr nuevos-hr-orange"></div>
-            </div>
           </a>
         </div>
       </div>
 
     </div>
   </div>
-
-  <hr class="grayhr xs-hide" />
 
   @include('colegio.partials.card_bottom')
 @endsection

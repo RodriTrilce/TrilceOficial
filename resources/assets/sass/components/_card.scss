@@ -97,6 +97,8 @@
 // Card 2
 
 .card2{
+  background: $background-form;
+
   @media screen and (max-width: 768px) {
     margin-bottom: 2rem;
     margin-top: 2rem;

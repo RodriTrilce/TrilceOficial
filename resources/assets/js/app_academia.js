@@ -461,6 +461,8 @@ function enrollment(nextBtn,prevBtn,form, type){
      }, 1000)
    }
 
+
+
   // Slider
   var slider = tns({
    container: '.index-banners',
@@ -576,3 +578,16 @@ function enrollment(nextBtn,prevBtn,form, type){
  if(page !== 'contact'){ return false;}
  Validation.init(document.forms[0], true);
 })();
+
+
+
+/*
+// Banner double ; center title
+var doubleHeader = document.querySelector('.header-double-top');
+var doubleHeaderComputed = window.getComputedStyle(doubleHeader);
+var doubleHeaderComputedWindow = doubleHeaderComputed.width;
+console.log(doubleHeaderComputedWindow)
+
+left: 0
+trasnform: translate(x{h1.width-(parent/2)}, y{50%})
+*/

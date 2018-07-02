@@ -12,7 +12,7 @@ table.table-responsive {
   }
 
   th, td {
-    padding: 10px;
+    padding: 8px;
     text-align: center;
   }
 
@@ -24,6 +24,7 @@ table.table-responsive {
 //    text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
+    vertical-align: top;
   }
 
 }
@@ -34,7 +35,7 @@ table.table-responsive {
     border: 0;
 
     tr {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       display: block;
       border-bottom: 2px solid #ddd;
     }

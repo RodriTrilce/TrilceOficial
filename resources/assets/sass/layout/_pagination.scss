@@ -36,8 +36,9 @@
 
   .active{
     background: $orange;
-    color: white;
-
+    a, a:link, a:visited{
+      color: white !important;
+    }
   }
 
   .disabled{

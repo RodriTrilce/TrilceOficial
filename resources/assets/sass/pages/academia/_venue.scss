@@ -16,7 +16,7 @@
   }
 
   h2{
-    color: $orange;
+    color: $gray;
     margin-bottom: 1rem;
     font-family: $font_cae_bold;
   }
@@ -25,10 +25,7 @@
     border: 0.5px solid transparentize($gray, 0.85);
     margin: 1.5rem 0;
     position: relative;
-    width: 90%;
-    @media (max-width: 767px) {
-      width: 100%;
-    }
+    width: 100%;
     &::after{
       content: "";
       position: absolute;
@@ -268,7 +265,7 @@
 */
 
 .venue-table{
-  width: 90% !important;
+  width: 100% !important;
   border:0 !important;
 
   thead{
@@ -302,7 +299,7 @@
   }
 
   th{
-    color: $orange;
+    color: $gray;
     position: relative;
     text-align: left !important;
 
@@ -363,8 +360,8 @@
         color: $orange;
         font-family: $font_icon;
         font-size: 15px;
-        left: 0;
-        top: 9px;
+        left: -1%;
+        top: 20%;
         padding-left: 10px;
         position: absolute;
       }

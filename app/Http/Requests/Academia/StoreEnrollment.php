@@ -35,6 +35,7 @@ class StoreEnrollment extends FormRequest
           'step2_lastname' => 'required',
           'step2_lastname_mother' => 'required',
           'step2_birth' => 'required',
+          'step2_birth' => 'required',
           'step2_district' => 'required',
           'step2_address' => 'required',
           'step2_phonehome' => 'required',

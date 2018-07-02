@@ -42,7 +42,7 @@
 
       <div class="tab tab1 row">
           <div class="col-xs center-xs xs-hide enrollment-img">
-            <img src="{{ url('static/images/academia/img-enrollment-01.jpg') }}" alt="Matrícula en linea">
+            <img src="{{ url('static/images/academia/img-enrollment-01.png') }}" alt="Matrícula en linea">
           </div>
 
           <div class="col-xs start-xs blockb">
@@ -141,7 +141,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="date" class="inputfull" name="step2_birth" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento" required>
+                      <input type="date" min="1918-01-01" max="<?php echo date('Y-m-d'); ?>" class="inputfull" name="step2_birth" id="step2_birth" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">
@@ -690,10 +690,10 @@
                   <div class="col-xs start-xs">
                     <fieldset class="form-group">
                       <label class="radio-inline">
-                        <span>Apoderado</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="attorney" aria-label="Apoderado" required>
+                        <span>Apoderado</span> <input type="radio" name="step3_apoderate" id="step3_apoderate_attorney" value="attorney" aria-label="Apoderado" required>
                       </label>
-                      <label class="radio-inline">
-                        <span>Ninguno</span> <input type="radio" name="step3_apoderate" id="step3_apoderate" value="none" aria-label="Niguno" required>
+                      <label class="radio-inline" id="step3_apoderate_label_none">
+                        <span>Ninguno</span> <input type="radio" name="step3_apoderate" value="none" aria-label="Ninguno" required>
                       </label>
                     </fieldset>
                   </div>
@@ -702,12 +702,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-9">
                     <fieldset class="form-group">
-                      <input type="onlytext" minlength="2" name="step3_names" placeholder="Nombres y apellidos" required>
+                      <input type="onlytext" name="step3_names" id="step3_names" placeholder="Nombres y apellidos" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="number" min="0" minlength="8" maxLength="8" name="step3_dni" placeholder="DNI" required>
+                      <input type="number" min="0" maxLength="8" name="step3_dni" id="step3_dni" placeholder="DNI" required>
                     </fieldset>
                   </div>
                 </div>
@@ -715,30 +715,17 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="tel" minlength="6" name="step3_phonehome" placeholder="Telf. Casa" required>
+                      <input type="tel" name="step3_phonehome" id="step3_phonehome" placeholder="Telf. Casa" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="tel" minlength="6" name="step3_mobile" placeholder="Celular" required>
+                      <input type="tel" name="step3_mobile" id="step3_mobile" placeholder="Celular" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="email" name="step3_email" placeholder="Correo electrónico" required>
-                    </fieldset>
-                  </div>
-                </div>
-
-                <div class="row col-xs-12">
-                  <div class="col-xs-12 col-sm-6">
-                    <fieldset class="form-group">
-                      <input type="text" name="step3_work_location" placeholder="Centro de trabajo" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <fieldset class="form-group">
-                      <input type="tel" minlength="5" name="step3_work_phone" placeholder="Télefono centro de trabajo" required>
+                      <input type="email" name="step3_email" id="step3_email" placeholder="Correo electrónico" required>
                     </fieldset>
                   </div>
                 </div>
@@ -746,12 +733,25 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="onlytext" name="step3_profession" placeholder="Ocupación" required>
+                      <input type="text" name="step3_work_location" id="step3_work_location" placeholder="Centro de trabajo" required>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="tel" minlength="6" name="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
+                      <input type="tel" name="step3_work_phone" id="step3_work_phone" placeholder="Télefono centro de trabajo" required>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset class="form-group">
+                      <input type="onlytext" name="step3_profession" id="step3_profession" placeholder="Ocupación" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <fieldset class="form-group">
+                      <input type="tel" name="step3_emergencyphone" id="step3_emergencyphone" placeholder="En caso de emergencias llamar a:" required>
                     </fieldset>
                   </div>
                 </div>

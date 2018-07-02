@@ -212,6 +212,60 @@ function enrollment(nextBtn,prevBtn,form, type){
     this.hearUniversity();
     this.hearVenue();
     this.hearDNI();
+    this.hearAttorneyIf();
+  }
+
+  this.hearAttorneyIf = function(){
+
+    var birth = document.getElementById('step2_birth');
+
+    birth.addEventListener('change', function(){
+      var date = document.getElementById('step2_birth').valueAsDate;
+      var label = document.getElementById('step3_apoderate_label_none');
+      var age = parseInt(date.getFullYear());
+      var year = (new Date()).getFullYear();
+
+      console.log(age + "  --  " + year );
+
+      if( (year-age) < 18 ){
+        label.style.display = 'none';
+        document.getElementById('step3_apoderate_attorney').checked = true;
+      }else{
+        console.log('tagggg >> ' + label.style.display )
+        label.style.display = 'inline-flex';
+      }
+
+    });
+
+    var radios = document.querySelectorAll('input[name=step3_apoderate]');
+
+    [].forEach.call(radios, function(radio) {
+      radio.addEventListener('change', function(){
+        var checked = document.querySelector('input[name=step3_apoderate]:checked').value;
+
+        var inputs = ['step3_names',
+                      'step3_dni',
+                      'step3_phonehome',
+                      'step3_mobile',
+                      'step3_email',
+                      'step3_work_location',
+                      'step3_work_phone',
+                      'step3_profession',
+                      'step3_emergencyphone'];
+
+        inputs.forEach(input => {
+          if(checked){
+            console.log(checked);
+
+            let im = document.getElementById(input);
+            im.required = (checked == 'attorney' ? true : false);
+            im.disabled = (checked == 'none' ? true : false);
+          }
+        });
+
+      });
+
+    });
   }
 
   this.hearDNI = function(){

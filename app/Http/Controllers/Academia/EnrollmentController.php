@@ -12,6 +12,7 @@ use App\Models\Academia\EnrollmentModel as Enrollment;
 use App\Http\Requests\Academia\StoreEnrollment;
 use App\Mail\Academia\EnrollmentMail;
 use \setasign\Fpdi\Fpdi;
+use \Carbon\Carbon;
 
 class EnrollmentController extends Controller
 {
@@ -49,7 +50,7 @@ class EnrollmentController extends Controller
       $enrollment->student_lastname = $request->step2_lastname;
       $enrollment->student_lastname_mother = $request->step2_lastname_mother;
       $enrollment->student_district = $request->step2_district;
-      $enrollment->student_birth = $request->student_birth;
+      $enrollment->student_birth = Carbon::parse($request->step2_birth);
 
       $enrollment->student_address = $request->step2_address;
       $enrollment->student_phone_home = $request->step2_phonehome;

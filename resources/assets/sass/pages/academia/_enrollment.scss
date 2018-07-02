@@ -163,12 +163,10 @@
       border: 1px solid transparentize($gray, .7);
       display: inline-flex;
       justify-content: space-around;
+      align-items: center;
       width: 15%;
-
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      padding-right: 0.3rem;
-      padding-left: 0.3rem;
+      padding: 8px 5px;
+      user-select: none;
 
       @media screen and (max-width: 768px) {
         width: 30%;

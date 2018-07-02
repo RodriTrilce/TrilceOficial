@@ -201,10 +201,8 @@
 
     tr{
       &:nth-child(odd){
-        background: $background-form;
         @include breakpoint(baby){
           font-weight: bold;
-          background: none;
         }
       }
 

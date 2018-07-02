@@ -21,14 +21,12 @@
           font-weight: bold;
         }
         @include breakpoint(baby){
-          font-weight: bold;
         }
       }
 
       @include breakpoint(baby){
         td:first-child{
           color: $orange;
-          font-weight: bold;
         }
       }
 

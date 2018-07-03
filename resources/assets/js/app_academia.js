@@ -292,7 +292,7 @@ function enrollment(nextBtn,prevBtn,form, type){
 
     if(hide){
       containerDownload.style.display   = 'none';
-      next.style.display                = 'unset';
+      next.style.display                = 'flex';
 
     }else{
       response = JSON.parse(response).data;

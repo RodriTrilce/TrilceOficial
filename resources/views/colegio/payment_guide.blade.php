@@ -29,9 +29,6 @@
     </div>
   </div>
 
-
-  <hr class="grayhr2 xs-hide" />
-
   @include('colegio.partials.card_bottom')
 @endsection
 

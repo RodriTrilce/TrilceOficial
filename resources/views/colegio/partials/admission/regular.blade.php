@@ -1,4 +1,4 @@
-<div class="row col-xs-12 center-xs admission-new-title xs-hide">
+<div class="row col-xs-12 center-xs container-base admission-new-title xs-hide">
   <div class="col-xs-12">
     <h2 class="new-t-title">Alumnos Regular</h2>
     <h3 class="new-t-subtitle">Periodo: Julio 2018 a Abril 2019</h3>

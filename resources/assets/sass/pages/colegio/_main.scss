@@ -1,16 +1,4 @@
 
-.indexblock1{
-  .title{
-    font-size: 3rem;
-    color: $gray;
-    font-weight: bold;
-  }
-
-  .subtitle{
-    color: $gray;
-  }
-}
-
 // Nuevos inicios
 .nuevos-i{
   margin-top: 3%;
@@ -575,14 +563,16 @@
       color: $gray !important;
     }
 
-    &:hover::after{
-      content: "";
-      font-size: 10px;
-      position: absolute;
-      bottom: 0;
-      width: 20px;
-      height: 8px;
-      background: $orange;
+    @media (min-width: 767px){
+      &:hover::after{
+        content: "";
+        font-size: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 20px;
+        height: 8px;
+        background: $orange;
+      }
     }
 
   }

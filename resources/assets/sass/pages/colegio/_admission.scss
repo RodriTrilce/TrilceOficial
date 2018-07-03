@@ -15,13 +15,13 @@
   }
 
   .new-t-p{
-    margin-top: 0.5rem;
+    margin-top: 7px;
     color: $gray;
   }
 }
 
 .admission-new-table{
-  margin-top: 3rem;
+  margin-top: 40px;
   font-family: $font_geo_reg;
 }
 
@@ -42,6 +42,7 @@
     font-weight: bold;
     font-size: 30px;
     padding-left: 5px;
+
     @media (max-width: 767px){
       padding-right: 5px;
     }
@@ -49,20 +50,20 @@
 }
 
 .admission-new-item{
-  padding-bottom: 2rem;
+  padding-bottom: 30px;
 
   @media (min-width: 700px){
-    padding-bottom: 5rem;
+    padding-bottom: 70px;
   }
 }
 
 .admission-new-item-content{
-  margin-left: 1rem;
+  margin-left: 15px;
 
   .item-content-title{
     font-family: $font_cae_bold;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 
     @media (max-width: 700px){
       font-size: 1.2rem;
@@ -72,14 +73,16 @@
 
 .admission-new-table{
   ul{
-    margin-left: 0.6rem;
+    margin-left: 8px;
 
     li{
       color: $gray;
       font-size: 1.1rem;
+
       @media (max-width: 700px){
         font-size: 0.8rem;
       }
+
     }
 
     li::before{
@@ -108,6 +111,11 @@
 .admission-new-superindex{
   margin: 30px auto;
 }
+
+.admission-transfer-table{
+  margin-bottom: 40px;
+}
+
 //
 // .admission-transfer-table{
 //   ul{

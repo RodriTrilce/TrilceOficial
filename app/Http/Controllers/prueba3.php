@@ -31,8 +31,8 @@ class prueba3 extends Controller
   public function index()
   {
 
-    $data = $this->makeResponse('pucp', 'venue', 0, 0, 0);
-    dd($data);
+    $data = $this->makeResponse('pucp', 'turn', 0, 0, 0);
+    dd(collect($data));
 
   }
 
@@ -104,11 +104,11 @@ class prueba3 extends Controller
 
       $_head = $node->filter('thead th')->each(function($v){
         return $v->getNode(0)->textContent;
-                
+
       });
 
       $_body[$_type[0]] = $node->filter('tbody tr')->each(function($b){
-        return $b->filter('td')->each(function($c){
+        return $b->children()->each(function($c){
           return $c->getNode(0)->textContent;
         });
       });

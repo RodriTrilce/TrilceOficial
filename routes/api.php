@@ -25,3 +25,5 @@ Route::post('/academia/enrollment/check', 'Academia\EnrollmentApiResourceControl
 Route::get('/academia/enrollment/{university}', 'Academia\EnrollmentResourceController@university');
 Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentResourceController@venue');
 //Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');
+
+Route::post('/academia/beginnings', 'Academia\BeginningsApiResourceController@index');

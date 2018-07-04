@@ -61,7 +61,7 @@
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
       <div class="col-xs-12 col-sm simulacrum-info">
-        <h2 class="simulacrum-info-title">Simulacro {{ strtoupper($university->short_name)}}</h2>
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Inscripciones:</span>
@@ -81,114 +81,125 @@
           </li>
         </ul>
       </div>
+
       <div class="col-xs-12 col-sm simulacrum-form">
-        <div class="row start-xs step-1 container-base step-container" id="step1">
-          <h2>Regístrate para participar</h2>
+      <div class="row start-xs step-1 container-base step-container" id="step1">
+        <h2>Regístrate para participar</h2>
 
-          <div class="row col-xs-12 start-xs simulacrum-step1-steps">
-            <div class="col-xs-4">
-              <div class="number">1</div>
-              <div class="text">Ingresa tu DNI</div>
-            </div>
-            <div class="col-xs-4">
-              <div class="number">2</div>
-              <div class="text">Presiona "Vallidar datos"</div>
-            </div>
-            <div class="col-xs-4">
-              <div class="number">3</div>
-              <div class="text">Anota tu código de Inscripción</div>
-            </div>
+        <div class="row col-xs-12 start-xs simulacrum-step1-steps">
+          <div class="col-xs-4">
+            <div class="number">1</div>
+            <div class="text">Ingresa tu DNI</div>
           </div>
+          <div class="col-xs-4">
+            <div class="number">2</div>
+            <div class="text">Presiona "Vallidar datos"</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="number">3</div>
+            <div class="text">Anota tu código de Inscripción</div>
+          </div>
+        </div>
 
-          <div class="col-xs-12 col-sm-6 start-xs">
-            <input type="text" name="f1_dni container-base step-container" id="s1_dni" placeholder="DNI">
+        <div class="col-xs-12 col-sm-6 start-xs">
+          <input type="text" name="f1_dni container-base step-container" id="s1_dni" placeholder="DNI">
+        </div>
+
+        <div class="row col-xs-12">
+          <div class="row col-xs-12 col-sm-6 end-xs start-sm">
             <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
           </div>
         </div>
+      </div>
 
-        <div class="row start-x step-2" id="step2">
-          <h2>Déjanos tus datos</h2>
-          <div class="col-xs-12 col-sm-11 start-xs">
-            <fieldset>
-              <input type="text" name="s2_dni" id="s2_dni" readonly>
-            </fieldset>
+      <div class="row start-x step-2 container-base step-container" id="step2">
+        <h2>Déjanos tus datos</h2>
+        <div class="col-xs-12 start-xs">
+          <fieldset>
+            <input type="text" name="s2_dni" id="s2_dni" readonly>
+          </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Apellido paterno">
-            </fieldset>
+          <fieldset>
+            <input type="text" name="" id="" placeholder="Apellido paterno">
+          </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Apellido materno">
-            </fieldset>
+          <fieldset>
+            <input type="text" name="" id="" placeholder="Apellido materno">
+          </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Nombres">
-            </fieldset>
+          <fieldset>
+            <input type="text" name="" id="" placeholder="Nombres">
+          </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Email">
-            </fieldset>
+          <fieldset>
+            <input type="text" name="" id="" placeholder="Email">
+          </fieldset>
 
 
-            <fieldset>
-              <label for="s2_venue">Local Inscripción</label>
-              <div>
-                <select id="s2_venue" name="s2_venue">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
+          <fieldset>
+            <label for="s2_venue">Local Inscripción</label>
+            <div>
+              <select id="s2_venue" name="s2_venue">
+                <option value="volvo">Ciclos...</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </fieldset>
 
-            <fieldset>
-              <label for="s2_type_exam">Tipo de examen</label>
-              <div>
-                <select id="s2_type_exam" name="s2_type_exam">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
+          <fieldset>
+            <label for="s2_type_exam">Tipo de examen</label>
+            <div>
+              <select id="s2_type_exam" name="s2_type_exam">
+                <option value="volvo">Ciclos...</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </fieldset>
 
-            <fieldset>
-              <label for="s2_area">Área</label>
-              <div>
-                <select id="s2_area" name="s2_area">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
+          <fieldset>
+            <label for="s2_area">Área</label>
+            <div>
+              <select id="s2_area" name="s2_area">
+                <option value="volvo">Ciclos...</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </fieldset>
 
-            <fieldset>
-            <label for="s2_career">Carrera</label>
-              <div>
-                <select id="s2_career" name="s2_career">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
+          <fieldset>
+          <label for="s2_career">Carrera</label>
+            <div>
+              <select id="s2_career" name="s2_career">
+                <option value="volvo">Ciclos...</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </fieldset>
 
-            <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
+          <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
 
-            <button type="button" name="s2_validate" id="s2_validate" class="validate">Registrar <i class="fa fa-check"></i></button>
-          </div>
+          <button type="button" name="s2_validate" id="s2_validate" class="validate">Registrar <i class="fa fa-check"></i></button>
         </div>
       </div>
+    </div>
 
     </div>
   </div>
 
   <div class="row center-xs center-sm text-init simulacrum container-base">
+
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs">
+      <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Resultados del proceso</h2>
+    </div>
+
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs simulacrum-results">
       @foreach ($data as $key => $v)
         <div class="col-xs-12 col-sm-3 col-md-2">

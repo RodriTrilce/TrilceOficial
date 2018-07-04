@@ -19,7 +19,6 @@ $simulacrum-form-background: #ededed;
 }
 
 .simulacrum-info-ul{
-  margin-top: 40px;
 
   li{
     margin-bottom: 15px;
@@ -32,6 +31,7 @@ $simulacrum-form-background: #ededed;
     &::before{
       color: $orange;
       font-family: $font_icon;
+      font-size: 15px;
     }
 
     &:nth-child(1)::before {
@@ -47,7 +47,7 @@ $simulacrum-form-background: #ededed;
     }
 
     &:nth-child(4)::before {
-      content: "\f155";
+      content: "\f27d";
     }
 
   }
@@ -65,16 +65,21 @@ $simulacrum-form-background: #ededed;
   position: relative;
   color: $orange;
   font-family: $font_cae_bold;
+  //
+  // &::before{
+  //   content: "";
+  //   background: $orange;
+  //   position: absolute;
+  //   width: 22px;
+  //   height: 8px;
+  //   bottom: -10px;
+  //   left: 0;
+  // }
 
-  &::before{
-    content: "";
-    background: $orange;
-    position: absolute;
-    width: 22px;
-    height: 8px;
-    bottom: -10px;
-    left: 0;
-  }
+}
+
+.simulacrum-info-title-bottom{
+  margin-bottom: 20px;
 }
 
 .simulacrum-form{
@@ -107,8 +112,8 @@ $simulacrum-form-background: #ededed;
 
   button{
     margin-top: 20px;
+    padding: 0;
   }
-
 
   div.step-2{
     display: none;
@@ -224,7 +229,7 @@ $simulacrum-form-background: #ededed;
     }
 
     @media screen and (max-width: 768px) {
-      margin-left: 1.5rem;
+      margin-left: 15px;
     }
   }
 }// End simulacrum-results

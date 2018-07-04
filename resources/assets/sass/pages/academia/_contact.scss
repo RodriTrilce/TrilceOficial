@@ -35,7 +35,7 @@
 
     &::before{
       font-family: $font_icon;
-      font-family: 0.7rem;
+      font-size: 15px;
       color: $orange;
       padding-right: 0.2rem;
     }
@@ -166,4 +166,13 @@
     font-size: 1.5rem;
     color: $gray;
   }
+}
+
+.contact-subtitle{
+  font-family: $font_cae_bold;
+  margin-bottom: 20px;
+}
+
+.g-recaptcha{
+  margin-bottom: 20px;
 }

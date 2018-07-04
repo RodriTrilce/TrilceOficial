@@ -27,3 +27,6 @@ Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentReso
 //Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');
 
 Route::post('/academia/beginnings', 'Academia\BeginningsApiResourceController@index');
+
+
+Route::post('/out/inscription', 'Out\InscriptionController@store');

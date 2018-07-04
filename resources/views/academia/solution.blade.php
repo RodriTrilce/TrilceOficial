@@ -10,7 +10,6 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Solucionarios</h1>
-        <p class="header-double-p-up soluion-header-p">Los exámenes de admisión resueltos de UNI, UNMSM y PUCP.</p>
       </div>
     </div>
   </div>

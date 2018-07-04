@@ -225,13 +225,10 @@ function enrollment(nextBtn,prevBtn,form, type){
       var age = parseInt(date.getFullYear());
       var year = (new Date()).getFullYear();
 
-      console.log(age + "  --  " + year );
-
       if( (year-age) < 18 ){
         label.style.display = 'none';
         document.getElementById('step3_apoderate_attorney').checked = true;
       }else{
-        console.log('tagggg >> ' + label.style.display )
         label.style.display = 'inline-flex';
       }
 
@@ -255,8 +252,6 @@ function enrollment(nextBtn,prevBtn,form, type){
 
         inputs.forEach(input => {
           if(checked){
-            console.log(checked);
-
             let im = document.getElementById(input);
             im.required = (checked == 'attorney' ? true : false);
             im.disabled = (checked == 'none' ? true : false);
@@ -502,6 +497,113 @@ function enrollment(nextBtn,prevBtn,form, type){
 
 }
 
+
+function preparation()
+{
+
+  this.init = function()
+  {
+    this.university   = document.getElementById('_university').value;
+    this.selectCycle  = document.getElementById('beginning-cyle');
+    this.selectVenue  = document.getElementById('beginning-venue');
+    this.selectTurn   = document.getElementById('beginning-turn');
+    this.paintable    = document.getElementById('drawTables');
+
+    this.hear();
+  }
+
+  this.hear = function()
+  {
+    this.hearSelectCycle();
+    this.hearSelectVenue();
+    this.hearSelectTurn();
+  }
+
+  this.hearSelectCycle = function()
+  {
+    this.selectCycle.addEventListener('change', function(){
+      this.response('cycle');
+    }.bind(this));
+  }
+
+  this.hearSelectVenue = function()
+  {
+    this.selectVenue.addEventListener('change', function(){
+      this.response('venue');
+    }.bind(this));
+  }
+
+  this.hearSelectTurn = function()
+  {
+    this.selectTurn.addEventListener('change', function(){
+      this.response('turn');
+    }.bind(this));
+  }
+
+  this.response = function(type)
+  {
+    var valueCycle  = this.selectCycle.options[this.selectCycle.selectedIndex].value;
+    var valueVenue  = this.selectVenue.options[this.selectVenue.selectedIndex].value;
+    var valueTurn   = this.selectTurn.options[this.selectTurn.selectedIndex].value;
+
+    post('/api/academia/beginnings', `university=${this.university}&combo=${type}&venue=${valueVenue}&cycle=${valueCycle}&turn=${valueTurn}`).then(
+        response  => this.responseAction(response),
+        error     => console.log('error')
+      );
+  }
+
+  this.responseAction = function(data)
+  {
+    data = JSON.parse(data);
+
+    if(Object.keys(data).length){
+      this.draw(data);
+    }else{
+        this.paintable.innerHTML = `<p style='text-align:center;width:100%;'>No se encontraron resultados<p>`;
+    }
+  }
+
+  this.draw = function(data)
+  {
+    var tables='', thead='', tbody='';
+
+    data.forEach((tableData, i) => {
+
+      tableData.head.forEach(value => {
+        thead += `<th>${value}</th>`;
+      });
+
+
+      let tableName = Object.keys(tableData);
+
+      tableData[tableName[0]].forEach(td => {
+        tbody += `<tr>`;
+
+        td.forEach( (value,i) => {
+          tbody += `<td data-label="${tableData.head[i]}"> ${value}</td>`;
+        });
+
+        tbody += `</tr>`;
+      });
+
+      tables += `<table class="table-responsive preparation-table">
+                  <thead>
+                    <tr>
+                      ${thead}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${tbody}
+                  </tbody>
+                </table>`;
+      thead = '', tbody='';
+    });
+
+    this.paintable.innerHTML = tables;
+  }
+}
+
+
 /**!
  *  Index
  */
@@ -514,8 +616,6 @@ function enrollment(nextBtn,prevBtn,form, type){
        document.body.className += ' loaded'
      }, 1000)
    }
-
-
 
   // Slider
   var slider = tns({
@@ -541,6 +641,14 @@ function enrollment(nextBtn,prevBtn,form, type){
   }
  }
 
+/**!
+  *
+  *
+  */
+  if(page == 'preparation'){
+    var init_preparation = new preparation();
+    init_preparation.init();
+  }
 
 /**!
  *  Simulacrum: Formulario de registro

@@ -58,114 +58,27 @@
     </div>
   </div>
 
+  <input type="text" id="_university" value="{{ ($type=='san-marcos'?'sm':$type) }}" hidden>
 
   <div class="row col-xs-12 center-xs nuevos-i-list container-base">
-
     <div class="row col-xs-12 col-sm-9 col-md-8 start-md start-xs start-sm nuevos-i-list-selects">
-      <div class="col-xs-12 col-sm">
-        <select>
-          <option value="">Ciclos</option>
-          <option value="">Todos</option>
-        </select>
-      </div>
+      @switch($type)
+        @case('san-marcos')
+          @include('academia.partials.preparation.san-marcos')
+          @break
 
-      <div class="col-xs-12 col-sm">
-        <select>
-          <option value="">Sedes</option>
-          <option value="">Todos</option>
-        </select>
-      </div>
-      <div class="col-xs-12 col-sm">
-        <select>
-          <option value="">Turnos</option>
-          <option value="">Todos</option>
-        </select>
-      </div>
+        @case('uni')
+          @include('academia.partials.preparation.uni')
+          @break
+
+        @case('pucp')
+          @include('academia.partials.preparation.pucp')
+          @break
+      @endswitch
     </div>
 
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs ">
-
-
-          <table class="table-responsive preparation-table">
-            <thead>
-              <tr>
-                <th>Ciclo</th>
-                <th>Turno</th>
-                <th>Inicio</th>
-                <th>Fin</th>
-                <th>Pago Mensual</th>
-                <th>Horario</th>
-                <th>Estado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Ciclo"> Semestral</td>
-                <td data-label="Turno"> Mañana</td>
-                <td data-label="Inicio"> 1/01/2018</td>
-                <td data-label="Fin"> 12/03/2019</td>
-                <td data-label="Pago Mensual"> 250</td>
-                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
-                <td data-label="Estado"> Disponible</td>
-              </tr>
-
-              <tr>
-                <td data-label="Ciclo"> Anual</td>
-                <td data-label="Turno"> Mañana</td>
-                <td data-label="Inicio"> 1/01/2018</td>
-                <td data-label="Fin"> 12/03/2019</td>
-                <td data-label="Pago Mensual"> 250</td>
-                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
-                <td data-label="Estado"> Disponible</td>
-              </tr>
-
-              <tr>
-                <td data-label="Ciclo"> Semestral</td>
-                <td data-label="Turno"> Mañana</td>
-                <td data-label="Inicio"> 1/01/2018</td>
-                <td data-label="Fin"> 12/03/2019</td>
-                <td data-label="Pago Mensual"> 250</td>
-                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
-                <td data-label="Estado"> Disponible</td>
-              </tr>
-
-              <tr>
-                <td data-label="Ciclo"> Anual</td>
-                <td data-label="Turno"> Mañana</td>
-                <td data-label="Inicio"> 1/01/2018</td>
-                <td data-label="Fin"> 12/03/2019</td>
-                <td data-label="Pago Mensual"> 250</td>
-                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
-                <td data-label="Estado"> Disponible</td>
-              </tr>
-
-              <tr>
-                <td data-label="Ciclo"> Semestral</td>
-                <td data-label="Turno"> Mañana</td>
-                <td data-label="Inicio"> 1/01/2018</td>
-                <td data-label="Fin"> 12/03/2019</td>
-                <td data-label="Pago Mensual"> 250</td>
-                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
-                <td data-label="Estado"> Disponible</td>
-              </tr>
-
-              <tr>
-                <td data-label="Ciclo"> Anual</td>
-                <td data-label="Turno"> Mañana</td>
-                <td data-label="Inicio"> 1/01/2018</td>
-                <td data-label="Fin"> 12/03/2019</td>
-                <td data-label="Pago Mensual"> 250</td>
-                <td data-label="Horario"> Lunes a Sábado 08:00-15:00</td>
-                <td data-label="Estado"> Disponible</td>
-              </tr>
-
-
-
-            </tbody>
-          </table>
-
-
-    </div><!--end list-data-->
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs" id="drawTables">
+    </div>
 
   </div>
 

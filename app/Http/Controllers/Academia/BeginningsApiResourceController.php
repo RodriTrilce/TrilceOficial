@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use GuzzleHttp\Client as ClientGuzzle;
 use Symfony\Component\DomCrawler\Crawler;
+use Cache;
 
 class BeginningsApiResourceController extends Controller
 {
@@ -93,30 +94,34 @@ class BeginningsApiResourceController extends Controller
           break;
       }
 
-      $crawler = new Crawler($this->makeRequest($this->makeSource($university), $data));
+      if(Cache::has($data)){
+        $buffer = Cache::get($data);
+      }else{
+        $crawler = new Crawler($this->makeRequest($this->makeSource($university), $data));
+        $buffer = $crawler->filter('table')->each(function ($node){
 
-      $buffer = $crawler->filter('table')->each(function ($node){
-
-        $_type = $node->filter('thead')->each(function($n){
-          return $n->filter('tr div')->getNode(0)->textContent;
-        });
-
-        $_head = $node->filter('thead th')->each(function($v){
-          return $v->getNode(0)->textContent;
-
-        });
-
-        $_body[$_type[0]] = $node->filter('tbody tr')->each(function($b){
-          return $b->children()->each(function($c){
-            return $c->getNode(0)->textContent;
+          $_type = $node->filter('thead')->each(function($n){
+            return $n->filter('tr div')->getNode(0)->textContent;
           });
+
+          $_head = $node->filter('thead th')->each(function($v){
+            return $v->getNode(0)->textContent;
+
+          });
+
+          $_body[$_type[0]] = $node->filter('tbody tr')->each(function($b){
+            return $b->children()->each(function($c){
+              return $c->getNode(0)->textContent;
+            });
+          });
+
+          $_body['head'] = $_head;
+
+          return $_body;
         });
 
-        $_body['head'] = $_head;
-
-        return $_body;
-
-      });
+        Cache::put($data, $buffer, 1440);
+      }
 
       return $buffer;
     }

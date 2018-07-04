@@ -31,7 +31,7 @@ class prueba3 extends Controller
   public function index()
   {
 
-    $data = $this->makeResponse('pucp', 'turn', 0, 0, 0);
+    $data = $this->makeResponse('sm', 'cycle', 15, 35, 1);
     dd(collect($data));
 
   }

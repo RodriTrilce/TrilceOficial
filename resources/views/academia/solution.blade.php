@@ -56,14 +56,7 @@
     </div>
   </div>
 
-
-<!--  <div class="row start-xs center-sm solution-h1-title container-base">
-    <div class="col-xs-12 col-sm-9 col-md-8 start-xs start-sm">
-      <h2 class="solution-h1">
-        Descarga los exámenes de admisión resueltos
-      </h2>
-    </div>
-  </div>-->
+  <div class="clearfix"></div>
 
   @switch($university->short_name)
     @case('San Marcos')
@@ -79,7 +72,7 @@
       @break
   @endswitch
 
-  <div class="row col-xs-12 center-xs pagination-botton-padding">
+  <div class="row col-xs-12 center-xs pagination-container">
     <ul class="pagination" role="navigation">
       <li class="page-item"><a class="page-link" href="#" rel="prev" aria-label="&laquo; Anterior">&lsaquo;</a></li>
       <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
@@ -87,7 +80,6 @@
       <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item"><a class="page-link" href="#" rel="next" aria-label="Siguiente &raquo;">&rsaquo;</a></li>
     </ul>
-
   </div>
 
   @include('academia.partials.card_bottom')

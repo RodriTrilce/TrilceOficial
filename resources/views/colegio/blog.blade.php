@@ -64,7 +64,7 @@
     </div>
   </div>
 
-  <div class="row col-xs-12 center-xs pagination-padding">
+  <div class="row col-xs-12 center-xs pagination-container">
     {{ $posts->links() }}
   </div>
 

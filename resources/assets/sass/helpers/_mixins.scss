@@ -92,7 +92,7 @@
     @media (max-width: 900px) { @content; }
   }
   @else if $point == baby {
-    @media (max-width: 650px)  { @content; }
+    @media (max-width: 767px)  { @content; }
   }
   @else if $point == minibaby {
     @media (max-width: 400px)  { @content; }

@@ -16,9 +16,7 @@
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
       <div class="col-xs-12 col-sm container-base venue-info-container">
-        <h2 class="venue-colegio-h2">{{ $data->name }}</h2>
-        <div class="venues-hr"></div>
-
+        <div class="col-xs-12 venue-info-title"><h2 class="colegio">{{ $data->name}}</h2></div>
         <div class="row col-xs-12 col-sm-12">
           <table class="table-responsive venue-table">
             <thead>

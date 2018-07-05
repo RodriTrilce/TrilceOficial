@@ -24,9 +24,10 @@ Route::get('/academia/entering/{university}/{year}', 'Academia\EnteringResourceC
 Route::post('/academia/enrollment/check', 'Academia\EnrollmentApiResourceController@check');
 Route::get('/academia/enrollment/{university}', 'Academia\EnrollmentResourceController@university');
 Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentResourceController@venue');
-//Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');
+#Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');
 
+// Academia/Beginnings = Nuevos inicios
 Route::post('/academia/beginnings', 'Academia\BeginningsApiResourceController@index');
 
-
+// Out/Inscription = Landing academia pre-matricula en linea
 Route::post('/out/inscription', 'Out\InscriptionController@store');

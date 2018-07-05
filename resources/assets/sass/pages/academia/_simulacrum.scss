@@ -5,10 +5,9 @@
 $simulacrum-form-background: #ededed;
 
 .simulacrum{
-  margin-top: 50px;
-  margin-bottom: 30px;
-  @media screen and (max-width: 768px) {
-    margin-top: 30px;
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
   }
 }
 
@@ -52,9 +51,6 @@ $simulacrum-form-background: #ededed;
 
   }
 
-  @media screen and (max-width: 768px) {
-    margin-top: 35px;
-  }
 }
 
 .simulacrum-info-li-title{
@@ -79,7 +75,7 @@ $simulacrum-form-background: #ededed;
 }
 
 .simulacrum-info-title-bottom{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .simulacrum-form{
@@ -165,7 +161,7 @@ $simulacrum-form-background: #ededed;
   }
 
   @include breakpoint(baby){
-    padding: 12px;
+    padding: 0;
   }
 }
 

@@ -120,7 +120,6 @@
 }
 
 .beginning-minus{
-  margin: 25px 0;
   .item-a-preparation, .item-a-university{
     color: transparentize($gray, 0.4) !important;
   }
@@ -157,20 +156,24 @@
     right: 0;
 
     @include breakpoint(baby){
-      bottom: -25px;
+      bottom: -15px;
+      width: 20px;
+      height: 5px;
     }
 
   }
 }
 
 .nuevos-i-list{
-  margin: 20px 0;
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
 }
 
 // Page
 .nuevos-i-list-selects{
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
 
   select{
       max-width: 90%;

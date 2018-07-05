@@ -1,55 +1,32 @@
 .venue{
+  margin: 40px 0;
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+.map-container{
+  height: 400px;
+  border: 1px solid transparentize($gray, 0.6);
   margin-top: 30px;
-  margin-bottom: 30px;
 
-  @media screen and (max-width: 768px){
-    margin-top: 15px;
-  }
+}
 
-  .venue-content-left{
-    padding: 0.5rem;
-  }
+.venue-li-title{
+  font-size: .95rem;
+}
 
-  .map-container{
-    height: 400px;
-    border: 1px solid transparentize($gray, 0.6)
-  }
+.venue-info-title{
+  height: 30px;
 
   h2{
     color: $gray;
-    margin-bottom: 1rem;
     font-family: $font_cae_bold;
   }
 
-  div.venues-hr{
-    border: 0.5px solid transparentize($gray, 0.85);
-    margin: 1.5rem 0;
-    position: relative;
-    width: 100%;
-    &::after{
-      content: "";
-      position: absolute;
-      height: 8px;
-      width: 30px;
-      background: $orange;
-      top:-5px;
-      left: 0;
-    }
-  }
-
-  .venue-li-title{
-    font-size: .95rem;
-  }
-}
-
-.venue-colegio{
-  margin-bottom: 1rem;
-}
-
-.venue-colegio-h2{
-  color: $gray !important;
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem !important;
+  .colegio{
+    color: $orange !important;
   }
 }
 
@@ -104,9 +81,12 @@
 }
 
 .venue-colegio-investment{
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin: 40px 0;
   font-family: $font_geo_reg;
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
 }
 
 .investment-container{
@@ -118,7 +98,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     height: 70px !important;
   }
 
@@ -136,7 +116,7 @@
     padding: 0.3rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     padding: 0.5rem !important;
 
     >div{
@@ -145,7 +125,6 @@
   }
 
 }
-
 
 .investment-block-item:nth-of-type(odd) {
   background-color: $table_gray_one;
@@ -158,111 +137,6 @@
 .venue-info-container{
   margin-bottom: 20px;
 }
-
-
-/*
-.venue-table{
-  width: 90% !important;
-  border:0 !important;
-
-  tr{
-    border: 0 !important;
-
-    td{
-      font-family: $font_geo_lite;
-    }
-  }
-
-  td, th{
-    border-right: 0.5px solid #ddd;
-
-    &:last-child{
-      border: 0 !important;
-    }
-  }
-
-  th{
-    color: $orange;
-    position: relative;
-
-    &::before{
-      font-family: $font_icon;
-      font-size: 15px;
-      color: $orange;
-      left: -2px;
-      height: 10px;
-      top: 0;
-    }
-
-    &:nth-child(1){
-      &::before(){
-        content: "\F18F";
-      }
-    }
-
-    &:nth-child(2){
-      &::before(){
-        content: "\f27d";
-      }
-    }
-
-    &:nth-child(3){
-      &::before(){
-        content: "\f2b3";
-      }
-    }
-
-  }
-
-  @media (max-width: 767px) {
-    width: 100% !important;
-
-    tr{
-      border: 1px solid #ddd !important;
-    }
-
-    td {
-      position: relative;
-      border-right: 0 !important;
-
-      &:before{
-        color: $gray;
-        padding-left: 16px;
-      }
-
-      &:after {
-        color: $orange;
-        font-family: $font_icon;
-        font-size: 15px;
-        left: 0;
-        top: 9px;
-        padding-left: 10px;
-        position: absolute;
-      }
-
-      &:nth-child(1){
-        &::after(){
-          content: "\F18F";
-        }
-      }
-
-      &:nth-child(2){
-        &::after(){
-          content: "\f27d";
-        }
-      }
-
-      &:nth-child(3){
-        &::after(){
-          content: "\f2b3";
-        }
-      }
-
-    }
-  }
-
-}
-*/
 
 .venue-table{
   width: 100% !important;

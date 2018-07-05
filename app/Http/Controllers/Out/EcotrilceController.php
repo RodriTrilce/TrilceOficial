@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Out\Ecotrilce;
-use App\Mail\Out\Ecotrilce as EcotrilceMail;
+use App\Mail\Out\EcotrilceMail;
 
 class EcotrilceController extends Controller
 {

@@ -18,7 +18,7 @@ Route::name('prueba')->get('/prueba', function () {
 Route::get('/prueba2', 'Prueba2Controller@index');
 Route::get('/img', 'prueba@index');
 Route::get('/prueba3', 'prueba3@index');
-Route::get('/ecotrilce', 'Out\EcotrilceController@index')
+Route::get('/ecotrilce', 'Out\EcotrilceController@index');
 
 
 

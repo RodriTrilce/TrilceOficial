@@ -36,7 +36,7 @@ class EcotrilceMail extends Mailable
                   ->with(
                     [
                           'data'    => $this->data,
-                          'image'   => storage_path("app/public/mail/out/ecotrilce.jpg")
+                          'image'   => storage_path("app/public/mail/ecotrilce.jpg")
                     ]);
     }
 }

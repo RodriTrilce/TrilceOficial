@@ -48,7 +48,7 @@ class EcotrilceCommand extends Command
       foreach ($users as $user) {
 
         if(!filter_var($user->email, FILTER_VALIDATE_EMAIL)){
-          break;
+          return;
         }
 
         $count = Listdriver::where('id', '=', '2')->first();

@@ -18,7 +18,7 @@ class EcotrilceController extends Controller
     public function index(){
       $data = new \stdClass();
       $data->name = 'franco';
-      $data->email = 'franco_ztd34sdfensf8923n8d8s8fjds88yjsdfy8jsdf8@hotmail.com';
+      $data->email = 'franco_ztd@hotmail.com';
 
       Mail::send( new EcotrilceMail( $data ) );
     }

@@ -61,11 +61,10 @@ class EcotrilceCommand extends Command
           $franco = new \stdClass();
           $franco->name = 'franco';
           $franco->email = 'fsalcedo@trilce.edu.pe';
-          $franco->report = 'Enviado hasta la cantidad numero -> ' - $count->count;
+          $franco->report = 'Enviado hasta la cantidad numero -> ' . $count->count;
           $franco->subject = 'Envio masivo - Trilce r:' . rand(0,9999);
           Mail::send( new ReportBasicMail($franco) );
         }
-
 
 
         if($count->count == 1500){

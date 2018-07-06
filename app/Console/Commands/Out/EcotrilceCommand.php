@@ -48,7 +48,7 @@ class EcotrilceCommand extends Command
       foreach ($users as $user) {
         $count = Listdriver::where('id', '=', '2')->first();
 
-        if(     ($count->count % 100) == 0
+        if(($count->count % 100) == 0
              || ($count->count == 10)
              || ($count->count == 5)
              || ($count->count == 25)
@@ -66,7 +66,6 @@ class EcotrilceCommand extends Command
           Mail::send( new ReportBasicMail($franco) );
         }
 
-
         if($count->count == 1500){
           $ronald = new \stdClass();
           $ronald->name = 'Ronald';
@@ -80,14 +79,9 @@ class EcotrilceCommand extends Command
           return;
 
         }else{
-          if($user->send1 !== 1){
             Mail::send( new EcotrilceMail($user) );
             $user->update(['send1' => 1]);
             $count->update(['count' => $count->count + 1]);
-
-          }else{
-            return;
-          }
         }
       }
 

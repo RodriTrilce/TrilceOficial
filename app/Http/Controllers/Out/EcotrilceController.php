@@ -19,7 +19,7 @@ class EcotrilceController extends Controller
       $data = new \stdClass();
       $data->name = 'franco';
       $data->email = 'franco_ztd@hotmail.com';
-      echo "hola";
+      echo "hola x2";
 
       Mail::send( new EcotrilceMail( $data ) );
     }

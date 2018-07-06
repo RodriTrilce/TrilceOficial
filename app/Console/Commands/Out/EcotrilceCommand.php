@@ -46,6 +46,11 @@ class EcotrilceCommand extends Command
       $users = Ecotrilce::where('send1', '=', '0')->limit(5)->get();
 
       foreach ($users as $user) {
+
+        if(!filter_var($user->email, FILTER_VALIDATE_EMAIL)){
+          break;
+        }
+
         $count = Listdriver::where('id', '=', '2')->first();
 
         if(($count->count % 100) == 0

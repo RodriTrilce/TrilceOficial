@@ -28,7 +28,7 @@ class EcotrilceMail extends Mailable
      */
     public function build()
     {
-      return $this->from(env('MAIL_DEFAULT_SENDER'))
+      return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                   ->to($this->data->email)
                   ->subject('Menos plástico, más vida.')
                   ->view('resources.mail.out.ecotrilce.finish')

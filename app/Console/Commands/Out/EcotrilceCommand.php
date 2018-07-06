@@ -23,7 +23,7 @@ class EcotrilceCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Mail: ecotrilce';
+    protected $description = 'Mail ecotrilce';
 
     /**
      * Create a new command instance.

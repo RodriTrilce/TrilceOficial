@@ -48,14 +48,25 @@ class EcotrilceCommand extends Command
       foreach ($users as $user) {
         $count = Listdriver::where('id', '=', '2')->first();
 
-        if($count->count == (10 || 50 || 100 || 200 || 300 || 400 || 500 || 600 || 700 || 800 || 900 || 1000 || 1100 || 1200 || 1300 || 1400 || 1500)){
+        if(     ($count->count % 100) == 0
+             || ($count->count == 10)
+             || ($count->count == 5)
+             || ($count->count == 25)
+             || ($count->count == 35)
+             || ($count->count == 50)
+             || ($count->count == 70)
+             || ($count->count == 1)
+             || ($count->count == 3)
+          ){
           $franco = new \stdClass();
           $franco->name = 'franco';
           $franco->email = 'fsalcedo@trilce.edu.pe';
           $franco->report = 'Enviado hasta la cantidad numero -> ' - $count->count;
-          $franco->subject = 'Envio masivo - Trilce';
+          $franco->subject = 'Envio masivo - Trilce r:' . rand(0,9999);
           Mail::send( new ReportBasicMail($franco) );
         }
+
+
 
         if($count->count == 1500){
           $ronald = new \stdClass();

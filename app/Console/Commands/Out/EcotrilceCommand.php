@@ -49,45 +49,49 @@ class EcotrilceCommand extends Command
 
         if(!filter_var($user->email, FILTER_VALIDATE_EMAIL)){
           return;
-        }
-
-        $count = Listdriver::where('id', '=', '2')->first();
-
-        if(($count->count % 100) == 0
-             || ($count->count == 10)
-             || ($count->count == 5)
-             || ($count->count == 25)
-             || ($count->count == 35)
-             || ($count->count == 50)
-             || ($count->count == 70)
-             || ($count->count == 1)
-             || ($count->count == 3)
-          ){
-          $franco = new \stdClass();
-          $franco->name = 'franco';
-          $franco->email = 'fsalcedo@trilce.edu.pe';
-          $franco->report = 'Enviado hasta la cantidad numero -> ' . $count->count;
-          $franco->subject = 'Envio masivo - Trilce r:' . rand(0,9999);
-          Mail::send( new ReportBasicMail($franco) );
-        }
-
-        if($count->count == 1500){
-          $ronald = new \stdClass();
-          $ronald->name = 'Ronald';
-          $ronald->email = 'rmori@trilce.edu.pe';
-          $ronald->report = 'Se termino el envio, total enviados: ' . $count->count;
-          $ronald->subject = 'Envio masivo - Trilce';
-          Mail::send( new ReportBasicMail($ronald) );
-        }
-
-        if($count->count == 1500){
-          return;
-
         }else{
-            Mail::send( new EcotrilceMail($user) );
-            $user->update(['send1' => 1]);
-            $count->update(['count' => $count->count + 1]);
+
+
+              $count = Listdriver::where('id', '=', '2')->first();
+
+              if(($count->count % 100) == 0
+                   || ($count->count == 10)
+                   || ($count->count == 5)
+                   || ($count->count == 25)
+                   || ($count->count == 35)
+                   || ($count->count == 50)
+                   || ($count->count == 70)
+                   || ($count->count == 1)
+                   || ($count->count == 3)
+                ){
+                $franco = new \stdClass();
+                $franco->name = 'franco';
+                $franco->email = 'fsalcedo@trilce.edu.pe';
+                $franco->report = 'Enviado hasta la cantidad numero -> ' . $count->count;
+                $franco->subject = 'Envio masivo - Trilce r:' . rand(0,9999);
+                Mail::send( new ReportBasicMail($franco) );
+              }
+
+              if($count->count == 1500){
+                $ronald = new \stdClass();
+                $ronald->name = 'Ronald';
+                $ronald->email = 'rmori@trilce.edu.pe';
+                $ronald->report = 'Se termino el envio, total enviados: ' . $count->count;
+                $ronald->subject = 'Envio masivo - Trilce';
+                Mail::send( new ReportBasicMail($ronald) );
+              }
+
+              if($count->count == 1500){
+                return;
+
+              }else{
+                  Mail::send( new EcotrilceMail($user) );
+                  $user->update(['send1' => 1]);
+                  $count->update(['count' => $count->count + 1]);
+              }
+
         }
+
       }
 
     }

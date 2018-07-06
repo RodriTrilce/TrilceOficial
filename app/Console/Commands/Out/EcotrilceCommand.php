@@ -3,9 +3,10 @@
 namespace App\Console\Commands\Out;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Mail;
 use App\Models\Out\Ecotrilce;
-use App\Mail\Out\EcotrilceMail;
 use App\Models\Out\Listdriver;
+use App\Mail\Out\EcotrilceMail;
 use App\Mail\Report\ReportBasicMail;
 
 class EcotrilceCommand extends Command

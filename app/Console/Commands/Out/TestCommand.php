@@ -47,7 +47,7 @@ class TestCommand extends Command
       foreach ($users as $user) {
         $count = Listdriver::where('id', '=', '1')->first();
 
-        if($count == 5){
+        if($count->count == 5){
           return;
 
         }else{

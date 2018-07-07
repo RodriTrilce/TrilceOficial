@@ -244,18 +244,12 @@
 }
 
 .enrollment-finish{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   .finish-title{
-    font-size: 2rem;
     font-family: $font_cae_heavy;
     display: block;
-
-    @media (max-width: 767px){
-      font-size: 1.5rem;
-    }
-
   }
 
   .finish-thanks{
@@ -269,10 +263,6 @@
 
   .finish-text{
     font-family: $font_cae_heavy;
-    font-size: 1.5rem;
-    @media (max-width: 767px){
-      font-size: 1.2rem;
-    }
   }
 
   .finish-button-container{
@@ -286,9 +276,8 @@
     font-family: $font_cae_rom;
     font-size: 2rem;
     position: relative;
-    padding: 3vh;
     cursor: pointer;
-    width: 300px;
+    width: 280px;
 
     @media (max-width: 767px){
       font-size: 1.5rem;

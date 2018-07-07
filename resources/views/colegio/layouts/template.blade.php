@@ -17,11 +17,11 @@
 @endif
 
   <header>
-    <div class="row between-xs">
-      <div class="col-xs-3 col-sm-2 logo">
+    <div class="row between-xs header-web">
+      <div class="row col-xs col-sm-2 logo">
         <a href="/colegio"><img src="{{{ asset('static/images/logos/logo-trilce-colegio.svg') }}}" alt="Trilce"></a>
       </div>
-      <div class="row col-xs col-sm-9 col-lg-10 end-xs pre-nav">
+      <div class="row col-xs col-sm-9 col-lg-10 end-xs">
           <div class="col-xs-12 nav-info">
               <span class="nav-info-content nav-info-colegio"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b class="phone">6198100</b></span>
           </div>

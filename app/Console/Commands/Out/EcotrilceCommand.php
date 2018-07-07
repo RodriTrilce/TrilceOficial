@@ -51,7 +51,6 @@ class EcotrilceCommand extends Command
           return;
         }else{
 
-
               $count = Listdriver::where('id', '=', '2')->first();
 
               if(($count->count % 100) == 0

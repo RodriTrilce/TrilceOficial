@@ -85,6 +85,9 @@
   @if $point == dad {
     @media (max-width: 1600px) { @content; }
   }
+  @if $point == brother{
+    @media (max-width: 1400px) { @content; }
+  }
   @else if $point == mom {
     @media (max-width: 1250px) { @content; }
   }

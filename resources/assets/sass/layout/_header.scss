@@ -1,20 +1,48 @@
+.header-web{
+  height: 150px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (max-width: 1200){
+    height: 90px;
+  }
+
+  @media (max-width: 767px){
+    height: 70px;
+    padding: 0 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+}
+
 .logo{
+  justify-content: center;
+  align-items: center;
+
+    a{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     img{
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      margin-left: 2rem;
-      max-width: 13rem;
+      max-width: 75%;
 
-      @media screen and (max-width: 480px) {
-        max-width: 4.5rem;
+      @include breakpoint(dad){
+        max-width: 80%;
       }
 
-      @media screen and (max-width: 768px) {
-        margin-top: 1.2rem;
-        margin-left: 0.6rem;
-        margin-bottom: 1.2rem;
-        max-width: 6.5rem;
+      @include breakpoint(brother){
+        max-width: 85%;
       }
 
+      @include breakpoint(mom){
+        max-width: 100%;
+      }
+
+      @include breakpoint(baby){
+        max-width: 60%;
+      }
     }
 }

@@ -329,7 +329,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
   }
 
 
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     display: none;
   }
 }
@@ -346,13 +346,6 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
     color: $orange !important;
   }
 
-}
-
-.pre-nav{
-  padding-right: 2%;
-  @media screen and (max-width: 768px) {
-    padding-right: 0;
-  }
 }
 
 nav{
@@ -455,17 +448,23 @@ nav{
 
     .label-toggle{
       color: $orange;
+      font-size: 15px;
       background-color: white;
       border-radius: 2px;
       border: 1px solid $orange;
-      padding: 0.56em;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
     }
 
 
     /**
       * UL > responsive
     */
-    @media screen and (max-width: 768px) {
+    @include breakpoint(baby){
       .toogle-content{
         display: block;
       }
@@ -538,11 +537,6 @@ nav{
 
     }
 
-    .toogle-content{
-      margin-right: 1rem;
-      width: 100px;
-    }
-
     #menu-toggle:checked ~ .toogle-content {
       .label-toggle{
         background: $orange;
@@ -561,7 +555,7 @@ nav{
       height: 100vh;
       background-color: white;
       text-align: center;
-      margin-top: 86px;
+      margin-top: 65px;
       top: 0;
 
     }//end ul
@@ -597,7 +591,7 @@ nav{
 .nav-info-responsive{
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     display: block !important;
     background-color: $orange;
     color: white;
@@ -608,7 +602,7 @@ nav{
 
 
 .nav-colegio-structure{
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
 
     display: flex;
     height: 100%;
@@ -642,7 +636,7 @@ nav{
 
 .nav-colegio-aboutusmobile{
   display: none;
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     display: block;
   }
   &::after{

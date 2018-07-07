@@ -1,12 +1,9 @@
 
 // Nuevos inicios
 .nuevos-i{
-  margin-top: 3%;
-  margin-bottom: 5%;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 1%;
-    margin-bottom: 1%;
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
   }
 
   .nuevos-i-title{
@@ -60,7 +57,6 @@
         font-size: 1.3rem;
         color: transparentize($gray, 0.4);
         transition: 0.2s ease-in;
-        margin-top: 10px;
 
         @media (max-width: 768px) {
           font-size: .9rem;
@@ -324,15 +320,15 @@
       width: 20px;
       height: 8px;
       position: absolute;
-      left: 45%;
       bottom: -25px;
+      transform: translate(-50%, -50%);
     }
   }
 }
 
 .hover-orange{
   &::after{
-    background: $orange;
+    background: $gray;
   }
 }
 
@@ -572,6 +568,9 @@
         width: 20px;
         height: 8px;
         background: $orange;
+
+        transform: translate(-50%, -50%);
+
       }
     }
 

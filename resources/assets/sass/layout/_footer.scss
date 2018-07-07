@@ -4,8 +4,8 @@ footer{
   width: 100%;
   color: lighten($gray, 50%);
   font-size: 0.8rem;
-  padding-bottom: 1%;
-  padding-top: 3%;
+  padding-bottom: 20px;
+  padding-top: 20px;
 
   @media screen and (max-width: 700px) {
     font-size: 11px;
@@ -33,8 +33,10 @@ footer{
     }
   }
 
-  .footer-bottom{
-    margin-top: 2rem;
+  @include breakpoint(baby){
+    .footer-bottom{
+      margin-top: 20px;
+    }
   }
 
 .links{

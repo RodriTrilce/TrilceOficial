@@ -21,39 +21,27 @@
 
         <div class="col-xs @if($type=='nuevo') hover-active hover-blue @endif">
           <a href="/colegio/admision-nuevo">
-            <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="Alumno nuevo">
-              <h3>Alumno <br /><div class="modality modality-blue">Nuevo</div></h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <span>Leer más <i class="fa fa-search"></i></span>
-              <div class="nuevos-hr nuevos-hr-blue"></div>
+            <div class="row nuevos-i-top">
+              <div class="col-xs-12 xs-center"><img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="Alumno nuevo"></div>
+              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-blue">Nuevo</div></h3></div>
             </div>
           </a>
         </div>
 
         <div class="col-xs @if($type=='traslado') hover-active hover-yellow @endif">
           <a href="/colegio/admision-traslado">
-            <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="Alumno Traslado">
-              <h3>Alumno <br /><div class="modality modality-yellow">Traslado</div></h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <span>Leer más <i class="fa fa-search"></i></span>
-              <div class="nuevos-hr nuevos-hr-yellow"></div>
+            <div class="row nuevos-i-top">
+              <div class="col-xs-12 xs-center"><img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="Alumno Traslado"></div>
+              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-yellow">Traslado</div></h3></div>
             </div>
           </a>
         </div>
 
         <div class="col-xs @if($type=='regular') hover-active hover-orange @endif">
           <a href="/colegio/admision-regular">
-            <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="Alumno Regular">
-              <h3>Alumno <br /><div class="modality modality-orange">Regular</div></h3>
-            </div>
-            <div class="nuevos-i-bottom">
-              <span>Leer más <i class="fa fa-search"></i></span>
-              <div class="nuevos-hr nuevos-hr-orange"></div>
+            <div class="row nuevos-i-top">
+              <div class="col-xs-12 xs-center"><img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="Alumno Regular"></div>
+              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-orange">Regular</div></h3></div>
             </div>
           </a>
         </div>

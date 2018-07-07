@@ -10,7 +10,7 @@
 
 <div class="row col-xs-12 center-xs container-base admission-new-table admission-transfer-table">
   <div class="row col-xs-12 center-xs">
-    <div class="col-xs-12">  <h3 class="admission-regular-title">Inscripción</h3></div>
+    <div class="col-xs-12">  <h2 class="admission-regular-title">Inscripción</h2></div>
     <div style="max-width:500px; text-align:left;">
       <ul>
         <li>Actualizar ficha de matrícula Trilce 2019.</li>

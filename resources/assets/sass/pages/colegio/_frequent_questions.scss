@@ -1,6 +1,10 @@
 .frequentquestions{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 40px 0;
+  
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
   color: $gray;
 }
 
@@ -22,12 +26,11 @@
 
   .question-number{
     justify-content: center;
-    align-items: center;
-    align-content: center;
     font-family: $font_geo_reg;
     font-size: 2rem;
-    @media screen and (max-width: 700px){
-      font-size: 1rem;
+
+    @include breakpoint(baby){
+      font-size: 1.4rem;
     }
 
     &::before{
@@ -48,8 +51,10 @@
   }
 
   .question-title{
-    font-family: $font_cae_reg;
+    font-family: $font_geo_reg;
     font-size: 1.2rem;
+    margin-bottom: 5px;
+
     @media screen and (max-width: 700px){
       font-size: 1rem;
     }

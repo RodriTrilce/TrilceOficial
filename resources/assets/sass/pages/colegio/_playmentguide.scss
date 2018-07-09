@@ -1,16 +1,20 @@
 .playmentguide-content{
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
   font-family: $font_geo_reg;
   color: $gray;
 }
 
 .playmentguide-title{
   font-family: $font_geo_bold;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: inherit;
+
   @media screen and (max-width: 700px){
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -21,8 +25,10 @@
 }
 
 .playmentguide-option{
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
 
   &:hover{
     .playmentguide-optionitem:not(:hover){
@@ -63,9 +69,4 @@
     display: none;
   }
 
-  @media screen and (max-width: 700px){
-    img{
-      max-width: 75%;
-    }
-  }
 }

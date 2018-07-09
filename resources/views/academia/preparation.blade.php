@@ -11,7 +11,7 @@
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Nuevos Inicios</h1>
-        <p>Elije la preparación universitaria,<br /> exclusiva que está buscando</p>
+<!--        <p>Elije la preparación universitaria,<br /> exclusiva que está buscando</p>-->
       </div>
     </div>
   </div>

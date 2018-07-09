@@ -9,8 +9,6 @@
 .map-container{
   height: 400px;
   border: 1px solid transparentize($gray, 0.6);
-  margin-top: 30px;
-
 }
 
 .venue-li-title{
@@ -33,15 +31,6 @@
 .venue-colegio-icon{
   font-size: 1rem;
   color: $orange;
-}
-
-.venue-colegio-title-span{
-  color: $gray;
-  font-size: 0.9rem;
-
-  @media screen and (max-width: 768px) {
-    font-size: 0.7rem;
-  }
 }
 
 .venue-colegio-table-block{

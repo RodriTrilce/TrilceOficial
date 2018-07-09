@@ -1,14 +1,9 @@
 .contact{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
   }
-}
 
-.contact-info{
 }
 
 .contant-info-subtitle{

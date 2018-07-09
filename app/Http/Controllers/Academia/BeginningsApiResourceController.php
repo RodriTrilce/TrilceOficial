@@ -96,6 +96,7 @@ class BeginningsApiResourceController extends Controller
 
       if(Cache::has($data)){
         $buffer = Cache::get($data);
+
       }else{
         $crawler = new Crawler($this->makeRequest($this->makeSource($university), $data));
         $buffer = $crawler->filter('table')->each(function ($node){
@@ -109,11 +110,23 @@ class BeginningsApiResourceController extends Controller
 
           });
 
-          $_body[$_type[0]] = $node->filter('tbody tr')->each(function($b){
-            return $b->children()->each(function($c){
-              return $c->getNode(0)->textContent;
+          $temp = $node->filter('tbody tr')->each(function($b) use ($_type, $_head){
+            return $b->children()->each(function($c, $i) use ($_head){
+
+              /*if($_head[$i] == 'Inicio'){
+                $newformat = date('Y-m-d', strtotime($c->getNode(0)->textContent));
+                return $newformat;
+              }else{*/
+                return $c->getNode(0)->textContent;
+              //}
+
+            //return $c->getNode(0)->textContent;
+
+
             });
           });
+
+          $_body[$_type[0]] = array_reverse($temp);
 
           $_body['head'] = $_head;
 

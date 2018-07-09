@@ -20,3 +20,40 @@
 .clearfix{
   padding: .1px 0;
 }
+
+
+.loading-trilce{
+  text-align: center;
+  width: 100%;
+}
+
+.loading-trilce-polygon {
+  stroke-dasharray: 2110;
+  stroke-dashoffset: 2110;
+  stroke-width:1;
+  stroke-linecap:round;
+  animation: dash_trilce 3s linear infinite;
+  fill-opacity:0;
+  stroke:#f4633a;
+}
+
+@keyframes dash_trilce {
+  0% {
+    stroke-dashoffset: 2410;
+    opacity:0;
+    stroke:#f4633a;
+  }
+  15%{
+    opacity:1;
+    stroke:#f4633a;
+  }
+  70%{
+    opacity:1;
+    stroke:#f4633a;
+  }
+  100%{
+    stroke-dashoffset:0;
+    opacity:0;
+    stroke:#f4633a;
+  }
+}

@@ -163,6 +163,7 @@ return [
         Laraveles\Spanish\SpanishServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        jdavidbakr\MailTracker\MailTrackerServiceProvider::class,
 
 
 

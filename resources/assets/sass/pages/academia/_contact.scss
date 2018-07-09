@@ -1,9 +1,9 @@
 .contact{
   margin: 40px 0;
+  
   @include breakpoint(baby){
     margin: 20px 0;
   }
-
 }
 
 .contant-info-subtitle{

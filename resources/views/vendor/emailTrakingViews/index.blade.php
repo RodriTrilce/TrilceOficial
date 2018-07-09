@@ -6,29 +6,29 @@
                 <h1>Mail Tracker</h1>
             </div>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="col-sm-12">
                 <h4 class="text-center">
                     SNS Endpoint: {{ route('mailTracker_SNS') }}
                 </h4>
             </div>
-        </div>
+        </div>-->
         <div class="row">
             <div class="col-sm-12 text-center">
                 <form action="{{ route('mailTracker_Search') }}" method="post" class="form-inline">
                     {!! csrf_field() !!}
                     <div class="form-group">
                         <label for="search">
-                            Search
+                            Buscar
                         </label>
                         <input type="text" name="search" id="search" value="{{ session('mail-tracker-index-search') }}">
                     </div>
                     <button type="submit" class="btn btn-default">
-                        Search
+                        Buscar
                     </button>
                     <div class="btn btn-default">
                         <a href="{{ route('mailTracker_ClearSearch') }}">
-                            Clear Search
+                           Limpiar busqueda
                         </a>
                     </div>
                 </form>
@@ -40,12 +40,12 @@
                 <table class="table table-striped">
                     <tr>
                         <th>SMTP</th>
-                        <th>Recipient</th>
-                        <th>Subject</th>
-                        <th>Opens</th>
+                        <th>Recibe</th>
+                        <th>Asunto</th>
+                        <th>Abiertos</th>
                         <th>Clicks</th>
-                        <th>Sent At</th>
-                        <th>View Email</th>
+                        <th>Hora de envio</th>
+                        <th>Ver Email</th>
                         <th>Clicks</th>
                     </tr>
                 @foreach($emails as $email)

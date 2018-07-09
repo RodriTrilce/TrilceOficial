@@ -11,8 +11,8 @@
 <body>
   <center>
       {{-- <img src="{{ $message->embed($image) }}" alt=""> --}}
-      <img src="http://www.trilce.edu.pe/masivos/f/otros/ecotrilce.jpg" alt="¡Súmate a nuestra campaña para eliminar el uso de plástico!">
-      <span style="color: #ffffff">¡Súmate a nuestra campaña para eliminar el uso de plástico!</span>
+      <img src="http://www.trilce.edu.pe/masivos/f/otros/ecotrilce.jpg" alt="#MenosPlásticoMásVida">
+      <span style="color: #ffffff">#MenosPlásticoMásVida</span>
   </center>
 </body>
 </html>

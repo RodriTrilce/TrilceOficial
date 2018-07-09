@@ -30,7 +30,7 @@ class EcotrilceMail extends Mailable
     {
       return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                   ->to($this->data->email)
-                  ->subject('Menos plástico, más vida.')
+                  ->subject('¡Súmate a nuestra campaña para eliminar el uso de plástico!.')
                   ->view('resources.mail.out.ecotrilce.finish')
                   ->text('resources.mail.out.ecotrilce.finish_plain')
                   ->with(

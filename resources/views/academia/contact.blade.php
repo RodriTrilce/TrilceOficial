@@ -5,8 +5,8 @@
 
 <div class="header-double-top">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6"></div>
-    <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-contact"></div>
+    <div class="col-xs-12 col-sm-6"></div>
+    <div class="col-xs-12 col-sm-6 header-double-w-contact"></div>
     <div class="header-double-border"></div>
     <div class="header-double-title">
       <h1>Contáctanos</h1>

@@ -6,8 +6,8 @@
 
   <div class="header-double-top">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6"></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header-double-w-1"></div>
+      <div class="col-xs-12 col-sm-6"></div>
+      <div class="col-xs-12 col-sm-6 header-double-w-1"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Lista de Cachimbos</h1>
@@ -58,11 +58,11 @@
             </div>
           </a>
         </div>
-        
+
       </div>
     </div>
   </div>
-  
+
   <div class="row center-xs center-sm">
     <div class="col-xs-11 col-sm-9 entering-top">
       <ul id="year_list">
@@ -72,7 +72,7 @@
       </ul>
     </div>
   </div>
-  
+
   <div class="row center-xs center-sm entering-table">
     <div class="row col-sm-8 col-xs-12 text-init">
 
@@ -83,10 +83,10 @@
         <div class="col-xs">Nombres</div>
         <div class="col-xs-3">Carrera</div>
       </div>
-    
+
       <div class="row col-sm-12 col-xs-12 text-init entering-table-row" id="entering">
       </div>
-    
+
     </div>
   </div>
 

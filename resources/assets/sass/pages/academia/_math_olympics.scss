@@ -11,9 +11,7 @@
     >.math-olympic-title{
       color: $orange;
       text-transform: uppercase;
-      font-size: 1.2rem;
       padding-bottom: 0.5rem;
-
     }
 
     >.math-olympic-content{
@@ -29,7 +27,7 @@
         display: none;
       }
 
-      @media screen and (max-width: 768px) {
+      @include breakpoint(baby){
         .a{
           display: none;
         }
@@ -43,14 +41,14 @@
 }
 
 .math-olympic-list{
-  margin-left: 1.3rem;
+  margin-left: 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     margin:0;
-    margin-top: 1rem;
+    margin-top: 15px;
   }
 
   .active{
@@ -59,14 +57,13 @@
 
   li{
     display: inline;
-    margin-right: 1.3rem;
+    margin-right: 15px;
     padding-left: 14px;
     font-size: 0.8rem;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint(baby){
       margin-left: 7px;
-      margin-right: 0rem;
-      font-size: 0.65rem;
+      font-size: 0.7rem;
     }
 
     &::before{
@@ -75,7 +72,7 @@
         font-family: $font_icon;
         font-size: 15px;
         margin-left: -18PX;
-        @media screen and (max-width: 768px) {
+        @include breakpoint(baby){
           margin-top: -1px;
           font-size: 12px;
         }

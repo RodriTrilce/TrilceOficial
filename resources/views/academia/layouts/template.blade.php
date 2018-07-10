@@ -23,8 +23,8 @@
 
   <header>
     <div class="row between-xs header-web">
-      <div class="row col-xs col-sm-2 logo">
-        <a href="/academia/"><img src="{{{ asset('static/images/logos/logo-trilce-academia.svg') }}}" alt="Trilce"></a>
+      <div class="row col-xs col-sm logo">
+        <div class="col-xs-12"><a href="/academia/"><img src="{{{ asset('static/images/logos/logo-trilce-academia.svg') }}}" alt="Trilce Academia"></a></div>
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs">
           <div class="col-xs-12 nav-info">

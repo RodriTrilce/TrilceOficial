@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <div class="row between-xs">
+    <div class="row between-xs header-web">
       <div class="col-xs-6 logo">
         <a href="/"><img src="{{{ asset('static/images/logos/logo-trilce.svg') }}}" alt="Trilce"></a>
       </div>

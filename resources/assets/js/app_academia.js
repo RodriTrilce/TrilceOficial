@@ -592,15 +592,11 @@ function preparation()
   this.draw = function(data)
   {
     var tables='', thead='', tbody='';
-
-    console.log(data);
-
     data.forEach((tableData, i) => {
 
       tableData.head.forEach(value => {
         thead += `<th>${value}</th>`;
       });
-
 
       let tableName = Object.keys(tableData);
 

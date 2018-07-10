@@ -4,6 +4,7 @@ select,input,textarea{
   color: $gray;
   padding: 10px;
   width: 100%;
+  transition: all .2s linear;
 }
 
 select,input,textarea{

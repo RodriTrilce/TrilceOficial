@@ -28,7 +28,7 @@
   <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
     <div class="col-xs-12 col-sm contact-info container-padding-mobile">
-      <h2 class="contact-subtitle">Información de contacto</h2>
+      <h2 class="contact-subtitle contact-subtitle-colegio">Información de contacto</h2>
       <ul class="contant-info-ul">
         <li>Central Telefónica: 619-8100</li>
         <li>Correo: atencionalcliente@trilce.edu.pe</li>

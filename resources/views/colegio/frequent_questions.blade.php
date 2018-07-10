@@ -13,9 +13,6 @@
   </div>
 
   <div class="row col-xs-12 center-xs container-base frequentquestions">
-    <div class="col-xs-12">
-      <h1 class="frequentquestions-title">Preguntas frecuentes</h1>
-    </div>
 
     <div class="col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md frequentquestions-block">
 

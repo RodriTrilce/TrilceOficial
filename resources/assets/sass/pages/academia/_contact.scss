@@ -1,6 +1,6 @@
 .contact{
   margin: 40px 0;
-  
+
   @include breakpoint(baby){
     margin: 20px 0;
   }
@@ -165,6 +165,10 @@
 .contact-subtitle{
   font-family: $font_cae_bold;
   margin-bottom: 10px;
+}
+
+.contact-subtitle-colegio{
+  color: $gray;
 }
 
 .g-recaptcha{

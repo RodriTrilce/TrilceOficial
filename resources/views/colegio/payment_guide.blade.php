@@ -15,7 +15,7 @@
   <div class="row col-xs-12 center-xs container-base playmentguide-content">
     <div class="row col-xs-12 col-sm-10 col-md-8 start-xs start-sm start-md ">
 
-      <div class="col-xs-12">
+      <div class="col-xs-12 playmentguide-title-container">
         <h1 class="playmentguide-title">Elija el banco de su preferencia</h1>
         <p class="playmentguide-titlesub">Para saber como realizar pagos por internet, ventanilla y/o agente.</p>
       </div>

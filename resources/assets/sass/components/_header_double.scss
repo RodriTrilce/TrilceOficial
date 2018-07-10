@@ -49,10 +49,19 @@
   top: 50%;
 
   @media screen and (max-width: 768px){
-    transform: translate(-80%, 220%);
+    transform: translate(-80%, 225%);
     right: -83%;
     width: 100%;
     left: unset;
+
+    &::before{
+      content: "";
+      width: 20px;
+      height: 50px;
+      background: $orange;
+      bottom: -45px;
+      position: absolute;
+    }
   }
 
   h1{

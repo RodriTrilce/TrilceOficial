@@ -4,6 +4,12 @@
     <h1 class="h2">Crear olimpiada matemática</h1>
   </div>
 
+@if(!empty($data))
+<div class="alert alert-success" role="alert">
+  <strong>{{$data->title}}</strong> creado correctamente.</h3>
+</div>
+@endif
+
 @if ($errors->any())
   <div class="alert alert-danger">
       <ul>
@@ -19,14 +25,14 @@
 
     <div class="form-group">
       <label for="create_title">Titulo</label>
-      <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo">
+      <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" required>
     </div>
 
     <input type="text" name="type" value="academia" hidden>
 
     <div class="form-group">
      <label for="create_grade">Grado</label>
-     <input type="text" class="form-control" name="grade" id="create_grade" autocomplete="off" placeholder="Escribe aquí los grados">
+     <input type="text" class="form-control" name="grade" id="create_grade" autocomplete="off" placeholder="Escribe aquí los grados" required>
     </div>
 
     <!--
@@ -47,13 +53,13 @@
   -->
 
     <div class="form-group">
-      <label for="create_venue">Sedes</label>
-      <input type="text" class="form-control" name="venue" id="create_venue" autocomplete="off" placeholder="Escribir la sede">
+      <label for="create_venue">Sede</label>
+      <input type="text" class="form-control" name="venue" id="create_venue" autocomplete="off" placeholder="Escribir la sede" required>
     </div>
 
     <div class="form-group">
       <label for="create_bases">Bases</label>
-      <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf" />
+      <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
       <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>
     </div>
 
@@ -69,7 +75,7 @@
 
     <div class="form-group">
       <label for="create_finish">Fecha de finalización</label>
-      <input type="text" class="form-control" id="mo_finish" name="finish_at" id="create_finish" autocomplete="off" placeholder="<?=date("Y-m-d h:s")?>">
+      <input type="text" class="form-control" id="mo_finish" name="finish_at" id="create_finish" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
     </div>
 
     <div class="form-group">

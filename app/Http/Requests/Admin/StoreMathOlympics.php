@@ -34,4 +34,16 @@ class StoreMathOlympics extends FormRequest
         'inscription_group_url' => 'nullable'
       ];
     }
+    public function attributes()
+    {
+        return [
+          'title'   => 'Titulo',
+          'grade' => 'Grado',
+          'venue' => 'Sede',
+          'finish_at' => 'Fecha de finalización',
+          'base_url' => 'Pdf de las bases',
+          'inscription_url' => 'Url de inscripción individual',
+          'inscription_group_url' => 'Url de inscripción grupal'
+        ];
+    }
 }

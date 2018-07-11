@@ -23,17 +23,13 @@ class BlogController extends Controller
     public function store(Request $request)
     {
 
-      echo Purifier::clean("<b>hola</b s><script>alert(1)</script>");
-
-      dd($request);
-      die;
-//      $request->validated();
+      $request->validated();
 
       $post = new Post;
       $post->file_id  = 1;
       $post->site     = $request->site;
       $post->title    = $request->title;
-      $post->content  = $request->content;
+      $post->content  = Purifier::clean($request->content);
       $post->slug     = str_slug($request->title);
 
       if($request->marker) $post->marker = $request->marker;

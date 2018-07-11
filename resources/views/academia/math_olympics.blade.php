@@ -19,7 +19,7 @@
       @foreach ($data as $key => $v)
       <div class="row col-xs">
 
-        <div class="col-xs-12 math-olympic-title">{{$v->sede}}</div>
+        <div class="col-xs-12 math-olympic-title">{{$v->venue}}</div>
 
         <div class="row col-xs-12 col-sm col-md-7 math-olympic-content">
           <div class="col-xs-2 "><span class="a">{{ Date::parse($v->created_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->created_at)) }}</span></div>
@@ -32,7 +32,7 @@
             <li {!! ($v->base_url!==''?"class=\"active\"":'') !!}><a href="{{$v->base_url}}" target="_blank">Bases</a></li>
             <li {!! ($v->inscription_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
             <li {!! ($v->inscription_group_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
-            <li {!! ($v->results_url!==''?'class="active"':'') !!}><a href="{{$v->results_url}}" target="_blank">Resultados</a></li>
+            <li><a href="" target="_blank">Resultados</a></li>
           </ul>
         </div>
 

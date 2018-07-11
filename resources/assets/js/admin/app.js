@@ -41,33 +41,33 @@ function manageImages(){
   }
 
   this.hearDelete = function(){
-/*
-    document.addEventListener('click', function (event) {
-    	// If the event target doesn't match bail
-    	if (event.target.classList.contains('img_delete')){
-          event.stopPropagation();
+    /*
+        document.addEventListener('click', function (event) {
+        	// If the event target doesn't match bail
+        	if (event.target.classList.contains('img_delete')){
+              event.stopPropagation();
 
-          var nlist = Array.from(document.getElementById('imagesMulti').files);
+              var nlist = Array.from(document.getElementById('imagesMulti').files);
 
-          var xlist = new FormData();
+              var xlist = new FormData();
 
-          nlist.forEach((file,i) => {
-            if(event.target.parentElement.id === "__item_" + this.slug(file.name)){
-              //nlist = nlist.splice(i, 1)
-              xlist.append(i, file)
-            }
+              nlist.forEach((file,i) => {
+                if(event.target.parentElement.id === "__item_" + this.slug(file.name)){
+                  //nlist = nlist.splice(i, 1)
+                  xlist.append(i, file)
+                }
 
-            console.log(file);
+                console.log(file);
 
-          }, true);
+              }, true);
 
-//          document.getElementById('imagesMulti').files = xlist;
+    //          document.getElementById('imagesMulti').files = xlist;
 
-          event.target.parentElement.remove();
-      }
+              event.target.parentElement.remove();
+          }
 
-    }.bind(this));
-*/
+        }.bind(this));
+    */
   }
 
   this.iterate = function(elem)
@@ -128,6 +128,24 @@ function manageImages(){
   }
 }
 
-
 var run = new manageImages;
 run.init();
+
+
+
+import flatpickr from "flatpickr";
+import { Spanish } from "flatpickr/dist/l10n/es.js"
+
+flatpickr.localize(Spanish);
+
+flatpickr("#mo_finish",{
+    enableTime: true,
+    dateFormat: "Y-m-d H:i:s",
+});
+
+
+
+
+
+
+// xd

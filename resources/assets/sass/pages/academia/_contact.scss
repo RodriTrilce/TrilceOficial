@@ -77,7 +77,9 @@
 }
 
 .worktrilce{
+  display: none;
   margin-bottom: 2rem;
+
   a{
     display: block;
     width: 250px;
@@ -90,8 +92,8 @@
     font-family: $font_cae_bold;
     font-size: 1.5rem;
     text-align: left;
-
     position: relative;
+    
     &::after{
       position: absolute;
       content: "";

@@ -53,52 +53,59 @@ class MathOlympicsController extends Controller
 
       if($request->file('base_url'))
       {
-        $mime = new Mime;
-        $file = new File;
-
-        $file->token              = date("Y-m", strtotime($request->finish_at)) . '-bases-' . str_slug($request->venue);
-        $file->type               = 'pdf';
-        $file->mime               = $request->file('base_url')->getMimeType();
-        $file->extension          = $mime->getExtension($request->file('base_url')->getMimeType());
-        $file->location_folder    = 'academia/documents/olimpiadas-matematicas';
-        $file->name               = 'Bases olimpiadas matemáticas ' . $request->venue;
-        $file->size               = $request->file('base_url')->getClientSize();
-        $file->save();
-
-        $save = $request->file('base_url')->storeAs('public/' . $file->location_folder, $file->token);
-
-        if($save)
-        {
-          $new = MathOlympics::create([
-            'title' => $request->title,
-            'type' => $request->type,
-            'grade' => $request->grade,
-            'venue' => $request->venue,
-            'base_url' => ($file ? $file->id : ''),
-            'inscription_url' => $request->inscription_url,
-            'inscription_group_url' => $request->inscription_group_url,
-            'finish_at' => $request->finish_at,
-          ]);
-
-          return view('admin.math_olympics.create')->with([
-            'data' => $request,
-            'venueColegio' => VenueAcademia::all(),
-            'venueAcademia' => VenueColegio::all()
-          ]);
-        }
+        $file = $this->storeBaseRules($request);
       }
 
+      $new = new MathOlympics;
+      $new->title = $request->title;
+      $new->type = $request->type;
+      $new->grade = $request->grade;
+      $new->venue = $request->venue;
+
+      if(!empty($file))
+      {
+        $new->file_id = $file->id;
+      }
+
+      $new->inscription_url = $request->inscription_url;
+      $new->inscription_group_url = $request->inscription_group_url;
+      $new->finish_at = $request->finish_at;
+      $new->save();
+
+      return redirect()->route('math-olympics.index')->with('success', 'Creado correctamente');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function storeBaseRules($request)
     {
-        //
+      $mime = new Mime;
+      $file = new File;
+
+      $file->token              = date("Y-m", strtotime($request->finish_at)) . '-bases-' . str_slug($request->venue);
+      $file->type               = 'pdf';
+      $file->mime               = $request->file('base_url')->getMimeType();
+      $file->extension          = $mime->getExtension($request->file('base_url')->getMimeType());
+      $file->location_folder    = 'academia/documents/olimpiadas-matematicas';
+      $file->name               = 'Bases olimpiadas matemáticas ' . $request->venue;
+      $file->size               = $request->file('base_url')->getClientSize();
+      $file->save();
+
+      $request->file('base_url')->storeAs('public/' . $file->location_folder, $file->token. '.' . $file->extension);
+
+      return $file;
+    }
+
+    public function updateBaseRules($file, $request)
+    {
+      if($file){
+        $this->deleteBaseRules($file);
+      }
+      return $this->storeBaseRules($request);
+    }
+
+    public function deleteBaseRules($file)
+    {
+      Storage::delete('public/' . $file->location_folder . '/' . $file->token . '.' . $file->extension);
+      $file->delete();
     }
 
     /**
@@ -109,7 +116,11 @@ class MathOlympicsController extends Controller
      */
     public function edit($id)
     {
-        //
+      $olympic = MathOlympics::find($id);
+
+      return view('admin.math_olympics.edit')->with([
+        'olympic' => $olympic
+      ]);
     }
 
     /**
@@ -119,9 +130,33 @@ class MathOlympicsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreMathOlympics $request, $id)
     {
-        //
+      $data = $request->validated();
+
+      $olympic = MathOlympics::find($id);
+
+      if($request->file('base_url'))
+      {
+        $file = $this->updateBaseRules($olympic->baseRules, $request);
+      }
+
+      $olympic->title = $request->title;
+      $olympic->type = $request->type;
+      $olympic->grade = $request->grade;
+      $olympic->venue = $request->venue;
+
+      if(!empty($file))
+      {
+        $olympic->file_id = $file->id;
+      }
+
+      $olympic->inscription_url = $request->inscription_url;
+      $olympic->inscription_group_url = $request->inscription_group_url;
+      $olympic->finish_at = $request->finish_at;
+      $olympic->save();
+
+      return redirect()->action('Admin\MathOlympicsController@edit', $id)->with('success','Editado correctamente');
     }
 
     /**
@@ -132,6 +167,17 @@ class MathOlympicsController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $delete = MathOlympics::find($id);
+      $file   = $delete->baseRules;
+
+      $this->deleteBaseRules($file);
+
+      $delete->delete();
+      return redirect()->route('math-olympics.index')->with('success', 'Eliminado correctamente');
+    }
+
+    private function getBaseRules($result)
+    {
+      return storage_path('app/public/') . $result->location_folder . $result->token . '.' . $result->extension;
     }
 }

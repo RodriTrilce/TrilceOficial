@@ -143,9 +143,18 @@ flatpickr("#mo_finish",{
     dateFormat: "Y-m-d H:i:s",
 });
 
+window.secureDelete = function(form)
+{
+  return confirm('Seguro de querer eliminar?');
+}
 
 
-
-
-
-// xd
+var remove  = document.getElementById('math_olympics_bases_remove');
+if(remove){
+  remove.addEventListener('click', () => {
+    console.log(22)
+    document.getElementById('math_olympics_bases_div').innerHTML =  `<input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
+    <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>`;
+    remove.style.display = 'none';
+  });
+}

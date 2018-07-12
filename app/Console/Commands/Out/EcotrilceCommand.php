@@ -54,14 +54,7 @@ class EcotrilceCommand extends Command
               $count = Listdriver::where('id', '=', '2')->first();
 
               if(($count->count % 100) == 0
-                   || ($count->count == 10)
-                   || ($count->count == 5)
-                   || ($count->count == 25)
-                   || ($count->count == 35)
-                   || ($count->count == 50)
-                   || ($count->count == 70)
                    || ($count->count == 1)
-                   || ($count->count == 3)
                 ){
                 $franco = new \stdClass();
                 $franco->name = 'franco';

@@ -30,16 +30,11 @@ Route::get('/ecotrilce', 'Out\EcotrilceController@index');
 Auth::routes();
 
 Route::get('/admin', 'Admin\IndexController@index');
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function() {
+  Route::resource('/blog', 'BlogController');
+  Route::resource('/math-olympics', 'MathOlympicsController');
 
-  Route::get('/blog', 'BlogController@index');
-
-  Route::get('/blog/create', 'BlogController@create');
-  Route::post('/blog/create', 'BlogController@store');
-
-  Route::get('/math-olympics', 'MathOlympicsController@index');
-  Route::get('/math-olympics/create', 'MathOlympicsController@create');
-  Route::post('/math-olympics/create', 'MathOlympicsController@store');
 
 
 /*

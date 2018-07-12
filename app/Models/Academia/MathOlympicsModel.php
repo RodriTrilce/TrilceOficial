@@ -2,6 +2,7 @@
 namespace App\Models\Academia;
 
 use Illuminate\Database\Eloquent\Model;
+use Storage;
 
 class MathOlympicsModel extends Model
 {
@@ -20,6 +21,22 @@ class MathOlympicsModel extends Model
   public function results()
   {
     return $this->morphMany('App\Models\File', 'filesable');
+  }
+
+  public function baseRules()
+  {
+    return $this->hasOne('\App\Models\File', 'id', 'file_id');
+  }
+
+  public function getBaseRules()
+  {
+    $result = $this->baseRules;
+    if($result)
+    {
+      return Storage::url($result->location_folder . '/' . $result->token . '.' . $result->extension);
+    }else{
+      return false;
+    }
   }
 
 }

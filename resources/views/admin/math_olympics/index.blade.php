@@ -4,6 +4,12 @@
     <h1 class="h2">Olimpiadas Matemáticas</h1>
   </div>
 
+  @if(Session::has('success'))
+  <div class="alert alert-success" role="alert">
+    {{Session::get('success')}}</h3>
+  </div>
+  @endif
+
 <table class="table table-striped ">
   <thead class="thead-dark">
     <tr>
@@ -21,16 +27,16 @@
   <tbody>
     @foreach ($data as $key)
       <tr>
-        <th scope="row"><a href="/admin/math-olympics/edit/{{$key->id}}">{{$key->id}}</a></th>
-        <th>{{$key->finish_at}}</th>
+        <th scope="row">{{$key->id}}</th>
+        <td>{{$key->finish_at}}</td>
         <td>{{$key->venue}}</td>
-        <td>{{$key->title}}</td>
+        <td><a href="{{action('Admin\MathOlympicsController@edit', $key->id)}}">{{$key->title}}</a></td>
         <td>{{$key->grade}}</td>
         <td>
-          @if($key->base_url)
-            <a href="{{$key->base_url}}">Ver</a>
+          @if($key->file_id)
+            <a href="{{$key->file_id}}">Ver</a>
           @else
-            <a href="/admin/math-olympics/edit/{{$key->id}}">Añadir</a>
+            -
           @endif
         </td>
 
@@ -38,7 +44,7 @@
           @if($key->inscription_url)
             <a href="{{$key->inscription_url}}">Ver</a>
           @else
-            <a href="/admin/math-olympics/edit/{{$key->id}}">Añadir</a>
+            -
           @endif
         </td>
 
@@ -46,7 +52,7 @@
           @if($key->inscription_group_url)
             <a href="{{$key->inscription_group_url}}">Ver</a>
           @else
-            <a href="/admin/math-olympics/edit/{{$key->id}}">Añadir</a>
+            -
           @endif
         </td>
 
@@ -57,7 +63,7 @@
               <option value="">{{$k->name}}</option>
             @endforeach
           @else
-            <a href="/admin/math-olympics/edit/{{$key->id}}">Añadir</a>
+            -
           @endif
         </select>
       </td>

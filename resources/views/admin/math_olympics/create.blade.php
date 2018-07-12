@@ -4,9 +4,9 @@
     <h1 class="h2">Crear olimpiada matemática</h1>
   </div>
 
-@if(!empty($data))
+@if(Session::has('success'))
 <div class="alert alert-success" role="alert">
-  <strong>{{$data->title}}</strong> creado correctamente.</h3>
+  {{Session::get('success')}}</h3>
 </div>
 @endif
 
@@ -20,7 +20,7 @@
   </div>
 @endif
 
-  <form method="post" action="/admin/math-olympics/create" enctype="multipart/form-data">
+  <form method="post" action="/admin/math-olympics" enctype="multipart/form-data">
     {{ csrf_field() }}
 
     <div class="form-group">

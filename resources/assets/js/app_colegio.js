@@ -6,7 +6,7 @@
 
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
-import { tns } from 'tiny-slider/src/tiny-slider.module.js';
+import { tns } from 'tiny-slider/src/tiny-slider';
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",

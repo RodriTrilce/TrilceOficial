@@ -22,7 +22,7 @@
         <div class="col-xs-12 math-olympic-title">{{$v->venue}}</div>
 
         <div class="row col-xs-12 col-sm col-md-7 math-olympic-content">
-          <div class="col-xs-2 "><span class="a">{{ Date::parse($v->created_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->created_at)) }}</span></div>
+          <div class="col-xs-2 "><span class="a">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->finish_at)) }}</span></div>
           <div class="col-xs-7 col-sm-8">{{$v->title}}</div>
           <div class="col-xs">{{$v->grade}}</div>
         </div>

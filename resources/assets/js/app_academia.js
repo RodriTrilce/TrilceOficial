@@ -6,7 +6,7 @@
 
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
-import { tns } from 'tiny-slider/src/tiny-slider.module'
+import { tns } from 'tiny-slider/src/tiny-slider.module.js'
 import 'datalist-polyfill/datalist-polyfill'
 import VanillaModal from 'vanilla-modal';
 

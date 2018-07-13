@@ -13,11 +13,13 @@ class ListaDriver extends Migration
    */
   public function up()
   {
+/*
       Schema::create('lista_driver', function (Blueprint $table) {
           $table->increments('id');
           $table->integer('count')->default('0');
           $table->timestamps();
       });
+*/
   }
 
   /**

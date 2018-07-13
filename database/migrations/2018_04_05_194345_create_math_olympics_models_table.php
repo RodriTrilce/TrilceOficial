@@ -17,9 +17,9 @@ class CreateMathOlympicsModelsTable extends Migration
             $table->increments('id');
             $table->enum('type', ['colegio', 'academia'])->default('academia');
             $table->string('venue');
+            $table->integer('file_id')->nullable();
             $table->string('title');
             $table->string('grade');
-            $table->integer('base_url')->nullable();
             $table->string('inscription_url')->nullable();
             $table->string('inscription_group_url')->nullable();
             $table->timestamps('finish_at')->nullable();

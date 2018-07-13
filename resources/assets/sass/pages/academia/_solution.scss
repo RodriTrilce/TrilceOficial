@@ -5,6 +5,53 @@
   }
 }
 
+.solution-table-pucp{
+  tbody{
+    tr{
+      &:nth-child(odd){
+        td:first-child{
+          color:  $orange;
+          font-weight: bold;
+        }
+      }
+
+
+    tr{
+      &:nth-child(4n+1), &:nth-child(4n+2){
+        td:first-child{
+          color: $gray !important;
+          font-weight: normal !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.solution-table-double{
+  tbody{
+
+    tr{
+      &:nth-child(4n+1), &:nth-child(4n+2){
+        td:first-child{
+          color:  $orange;
+          font-weight: bold;
+        }
+
+        @include breakpoint(baby){
+          td:first-child{
+            color:  $gray;
+            font-weight: normal;
+          }
+        }
+      }
+
+    }}
+  }
+
+
 .solution-table-content{
   thead{
     th{
@@ -13,19 +60,8 @@
   }
 
   tbody{
-    tr:nth-child(odd){
-
-    }
 
     tr{
-      &:nth-child(odd){
-        td:first-child{
-          color:  $orange;
-          font-weight: bold;
-        }
-        @include breakpoint(baby){
-        }
-      }
 
       @include breakpoint(baby){
         td:first-child{

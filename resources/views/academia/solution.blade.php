@@ -71,7 +71,7 @@
       @include('academia.partials.solution.pucp')
       @break
   @endswitch
-
+{{--
   <div class="row col-xs-12 center-xs pagination-container">
     <ul class="pagination" role="navigation">
       <li class="page-item"><a class="page-link" href="#" rel="prev" aria-label="&laquo; Anterior">&lsaquo;</a></li>
@@ -80,7 +80,7 @@
       <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item"><a class="page-link" href="#" rel="next" aria-label="Siguiente &raquo;">&rsaquo;</a></li>
     </ul>
-  </div>
+  </div> --}}
 
   @include('academia.partials.card_bottom')
 @endsection

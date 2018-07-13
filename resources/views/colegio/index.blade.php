@@ -6,8 +6,10 @@
 @section('content')
 
   <div class="index-banners">
-    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('colegio/banners/02071800.jpg')}}" alt="#"></a></div>
-    <div><a href="http://google.com/" target="_blank"><img src="{{Storage::url('colegio/banners/02071801.jpg')}}" alt="#"></a></div>
+    <div><a href="http://www.trilce.edu.pe/colegios/inscripcion-admision2019/" target="_blank"><img src="{{Storage::url('colegio/banners/13071803.png')}}" alt=""></a></div>
+    <div><a href="https://www.facebook.com/ColegioTrilce/videos/2145054952176570/" target="_blank"><img src="{{Storage::url('colegio/banners/13071800.png')}}" alt=""></a></div>
+    <div><a href="/colegio/propuesta-educativa" target="_blank"><img src="{{Storage::url('colegio/banners/13071801.png')}}" alt=""></a></div>
+    <div><img src="{{Storage::url('colegio/banners/13071802.png')}}" alt=""></div>
   </div>
 
   <div class="nuevos-i container-base">

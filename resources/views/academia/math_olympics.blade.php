@@ -29,9 +29,9 @@
 
         <div class="row col-xs-12 col-sm col-md">
           <ul class="math-olympic-list">
-            <li {!! ($v->file_id!==''?'class="active"':'') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
-            <li {!! ($v->inscription_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
-            <li {!! ($v->inscription_group_url!==''?'class="active"':'') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
+            <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
+            <li {!! ($v->inscription_url ? 'class="active"' : '') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
+            <li {!! ($v->inscription_group_url ? 'class="active"' : '') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
             <li><a href="" target="_blank">Resultados</a></li>
           </ul>
         </div>

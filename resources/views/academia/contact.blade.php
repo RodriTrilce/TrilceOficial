@@ -40,7 +40,6 @@
         <ul class="contant-info-ul">
           <li>Central Telefónica: 619-8100</li>
           <li>Correo: atencionalcliente@trilce.edu.pe</li>
-          <li>Ubíquenos en nuestras Sedes</li>
         </ul>
 
         <br />

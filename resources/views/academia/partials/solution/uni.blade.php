@@ -51,8 +51,8 @@
           <tr>
             <td data-label=""> Año 2013 - 2</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-ii-cultura-general-y-aptitud-academica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
-            <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-i-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
-            <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-i-fisica-y-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
+            <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-ii-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
+            <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-ii-fisica-y-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>

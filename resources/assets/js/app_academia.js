@@ -508,6 +508,7 @@ function preparation()
     this.selectVenue  = document.getElementById('beginning-venue');
     this.selectTurn   = document.getElementById('beginning-turn');
     this.paintable    = document.getElementById('drawTables');
+    this.work         = false;
 
     this.hear();
   }
@@ -542,21 +543,35 @@ function preparation()
 
   this.response = function(type)
   {
+    this.selectCycle.disabled = true;
+    this.selectVenue.disabled = true;
+    this.selectTurn.disabled  = true;
+
     var valueCycle  = this.selectCycle.options[this.selectCycle.selectedIndex].value;
     var valueVenue  = this.selectVenue.options[this.selectVenue.selectedIndex].value;
     var valueTurn   = this.selectTurn.options[this.selectTurn.selectedIndex].value;
 
-    this.drawLoading();
+    if(this.work === false){
+      this.drawLoading();
+      this.work = true;
 
-    post('/api/academia/beginnings', `university=${this.university}&combo=${type}&venue=${valueVenue}&cycle=${valueCycle}&turn=${valueTurn}`).then(
-        response  => this.responseAction(response),
-        error     => console.log('error')
-      );
+      post('/api/academia/beginnings', `university=${this.university}&combo=${type}&venue=${valueVenue}&cycle=${valueCycle}&turn=${valueTurn}`).then(
+          response  => this.responseAction(response),
+          error     => console.log('error')
+        );
+    }
+
   }
 
   this.responseAction = function(data)
   {
     setTimeout(function(){
+      this.work                 = false;
+      this.selectCycle.disabled = false;
+      this.selectVenue.disabled = false;
+      this.selectTurn.disabled  = false;
+
+
       data = JSON.parse(data);
 
       if(Object.keys(data).length){
@@ -565,11 +580,12 @@ function preparation()
           this.paintable.innerHTML = `<p class="beginning-no-results">No se encontraron resultados<p>`;
       }
 
-    }.bind(this), 3000);
+    }.bind(this), 2000);
   }
 
   this.drawLoading = function()
   {
+/*
     this.paintable.innerHTML = `
       <div class="loading-trilce">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -587,6 +603,18 @@ function preparation()
           <polygon class="loading-trilce-polygon" style="filter:url(#dropshadow)" fill="#000000" points='0 0 0 22.6 14.6 22.6 14.6 16.7 36.9 16.7 36.9 85.7 30.2 85.7 30.2 100.3 61.8 100.3 61.8 85.7 55.1 85.7 55.1 16.7 77.4 16.7 77.4 22.6 91.9 22.6 91.9 0 0 0' fill='#f4633a'/>
         </svg>
       </div>`;
+*/
+    this.paintable.innerHTML = `
+    <div id="loader-wrapper" style="visibility:visible !important; position: initial !important; margin-bottom: 10px;">
+      <div id="loader" style="opacity:1 !important;">
+      </div>
+      <div class="loader-trilce" style="opacity:1!important;">
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.9 100.3'>
+          <polygon points='0 0 0 22.6 14.6 22.6 14.6 16.7 36.9 16.7 36.9 85.7 30.2 85.7 30.2 100.3 61.8 100.3 61.8 85.7 55.1 85.7 55.1 16.7 77.4 16.7 77.4 22.6 91.9 22.6 91.9 0 0 0' fill='#f4633a'/></svg>
+        </div>
+    </div>
+    `;
+
   }
 
   this.draw = function(data)

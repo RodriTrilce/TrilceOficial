@@ -22,7 +22,7 @@ class CreateMathOlympicsModelsTable extends Migration
             $table->string('grade');
             $table->string('inscription_url')->nullable();
             $table->string('inscription_group_url')->nullable();
-            $table->timestamps('finish_at');
+            $table->timestamps('finish_at')->nullable();
             $table->timestamps();
         });
     }

@@ -23,6 +23,7 @@
   <form method="post" action="{{ route('math-olympics.update',$olympic->id) }}" enctype="multipart/form-data">
     {{ csrf_field() }}
     <input name="_method" type="hidden" value="PATCH">
+    <input name="state_base" id="base_url_counter" type="hidden" value="0">
 
     <div class="form-group">
       <label for="create_title">Titulo</label>
@@ -46,8 +47,8 @@
       @if($olympic->file_id)
         <div class="row col" id="math_olympics_bases_div">
           <a href="{{$olympic->getBaseRules()}}" target="_blank" class="btn btn-info">VER PDF</a>
-        </div>
-        <a href="javascript:void(0);" id="math_olympics_bases_remove">Quitar PDF y añadir nuevo</a>
+        </div>-
+        <a href="javascript:void(0);" id="math_olympics_bases_remove">Eliminar PDF</a>
       @else
         <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
         <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>
@@ -77,6 +78,52 @@
   </form>
 
   <hr>
+
+  <h3>Resultados</h3>
+
+  <div class="row results-tables">
+      @foreach ($olympic->results as $result)
+        <div class="row col-12">
+          <div class="col-6">{{$result->name}}</div>
+          <div class="col-6">
+            <form action="{{action('Admin\MathOlympicsResultsController@destroy', $result->id)}}" method="post" onsubmit="return secureDelete(this);">
+              {{csrf_field()}}
+              <input name="_method" type="hidden" value="DELETE">
+              <input type="hidden" name="matholympic_id" value="{{$olympic->id}}">
+              <input type="hidden" name="result_id" value="{{$result->id}}">
+              <div class="col-6"><button class="btn btn-link" type="submit">✖ Eliminar</button></div>
+            </form>
+          </div>
+        </div>
+      @endforeach
+      @if(count($olympic->results) < 1)
+        No hay resultados
+      @endif
+  </div>
+
+
+    <form action="{{action('Admin\MathOlympicsResultsController@store')}}" method="post" id="result_save_form" enctype="multipart/form-data">
+      {{csrf_field()}}
+      <input type="hidden" name="matholympic_id" value="{{$olympic->id}}">
+      <div class="row results-tables" id="results_content">
+      </div>
+    </form>
+
+<div class="row col-6">
+
+  <div class="col-6">
+    <div class="form-group">
+     <button class="btn btn-link" id="result_newresult" type="button">Nuevo resultado</button>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-group">
+     <button class="btn btn-link" id="result_save" type="submit">Guardar</button>
+    </div>
+  </div>
+
+</div>
 
 <div class="row">
   <div class="col text-right">

@@ -6,15 +6,15 @@
       </div>
       <div class="col-sm-6 xs-hide"></div>
     </div>
-    
+
     <div class="row col-xs-11 center-xs footer-menu">
       <div class="col-xs start-xs links">
         <ul>
             <li><a href="/colegio">Trilce Colegio</a></li>
             <li><a href="/academia">Trilce Academia</a></li>
-            <li><a href="#">Vacaciones útiles</a></li>
-            <li><a href="#">Menú</a></li>
-            <li><a href="#">Trabaja con nosotros</a></li>
+            {{-- <li><a href="#">Vacaciones útiles</a></li> --}}
+            <li><a href="/storage/other/documents/menu/2018/menu-julio.pdf">Menú</a></li>
+            {{-- <li><a href="#">Trabaja con nosotros</a></li> --}}
         </ul>
       </div>
       <div class="col-xs end-xs">
@@ -28,7 +28,7 @@
           </ul>
       </div>
     </div>
-    
+
     <div class="col-xs-12 center-xs footer-bottom">
       © {{date("Y")}} Trilce Colegio y Academia. Todos los derechos reservados
     </div>

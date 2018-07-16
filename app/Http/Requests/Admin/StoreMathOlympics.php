@@ -34,6 +34,7 @@ class StoreMathOlympics extends FormRequest
         'inscription_group_url' => 'nullable'
       ];
     }
+    
     public function attributes()
     {
         return [

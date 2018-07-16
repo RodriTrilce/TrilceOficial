@@ -36,7 +36,7 @@ class MathOlympicsController extends Controller
     public function create()
     {
       return view('admin.math_olympics.create')->with([
-        'venueColegio' => VenueAcademia::all(),
+        'venueColegio'  => VenueAcademia::all(),
         'venueAcademia' => VenueColegio::all()
       ]);
     }
@@ -117,7 +117,7 @@ class MathOlympicsController extends Controller
     public function edit($id)
     {
       $olympic = MathOlympics::find($id);
-
+      
       return view('admin.math_olympics.edit')->with([
         'olympic' => $olympic
       ]);
@@ -134,13 +134,20 @@ class MathOlympicsController extends Controller
     {
       $data = $request->validated();
 
+
       $olympic = MathOlympics::find($id);
 
       if($request->file('base_url'))
       {
         $file = $this->updateBaseRules($olympic->baseRules, $request);
       }
-
+/*
+      if(isset($request->file('base_url'))){
+        echo 'ELIMINAR !!!';
+        die;
+        $this->deleteBaseRules($olympic->baseRules);
+      }
+*/
       $olympic->title = $request->title;
       $olympic->type = $request->type;
       $olympic->grade = $request->grade;

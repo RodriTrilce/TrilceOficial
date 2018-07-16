@@ -210,3 +210,18 @@ $gris     : #53565a;
     visibility: visible;
   }
 }
+
+
+.results-tables{
+  >.row{
+    padding: 5px;
+
+    >.col-6:first-child{
+      align-self: center;
+    }
+
+    &:nth-child(odd){
+      background: #e9ecef;
+    }
+  }
+}

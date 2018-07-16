@@ -571,7 +571,6 @@ function preparation()
       this.selectVenue.disabled = false;
       this.selectTurn.disabled  = false;
 
-
       data = JSON.parse(data);
 
       if(Object.keys(data).length){
@@ -580,7 +579,7 @@ function preparation()
           this.paintable.innerHTML = `<p class="beginning-no-results">No se encontraron resultados<p>`;
       }
 
-    }.bind(this), 2000);
+    }.bind(this), 900000);
   }
 
   this.drawLoading = function()
@@ -614,7 +613,6 @@ function preparation()
         </div>
     </div>
     `;
-
   }
 
   this.draw = function(data)

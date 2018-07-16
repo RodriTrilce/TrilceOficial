@@ -62,10 +62,10 @@
             @foreach ($key->results as $k)
               <option value="">{{$k->name}}</option>
             @endforeach
+          </select>
           @else
             -
           @endif
-        </select>
       </td>
       </tr>
     @endforeach

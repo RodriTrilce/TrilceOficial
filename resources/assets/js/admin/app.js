@@ -20,9 +20,6 @@ function createImage(input) {
     reader.readAsDataURL(input.files[0]);
 }
 
-
-
-
 function manageImages(){
 
   this.init = function()
@@ -107,8 +104,8 @@ function manageImages(){
   }
 
   this.iterateDrawImg = function(elem, img){
-    var image = new FileReader();
-    var img = document.createElement("img");
+    var image     = new FileReader();
+    var img       = document.createElement("img");
     image.onload = function(e){
       img.src = e.target.result;
     };
@@ -143,18 +140,50 @@ flatpickr("#mo_finish",{
     dateFormat: "Y-m-d H:i:s",
 });
 
-window.secureDelete = function(form)
-{
-  return confirm('Seguro de querer eliminar?');
-}
-
+window.secureDelete = form => confirm('Seguro de querer eliminar?');
 
 var remove  = document.getElementById('math_olympics_bases_remove');
+
 if(remove){
   remove.addEventListener('click', () => {
-    console.log(22)
-    document.getElementById('math_olympics_bases_div').innerHTML =  `<input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
+    //remove.style.display = 'none';
+    document.getElementById('math_olympics_bases_div').innerHTML =  `
+    <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
     <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>`;
-    remove.style.display = 'none';
+
+    var b = document.getElementById('create_bases');
+    b.addEventListener('change', function(){
+      if(b.name){
+        remove.style.display = 'none';
+      }
+    })
+
+    //document.getElementById('base_url_counter').value = 1;
+
   });
 }
+
+
+
+(function(){
+  const resultAdd     = document.getElementById('result_newresult');
+  var resultContent   = document.getElementById('results_content');
+  if(resultAdd){
+    console.log(22)
+    resultAdd.addEventListener('click', function(){
+      resultContent.insertAdjacentHTML('beforeend', `
+
+      <div class="row col-12">
+        <div class="col-6"><input type="text" name="file_name[]" placeholder="Grados del resultado"></div>
+        <div class="col-6"><input type="file" name="file_type[]"></div>
+      </div>
+
+      `);
+    });
+
+    document.getElementById('result_save').addEventListener('click', function(){
+      document.getElementById('result_save_form').submit();
+    });
+
+  }
+})();

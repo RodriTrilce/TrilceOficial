@@ -49,41 +49,10 @@ function manageImages()
     this.images.addEventListener('change', input => Array.from(input.target.files).forEach(this.iterate.bind(this)) );
   }
 
-  this.hearDelete = function(){
-    /*
-        document.addEventListener('click', function (event) {
-        	// If the event target doesn't match bail
-        	if (event.target.classList.contains('img_delete')){
-              event.stopPropagation();
-
-              var nlist = Array.from(document.getElementById('imagesMulti').files);
-
-              var xlist = new FormData();
-
-              nlist.forEach((file,i) => {
-                if(event.target.parentElement.id === "__item_" + this.slug(file.name)){
-                  //nlist = nlist.splice(i, 1)
-                  xlist.append(i, file)
-                }
-
-                console.log(file);
-
-              }, true);
-
-    //          document.getElementById('imagesMulti').files = xlist;
-
-              event.target.parentElement.remove();
-          }
-
-        }.bind(this));
-    */
-  }
-
   this.iterate = function(elem)
   {
     let name = elem.name;
     this.iterateDraw(elem);
-    this.hearDelete();
   }
 
   this.iterateDraw = function(elem)

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\BlogCreateRequest as BlogCreateRequest;
 use App\Models\Post;
 use Purifier;
+use Storage;
 
 class BlogController extends Controller
 {
@@ -22,7 +23,7 @@ class BlogController extends Controller
 
     public function store(Request $request)
     {
-
+      dd($request);
       $request->validated();
 
       $post = new Post;
@@ -34,6 +35,12 @@ class BlogController extends Controller
 
       if($request->marker) $post->marker = $request->marker;
       if($request->visible) $post->visible = $request->visible;
+
+      if($request->file('image')){
+        foreach ($request->file('image') as $image) {
+          
+        }
+      }
 
       $post->save();
 

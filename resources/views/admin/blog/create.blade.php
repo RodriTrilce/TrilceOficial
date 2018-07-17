@@ -15,7 +15,7 @@
 @endif
 
 @if($mode == 'new')
-  <form method="post" action="">
+  <form method="post" action="/admin/blog" enctype="multipart/form-data">
     {{ csrf_field() }}
 
     <div class="form-group">
@@ -55,7 +55,7 @@
      </div>
 
      <div class="form-group">
-       <input type='file' id="imagesMulti" name="image[]" multiple />
+       <input type='file' id="imagesMulti" name="image[]" accept="image/*" multiple />
        <div class="showimages"></div>
      </div>
 

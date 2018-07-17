@@ -101,13 +101,12 @@
       @endif
   </div>
 
-
-    <form action="{{action('Admin\MathOlympicsResultsController@store')}}" method="post" id="result_save_form" enctype="multipart/form-data">
-      {{csrf_field()}}
-      <input type="hidden" name="matholympic_id" value="{{$olympic->id}}">
-      <div class="row results-tables" id="results_content">
-      </div>
-    </form>
+  <form action="{{action('Admin\MathOlympicsResultsController@store')}}" method="post" id="result_save_form" enctype="multipart/form-data">
+    {{csrf_field()}}
+    <input type="hidden" name="matholympic_id" value="{{$olympic->id}}">
+    <div class="row results-tables" id="results_content">
+    </div>
+  </form>
 
 <div class="row col-6">
 

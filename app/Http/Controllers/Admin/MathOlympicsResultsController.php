@@ -41,6 +41,8 @@ class MathOlympicsResultsController extends Controller
 
         $i++;
       }
+
+      return redirect()->action('Admin\MathOlympicsController@edit', $request->matholympic_id)->with('success', 'Subido correctamente');
     }
 
     /**
@@ -52,7 +54,7 @@ class MathOlympicsResultsController extends Controller
     public function destroy(Request $request)
     {
         $file = File::where('id', $request->result_id)->first();
-        Storage::delete('public/' . $file->location_folder . $file->token . '.' . $file->extension);
+        Storage::delete('public/' . $file->location_folder . '/' . $file->token . '.' . $file->extension);
         $file->delete();
 
         return redirect()->action('Admin\MathOlympicsController@edit', $request->matholympic_id)->with('success','Resultado eliminado correctamente');

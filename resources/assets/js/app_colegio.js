@@ -124,12 +124,9 @@ var get = (url) => {
    });
 
   // Loader wrap
-  window.onload = function()
-  {
-   setTimeout(function(){
-     document.body.className += ' loaded'
-   }, 1000)
-  }
+ setTimeout(function(){
+   document.body.className += ' loaded'
+ }, 1000)
 
  })();
 

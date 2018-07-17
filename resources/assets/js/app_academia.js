@@ -4,7 +4,6 @@
  * Released under the Trilce Group.
  */
 
-// Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
 import 'datalist-polyfill/datalist-polyfill'
@@ -149,7 +148,8 @@ var post = (url, data) => {
   });
 }
 
-function enrollment(nextBtn,prevBtn,form, type){
+function enrollment(nextBtn,prevBtn,form, type)
+{
   this.currentTab   = 0;
   this.nextBtn      = nextBtn;
   this.prevBtn      = prevBtn;
@@ -500,10 +500,8 @@ function enrollment(nextBtn,prevBtn,form, type){
 
 }
 
-
 function preparation()
 {
-
   this.init = function()
   {
     this.university   = document.getElementById('_university').value;
@@ -587,25 +585,25 @@ function preparation()
 
   this.drawLoading = function()
   {
-/*
-    this.paintable.innerHTML = `
-      <div class="loading-trilce">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="100px" height="100px" viewBox='0 0 91.9 100.3' xml:space="preserve">
-          <filter id="dropshadow" height="130%">
-            <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
-            <feOffset dx="0" dy="0" result="offsetblur"/>
-            <feFlood flood-color="#f4633a"/>
-            <feComposite in2="offsetblur" operator="in"/>
-            <feMerge>
-              <feMergeNode/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
-          <polygon class="loading-trilce-polygon" style="filter:url(#dropshadow)" fill="#000000" points='0 0 0 22.6 14.6 22.6 14.6 16.7 36.9 16.7 36.9 85.7 30.2 85.7 30.2 100.3 61.8 100.3 61.8 85.7 55.1 85.7 55.1 16.7 77.4 16.7 77.4 22.6 91.9 22.6 91.9 0 0 0' fill='#f4633a'/>
-        </svg>
-      </div>`;
-*/
+    /*
+        this.paintable.innerHTML = `
+          <div class="loading-trilce">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="100px" height="100px" viewBox='0 0 91.9 100.3' xml:space="preserve">
+              <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
+                <feOffset dx="0" dy="0" result="offsetblur"/>
+                <feFlood flood-color="#f4633a"/>
+                <feComposite in2="offsetblur" operator="in"/>
+                <feMerge>
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <polygon class="loading-trilce-polygon" style="filter:url(#dropshadow)" fill="#000000" points='0 0 0 22.6 14.6 22.6 14.6 16.7 36.9 16.7 36.9 85.7 30.2 85.7 30.2 100.3 61.8 100.3 61.8 85.7 55.1 85.7 55.1 16.7 77.4 16.7 77.4 22.6 91.9 22.6 91.9 0 0 0' fill='#f4633a'/>
+            </svg>
+          </div>`;
+    */
     this.paintable.innerHTML = `
     <div id="loader-wrapper" style="visibility:visible !important; position: initial !important; margin-bottom: 10px;">
       <div id="loader" style="opacity:1 !important;">
@@ -685,7 +683,6 @@ function preparation()
    nav: false,
    autoplayHoverPause: true,
    loop: false
-  //  lazyload: true
   });
 
   // For enrollment finish modal
@@ -695,8 +692,7 @@ function preparation()
  }
 
 /**!
-  *
-  *
+  * Preparation
   */
   if(page == 'preparation'){
     var init_preparation = new preparation();
@@ -788,12 +784,10 @@ function preparation()
 
 /**!
  *  Contact
- */
-(function(){
- if(page !== 'contact'){ return false;}
- Validation.init(document.forms[0], true);
-})();
-
+ */ 
+  if(page !== 'contact'){
+   Validation.init(document.forms[0], true);
+  }
 
 
 /*

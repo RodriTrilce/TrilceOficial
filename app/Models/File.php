@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Storage;
 
 class File extends Model
 {
@@ -25,5 +26,10 @@ class File extends Model
   public function filesable()
   {
     return $this->morphTo();
+  }
+
+  public function fileUrl()
+  {
+    return Storage::url($this->location_folder . '/' . $this->token . '.' . $this->extension);
   }
 }

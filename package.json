@@ -31,6 +31,7 @@
     "flatpickr": "^4.5.1",
     "jquery-datetimepicker": "^2.5.20",
     "line-awesome": "github:icons8/line-awesome",
+    "slim-select": "^1.16.0",
     "tiny-slider": "^2.7.4",
     "vanilla-modal": "^1.6.5",
     "vue": "^2.5.16",

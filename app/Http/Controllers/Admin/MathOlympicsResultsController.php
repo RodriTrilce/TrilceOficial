@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\File;
 use App\Models\Academia\MathOlympicsModel as MathOlympics;
+use \Mimey\MimeTypes as Mime;
 use Storage;
 
 class MathOlympicsResultsController extends Controller
@@ -18,34 +19,28 @@ class MathOlympicsResultsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-
       $result = MathOlympics::find($request->matholympic_id);
-      dd($result);
-/*
-      $result->results()->create[
-
-      ];
-*/
-    }
-
-
-    public function storeFile($request)
-    {
       $mime = new Mime;
-      $file = new File;
 
-      $file->token              = date("Y-m", strtotime($request->finish_at)) . '-bases-' . str_slug($request->venue);
-      $file->type               = 'pdf';
-      $file->mime               = $request->file('base_url')->getMimeType();
-      $file->extension          = $mime->getExtension($request->file('base_url')->getMimeType());
-      $file->location_folder    = 'academia/documents/olimpiadas-matematicas';
-      $file->name               = 'Bases olimpiadas matemáticas ' . $request->venue;
-      $file->size               = $request->file('base_url')->getClientSize();
-      $file->save();
+      $i=0;
+      foreach ($request->file('file_type') as $uploadme) {
+        $token            = 'resultados-' . str_slug($result->venue) . '-' . str_slug($request->file_name[$i]);
+        $location_folder  = 'academia/documents/olimpiadas-matematicas/resultados';
 
-      $request->file('base_url')->storeAs('public/' . $file->location_folder, $file->token. '.' . $file->extension);
+        $uploadme->storeAs('public/' . $location_folder, $token. '.' . $mime->getExtension($uploadme->getMimeType()));
 
-      return $file;
+        $result->results()->create([
+          'token'           => $token,
+          'type'            => 'pdf',
+          'mime'            => $uploadme->getMimeType(),
+          'extension'       => $mime->getExtension($uploadme->getMimeType()),
+          'location_folder' => $location_folder,
+          'name'            => $request->file_name[$i],
+          'size'            => $uploadme->getClientSize()
+        ]);
+
+        $i++;
+      }
     }
 
     /**

@@ -53,13 +53,16 @@
 
   .active{
     font-weight: bold;
+    pointer-events: all;
   }
 
   li{
-    display: inline;
+    display: flex;
+    align-items: center;
     margin-right: 15px;
-    padding-left: 14px;
+//    padding-left: 14px;
     font-size: 0.8rem;
+    pointer-events: none;
 
     @include breakpoint(baby){
       margin-left: 7px;

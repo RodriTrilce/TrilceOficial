@@ -16,7 +16,7 @@
 
   <div class="row center-xs center-sm math-olympic">
     <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 text-init math-olympic-table">
-      @foreach ($data as $key => $v)
+      @foreach ($data as $v)
       <div class="row col-xs">
 
         <div class="col-xs-12 math-olympic-title">{{$v->venue}}</div>
@@ -32,7 +32,18 @@
             <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
             <li {!! ($v->inscription_url ? 'class="active"' : '') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
             <li {!! ($v->inscription_group_url ? 'class="active"' : '') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
-            <li><a href="" target="_blank">Resultados</a></li>
+            <li {!! (count($v->results) ? 'class="active"' : '') !!}>
+              @if(count($v->results))
+                <select id="result_{{$v->id}}">
+                  <option >Resultados</option>
+                  @foreach ($v->results as $result)
+                    <option data-url="{{$result->fileUrl()}}">{{$result->name}}</option>
+                  @endforeach
+                </select>
+              @else
+                <a href="" target="_blank">Resultados</a>
+              @endif
+            </li>
           </ul>
         </div>
 
@@ -91,11 +102,26 @@
     </div>
   </div>
 
-
   @include('academia.partials.card_bottom')
 @endsection
 
 @section('scripts')
     page = 'math_olympics';
   @parent
+<script>
+    var conf = function(id)
+    {
+      return {
+        select: '#result_' + id,
+        showSearch: false,
+        beforeOnChange: info => {window.open(info.data.url); return false;}
+      };
+    }
+    @foreach ($data as $v)
+      @if(count($v->results))
+        new SlimSelect( conf( {{$v->id}} ) );
+      @endif
+    @endforeach
+</script>
+
 @endsection

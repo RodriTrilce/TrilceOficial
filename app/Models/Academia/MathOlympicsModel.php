@@ -31,8 +31,8 @@ class MathOlympicsModel extends Model
   public function getBaseRules()
   {
     $result = $this->baseRules;
-    if($result)
-    {
+    
+    if($result){
       return Storage::url($result->location_folder . '/' . $result->token . '.' . $result->extension);
     }else{
       return false;

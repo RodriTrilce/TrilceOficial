@@ -9,6 +9,9 @@ import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
 import 'datalist-polyfill/datalist-polyfill'
 import VanillaModal from 'vanilla-modal';
+import SlimSelect from 'slim-select'
+
+window.SlimSelect = SlimSelect;
 
 // Constants
 const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/matricula-en-linea/descargar-pdf'

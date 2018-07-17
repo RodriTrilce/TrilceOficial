@@ -1,3 +1,11 @@
+import flatpickr from "flatpickr";
+import { Spanish } from "flatpickr/dist/l10n/es.js"
+
+import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
+import $ from "jquery"
+
+window.$ = $;
+
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
 }
@@ -10,7 +18,10 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     }
 }
 
-function createImage(input) {
+window.secureDelete = form => confirm('Seguro de querer eliminar?');
+
+function createImage(input)
+{
     var reader = new FileReader();
     reader.onload = function (e) {
       $('#blah')
@@ -20,7 +31,8 @@ function createImage(input) {
     reader.readAsDataURL(input.files[0]);
 }
 
-function manageImages(){
+function manageImages()
+{
 
   this.init = function()
   {
@@ -125,13 +137,19 @@ function manageImages(){
   }
 }
 
-var run = new manageImages;
-run.init();
 
+if(page == 'blog_create'){
+  $(function() {
+    $('#create_content').froalaEditor({
+      height: 300,
+      toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-', 'insertLink', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html']
+    });
+  });
 
+  var run = new manageImages;
+  run.init();
+}
 
-import flatpickr from "flatpickr";
-import { Spanish } from "flatpickr/dist/l10n/es.js"
 
 flatpickr.localize(Spanish);
 
@@ -140,13 +158,11 @@ flatpickr("#mo_finish",{
     dateFormat: "Y-m-d H:i:s",
 });
 
-window.secureDelete = form => confirm('Seguro de querer eliminar?');
 
 var remove  = document.getElementById('math_olympics_bases_remove');
 
 if(remove){
   remove.addEventListener('click', () => {
-    //remove.style.display = 'none';
     document.getElementById('math_olympics_bases_div').innerHTML =  `
     <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
     <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>`;
@@ -156,34 +172,26 @@ if(remove){
       if(b.name){
         remove.style.display = 'none';
       }
-    })
-
-    //document.getElementById('base_url_counter').value = 1;
+    });
 
   });
 }
 
-
-
 (function(){
   const resultAdd     = document.getElementById('result_newresult');
   var resultContent   = document.getElementById('results_content');
+
   if(resultAdd){
-    console.log(22)
     resultAdd.addEventListener('click', function(){
       resultContent.insertAdjacentHTML('beforeend', `
-
-      <div class="row col-12">
-        <div class="col-6"><input type="text" name="file_name[]" placeholder="Grados del resultado"></div>
-        <div class="col-6"><input type="file" name="file_type[]"></div>
-      </div>
-
+        <div class="row col-12">
+          <div class="col-6"><input type="text" name="file_name[]" placeholder="Grados del resultado"></div>
+          <div class="col-6"><input type="file" name="file_type[]"></div>
+        </div>
       `);
     });
 
-    document.getElementById('result_save').addEventListener('click', function(){
-      document.getElementById('result_save_form').submit();
-    });
-
+    document.getElementById('result_save').addEventListener('click', () => document.getElementById('result_save_form').submit());
   }
+
 })();

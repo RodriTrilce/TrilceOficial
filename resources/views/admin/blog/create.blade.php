@@ -72,13 +72,6 @@
 @endsection
 
 @section('scripts')
-
-    $(function() {
-        $('#create_content').froalaEditor({
-          height: 300,
-          toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-', 'insertLink', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html']
-
-        })
-      });
+  var page = 'blog_create'
   @parent
 @endsection

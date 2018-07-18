@@ -217,7 +217,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Image' => Intervention\Image\Facades\Image::class,
-
+        'Str' => Illuminate\Support\Str::class,
 
     ],
 

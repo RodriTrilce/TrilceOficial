@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Models;
-use App\User;
-use App\Models\File;
-
 use Illuminate\Database\Eloquent\Model;
+use App\Models\File;
+use App\Models\GalleryBlogModel;
 
 class Post extends Model
 {
@@ -36,10 +35,18 @@ class Post extends Model
    */
   public function user()
   {
-    return $this->belongsTo('User');
+    return $this->belongsTo('App\User');
   }
 
+  public function blogGallery()
+  {
+    return $this->hasOne('App\Models\GalleryBlogModel');
+  }
 
+  public function blogFile()
+  {
+    return $this->hasOne('App\Models\File', 'id', 'file_id');
+  }
 
 /*
   public function getMarkerImage()

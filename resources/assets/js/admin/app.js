@@ -65,7 +65,7 @@ function manageImages()
     var id = this.slug(elem.name);
     let insert = `
             <div class="item" id="__item_${id}">
-               <input type="radio" value="${id}" id="for_${id}" name='markerimage'>
+               <input type="radio" value="${elem.name}" id="for_${id}" name='markerimage'>
                <label for="for_${id}" id="for_image_${id}"></label>
                <div class="img_delete">☓</div>
              </div>`;

@@ -4,6 +4,12 @@
     <h1 class="h2">Crear post</h1>
   </div>
 
+@if(Session::has('success'))
+  <div class="alert alert-success" role="alert">
+    {{Session::get('success')}}</h3>
+  </div>
+@endif
+
 @if ($errors->any())
   <div class="alert alert-danger">
       <ul>
@@ -14,7 +20,6 @@
   </div>
 @endif
 
-@if($mode == 'new')
   <form method="post" action="/admin/blog" enctype="multipart/form-data">
     {{ csrf_field() }}
 
@@ -64,10 +69,6 @@
      </div>
 
   </form>
-
-@elseif($mode == 'successful')
-  <h2>¡Exito!. <a href="/{{$data->site}}/blog/{{$data->slug}}">Ver post</a></h2>
-@endif
 
 @endsection
 

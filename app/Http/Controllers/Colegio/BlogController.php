@@ -10,13 +10,12 @@ class BlogController extends Controller
 {
   public function index()
   {
-    // $posts_all = Post::where([
-    //   ['site', '=', 'colegio'],
-    //   ['type', '=', 'blog'],
-    //   ['visible', '=', '1'],
-    //   ['approved', '=', '1'],
-    //   ['marker', '=', '0']
-    // ])->paginate(10);
+    $posts = Post::where([
+      ['type', '=', 'blog'],
+      ['visible', '=', '1'],
+      ['approved', '=', '1'],
+      ['marker', '=', '0']
+    ])->paginate(10);
 
 //    $a = Post::find(1);
     //dd($a->user);
@@ -30,16 +29,13 @@ class BlogController extends Controller
       ['approved', '=', '1'],
       ['marker' , '=', '1']
     ])->limit(1)->get();
-
+*/
 
 
     return view('/colegio/blog')->with([
-                                        'posts'         => $posts_all,
-                                        'posts_marker'  => $posts_marker
+                                        'posts'         => $posts,
+//                                        'posts_marker'  => $posts_marker
                                       ]);
-*/
-    return view('colegio.blog');
-
   }
 
   public function post($id, $post)

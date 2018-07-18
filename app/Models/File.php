@@ -32,4 +32,13 @@ class File extends Model
   {
     return Storage::url($this->location_folder . '/' . $this->token . '.' . $this->extension);
   }
+
+  public function blogImage($thumb = false)
+  {
+    if($thumb){
+      return Storage::url($this->location_folder . '/' . $this->token . '_290x290.' . $this->extension);
+    }else{
+      return Storage::url($this->location_folder . '/' . $this->token . '_' . $this->dimension . '.' . $this->extension);
+    }
+  }
 }

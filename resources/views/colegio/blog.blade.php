@@ -59,8 +59,8 @@
                 {{ Str::words(strip_tags($post->content), 30, '...') }}
               </div>
               <div class="row col-xs-12 blog-home-grid--item-op between-sm start-xs">
-                <div class="row col-xs-6 xs-hide"><a href="/{{$post->site}}/blog/{{$post->slug}}">Leer más <i class="fa fa-search"></i></a></div>
-                <div class="row col-xs-6 start-xs end-sm blog-home-grid--item-op-more"><i class="fa fa-eye"></i> <span>65</span></div>
+                <div class="row col-xs xs-hide"><a href="/{{$post->site}}/blog/{{$post->slug}}">Leer más <i class="fa fa-search"></i></a></div>
+                <div class="row col-xs-4 start-xs end-sm blog-home-grid--item-op-more"><i class="fa fa-eye"></i> <span>65</span></div>
               </div>
             </div>
 

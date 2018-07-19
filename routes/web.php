@@ -167,7 +167,7 @@ Route::name('colegio-paymentguide')
 
 // Blog (Blog)
 Route::name('colegio-blogpost')
-      ->get('/colegio/blog/{id}-{post}', 'Colegio\BlogController@post');
+      ->get('/colegio/blog/{post}', 'Colegio\BlogController@post');
 
 Route::name('colegio-blog')
       ->get('/colegio/blog', 'Colegio\BlogController@index');

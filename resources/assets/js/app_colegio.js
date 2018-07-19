@@ -104,24 +104,25 @@ var get = (url) => {
  *  Index
  */
  (function(){
-   if(page !== 'index') return false;
+   if(page == 'index'){
+     // Slider
+     var slider = tns({
+       container: '.index-banners',
+       items: 1,
+       slideBy: 'page',
+       autoplay: true,
+       autoplayButtonOutput: false,
+       touch: true,
+       responsive: true,
+       mouseDrag: true,
+       controls: true,
+       controlsText: ['&#xf111;','&#xf112;'],
+       nav: false,
+       autoplayHoverPause: true,
+       loop: false
+     });
 
-   // Slider
-   var slider = tns({
-     container: '.index-banners',
-     items: 1,
-     slideBy: 'page',
-     autoplay: true,
-     autoplayButtonOutput: false,
-     touch: true,
-     responsive: true,
-     mouseDrag: true,
-     controls: true,
-     controlsText: ['&#xf111;','&#xf112;'],
-     nav: false,
-     autoplayHoverPause: true,
-     loop: false
-   });
+   }
 
   // Loader wrap
  setTimeout(function(){
@@ -137,3 +138,43 @@ var get = (url) => {
   if(page !== 'contact'){ return false;}
   Validation.init(document.forms[0], true);
 })();
+
+
+
+if(page == 'blog_post'){
+  var slider = tns({
+   container: '#blog-banners',
+   items: 1,
+   slideBy: 'page',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   touch: true,
+   responsive: true,
+   mouseDrag: true,
+   controls: true,
+   controlsText: ['&#xf111;','&#xf112;'],
+   nav: false,
+   autoplayHoverPause: true,
+   loop: false
+  });
+
+  var backgroundEffect = {
+    init : function(){
+      setInterval(this.hearSelector.bind(this), 1);
+    },
+
+    hearSelector : function(){
+      this.active = document.querySelector('.tns-slide-active');
+      this.changeBackground();
+    },
+
+    changeBackground : function(){
+      var image = this.active.getElementsByTagName('img'),
+          image = image[0].src;
+
+      document.querySelector('.background-image').style.background = `url('${image}')`;
+    }
+  }
+
+  //backgroundEffect.init();
+}

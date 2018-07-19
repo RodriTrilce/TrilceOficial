@@ -59,7 +59,7 @@ Breadcrumbs::for('colegio-blog', function ($trail) {
 // Colegio > Blog > Post
 Breadcrumbs::for('colegio-blogpost', function ($trail, $post) {
     $trail->parent('colegio-blog');
-    $trail->push(ucwords($post), route('colegio-blogpost', $post));
+    $trail->push($post, route('colegio-blogpost', $post));
 });
 
 

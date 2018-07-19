@@ -38,8 +38,13 @@ class BlogController extends Controller
                                       ]);
   }
 
-  public function post($id, $post)
+  public function post($post)
   {
-    return view('/colegio/blog_post');
+    $post = Post::where('slug', $post)->first();
+
+    return view('/colegio/blog_post')->with([
+      'post' => $post,
+      'related' => 'related'
+    ]);
   }
 }

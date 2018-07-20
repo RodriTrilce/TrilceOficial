@@ -48,9 +48,9 @@ class Post extends Model
     return $this->hasOne('App\Models\File', 'id', 'file_id');
   }
 
-/*
-  public function getMarkerImage()
+  public function visits()
   {
-    return $this->hasOne('File');
-  }*/
+    return visits($this);
+  }
+
 }

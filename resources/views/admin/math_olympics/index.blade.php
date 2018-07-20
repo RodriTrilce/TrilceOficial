@@ -73,3 +73,8 @@
   </tbody>
 </table>
 @endsection
+
+@section('scripts')
+  var page = 'math_olympics_index'
+  @parent
+@endsection

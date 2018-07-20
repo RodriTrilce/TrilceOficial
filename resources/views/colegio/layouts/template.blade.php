@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}?{{rand(0,999999)}}">
 </head>
 <body>
-  
+
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -173,7 +173,7 @@
                   </div>
                 </li>
 
-                <li class="disable"><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active nav-item-noclick':'') }}">Blog</a></li>
+                <li class=""><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active nav-item-noclick':'') }}">Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
                 <li class=""><a href="/colegio/contacto" class="{{ (Request::is('colegio/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>

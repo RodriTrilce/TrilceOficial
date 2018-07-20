@@ -5,46 +5,84 @@ namespace App\Http\Controllers\Colegio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use App\Events\PostViewed;
 
 class BlogController extends Controller
 {
+  protected $typePost;
+  protected $site;
+
+  public function __construct()
+  {
+    $this->typePost = 'blog';
+    $this->site     = 'colegio';
+  }
+
   public function index()
   {
     $posts = Post::where([
-      ['type', '=', 'blog'],
+      ['type', '=', $this->typePost],
+      ['site', '=', $this->site],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
       ['marker', '=', '0']
     ])->paginate(10);
 
-//    $a = Post::find(1);
-    //dd($a->user);
-
-
-//    dd($posts_all);
-/*
-    $posts_marker = Post::where([
-      ['category', '=', 'colegio'],
+    $markers = Post::where([
+      ['type', '=', $this->typePost],
+      ['site', '=', $this->site],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
       ['marker' , '=', '1']
-    ])->limit(1)->get();
-*/
-
+    ])
+    ->get();
 
     return view('/colegio/blog')->with([
                                         'posts'         => $posts,
-//                                        'posts_marker'  => $posts_marker
+                                        'postsMarkers'  => $markers
                                       ]);
   }
 
   public function post($post)
   {
-    $post = Post::where('slug', $post)->first();
+    $post = Post::where('slug', $post)->firstOrFail();
 
-    return view('/colegio/blog_post')->with([
-      'post' => $post,
-      'related' => 'related'
-    ]);
+    //\Event::fire(new PostViewed($post));
+    if($post->visible) {
+      $post->visits()->increment();
+
+      $related = Post::inRandomOrder()
+      ->where([
+        ['type', '=', $this->typePost],
+        ['site', '=', $this->site],
+        ['id', '<>', $post->id],
+        ['visible', '1'],
+      ])
+      ->take(5)
+      ->get();
+
+      return view('/colegio/blog_post')->with([
+        'post'      => $post,
+        'related'   => $related
+      ]);
+
+    } else {
+      return abort(404);
+    }
+
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

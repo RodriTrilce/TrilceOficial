@@ -105,7 +105,7 @@ Breadcrumbs::for('academia-solutions', function ($trail, $modality) {
 // Academia > Enrollment
 Breadcrumbs::for('academia-enrollment', function ($trail) {
     $trail->parent('academia-index');
-    $trail->push('Pre matrícula en linea', route('academia-enrollment'));
+    $trail->push('Prematrícula en linea', route('academia-enrollment'));
 });
 
 // Academia > Math Olympics

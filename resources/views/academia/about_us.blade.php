@@ -19,7 +19,7 @@
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
       <div class="row col-xs-12 about-history">
-        <div class="row col-xs-12 xs-hide col-sm-3 about-history--left">
+        <div class="row col-xs-12 xs-hide col-sm-4 about-history--left">
           <img src="{{ url('/static/images/academia/img-nosotros-academia.jpg') }}" alt="Sobre nosotros">
         </div>
         <div class="col-xs-12 col-sm about-history--right">

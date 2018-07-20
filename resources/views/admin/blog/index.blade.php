@@ -33,3 +33,8 @@
         </tbody>
       </table>
 @endsection
+
+@section('scripts')
+  var page = 'blog_index'
+  @parent
+@endsection

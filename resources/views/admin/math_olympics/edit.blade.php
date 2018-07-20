@@ -137,6 +137,6 @@
 @endsection
 
 @section('scripts')
-
+  var page = 'math_olympics_edit'
   @parent
 @endsection

@@ -87,6 +87,7 @@
 @endsection
 
 @section('scripts')
+  var page = 'math_olympics_create'
 
   @parent
 @endsection

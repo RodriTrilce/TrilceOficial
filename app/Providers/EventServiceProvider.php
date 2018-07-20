@@ -13,9 +13,10 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\Event' => [
-            'App\Listeners\EventListener',
+        'App\Events\PostViewed' => [
+          'App\Listeners\PostViewedListener'
         ],
+
     ];
 
     /**
@@ -25,7 +26,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        parent::boot();
+        parent::boot($this->listen);
 
         //
     }

@@ -101,3 +101,25 @@
     @media (max-width: 400px)  { @content; }
   }
 }
+
+
+@mixin reverse-breakpoint($point) {
+  @if $point == dad {
+    @media (min-width: 1600px) { @content; }
+  }
+  @if $point == brother{
+    @media (min-width: 1400px) { @content; }
+  }
+  @else if $point == mom {
+    @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == uncle {
+    @media (min-width: 900px) { @content; }
+  }
+  @else if $point == baby {
+    @media (min-width: 767px)  { @content; }
+  }
+  @else if $point == minibaby {
+    @media (min-width: 400px)  { @content; }
+  }
+}

@@ -112,17 +112,19 @@
 
 
 .blog-home-aftertop{
-  margin-top: 0.6rem;
+  margin-top: 8px;
 }
 
 .blog-home-aftertop--item{
   border-bottom: 1px solid white;
+  max-height: 200px;
 }
 
 .blog-home-aftertop--item-image{
   img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -334,6 +336,57 @@
   }
 }
 
+.blog-date{
+  position: absolute;
+  left: -80px;
+  top: 0;
+  width: 50px;
+  height: 60px;
+  border: 1px solid $orange;
+  display: flex;
+  flex-wrap: wrap;
+
+  >div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .date-number{
+    font-family: $font_geo_reg;
+    font-size: 1.5rem;
+  }
+
+  .date-text{
+    background: $orange;
+    color: white;
+    font-family: $font_cae_rom;
+  }
+
+  @include breakpoint(mom){
+    display: none;
+  }
+}
+
+.blog-date-line{
+  display: none;
+  position: relative;
+  margin-left: 10px;
+
+  &::before{
+    position: relative;
+    content: "—";
+    margin-right: 10px;
+  }
+}
+
+@include breakpoint(mom){
+  .blog-date-line{
+    display: inline-block;
+  }
+}
+
 
 .blog-post-content{
   font-family: $font_geo_reg;
@@ -381,7 +434,7 @@
   }
 
   @include breakpoint(mom){
-    width: 50%;
+    width: 49%;
     margin-bottom: 20px;
 
     &:last-child{
@@ -399,6 +452,7 @@
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
+    flex-direction: column;
 
     @include breakpoint(baby){
       flex-wrap: nowrap;
@@ -427,6 +481,7 @@
     font-size: 1.4rem;
     font-family: $font_cae_rom;
     transition: all .3s ease-in-out;
+    width: 100%;
 
     @include breakpoint(baby){
       font-size: 1rem;
@@ -443,4 +498,11 @@
     }
   }
 
+}
+
+.fb-share-button{
+  top: -5px;
+  @include breakpoint(baby){
+    top: 0;
+  }
 }

@@ -125,6 +125,12 @@ Route::name('academia-enrollment-finish')
 Route::name('academia-enrollment-download')
       ->match(['get', 'post'], '/academia/matricula-en-linea/descargar-pdf', 'Academia\EnrollmentController@download');
 
+// Blog (Blog)
+Route::name('academia-blogpost')
+      ->get('/academia/blog/{post}', 'Academia\BlogController@post');
+
+Route::name('academia-blog')
+      ->get('/academia/blog', 'Academia\BlogController@index');
 
 
 /**

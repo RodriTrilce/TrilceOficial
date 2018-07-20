@@ -18,16 +18,6 @@ class BlogController extends Controller
     public function index()
     {
       $data = Post::where('type', 'blog')->get();
-      // 
-      // foreach ($posts as $post) {
-      //   echo $post->title . "\n";
-      //
-      //   foreach ($post->blogGallery->images as $image) {
-      //     $x = $image->blogImage(true) . "\n";
-      //     echo "<img src='$x' />";
-      //   }
-      // }
-
       return view('admin.blog.index')->with(['data' => $data]);
     }
 
@@ -49,6 +39,8 @@ class BlogController extends Controller
       if($request->visible) $post->visible  = $request->visible;
       if($request->marker)  $post->marker   = $request->marker;
 
+      $post->created_at = $request->created_at;
+      $post->approved = '1';
       $post->save();
 
       $gallery = new Gallery;
@@ -67,25 +59,21 @@ class BlogController extends Controller
             $post->file_id = $imageReturn->id;
             $post->save();
           }
-
         }
-
       }
-
-      //return view('admin.blog.create')->with(['mode' => 'successful', 'data' => $post]);
       return back()->with('success', 'Post creado correctamente');
     }
 
     public function storeImage($image, $token, $gallery, $dimension)
     {
-      $mime = new Mime;
+      $mime         = new Mime;
+      $imageSave    = Image::make($image);
 
       $token        = $gallery->post_id . '_' . $token;
       $tokenSave    = $token . '_' . $dimension;
       $extension    = $mime->getExtension($image->getMimeType());
       $dimensionCut = explode('x', $dimension);
 
-      $imageSave    = Image::make($image);
 
       if($dimension == '290x290')
         $imageSave->fit($dimensionCut[0], $dimensionCut[1]);
@@ -109,11 +97,6 @@ class BlogController extends Controller
       }
 
       return true;
-    }
-
-    public function show()
-    {
-
     }
 
     public function edit()

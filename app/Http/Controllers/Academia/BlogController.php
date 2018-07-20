@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Colegio;
+namespace App\Http\Controllers\Academia;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,7 +15,7 @@ class BlogController extends Controller
   public function __construct()
   {
     $this->typePost = 'blog';
-    $this->site     = 'colegio';
+    $this->site     = 'academia';
   }
 
   public function index()
@@ -38,7 +38,7 @@ class BlogController extends Controller
     ->take(4)
     ->get();
 
-    return view('/colegio/blog')->with([
+    return view('/academia/blog')->with([
                                         'posts'         => $posts,
                                         'markers'  => $markers
                                       ]);
@@ -63,7 +63,7 @@ class BlogController extends Controller
       ->take(4)
       ->get();
 
-      return view('/colegio/blog_post')->with([
+      return view('/academia/blog_post')->with([
         'post'      => $post,
         'related'   => $related
       ]);

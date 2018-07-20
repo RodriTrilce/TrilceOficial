@@ -5,6 +5,7 @@ import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
 import $ from "jquery"
 
 window.$ = $;
+flatpickr.localize(Spanish);
 
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
@@ -108,6 +109,13 @@ function manageImages()
 
 
 if(page == 'blog_create'){
+  // Date picker
+  flatpickr("#mo_finish",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:ss",
+  });
+
+  // Editor
   $(function() {
     $('#create_content').froalaEditor({
       height: 300,
@@ -117,36 +125,38 @@ if(page == 'blog_create'){
 
   var run = new manageImages;
   run.init();
+
 }
 
 
-flatpickr.localize(Spanish);
-
-flatpickr("#mo_finish",{
-    enableTime: true,
-    dateFormat: "Y-m-d H:i:s",
-});
 
 
-var remove  = document.getElementById('math_olympics_bases_remove');
 
-if(remove){
-  remove.addEventListener('click', () => {
-    document.getElementById('math_olympics_bases_div').innerHTML =  `
-    <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
-    <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>`;
-
-    var b = document.getElementById('create_bases');
-    b.addEventListener('change', function(){
-      if(b.name){
-        remove.style.display = 'none';
-      }
-    });
-
+if(page == 'math_olympics_create')
+{
+  flatpickr("#mo_finish",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:s",
   });
-}
 
-(function(){
+  var remove  = document.getElementById('math_olympics_bases_remove');
+
+  if(remove){
+    remove.addEventListener('click', () => {
+      document.getElementById('math_olympics_bases_div').innerHTML =  `
+      <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
+      <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>`;
+
+      var b = document.getElementById('create_bases');
+      b.addEventListener('change', function(){
+        if(b.name){
+          remove.style.display = 'none';
+        }
+      });
+
+    });
+  }
+
   const resultAdd     = document.getElementById('result_newresult');
   var resultContent   = document.getElementById('results_content');
 
@@ -162,5 +172,4 @@ if(remove){
 
     document.getElementById('result_save').addEventListener('click', () => document.getElementById('result_save_form').submit());
   }
-
-})();
+}

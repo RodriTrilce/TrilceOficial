@@ -1,5 +1,5 @@
-{{! $breadcrumbs = Breadcrumbs::render('colegio-blog') }}
-@extends('colegio.layouts.template')
+{{! $breadcrumbs = Breadcrumbs::render('academia-blog') }}
+@extends('academia.layouts.template')
 @section('title', 'Blog')
 @section('content')
 
@@ -72,7 +72,7 @@
 
 
 
-  @include('colegio.partials.card_bottom')
+  @include('academia.partials.card_bottom')
 @endsection
 
 @section('scripts')

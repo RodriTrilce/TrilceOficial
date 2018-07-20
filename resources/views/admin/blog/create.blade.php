@@ -25,7 +25,7 @@
 
     <div class="form-group">
        <label for="create_title">Titulo</label>
-       <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo">
+       <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" required>
     </div>
 
     <div class="form-group">
@@ -44,7 +44,7 @@
 
      <div class="form-group">
        <label for="create_site">Sección</label>
-       <select class="form-control" name="site" id="create_site">
+       <select class="form-control" name="site" id="create_site" required>
          <option selected hidden disabled>Selecionar sitio</option>
          <option value="academia">Academia</option>
          <option value="colegio">Colegio</option>
@@ -60,8 +60,14 @@
      </div>
 
      <div class="form-group">
-       <input type='file' id="imagesMulti" name="image[]" accept="image/*" multiple />
+       <label for="imagesMulti">Selecione imagenes y de clic en la principal</label><br>
+       <input type='file' id="imagesMulti" name="image[]" accept="image/*" required multiple />
        <div class="showimages"></div>
+     </div>
+
+     <div class="form-group">
+       <label for="create_finish">Fecha</label>
+       <input type="text" class="form-control" id="mo_finish" name="created_at" id="create_finish" value="<?php echo date("Y-m-d H:i:s"); ?>" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
      </div>
 
      <div class="form-group">

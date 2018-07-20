@@ -800,3 +800,43 @@ console.log(doubleHeaderComputedWindow)
 left: 0
 trasnform: translate(x{h1.width-(parent/2)}, y{50%})
 */
+
+
+
+if(page == 'blog_post'){
+  var slider = tns({
+   container: '#blog-banners',
+   items: 1,
+   slideBy: 'page',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   touch: true,
+   responsive: true,
+   mouseDrag: true,
+   controls: true,
+   controlsText: ['&#xf111;','&#xf112;'],
+   nav: false,
+   autoplayHoverPause: true,
+   loop: false
+  });
+
+  var backgroundEffect = {
+    init : function(){
+      setInterval(this.hearSelector.bind(this), 1);
+    },
+
+    hearSelector : function(){
+      this.active = document.querySelector('.tns-slide-active');
+      this.changeBackground();
+    },
+
+    changeBackground : function(){
+      var image = this.active.getElementsByTagName('img'),
+          image = image[0].src;
+
+      document.querySelector('.background-image').style.background = `url('${image}')`;
+    }
+  }
+
+  //backgroundEffect.init();
+}

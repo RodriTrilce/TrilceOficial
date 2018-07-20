@@ -119,3 +119,15 @@ Breadcrumbs::for('academia-contact', function ($trail) {
     $trail->parent('academia-index');
     $trail->push('Contáctenos', route('academia-contact'));
 });
+
+// Academia > Blog
+Breadcrumbs::for('academia-blog', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Blog', route('academia-blog'));
+});
+
+// Academia > Blog > Post
+Breadcrumbs::for('academia-blogpost', function ($trail, $post) {
+    $trail->parent('academia-blog');
+    $trail->push($post, route('academia-blogpost', $post));
+});

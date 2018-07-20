@@ -4,6 +4,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\File;
 use App\Models\GalleryBlogModel;
+use Date;
 
 class Post extends Model
 {
@@ -51,6 +52,11 @@ class Post extends Model
   public function visits()
   {
     return visits($this);
+  }
+
+  public function blogDate()
+  {
+    return Date::parse($this->created_at)->format('j \d\e F, Y');
   }
 
 }

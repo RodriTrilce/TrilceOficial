@@ -48,6 +48,8 @@ class BlogController extends Controller
   {
     $post = Post::where('slug', $post)->firstOrFail();
 
+dd($post);
+
     //\Event::fire(new PostViewed($post));
     if($post->visible) {
       $post->visits()->increment();

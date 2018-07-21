@@ -35,7 +35,6 @@ class File extends Model
 
   public function blogImage($thumb = false)
   {
-    echo $this->token ." <br><br\n";
     if($thumb){
       return Storage::url($this->location_folder . '/' . $this->token . '_290x290.' . $this->extension);
     }else{

@@ -63,14 +63,15 @@ class BlogController extends Controller
       ->take(4)
       ->get();
 
-      dd($related);
 
       foreach ($related as $key) {
         echo $related->blogFile();
         echo "<br>\n";
         echo "<br>\n";
-        
+
       }
+
+die;
 
       return view('/colegio/blog_post')->with([
         'post'      => $post,

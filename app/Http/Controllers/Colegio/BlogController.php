@@ -65,6 +65,13 @@ class BlogController extends Controller
 
       dd($related);
 
+      foreach ($related as $key) {
+        echo $related->blogFile();
+        echo "<br>\n";
+        echo "<br>\n";
+        
+      }
+
       return view('/colegio/blog_post')->with([
         'post'      => $post,
         'related'   => $related

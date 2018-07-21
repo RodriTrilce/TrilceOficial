@@ -63,7 +63,7 @@ class BlogController extends Controller
       ->take(4)
       ->get();
 
-      dd($post);
+      dd($related);
 
       return view('/colegio/blog_post')->with([
         'post'      => $post,

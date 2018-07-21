@@ -38,7 +38,7 @@
             </tbody>
           </table>
 
-          {!!$data->content!!}
+          {{-- {!!$data->content!!} --}}
         </div>
 
       </div>

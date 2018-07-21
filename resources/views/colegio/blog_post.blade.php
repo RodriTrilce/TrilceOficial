@@ -16,9 +16,6 @@
 
     <div class="row col-xs-12">
       <div class="row col-xs-12 between-xs">
-        <div class="col-xs-3">
-          <div class="fb-like" data-href="http://www.trilce.edu.pe/{{$post->site}}/blog/{{$post->slug}}" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false" data-colorscheme="dark"></div>
-        </div>
         <div class="col-xs end-xs">
           <span class="blog-view"><i class="fa fa-eye"></i> {{$post->visits()->count()}}</span><span class="blog-date-line"><i class="fa fa-calendar"></i> {{$post->blogDate()}}</span>
         </div>
@@ -42,7 +39,14 @@
     {!! $post->content !!}
 
     <div class="row col-xs-12 end-xs blog-share-button">Te invitamos a compartir esta noticia
-      <div class="fb-share-button" data-href="http://www.trilce.edu.pe/{{$post->site}}/blog/{{$post->slug}}" data-layout="button" data-size="small" data-mobile-iframe="true"></div>
+      <div class="row col-xs-12 end-xs">
+        <div class="col-sm end-xs xs-hide">
+          <div class="fb-like" data-href="http://www.trilce.edu.pe/{{$post->site}}/blog/{{$post->slug}}" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        </div>
+        <div class="col-xs end-xs sm-hide">
+          <div class="fb-like" data-href="http://www.trilce.edu.pe/{{$post->site}}/blog/{{$post->slug}}" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -63,7 +67,9 @@
             <div class="item-title">
               <h3>{{$post->title}}</h3>
               <div class="item-view">
+                @if($post->visits()->count() > 0)
                 <i class="fa fa-eye"></i> <span class="blog-view">{{$post->visits()->count()}}</span>
+                @endif
               </div>
             </div>
           </a>

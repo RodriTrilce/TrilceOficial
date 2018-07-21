@@ -383,8 +383,8 @@
 
   &::before{
     position: relative;
-    content: "—";
-    margin-right: 10px;
+    content: "";
+    margin-right: 5px;
   }
 }
 
@@ -519,7 +519,6 @@
 }
 
 .fb-share-button{
-  top: -5px;
   padding-left: 10px;
 
   @include breakpoint(baby){
@@ -530,4 +529,10 @@
 .blog-share-button{
   margin-top: 20px;
   align-items: center;
+}
+
+@include reverse-breakpoint(baby){
+  .sm-hide{
+    display: none;
+  }
 }

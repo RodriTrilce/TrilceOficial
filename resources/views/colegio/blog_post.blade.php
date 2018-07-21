@@ -4,7 +4,6 @@
 @section('content')
 
 
-
   <div class="blog-post container-padding-mobile">
     <div class="blog-date">
       <div class="date-number">27</div>

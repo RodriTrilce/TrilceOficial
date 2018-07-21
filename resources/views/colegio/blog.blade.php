@@ -3,7 +3,6 @@
 @section('title', 'Blog')
 @section('content')
 
-
   @if($posts->currentPage() < 2)
     <div class="row col-xs-12 blog-home-top">
       <div class="col-xs-12 col-xs-12 col-md-6 blog-home-top-imge"><img src="{{ url( $markers->first()->blogFile->blogImage() ) }}" alt=""></div>

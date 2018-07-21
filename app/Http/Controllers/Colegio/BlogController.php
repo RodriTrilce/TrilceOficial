@@ -26,7 +26,9 @@ class BlogController extends Controller
       ['visible', '=', '1'],
       ['approved', '=', '1'],
       ['marker', '=', '0']
-    ])->paginate(10);
+    ])
+    ->orderBy('created_at', 'desc')
+    ->paginate(10);
 
     $markers = Post::where([
       ['type', '=', $this->typePost],
@@ -35,6 +37,7 @@ class BlogController extends Controller
       ['approved', '=', '1'],
       ['marker' , '=', '1']
     ])
+    ->orderBy('created_at', 'desc')
     ->take(4)
     ->get();
 

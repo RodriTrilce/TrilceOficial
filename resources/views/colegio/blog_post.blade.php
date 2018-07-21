@@ -42,7 +42,7 @@
   <div class="container-padding-mobile blog-post blog-post-content">
     {!! $post->content !!}
 
-    <div class="col-xs-12 end-xs blog-share-button">Te invitamos a compartir esta noticia
+    <div class="row col-xs-12 end-xs blog-share-button">Te invitamos a compartir esta noticia
       <div class="fb-share-button" data-href="http://www.trilce.edu.pe/{{$post->site}}/blog/{{$post->slug}}" data-layout="button" data-size="small" data-mobile-iframe="true"></div>
     </div>
   </div>

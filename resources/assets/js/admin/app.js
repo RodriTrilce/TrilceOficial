@@ -173,3 +173,17 @@ if(page == 'math_olympics_create')
     document.getElementById('result_save').addEventListener('click', () => document.getElementById('result_save_form').submit());
   }
 }
+
+
+if(page == 'venue_create')
+{
+
+  // Editor
+  $(function() {
+    $('#create_content').froalaEditor({
+      height: 300,
+      toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-', 'insertLink', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html']
+    });
+  });
+
+}

@@ -17,6 +17,7 @@ class ColegioVenuesTable extends Migration
           $table->increments('id');
           $table->string('name');
           $table->string('slug');
+          $table->text('content')->nullable();          
           $table->integer('status')->default('1');
           $table->enum('sector', ['noli', 'lazo', 'rivero'])->default('noli');
           $table->timestamps();

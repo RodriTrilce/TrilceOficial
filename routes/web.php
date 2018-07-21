@@ -35,7 +35,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
   Route::resource('/blog', 'BlogController');
   Route::resource('/math-olympics', 'MathOlympicsController');
   Route::resource('/math-olympics/results', 'MathOlympicsResultsController');
-
+  Route::resource('/venue-colegio', 'VenueColegioController');
+  Route::resource('/venue-academia', 'VenueAcademiaController');
 
 /*
     Route::put('/posts/{post}/publish', 'PostController@publish')->middleware('admin');

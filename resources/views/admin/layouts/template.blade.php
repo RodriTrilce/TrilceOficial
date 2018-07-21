@@ -67,6 +67,23 @@
           </li>
 
 
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Sedes
+            </a>
+            <ul class="nav flex-column mb-5">
+              <li class="nav-item"><a href="/admin/venue-colegio/" class="nav-link"><span data-feather="corner-down-right"></span> Listar Colegio</a></li>
+              <li class="nav-item"><a href="/admin/venue-colegio/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear Colegio</a></li>
+            </ul>
+
+            <ul class="nav flex-column mb-5">
+              <li class="nav-item"><a href="/admin/venue-academia/" class="nav-link"><span data-feather="corner-down-right"></span> Listar Academia</a></li>
+              <li class="nav-item"><a href="/admin/venue-academia/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear Academia</a></li>
+            </ul>
+
+          </li>
+
 
         </ul>
 

@@ -17,8 +17,9 @@
 
       <div class="col-xs-12 col-sm container-base venue-info-container">
         <div class="col-xs-12 venue-info-title"><h2 class="colegio">{{ $data->name}}</h2></div>
-        <div class="row col-xs-12 col-sm-12">
-          <table class="table-responsive venue-table">
+        <div class="row col-xs-12 col-sm-12 table-responsive venue-content-editable" id="tableade">
+
+          <table class="venue-table">
             <thead>
               <tr>
                 <th>Nivel</th>
@@ -36,6 +37,8 @@
               @endforeach
             </tbody>
           </table>
+
+          {!!$data->content!!}
         </div>
 
       </div>

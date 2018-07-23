@@ -261,5 +261,19 @@
 .venue-content-editable{
   p{
     padding: 8px 0;
+    display: block;
+    width: 100%;
+    font-size: .9rem;
   }
+
+  h2{
+    color: $gray;
+    font-size: 1rem;
+  }
+
+  thead > th > td{
+    font-family: $font_geo_reg !important;
+    text-align: left !important;
+  }
+
 }

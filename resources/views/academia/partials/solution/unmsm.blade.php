@@ -1,8 +1,8 @@
 
 <div class="container-base row center-sm solution-table solution-table-double">
-  <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-md">
+  <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-md table-responsive">
 
-    <table class="table-responsive solution-table-content">
+    <table class="solution-table-content">
       <thead>
         <tr>
           <th></th>

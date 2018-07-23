@@ -19,8 +19,8 @@
 
       <div class="col-xs-12 col-sm container-base venue-info-container">
         <div class="col-xs-12 venue-info-title"><h2>Información general</h2></div>
-        <div class="row col-xs-12 col-sm-12">
-          <table class="table-responsive venue-table">
+        <div class="row col-xs-12 col-sm-12 table-responsive">
+          <table class="venue-table">
             <thead>
               <tr>
                 <th>Horario de atención</th>

@@ -77,7 +77,7 @@
       @endswitch
     </div>
 
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs" id="drawTables">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs table-responsive" id="drawTables">
     </div>
 
   </div>

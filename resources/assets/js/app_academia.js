@@ -637,7 +637,7 @@ function preparation()
         tbody += `</tr>`;
       });
 
-      tables += `<table class="table-responsive preparation-table">
+      tables += `<table class="preparation-table">
                   <thead>
                     <tr>
                       ${thead}

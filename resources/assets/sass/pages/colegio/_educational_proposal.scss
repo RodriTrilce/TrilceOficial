@@ -4,3 +4,145 @@
     margin: 20px 0;
   }
 }
+
+.js-tabs {
+  width: 100%;
+}
+
+.js-tabs__header {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  li {
+    display: inline-block;
+    float: left;
+    max-width: 14%;
+    background: white;
+
+    a{
+      color: $gray;
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include breakpoint(baby){
+  .js-tabs__header{
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    a{
+      min-height: auto !important;
+      justify-content: unset !important;
+      font-size: .9rem;
+    }
+
+    img{
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.js-tabs__title {
+  cursor: pointer;
+  display: block;
+  margin-right: .5em;
+  padding: 1rem;
+  transition: all .25s;
+
+  &:hover {
+  text-decoration: none;
+  }
+
+}
+
+.js-tabs__title-active {
+  background: $orange;
+  color: white !important;
+
+  img{
+    filter: brightness(100) !important;
+  }
+}
+
+.js-tabs__content {
+  margin-top: 20px;
+}
+
+.ep-generic-title{
+  padding-top: 20px;
+  border-bottom: 1px solid $orange;
+
+  .number{
+    color: $colegio_gray;
+    font-size: 2rem;
+    font-family: $font_geo_bold;
+  }
+
+  h2{
+    font-family: $font_cae_bold;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+
+  @include breakpoint(baby){
+    .number{
+      font-size: 1.3rem;
+    }
+
+    h2{
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.ep-generic-list{
+  padding-top: 20px;
+  padding-left: 28px;
+
+  li{
+    margin-bottom: 15px;
+
+    span{
+      color: $orange;
+    }
+  }
+}
+
+.ep-large-container{
+  padding-top: 20px;
+
+}
+
+.ep-stepfour-left{
+  font-family: $font_geo_lite;
+  border-right: 1px solid $color_interblock;
+  padding-right: 15px;
+}
+
+.ep-stepfour-right{
+  padding-left: 15px;
+}
+
+.ep-stepfour-container{
+
+}
+
+.ep-stepfour-item{
+  padding-right: 20px;
+  padding-bottom: 20px;
+}

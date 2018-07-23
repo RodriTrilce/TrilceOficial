@@ -30,7 +30,7 @@
             </thead>
             <tbody>
                 <tr>
-                  <td data-label="Horario de atención"> {{ $data->horary }}</td>
+                  <td data-label="Horario de atención"> {!! $data->horary !!}</td>
                   <td data-label="Dirección"> {{ $data->direction }}</td>
                   <td data-label="Teléfono"> {{ $data->phone }}</td>
                 </tr>

@@ -7,6 +7,14 @@
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider';
+import {Tabs} from './require/tabs';
+
+
+var tabs = new Tabs({
+    elem: "tabs_educational_propuse",
+    open: 0
+});
+
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",

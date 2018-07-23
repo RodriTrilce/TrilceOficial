@@ -259,6 +259,9 @@
 
 
 .venue-content-editable{
+  width: 100%;
+  margin-top: 20px;
+
   p{
     padding: 8px 0;
     display: block;
@@ -268,12 +271,16 @@
 
   h2{
     color: $gray;
-    font-size: 1rem;
+    font-size: 1.2rem;
+
   }
 
-  thead > th > td{
-    font-family: $font_geo_reg !important;
-    text-align: left !important;
+  table{
+    thead th{
+      font-family: $font_geo_reg !important;
+      text-align: left !important;
+    }
+    
   }
 
 }

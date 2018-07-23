@@ -178,3 +178,8 @@ Route::name('colegio-blogpost')
 
 Route::name('colegio-blog')
       ->get('/colegio/blog', 'Colegio\BlogController@index');
+
+
+// Página Princial (Index)
+Route::name('colegio-educationalproposal')
+      ->get('/colegio/propuesta-educativa', 'Colegio\EducationalProposalController@index');

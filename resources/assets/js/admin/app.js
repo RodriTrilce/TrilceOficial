@@ -132,7 +132,7 @@ if(page == 'blog_create'){
 
 
 
-if(page == 'math_olympics_create')
+if(page == 'math_olympics_create' || page == 'math_olympics_edit')
 {
   flatpickr("#mo_finish",{
       enableTime: true,

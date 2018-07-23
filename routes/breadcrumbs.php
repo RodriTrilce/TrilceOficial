@@ -62,6 +62,11 @@ Breadcrumbs::for('colegio-blogpost', function ($trail, $post) {
     $trail->push($post, route('colegio-blogpost', $post));
 });
 
+// Colegio > EducationalProposal
+Breadcrumbs::for('colegio-educationalproposal', function ($trail) {
+    $trail->push('Propuesta Educativa', route('colegio-educationalproposal'));
+});
+
 
 /**
  *  Academia migajas de pan

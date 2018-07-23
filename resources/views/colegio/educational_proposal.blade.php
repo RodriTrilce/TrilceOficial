@@ -12,7 +12,7 @@
     </div>
   </div>
 
-<div class="row center-xs center-sm container-base educational_proposal">
+<div class="row center-xs center-sm container-base educationalproposal-container">
   <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
     hi
   </div>

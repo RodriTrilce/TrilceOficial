@@ -137,7 +137,11 @@
   background: $gray;
   text-align: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 30px;
+
+  @include breakpoint(baby){
+    padding: 15px;
+  }
 
   a{
     display: flex;

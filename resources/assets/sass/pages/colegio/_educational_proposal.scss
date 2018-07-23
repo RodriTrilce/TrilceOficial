@@ -121,6 +121,10 @@
       color: $orange;
     }
   }
+
+  @include breakpoint(baby){
+    padding-left: 0;
+  }
 }
 
 .ep-large-container{
@@ -132,10 +136,20 @@
   font-family: $font_geo_lite;
   border-right: 1px solid $color_interblock;
   padding-right: 15px;
+  margin-bottom: 20px;
+
+  @include breakpoint(baby){
+    padding-right: 0;
+    border: 0;
+  }
 }
 
 .ep-stepfour-right{
   padding-left: 15px;
+
+  @include breakpoint(baby){
+    padding-left: 0;
+  }
 }
 
 .ep-stepfour-container{
@@ -145,4 +159,50 @@
 .ep-stepfour-item{
   padding-right: 20px;
   padding-bottom: 20px;
+
+  @include breakpoint(baby){
+    padding-right: 0;
+    border: 0;
+  }
+
+  .item-title{
+    color: $orange;
+    font-family: $font_geo_reg;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+
+    svg{
+      fill: $orange;
+      width: 33px;
+      height: 23px;
+    }
+
+    svg path{
+      fill: $orange !important;
+    }
+
+  }
+
+  .item-content{
+    font-size: .9rem;
+  }
+}
+
+.ep-stepfive-container{
+  font-family: $font_geo_reg;
+  margin: 10px 0;
+
+}
+
+.ep-stepfive-list{
+  font-family: $font_geo_lite;
+
+  h3{
+    color: gray;
+    font-weight: bold;
+  }
+
+  i{
+    color: $orange;
+  }
 }

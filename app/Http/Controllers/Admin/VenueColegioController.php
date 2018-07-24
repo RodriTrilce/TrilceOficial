@@ -75,10 +75,6 @@ class VenueColegioController extends Controller
     public function update(Request $request, $id)
     {
         $venue = VenueDB::find($id);
-
-        echo Purifier::clean($request->content);
-
-        die;
         $venue->content  = Purifier::clean($request->content);
         $venue->save();
 

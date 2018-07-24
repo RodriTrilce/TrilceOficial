@@ -103,7 +103,7 @@
                   </ul>
                 </li>
 
-                <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Matrícula en linea</a></li>
+                <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Matrícula en línea</a></li>
                 <li class=""><a href="/academia/blog/" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
                 <li class="disable"><a>Multimedia</a></li>
                 <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>

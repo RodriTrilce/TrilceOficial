@@ -47,7 +47,7 @@ Breadcrumbs::for('colegio-frequentquestions', function ($trail) {
 // Colegio > PaymentGuide
 Breadcrumbs::for('colegio-paymentguide', function ($trail) {
     $trail->parent('colegio-index');
-    $trail->push('Guia de pagos en linea', route('colegio-paymentguide'));
+    $trail->push('Guía de pagos en línea', route('colegio-paymentguide'));
 });
 
 // Colegio > Blog

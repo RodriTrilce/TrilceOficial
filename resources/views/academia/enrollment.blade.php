@@ -1,6 +1,6 @@
 {{! $breadcrumbs = Breadcrumbs::render('academia-enrollment') }}
 @extends('academia.layouts.template')
-@section('title', 'Prematrícula en linea')
+@section('title', 'Prematrícula en línea')
 @section('content')
 
   <div class="header-double-top">

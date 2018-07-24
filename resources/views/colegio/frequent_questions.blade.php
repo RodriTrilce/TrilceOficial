@@ -27,8 +27,8 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">¿Por qué en 4° y 5° de secundaria no existen horas de inglés en el horario regular?</h3>
-              <p class="question-answer">Los tres primeros años, los alumnos de Trilce, reciben una formación sólida del curso de inglés, ´llevando ocho horas a la semana (a diferencia de los colegios tradicionales que lo llevan solo 2 horas semanales), permitiéndoles obtener un buen nivel en el idioma, área que se complementa  en los posteriores grados (4° y 5°) mediante talleres de 4 horas semanales por las tardes.</p>
+        <h3 class="question-title">¿Por qué en 4.<sup>o</sup> y 5.<sup>o</sup> de secundaria no existen horas de inglés en el horario regular?</h3>
+              <p class="question-answer">Los tres primeros años, los alumnos de Trilce, reciben una formación sólida del curso de inglés, ´llevando ocho horas a la semana (a diferencia de los colegios tradicionales que lo llevan solo 2 horas semanales), permitiéndoles obtener un buen nivel en el idioma, área que se complementa  en los posteriores grados (4.<sup>o</sup> y 5.<sup>o</sup>) mediante talleres de 4 horas semanales por las tardes.</p>
             </div>
           </div>
 
@@ -36,7 +36,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">¿Por qué no se enseña el curso de religión?</h3>
-              <p class="question-answer">TRILCE es un colegio laico que respeta la diversidad de creencias, por ello trabajamos un programa de valores que contempla la formación ética del individuo, este programa se desarrolla durante todo el año académico y se basa en las vivencias de los alumnos y la expresión de su sentir mediante actividades que promueven la sensibilidad y la toma de conciencia frente al entorno y la autonomía del adolescente. Si bien es cierto se respetan las creencias, se promueve la fe católica por eso los sacramentos como la primera comunión y de confirmación son coordinados con representantes de la iglesia. En los meses de mayo, agosto y octubre se organizan actividades por la Virgen María, Santa Rosa y el Señor de los Milagros respectivamente.</p>
+              <p class="question-answer">TRILCE es un colegio laico que respeta la diversidad de creencias, por ello trabajamos un programa de valores que contempla la formación ética del individuo, este programa se desarrolla durante todo el año académico y se basa en las vivencias de los alumnos y la expresión de su sentir mediante actividades que promueven la sensibilidad y la toma de conciencia frente al entorno y la autonomía del adolescente. Si bien es cierto se respetan las creencias, se promueve la fe PUCP por eso los sacramentos como la primera comunión y de confirmación son coordinados con representantes de la iglesia. En los meses de mayo, agosto y octubre se organizan actividades por la Virgen María, Santa Rosa y el Señor de los Milagros respectivamente.</p>
             </div>
           </div>
 
@@ -121,12 +121,12 @@
     4 - 5 años (Pre-Kinder y Kinder): Se les entrega fichas para (Delinear y pintar).<br><br>
     <strong>Primaria:</strong><br>
     1° a 6° grado: Se les entrega libros por áreas.<br>
-    1° a 4° grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
-    *A partir de 5° grado cuentas con un profesor por curso (Polidocencia).<br>
+    1° a 4.<sup>o</sup> grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
+    *A partir de 5.<sup>o</sup> grado cuentas con un profesor por curso (Polidocencia).<br>
     *Religión: Se dicta el curso de religión a los alumnos de inicial (Pre-Kinder y Kinder) y primaria de 1° a 6° grado.<br><br>
 
     <strong>Secundaria:</strong><br>
-    Formación de valores: Se trabaja un valor por mes de 1° a 5° de secundaria.</p>
+    Formación de valores: Se trabaja un valor por mes de 1° a 5.<sup>o</sup> de secundaria.</p>
             </div>
           </div>
 
@@ -294,7 +294,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">Testimonio: “La competencia me ofrece la misma calidad de servicio y que resultado, grado de credibilidad tienen sus servicios”.</h3>
-              <p class="question-answer">Trilce cuenta con la mejor plana docente y el mejor sistema académico, por otro lado nuestros resultados hablan por sí solos: Primeros puestos en las diferentes universidades como UNI, San Marcos y Católica; y sobre todo miles de ingresantes (además excelentes universitarios) en muchas universidades del país, además se debe recalcar el tema de valores.</p>
+              <p class="question-answer">Trilce cuenta con la mejor plana docente y el mejor sistema académico, por otro lado nuestros resultados hablan por sí solos: Primeros puestos en las diferentes universidades como UNI, San Marcos y PUCP; y sobre todo miles de ingresantes (además excelentes universitarios) en muchas universidades del país, además se debe recalcar el tema de valores.</p>
             </div>
           </div>
 
@@ -401,7 +401,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title"> ¿En qué consiste la evaluación académica (Secundaria)cursos que son evaluados?</h3>
-              <p class="question-answer">Matemática, comunicación e Inglés (Básico). Cantidad de preguntas Aprox 50</p>
+              <p class="question-answer">Matemática, comunicación e Inglés (Básico). Cantidad de preguntas Aprox 50.</p>
             </div>
           </div>
 
@@ -410,8 +410,8 @@
       <div class="col-xs question-content">
         <h3 class="question-title">¿Por qué solo algunos colegios TRILCE cuentan con ITS</h3>
               <p class="question-answer">
-                <p>El Ingreso por ITS es una modalidad dirigida a los mejores alumnos de 5° de Secundaria de un grupo de colegios seleccionado por la  PUCP, luego de realizar un estudio sobre el rendimiento de sus egresados en la Universidad.</p>
-                <p>Luego de brindar la información sobre ITS, se menciona al padre de familia que el alumno también puede rendir el examen en la modalidad Primera Opción y que contamos con un aula exclusiva para la preparación Católica.</p>
+                <p>El Ingreso por ITS es una modalidad dirigida a los mejores alumnos de 5.<sup>o</sup> de Secundaria de un grupo de colegios seleccionado por la  PUCP, luego de realizar un estudio sobre el rendimiento de sus egresados en la Universidad.</p>
+                <p>Luego de brindar la información sobre ITS, se menciona al padre de familia que el alumno también puede rendir el examen en la modalidad Primera Opción y que contamos con un aula exclusiva para la preparación PUCP.</p>
               </p>
             </div>
           </div>

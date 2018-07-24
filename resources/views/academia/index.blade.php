@@ -36,7 +36,7 @@
   @endif
 
   <div class="index-banners">
-    <div><a href="{{Storage::url('academia/documents/solutions/pucp/2018/evaluacion-del-talento-catolica-reconstruido-2018-2.pdf')}}" target="_blank"><img src="{{Storage::url('academia/banners/1307201800.png')}}" alt=""></a></div>
+    {{-- <div><a href="{{Storage::url('academia/documents/solutions/pucp/2018/evaluacion-del-talento-catolica-reconstruido-2018-2.pdf')}}" target="_blank"><img src="{{Storage::url('academia/banners/1307201800.png')}}" alt=""></a></div> --}}
     <div><a href="/academia/preparacion-pucp" target="_blank"><img src="{{Storage::url('academia/banners/1307201801.png')}}" alt=""></a></div>
     <div><a href="/academia/preparacion-san-marcos" target="_blank"><img src="{{Storage::url('academia/banners/1307201802.png')}}" alt=""></a></div>
     <div><a href="/academia/preparacion-pucp" target="_blank"><img src="{{Storage::url('academia/banners/1307201803.png')}}" alt=""></a></div>

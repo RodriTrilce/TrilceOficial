@@ -1,10 +1,9 @@
 <footer>
   <div class="row col-xs-12 center-xs">
     <div class="row col-xs-12 center-xs footer-top">
-      <div class="col-xs-12 col-sm-5 start-xs">
+      <div class="col-xs-12 col-sm-11 start-xs container-padding-mobile">
         <span>Usted está aquí: {{$breadcrumbs}}</span>
       </div>
-      <div class="col-sm-6 xs-hide"></div>
     </div>
 
     <div class="row col-xs-11 center-xs footer-menu">

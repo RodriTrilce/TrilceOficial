@@ -283,6 +283,13 @@
 
   .blog-home-grid--item-op-more{
     align-items: center;
+
+    span{
+      font-size: 1rem;
+      @include breakpoint(baby){
+        font-size: .9rem;
+      }
+    }
   }
 }
 

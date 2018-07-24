@@ -52,7 +52,8 @@ var Tabs = function(options) {
      */
     function reset() {
         [].forEach.call(elem.querySelectorAll('.' + contentClass), function(item) {
-            item.style.display = 'none';
+            //item.style.visibility = 'hidden';
+            item.classList.remove('js-tab-container-active');
         });
 
         [].forEach.call(elem.querySelectorAll('.' + titleClass), function(item) {
@@ -93,7 +94,8 @@ var Tabs = function(options) {
         var i = checkTab(n);
 
         elem.querySelectorAll('.' + titleClass)[i].className += ' ' + activeClass;
-        elem.querySelectorAll('.' + contentClass)[i].style.display = '';
+        //elem.querySelectorAll('.' + contentClass)[i].style.visibility = 'visible';
+        elem.querySelectorAll('.' + contentClass)[i].classList.add('js-tab-container-active');
     }
 
     /**

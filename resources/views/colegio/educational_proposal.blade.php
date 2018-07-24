@@ -36,7 +36,7 @@
 
       <div class="js-tabs__content">
         <div class="row col-xs-12 ep-generic-title">
-          <span class="number">1</span> <h2>Elevado nivel académico</h2>
+          <h2><span class="number">1 </span>Elevado nivel académico</h2>
         </div>
 
         <div class="row col-xs-12">
@@ -76,7 +76,7 @@
 
       <div class="js-tabs__content">
         <div class="row col-xs-12 ep-generic-title">
-          <span class="number">2</span> <h2>La mejor plana docente</h2>
+          <h2><span class="number">2 </span>La mejor plana docente</h2>
         </div>
 
         <div class="row col-xs-12">
@@ -104,7 +104,7 @@
 
       <div class="js-tabs__content">
         <div class="row col-xs-12 ep-generic-title">
-          <span class="number">3</span> <h2>Tutoría personalizada</h2>
+          <h2><span class="number">3 </span>Tutoría personalizada</h2>
         </div>
 
         <div class="row col-xs-12">
@@ -127,12 +127,12 @@
 
       <div class="js-tabs__content">
         <div class="row col-xs-12 ep-generic-title">
-          <span class="number">4</span> <h2>Desarrollo personal</h2>
+          <h2><span class="number">4 </span>Desarrollo personal</h2>
         </div>
 
         <div class="row col-xs-12 ep-large-container">
           <div class="col-xs-12 col-sm-3 ep-stepfour-left">
-            <p>
+            <p class="ep-text">
               Incentivamos las destrezas artísticas e intelectuales de nuestros alumnos, así como su desarrollo físico, el aprecio por nuestra cultura y la formación en valores.
             </p>
           </div>
@@ -220,7 +220,7 @@
 
       <div class="js-tabs__content">
         <div class="row col-xs-12 ep-large-container">
-          <div class="col-xs-12 col-sm-4 ep-stepfour-left">
+          <div class="col-xs-12 col-sm-4 ep-stepfour-left xs-hide">
             <img src="/static/images/colegio/old-educational-propuse/img-5to-anio.jpg" alt="Sistema 5.° año">
           </div>
           <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container">
@@ -253,6 +253,86 @@
           <h2><span class="number">6 </span>Innovación y tecnología</h2>
         </div>
 
+        <p class="ep-stepsix-aftertitle">
+          Trilce es el primer colegio en entregar anualmente y de manera gratuita una tablet a cada uno de sus alumnos.
+        </p>
+
+        <div class="row col-xs-12 ep-large-container">
+          <div class="col-xs-12 col-sm-5 ep-stepfour-left xs-hide">
+            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-01.jpg" alt="Innovación tecnológica">
+          </div>
+
+          <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container">
+
+            <h2 class="ep-stepsix-titlelist">Entrega gratuita de <i>tablets</i></h2>
+
+            <div class="row col-xs-12">
+              <div class="row col-xs-12 ep-stepsix-list">
+                <div class="row col-xs-1 list-number">1</div>
+                <div class="col-xs">
+                  <h3 class="list-title">Contribuyendo con la salud de los estudiantes</h3>
+                  <p class="list-text">Son más fáciles de transportar y, al no tener que cargar libros pesados, se evitará que desarrollen malformaciones óseas en la espalda.</p>
+                </div>
+              </div>
+              <div class="row col-xs-12 ep-stepsix-list">
+                <div class="row col-xs-1 list-number">2</div>
+                <div class="col-xs">
+                  <h3 class="list-title">Contribuyendo con el medio ambiente</h3>
+                  <p class="list-text">Trilce ha dejado de imprimir 300 000 libros, lo que equivale a más de mil árboles talados al año.</p>
+                </div>
+              </div>
+              <div class="row col-xs-12 ep-stepsix-list">
+                <div class="row col-xs-1 list-number">3</div>
+                <div class="col-xs">
+                  <h3 class="list-title">Potencian el aprendizaje</h3>
+                  <p class="list-text">Los estudiantes interactúan cotidianamente con las nuevas herramientas tecnológicas, las utilizan con naturalidad y adoptan con mayor facilidad sus códigos y formas cognitivas.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="row col-xs-12 ep-large-container">
+          <div class="col-xs-12 col-sm ep-stepfour-left">
+            <h2 class="ep-stepsix-titlelist">Intranet para padres y alumnos</h2>
+
+            <div class="row col-xs-12">
+
+              <div class="row col-xs-12 ep-stepsix-list">
+                <div class="row col-xs-1 list-number">1</div>
+                <div class="col-xs">
+                  <h3 class="list-title">Toda la información de sus hijos al alcance de un solo clic</h3>
+                  <p class="list-text">Ahorre mucho más tiempo usando nuestra intranet para el seguimiento de las calificaciones de sus niños, actividades en general, entre otros.</p>
+                </div>
+              </div>
+
+              <div class="row col-xs-12 ep-stepsix-list">
+                <div class="row col-xs-1 list-number">2</div>
+                <div class="col-xs">
+                  <h3 class="list-title">Contribuyendo con el medio ambiente</h3>
+                  <p class="list-text">Tutoría, libros, notas y otros servicios e información online</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container xs-hide">
+            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-02.jpg" alt="Innovación tecnológica">
+          </div>
+
+        </div>
+
+        <div class="row col-xs-12 center-xs">
+          <div class="col-xs-12 col-sm-10 center-xs ep-stepsix-bottom">
+            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-03.jpg" alt="Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.">
+            <h2>Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.</h2>
+          </div>
+        </div>
+
       </div>
 
       <div class="js-tabs__content">
@@ -260,6 +340,57 @@
           <h2><span class="number">7 </span>Resultados comprobados</h2>
         </div>
 
+        <div class="ep-stepseven-container">
+          <h2 class="ep-stepsix-titlelist">Ingresos masivos</h2>
+          <p class="ep-text">
+            Cada año, miles de ingresantes a las universidades más reconocidas del país son de Trilce.
+          </p>
+
+          <br>
+          <h2 class="ep-stepsix-titlelist">Primeros puestos</h2>
+
+          <div class="row col-xs-12 col-sm-12 table-responsive" id="tableade">
+            <table class="ep-stepseven-table">
+              <tbody>
+                <tr>
+                  <td data-label="">1.<sup>er</sup> Puesto UNI</td>
+                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Nombres">Luis Flores</td>
+                  <td data-label="Carrera">Ingeniería de Minas</td>
+                </tr>
+
+                <tr>
+                  <td data-label="">1.<sup>er</sup> Puesto UNI</td>
+                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Nombres">Mauricio Campos</td>
+                  <td data-label="Carrera">Ingeniería Electrónica</td>
+                </tr>
+
+                <tr>
+                  <td data-label="">1.<sup>er</sup> Puesto UNI</td>
+                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Nombres">Rodrigo Ponte</td>
+                  <td data-label="Carrera">Petróleo y Gas Natural</td>
+                </tr>
+
+                <tr>
+                  <td data-label="">1.<sup>er</sup> Puesto San Marcos</td>
+                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Nombres">Alejandro Tapia</td>
+                  <td data-label="Carrera">Ingeniería Mecánica de Fluidos</td>
+                </tr>
+
+                <tr>
+                  <td data-label="">1.<sup>er</sup> Puesto PUCP</td>
+                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Nombres">Santiago Mendoza</td>
+                  <td data-label="Carrera">Arquitectura</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
       </div>
 
 

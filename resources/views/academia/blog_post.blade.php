@@ -12,12 +12,15 @@
 
     <h1 class="blog-post-title">{{$post->title}}</h1>
 
-    <hr class="grayhr2" />
+    <hr class="hr-blog" />
 
     <div class="row col-xs-12">
       <div class="row col-xs-12 between-xs">
-        <div class="col-xs end-xs">
-          <span class="blog-view"><i class="fa fa-eye"></i> {{$post->visits()->count()}}</span><span class="blog-date-line"><i class="fa fa-calendar"></i> {{$post->blogDate()}}</span>
+        <div class="col-xs start-xs sm-hide">
+          <span class="blog-date-line"><i class="fa fa-calendar"></i> {{$post->blogDate()}}</span>
+        </div>
+        <div class="col-xs-2 col-sm end-xs end-sm">
+          <span class="blog-view"><i class="fa fa-eye"></i> {{$post->visits()->count()}}</span>
         </div>
       </div>
     </div>

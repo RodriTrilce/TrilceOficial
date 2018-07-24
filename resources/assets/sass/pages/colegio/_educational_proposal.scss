@@ -1,5 +1,6 @@
 .educationalproposal-container{
   margin: 40px 0;
+
   @include breakpoint(baby){
     margin: 20px 0;
   }
@@ -63,9 +64,10 @@
   margin-right: .5em;
   padding: 1rem;
   transition: all .25s;
+  font-family: $font_geo_reg;
 
   &:hover {
-  text-decoration: none;
+    text-decoration: none;
   }
 
 }
@@ -81,6 +83,18 @@
 
 .js-tabs__content {
   margin-top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  left: -9999px;
+}
+
+.js-tab-container-active{
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  left: auto;
 }
 
 .ep-generic-title{
@@ -91,23 +105,29 @@
     color: $colegio_gray;
     font-size: 2rem;
     font-family: $font_geo_bold;
+    margin-top: -5px;
+
+    @include breakpoint(baby){
+      font-size: 1.2rem;
+    }
   }
 
   h2{
-    font-family: $font_cae_bold;
-    font-size: 2rem;
+    font-family: $font_geo_smbold;
+    font-size: 1.7rem;
     margin-left: 10px;
-  }
 
-  @include breakpoint(baby){
-    .number{
-      font-size: 1.3rem;
+    @include breakpoint(mom){
+      font-size: 1.5
     }
 
-    h2{
-      font-size: 1.3rem;
+    @include breakpoint(baby){
+      font-size: 1.2rem;
+      margin-left: 0;
     }
+
   }
+
 }
 
 .ep-generic-list{
@@ -115,7 +135,9 @@
   padding-left: 28px;
 
   li{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-family: $font_geo_reg;
+    font-size: 1rem;
 
     span{
       color: $orange;
@@ -133,7 +155,6 @@
 }
 
 .ep-stepfour-left{
-  font-family: $font_geo_lite;
   border-right: 1px solid $color_interblock;
   padding-right: 15px;
   margin-bottom: 20px;
@@ -142,6 +163,11 @@
     padding-right: 0;
     border: 0;
   }
+}
+
+.ep-text{
+  font-family: $font_geo_reg;
+  font-size: 1rem;
 }
 
 .ep-stepfour-right{
@@ -167,9 +193,9 @@
 
   .item-title{
     color: $orange;
-    font-family: $font_geo_reg;
+    font-family: $font_cae_reg;
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     svg{
       fill: $orange;
@@ -184,7 +210,8 @@
   }
 
   .item-content{
-    font-size: .9rem;
+    font-size: 1rem;
+    font-family: $font_geo_reg;
   }
 }
 
@@ -195,14 +222,102 @@
 }
 
 .ep-stepfive-list{
-  font-family: $font_geo_lite;
 
   h3{
+    font-family: $font_cae_bold;
     color: gray;
-    font-weight: bold;
   }
 
   i{
     color: $orange;
+  }
+}
+
+.icon_local_span{
+  font-size: 12px;
+}
+
+.ep-stepsix-aftertitle{
+  font-family: $font_geo_reg;
+  font-size: 1rem;
+  margin: 20px 38px 0;
+
+  @include breakpoint(baby){
+    margin-left: 0;
+  }
+}
+
+.ep-stepsix-titlelist{
+  color: $gray;
+  font-size: 1.3rem;
+  font-family: $font_cae_bold;
+  margin-bottom: 15px;
+}
+
+.ep-stepsix-list{
+  margin-bottom: 15px;
+
+  .list-number{
+    color: $colegio_gray;
+    font-family: $font_geo_bold;
+    font-size: 2.3rem;
+    justify-content: center;
+    margin-top: -7px;
+
+    @include breakpoint(baby){
+      font-size: 1.5rem;
+    }
+  }
+
+  .list-title{
+    font-size: 1.1rem;
+    color: $gray;
+    font-family: $font_cae_bold;
+  }
+
+  .list-text{
+    font-family: $font_geo_reg;
+    font-size: 1rem;
+  }
+}
+
+.ep-stepsix-bottom{
+  margin-top: 40px;
+
+  @include breakpoint(baby){
+   margin-top: 20px;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    font-family: $font_cae_bold;
+    color: $gray;
+
+    @include breakpoint(baby){
+      font-size: 1.1rem;
+    }
+  }
+
+  img{
+    margin-bottom: 10px;
+
+    @include breakpoint(baby){
+      max-width: 35%;
+    }
+  }
+}
+
+
+.ep-stepseven-container{
+  padding-top: 20px;
+  padding-left: 28px;
+
+  @include breakpoint(baby){
+    padding-left: 0;
+  }
+
+  table{
+    font-family: $font_geo_reg;
+    font-size: 1rem;
   }
 }

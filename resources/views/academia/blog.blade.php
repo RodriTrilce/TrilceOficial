@@ -57,7 +57,7 @@
                 <div class="row col-xs-12 blog-home-grid--item-op between-sm start-xs">
                   <div class="row col-xs xs-hide"><a href="/{{$post->site}}/blog/{{$post->slug}}">Leer más <i class="fa fa-search"></i></a></div>
                   <div class="row col-xs-4 start-xs end-sm blog-home-grid--item-op-more">
-                    @if($post->visits()->count() > 1)
+                    @if($post->visits()->count() > 0)
                       <i class="fa fa-eye"></i> <span>{{$post->visits()->count()}}</span>
                     @endif
                   </div>

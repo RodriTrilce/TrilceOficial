@@ -19,19 +19,54 @@
     <div class="js-tabs" id="tabs_educational_propuse">
 
       <ul class="js-tabs__header">
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_elevado_nivel_academico.png" alt=""> Elevado nivel académico</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_elevado_nivel_academico.png" alt=""></div>
+            <div>Elevado nivel académico</div>
+          </a>
+        </li>
 
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_mejor_plana_docencia.png" alt=""> La mejor plana docente</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_mejor_plana_docencia.png" alt=""></div>
+            <div>La mejor plana docente</div>
+          </a>
+        </li>
 
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_tutoria_personalizada.png" alt=""> Tutoría personalizada</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_tutoria_personalizada.png" alt=""></div>
+            <div>Tutoría personalizada</div>
+          </a>
+        </li>
 
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_desarrollo_personal.png" alt=""> Desarrollo Personal</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_desarrollo_personal.png" alt=""></div>
+            <div>Desarrollo Personal</div>
+          </a>
+        </li>
 
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_sistema_5.png" alt=""> Sistema 5.° Año</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_sistema_5.png" alt=""></div>
+            <div>Sistema 5.° Año</div>
+          </a>
+        </li>
 
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_innovacion_tecnologica.png" alt=""> Innovación y tecnología</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_innovacion_tecnologica.png" alt=""></div>
+            <div>Innovación y tecnología</div>
+          </a>
+        </li>
 
-        <li><a href="javascript:void(0);" class="js-tabs__title"><img src="/static/images/colegio/old-educational-propuse/p_resultados_comprobados.png" alt=""> Resultados comprobados</a></li>
+        <li>
+          <a href="javascript:void(0);" class="js-tabs__title">
+            <div><img src="/static/images/colegio/old-educational-propuse/p_resultados_comprobados.png" alt=""></div>
+            <div>Resultados comprobados</div>
+          </a>
+        </li>
       </ul>
 
       <div class="js-tabs__content">

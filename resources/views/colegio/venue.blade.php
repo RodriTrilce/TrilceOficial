@@ -104,7 +104,7 @@
   <div class="row col-xs-12 center-xs venue-colegio-investment">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md investment-container">
 
-      <div class="row col-xs-12 col-sm-3 investment-title">
+      <div class="row col-xs-12 col-sm-2 investment-title">
         <h3>Inversión</h3>
       </div>
 
@@ -112,14 +112,14 @@
 
         @foreach ($investment as $k)
           <div class="row col-xs-12 investment-block-item">
-            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
+            <div class="col-xs-12 col-sm-3 start-xs center-sm"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
 
             @if($k->admissionfee)
-            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
+            <div class="col-xs-12 col-sm-3 start-xs center-sm"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
             @endif
 
             @if($k->enrollment)
-            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span">Matrícula: {!! $k->enrollment !!}</span></div>
+            <div class="col-xs-12 col-sm-3 start-xs center-sm"><span class="venue-colegio-title-span">Matrícula: {!! $k->enrollment !!}</span></div>
             @endif
 
             @if($k->monthlypayment)

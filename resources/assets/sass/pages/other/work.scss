@@ -1,5 +1,4 @@
-
-.error-404{
+.error-work{
   margin-top: 15vh;
   margin-bottom: 20vh;
 
@@ -16,6 +15,10 @@
           padding-left: 0;
           text-align: right;
 
+          @include breakpoint(baby){
+            padding-right: 15px;
+          }
+
           &::before{
             content: "";
             position: absolute;
@@ -28,7 +31,7 @@
           }
 
           &::after{
-            content: "\f108";
+            content: "\f381";
             position: absolute;
             top: -53px;
             right: -27px;
@@ -61,22 +64,24 @@
 
   .text{
     h1{
-      color: $orange;
-      font-size: 1.3rem;
+      color: $gray;
+      font-size: 2rem;
       font-weight: bold;
-      width: 8rem;
+      width: 100%;
+
+      @include breakpoint(baby){
+        font-size: 1.5rem;
+      }
     }
 
     p{
       font-size: 1rem;
-      margin-top: 2rem;
-      >a{
-        color: $orange;
-      }
+      margin-top: 15px;
+      color: $orange;
     }
   }
 }
 
-.error-404--image{
-  max-width: 400px;
+.error-work--image{
+  max-width: 300px;
 }

@@ -110,13 +110,13 @@ Breadcrumbs::for('academia-solutions', function ($trail, $modality) {
 // Academia > Enrollment
 Breadcrumbs::for('academia-enrollment', function ($trail) {
     $trail->parent('academia-index');
-    $trail->push('Prematrícula en linea', route('academia-enrollment'));
+    $trail->push('Prematrícula en línea', route('academia-enrollment'));
 });
 
 // Academia > Math Olympics
 Breadcrumbs::for('academia-matholympics', function ($trail) {
     $trail->parent('academia-index');
-    $trail->push('Olimpiadas Matematicas', route('academia-matholympics'));
+    $trail->push('Olimpiadas Matemáticas', route('academia-matholympics'));
 });
 
 // Academia > Contact
@@ -135,4 +135,10 @@ Breadcrumbs::for('academia-blog', function ($trail) {
 Breadcrumbs::for('academia-blogpost', function ($trail, $post) {
     $trail->parent('academia-blog');
     $trail->push($post, route('academia-blogpost', $post));
+});
+
+
+// Academia > Index
+Breadcrumbs::for('academia-what-your-option', function ($trail) {
+   $trail->push('Página en construccion', route('academia-what-your-option'));
 });

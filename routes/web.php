@@ -133,6 +133,11 @@ Route::name('academia-blogpost')
 Route::name('academia-blog')
       ->get('/academia/blog', 'Academia\BlogController@index');
 
+// Matricula en linea (Enrollment)
+Route::name('academia-what-your-option')
+      ->get('/academia/por-que-somos-tu-mejor-opcion', function(){
+        return view('errors.work');
+      });
 
 /**
  *  Colegio

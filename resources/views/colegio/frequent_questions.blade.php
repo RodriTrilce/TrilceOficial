@@ -28,7 +28,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">¿Por qué en 4.<sup>o</sup> y 5.<sup>o</sup> de secundaria no existen horas de inglés en el horario regular?</h3>
-              <p class="question-answer">Los tres primeros años, los alumnos de Trilce, reciben una formación sólida del curso de inglés, ´llevando ocho horas a la semana (a diferencia de los colegios tradicionales que lo llevan solo 2 horas semanales), permitiéndoles obtener un buen nivel en el idioma, área que se complementa  en los posteriores grados (4.<sup>o</sup> y 5.<sup>o</sup>) mediante talleres de 4 horas semanales por las tardes.</p>
+              <p class="question-answer">Los tres primeros años, los alumnos de Trilce, reciben una formación sólida del curso de inglés, llevando ocho horas a la semana (a diferencia de los colegios tradicionales que lo llevan solo 2 horas semanales), permitiéndoles obtener un buen nivel en el idioma, área que se complementa  en los posteriores grados (4.<sup>o</sup> y 5.<sup>o</sup>) mediante talleres de 4 horas semanales por las tardes.</p>
             </div>
           </div>
 
@@ -51,7 +51,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Mi hijo (a) no es bueno(a) en matemáticas, ¿se adaptará al sistema de TRILCE?</h3>
+        <h3 class="question-title">Mi hijo(a) no es bueno(a) en matemáticas, ¿se adaptará al sistema de TRILCE?</h3>
               <p class="question-answer">Sí, si bien es cierto TRILCE se caracteriza por ser un colegio preuniversitario también contribuimos al desarrollo de las habilidades de los alumnos en las diferentes áreas, logrando que destaquen según sus capacidades. Con respecto a los cursos de matemáticas nosotros contamos con un servicio de asesorías especializadas en los cursos de mayor dificultad de esta manera los reforzamos para que minimicen sus falencias. Asimismo, a través del Departamento Psicopedagógico brindamos al padre de familia las pautas que estimulen y motiven a su hijo a la adaptación al sistema.</p>
             </div>
           </div>
@@ -80,7 +80,7 @@
     <li>Llevar la libreta de notas al colegio donde desea realizar el traslado.</li>
     <li>El colegio realizará los trámites correspondientes (Consulta de notas, conducta, etc).</li>
     <li>Una vez que el alumno sea aceptado en el colegio, cancelará la matrícula y solicitará la constancia de vacante.</li>
-    <li>La constancia de vacante deberá  ser entregada al local de procedencia, para que realicen el trámite correspondiente de documentos del alumno. (El colegio se encarga de enviar los documentos al colegios actual.</li>
+    <li>La constancia de vacante deberá  ser entregada al local de procedencia, para que realicen el trámite correspondiente de documentos del alumno. (El colegio se encarga de enviar los documentos al colegios actual).</li>
 </ul>
 
   </p>
@@ -99,9 +99,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">Para solicitar descuentos por hermanos:</h3>
-              <p class="question-answer">Explicamos al padre de familia que presente su solicitud, exponiendo y sustentando los motivos por el cual solicita el descuento. Asimismo, recalcamos.  En caso pregunten a quién se le otorga la beca, indicar que es al mayor de los hermanos.
-
-    La solicitud se envía hasta el 15 de enero</p>
+              <p class="question-answer">Explicamos al padre de familia que presente su solicitud, exponiendo y sustentando los motivos por el cual solicita el descuento. Asimismo, recalcamos.  En caso pregunten a quién se le otorga la beca, indicar que es al mayor de los hermanos. La solicitud se envía hasta el 15 de enero.</p>
             </div>
           </div>
 
@@ -118,15 +116,15 @@
       <div class="col-xs question-content">
         <h3 class="question-title">Sobre entrega de libros, material de estudio y cursos.</h3>
               <p class="question-answer"><strong>Inicial:</strong><br>
-    4 - 5 años (Pre-Kinder y Kinder): Se les entrega fichas para (Delinear y pintar).<br><br>
+    4.<sup>o</sup> - 5.<sup>o</sup> años (Pre-Kinder y Kinder): Se les entrega fichas para (Delinear y pintar).<br><br>
     <strong>Primaria:</strong><br>
-    1° a 6° grado: Se les entrega libros por áreas.<br>
-    1° a 4.<sup>o</sup> grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
+    1.<sup>o</sup> a 6.<sup>o</sup> grado: Se les entrega libros por áreas.<br>
+    1.<sup>o</sup> a 4.<sup>o</sup> grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
     *A partir de 5.<sup>o</sup> grado cuentas con un profesor por curso (Polidocencia).<br>
-    *Religión: Se dicta el curso de religión a los alumnos de inicial (Pre-Kinder y Kinder) y primaria de 1° a 6° grado.<br><br>
+    *Religión: Se dicta el curso de religión a los alumnos de inicial (Pre-Kinder y Kinder) y primaria de 1.<sup>o</sup> a 6.<sup>o</sup> grado.<br><br>
 
     <strong>Secundaria:</strong><br>
-    Formación de valores: Se trabaja un valor por mes de 1° a 5.<sup>o</sup> de secundaria.</p>
+    Formación de valores: Se trabaja un valor por mes de 1.<sup>o</sup> a 5.<sup>o</sup> de secundaria.</p>
             </div>
           </div>
 
@@ -393,7 +391,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">¿En qué consiste la evaluación académica (Primaria) cursos que son evaluados?</h3>
-              <p class="question-answer">De 2° a 6° grado: Matemática, Comunicación, Ciencia y Ambiente, Personal Social e Inglés(Básico).</p>
+              <p class="question-answer">De 2.<sup>o</sup> a 6.<sup>o</sup> grado: Matemática, Comunicación, Ciencia y Ambiente, Personal Social e Inglés(Básico).</p>
             </div>
           </div>
 

@@ -527,6 +527,8 @@
   .item-view{
     align-self: flex-end;
     margin-top: 20px;
+    width: 100%;
+    text-align: right;
 
     @include breakpoint(baby){
       margin-bottom: 3px;

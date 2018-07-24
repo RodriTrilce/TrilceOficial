@@ -16,10 +16,10 @@
           </a>
         </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="/academia/matricula-en-linea">
-              <i class="fa fa-edit"></i>
-              <h3>Matrícula en linea</h3>
-              <p>Ahora es más facil inscribirse.</p>
+            <a href="/academia/por-que-somos-tu-mejor-opcion">
+              <i class="fa fa-question"></i>
+              <h3>¿Por que somos tu mejor opción?</h3>
+              <p>Preparación exclusiva para UNI, San Marcos y PUCP.</p>
             </a>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">

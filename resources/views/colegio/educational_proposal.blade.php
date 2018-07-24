@@ -356,7 +356,7 @@
           </div>
 
           <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container xs-hide">
-            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-02.jpg" alt="Innovación tecnológica">
+            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-02b.jpg" alt="Innovación tecnológica">
           </div>
 
         </div>

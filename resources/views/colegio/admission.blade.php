@@ -64,7 +64,6 @@
       @break
   @endswitch
 
-
 @include('colegio.partials.card_bottom')
 
 @endsection

@@ -4,7 +4,7 @@
     <h3 class="new-t-subtitle">Periodo: Julio 2018 a Abril 2019</h3>
   </div>
   <div class="col-xs-12 col-sm-4 new-t-p">
-    <p>Modalidad por la cual los Alumnos de un colegio TRILCE, desean ratificar su matrícula para el siguiente año escolar, en el mismo local..</p>
+    <p>Modalidad por la cual los Alumnos de un colegio TRILCE, desean ratificar su matrícula para el siguiente año escolar, en el mismo local.</p>
   </div>
 </div>
 

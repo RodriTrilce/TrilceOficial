@@ -42,31 +42,31 @@
         <div class="row col-xs-12">
           <ul class="ep-generic-list">
             <li>
-                <span class="icon_local_span"><i class="fa fa-minus"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Sistema académico del más alto nivel en el país.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 38 años de experiencia en preparación preuniversitaria.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Alumnos con un excelente conocimiento en las áreas de matemáticas, ciencias y letras.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Profesores especializados por curso.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Evaluaciones permanentes.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Asesorías gratuitas fuera del horario escolar.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Libros digitales gratuitos de todos los cursos incluidos en la tablet Trilce y elaborados por los docentes más experimentados de la institución.
             </li>
           </ul>
@@ -82,19 +82,19 @@
         <div class="row col-xs-12">
           <ul class="ep-generic-list">
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Pertenecientes a la Academia Trilce.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Seleccionados de las mejores universidades del Perú.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Permanentemente capacitados y evaluados.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Comprometidos con los valores de la institución.
             </li>
 
@@ -110,15 +110,15 @@
         <div class="row col-xs-12">
           <ul class="ep-generic-list">
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Una tutora por aula de manera permanente.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Encargada del seguimiento académico y desarrollo personal.
             </li>
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-stop"></i></span>
                 Vela por el cumplimiento de las normas de conducta tanto dentro como fuera del aula.
             </li>
           </ul>
@@ -235,11 +235,11 @@
 
             <ul class="ep-generic-list ep-stepfive-list">
               <li>
-                  <h3><span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span> Docentes especializados por cada universidad</h3>
+                  <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> Docentes especializados por cada universidad</h3>
                   <p>Nuestras aulas de 5.<sup>o</sup> año cuentan con docentes especializados por cada universidad, sea UNI, San Marcos o PUCP.</p>
               </li>
               <li>
-                  <h3><span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span> Aulas exclusivas por cada universidad</h3>
+                  <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> Aulas exclusivas por cada universidad</h3>
                   <p>Aulas con contenido curricular adecuado al prospecto del examen de admisión de la UNI, San Marcos, PUCP y Generales (otras).</p>
               </li>
             </ul>

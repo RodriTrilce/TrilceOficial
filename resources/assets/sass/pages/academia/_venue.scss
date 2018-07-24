@@ -11,7 +11,7 @@
   border: 1px solid transparentize($gray, 0.6);
 
   @media (min-width: 768px) {
-    margin-top: 35px;
+    margin-top: 40px;
   }
 }
 
@@ -21,7 +21,7 @@
 
 .venue-info-title{
   height: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   h2{
     color: $gray;
@@ -30,6 +30,11 @@
 
   .colegio{
     font-family: $font_geo_smbold !important;
+    font-size: 1.8rem;
+
+    @include breakpoint(baby){
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -271,16 +276,86 @@
 
   h2{
     color: $gray;
-    font-size: 1.2rem;
-
+    font-size: 1.1rem;
+    font-family: $font_cae_bold;
   }
+
 
   table{
-    thead th{
-      font-family: $font_geo_reg !important;
-      text-align: left !important;
-    }
-    
+
+      width: 100% !important;
+      border:0 !important;
+
+      thead{
+        border-bottom: 1px dotted #ccc;
+      }
+
+      thead > tr{
+        border-bottom: 0 !important;
+        font-family: $font_geo_reg !important;
+      }
+
+      tbody > tr{
+        border-top: 0 !important;
+      }
+
+      tr{
+    //    border: 0 !important;
+
+        td{
+          font-family: $font_geo_lite;
+          text-align: left !important;
+        }
+      }
+
+      td, th{
+    //    border-right: 0.5px solid #ddd;
+
+        &:last-child{
+          border: 0 !important;
+        }
+      }
+
+      th{
+        color: $gray;
+        position: relative;
+        text-align: left !important;
+      }
+
+      @media (max-width: 767px) {
+        width: 100% !important;
+
+        tr{
+          border: 1px solid #ddd !important;
+        }
+
+        tbody >  tr{
+          border-top: 1px solid #ddd !important;
+        }
+
+        tbody td{
+          text-align: right !important;
+        }
+
+        td {
+          position: relative;
+          border-right: 0 !important;
+
+          &:before{
+            color: $gray;
+            padding-left: 16px;
+          }
+
+        }
+      }
   }
 
+  .method-venue{
+    max-width: 130px;
+    display: inline-block;
+
+    @include breakpoint(baby){
+      max-width: 100px;
+    }
+  }
 }

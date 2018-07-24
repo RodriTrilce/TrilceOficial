@@ -39,7 +39,56 @@
           </table>
 
           <div class="venue-content-editable">
-            {!!$data->content!!}
+            {{-- {!!$data->content!!} --}}
+
+            {{-- <h2>Horario de clases</h2>
+
+            <table>
+            	<thead>
+            		<tr>
+            			<th>Secci&oacute;n</th>
+            			<th>Ingreso</th>
+            			<th>Salida</th>
+            		</tr>
+            	</thead>
+            	<tbody>
+            		<tr>
+            			<td>Primaria 1.&deg; a 6.&deg;</td>
+            			<td>7:45 a. m.</td>
+            			<td>2:20 p. m.</td>
+            		</tr>
+            		<tr>
+            			<td>Secundaria 1.&deg; a 3.&deg;</td>
+            			<td>7:45 a. m.</td>
+            			<td>2:30 p. m.</td>
+            		</tr>
+            		<tr>
+            			<td>Secundaria 4.&deg; y 5.&deg;</td>
+            			<td>7:45 a. m.</td>
+            			<td>3:15 p. m.</td>
+            		</tr>
+            	</tbody>
+            </table>
+
+            <h2>
+            	<br>Medios de pago</h2> --}}
+
+              {!!
+                $x = str_replace(
+                  [
+                    '[CONTINENTAL]',
+                    '[BCP]',
+                    '[SCOTIABANK]'
+                  ],
+                  [
+                    '<a class="method-venue" href="/colegio/guia-de-pagos-en-linea"><img src="/static/images/colegio/logo-bbva.jpg" alt="Guía de pagos para BBVA"></a>',
+                    '<a class="method-venue" href="/colegio/guia-de-pagos-en-linea"><img src="/static/images/colegio/logo-bcp.jpg" alt="Guía de pagos para BCP"></a>',
+                    '<a class="method-venue" href="/colegio/guia-de-pagos-en-linea"><img src="/static/images/colegio/logo-scotiabank.jpg" alt="Guía de pagos para Scotiabank"></a>'
+                  ],
+                  $data->content
+                )
+              !!}
+
           </div>
         </div>
 
@@ -63,18 +112,18 @@
 
         @foreach ($investment as $k)
           <div class="row col-xs-12 investment-block-item">
-            <div class="col-xs"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
+            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
 
             @if($k->admissionfee)
-            <div class="col-xs"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
+            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
             @endif
 
             @if($k->enrollment)
-            <div class="col-xs"><span class="venue-colegio-title-span">Matrícula: {!! $k->enrollment !!}</span></div>
+            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span">Matrícula: {!! $k->enrollment !!}</span></div>
             @endif
 
             @if($k->monthlypayment)
-            <div class="col-xs"><span class="venue-colegio-title-span">Mensualidad: {!! $k->monthlypayment !!}</span></div>
+            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span">Mensualidad: {!! $k->monthlypayment !!}</span></div>
             @endif
           </div>
         @endforeach
@@ -89,7 +138,7 @@
 @endsection
 
 @section('scripts')
-    page = 'venue';
+    page = 'venue_colegio';
 
   @parent
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU9IczA6fujtDzHPy0xWnHLqHHMuB1vKM" charset="utf-8"></script>

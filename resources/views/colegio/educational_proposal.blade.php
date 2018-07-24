@@ -42,7 +42,7 @@
         <div class="row col-xs-12">
           <ul class="ep-generic-list">
             <li>
-                <span class="icon_local_span"><i class="fa fa-square-o" aria-hidden="true"></i></span>
+                <span class="icon_local_span"><i class="fa fa-minus"></i></span>
                 Sistema académico del más alto nivel en el país.
             </li>
             <li>

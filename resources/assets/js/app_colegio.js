@@ -186,3 +186,27 @@ if(page == 'educational_proposal'){
     open: 0
   });
 }
+
+
+if(page == 'venue_colegio'){
+  var content = document.querySelector('.venue-content-editable');
+  var tables = content.querySelectorAll('table');
+
+  [].forEach.call(tables, table => {
+    let thead   = table.querySelector('thead');
+    let ths     = thead.querySelectorAll('tr th');
+    let tbody   = table.querySelector('tbody');
+    let trs     = tbody.querySelectorAll('tr');
+
+    [].forEach.call(trs, tr => {
+      let tds = tr.querySelectorAll('td');
+
+      [].forEach.call(tds, function(td, i){
+        td.dataset.label = ths[i].textContent;
+      });
+
+    });
+
+  });
+
+}

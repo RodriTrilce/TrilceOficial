@@ -3,6 +3,21 @@
 @section('title', 'Propuesta educativa')
 @section('content')
 
+  @if (session('contact'))
+    <div id="modal-1" style="display:none;">
+      <div class="modal-auto">
+        <div class="row col-xs-12 center-xs enrollment-finish">
+            <div class="col-xs-12">
+              <h1 class="finish-title">{{ucwords(session('name'))}}, gracias por escribirnos <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por contactarnos"></h1>
+            </div>
+            <div class="col-xs-12">
+              <p class="finish-text">Nos pondremos en contacto con usted en la brevedad.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  @endif
+
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
       <img src="{{ url('/static/images/colegio/pages-banners/banner-prop-educativa.jpg') }}" alt="">
@@ -446,5 +461,13 @@
 
 @section('scripts')
     page = 'educational_proposal';
+
+    var modal_open = [
+    @if(session('contact'))
+      '#modal-1'
+    @endif
+
+    ];
+        
   @parent
 @endsection

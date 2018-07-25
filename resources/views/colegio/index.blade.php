@@ -5,22 +5,6 @@
 @section('afterBody', $print)
 @section('content')
 
-
-  @if (session('contact'))
-    <div id="modal-1" style="display:none;">
-      <div class="modal-auto">
-        <div class="row col-xs-12 center-xs enrollment-finish">
-            <div class="col-xs-12">
-              <h1 class="finish-title">{{ucwords(session('name'))}}, gracias por escribirnos <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por contactarnos"></h1>
-            </div>
-            <div class="col-xs-12">
-              <p class="finish-text">Nos pondremos en contacto con usted en la brevedad.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  @endif
-
   <div class="index-banners">
     <div><a href="https://www.facebook.com/ColegioTrilce/videos/2145054952176570/" target="_blank"><img src="{{Storage::url('colegio/banners/13071800.png')}}" alt=""></a></div>
     <div><a href="http://www.trilce.edu.pe/colegios/inscripcion-admision2019/" target="_blank"><img src="{{Storage::url('/colegio/banners/24071801.png')}}" alt=""></a></div>
@@ -73,13 +57,6 @@
 @section('scripts')
 
     page = 'index';
-
-    var modal_open = [
-    @if(session('contact'))
-      '#modal-1'
-    @endif
-
-    ];
 
     @parent
 @endsection

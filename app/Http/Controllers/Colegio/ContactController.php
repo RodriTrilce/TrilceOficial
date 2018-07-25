@@ -21,7 +21,7 @@ class ContactController extends Controller
 
     Mail::send( new ContactForm( $request ) );
 
-    return redirect()->route('academia-index')->with([
+    return redirect()->route('colegio-educationalproposal')->with([
       'name'    => $request->contact_names,
       'contact'  => true
     ]);

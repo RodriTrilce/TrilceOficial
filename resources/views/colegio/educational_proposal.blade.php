@@ -371,7 +371,7 @@
                 <div class="row col-xs-1 list-number">2</div>
                 <div class="col-xs">
                   <h3 class="list-title">Contribuyendo con el medio ambiente</h3>
-                  <p class="list-text">Tutoría, libros, notas y otros servicios e información online</p>
+                  <p class="list-text">Tutoría, libros, notas y otros servicios e información online.</p>
                 </div>
               </div>
 

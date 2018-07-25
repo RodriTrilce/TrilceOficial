@@ -82,11 +82,11 @@
 
   </div>
 
-  <div class="row col-xs-12 center-xs button-register-academia">
+  {{-- <div class="row col-xs-12 center-xs button-register-academia">
     <div class="col-xs-10 col-sm-5">
       <a href="http://www.trilce.edu.pe/inscripcion/" target="_blank"><img src="/static/images/academia/button-register.png" alt="No te quedes sin vacante"></a>
     </div>
-  </div>
+  </div> --}}
 
 </div>
 

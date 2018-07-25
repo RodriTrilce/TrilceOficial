@@ -27,7 +27,6 @@ class EnrollmentResourceController extends Controller
      */
      public function university($university)
      {
-
       if(Cache::has($university)){
         $data = Cache::get($university);
       }else{
@@ -39,11 +38,18 @@ class EnrollmentResourceController extends Controller
 
      public function venue($university, $key)
      {
-       if(Cache::has($key.$university)){
+       echo $university;
+        echo "\n ";
+        echo $key;
+        echo "\n ";
+
+/*       if(Cache::has($key.$university)){
          $data = Cache::get($key.$university);
        }else{
+*/
          $data = $this->getDataVenue($university,$key);
-       }
+  //     }
+  dd($data);
 
        return new EnrollmentResource($data);
      }

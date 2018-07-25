@@ -64,7 +64,7 @@
                           <div class="col-xs dd-colegio-aboutus-rocket"></div>
 
                           <div class="row col-xs dd-colegio-aboutus-textright">
-                            <h2>Vive la aventura de estudiar en Trilce.<br /> Comienza el viaje..</h2>
+                            <h2>Vive la aventura de estudiar en Trilce.<br /> Comienza el viaje...</h2>
                           </div>
                         </a>
                       </div>

@@ -237,8 +237,9 @@ if(page == 'educational_proposal'){
   }
 
   acorditionProposal.init();
-  
+
   var modal = new VanillaModal();
+
   if(modal_open.length){
     modal.open(modal_open[0]);
   }

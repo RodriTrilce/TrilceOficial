@@ -2,6 +2,13 @@
 @extends('colegio.layouts.template')
 @section('title', 'Propuesta educativa')
 @section('content')
+  
+  <div class="modal">
+    <div class="modal-inner">
+      <span data-modal-close>&times;</span>
+      <div class="modal-content"></div>
+    </div>
+  </div>
 
   @if (session('contact'))
     <div id="modal-1" style="display:none;">
@@ -466,8 +473,7 @@
     @if(session('contact'))
       '#modal-1'
     @endif
-
     ];
-        
+
   @parent
 @endsection

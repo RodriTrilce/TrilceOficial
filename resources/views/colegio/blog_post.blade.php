@@ -20,11 +20,10 @@
           <span class="blog-date-line"><i class="fa fa-calendar"></i> {{$post->blogDate()}}</span>
         </div>
         <div class="col-xs-2 col-sm end-xs end-sm">
-          <span class="blog-view"><i class="fa fa-eye"></i> {{$post->visits()->count()}}</span>
+          <span class="blog-view" title="{{$post->visits()->count()}} Visitas"><i class="fa fa-eye"></i> {{$post->visits()->count()}}</span>
         </div>
       </div>
     </div>
-
 
   </div>
 

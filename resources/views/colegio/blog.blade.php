@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <div class="row col-xs-12 center-xs pagination-container">
+  <div class="row col-xs-12 center-xs pagination-container blog-pagination">
     {{ $posts->links() }}
   </div>
 

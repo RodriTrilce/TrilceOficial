@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 class PreparationController extends Controller
 {
-    
+
     public function index($university)
     {
       switch ($university) {
@@ -17,7 +17,7 @@ class PreparationController extends Controller
               'type'  => $university
             ];
           break;
-        
+
         case 'uni':
             $var = [
               'title' => 'UNI',
@@ -27,11 +27,11 @@ class PreparationController extends Controller
 
         case 'pucp':
             $var = [
-              'title' => 'Pucp',
+              'title' => 'PUCP',
               'type'  => $university
             ];
           break;
-        
+
         default:
             abort(404);
           break;

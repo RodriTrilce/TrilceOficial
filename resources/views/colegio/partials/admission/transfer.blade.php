@@ -20,7 +20,7 @@
       <div class="col-xs admission-new-item-content">
         <h3 class="item-content-title">Inscripción</h3>
         <ul>
-          <li>Completar la ficha de admisión 2018.</li>
+          <li>Completar la ficha de admisión 2019 de cada sede.</li>
           <li>Pago por derecho de evaluación.</li>
           <li>Entrega de:</li>
           <ul>
@@ -55,8 +55,8 @@
       <div class="col-xs admission-new-item-content">
         <h3 class="item-content-title">Matrícula</h3>
         <ul>
-          <li>Completar ficha de matrícula TRILCE 2018.</li>
-          <li>Firma de compromiso de honor 2018. <br />Entrega de constancia de no adeudo o comprobante de pago de pension del mes anterior.</li>
+          <li>Completar ficha de matrícula TRILCE 2019.</li>
+          <li>Firma de compromiso de honor 2019. <br />Entrega de constancia de no adeudo o comprobante de pago de pension del mes anterior.</li>
           <li>Pago de matrícula.</li>
         </ul>
       </div>

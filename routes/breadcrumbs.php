@@ -67,6 +67,11 @@ Breadcrumbs::for('colegio-educationalproposal', function ($trail) {
     $trail->push('Propuesta Educativa', route('colegio-educationalproposal'));
 });
 
+// Academia > Multimedia
+Breadcrumbs::for('colegio-multimedia', function ($trail) {
+   $trail->push('Página en construccion', route('colegio-multimedia'));
+});
+
 
 /**
  *  Academia migajas de pan
@@ -86,7 +91,7 @@ Breadcrumbs::for('academia-aboutus', function ($trail) {
 // Academia > Preparation
 Breadcrumbs::for('academia-preparation', function ($trail, $modality) {
     $trail->parent('academia-index');
-    $trail->push('Preparación ' . ucwords($modality), route('academia-preparation', $modality));
+    $trail->push('Preparación ' . $modality, route('academia-preparation', $modality));
 });
 
 // Academia > Venue
@@ -137,8 +142,12 @@ Breadcrumbs::for('academia-blogpost', function ($trail, $post) {
     $trail->push($post, route('academia-blogpost', $post));
 });
 
-
-// Academia > Index
+// Academia > What you option
 Breadcrumbs::for('academia-what-your-option', function ($trail) {
    $trail->push('Página en construccion', route('academia-what-your-option'));
+});
+
+// Academia > Multimedia
+Breadcrumbs::for('academia-multimedia', function ($trail) {
+   $trail->push('Página en construccion', route('academia-multimedia'));
 });

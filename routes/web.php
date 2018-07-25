@@ -139,6 +139,12 @@ Route::name('academia-what-your-option')
         return view('errors.work');
       });
 
+// Multimedia
+Route::name('academia-multimedia')
+      ->get('/academia/multimedia', function(){
+        return view('errors.work');
+      });
+
 /**
  *  Colegio
  */
@@ -188,3 +194,9 @@ Route::name('colegio-blog')
 // Página Princial (Index)
 Route::name('colegio-educationalproposal')
       ->get('/colegio/propuesta-educativa', 'Colegio\EducationalProposalController@index');
+
+// Multimedia
+Route::name('colegio-multimedia')
+      ->get('/colegio/multimedia', function(){
+        return view('errors.work');
+      });

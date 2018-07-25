@@ -1,6 +1,6 @@
 {{! $breadcrumbs = Breadcrumbs::render('colegio-paymentguide') }}
 @extends('colegio.layouts.template')
-@section('title', 'Guía de pagos en linea')
+@section('title', 'Guía de pagos en línea')
 @section('content')
 
   <div class="header-double-image">

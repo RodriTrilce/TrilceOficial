@@ -12,14 +12,14 @@
           <a href="/academia/solucionarios-uni">
             <i class="fa fa-paperclip"></i>
             <h3>Solucionarios</h3>
-            <p>Area de descarga UNI, San Marcos y PUCP.</p>
+            <p>Área de descarga UNI, San Marcos y PUCP.</p>
           </a>
         </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
             <a href="/academia/por-que-somos-tu-mejor-opcion">
-              <i class="fa fa-question"></i>
-              <h3>¿Por que somos tu mejor opción?</h3>
-              <p>Preparación exclusiva para UNI, San Marcos y PUCP.</p>
+              <i class="fa fa-star-o"></i>
+              <h3>Somos tu mejor opción</h3>
+              <p>¡Descúbrelo aquí!</p>
             </a>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">

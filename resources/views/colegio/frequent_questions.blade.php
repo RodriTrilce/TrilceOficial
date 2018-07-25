@@ -114,7 +114,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Sobre entrega de libros, material de estudio y cursos.</h3>
+        <h3 class="question-title">Sobre entrega de libros, material de estudio y cursos</h3>
               <p class="question-answer"><strong>Inicial:</strong><br>
     4.<sup>o</sup> - 5.<sup>o</sup> años (Pre-Kinder y Kinder): Se les entrega fichas para (Delinear y pintar).<br><br>
     <strong>Primaria:</strong><br>
@@ -147,7 +147,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">No se entregan exámenes bimestrales.</h3>
+        <h3 class="question-title">No se entregan exámenes bimestrales</h3>
               <p class="question-answer">Los PPFF tienen acceso a los exámenes bimestrales; si algún alumno o PP.FF. tiene alguna duda, solo tiene que solicitarlo en Coordinación y lo podrá revisar en presencia del tutor. Además es un material clasificado que requiere de mucha privacidad.</p>
             </div>
           </div>
@@ -155,7 +155,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Corte de Cabello.</h3>
+        <h3 class="question-title">Corte de Cabello</h3>
               <p class="question-answer">Hay límites razonables sin llegar a extremos, por higiene, por presentación y así también lo indica el Manual de Convivencia (Reglamento interno), aprobado por el Ministerio de Educación.</p>
             </div>
           </div>
@@ -163,7 +163,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Cobro de pensión adelantado (julio y diciembre).</h3>
+        <h3 class="question-title">Cobro de pensión adelantado (julio y diciembre)</h3>
               <p class="question-answer">Es para cumplir con las obligaciones propias de la fecha.</p>
             </div>
           </div>
@@ -171,7 +171,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">No hay una frecuente comunicación con los docentes (padres - docentes).</h3>
+        <h3 class="question-title">No hay una frecuente comunicación con los docentes (padres - docentes)</h3>
               <p class="question-answer">Sí se puede conversar con los docentes, se debe solicitar una entrevista anticipadamente.</p>
             </div>
           </div>
@@ -179,7 +179,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Poco tiempo de refrigerio (recreos).</h3>
+        <h3 class="question-title">Poco tiempo de refrigerio (recreos)</h3>
               <p class="question-answer">Existen dos recreos, el primero dura 15 minutos y el segundo 20 minutos. En 5to tienen otro régimen dos recreos de 15 minutos  y almuerzo de 20 minutos.</p>
             </div>
           </div>
@@ -187,7 +187,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Largas jornadas y no cuentan con un horario de almuerzo.</h3>
+        <h3 class="question-title">Largas jornadas y no cuentan con un horario de almuerzo</h3>
               <p class="question-answer">Si se trata de actividades fuera del horario, el estudiante tiene entre 45 minutos y una hora de descanso.</p>
             </div>
           </div>
@@ -203,7 +203,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Muchos exámenes (semanal, diario)</h3>
+        <h3 class="question-title">Muchos exámenes (semanal y diario)</h3>
               <p class="question-answer">Es importante que los alumnos se adecuen a las exigencias académicas, es necesario que adquieran el hábito de estudio y acostumbrarse a competir. Esto les dará buenos resultados en su preparación académica. ¡Nos está dando buenos resultados!</p>
             </div>
           </div>
@@ -227,7 +227,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Descuentos hermanos y alumnos nuevos.</h3>
+        <h3 class="question-title">Descuentos hermanos y alumnos nuevos</h3>
               <p class="question-answer">Explicamos al padre de familia que presente su solicitud, exponiendo y sustentando los motivos por el cual solicita el descuento. Asimismo, recalcamos que por dos hermanos: un cuarto de beca, uno de ellos; 3 y 4 hnos. media beca uno de ellos. Lógicamente deben ser evaluados como cualquier alumno que ingresa a Trilce. En caso pregunten a quién se le otorga la beca, indicar que es al mayor de los hermanos.</p>
             </div>
           </div>
@@ -291,7 +291,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Testimonio: “La competencia me ofrece la misma calidad de servicio y que resultado, grado de credibilidad tienen sus servicios”.</h3>
+        <h3 class="question-title">Testimonio: “La competencia me ofrece la misma calidad de servicio y que resultado, grado de credibilidad tienen sus servicios”</h3>
               <p class="question-answer">Trilce cuenta con la mejor plana docente y el mejor sistema académico, por otro lado nuestros resultados hablan por sí solos: Primeros puestos en las diferentes universidades como UNI, San Marcos y PUCP; y sobre todo miles de ingresantes (además excelentes universitarios) en muchas universidades del país, además se debe recalcar el tema de valores.</p>
             </div>
           </div>
@@ -299,7 +299,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Testimonio: “Como usted me garantiza que mi hijo ingresara a la Universidad”.</h3>
+        <h3 class="question-title">Testimonio: “Como usted me garantiza que mi hijo ingresara a la Universidad”</h3>
               <p class="question-answer">Eso no se  puede garantizar. Lo que sí le garantizamos es una excelente preparación académica, un excelente nivel en matemática, ciencias y letras, además de un programa de formación en valores.</p>
             </div>
           </div>
@@ -307,7 +307,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">Caso alumno antiguo: “Mi hijo NO entiende algunos cursos”.</h3>
+        <h3 class="question-title">Caso alumno antiguo: “Mi hijo NO entiende algunos cursos”</h3>
               <p class="question-answer">Al alumno se le brindará asesorías gratuitas y un control constante por parte de la tutora del aula para que el padre de familia conozca el progreso de su hijo”.</p>
             </div>
           </div>
@@ -315,7 +315,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">¿Cuántas horas de clases enseñan arte? (pregunta probable por el motivo del comercial).</h3>
+        <h3 class="question-title">¿Cuántas horas de clases enseñan arte? (pregunta probable por el motivo del comercial)</h3>
               <p class="question-answer"> Si bien es cierto que la dedicación al aspecto académico es una de las prioridades, también lo es la parte formativa, es en ese  punto en lo que respecta al arte, en Trilce se estimula al alumno según sus cualidades ya sea en las danzas, declamación, teatro y toda expresión que permita el desarrollo de la creatividad. En resumen no le puedo indicar el número de horas, pero sí la forma en que se trabaja este aspecto.</p>
             </div>
           </div>
@@ -339,8 +339,8 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">¿Qué edad deben tener los niños que van a matricularse en 1º grado de Primaria?</h3>
-              <p class="question-answer">Los niños que van a matricularse en 1º grado de Primaria deben cumplir 6 años, como máximo, el 30 de junio del año en curso.</p>
+        <h3 class="question-title">¿Qué edad deben tener los niños que van a matricularse en 1.<sup>o</sup> grado de Primaria?</h3>
+              <p class="question-answer">Los niños que van a matricularse en 1.<sup>o</sup> grado de Primaria deben cumplir 6 años, como máximo, el 30 de junio del año en curso.</p>
             </div>
           </div>
 
@@ -398,7 +398,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title"> ¿En qué consiste la evaluación académica (Secundaria)cursos que son evaluados?</h3>
+        <h3 class="question-title"> ¿En qué consiste la evaluación académica (Secundaria) cursos que son evaluados?</h3>
               <p class="question-answer">Matemática, comunicación e Inglés (Básico). Cantidad de preguntas Aprox 50.</p>
             </div>
           </div>
@@ -406,7 +406,7 @@
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">¿Por qué solo algunos colegios TRILCE cuentan con ITS</h3>
+        <h3 class="question-title">¿Por qué solo algunos colegios TRILCE cuentan con ITS?</h3>
               <p class="question-answer">
                 <p>El Ingreso por ITS es una modalidad dirigida a los mejores alumnos de 5.<sup>o</sup> de Secundaria de un grupo de colegios seleccionado por la  PUCP, luego de realizar un estudio sobre el rendimiento de sus egresados en la Universidad.</p>
                 <p>Luego de brindar la información sobre ITS, se menciona al padre de familia que el alumno también puede rendir el examen en la modalidad Primera Opción y que contamos con un aula exclusiva para la preparación PUCP.</p>

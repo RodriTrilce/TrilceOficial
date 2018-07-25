@@ -1,4 +1,4 @@
-{{! $breadcrumbs = Breadcrumbs::render('academia-preparation', $type) }}
+{{! $breadcrumbs = Breadcrumbs::render('academia-preparation', $title) }}
 @extends('academia.layouts.template')
 @section('title', 'Preparación ' . $title)
 @section('content')
@@ -10,7 +10,7 @@
 
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>Nuevos Inicios</h1>
+        <h1>Nuevos inicios</h1>
 <!--        <p>Elije la preparación universitaria,<br /> exclusiva que está buscando</p>-->
       </div>
     </div>

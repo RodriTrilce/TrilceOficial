@@ -185,6 +185,51 @@ if(page == 'educational_proposal'){
     elem: "tabs_educational_propuse",
     open: 0
   });
+
+  const acorditionProposal = {
+    init : function(){
+      this.clickeable  = document.querySelector('.acordition-title');
+      this.acordeable  = document.querySelector('.js-tabs__header');
+      this.state       = false;
+
+      this.height = window.getComputedStyle(this.acordeable).getPropertyValue('height');
+      this.acordeable.style.height = this.height;
+      this.hearClick();
+      this.hearListClick();
+    },
+
+    hearClick : function(){
+      this.clickeable.addEventListener('click', function(){
+        if(this.state)
+          this.open();
+        else
+          this.close();
+      }.bind(this));
+    },
+
+    hearListClick : function(){
+      let elems = document.querySelectorAll('.js-tabs__title');
+
+      [].forEach.call(elems, elem => {
+        elem.addEventListener('click', click => {
+          if(window.getComputedStyle(this.clickeable).getPropertyValue('display') === 'none') return false;
+          this.close()
+        });
+      })
+    },
+
+    open : function(){
+      this.state = false;
+      this.acordeable.style.height = this.height;
+    },
+
+    close : function(){
+      this.state = true;
+      this.acordeable.style.height = '0px';
+    }
+  }
+
+  acorditionProposal.init();
 }
 
 

@@ -21,7 +21,6 @@
     display: inline-block;
     float: left;
     max-width: 14%;
-    background: white;
 
     a{
       color: $gray;
@@ -35,6 +34,10 @@
       div{
         width: 100%;
         pointer-events: none;
+
+        @include breakpoint(baby){
+          width: auto;
+        }
       }
     }
   }
@@ -44,6 +47,9 @@
   .js-tabs__header{
     display: flex;
     flex-wrap: wrap;
+    background: $colegio_gray_gray;
+    border-radius: 0 0 5px 5px;
+    transition: all .3s ease-in-out;
 
     li{
       width: 100%;
@@ -61,6 +67,7 @@
       margin-right: 5px;
     }
   }
+
 }
 
 .js-tabs__title {
@@ -70,6 +77,11 @@
   padding: 1rem;
   transition: all .25s;
   font-family: $font_geo_reg;
+
+  @include breakpoint(baby){
+    margin-right: 0;
+    padding: .8rem;
+  }
 
   &:hover {
     text-decoration: none;
@@ -101,6 +113,27 @@
   position: relative;
   left: auto;
 }
+
+// Acordition
+.acordition-title{
+  display: none;
+  color: $orange;
+  font-size: 1.2rem;
+  font-family: $font_geo_reg;
+  padding: .8rem;
+  background: $colegio_gray_gray;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+@include breakpoint(baby){
+  .acordition-title{
+    display: flex;
+  }
+}
+
+
 
 .ep-generic-title{
   padding-top: 20px;
@@ -181,10 +214,6 @@
   @include breakpoint(baby){
     padding-left: 0;
   }
-}
-
-.ep-stepfour-container{
-
 }
 
 .ep-stepfour-item{
@@ -311,7 +340,6 @@
     }
   }
 }
-
 
 .ep-stepseven-container{
   padding-top: 20px;

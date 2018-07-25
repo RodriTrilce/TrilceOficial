@@ -15,8 +15,16 @@
 <div class="row center-xs center-sm container-base educationalproposal-container">
   <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-
     <div class="js-tabs" id="tabs_educational_propuse">
+
+      <div class="col-xs-12 acordition-title">
+        <div class="col-xs-10 start-xs">
+          Propuesta educativa
+        </div>
+        <div class="col-xs end-xs">
+          <i class="fa fa-plus-square"></i>
+        </div>
+      </div>
 
       <ul class="js-tabs__header">
         <li>
@@ -427,7 +435,6 @@
 
         </div>
       </div>
-
 
     </div>
 

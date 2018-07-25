@@ -298,7 +298,7 @@
               </li>
               <li>
                   <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> Aulas exclusivas por cada universidad</h3>
-                  <p>Aulas con contenido curricular adecuado al prospecto del examen de admisión de la UNI, San Marcos, PUCP y Generales (otras).</p>
+                  <p>Aulas con contenido curricular adecuado al prospecto del examen de admisión de la UNI, San Marcos, PUCP y generales (otras).</p>
               </li>
             </ul>
 

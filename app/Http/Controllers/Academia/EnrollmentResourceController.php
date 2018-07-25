@@ -20,21 +20,6 @@ class EnrollmentResourceController extends Controller
 
     public $urlCombo = 'combo.php';
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-     public function university($university)
-     {
-      if(Cache::has($university)){
-        $data = Cache::get($university);
-      }else{
-        $data = $this->getDataUniversity($university);
-      }
-
-      return new EnrollmentResource($data);
-     }
 
      public function venue($university, $key)
      {
@@ -59,13 +44,26 @@ class EnrollmentResourceController extends Controller
         return $return;
      }
 
+     public function university($university)
+     {
+      if(Cache::has($university)){
+        $data = Cache::get($university);
+      }else{
+        $data = $this->getDataUniversity($university);
+      }
+
+      return $data;
+     }
+
      private function getDataUniversity($university)
      {
        $urlU     = $this->url[$university];
        $data     = $this->getUrl($urlU);
        $collection = collect($this->getOptionsVenue($data));
-       Cache::put($university, $collection, 20160);
-       return $collection;
+       $return     = new EnrollmentResource($collection);
+       Cache::put($university, $return, 20160);
+
+       return $return;
      }
 
      function explodeDiv($a,$b,$c)

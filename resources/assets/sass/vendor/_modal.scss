@@ -85,6 +85,12 @@
   }
 }
 
+.modal-auto{
+  width: auto;
+  height: auto;
+  padding: 3vh;
+}
+
 [data-modal-close] {
   position: absolute;
   z-index: 2;

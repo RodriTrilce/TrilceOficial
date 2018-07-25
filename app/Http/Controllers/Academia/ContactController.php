@@ -23,7 +23,7 @@ class ContactController extends Controller
 
     return redirect()->route('academia-index')->with([
       'name'    => $request->contact_names,
-      'status'  => true
+      'contact'  => true
     ]);
   }
 }

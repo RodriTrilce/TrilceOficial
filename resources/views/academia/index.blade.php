@@ -11,7 +11,7 @@
 
 @section('content')
 
-  @if($action == 'enrollment_finish')
+  @if (session('enrollment'))
     <div id="modal-1" style="display:none;">
       <div class="modal-b50">
         <div class="row col-xs-12 center-xs enrollment-finish">
@@ -24,7 +24,7 @@
             <div class="col-xs-12 finish-button-container">
               <form action="/academia/matricula-en-linea/descargar-pdf" method="post" target="_blank">
                 {{ csrf_field() }}
-                <input name="token" type="hidden" value="{{ $dni }}">
+                <input name="token" type="hidden" value="{{ session('dni') }}">
                 <button type="submit" class="enrollment-finish--button">
                   <img src="{{url('/static/images/academia/svg/icon-thanks-download-enrollment.svg')}}" alt="">
                 </button>
@@ -35,9 +35,9 @@
     </div>
   @endif
 
-  @if (session('status'))
+  @if (session('contact'))
     <div id="modal-1" style="display:none;">
-      <div class="modal-b50">
+      <div class="modal-auto">
         <div class="row col-xs-12 center-xs enrollment-finish">
             <div class="col-xs-12">
               <h1 class="finish-title">{{ucwords(session('name'))}}, gracias por escribirnos <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por contactarnos"></h1>
@@ -109,11 +109,11 @@
     page = 'index';
 
     var modal_open = [
-    @if($action == 'enrollment_finish')
+    @if(session('enrollment'))
       '#modal-1'
     @endif
 
-    @if(session('status'))
+    @if(session('contact'))
       '#modal-1'
     @endif
 

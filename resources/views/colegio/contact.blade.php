@@ -12,17 +12,17 @@
     </div>
   </div>
 
-@if($_POST)
-  @if($status)
-  <div class="col-xs-12 center-xs contact-status contact-finish">
-    <h2>Gracias <strong>{{$name}}</strong>, nos pondremos en contacto con usted en la brevedad</h2>
-  </div>
-  @else
-  <div class="col-xs-12 center-xs contact-status contact-error">
-    <h2>Sucedio un error, intente más tarde.</h2>
-  </div>
+  @if ($errors->any())
+    <div class="row col-xs-12 center-xs">
+      <div class="form-error">
+          <ul class="form-error-ul">
+          @foreach ($errors->all() as $error)
+            <li class="form-li">{{ $error }}</li>
+          @endforeach
+          </ul>
+      </div>
+    </div>
   @endif
-@endif
 
 <div class="row center-xs center-sm container-base-no-mobile contact">
   <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">

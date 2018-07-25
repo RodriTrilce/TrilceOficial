@@ -8,6 +8,7 @@
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider';
 import {Tabs} from './require/tabs';
+import VanillaModal from 'vanilla-modal';
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",
@@ -122,6 +123,10 @@ var get = (url) => {
        autoplayHoverPause: true,
        loop: false
      });
+
+     if(modal_open.length){
+       modal.open(modal_open[0]);
+     }
 
    }
 

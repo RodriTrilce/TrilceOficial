@@ -75,12 +75,10 @@ class EnrollmentController extends Controller
 
       Mail::send( new EnrollmentMail( $request ) );
 
-      return view('/academia/index')
-                  ->with([
-                    'print'   => '',
-                    'action'  => 'enrollment_finish',
-                    'dni'     => encrypt($request->step1_dni)
-                  ]);
+      return redirect()->route('academia-index')->with([
+        'enrollment'  => true,
+        'dni'     => encrypt($request->step1_dni)
+      ]);
    }
 
    /**

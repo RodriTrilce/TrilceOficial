@@ -21,9 +21,9 @@ class ContactController extends Controller
 
     Mail::send( new ContactForm( $request ) );
 
-    return view('/academia/contact')->with([
-                                              'name'    => $request->contact_names,
-                                              'status'  => true
-                                            ]);
+    return redirect()->route('academia-index')->with([
+      'name'    => $request->contact_names,
+      'status'  => true
+    ]);
   }
 }

@@ -35,18 +35,27 @@
     </div>
   @endif
 
-  <div class="index-banners">
-    {{-- <div><a href="{{Storage::url('academia/documents/solutions/pucp/2018/evaluacion-del-talento-catolica-reconstruido-2018-2.pdf')}}" target="_blank"><img src="{{Storage::url('academia/banners/1307201800.png')}}" alt=""></a></div> --}}
-    {{-- <div><a href="/academia/preparacion-pucp" target="_blank"><img src="{{Storage::url('academia/banners/1307201801.png')}}" alt=""></a></div> --}}
-    {{-- <div><a href="/academia/preparacion-san-marcos" target="_blank"><img src="{{Storage::url('academia/banners/1307201802.png')}}" alt=""></a></div> --}}
-    {{-- <div><a href="/academia/preparacion-pucp" target="_blank"><img src="{{Storage::url('academia/banners/1307201803.png')}}" alt=""></a></div> --}}
+  @if (session('status'))
+    <div id="modal-1" style="display:none;">
+      <div class="modal-b50">
+        <div class="row col-xs-12 center-xs enrollment-finish">
+            <div class="col-xs-12">
+              <h1 class="finish-title">{{ucwords(session('name'))}}, gracias por escribirnos <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por contactarnos"></h1>
+            </div>
+            <div class="col-xs-12">
+              <p class="finish-text">Nos pondremos en contacto con usted en la brevedad.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  @endif
 
+  <div class="index-banners">
 
     <div><a href="/academia/preparacion-uni"><img src="{{Storage::url('academia/banners/24071803.png')}}" alt=""></a></div>
     <div><a href="/academia/preparacion-uni"><img src="{{Storage::url('academia/banners/24071804.png')}}" alt=""></a></div>
     <div><a href="/academia/preparacion-san-marcos"><img src="{{Storage::url('academia/banners/24071802.png')}}" alt=""></a></div>
     <div><a href="/academia/preparacion-uni"><img src="{{Storage::url('academia/banners/24071801.png')}}" alt=""></a></div>
-
     <div><a href="https://www.facebook.com/ColegioTrilce/videos/2145054952176570/" target="_blank"><img src="{{Storage::url('academia/banners/1307201804.png')}}" alt=""></a></div>
     <div><a href="#" target="_blank"><img src="{{Storage::url('academia/banners/1307201805.png')}}" alt=""></a></div>
   </div>
@@ -99,7 +108,16 @@
 @section('scripts')
     page = 'index';
 
-    var modal_open = [@if($action == 'enrollment_finish') '#modal-1' @endif];
+    var modal_open = [
+    @if($action == 'enrollment_finish')
+      '#modal-1'
+    @endif
+
+    @if(session('status'))
+      '#modal-1'
+    @endif
+
+    ];
 
     @parent
 

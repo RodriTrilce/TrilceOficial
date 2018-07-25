@@ -194,11 +194,21 @@ if(page == 'educational_proposal'){
       this.state       = false;
       this.icon        = document.querySelector('#tabs_educational_propuse_icon');
 
+      this.fire        = false;
+      this.hear();
+    },
 
-      this.height = window.getComputedStyle(this.acordeable).getPropertyValue('height');
-      this.acordeable.style.height = this.height;
-      this.hearClick();
-      this.hearListClick();
+    hear : function(){
+      setInterval(function(){
+        if(window.getComputedStyle(this.clickeable).getPropertyValue('display') !== 'none'){
+          if(!this.fire){
+            this.height = '366px';
+            this.hearClick();
+            this.hearListClick();
+            this.fire = true;
+          }
+        }
+      }.bind(this), 100);
     },
 
     hearClick : function(){

@@ -64,7 +64,7 @@
     <div class="row center-xs">
       <div class="col-xs-9 col-sm-11 col-md-10 start-xs nuevos-i-title">
         <div class="box">
-          <h2>Nuevos Inicios</h2>
+          <h2>Nuevos inicios</h2>
           <p>Elija la preparacion universitaria, exclusiva que está buscando</p>
         </div>
       </div>

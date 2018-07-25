@@ -65,7 +65,7 @@
                         <ul>
                           <li class="{{ (Request::is('academia/sede/santa-beatriz')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
                           <li class="{{ (Request::is('academia/sede/comas')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/comas">Comas</a></li>
-                          <li class="{{ (Request::is('academia/sede/villa-el-salvador')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
+                          <li class="{{ (Request::is('academia/sede/villa-el-salvador')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/villa-el-salvador">Villa El Salvador</a></li>
                         </ul>
                       </div>
                       <div>

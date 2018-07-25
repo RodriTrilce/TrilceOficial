@@ -22,7 +22,7 @@
           Propuesta educativa
         </div>
         <div class="col-xs end-xs">
-          <i class="fa fa-plus-square"></i>
+          <i class="fa fa-minus-square" id="tabs_educational_propuse_icon"></i>
         </div>
       </div>
 

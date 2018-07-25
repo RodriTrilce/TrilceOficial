@@ -191,6 +191,8 @@ if(page == 'educational_proposal'){
       this.clickeable  = document.querySelector('.acordition-title');
       this.acordeable  = document.querySelector('.js-tabs__header');
       this.state       = false;
+      this.icon        = document.querySelector('#tabs_educational_propuse_icon');
+
 
       this.height = window.getComputedStyle(this.acordeable).getPropertyValue('height');
       this.acordeable.style.height = this.height;
@@ -221,11 +223,15 @@ if(page == 'educational_proposal'){
     open : function(){
       this.state = false;
       this.acordeable.style.height = this.height;
+      this.icon.classList.remove('fa-plus-square');
+      this.icon.classList.add('fa-minus-square');
     },
 
     close : function(){
       this.state = true;
       this.acordeable.style.height = '0px';
+      this.icon.classList.remove('fa-minus-square');
+      this.icon.classList.add('fa-plus-square');
     }
   }
 

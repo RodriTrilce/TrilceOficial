@@ -22,8 +22,8 @@
 
       <div class="row col-xs-12 center-xs playmentguide-option">
         <div class="col-xs playmentguide-optionitem"><a href="/storage/colegio/documents/pdf/payment-guide/guia-de-pagos-scotiabank.pdf" target="_blank"><img src="{{ url('/static/images/colegio/logo-scotiabank.jpg') }}" alt="Guía de pagos para Scotiabank"></a></div>
-        <div class="col-xs playmentguide-optionitem"><a href="/storage/colegio/documents/pdf/payment-guide/guia-de-pagos-bbva.pdf" target="_blank"><img src="{{ url('/static/images/colegio/logo-bbva.jpg') }}" alt="Guía de pagos para BBVA"></a></div>
         <div class="col-xs playmentguide-optionitem"><a href="/storage/colegio/documents/pdf/payment-guide/guia-de-pagos-bcp.pdf" target="_blank"><img src="{{ url('/static/images/colegio/logo-bcp.jpg') }}" alt="Guía de pagos para BCP"></a></div>
+        <div class="col-xs playmentguide-optionitem"><a href="/storage/colegio/documents/pdf/payment-guide/guia-de-pagos-bbva.pdf" target="_blank"><img src="{{ url('/static/images/colegio/logo-bbva.jpg') }}" alt="Guía de pagos para BBVA"></a></div>
       </div>
 
     </div>

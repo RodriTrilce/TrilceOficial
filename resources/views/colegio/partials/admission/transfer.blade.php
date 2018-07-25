@@ -25,8 +25,7 @@
           <li>Entrega de:</li>
           <ul>
             <li>01 copia de DNI</li>
-            <li>01 copia de libreta de notas</li>
-            <li>(Bimestre culminado) <sup>1</sup></li>
+            <li>01 copia de libreta de notas (Bimestre culminado) <sup>1</sup></li>
           </ul>
         </ul>
       </div>

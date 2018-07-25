@@ -239,47 +239,17 @@
                     <fieldset class="form-group">
                       <input type="text" minlength="3" name="step2_universitypostulate" placeholder="Universidad a la que postula" list="universityList" required>
                       <datalist id="universityList" title="Escoge una sugerencia">
-                        <option value="Universidad Nacional del Callao (UNAC)">
                         <option value="Universidad Nacional Mayor de San Marcos (UNMSM)">
-                        <option value="Universidad José Faustino Sánchez Carrión (UNJFSC)">
-                        <option value="Universidad Nacional Agraria La Molina">
-                        <option value="Universidad Nacional de Educación E. Guzmán y Valle (UNE)">
                         <option value="Universidad Nacional de Ingeniería (UNI)">
-                        <option value="Universidad Nacional Federico Villarreal (UNFV)">
-                        <option value="Universidad Privada San Juan Bautista (UPSJB)">
-                        <option value="Universidad Inca Garcilaso de la Vega (UIGV)">
-                        <option value="Universidad Peruana de Las Américas">
-                        <option value="Universidad Tecnológica del Perú (UTP)">
-                        <option value="Universidad San Pedro">
-                        <option value="Universidad del Pacifico (UP)">
-                        <option value="Universidad Peruana de Ciencias e Informática (UPCI)">
-                        <option value="Universidad Femenina del Sagrado Corazón (UNIFE)">
-                        <option value="Universidad San Ignacio de Loyola (USIL)">
-                        <option value="Centro Internacional de la Papa (CIPOTATO)">
-                        <option value="Universidad Alas Peruanas (UAP)">
-                        <option value="Universidad Norbert Wiener (UWIENER)">
-                        <option value="Universidad Cesar Vallejo (UCV)">
-                        <option value="Universidad Católica Sedes Sapientiae (UCSS)">
-                        <option value="Universidad Privada del Norte (UPNORTE)">
-                        <option value="Universidad Científica del Sur (UCSUR)">
-                        <option value="Universidad Peruana Unión (UPEU)">
-                        <option value="Universidad Antonio Ruiz de Montoya (UARM)">
-                        <option value="Universidad de Piura (PAD)">
-                        <option value="Universidad Peruana Cayetano Heredia (UPCH)">
                         <option value="Pontificia Universidad Católica del Perú (PUCP)">
-                        <option value="Universidad de San Martín de Porres (USMP)">
-                        <option value="Escuela de Administración de Negocios (ESAN)">
-                        <option value="Universidad de Lima (ULIMA)">
-                        <option value="Universidad Marcelino Champagnat (UMCH)">
-                        <option value="Universidad Ricardo Palma (URP)">
-                        <option value="Universidad Peruana de Ciencias Aplicadas (UPC)">
                       </datalist>
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
                       <input type="onlytext" minlength="5" name="step2_profession" placeholder="Carrera" list="professionList" required>
-                      <datalist id="professionList" title="Escoge una sugerencia">
+                      {{-- list="professionList" --}}
+                      {{-- <datalist id="professionList" title="Escoge una sugerencia">
                         <option value="Acuicultura">
                         <option value="Administración">
                         <option value="Administración">
@@ -664,7 +634,7 @@
                         <option value="Turismo y Administración">
                         <option value="Turismo y Hoteleria">
                         <option value="Zootecnia">
-                      </datalist>
+                      </datalist> --}}
                     </fieldset>
                   </div>
                 </div>

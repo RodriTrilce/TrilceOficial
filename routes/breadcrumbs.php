@@ -69,7 +69,7 @@ Breadcrumbs::for('colegio-educationalproposal', function ($trail) {
 
 // Academia > Multimedia
 Breadcrumbs::for('colegio-multimedia', function ($trail) {
-   $trail->push('Página en construccion', route('colegio-multimedia'));
+   $trail->push('Página en construcción', route('colegio-multimedia'));
 });
 
 
@@ -144,7 +144,7 @@ Breadcrumbs::for('academia-blogpost', function ($trail, $post) {
 
 // Academia > What you option
 Breadcrumbs::for('academia-what-your-option', function ($trail) {
-   $trail->push('Página en construccion', route('academia-what-your-option'));
+   $trail->push('Página en construcción', route('academia-what-your-option'));
 });
 
 // Academia > Multimedia

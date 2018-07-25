@@ -36,44 +36,41 @@
                 </tr>
             </tbody>
           </table>
+
           <br />
 
+          <style>
+          .ref{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 8px;
+            font-size: 14px;
+            font-family: "Geogrotesque-Rg" !important;
+            border: 1px solid #ddd;
+
+          }
+          .ref2{
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+
+          }
+          .ref strong{
+            margin-right: 5px;
+          }
+
+          .reflog{
+            display: inline-block;
+          }
+
+          .reflog img{
+            width: 48px;
+          }
+          </style>
+
           <div class="venue-content-editable">
-
-          <table>
-            <thead>
-              <tr>
-                <th>Nivel<br>
-                </th>
-                <th>Ingreso</th
-                  ><th>Salida</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Nivel">Primaria 1.° y 2.°</td>
-                <td data-label="Ingreso">7:50 a. m.</td>
-                <td data-label="Salida">2:40 p. m.</td>
-              </tr>
-
-              <tr>
-                <td data-label="Nivel">Primaria 3.° y 4.°</td>
-                <td data-label="Ingreso">7:50 a. m.</td>
-                <td data-label="Salida">2:50 p. m.</td>
-              </tr>
-              <tr>
-                <td data-label="Nivel">Primaria 5.° y 6.°</td>
-                <td data-label="Ingreso">7:50 a. m.</td>
-                <td data-label="Salida">3:00 p. m.</td>
-              </tr>
-              <tr>
-                <td data-label="Nivel">Secundaria 1.° a 5.°</td>
-                <td data-label="Ingreso">7:50 a. m.</td>
-                <td data-label="Salida">3:10 p. m.</td>
-              </tr>
-            </tbody>
-          </table>
-
+            {!! $data->content !!}
           </div>
 
 

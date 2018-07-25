@@ -112,3 +112,26 @@
     color: white;
   }
 }
+
+.modal-contact{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .finish-title{
+    font-family: $font_cae_heavy;
+    display: block;
+  }
+
+  .finish-thanks{
+    max-width: 60px;
+    margin-left: 5px;
+
+    @media (max-width: 767px){
+      max-width: 50px;
+    }
+  }
+
+  .finish-text{
+    font-family: $font_cae_heavy;
+  }
+}

@@ -21,9 +21,16 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-@hasSection('afterBody')
-  {!! $print !!}
-@endif
+  <div class="modal">
+    <div class="modal-inner">
+      <span data-modal-close>&times;</span>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  @hasSection('afterBody')
+    {!! $print !!}
+  @endif
 
   <header>
     <div class="row between-xs header-web">

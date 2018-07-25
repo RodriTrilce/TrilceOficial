@@ -24,8 +24,8 @@
           <li>Pago por derecho de evaluación.</li>
           <li>Entrega de:</li>
           <ul>
-            <li>01 copia de DNI</li>
-            <li>01 copia de libreta de notas (Bimestre culminado) <sup>1</sup></li>
+            <li>01 copia de DNI.</li>
+            <li>01 copia de libreta de notas (Bimestre culminado) <sup>1</sup>.</li>
           </ul>
         </ul>
       </div>
@@ -73,15 +73,15 @@
         <ul>
           <li>Entrega de:</li>
           <ul>
-            <li>Libreta de notas original</li>
-            <li>Ficha única de matrícula</li>
-            <li>Certificado de estudio</li>
-            <li>Resolución de traslado</li>
-            <li>Constancia de conducta</li>
-            <li>02 fotos tamaño de carné</li>
-            <li>01 Copia del DNI de ambos padres o apoderados</li>
-            <li>01 Copia de la Partida de Nacimiento del alumno</li>
-            <li>Constancia de matrícula emitida por SIAGIE</li>
+            <li>Libreta de notas original.</li>
+            <li>Ficha única de matrícula.</li>
+            <li>Certificado de estudio.</li>
+            <li>Resolución de traslado.</li>
+            <li>Constancia de conducta.</li>
+            <li>02 fotos tamaño de carné.</li>
+            <li>01 Copia del DNI de ambos padres o apoderados.</li>
+            <li>01 Copia de la Partida de Nacimiento del alumno.</li>
+            <li>Constancia de matrícula emitida por SIAGIE.</li>
           </ul>
         </ul>
       </div>

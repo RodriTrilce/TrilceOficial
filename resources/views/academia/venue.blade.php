@@ -70,7 +70,11 @@
           </style>
 
           <div class="venue-content-editable">
-            {!! $data->content !!}
+            {!! $x =
+              str_replace(
+                'alt=',
+                'title='
+                ,$data->content) !!}
           </div>
 
 

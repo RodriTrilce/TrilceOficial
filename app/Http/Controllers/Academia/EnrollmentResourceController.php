@@ -38,20 +38,13 @@ class EnrollmentResourceController extends Controller
 
      public function venue($university, $key)
      {
-       echo $university;
-        echo "\n ";
-        echo $key;
-        echo "\n ";
+      if(Cache::has($key.$university)){
+       $data = Cache::get($key.$university);
+      }else{
+       $data = $this->getDataVenue($university,$key);
+      }
 
-/*       if(Cache::has($key.$university)){
-         $data = Cache::get($key.$university);
-       }else{
-*/
-         $data = $this->getDataVenue($university,$key);
-  //     }
-  dd($data);
-
-       return new EnrollmentResource($data);
+      return $data;
      }
 
      private function getDataVenue($university, $key)
@@ -60,9 +53,10 @@ class EnrollmentResourceController extends Controller
         $data     = $this->getUrl($urlU);
         //$venue    = $this->getOptionsVenue($data);
         $collection = collect($this->getInfoVenue($urlU.$this->urlCombo, $key));
+        $return = new EnrollmentResource($collection);
+        Cache::put($key.$university, $return, 20160);
 
-        Cache::put($key.$university, $collection, 20160);
-        return new EnrollmentResource($collection);
+        return $return;
      }
 
      private function getDataUniversity($university)

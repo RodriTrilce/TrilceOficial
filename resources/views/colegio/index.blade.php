@@ -10,7 +10,7 @@
     <div><a href="http://www.trilce.edu.pe/colegios/inscripcion-admision2019/" target="_blank"><img src="{{Storage::url('/colegio/banners/24071801.png')}}" alt=""></a></div>
     <div><img src="{{Storage::url('/colegio/banners/24071802.png')}}" alt=""></div>
     <div><a href="/colegio/propuesta-educativa"><img src="{{Storage::url('/colegio/banners/24071803.png')}}" alt=""></a></div>
-    <div><a href="http://www.trilce.edu.pe/colegios/inscripcion-admision2019/" target="_blank"><img src="{{Storage::url('colegio/banners/13071803.png')}}" alt=""></a></div>
+    {{-- <div><a href="http://www.trilce.edu.pe/colegios/inscripcion-admision2019/" target="_blank"><img src="{{Storage::url('colegio/banners/13071803.png')}}" alt=""></a></div> --}}
   </div>
 
   <div class="nuevos-i container-base">

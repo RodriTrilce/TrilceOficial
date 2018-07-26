@@ -77,7 +77,7 @@ class EnrollmentController extends Controller
 
       return redirect()->route('academia-index')->with([
         'enrollment'  => true,
-        'dni'     => encrypt($request->step1_dni)
+        'dni'         => encrypt($request->step1_dni)
       ]);
    }
 

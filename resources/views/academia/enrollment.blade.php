@@ -703,12 +703,12 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="text" name="step3_work_location" id="step3_work_location" placeholder="Centro de trabajo" required>
+                      <input type="text" name="step3_work_location" id="step3_work_location" placeholder="Centro de trabajo">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="tel" name="step3_work_phone" id="step3_work_phone" placeholder="Télefono centro de trabajo" required>
+                      <input type="tel" name="step3_work_phone" id="step3_work_phone" placeholder="Télefono centro de trabajo">
                     </fieldset>
                   </div>
                 </div>

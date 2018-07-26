@@ -342,6 +342,7 @@
 
   img{
     margin-bottom: 10px;
+    max-width: 17%;
 
     @include breakpoint(baby){
       max-width: 35%;

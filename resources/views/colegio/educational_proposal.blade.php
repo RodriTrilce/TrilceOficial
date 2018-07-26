@@ -386,7 +386,7 @@
 
         <div class="row col-xs-12 center-xs">
           <div class="col-xs-12 col-sm-10 center-xs ep-stepsix-bottom">
-            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-03.jpg" alt="Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.">
+            <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-03.svg" alt="Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.">
             <h2>Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.</h2>
           </div>
         </div>

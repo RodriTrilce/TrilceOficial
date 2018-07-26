@@ -139,7 +139,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
     margin-top: 1rem;
 
     a:hover{
-      color: $colegio_blue;
+      color: $gray;
     }
   }
 
@@ -178,7 +178,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
     }
 
     .provincia{
-      color: $colegio_blue;
+      color: $gray;
     }
 
     .marker{
@@ -224,7 +224,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
     }
 
     .item2:hover::before{
-      color: $colegio_blue;
+      color: $orange;
     }
   }
 

@@ -49,7 +49,7 @@
               </div>
 
               <ul>
-                <li class="nav-info-responsive nav-info-colegio">Intranet para alumnos | Call center: <b class="phone">6198100</b></li>
+                <li class="nav-info-responsive nav-info-colegio">Intranet para alumnos | Call center: <b class="phone">619-8100</b></li>
 
                 <li class="nav-colegio-aboutus">
                   <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>

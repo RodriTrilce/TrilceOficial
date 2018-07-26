@@ -87,6 +87,14 @@
     text-decoration: none;
   }
 
+  img{
+    max-width: 40%;
+
+    @include breakpoint(baby){
+      max-width: 100%;
+    }
+  }
+
 }
 
 .js-tabs__title-active {

@@ -107,7 +107,6 @@ function manageImages()
   }
 }
 
-
 if(page == 'blog_create'){
   // Date picker
   flatpickr("#mo_finish",{
@@ -127,10 +126,6 @@ if(page == 'blog_create'){
   run.init();
 
 }
-
-
-
-
 
 if(page == 'math_olympics_create' || page == 'math_olympics_edit')
 {
@@ -177,7 +172,6 @@ if(page == 'math_olympics_create' || page == 'math_olympics_edit')
 
 if(page == 'venue_create')
 {
-
   // Editor
   $(function() {
     $('#create_content').froalaEditor({

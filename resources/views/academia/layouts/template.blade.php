@@ -47,7 +47,7 @@
               </div>
 
               <ul>
-                <li class="nav-info-responsive">Intranet para alumnos | Call center: <b>6198100</b></li>
+                <li class="nav-info-responsive">Intranet para alumnos | Call center: <b>619-8100</b></li>
                 <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
 
                 <li class="nav-venues xs-hide" id="sedes">

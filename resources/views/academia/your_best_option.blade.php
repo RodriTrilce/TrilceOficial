@@ -121,7 +121,9 @@
         <div class="row col-xs-12 col-sm best-option-courses-items">
           <div class="col-xs-12 col-sm-4 item">
             <div class="col-xs-12 item-header">
-              logoUNIVERSIDAD
+              <div class="col-xs-12 item-header-image">
+                <img src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="">
+              </div>
               <br>
               <h4>
                 <span>Preparación</span>
@@ -160,7 +162,9 @@
           </div>
           <div class="col-xs-12 col-sm-4 item">
             <div class="col-xs-12 item-header">
-              logoUNIVERSIDAD
+              <div class="col-xs-12 item-header-image">
+                <img src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="">
+              </div>
               <br />
               <h4>
                 <span>Preparación</span>
@@ -200,7 +204,9 @@
           </div>
           <div class="col-xs-12 col-sm-4 item">
             <div class="col-xs-12 item-header">
-              logoUNIVERSIDAD
+              <div class="col-xs-12 item-header-image">
+                <img src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="">
+              </div>
               <br />
               <h4>
                 <span>Preparación</span>

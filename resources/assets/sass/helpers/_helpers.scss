@@ -21,6 +21,21 @@
   padding: .1px 0;
 }
 
+.separator-squared{
+  width: 8%;
+  height: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+}
+
+.separator-orange{
+  background: $orange;
+}
+
+.separator-gray{
+  background: $gray;
+}
 
 .loading-trilce{
   text-align: center;

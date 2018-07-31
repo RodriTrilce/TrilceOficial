@@ -43,6 +43,16 @@
 
     <div class="row col-xs-12 end-xs blog-share-button"><!--Te invitamos a compartir esta noticia-->
       <div class="row col-xs-12 end-xs">
+        <div class="col-sm start-sm blog-share-page">
+          <div class="fb-page"
+            data-href="https://www.facebook.com/ColegioTrilce/"
+            data-small-header="true"
+            data-adapt-container-width="true"
+            data-hide-cover="true"
+            data-show-facepile="false">
+          </div>
+
+        </div>
         <div class="col-sm end-xs">
           <nav class="share-icons">
           <a href="https://www.facebook.com/share.php?u={{ urlencode("http://www.trilce.edu.pe/" . $post->site . "/blog/" . $post->slug) }}&title={{urlencode($post->title)}}" target="_blank" class="facebook">Compartir</a>

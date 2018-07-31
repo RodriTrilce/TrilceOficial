@@ -622,3 +622,9 @@
     width: 120px;}
   }
 }
+
+.blog-share-page{
+  @include breakpoint(baby){
+    order: 2;
+  }
+}

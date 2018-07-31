@@ -48,7 +48,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
 });
 
 
-
 /**
  * General
  */
@@ -134,10 +133,8 @@ Route::name('academia-blog')
       ->get('/academia/blog', 'Academia\BlogController@index');
 
 // Matricula en linea (Enrollment)
-Route::name('academia-what-your-option')
-      ->get('/academia/por-que-somos-tu-mejor-opcion', function(){
-        return view('errors.work');
-      });
+Route::name('academia-your-best-option')
+      ->get('/academia/por-que-somos-tu-mejor-opcion', 'Academia\YourBestOptionController@index');
 
 // Multimedia
 Route::name('academia-multimedia')

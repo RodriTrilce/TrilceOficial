@@ -151,3 +151,9 @@ Breadcrumbs::for('academia-what-your-option', function ($trail) {
 Breadcrumbs::for('academia-multimedia', function ($trail) {
    $trail->push('Página en construccion', route('academia-multimedia'));
 });
+
+// Academia > Your best option
+Breadcrumbs::for('academia-your-best-option', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('¿Por qué somos tu mejor opción?', route('academia-your-best-option'));
+});

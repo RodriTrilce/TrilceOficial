@@ -148,7 +148,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">No se entregan exámenes bimestrales</h3>
-              <p class="question-answer">Los PPFF tienen acceso a los exámenes bimestrales; si algún alumno o PP.FF. tiene alguna duda, solo tiene que solicitarlo en Coordinación y lo podrá revisar en presencia del tutor. Además es un material clasificado que requiere de mucha privacidad.</p>
+              <p class="question-answer">Los PP.FF. tienen acceso a los exámenes bimestrales; si algún alumno o PP.FF. tiene alguna duda, solo tiene que solicitarlo en Coordinación y lo podrá revisar en presencia del tutor. Además es un material clasificado que requiere de mucha privacidad.</p>
             </div>
           </div>
 
@@ -180,7 +180,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">Poco tiempo de refrigerio (recreos)</h3>
-              <p class="question-answer">Existen dos recreos, el primero dura 15 minutos y el segundo 20 minutos. En 5to tienen otro régimen dos recreos de 15 minutos  y almuerzo de 20 minutos.</p>
+              <p class="question-answer">Existen dos recreos, el primero dura 15 minutos y el segundo 20 minutos. En 5.<sup>°</sup> tienen otro régimen dos recreos de 15 minutos  y almuerzo de 20 minutos.</p>
             </div>
           </div>
 

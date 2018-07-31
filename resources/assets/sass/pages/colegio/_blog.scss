@@ -408,9 +408,13 @@
 
 .blog-post-content{
   font-family: $font_geo_reg;
-  font-size: 1.3rem;
-  text-align: justify;
-  text-justify: inter-word;
+  font-size: 1.2rem;
+
+  // text-align: justify;
+  // text-justify: inter-word;
+
+  line-height: 1.58;
+  letter-spacing: -.003em;
 
   @include breakpoint(mom){
     font-size: 1rem;
@@ -422,6 +426,9 @@
 
   p{
     padding: 10px 0;
+
+    &:not(:first-child){
+    }
   }
 }
 
@@ -569,5 +576,49 @@
 
   @include breakpoint(baby){
     margin-top: 40px;
+  }
+}
+
+
+
+// Social Variables
+
+
+.share-icons {
+  a {
+    color: white;
+    display: inline-block;
+    padding: 2px 15px;
+    letter-spacing:1px;
+    margin-right: 0.125em;
+    border-radius: 2px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    text-decoration:none;
+    text-indent: 30px;
+    background-position: 9px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: all 150ms ease-in-out;
+    font-size: 1rem;
+    &:hover{
+      width: 100px;
+      padding: 2px 4px;
+    }
+  }
+  .twitter {
+    background-color: lighten($twitter, 6%);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAABCFBMVEXu7u7////////////////////////////////u7u7////39/f////w8PD////////+/v7////////////v7+/////////////////u7u7////////////////////////////////////////////////9/f3////09PTx8fH////////////y8vLx8fH6+vr////////////////29vbv7+/8/Pz////////////5+fn////u7u7////////////////////////////////v7+/09PT////////////////////////y8vL8/PwAAADz8/P39/f6+vr19fX29vbu7u75+fn///8sTgaFAAAAUHRSTlP+IoQhOF46Yy75TcFH6yCPo1+BM++gJ4qX/VgeVg0rP4htD417h6dc0uMqcTXd4bBsSn9XxvKoUBl4uJL7Zpt1JUkMJjL30BSZPANPRdurAE/wtEQAAADhSURBVHjaldLZVsIwEIDhUURxFxE3xB1BxX0BBcStpQWaEbSd938Tk5o2Ka3n6H/T9HwnucgE8Lf+LJ3WPTvc5ovJBcD0UjeE3ieJludmaQbQpMUA+hQ2PQUdg4jt+9CtkGoexj74xy0LqWowyAA6/urs9EQ/zMgh4Lj8GR6fK9lFhJRDCV1zmaCk2lwwcc+LkGwC3L0KwVJcntCXXlzef6TgjgIL7nprBJrPgaBtRqSmzWfT0+BSTs5aX2MrpPJuUEqeIt2+qWmvWhsk+3q0o++guLN3cHTReLiq/+/txPsG1Oe9hbVb1cIAAAAASUVORK5CYII=);
+    &:hover { background-color: $twitter;
+    width:88px;
+    }
+  }
+  .facebook {
+    background-color: lighten($facebook, 6%);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAolBMVEXu7u7w8PDu7u7w8PDu7u729vb+/v7////x8fH////////5+fn////////////////x8fH////////u7u7////////////////////////////////////z8/P////////09PT////////////////w8PD////////y8vL////4+Pj///////8AAAD6+vr39/f19fX7+/v29vby8vLw8PD///9TKh+cAAAALnRSTlP+/v3+/8eimeRNlrd/WEqE43xf/II/FAEgRFmgj9YKdtAuXBMi64AE3lG5UmUAoZyL/QAAAIpJREFUeNrlztkOgjAQhWHTIKLiBi64oSBSqIyCbd//1UxGpGlTnsD/bs53MwPouuUFF5wUa8CUZHf5jZjCZNvSkOT9E2ZIiqs3mnLfkAplBkCpVcbtpeR0vKIMJy6ba0KkatErq14JNDk3Na48FM+NJjFcUKpdtAXr1yVgFnn8jRwsUkrhvOq9kg+R924nBoVvbwAAAABJRU5ErkJggg==);
+    &:hover { background-color:$facebook;
+    width: 120px;}
   }
 }

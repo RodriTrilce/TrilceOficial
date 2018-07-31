@@ -588,6 +588,10 @@
   align-self: center;
   max-height: 26px;
 
+  @include breakpoint(baby){
+    margin-bottom: 10px;
+  }
+
   a {
     color: white;
     display: inline-block;

@@ -37,13 +37,23 @@
         </ul>
 
         <br />
-        <div class="worktrilce">
+        {{-- <div class="worktrilce">
           <a href="mailto:atencionalcliente@trilce.edu.pe" target="_blank" rel="nofollow">
             <div class="row col-xs-12 worktrilce-div">
               <div class="col-xs worktrilce-line"><i class="fa fa-briefcase"></i></div>
               <div class="col-xs">TRABAJA<span class="about">con nosotros</span><span class="postulate">Postúla</span></div>
             </div>
           </a>
+        </div> --}}
+
+        <div class="fb-page"
+          data-href="https://www.facebook.com/AcademiaTrilce/"
+          data-tabs="timeline,messages"
+          data-small-header="false"
+          data-hide-cover="false"
+          data-adapt-container-width="true"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/AcademiaTrilce/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AcademiaTrilce/">Trilce Academia</a></blockquote>
         </div>
 
       </div>

@@ -35,7 +35,7 @@
       </ul>
 
       <br />
-      <div class="worktrilce">
+      {{-- <div class="worktrilce">
         <a href="#">
 
           <div class="row col-xs-12 worktrilce-div">
@@ -44,6 +44,17 @@
           </div>
 
         </a>
+      </div> --}}
+
+
+      <div class="fb-page"
+        data-href="https://www.facebook.com/ColegioTrilce/"
+        data-tabs="timeline,messages"
+        data-small-header="false"
+        data-hide-cover="false"
+        data-adapt-container-width="true"
+        data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/ColegioTrilce/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ColegioTrilce/">Trilce Colegio</a></blockquote>
       </div>
 
     </div>

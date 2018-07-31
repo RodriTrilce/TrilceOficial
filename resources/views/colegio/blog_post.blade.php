@@ -53,7 +53,7 @@
           </div>
 
         </div>
-        <div class="col-sm end-xs">
+        <div class="row col-sm end-xs">
           <nav class="share-icons">
           <a href="https://www.facebook.com/share.php?u={{ urlencode("http://www.trilce.edu.pe/" . $post->site . "/blog/" . $post->slug) }}&title={{urlencode($post->title)}}" target="_blank" class="facebook">Compartir</a>
           <a href="https://twitter.com/intent/tweet?related=TRILCEtweet&text={{ urlencode($post->title . " - " . "http://www.trilce.edu.pe/" . $post->site . "/blog/" . $post->slug) }}" target="_blank" class="twitter">Tweet</a>

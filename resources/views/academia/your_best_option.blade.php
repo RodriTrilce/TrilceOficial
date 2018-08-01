@@ -15,11 +15,11 @@
   <div class="row col-xs-12 center-xs about-container container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-      <div class="row col-xs-12">
-        <div class="col-xs-3">
-          <img src="{{ url('/static/images/academia/tu-mejor-opcion/your-best-option-text1.svg') }}" alt="Por qué somos tu mejor opción">
+      <div class="row col-xs-12 center-xs best-option-header">
+        <div class="col-xs-3 col-sm-2">
+          <img class="header--image-focus" src="{{ url('/static/images/academia/tu-mejor-opcion/your-best-option-text1.svg') }}" alt="Por qué somos tu mejor opción">
         </div>
-        <div class="col-xs">
+        <div class="row col-xs col-sm-7 col-md-6 start-xs start-sm start-md header--text">
           <h1>
             Estudia
             <br>
@@ -36,73 +36,73 @@
 
       <div class="row col-xs-12">
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-01.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-01.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Más de 38 años de experiencia.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-02.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-02.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Exámenes semanales.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-03.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-03.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Exámenes tipo admisión.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-04.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-04.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Becas mensuales para nuestros alumnos más destacados (Sede Torrico).
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-05.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-05.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> La mejor plana docente especializada en el sistema PUCP.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-06.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-06.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Asesorías y seminarios gratuitos.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-07.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-07.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Maratones académicas.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-08.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-08.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Orientación vocacional y psicopedagógica.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-09.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-09.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Material académico gratuito.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-10.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-10.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Exigencia y disciplina.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-11.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-11.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Tutoría personalizada.
           </div>
         </div>
         <div class="row col-xs-12 col-sm-3 best-option-item">
-          <div class="col-xs-2 col-sm-12 item-image"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-12.svg') }}" alt=""></div>
+          <div class="col-xs-2 col-sm-12"><img src="{{ url('/static/images/academia/tu-mejor-opcion/ico-12.svg') }}" class="item-image" alt=""></div>
           <div class="col-xs col-sm-12 item-text">
             <span class="item-text-l"><strong>|</strong></span> Intranet para alumnos.
           </div>
@@ -112,17 +112,20 @@
       <hr class="grayhr2" />
 
       <div class="row col-xs-12">
-        <div class="col-xs-12 col-sm-2 best-option-courses">
+        {{-- <div class="col-xs-12 col-sm-2 best-option-courses">
           <h3>Cursos por universidad</h3>
           <h4>Entérate más visitando</h4>
-          <a href="/academia/preparacion-pucp/" class="button-a button-a-gray">Nuevos inicios <i class="fa fa-angle-right"></i></a>
-        </div>
+          <a href="/academia/preparacion-pucp/" class="button-a button-a-gray courses--link">Nuevos inicios <i class="fa fa-angle-right"></i></a>
+        </div> --}}
 
+        <div class="col-xs-12">
+          <h3 class="best-option-courses-title">Cursos por universidad</h3>
+        </div>
         <div class="row col-xs-12 col-sm best-option-courses-items">
-          <div class="col-xs-12 col-sm-4 item">
+          <div class="col-xs-12 col-sm-4 courses-item">
             <div class="col-xs-12 item-header">
               <div class="col-xs-12 item-header-image">
-                <img src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="">
+                <img class="item-header-image-src" src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="">
               </div>
               <br>
               <h4>
@@ -160,10 +163,10 @@
 
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 item">
+          <div class="col-xs-12 col-sm-4 courses-item">
             <div class="col-xs-12 item-header">
               <div class="col-xs-12 item-header-image">
-                <img src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="">
+                <img class="item-header-image-src" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="">
               </div>
               <br />
               <h4>
@@ -202,10 +205,10 @@
 
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 item">
+          <div class="col-xs-12 col-sm-4 courses-item">
             <div class="col-xs-12 item-header">
               <div class="col-xs-12 item-header-image">
-                <img src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="">
+                <img class="item-header-image-src" src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="">
               </div>
               <br />
               <h4>

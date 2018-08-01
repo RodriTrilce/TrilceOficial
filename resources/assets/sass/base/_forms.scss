@@ -69,6 +69,10 @@ button.validate{
   cursor: pointer;
 }
 
+button:active{
+  transform: translateY(.5px);
+}
+
 fieldset{
   border: 0px;
   margin-top: 0.5rem;

@@ -28,7 +28,7 @@
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">¿Por qué en 4.<sup>o</sup> y 5.<sup>o</sup> de secundaria no existen horas de inglés en el horario regular?</h3>
-              <p class="question-answer">Los tres primeros años, los alumnos de Trilce reciben una formación sólida en inglés y llevan ocho horas del curso a la semana (a diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales), lo que se complementa en los posteriores grados (4.o y 5.o) mediante talleres de 4 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma. </p>
+              <p class="question-answer">Los tres primeros años, los alumnos de Trilce reciben una formación sólida en inglés y llevan ocho horas del curso a la semana (a diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales), lo que se complementa en los posteriores grados (4.<sup>o</sup> y 5.<sup>o</sup>) mediante talleres de 4 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.</p>
             </div>
           </div>
 
@@ -118,13 +118,13 @@
               <p class="question-answer"><strong>Inicial:</strong><br>
     4 a 5 años (prekínder y kínder): Se les entrega fichas para delinear y pintar.<br><br>
     <strong>Primaria:</strong><br>
-    1.o a 6.o grado: Se les entrega libros por áreas.<br>
-    1.o a 4.o grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
-    *A partir de 5.o grado cuentan con un profesor por curso (polidocencia).<br>
+    1.<sup>o</sup> a 6.<sup>o</sup> grado: Se les entrega libros por áreas.<br>
+    1.<sup>o</sup> a 4.<sup>o</sup> grado: Cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
+    *A partir de 5.<sup>o</sup> grado cuentan con un profesor por curso (polidocencia).<br>
     *Religión: Se dicta el curso de religión a los alumnos de inicial (prekínder y kínder) y primaria.<br><br>
 
     <strong>Secundaria:</strong><br>
-    Formación de valores: de 1.o a 5.o de secundaria, se trabaja un valor por mes.</p>
+    Formación de valores: de 1.<sup>o</sup> a 5.<sup>o</sup> de secundaria, se trabaja un valor por mes.</p>
             </div>
           </div>
 
@@ -181,7 +181,7 @@
       <div class="col-xs question-content">
         <h3 class="question-title">Sobre el tiempo de refrigerio (recreos)</h3>
               <p class="question-answer">
-Existen dos recreos, el primero dura 15 minutos y el segundo 20 minutos. En 5.o de secundaria tienen otro régimen: dos recreos de 15 minutos y 20 minutos para el almuerzo.
+Existen dos recreos, el primero dura 15 minutos y el segundo 20 minutos. En 5.<sup>o</sup> de secundaria tienen otro régimen: dos recreos de 15 minutos y 20 minutos para el almuerzo.
 <br><br>
 Si el alumno tiene actividades fuera del horario, contará con un descanso de 45 minutos a una hora.
               </p>
@@ -343,8 +343,8 @@ Si el alumno tiene actividades fuera del horario, contará con un descanso de 45
     <div class="frequentquestions-question row col-xs-12">
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
-        <h3 class="question-title">¿Qué edad deben tener los niños que se matriculen en 1.º de primaria?</h3>
-              <p class="question-answer">Los niños que van a matricularse en 1.º de primaria deben cumplir 6 años, como máximo, el 30 de junio del año en curso.</p>
+        <h3 class="question-title">¿Qué edad deben tener los niños que se matriculen en 1.<sup>o</sup> de primaria?</h3>
+              <p class="question-answer">Los niños que van a matricularse en 1.<sup>o</sup> de primaria deben cumplir 6 años, como máximo, el 30 de junio del año en curso.</p>
             </div>
           </div>
 
@@ -392,7 +392,7 @@ Si el alumno tiene actividades fuera del horario, contará con un descanso de 45
       <div class="row col-xs-1 question-number"></div>
       <div class="col-xs question-content">
         <h3 class="question-title">¿Qué cursos son evaluados en primaria?</h3>
-              <p class="question-answer">De 2.° a 6.° grado se evalúa matemática, comunicación, ciencia y ambiente, personal social e inglés (básico).</p>
+              <p class="question-answer">De 2.<sup>o</sup> a 6.<sup>o</sup> grado se evalúa matemática, comunicación, ciencia y ambiente, personal social e inglés (básico).</p>
             </div>
           </div>
 

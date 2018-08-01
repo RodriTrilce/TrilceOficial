@@ -12,3 +12,7 @@
 .button-a-gray{
   color: $gray !important;
 }
+
+.button-a:active{
+  transform: translateY(.5px);
+}

@@ -32,7 +32,7 @@
             </p>
 
             <p>
-              El año 1996, Trilce fundó el primer colegio preuniversitario del Perú en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador.
+              En el año 1996, Trilce fundó su primer colegio en uno de sus locales, ubicado en Miraflores. Con esto, Trilce confirmó su liderazgo y excelencia académica con un método de enseñanza escolar totalmente innovador.
             </p>
 
             <p>
@@ -57,7 +57,7 @@
       <hr class="grayhr2" />
       <div class="row col-xs-12 start-xs about-v">
         <div class="col-xs-12 start-xs">
-          <h2 class="about-v--title">Nuestros Valores</h2>
+          <h2 class="about-v--title">Nuestros valores</h2>
         </div>
         <div class="row col-xs-12 center-xs about-v--vgrid">
           {{-- (.vgrid-item>)*15 --}}
@@ -115,7 +115,7 @@
                   <h3>Responsabilidad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Si hay que hacerlo depende de mi.</p>
+                  <p>Si hay que hacerlo, depende de mí.</p>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@
                   <h3>Perseverancia</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Nunca dejar de luchar por ser mejor.</p>
+                  <p>Nunca dejaré de luchar por ser mejor</p>
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@
                   <h3>Amistad</h3>
                 </div>
                 <div class="col-xs-12">
-                  <p>Un amigo es un nuevo hermano</p>
+                  <p>Un amigo es un nuevo hermano.</p>
                 </div>
               </div>
             </div>

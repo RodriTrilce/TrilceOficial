@@ -64,7 +64,7 @@ Breadcrumbs::for('colegio-blogpost', function ($trail, $post) {
 
 // Colegio > EducationalProposal
 Breadcrumbs::for('colegio-educationalproposal', function ($trail) {
-    $trail->push('Propuesta Educativa', route('colegio-educationalproposal'));
+    $trail->push('Propuesta educativa', route('colegio-educationalproposal'));
 });
 
 // Academia > Multimedia

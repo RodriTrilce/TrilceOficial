@@ -5,28 +5,28 @@
         <a href="/colegio/propuesta-educativa">
           <i class="fa fa-graduation-cap"></i>
           <h3>Propuesta educativa</h3>
-          <p>La filosofía Trilce.</p>
+          <p>Conoce más sobre nosotros</p>
         </a>
       </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="/colegio/guia-de-pagos-en-linea">
             <i class="fa fa-credit-card"></i>
             <h3>Guía de pagos en línea</h3>
-            <p>Todos los pasos a seguir.</p>
+            <p>Todos los pasos a seguir</p>
           </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="/colegio/preguntas-frecuentes">
             <i class="fa fa-question"></i>
             <h3>Preguntas frecuentes</h3>
-            <p>En colegio Trilce resolvemos sus dudas.</p>
+            <p>Resolvemos tus dudas</p>
           </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="http://intranet.trilce.edu.pe/" target="_blank">
             <i class="fa fa-share-alt"></i>
             <h3>Intranet</h3>
-            <p>Para padres y alumnos.</p>
+            <p>Para padres y alumnos</p>
           </a>
         </div>
     </div>

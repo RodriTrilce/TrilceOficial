@@ -181,3 +181,34 @@ if(page == 'venue_create')
   });
 
 }
+
+
+
+
+window.hideUnlicensed = false;
+window.hideUnlicensedT = false
+window.hideUnlicensedElement = false;
+var _hideUnlicensed = setInterval(function(){
+
+  if(!window.hideUnlicensed){
+    [].forEach.call(document.getElementsByTagName('a'), a => {
+      if(a.href == 'https://www.froala.com/wysiwyg-editor?k=u'){
+        window.hideUnlicensed = true;
+        window.hideUnlicensedElement = a;
+      }
+
+    });
+  }else{
+    if(!window.hideUnlicensedT){
+      var wrapper = document.querySelector('.fr-wrapper');
+      wrapper.insertAdjacentHTML('afterbegin', `<div id='hideUnlicensed' style='width: 100%;position:absolute;background:white;z-index:10000;padding:5px;border-bottom:1px solid gray;'></div>`);
+      window.hideUnlicensedT = true;
+    }else{
+      if(document.getElementById('hideUnlicensed')){
+        document.getElementById('hideUnlicensed').style.height = window.getComputedStyle(window.hideUnlicensedElement, null).getPropertyValue('height');
+      }
+    }
+
+  }
+
+}, 100);

@@ -57,6 +57,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
     return view('home');
  });
 
+ Route::name('home2')->get('/home', function(){
+  return view('home2');
+ });
+
 
 /**
  *  Academia

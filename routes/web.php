@@ -53,11 +53,11 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
  */
 
  // Inicio (Home)
- Route::name('home')->get('/', function () {
+ Route::name('home')->get('/x', function () {
     return view('home');
  });
 
- Route::name('home2')->get('/home', function(){
+ Route::name('home2')->get('/', function(){
   return view('home2');
  });
 

@@ -12,16 +12,20 @@ let mix = require('laravel-mix');
  */
 
 // mix:Colegio
-mix.js('resources/assets/js/app_colegio.js', 'public/js/app_colegio.js')
+mix.js('resources/assets/js/app_colegio.js', 'public/js/app_colegio.js');
 mix.sass('resources/assets/sass/main_colegio.scss','public/css');
 
 // mix:Academia
-mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js')
+mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js');
 mix.sass('resources/assets/sass/main_academia.scss','public/css');
 
 // mix:Home
-mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js')
+mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js');
 mix.sass('resources/assets/sass/main_home.scss','public/css');
+
+// mix:Home2
+mix.js('resources/assets/js/home/app.js', 'public/js/app_home2.js');
+mix.sass('resources/assets/sass/main_home2.scss','public/css');
 
 // mix:All
 mix.sass('resources/assets/sass/main.scss','public/css');

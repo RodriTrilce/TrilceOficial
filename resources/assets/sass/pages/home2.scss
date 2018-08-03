@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(white 40%, #d1d1d1cf);
+}
+
+.home--logo{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  @include breakpoint(baby){
+    align-items: baseline;
+    margin-top: 30px;
+  }
+}
+
+.logo{
+  background: url('/static/images/logos/logo-trilce.svg');
+  //  filter: brightness(100);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 70px;
+
+  @include breakpoint(baby){
+    margin: 0 auto;
+  }
+
+}
+
+.home--cta{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+
+  .h-boton{
+    text-align: center;
+    min-width: 13vw;
+
+    @media (max-width: 768px){
+      width: 100%;
+      padding-left: 0;
+      padding-right:0;
+    }
+
+    a{
+      font-family: $font_geo_reg;
+      font-size: 40px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @media (max-width: 1100px){
+        font-size: 2.1rem;
+      }
+
+      @media (max-width: 700px){
+        font-size: 2em;
+        padding: 10px;
+        padding-top: 13px;
+      }
+
+    }
+
+  }
+
+  .colegio{
+    background-color: white;
+    a{color: $gray;}
+  }
+
+  .academia{
+    background-color: $orange;
+    a{color: white;}
+  }
+
+}
+
+.animation-svg-border01{
+  position: relative;
+  cursor: pointer;
+
+  svg {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    rect {
+      fill: none;
+      stroke: transparent;
+      stroke-width: 1;
+      stroke-dasharray: 400, 0;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  &:hover svg rect {
+    stroke-width: 10;
+    stroke-dasharray: 35, 245;
+    stroke-dashoffset: 38;
+    transition: all 0.4s ease-in-out;
+    stroke: white;
+  }
+
+
+}
+
+.az {
+  &:hover svg rect {
+    stroke-width: 10;
+    stroke-dasharray: 35, 245;
+    stroke-dashoffset: 38;
+    transition: all 0.5s ease-in-out;
+    stroke: $orange;
+  }
+}
+
+.home--float{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+
+  z-index: 1;
+
+  @include breakpoint(baby){
+    display: none;
+  }
+}
+
+
+@mixin leave-transition{
+  transition: all .2s ease-in;
+}
+
+@mixin leave-human($human){
+  @switch $human{
+    @when academia{
+      margin-right: -999px;
+    }
+
+    @when colegio{
+      margin-left: -999px;
+    }
+  }
+}
+
+.home--float-girl{
+  display: flex;
+  align-content: flex-end;
+
+  @include leave-transition;
+
+  img{
+    width: calc(35vw);
+    height: 45vw;
+    position: relative;
+    right: -20px;;
+  }
+}
+
+.home--float-boy{
+  display: flex;
+  align-content: flex-end;
+
+  @include leave-transition;
+
+  img{
+    width: calc(35vw);
+    height: 45vw;
+    position: relative;
+    left: -20px;;
+  }
+}
+
+// Effects Academia
+.academia-leave-human{
+  opacity: 0;
+}
+
+.colegio-leave-human{
+  opacity: 0;
+}
+
+
+.home--layers{
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .layer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    fill: $orange;
+    transform: translate3d(0,0,0);
+
+    svg{
+      width: 100vw;
+      height: 100vh;
+
+      g{
+        width: 100vw;
+        height: 100vh;
+      }
+
+      path{
+        opacity: 0;
+      }
+
+    }
+
+
+    &:nth-child(1){
+      filter: blur(2px);
+    }
+
+    &:nth-child(2){
+      filter: blur(1px);
+
+    }
+
+    &:nth-child(3){
+      filter: blur(4px);
+    }
+
+  }
+}
+
+.academia-layers{
+  visibility: hidden;
+  transition: all .1s ease-in;
+  opacity: 0;
+}
+
+.colegio-layers{
+  visibility: hidden;
+  transition: all .1s ease-in;
+  opacity: 0;
+}
+
+.home--layer-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes layer-path {
+    0% {
+        transform: rotateZ(0deg) translateX(0%);
+    }
+    25% {
+        transform: rotateZ(2deg) translateX(-3%);
+    }
+    50% {
+        transform: rotateZ(0deg) translateX(0%);
+    }
+    75% {
+        transform: rotateZ(1deg) translateX(2%);
+    }
+    100% {
+        transform: rotateZ(0deg) translateX(0%);
+    }
+}
+
+@keyframes layer-path2 {
+    0% {
+        transform: rotateZ(0deg) translateY(1%);
+    }
+    25% {
+        transform: rotateZ(2deg) translateY(5%);
+    }
+    50% {
+        transform: rotateZ(0deg) translateY(3%);
+    }
+    75% {
+        transform: rotateZ(1deg) translateY(6%);
+    }
+    100% {
+        transform: rotateZ(0deg) translateY(2%);
+    }
+}

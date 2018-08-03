@@ -52,14 +52,18 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
  * General
  */
 
- // Inicio (Home)
- Route::name('home')->get('/x', function () {
-    return view('home');
- });
+// Inicio (Home)
+Route::name('home')->get('/x', function () {
+  return view('home');
+});
 
- Route::name('home2')->get('/', function(){
+Route::name('home2')->get('/home2', function(){
   return view('home2');
- });
+});
+
+Route::name('home3')->get('/', function(){
+  return view('home3');
+});
 
 
 /**

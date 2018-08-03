@@ -136,7 +136,7 @@ body{
   align-items: flex-end;
   overflow: hidden;
 
-  z-index: 1;
+  z-index: 0;
 
   @include breakpoint(baby){
     display: none;
@@ -170,7 +170,7 @@ body{
     width: calc(35vw);
     height: 45vw;
     position: relative;
-    right: -20px;;
+    right: -110px;
   }
 }
 
@@ -184,7 +184,7 @@ body{
     width: calc(35vw);
     height: 45vw;
     position: relative;
-    left: -20px;;
+    left: 50px;
   }
 }
 
@@ -204,56 +204,69 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  transition: all .3s ease-in-out;
 
   .layer{
     position: absolute;
     width: 100vw;
     height: 100vh;
     fill: $orange;
-    transform: translate3d(0,0,0);
 
-    svg{
+    // svg{
+    //   width: 100vw;
+    //   height: 100vh;
+    //
+    //   g{
+    //     width: 100vw;
+    //     height: 100vh;
+    //   }
+    //
+    //   // path{
+    //   //   opacity: 0;
+    //   // }
+    //
+    // }
+
+    img{
       width: 100vw;
       height: 100vh;
-
-      g{
-        width: 100vw;
-        height: 100vh;
-      }
-
-      path{
-        opacity: 0;
-      }
-
     }
 
-
     &:nth-child(1){
-      filter: blur(2px);
+      z-index:2;
+      img{
+        //animation: layer-path 3s linear infinite;
+      }
     }
 
     &:nth-child(2){
-      filter: blur(1px);
-
+      z-index:-1;
+      img{
+        //animation: layer-path2 3s linear infinite;
+      }
     }
 
     &:nth-child(3){
-      filter: blur(4px);
+      z-index:-2;
+      img{
+        //animation: layer-path3 3s linear infinite;
+      }
     }
+
 
   }
 }
 
 .academia-layers{
-  visibility: hidden;
   transition: all .1s ease-in;
   opacity: 0;
+  position: absolute !important;
 }
 
 .colegio-layers{
-  visibility: hidden;
   transition: all .1s ease-in;
   opacity: 0;
+  position: absolute !important;
 }
 
 .home--layer-active{
@@ -284,15 +297,67 @@ body{
         transform: rotateZ(0deg) translateY(1%);
     }
     25% {
-        transform: rotateZ(2deg) translateY(5%);
+        transform: rotateZ(2deg) translateY(3%);
     }
     50% {
-        transform: rotateZ(0deg) translateY(3%);
+        transform: rotateZ(0deg) translateY(5%);
     }
     75% {
-        transform: rotateZ(1deg) translateY(6%);
+        transform: rotateZ(1deg) translateY(3%);
     }
     100% {
-        transform: rotateZ(0deg) translateY(2%);
+        transform: rotateZ(0deg) translateY(1%);
     }
+}
+
+@keyframes layer-path3 {
+    0% {
+        transform: rotateZ(3deg) translateY(2%);
+    }
+    25% {
+        transform: rotateZ(2deg) translateY(4%);
+    }
+    50% {
+        transform: rotateZ(5deg) translateY(1%);
+    }
+    75% {
+        transform: rotateZ(4deg) translateY(3%);
+    }
+    100% {
+        transform: rotateZ(3deg) translateY(2%);
+    }
+}
+
+
+.footer-right-icons{
+  position: absolute;
+  top: -75px;
+
+  li{
+    display: inline-block;
+    padding: 13px;
+
+    a{
+      font-size: 1.8rem;
+      color: $gray;
+
+    }
+  }
+}
+
+.slogan{
+  position: absolute;
+  margin-top: 94px;
+
+  h2{
+    color: $gray;
+    font-family: $font_geo_reg;
+    letter-spacing: 8px;
+    text-align: center;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+  }
+
+
 }

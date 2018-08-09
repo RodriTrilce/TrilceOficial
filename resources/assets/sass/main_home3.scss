@@ -2671,46 +2671,58 @@ body:not(.home-page):not(.journal-page):not(.aboutShow) .basicScroll .btn-page-b
     transition-timing-function:cubic-bezier(.55,.055,.675,.19);
     transition-duration:.25s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):first-child .projectContainer{
     transition-delay:.9s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(2) .projectContainer{
     transition-delay:.8s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(3) .projectContainer{
     transition-delay:.7s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(4) .projectContainer{
     transition-delay:.6s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(5) .projectContainer{
     transition-delay:.5s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(6) .projectContainer{
     transition-delay:.4s
 }
 .home-page.outro .projectsLi:not(.isSelected):nth-child(7) .projectContainer{
     transition-delay:.3s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(8) .projectContainer{
     transition-delay:.2s
 }
+
 .home-page.outro .projectsLi:not(.isSelected):nth-child(9) .projectContainer{
     transition-delay:.1s
 }
+
 .home-page.outro .projectsLi.isSelected .projectContainer,.home-page.outro .projectsLi.isSelected:hover .projectContainer{
     transform:rotateY(0deg) translateZ(0) scale(.7);
     opacity:0;
     transition-duration:.5s;
     transition-delay:1s
 }
+
 .home-page.outro .projectsLi.isSelected .projectContainer a{
     transition-delay:1.15s
 }
+
 .home-page.outro .projectsLi.isSelected .projectContainer a:after,.home-page.outro .projectsLi.isSelected .projectContainer a:before{
     opacity:0;
     transition:opacity .2s ease-out .15s
 }
+
 @keyframes l{
     0%{
         transform:translateZ(0)
@@ -2719,13 +2731,10 @@ body:not(.home-page):not(.journal-page):not(.aboutShow) .basicScroll .btn-page-b
         transform:translate3d(0,-25vh,0)
     }
 }
+
 .home-page .parallaxPerspective{
     perspective-origin:50% var(--perspective-origin-y);
     will-change:perspective-origin
-}
-
-.mobile-slogan{
-  display: none !important;
 }
 
 .social  li a strong, .credits li a strong{
@@ -2803,19 +2812,46 @@ body:not(.home-page):not(.journal-page):not(.aboutShow) .basicScroll .btn-page-b
 
   .logo_trilce{
     margin-top: 20px;
-    max-width: 250px;
+    max-width: 200px;
   }
 
   .mobile-slogan{
     display: flex !important;
     justify-content: center;
     flex-grow: .1;
+    padding: 0 10px;
   }
 
   .mobile-slogan h1{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-family: 'Geogrotesque-Lt';
     letter-spacing: 2px;
+    color: white;
+  }
+
+  .links-social{
+    display: none;
+  }
+
+  .links-social-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    ul{
+      margin: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+
+      li{
+        display: inline-block;
+
+        i{
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 
 

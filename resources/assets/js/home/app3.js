@@ -196,6 +196,8 @@ var Home = function() {
                 }, 300), this.isMobile || (this.resize(), this.loop()), setTimeout(function() {
                     t.documentBody.classList.remove("intro")
                 }, 2900), this.isMobile && document.querySelectorAll(".perspective-origin-tt-bb").forEach(function(t) {
+
+                  /*
                     basicScroll.create({
                         elem: t,
                         from: "top-top",
@@ -212,6 +214,7 @@ var Home = function() {
                             }
                         }
                     }).start()
+                    */
                 })
             }
         }, {

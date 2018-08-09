@@ -2,145 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>Trilce</title>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Colegio y Academia Trilce - Tu mejor opción</title>
+    <meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal.">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{{ asset('favicon.ico') }}}">
+    <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
 
   <style>
-
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-45Light';
-    src: url("/static/fonts/33FA0F_0_0.eot");
-    src: url("/static/fonts/33FA0F_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_0_0.woff2") format("woff2"), url("/static/fonts/33FA0F_0_0.woff") format("woff"), url("/static/fonts/33FA0F_0_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-55Roman';
-    src: url("/static/fonts/33FA0F_1_0.eot");
-    src: url("/static/fonts/33FA0F_1_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_1_0.woff2") format("woff2"), url("/static/fonts/33FA0F_1_0.woff") format("woff"), url("/static/fonts/33FA0F_1_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-46LightItalic';
-    src: url("/static/fonts/33FA0F_2_0.eot");
-    src: url("/static/fonts/33FA0F_2_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_2_0.woff2") format("woff2"), url("/static/fonts/33FA0F_2_0.woff") format("woff"), url("/static/fonts/33FA0F_2_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-56Italic';
-    src: url("/static/fonts/33FA0F_3_0.eot");
-    src: url("/static/fonts/33FA0F_3_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_3_0.woff2") format("woff2"), url("/static/fonts/33FA0F_3_0.woff") format("woff"), url("/static/fonts/33FA0F_3_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-75Bold';
-    src: url("/static/fonts/33FA0F_4_0.eot");
-    src: url("/static/fonts/33FA0F_4_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_4_0.woff2") format("woff2"), url("/static/fonts/33FA0F_4_0.woff") format("woff"), url("/static/fonts/33FA0F_4_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-76BoldItalic';
-    src: url("/static/fonts/33FA0F_5_0.eot");
-    src: url("/static/fonts/33FA0F_5_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_5_0.woff2") format("woff2"), url("/static/fonts/33FA0F_5_0.woff") format("woff"), url("/static/fonts/33FA0F_5_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-85Heavy';
-    src: url("/static/fonts/33FA0F_6_0.eot");
-    src: url("/static/fonts/33FA0F_6_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_6_0.woff2") format("woff2"), url("/static/fonts/33FA0F_6_0.woff") format("woff"), url("/static/fonts/33FA0F_6_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'CaeciliaLTPro-86HeavyItalic';
-    src: url("/static/fonts/33FA0F_7_0.eot");
-    src: url("/static/fonts/33FA0F_7_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_7_0.woff2") format("woff2"), url("/static/fonts/33FA0F_7_0.woff") format("woff"), url("/static/fonts/33FA0F_7_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-BdIt';
-    src: url("/static/fonts/33FA0F_8_0.eot");
-    src: url("/static/fonts/33FA0F_8_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_8_0.woff2") format("woff2"), url("/static/fonts/33FA0F_8_0.woff") format("woff"), url("/static/fonts/33FA0F_8_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-Lt';
-    src: url("/static/fonts/33FA0F_9_0.eot");
-    src: url("/static/fonts/33FA0F_9_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_9_0.woff2") format("woff2"), url("/static/fonts/33FA0F_9_0.woff") format("woff"), url("/static/fonts/33FA0F_9_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-LtIt';
-    src: url("/static/fonts/33FA0F_A_0.eot");
-    src: url("/static/fonts/33FA0F_A_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_A_0.woff2") format("woff2"), url("/static/fonts/33FA0F_A_0.woff") format("woff"), url("/static/fonts/33FA0F_A_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-Md';
-    src: url("/static/fonts/33FA0F_B_0.eot");
-    src: url("/static/fonts/33FA0F_B_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_B_0.woff2") format("woff2"), url("/static/fonts/33FA0F_B_0.woff") format("woff"), url("/static/fonts/33FA0F_B_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-Bd';
-    src: url("/static/fonts/33FA0F_C_0.eot");
-    src: url("/static/fonts/33FA0F_C_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_C_0.woff2") format("woff2"), url("/static/fonts/33FA0F_C_0.woff") format("woff"), url("/static/fonts/33FA0F_C_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-MdIt';
-    src: url("/static/fonts/33FA0F_D_0.eot");
-    src: url("/static/fonts/33FA0F_D_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_D_0.woff2") format("woff2"), url("/static/fonts/33FA0F_D_0.woff") format("woff"), url("/static/fonts/33FA0F_D_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-Rg';
-    src: url("/static/fonts/33FA0F_E_0.eot");
-    src: url("/static/fonts/33FA0F_E_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_E_0.woff2") format("woff2"), url("/static/fonts/33FA0F_E_0.woff") format("woff"), url("/static/fonts/33FA0F_E_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-RgIt';
-    src: url("/static/fonts/33FA0F_F_0.eot");
-    src: url("/static/fonts/33FA0F_F_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_F_0.woff2") format("woff2"), url("/static/fonts/33FA0F_F_0.woff") format("woff"), url("/static/fonts/33FA0F_F_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-SmBdIt';
-    src: url("/static/fonts/33FA0F_10_0.eot");
-    src: url("/static/fonts/33FA0F_10_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_10_0.woff2") format("woff2"), url("/static/fonts/33FA0F_10_0.woff") format("woff"), url("/static/fonts/33FA0F_10_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-SmBd';
-    src: url("/static/fonts/33FA0F_11_0.eot");
-    src: url("/static/fonts/33FA0F_11_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_11_0.woff2") format("woff2"), url("/static/fonts/33FA0F_11_0.woff") format("woff"), url("/static/fonts/33FA0F_11_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-Th';
-    src: url("/static/fonts/33FA0F_12_0.eot");
-    src: url("/static/fonts/33FA0F_12_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_12_0.woff2") format("woff2"), url("/static/fonts/33FA0F_12_0.woff") format("woff"), url("/static/fonts/33FA0F_12_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-ThIt';
-    src: url("/static/fonts/33FA0F_13_0.eot");
-    src: url("/static/fonts/33FA0F_13_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_13_0.woff2") format("woff2"), url("/static/fonts/33FA0F_13_0.woff") format("woff"), url("/static/fonts/33FA0F_13_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-UltLtIt';
-    src: url("/static/fonts/33FA0F_14_0.eot");
-    src: url("/static/fonts/33FA0F_14_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_14_0.woff2") format("woff2"), url("/static/fonts/33FA0F_14_0.woff") format("woff"), url("/static/fonts/33FA0F_14_0.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Geogrotesque-UltLt';
-    src: url("/static/fonts/33FA0F_15_0.eot");
-    src: url("/static/fonts/33FA0F_15_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/33FA0F_15_0.woff2") format("woff2"), url("/static/fonts/33FA0F_15_0.woff") format("woff"), url("/static/fonts/33FA0F_15_0.ttf") format("truetype");
-  }
-
         html {
             line-height: 1.15;
             -webkit-text-size-adjust: 100%
@@ -1577,6 +1450,14 @@
       margin-right: 10px;
     }
 
+    .mobile-slogan{
+      display: none !important;
+    }
+
+    .links-social-mobile{
+      display: none;
+    }
+
   </style>
 
 </head>
@@ -1633,6 +1514,15 @@
             <li><a class="no-barba" target="_blank" href="https://twitter.com/TRILCEtweet">Twitter</a></li>
             <li><a class="no-barba" target="_blank" href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1">YouTube</a></li>
             <li><a class="no-barba" target="_blank" href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n">Whatsapp</a></li>
+          </ul>
+        </div>
+        <div class="links-social-mobile">
+          <ul>
+            <li><a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" title="Chatea con nosotros" target="_blank" rel="nofollow"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://twitter.com/TRILCEtweet" title="Siguenos en Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Danos like en Facebook" target="_blank" rel="nofollow"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" title="Suscribete en Youtube" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="https://www.instagram.com/trilcecolegioacademia/" title="Siguenos en Instagram" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>

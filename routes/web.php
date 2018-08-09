@@ -61,10 +61,14 @@ Route::name('home2')->get('/home2', function(){
   return view('home2');
 });
 
-Route::name('home3')->get('/', function(){
+Route::name('home3')->get('/home3', function(){
   return view('home3');
 });
 
+// texto grande 
+Route::name('home')->get('/', function () {
+  return view('home_3');
+});
 
 /**
  *  Academia

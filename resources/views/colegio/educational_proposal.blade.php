@@ -412,35 +412,35 @@
               <tbody>
                 <tr>
                   <td data-label="">1.<sup>er</sup> puesto UNI</td>
-                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Examen">2018-I</td>
                   <td data-label="Nombres">Luis Flores</td>
                   <td data-label="Carrera">Ingeniería de Minas</td>
                 </tr>
 
                 <tr>
                   <td data-label="">1.<sup>er</sup> puesto UNI</td>
-                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Examen">2018-I</td>
                   <td data-label="Nombres">Mauricio Campos</td>
                   <td data-label="Carrera">Ingeniería Electrónica</td>
                 </tr>
 
                 <tr>
                   <td data-label="">1.<sup>er</sup> puesto UNI</td>
-                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Examen">2018-I</td>
                   <td data-label="Nombres">Rodrigo Ponte</td>
                   <td data-label="Carrera">Petróleo y Gas Natural</td>
                 </tr>
 
                 <tr>
                   <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
-                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Examen">2018-I</td>
                   <td data-label="Nombres">Alejandro Tapia</td>
                   <td data-label="Carrera">Ingeniería Mecánica de Fluidos</td>
                 </tr>
 
                 <tr>
                   <td data-label="">1.<sup>er</sup> puesto PUCP</td>
-                  <td data-label="Examen">2018-1</td>
+                  <td data-label="Examen">2018-I</td>
                   <td data-label="Nombres">Santiago Mendoza</td>
                   <td data-label="Carrera">Arquitectura</td>
                 </tr>

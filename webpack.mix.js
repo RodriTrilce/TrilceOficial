@@ -31,6 +31,9 @@ mix.sass('resources/assets/sass/main_home2.scss','public/css');
 mix.js('resources/assets/js/home/app3.js', 'public/js/app_home3.js');
 mix.sass('resources/assets/sass/main_home3.scss','public/css');
 
+// mix:Home4
+mix.js('resources/assets/js/home/app4.js', 'public/js/app_home4.js');
+mix.sass('resources/assets/sass/main_home4.scss','public/css');
 
 // mix:All
 mix.sass('resources/assets/sass/main.scss','public/css');

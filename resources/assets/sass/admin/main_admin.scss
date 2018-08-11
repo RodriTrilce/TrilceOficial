@@ -1,4 +1,7 @@
 @import "~flatpickr/dist/flatpickr";
+@import '../helpers/all';
+@import '~dragula/dist/dragula';
+
 
 body {
   font-size: .875rem;
@@ -223,5 +226,57 @@ $gris     : #53565a;
     &:nth-child(odd){
       background: #e9ecef;
     }
+  }
+}
+
+
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+.admin-banners{
+  width: 60%;
+  margin:  0 auto;
+
+  .banner{
+    width: 60%;
+    position: relative;
+    border: 1px solid $gray;
+    padding: 10px;
+
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+
+    img{
+      width: 400px;
+    }
+  }
+
+  .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00000099;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .edit{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: #00000099;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.gu-mirror{
+  img{
+    max-width: 50%;
+    filter: opacity(.5);
   }
 }

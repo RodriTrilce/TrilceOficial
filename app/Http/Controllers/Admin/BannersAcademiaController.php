@@ -14,7 +14,7 @@ class BannersAcademiaController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/banners_academia/index');
     }
 
     /**

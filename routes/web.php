@@ -69,9 +69,16 @@ Route::name('home3')->get('/home3', function(){
 });
 
 // texto grande
-Route::name('home')->get('/', function () {
+Route::name('home')->get('/3', function () {
   return view('home_3');
 });
+
+// Scubidu papa con el bum bum bum bum bum
+Route::name('home')->get('/', function () {
+  return view('home4');
+});
+
+
 
 /**
  *  Academia

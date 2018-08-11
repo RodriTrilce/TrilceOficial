@@ -81,6 +81,19 @@
               <li class="nav-item"><a href="/admin/venue-academia/" class="nav-link"><span data-feather="corner-down-right"></span> Listar Academia</a></li>
               <li class="nav-item"><a href="/admin/venue-academia/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear Academia</a></li>
             </ul>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Banners
+            </a>
+            <ul class="nav flex-column mb-5">
+              <li class="nav-item"><a href="/admin/banners-academia/" class="nav-link"><span data-feather="corner-down-right"></span> index Academia</a></li>
+              <li class="nav-item"><a href="/admin/banners-colegio/" class="nav-link"><span data-feather="corner-down-right"></span> index Colegio</a></li>
+            </ul>
 
           </li>
 

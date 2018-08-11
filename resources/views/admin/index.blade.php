@@ -15,5 +15,5 @@
       </div>
 
       <h2>Section title</h2>
-      holi
+      
 @endsection

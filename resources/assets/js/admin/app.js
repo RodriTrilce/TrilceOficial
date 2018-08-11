@@ -1,5 +1,6 @@
 import flatpickr from "flatpickr";
 import { Spanish } from "flatpickr/dist/l10n/es.js"
+import dragula from "dragula"
 
 import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
 import $ from "jquery"
@@ -212,3 +213,10 @@ var _hideUnlicensed = setInterval(function(){
   }
 
 }, 100);
+
+
+
+if(page == 'banners_index'){
+  var drake = dragula();
+  drake.containers.push(document.getElementById('banners'));
+}

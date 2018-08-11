@@ -4,6 +4,7 @@
     "/css/main_academia.css": "/css/main_academia.css",
     "/css/main_home.css": "/css/main_home.css",
     "/css/main_home2.css": "/css/main_home2.css",
+    "/css/main_home3.css": "/css/main_home3.css",
     "/css/main.css": "/css/main.css",
     "/css/admin_main.css": "/css/admin_main.css",
     "/js/app_academia.js": "/js/app_academia.js",
@@ -11,6 +12,5 @@
     "/js/app_home2.js": "/js/app_home2.js",
     "/js/app_home3.js": "/js/app_home3.js",
     "/js/app_home.js": "/js/app_home.js",
-    "/favicon.ico": "/favicon.ico",
-    "/css/main_home3.css": "/css/main_home3.css"
+    "/favicon.ico": "/favicon.ico"
 }

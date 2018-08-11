@@ -445,72 +445,7 @@ button.link{
         opacity:1
     }
 }
-.btn-box{
-    pointer-events:none;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-pack:center;
-    justify-content:center;
-    -ms-flex-align:center;
-    align-items:center;
-    width:50px;
-    height:50px;
-    position:relative
-}
-.icon-back{
-    display:block
-}
-.icon-back,.icon-back:after,.icon-back:before{
-    position:absolute;
-    width:25px;
-    height:2px;
-    border-radius:1px;
-    background-color:#000;
-    transition:background-color .15s ease-in-out,transform .15s ease-in-out
-}
-.icon-back{
-    position:relative
-}
-.icon-back:after,.icon-back:before{
-    content:"";
-    display:block
-}
-.icon-back:before{
-    top:-7px
-}
-.icon-back:after{
-    bottom:-7px
-}
-.icon-back:before{
-    transform:translate3d(-7px,2px,0) rotate(-45deg) scaleX(.6)
-}
-.icon-back:after{
-    transform:translate3d(-7px,-2px,0) rotate(45deg) scaleX(.6)
-}
-.icon-close{
-    display:block
-}
-.icon-close:after,.icon-close:before{
-    position:absolute;
-    width:25px;
-    height:2px;
-    border-radius:1px;
-    background-color:#000;
-    transition:background-color .15s ease-in-out,transform .15s ease-in-out
-}
-.icon-close{
-    position:relative
-}
-.icon-close:after,.icon-close:before{
-    content:"";
-    display:block
-}
-.icon-close:before{
-    transform:translateX(-50%) rotate(-45deg)
-}
-.icon-close:after{
-    transform:translateX(-50%) rotate(45deg)
-}
+
 body:not(.home-page):not(.night-mode):not(.ultra-mode) .color-mode .dot{
     background-color:#000
 }
@@ -527,72 +462,49 @@ body.light-mode .color-mode .dot{
         }
     }
 }
+
 body.ultra-mode{
     background-color:#f4633a
 }
-body.ultra-mode.journal-page #barba-wrapper:after{
-    content:"";
-    pointer-events:none;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:9999;
-    width:100%;
-    height:100%;
-    background:#f4633a;
-    mix-blend-mode:color
-}
-body.ultra-mode.journal-page.safari #barba-wrapper:after{
-    mix-blend-mode:lighten
-}
-@media screen and (max-width:767px){
-    body.ultra-mode.journal-page #barba-wrapper:after{
-        mix-blend-mode:lighten;
-        display:none
-    }
-}
+
+
 
 body.ultra-mode .content{
     opacity:1;
     transition:opacity .5s
 }
+
 @supports (-webkit-text-stroke:1px #000) or (text-stroke:1px #000){
     body.ultra-mode:not(.home-page) .ui.outline .logo:hover{
         color:#f4633a
     }
 }
+
 body.ultra-mode:not(.home-page).aboutShow .content{
     opacity:.1
 }
+
 body.ultra-mode .about:before{
     background-color:#f4633a
 }
+
 body.ultra-mode .logo{
     color:#fff
 }
-@supports (-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff){
-    body.ultra-mode .logo{
-        -webkit-text-stroke:1px #fff;
-        text-stroke:1px #fff
-    }
+
+body.ultra-mode.home-page .projects a{
+    color: transparent;
+    text-stroke: 1px #ffffff !important;
+    -webkit-text-stroke: 1px #ffffff;
+
+//      color:#53565a;
 }
-@media screen and (min-width:768px){
-    @supports (-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff){
-        body.ultra-mode .logo:hover{
-            color:#f4633a
-        }
-    }
-}
-@supports (-webkit-text-stroke:3px #000) or (text-stroke:3px #000){
-    body.ultra-mode.home-page .projects a{
-        color:#53565a;
-    }
-}
+
 @supports (-webkit-text-stroke:3px #101010) or (text-stroke:3px #101010){
     body.ultra-mode.home-page:not(.intro):not(.outro) .projects.isHovering li:hover a,body.ultra-mode.home-page:not(.outro) .projects li.isSelected:hover a,body.ultra-mode.home-page:not(.outro) .projects li.isSelected a{
-        color:transparent;
-        text-stroke: 1px #53565a;
-        -webkit-text-stroke: 3px #53565a;
+        color:#fff;
+        text-stroke: 1px transparent;
+        -webkit-text-stroke: 3px transparent;
     }
 }
 
@@ -604,29 +516,6 @@ body.ultra-mode .logo{
     }
 }
 
-
-
-body.ultra-mode.work-page .case-study .hero:after{
-    background-color:#f4633a
-}
-body.ultra-mode .flickity-page-dots .dot{
-    background-color:#000
-}
-@media screen and (max-width:767px){
-    body.ultra-mode .module-copy-image .image:after{
-        background:linear-gradient(0deg,#f4633a 0,rgba(72,1,255,0))
-    }
-    body.ultra-mode .project-name{
-        font-size:40px
-    }
-    @supports (-webkit-text-stroke:1px #f2f2f2) or (text-stroke:1px #f2f2f2){
-        body.ultra-mode .project-name{
-            color:transparent;
-            -webkit-text-stroke:1px #f2f2f2;
-            text-stroke:1px #f2f2f2
-        }
-    }
-}
 body:not(.isMobile) .basicScroll{
     height:100vh;
     overflow-x:hidden;
@@ -2334,7 +2223,7 @@ body.mobileNavOpen .ui .color-mode,body.uiHover .ui .color-mode{
 }
 
 .logo_trilce{
-  width: 210px;
+  width: 300px;
   height: 100%;
 
 }
@@ -2501,7 +2390,7 @@ body:not(.home-page):not(.journal-page):not(.aboutShow) .basicScroll .btn-page-b
     font-family:Geogrotesque-Bd;
     font-style:normal;
     font-stretch:normal;
-    font-size:9.6vw;
+    font-size:7.6vw;
     letter-spacing:.02em;
     line-height:.9em;
     transition:color .5s,opacity .5s
@@ -2510,19 +2399,20 @@ body:not(.home-page):not(.journal-page):not(.aboutShow) .basicScroll .btn-page-b
     content:attr(data-info);
     white-space:pre;
     position:absolute;
-    top:2.8em;
-    left:-250px;
+    top:2em;
+    left:-270px;
     width:200px;
     text-align:right;
-    font-size:1.3vw;
+    font-size:1.6vw;
     font-family: 'Geogrotesque-Md';
     font-weight:500;
     letter-spacing:0;
     line-height:1em;
-    color:#53565a!important;
+    color:#fff !important;
     pointer-events:none;
     transition:none
 }
+
 @supports (-webkit-text-stroke:3px #000) or (text-stroke:3px #000){
     .home-page .projects a:before{
         -webkit-text-stroke:transparent;
@@ -2534,9 +2424,9 @@ body:not(.home-page):not(.journal-page):not(.aboutShow) .basicScroll .btn-page-b
     position:absolute;
     top:.23em;
     left:-.3em;
-    width:2px;
+    width:1px;
     height:.85em;
-    background-color:#53565a;
+    background-color:#fff;
     transform:rotate(25deg);
     pointer-events:none
 }

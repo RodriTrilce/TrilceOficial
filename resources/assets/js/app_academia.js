@@ -208,7 +208,7 @@ function enrollment(nextBtn,prevBtn,form, type)
     this.dispatcher();
 
     document.getElementById(this.prevBtn).addEventListener('click', e => this.nextPrev(-1,e));
-    document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));;
+    document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));
   }
 
   this.dispatcher = function(){
@@ -223,10 +223,10 @@ function enrollment(nextBtn,prevBtn,form, type)
     var birth = document.getElementById('step2_birth');
 
     birth.addEventListener('change', function(){
-      var date = document.getElementById('step2_birth').valueAsDate;
-      var label = document.getElementById('step3_apoderate_label_none');
-      var age = parseInt(date.getFullYear());
-      var year = (new Date()).getFullYear();
+      var date    = document.getElementById('step2_birth').valueAsDate;
+      var label   = document.getElementById('step3_apoderate_label_none');
+      var age     = parseInt(date.getFullYear());
+      var year    = (new Date()).getFullYear();
 
       if( (year-age) < 18 ){
         label.style.display = 'none';
@@ -343,7 +343,8 @@ function enrollment(nextBtn,prevBtn,form, type)
     });
   }
 
-  this.makeResponsehear = function(response, select, wait=false){
+  this.makeResponsehear = function(response, select, wait=false)
+  {
     response = JSON.parse(response).data;
     for(var k in response){
         let s = document.createElement('option');
@@ -355,7 +356,8 @@ function enrollment(nextBtn,prevBtn,form, type)
     select.disabled     = false;
   }
 
-  this.forceHearEvent = function(elem){
+  this.forceHearEvent = function(elem)
+  {
     var evt = document.createEvent("HTMLEvents");
     evt.initEvent("change", false, true);
     elem.dispatchEvent(evt);

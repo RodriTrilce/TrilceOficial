@@ -7,7 +7,7 @@
 // Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider';
-import {Tabs} from './require/tabs';
+import { Tabs } from './require/tabs';
 import VanillaModal from 'vanilla-modal';
 
 const ValidationLang = {

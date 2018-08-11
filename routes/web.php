@@ -38,6 +38,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
   Route::resource('/venue-colegio', 'VenueColegioController');
   Route::resource('/venue-academia', 'VenueAcademiaController');
 
+  Route::resource('/banners-academia', 'BannersAcademiaController');
+  Route::resource('/banners-colegio', 'BannersColegioController');
+
 /*
     Route::put('/posts/{post}/publish', 'PostController@publish')->middleware('admin');
     Route::resource('/categories', 'CategoryController', ['except' => ['show']]);
@@ -65,7 +68,7 @@ Route::name('home3')->get('/home3', function(){
   return view('home3');
 });
 
-// texto grande 
+// texto grande
 Route::name('home')->get('/', function () {
   return view('home_3');
 });

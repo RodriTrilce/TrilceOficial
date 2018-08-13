@@ -4,6 +4,9 @@ import dragula from "dragula"
 
 import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
 import $ from "jquery"
+import VanillaModal from 'vanilla-modal';
+
+window.modal = new VanillaModal();
 
 window.$ = $;
 flatpickr.localize(Spanish);
@@ -217,6 +220,76 @@ var _hideUnlicensed = setInterval(function(){
 
 
 if(page == 'banners_index'){
-  var drake = dragula();
-  drake.containers.push(document.getElementById('banners'));
+  console.clear();
+
+  flatpickr("#txtFinish",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:s",
+  });
+
+
+  var bannerCrud = {
+
+    init : function()
+    {
+      this.initVars();
+      this.initEvents();
+    },
+
+    initVars : function()
+    {
+      this.icoEdit = document.querySelectorAll('.edit'),
+      this.icoClose = document.querySelectorAll('.close');
+    },
+
+    initEvents : function()
+    {
+      [].forEach.call(this.icoEdit,   elem => elem.addEventListener('click', x => this.eventEdit(elem))),
+      [].forEach.call(this.icoClose,  elem => elem.addEventListener('click', x => this.eventClose(elem))),
+      document.getElementById('saveorderButton').addEventListener('click', x => this.eventSaveOrder());
+    },
+
+    eventSaveOrder : function()
+    {
+      let elems = document.querySelectorAll('.banner');
+      [].forEach.call(elems, elem => {
+        let id = elem.dataset.id,
+            position = elem.dataset.position;
+        
+      });
+
+    },
+
+    eventEdit : function(elem)
+    {
+      var modal_open = ['#modal-1'];
+      modal.open(modal_open[0]);
+    },
+
+    eventClose : function(elem)
+    {
+      if(secureDelete()){
+        console.log(1)
+      }else{
+        console.log(2)
+      }
+    },
+
+    order : function()
+    {
+      return true;
+    }
+  }
+
+  var drag = dragula();
+  bannerCrud.init();
+
+  drag.containers.push(document.getElementById('banners'));
+
+  drag.on('drop', () => {
+    document.getElementById('saveOrder').style.display = "flex";
+  });
+
+
+
 }

@@ -16,17 +16,61 @@
 <body>
 
   <div class="container">
-    <div class="squared">
+    <div class="logo"></div>
 
-      <svg class="trilce-squared" viewBox="0 0 600 600">
-        <line x1="0" x2="600" style="stroke:rgb(255,0,0);stroke-width:5"></line>
-        <line y1="0" y2="600" style="stroke:rgb(255,0,0);stroke-width:2"></line>
-        <line x1="600" x2="00" y1="600" y2="600" style="stroke:rgb(255,0,0);stroke-width:5"></line>
-        <line x1="600" x2="600" y1="600" y2="200" style="stroke:rgb(255,0,0);stroke-width:2"></line>
-      </svg>
+    <div class="container-page container-colegio" id="colegio">
+      <div class="box-video">
+        <video loop preload="auto" src="{{ url('/static/images/home4/intro_colegio.mp4') }}" class="video-page video-colegio" id="video-colegio"></video>
+      </div>
+      <div class="box">
+        <div class="text-cta">
+          <a href="">
+            <h2>Colegio</h2>
+            <div class="icon"><i class="fa fa-play"></i></div>
+          </a>
+        </div>
+        <div class="human rat">
+          <img src="{{ url('/static/images/home4/boy.png') }}" alt="">
+        </div>
+      </div>
+
+      {{-- <section class="buttons">
+        <button class="draw">Draw</button>
+      </section> --}}
+
+
+      {{-- <div class="box-trilce">
+        <div class="svg-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" />
+            <div class="text">hola</div>
+          </svg>
+        </div>
+      </div> --}}
 
     </div>
+
+    <div class="container-page container-academia" id="academia">
+      <div class="box-video">
+        <video loop preload="auto" src="{{ url('/static/images/home4/intro_academia.mp4') }}" class="video-page video-academia" id="video-academia"></video>
+      </div>
+      <div class="box">
+        <div class="human waifu">
+          <img src="{{ url('/static/images/home4/girl.png') }}" alt="">
+        </div>
+        <div class="text-cta">
+          <a href="">
+            <h2>Academia</h2>
+            <div class="icon"><i class="fa fa-play"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"></div>
   </div>
+
+
 
   <script src="{{ mix('/js/app_home4.js') }}" charset="utf-8"></script>
 </body>

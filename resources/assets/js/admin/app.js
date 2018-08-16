@@ -244,8 +244,8 @@ if(page == 'banners_index'){
 
     initEvents : function()
     {
-      [].forEach.call(this.icoEdit,   elem => elem.addEventListener('click', x => this.eventEdit(elem))),
-      [].forEach.call(this.icoClose,  elem => elem.addEventListener('click', x => this.eventClose(elem))),
+      [].forEach.call(this.icoEdit,  elem => elem.addEventListener('click', x => this.eventEdit(elem))),
+      [].forEach.call(this.icoClose, elem => elem.addEventListener('click', x => this.eventClose(elem))),
       document.getElementById('saveorderButton').addEventListener('click', x => this.eventSaveOrder());
     },
 
@@ -255,7 +255,9 @@ if(page == 'banners_index'){
       [].forEach.call(elems, elem => {
         let id = elem.dataset.id,
             position = elem.dataset.position;
-        
+
+        console.log(position);
+
       });
 
     },

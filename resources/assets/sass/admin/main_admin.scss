@@ -238,7 +238,7 @@ $gris     : #53565a;
 /////////////////////////////////////////////////////////
 
 .admin-banners{
-  width: 60%;
+  max-width: 90%;
   margin:  0 auto;
 
   .banner{
@@ -253,14 +253,18 @@ $gris     : #53565a;
     }
 
     img{
-      width: 400px;
+      max-width: 300px;
     }
 
     &::before{
       position: absolute;
-      font-size: 20px;
-      color: red;
-      margin-left: -2vw;
+      font-size: 25px;
+      color: white;
+      left: 10px;
+      background: #f4633a;
+      min-width: 20px;
+      text-align: center;
+      border-radius: 15px;
       content: counter(item);
     }
   }

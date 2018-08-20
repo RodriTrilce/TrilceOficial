@@ -238,7 +238,7 @@ if(page == 'banners_index'){
 
     initVars : function()
     {
-      this.icoEdit = document.querySelectorAll('.edit'),
+      this.icoEdit  = document.querySelectorAll('.edit'),
       this.icoClose = document.querySelectorAll('.close');
     },
 
@@ -271,9 +271,9 @@ if(page == 'banners_index'){
     eventClose : function(elem)
     {
       if(secureDelete()){
-        console.log(1)
+        console.log(1);
       }else{
-        console.log(2)
+        console.log(2);
       }
     },
 

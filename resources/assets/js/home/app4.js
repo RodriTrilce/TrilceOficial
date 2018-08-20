@@ -19,6 +19,8 @@ var home = {
       }
     }
 
+    this.container  = document.querySelector('.container'),
+    this.footer     = document.getElementById('footer');
 
     this.video = {
       colegio : document.getElementById('video-colegio'),
@@ -49,26 +51,40 @@ var home = {
 
   initHome : function()
   {
-    console.log(2)
     window.addEventListener('mousemove', evt => this.eventTypePage(evt));
   },
 
   eventTypePage : function(evt)
   {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+//    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var sizes = this.viewportSize();
+    var w = sizes.width;
+
     if(this.eventVisible())
     {
-      if((w / 2) > evt.x){
-        if(this.TYPE == 'COLEGIO') return;
-        this.activeEventPage('COLEGIO');
+      if(evt.y < (sizes.height - 100)){
+        if( (w / 2) > evt.x){
+          if(this.TYPE == 'COLEGIO') return;
+          this.activeEventPage('COLEGIO');
+        }else{
+          if(this.TYPE == 'ACADEMIA') return;
+          this.activeEventPage('ACADEMIA');
+        }
       }else{
-        if(this.TYPE == 'ACADEMIA') return;
-        this.activeEventPage('ACADEMIA');
+        this.desactivePages();
       }
+
     }
     /*else{
       this.eventVideoPauseAll();
     }*/
+  },
+
+  desactivePages : function()
+  {
+    document.body.classList.remove('active-colegio');
+    document.body.classList.remove('active-academia');
+    this.TIMER_EXECUTE_PAGE = false;
   },
 
   activeEventPage : function(type)
@@ -91,6 +107,8 @@ var home = {
     document.body.classList.add('active-academia');
     self.eventVideo('ACADEMIA');
     self.ACTIVE = 'ACADEMIA';
+
+    //self.container.style.background = 'linear-gradient(to bottom, #f4633a 35%,#ef4415 92%)';
   },
 
   eventColegio : function(self)
@@ -100,6 +118,8 @@ var home = {
     self.TIMER_EXECUTE = false;
     self.eventVideo('COLEGIO');
     self.ACTIVE = 'COLEGIO';
+
+    //self.container.style.background = "linear-gradient(to bottom, #fff 35%,#d1d1d1 92%)";
   },
 
   eventVideo : function(type)
@@ -143,10 +163,22 @@ var home = {
             method(this);
             clearInterval(timer);
           }
-          console.log('...timer ' + i);
-      }.bind(this), 500);
+      }.bind(this), 100);
       i=1;
+  },
+
+  viewportSize : function(){
+    var test = document.createElement( "div" );
+
+    test.style.cssText = "position: fixed;top: 0;left: 0;bottom: 0;right: 0;";
+    document.documentElement.insertBefore( test, document.documentElement.firstChild );
+
+    var dims = { width: test.offsetWidth, height: test.offsetHeight };
+    document.documentElement.removeChild( test );
+
+    return dims;
   }
+
 
 
 

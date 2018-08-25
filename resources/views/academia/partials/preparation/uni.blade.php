@@ -16,7 +16,7 @@
     <option value=14>Torrico</option>
     <option value=22>Comas</option>
     <option value=23>Los Olivos</option>
-    <option value=24>Villa el Salvador</option>
+    <option value=24>Villa El Salvador</option>
   </select>
 </div>
 <div class="col-xs-12 col-sm">

@@ -238,7 +238,6 @@ $gris     : #53565a;
 /////////////////////////////////////////////////////////
 
 .admin-banners{
-  max-width: 90%;
   margin:  0 auto;
 
   .banner{
@@ -312,6 +311,7 @@ $gris     : #53565a;
 .save-order{
   display: none;
   padding: 10px;
+  padding-left: 0;
   text-align: center;
 }
 

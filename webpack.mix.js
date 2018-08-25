@@ -35,6 +35,11 @@ mix.sass('resources/assets/sass/main_home3.scss','public/css');
 mix.js('resources/assets/js/home/app4.js', 'public/js/app_home4.js');
 mix.sass('resources/assets/sass/main_home4.scss','public/css');
 
+// mix:Home5
+mix.js('resources/assets/js/home/app5.js', 'public/js/app_home5.js');
+mix.sass('resources/assets/sass/main_home5.scss','public/css');
+
+
 // mix:All
 mix.sass('resources/assets/sass/main.scss','public/css');
 

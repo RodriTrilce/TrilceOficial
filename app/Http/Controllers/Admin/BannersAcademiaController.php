@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Admin\BannersModel as Banners;
 
 class BannersAcademiaController extends Controller
 {
@@ -14,7 +15,10 @@ class BannersAcademiaController extends Controller
      */
     public function index()
     {
-        return view('admin/banners_academia/index');
+        $data = Banners::where('type', 'academia')->get();
+        return view('admin/banners_academia/index')->with([
+          'banners' => $data
+        ]);
     }
 
     /**

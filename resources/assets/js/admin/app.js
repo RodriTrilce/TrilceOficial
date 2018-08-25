@@ -1,13 +1,11 @@
 import flatpickr from "flatpickr";
 import { Spanish } from "flatpickr/dist/l10n/es.js"
 import dragula from "dragula"
-
 import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
 import $ from "jquery"
 import VanillaModal from 'vanilla-modal';
 
 window.modal = new VanillaModal();
-
 window.$ = $;
 flatpickr.localize(Spanish);
 
@@ -251,12 +249,11 @@ if(page == 'banners_index'){
 
     eventSaveOrder : function()
     {
-      let elems = document.querySelectorAll('.banner');
-      [].forEach.call(elems, elem => {
+      [].forEach.call(this.getOrder(), (elem, i) => {
         let id = elem.dataset.id,
             position = elem.dataset.position;
 
-        console.log(position);
+        console.log("Old position::" + position + " __ New position:: " + i  + " __ ID:: " + id);
 
       });
 
@@ -275,6 +272,11 @@ if(page == 'banners_index'){
       }else{
         console.log(2);
       }
+    },
+
+    getOrder : function()
+    {
+      return document.querySelectorAll('.banner');
     },
 
     order : function()

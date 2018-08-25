@@ -74,8 +74,12 @@ Route::name('home')->get('/3', function () {
 });
 
 // Scubidu papa con el bum bum bum bum bum
-Route::name('home')->get('/', function () {
+Route::name('home4')->get('/4', function () {
   return view('home4');
+});
+
+Route::name('home')->get('/', function () {
+  return view('home5');
 });
 
 

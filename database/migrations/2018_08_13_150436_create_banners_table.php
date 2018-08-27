@@ -19,8 +19,9 @@ class CreateBannersTable extends Migration
              $table->string('title')->nullable();
              $table->string('link')->nullable();
              $table->integer('file_id')->unsigned();
-             $table->integer('order');
+             $table->integer('position');
              $table->integer('state')->default('0');
+             $table->timestamp('start')->nullable();
              $table->timestamp('expire')->nullable();
              $table->timestamps();
          });

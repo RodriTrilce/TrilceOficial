@@ -38,8 +38,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
   Route::resource('/venue-colegio', 'VenueColegioController');
   Route::resource('/venue-academia', 'VenueAcademiaController');
 
-  Route::resource('/banners-academia', 'BannersAcademiaController');
-  Route::resource('/banners-colegio', 'BannersColegioController');
+  Route::resource('/banners', 'BannersController');
 
 /*
     Route::put('/posts/{post}/publish', 'PostController@publish')->middleware('admin');

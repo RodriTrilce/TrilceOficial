@@ -98,10 +98,10 @@
               Banners
             </a>
             <ul class="nav flex-column mb-5">
-              <li class="nav-item"><a href="/admin/banners-academia/" class="nav-link"><span data-feather="corner-down-right"></span> index Academia</a></li>
-              <li class="nav-item"><a href="/admin/banners-colegio/" class="nav-link"><span data-feather="corner-down-right"></span> index Colegio</a></li>
+              <li><a href="/admin/banners/create" class="nav-link"><span data-feather="corner-down-right"></span> Nuevo banner</a></li>
+              <li class="nav-item"><a href="/admin/banners/?type=index_academia" class="nav-link"><span data-feather="corner-down-right"></span> index Academia</a></li>
+              <li class="nav-item"><a href="/admin/banners/?type=index_colegio" class="nav-link"><span data-feather="corner-down-right"></span> index Colegio</a></li>
             </ul>
-
           </li>
 
 

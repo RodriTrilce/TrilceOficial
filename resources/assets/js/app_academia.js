@@ -4,9 +4,11 @@
  * Released under the Trilce Group.
  */
 
+ //import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
+ //import 'datalist-polyfill/datalist-polyfill'
+
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
-import 'datalist-polyfill/datalist-polyfill'
 import VanillaModal from 'vanilla-modal';
 import SlimSelect from 'slim-select'
 
@@ -659,7 +661,6 @@ function preparation()
     autoplay: true,
     autoplayButtonOutput: false,
     touch: true,
-    responsive: true,
     mouseDrag: true,
     controls: true,
     controlsText: ['&#xf111;','&#xf112;'],

@@ -4,9 +4,11 @@ import dragula from "dragula"
 import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
 import $ from "jquery"
 import VanillaModal from 'vanilla-modal';
+import SlimSelect from 'slim-select'
 
-window.modal = new VanillaModal();
-window.$ = $;
+window.SlimSelect = SlimSelect;
+window.modal      = new VanillaModal();
+window.$          = $;
 flatpickr.localize(Spanish);
 
 Element.prototype.remove = function() {
@@ -226,7 +228,7 @@ if(page == 'banners_index'){
   });
 
 
-  var bannerCrud = {
+  var bannerIndex = {
 
     init : function()
     {
@@ -286,7 +288,7 @@ if(page == 'banners_index'){
   }
 
   var drag = dragula();
-  bannerCrud.init();
+  bannerIndex.init();
 
   drag.containers.push(document.getElementById('banners'));
 
@@ -294,6 +296,69 @@ if(page == 'banners_index'){
     document.getElementById('saveOrder').style.display = "flex";
   });
 
+
+
+}
+
+
+if(page == 'banners_create'){
+
+  var listenImage = {
+    init : function()
+    {
+      this.initVars();
+      this.listen();
+    },
+
+    initVars : function()
+    {
+      this.image = document.getElementById('image_banner');
+      this.preview = document.getElementById('img-preview');
+    },
+
+    listen : function(){
+      this.image.addEventListener('change', input => Array.from(input.target.files).forEach(this.insertImage.bind(this)) );
+    },
+
+    insertImage : function(elem)
+    {
+      console.log(elem);
+      this.preview.appendChild(this.iterateDrawImg(elem));
+    },
+
+    iterateDrawImg : function(elem, img){
+      var image     = new FileReader();
+      var img       = document.createElement("img");
+      image.onload = function(e){
+        img.src = e.target.result;
+      };
+      image.readAsDataURL(elem);
+      return img;
+    }
+  }
+
+
+  listenImage.init();
+
+  new SlimSelect({
+    select: '#create_section',
+    addable: function (value) {
+      return {
+        text: value,
+        value: value.toLowerCase()
+      }
+    }
+  });
+
+  flatpickr("#mo_finish",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:s",
+  });
+
+  flatpickr("#mo_start",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:s",
+  });
 
 
 }

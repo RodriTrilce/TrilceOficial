@@ -1,7 +1,7 @@
 @import "~flatpickr/dist/flatpickr";
 @import '../helpers/all';
 @import '~dragula/dist/dragula';
-@import "../vendor/modal";
+@import "../vendor/all";
 
 
 body {
@@ -320,5 +320,15 @@ $gris     : #53565a;
   img{
     max-width: 50%;
     filter: opacity(.5);
+  }
+}
+
+.img-preview{
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+
+  img{
+    max-width: 700px;
   }
 }

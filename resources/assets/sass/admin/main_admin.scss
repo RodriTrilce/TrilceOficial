@@ -252,7 +252,7 @@ $gris     : #53565a;
     }
 
     img{
-      max-width: 300px;
+      max-width: 600px;
     }
 
     &::before{
@@ -264,8 +264,26 @@ $gris     : #53565a;
       min-width: 20px;
       text-align: center;
       border-radius: 15px;
+      padding: 0 10px;
+      border: 1px solid white;
       content: counter(item);
     }
+  }
+
+  .info{
+    margin-bottom: 10px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    .text{
+      color: black;
+    }
+  }
+
+  .red{
+    color: red;
   }
 
   .op{

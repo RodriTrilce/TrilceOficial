@@ -115,7 +115,6 @@ var get = (url) => {
        autoplay: true,
        autoplayButtonOutput: false,
        touch: true,
-       responsive: true,
        mouseDrag: true,
        controls: true,
        controlsText: ['&#xf111;','&#xf112;'],

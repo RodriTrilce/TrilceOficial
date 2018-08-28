@@ -41,4 +41,5 @@ class File extends Model
       return Storage::url($this->location_folder . '/' . $this->token . '_' . $this->dimension . '.' . $this->extension);
     }
   }
+
 }

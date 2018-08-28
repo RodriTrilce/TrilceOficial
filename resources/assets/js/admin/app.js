@@ -322,7 +322,7 @@ if(page == 'banners_create'){
 
     insertImage : function(elem)
     {
-      console.log(elem);
+      this.preview.innerHTML="";
       this.preview.appendChild(this.iterateDrawImg(elem));
     },
 

@@ -21,8 +21,14 @@ class BannersController extends Controller
      */
     public function index()
     {
-        $data = Banner::where('type', 'academia')->get();
-        return view('admin/banners/index')->with([
+        $data = Banner::where([
+          ['type', '=', $_GET['type']],
+          ['state', '=', '1']
+        ])
+        ->get();
+
+        return view('admin/banners/index')
+        ->with([
           'banners' => $data
         ]);
     }
@@ -59,9 +65,16 @@ class BannersController extends Controller
       $file = $this->storeBannerImage($request);
       $banner->file_id = $file->id;
 
-      $position = Banner::where('type', $request->type)->orderBy('position', 'desc')->take(1)->get();
+      $position = Banner::where([
+        ['type', '=', $request->type],
+        ['state', '=', '1']
+      ])
+      ->orderBy('position', 'desc')
+      ->take(1)
+      ->get();
 
-      $banner->position = (empty($position[0]->position)?0:$position[0]->position+1);
+      $banner->position = (!isset($position[0]->position)?0:$position[0]->position+1);
+
       $banner->save();
 
       return back()->with('success', 'Banner creado correctamente');
@@ -78,11 +91,13 @@ class BannersController extends Controller
       $file->extension          = $mime->getExtension($request->file('image')->getMimeType());
       $file->location_folder    = 'static/images/banner';
       $file->name               = $request->title;
+      $file->dimension          = '1920×500';
       $file->size               = $request->file('image')->getClientSize();
       $file->save();
 
-      $request->file('image')->storeAs('public/' . $file->location_folder, $file->token. '.' . $file->extension);
+      $imageSave    = Image::make($request->file('image'));
 
+      Storage::put('public/' . $file->location_folder . '/' . $file->token. '.' . $file->extension, $imageSave->encode(null, 80));
       return $file;
     }
 

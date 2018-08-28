@@ -42,7 +42,7 @@ class BlogController extends Controller
     ->get();
 
     return view('/colegio/blog')->with([
-                                        'posts'         => $posts,
+                                        'posts'    => $posts,
                                         'markers'  => $markers
                                       ]);
   }

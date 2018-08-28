@@ -78,7 +78,7 @@
 <div class=" save-order" id="saveOrder">
   <div class="row">
     <div class="col-sm-12">
-      <button type="button" id="saveorderButton">Guardar orden</button>
+      <button type="button" class="btn btn-primary" id="saveorderButton">Guardar orden</button>
     </div>
   </div>
 </div>
@@ -88,10 +88,11 @@
     <div class="banner" data-position="{{ $banner->order }}" data-id="{{ $banner->id }}">
       <div class="op close"><span data-feather="trash"></span></div>
       <div class="op edit"><span data-feather="edit"></span></div>
-      <img src="{{ $banner->link }}" alt="">
-      <div class="expire"><span class="text">Vencimiento: </span> <span class="expire-date">{{ Date::parse($banner->expire)->format('j \d\e F \d\e\l Y') }}</span></div>
-      <div class="link"><span class="text">Link:</span> <span class="href"><a href="{{ $banner->link }}" target="_blank">{{ $banner->link }}</a></span></div>
-      <div class="title"><span class="text">Titulo:</span> <span class="title-text">{{ $banner->title }}</span></div>
+      <img src="{{ $banner->file->fileUrl() }}" alt="">
+      <div class="info expire @if(strtotime($banner->start) > time()) red @endif"><span class="text">Inicio: </span> <span class="expire-date">{{ Date::parse($banner->start)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}</span></div>
+      <div class="info expire @if(strtotime($banner->expire) < time()) red @endif"><span class="text">Vencimiento: </span> <span class="expire-date">{{ Date::parse($banner->expire)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}</span></div>
+      <div class="info link"><span class="text">Link:</span> <span class="href"><a href="{{ $banner->link }}" target="_blank">{{ $banner->link }}</a></span></div>
+      <div class="info title"><span class="text">Titulo:</span> <span class="title-text">{{ $banner->title }}</span></div>
     </div>
   @endforeach
 </div>

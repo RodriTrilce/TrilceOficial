@@ -41,24 +41,24 @@
        <label for="create_section">Sección</label>
        <select class="form-control" name="type" id="create_section" required>
          <option selected hidden disabled>Selecionar</option>
-         <option value="academia">Academia</option>
-         <option value="colegio">Colegio</option>
+         <option value="index_academia">Academia</option>
+         <option value="index_colegio">Colegio</option>
        </select>
      </div>
 
      <div class="form-group">
-       <label for="image_banner">Selecione el banner</label><br>
-       <input type='file' id="image_banner" name="image" accept="image/*" required />
+       <label for="image_banner">Selecione el banner (1920×500)</label><br>
+       <input type='file' id="image_banner" name="image" class="form-control-file" accept="image/*" required />
        <div class="img-preview" id="img-preview"></div>
      </div>
 
      <div class="form-group">
-       <label for="create_finish">Inicializar</label>
+       <label for="create_finish">Inicio</label>
        <input type="text" class="form-control" id="mo_start" name="start" value="<?php echo date("Y-m-d H:i:s"); ?>" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
      </div>
 
      <div class="form-group">
-       <label for="mo_finish">Expiración</label>
+       <label for="mo_finish">Fin</label>
        <input type="text" class="form-control" id="mo_finish" name="expire" value="<?php echo date("Y-m-d H:i:s"); ?>" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
      </div>
 

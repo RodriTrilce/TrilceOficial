@@ -34,7 +34,7 @@
 
     <div class="form-group">
        <label for="create_link">Enlace</label>
-       <input type="text" class="form-control" name="link" id="create_link" autocomplete="off" placeholder="Escribe aquí el enlace" required>
+       <input type="text" class="form-control" name="link" id="create_link" autocomplete="off" placeholder="Escribe aquí el enlace">
     </div>
 
      <div class="form-group">

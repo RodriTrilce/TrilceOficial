@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\BannerCreateRequest;
-use App\Models\Admin\BannersModel as Banner;
+use App\Models\BannersModel as Banner;
 use App\Models\File;
 use \Mimey\MimeTypes as Mime;
 use Storage;

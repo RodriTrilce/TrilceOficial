@@ -51,13 +51,17 @@
   @endif
 
   <div class="index-banners">
+    @foreach ($banners as $banner)
+      @if( (strtotime($banner->start) < time()) && (strtotime($banner->expire) > time()) )
 
-    <div><a href="/academia/preparacion-uni"><img src="{{Storage::url('academia/banners/24071803.png')}}" alt=""></a></div>
-    <div><a href="/academia/preparacion-uni"><img src="{{Storage::url('academia/banners/24071804.png')}}" alt=""></a></div>
-    <div><a href="/academia/preparacion-san-marcos"><img src="{{Storage::url('academia/banners/24071802.png')}}" alt=""></a></div>
-    <div><a href="/academia/preparacion-uni"><img src="{{Storage::url('academia/banners/24071801.png')}}" alt=""></a></div>
-    <div><a href="https://www.facebook.com/ColegioTrilce/videos/2145054952176570/" target="_blank"><img src="{{Storage::url('academia/banners/1307201804.png')}}" alt=""></a></div>
-    <div><a href="#" target="_blank"><img src="{{Storage::url('academia/banners/1307201805.png')}}" alt=""></a></div>
+        @if($banner->link)
+          <div><a target="_blank" href="{{ $banner->link }}"><img src="{{ $banner->file->fileUrl() }}" alt="{{ $banner->title }}"></a></div>
+        @else
+          <div><img src="{{ $banner->file->fileUrl() }}" alt="{{ $banner->title }}"></div>
+        @endif
+
+      @endif
+    @endforeach
   </div>
 
   <div class="nuevos-i">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Academia;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\BannersModel as Banner;
 
 class IndexController extends Controller
 {
@@ -14,9 +15,18 @@ class IndexController extends Controller
    */
   public function index()
   {
-    return view('/academia/index')->with([
+    $banners = Banner::where([
+      ['type',  '=', 'index_academia'],
+      ['state', '=', '1']
+    ])
+    ->orderBy('position', 'asc')
+    ->get();
+
+    return view('/academia/index')
+    ->with([
       'print'   => (parse_url(request()->headers->get('referer'), PHP_URL_PATH) == '/' ? true : false),
-      'action'  => ''
+      'action'  => '',
+      'banners' => $banners
     ]);
   }
 }

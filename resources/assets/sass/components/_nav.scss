@@ -474,8 +474,19 @@ nav{
       }
 
       >ul{
-        display: none;
-        position: relative;
+        display: block;
+        position: absolute;
+        z-index: 9999999999;
+        left: 0px;
+        width: 100vw;
+        background-color: white;
+        text-align: center;
+        margin-top: 85px;
+        top: 0;
+        opacity: 0;
+        height: 0;
+        transition: all .1s ease-in-out;
+
 
         .menu-click-sedes{
           display: block;
@@ -551,17 +562,8 @@ nav{
     }//end ul
 
     #menu-toggle:checked ~ ul {
-      display: block;
-      position: absolute;
-      z-index: 9999999999;
-      left: 0px;
-      width: 100vw;
       height: 100vh;
-      background-color: white;
-      text-align: center;
-      margin-top: 85px;
-      top: 0;
-
+      opacity: 1;
     }//end ul
 
     #menu-toggle{
@@ -583,9 +585,13 @@ nav{
 
         a{
           color: $orange;
+
           &:link{
             text-transform: none;
             padding: 0.2rem;
+          }
+          &:visited{
+            color: $orange !important;
           }
         }//end a
       }//en li

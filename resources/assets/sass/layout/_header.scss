@@ -17,10 +17,11 @@
 
 }
 
-
 .logo{
   justify-content: center;
   align-items: baseline;
+  user-select: none;
+
 
     img{
       max-width: 220px;

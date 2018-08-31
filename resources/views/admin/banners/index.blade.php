@@ -85,7 +85,7 @@
 
 <div class="admin-banners" id="banners">
   @foreach ($banners as $banner)
-    <div class="banner" data-position="{{ $banner->order }}" data-id="{{ $banner->id }}">
+    <div class="banner" data-position="{{ $banner->position }}" data-id="{{ $banner->id }}">
       <div class="op close"><span data-feather="trash"></span></div>
       <div class="op edit"><span data-feather="edit"></span></div>
       <img src="{{ $banner->file->fileUrl() }}" alt="">

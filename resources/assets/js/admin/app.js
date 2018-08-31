@@ -23,6 +23,31 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     }
 }
 
+/**
+ * Make a request post for purposes
+ * @param  {url} post
+ * @param  {data}
+ * @return {Promise}        The XHR request as a Promise
+ */
+var post = (url, data) => {
+  return new Promise((resolve, reject) => {
+    var req = new XMLHttpRequest();
+    req.open('POST', url, true);
+    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    req.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name=csrf-token]').content);
+    req.onload  = () => {
+      if(req.status == 200){
+        resolve(req.response);
+      }else{
+        reject(Error(req.statusText));
+      }
+    }
+
+    req.onerror = ()  => reject(Error('Network Error'));
+    req.send(data);
+  });
+}
+
 window.secureDelete = form => confirm('Seguro de querer eliminar?');
 
 function createImage(input)
@@ -156,8 +181,8 @@ if(page == 'math_olympics_create' || page == 'math_olympics_edit')
     });
   }
 
-  const resultAdd     = document.getElementById('result_newresult');
-  var resultContent   = document.getElementById('results_content');
+  const resultAdd   = document.getElementById('result_newresult');
+  var resultContent = document.getElementById('results_content');
 
   if(resultAdd){
     resultAdd.addEventListener('click', function(){
@@ -173,7 +198,6 @@ if(page == 'math_olympics_create' || page == 'math_olympics_edit')
   }
 }
 
-
 if(page == 'venue_create')
 {
   // Editor
@@ -185,9 +209,6 @@ if(page == 'venue_create')
   });
 
 }
-
-
-
 
 window.hideUnlicensed = false;
 window.hideUnlicensedT = false
@@ -202,6 +223,7 @@ var _hideUnlicensed = setInterval(function(){
       }
 
     });
+
   }else{
     if(!window.hideUnlicensedT){
       var wrapper = document.querySelector('.fr-wrapper');
@@ -212,12 +234,8 @@ var _hideUnlicensed = setInterval(function(){
         document.getElementById('hideUnlicensed').style.height = window.getComputedStyle(window.hideUnlicensedElement, null).getPropertyValue('height');
       }
     }
-
   }
-
 }, 100);
-
-
 
 if(page == 'banners_index'){
   console.clear();
@@ -251,14 +269,19 @@ if(page == 'banners_index'){
 
     eventSaveOrder : function()
     {
-      [].forEach.call(this.getOrder(), (elem, i) => {
+      var positions = [];
+      [].forEach.call(this.getPosition(), (elem, i) => {
         let id = elem.dataset.id,
             position = elem.dataset.position;
 
-        console.log("Old position::" + position + " __ New position:: " + i  + " __ ID:: " + id);
+        positions.push({
+          'id' : id,
+          'position' : i
+        });
 
       });
 
+      console.log(positions);
     },
 
     eventEdit : function(elem)
@@ -276,7 +299,7 @@ if(page == 'banners_index'){
       }
     },
 
-    getOrder : function()
+    getPosition : function()
     {
       return document.querySelectorAll('.banner');
     },
@@ -295,11 +318,7 @@ if(page == 'banners_index'){
   drag.on('drop', () => {
     document.getElementById('saveOrder').style.display = "flex";
   });
-
-
-
 }
-
 
 if(page == 'banners_create'){
 
@@ -329,14 +348,15 @@ if(page == 'banners_create'){
     iterateDrawImg : function(elem, img){
       var image     = new FileReader();
       var img       = document.createElement("img");
+
       image.onload = function(e){
         img.src = e.target.result;
       };
+
       image.readAsDataURL(elem);
       return img;
     }
   }
-
 
   listenImage.init();
 

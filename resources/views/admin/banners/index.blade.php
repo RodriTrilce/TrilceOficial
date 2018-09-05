@@ -75,7 +75,11 @@
   </div>
   @endif
 
-<div class=" save-order" id="saveOrder">
+<div class="saveStatus" id="saveStatus">
+
+</div>
+
+<div class="save-order" id="saveOrder">
   <div class="row">
     <div class="col-sm-12">
       <button type="button" class="btn btn-primary" id="saveorderButton">Guardar orden</button>

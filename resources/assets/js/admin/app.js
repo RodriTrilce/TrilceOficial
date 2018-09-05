@@ -281,7 +281,19 @@ if(page == 'banners_index'){
 
       });
 
-      console.log(positions);
+      post('/api/admin/banners', 'positions='+JSON.stringify(positions)).then(
+          response  => {
+            var response = JSON.parse(response);
+            var save     = document.getElementById('saveStatus');
+            if(response.status == 'ok')
+            {
+              save.innerHTML = 'Guardado exitosamente';
+              save.classList.add('saveStatus--ok');
+
+            }
+          },
+          error     => console.log('error api')
+        );
     },
 
     eventEdit : function(elem)

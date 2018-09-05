@@ -333,6 +333,26 @@ $gris     : #53565a;
   text-align: center;
 }
 
+.saveStatus{
+  width: 100%;
+  height: 0;
+  padding: 10px;
+  font-size: 1rem;
+  visibility: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.saveStatus--ok{
+  color: green;
+  height: 30px;
+  visibility: visible;
+}
+
+.saveStatus--error{
+  color: red;
+  height: 30px;
+  visibility: visible;
+}
 
 .gu-mirror{
   img{

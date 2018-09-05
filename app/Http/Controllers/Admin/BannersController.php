@@ -25,6 +25,7 @@ class BannersController extends Controller
           ['type', '=', $_GET['type']],
           ['state', '=', '1']
         ])
+        ->orderBy('position', 'asc')
         ->get();
 
         return view('admin/banners/index')
@@ -144,5 +145,17 @@ class BannersController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function storePositions(Request $request)
+    {
+      $positions = json_decode($request->positions);
+      foreach ($positions as $position) {
+      $banner = Banner::find($position->id);
+        $banner->position = $position->position;
+        $banner->save();
+      }
+
+      echo json_encode(['status' => 'ok']);
     }
 }

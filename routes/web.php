@@ -37,10 +37,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
   Route::resource('/math-olympics/results', 'MathOlympicsResultsController');
   Route::resource('/venue-colegio', 'VenueColegioController');
   Route::resource('/venue-academia', 'VenueAcademiaController');
-
   Route::resource('/banners', 'BannersController');
-
-  
 });
 
 

@@ -15,7 +15,7 @@ class CreateBannersTable extends Migration
      {
          Schema::create('banners', function (Blueprint $table) {
              $table->increments('id');
-             $table->enum('type', ['academia', 'colegio']);
+             $table->string('type');
              $table->string('title')->nullable();
              $table->string('link')->nullable();
              $table->integer('file_id')->unsigned();

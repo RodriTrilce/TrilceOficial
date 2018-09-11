@@ -665,8 +665,7 @@ function preparation()
     controls: true,
     controlsText: ['&#xf111;','&#xf112;'],
     nav: false,
-    autoplayHoverPause: true,
-    loop: false
+    autoplayHoverPause: true
   });
 
   // For enrollment finish modal

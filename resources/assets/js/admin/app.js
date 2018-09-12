@@ -263,23 +263,12 @@ if(page == 'banners_index'){
     initEvents : function()
     {
       [].forEach.call(this.icoEdit,  elem => elem.addEventListener('click', x => this.eventEdit(elem))),
-      [].forEach.call(this.icoClose, elem => elem.addEventListener('click', x => this.eventClose(elem))),
       document.getElementById('saveorderButton').addEventListener('click', x => this.eventSaveOrder());
     },
 
     eventSaveOrder : function()
     {
-      var positions = [];
-      [].forEach.call(this.getPosition(), (elem, i) => {
-        let id = elem.dataset.id,
-            position = elem.dataset.position;
-
-        positions.push({
-          'id' : id,
-          'position' : i
-        });
-
-      });
+      var positions = this.getPosition();
 
       post('/api/admin/banners', 'positions='+JSON.stringify(positions)).then(
           response  => {
@@ -292,7 +281,7 @@ if(page == 'banners_index'){
 
             }
           },
-          error     => console.log('error api')
+          error => console.log('error api')
         );
     },
 
@@ -302,18 +291,22 @@ if(page == 'banners_index'){
       modal.open(modal_open[0]);
     },
 
-    eventClose : function(elem)
-    {
-      if(secureDelete()){
-        console.log(1);
-      }else{
-        console.log(2);
-      }
-    },
-
     getPosition : function()
     {
-      return document.querySelectorAll('.banner');
+       var elements  = document.querySelectorAll('.banner'),
+           positions = [];
+
+       [].forEach.call(elements, (elem, i) => {
+         let id = elem.dataset.id,
+             position = elem.dataset.position;
+
+         positions.push({
+           'id': id,
+           'position': i
+         });
+       });
+
+       return positions;
     },
 
     order : function()
@@ -331,6 +324,7 @@ if(page == 'banners_index'){
     document.getElementById('saveOrder').style.display = "flex";
   });
 }
+
 
 if(page == 'banners_create'){
 

@@ -25,7 +25,6 @@ class IndexController extends Controller
     return view('/academia/index')
     ->with([
       'print'   => (parse_url(request()->headers->get('referer'), PHP_URL_PATH) == '/' ? true : false),
-      'action'  => '',
       'banners' => $banners
     ]);
   }

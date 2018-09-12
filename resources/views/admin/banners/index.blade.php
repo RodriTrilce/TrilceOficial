@@ -90,13 +90,48 @@
 <div class="admin-banners" id="banners">
   @foreach ($banners as $banner)
     <div class="banner" data-position="{{ $banner->position }}" data-id="{{ $banner->id }}">
-      <div class="op close"><span data-feather="trash"></span></div>
-      <div class="op edit"><span data-feather="edit"></span></div>
+
+      <div class="op close">
+        <form action="{{action('Admin\BannersController@destroy', $banner->id)}}" method="post" onsubmit="return secureDelete(this);">
+            {{csrf_field()}}
+            <input name="_method" type="hidden" value="DELETE">
+            <button class="btn btn-danger btn-xs" type="submit">
+              <span data-feather="trash"></span>
+            </button>
+        </form>
+      </div>
+      <div class="op edit">
+          <a href="{{action('Admin\BannersController@edit', $banner->id)}}" class="btn btn-success">
+            <span data-feather="edit"></span>
+          </a>
+      </div>
+
       <img src="{{ $banner->file->fileUrl() }}" alt="">
-      <div class="info expire @if(strtotime($banner->start) > time()) red @endif"><span class="text">Inicio: </span> <span class="expire-date">{{ Date::parse($banner->start)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}</span></div>
-      <div class="info expire @if(strtotime($banner->expire) < time()) red @endif"><span class="text">Vencimiento: </span> <span class="expire-date">{{ Date::parse($banner->expire)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}</span></div>
-      <div class="info link"><span class="text">Link:</span> <span class="href"><a href="{{ $banner->link }}" target="_blank">{{ $banner->link }}</a></span></div>
-      <div class="info title"><span class="text">Titulo:</span> <span class="title-text">{{ $banner->title }}</span></div>
+
+      <div class="info expire @if(strtotime($banner->start) > time()) red @endif">
+        <span class="text">Inicio: </span>
+        <span class="expire-date">
+          {{ Date::parse($banner->start)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}
+        </span>
+      </div>
+
+      <div class="info expire @if(strtotime($banner->expire) < time()) red @endif">
+        <span class="text">Vencimiento: </span>
+        <span class="expire-date">
+          {{ Date::parse($banner->expire)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}
+        </span>
+      </div>
+
+      <div class="info link">
+        <span class="text">Link:</span>
+        <span class="href"><a href="{{ $banner->link }}" target="_blank">{{ $banner->link }}</a></span>
+      </div>
+
+      <div class="info title">
+        <span class="text">Titulo:</span>
+        <span class="title-text">{{ $banner->title }}</span>
+      </div>
+
     </div>
   @endforeach
 </div>

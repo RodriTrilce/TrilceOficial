@@ -23,6 +23,7 @@
         "ralouphie/mimey": "^2.0",
         "setasign/fpdf": "^1.8",
         "setasign/fpdi": "^2.0",
+        "spatie/image-optimizer": "^1.1",
         "squareboat/sneaker": "^4.0"
     },
     "require-dev": {

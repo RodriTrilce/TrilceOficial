@@ -10,6 +10,7 @@ use App\Models\File;
 use \Mimey\MimeTypes as Mime;
 use Storage;
 use Image;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
 
 
 class BannersController extends Controller
@@ -96,9 +97,13 @@ class BannersController extends Controller
       $file->size               = $request->file('image')->getClientSize();
       $file->save();
 
-      $imageSave    = Image::make($request->file('image'));
+      $image = Image::make($request->file('image'));
 
-      Storage::put('public/' . $file->location_folder . '/' . $file->token. '.' . $file->extension, $imageSave->encode(null, 80));
+      Storage::put('public/' . $file->location_folder . '/' . $file->token. '.' . $file->extension, $image->encode(null, 80));
+
+      $optimizerChain = OptimizerChainFactory::create();
+      $optimizerChain->optimize(getcwd() . Storage::url($file->location_folder . '/' . $file->token . '.' . $file->extension));
+
       return $file;
     }
 
@@ -144,14 +149,41 @@ class BannersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $banner  = Banner::find($id);
+        $banners = Banner::where([
+          ['type', '=', $banner->type],
+          ['state', '=', '1']
+        ])
+        ->orderBy('position', 'asc')
+        ->get();
+
+        $position = $banner->position;
+
+        $banners->search(function ($item, $key) use ($banners, $position) {
+          if($item->position == $position)
+            $banners->pull($key);
+        });
+
+        $i = 0;
+        foreach ($banners as $itemBanner) {
+          $itemBanner = Banner::find($itemBanner->id);
+          $itemBanner->position = $i;
+          $banner->save();
+          $i++;
+        }
+
+        // Set state = 0 (archived banner);
+        $banner->state = '0';
+        $banner->save();
+
+        return back()->with('success', 'Banner eliminado correctamente');
     }
 
     public function storePositions(Request $request)
     {
       $positions = json_decode($request->positions);
       foreach ($positions as $position) {
-      $banner = Banner::find($position->id);
+        $banner = Banner::find($position->id);
         $banner->position = $position->position;
         $banner->save();
       }

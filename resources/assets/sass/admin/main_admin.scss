@@ -290,8 +290,8 @@ $gris     : #53565a;
     display: flex;
     align-items: baseline;
     justify-content: center;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 45px;
     margin-top: 5px;
     transition: all .2s ease-in-out;
 
@@ -311,7 +311,7 @@ $gris     : #53565a;
   .edit{
     position: absolute;
     top: 0;
-    right: 30px;
+    right: 45px;
     color: green;
     font-size: 2rem;
   }

@@ -28,9 +28,7 @@
     </div>
   </div>
 
-  @hasSection('afterBody')
-    {!! $print !!}
-  @endif
+  @yield('afterBody')
 
   <header>
     <div class="row between-xs header-web">

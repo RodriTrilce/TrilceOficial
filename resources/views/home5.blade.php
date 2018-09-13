@@ -11,10 +11,8 @@
   <link rel="apple-touch-icon" href="{{{ asset('favicon.ico') }}}">
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
   <link rel="stylesheet" href="{{ mix('/css/main_home5.css') }}">
-
 </head>
 <body>
-
   <div class="container">
 
     <div class="side colegio">

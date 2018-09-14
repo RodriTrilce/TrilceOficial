@@ -142,6 +142,10 @@ body, html{
   bottom: 0;
   display: flex;
   justify-content: flex-end;
+
+  img{
+    min-width: 240px !important;
+  }
 }
 
 .logo{
@@ -232,7 +236,6 @@ body, html{
 
     img{
       height: 48vh;
-      width: auto;
     }
   }
 
@@ -298,7 +301,6 @@ body, html{
 
     img{
       height: 50vh;
-      width: auto;
     }
   }
 

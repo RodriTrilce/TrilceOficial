@@ -32,8 +32,8 @@ class BecaMail extends Mailable
       return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                   ->to($this->data->email)
                   ->subject('¡Gana 1/8 de beca para tu hijo!')
-                  ->view('resources.mail.out.ecotrilce.finish')
-                  ->text('resources.mail.out.ecotrilce.finish_plain')
+                  ->view('resources.mail.out.beca.finish')
+                  ->text('resources.mail.out.beca.finish_plain')
                   ->with(
                     [
                       'data' => $this->data

@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use App\Models\Out\Ecotrilce;
 use App\Models\Out\Listdriver;
 use App\Mail\Report\ReportBasicMail;
+use App\Mail\Out\BecaMail;
 
 class MailBecaCommand extends Command
 {
@@ -71,7 +72,7 @@ class MailBecaCommand extends Command
                  Mail::send( new ReportBasicMail($marcela) );
                }
 
-               Mail::send( new EcotrilceMail($user) );
+               Mail::send( new BecaMail($user) );
                $user->update(['send1' => 1]);
                $count->update(['count' => $count->count + 1]);
 

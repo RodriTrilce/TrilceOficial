@@ -144,7 +144,7 @@ body, html{
   justify-content: flex-end;
 
   img{
-    min-width: 240px !important;
+    min-width: calc(48vh - 10vw) !important;
   }
 }
 

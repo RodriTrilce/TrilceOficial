@@ -164,6 +164,7 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         jdavidbakr\MailTracker\MailTrackerServiceProvider::class,
+        Eusonlito\LaravelMeta\MetaServiceProvider::class,
 
 
 
@@ -218,6 +219,7 @@ return [
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Str' => Illuminate\Support\Str::class,
+        'Meta'    => Eusonlito\LaravelMeta\Facade::class,
 
     ],
 

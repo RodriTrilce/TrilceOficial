@@ -56,10 +56,10 @@ class MailBecaCommand extends Command
                if(($count->count % 100) == 0
                     || ($count->count == 1)
                     || ($count->count == 5)
-                    || ($ocunt->count == 10)
-                    || ($ocunt->count == 30)
-                    || ($ocunt->count == 50)
-                    || ($ocunt->count == 80)
+                    || ($count->count == 10)
+                    || ($count->count == 30)
+                    || ($count->count == 50)
+                    || ($count->count == 80)
                  ){
                  $franco = new \stdClass();
                  $franco->name = 'franco';

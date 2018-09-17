@@ -59,11 +59,11 @@ class MailBecaCommand extends Command
                  $franco->name = 'franco';
                  $franco->email = 'fsalcedo@trilce.edu.pe';
                  $franco->report = 'Enviado hasta la cantidad numero -> ' . $count->count;
-                 $franco->subject = 'Envio masivo - Trilce r:' . rand(0,9999);
+                 $franco->subject = 'Envio masivo - Trilce id::' . rand(0,9999);
                  Mail::send( new ReportBasicMail($franco) );
                }
 
-               if($count->count == 4000){
+               if($count->count == 4000 || $count->count == 8000){
                  $marcela = new \stdClass();
                  $marcela->name = 'Marcela';
                  $marcela->email = 'mdellafredad@trilce.edu.pe';
@@ -71,10 +71,6 @@ class MailBecaCommand extends Command
                  $marcela->subject = 'Informe masivo mail:beca';
                  Mail::send( new ReportBasicMail($marcela) );
                }
-
-               $user = new stdClass();
-               $user->name = "Franco";
-               $user->email = "fsalcedo@trilce.edu.pe";
 
                Mail::send( new BecaMail($user) );
                $user->update(['send2' => 1]);

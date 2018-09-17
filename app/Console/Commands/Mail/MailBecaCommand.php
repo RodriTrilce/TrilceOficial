@@ -43,7 +43,7 @@ class MailBecaCommand extends Command
      public function handle()
      {
        // 5 correos por minuto =  300 por hora * 5 horas = 1500 correos.
-       $users = Ecotrilce::where('send2', '=', '0')->limit(15)->get();
+       $users = Ecotrilce::where('send2', '=', '0')->limit(5)->get();
 
        foreach ($users as $user) {
 

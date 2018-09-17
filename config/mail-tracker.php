@@ -21,7 +21,7 @@ return [
      */
     'route' => [
         'prefix' => 'email',
-        'middleware' => ['web'],
+        'middleware' => ['web', 'auth'],
     ],
 
     /**
@@ -29,7 +29,7 @@ return [
      */
     'admin-route' => [
         'prefix' => 'email-manager',
-        'middleware' => ['web'],
+        'middleware' => ['web', 'auth'],
     ],
 
     /**
@@ -47,7 +47,7 @@ return [
     /**
      * Number of emails per page in the admin view
      */
-    'emails-per-page'=>30,
+    'emails-per-page'=>50,
 
     /**
      * Date Format

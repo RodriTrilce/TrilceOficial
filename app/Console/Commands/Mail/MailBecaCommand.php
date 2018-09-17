@@ -50,7 +50,7 @@ class MailBecaCommand extends Command
            return;
          }else{
 
-               $count = Listdriver::where('id', '=', '2')->first();
+               $count = Listdriver::where('id', '=', '3')->first();
 
                if(($count->count % 100) == 0
                     || ($count->count == 1)
@@ -72,8 +72,12 @@ class MailBecaCommand extends Command
                  Mail::send( new ReportBasicMail($marcela) );
                }
 
+               $user = new stdClass();
+               $user->name = "Franco";
+               $user->email = "fsalcedo@trilce.edu.pe";
+
                Mail::send( new BecaMail($user) );
-               $user->update(['send1' => 1]);
+               $user->update(['send2' => 1]);
                $count->update(['count' => $count->count + 1]);
 
          }

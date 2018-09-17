@@ -28,7 +28,7 @@ class ReportBasicMail extends Mailable
      */
      public function build()
      {
-       return $this->from(env('MAIL_DEFAULT_SENDER'), '~ Reporte mail trilce')
+       return $this->from(env('MAIL_DEFAULT_SENDER'), '~ Reporte mail Trilce')
                    ->to($this->data->email)
                    ->subject($this->data->subject)
                    ->view('resources.mail.report.basic.template')

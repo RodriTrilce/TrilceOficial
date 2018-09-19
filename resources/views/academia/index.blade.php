@@ -65,7 +65,7 @@
   </div>
 -->
   <div class="index-banners">
-    <div><img src="http://www.trilce.edu.pe/banner-1er-SM-movil.png" alt=""></div>
+    <div><img src="http://www.trilce.edu.pe/sm.jpg" alt=""></div>
 
   </div>
 

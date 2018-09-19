@@ -49,7 +49,7 @@
       </div>
     </div>
   @endif
-
+<!--
   <div class="index-banners">
     @foreach ($banners as $banner)
       @if( (strtotime($banner->start) < time()) && (strtotime($banner->expire) > time()) )
@@ -63,6 +63,13 @@
       @endif
     @endforeach
   </div>
+-->
+  <div class="index-banners">
+    <div><img src="http://www.trilce.edu.pe/banner-1er-SM-movil.png" alt=""></div>
+
+  </div>
+
+
 
   <div class="nuevos-i">
     <div class="row center-xs">

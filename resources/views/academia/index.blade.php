@@ -65,7 +65,45 @@
   </div>
 -->
   <div class="index-banners">
-    <div><img src="http://www.trilce.edu.pe/sm.jpg" alt=""></div>
+
+    <div>
+      <div class="banner__item banner__item--left banner__item--background-orange ">
+
+        <div class="banner__image" style="background-image:url(http://www.trilce.edu.pe/edit.png)"></div>
+        <div class="banner__box"></div>
+        <div class="banner__content" heightEuro="10">
+          <div class="banner__title">
+            <span>1<sup>er</sup> puesto <br /> San Marcos</span>
+          </div>
+          <div class="banner__subtitle">
+            <span>
+              Diego Castillo Utani <br>
+              Ingenieria Ambiental
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <div class="banner__item banner__item--left banner__item--background-orange ">
+
+        <div class="banner__image" style="background-image:url(http://www.trilce.edu.pe/edit.png)"></div>
+        <div class="banner__box"></div>
+        <div class="banner__content" heightEuro="10">
+          <div class="banner__title">
+            <span>1<sup>er</sup> puesto <br /> San Marcos</span>
+          </div>
+          <div class="banner__subtitle">
+            <span>
+              Diego Castillo Utani <br>
+              Ingenieria Ambiental
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 

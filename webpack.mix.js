@@ -18,7 +18,7 @@ mix.sass('resources/assets/sass/main_colegio.scss','public/css');
 // mix:Academia
 mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js');
 mix.sass('resources/assets/sass/main_academia.scss','public/css');
-
+/*
 // mix:Home
 mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js');
 mix.sass('resources/assets/sass/main_home.scss','public/css');
@@ -34,7 +34,7 @@ mix.sass('resources/assets/sass/main_home3.scss','public/css');
 // mix:Home4
 mix.js('resources/assets/js/home/app4.js', 'public/js/app_home4.js');
 mix.sass('resources/assets/sass/main_home4.scss','public/css');
-
+*/
 // mix:Home5
 mix.js('resources/assets/js/home/app5.js', 'public/js/app_home5.js');
 mix.sass('resources/assets/sass/main_home5.scss','public/css');

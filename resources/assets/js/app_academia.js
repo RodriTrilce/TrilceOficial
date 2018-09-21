@@ -4,13 +4,13 @@
  * Released under the Trilce Group.
  */
 
- //import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
  //import 'datalist-polyfill/datalist-polyfill'
 
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
 import VanillaModal from 'vanilla-modal';
 import SlimSelect from 'slim-select'
+import SliderTrilce from './academia/slider_trilce';
 
 window.SlimSelect = SlimSelect;
 
@@ -644,6 +644,7 @@ function preparation()
  *  Index
  */
 
+
  if(page == 'index'){
    // Show effect open page
 /*   window.onload = function()
@@ -662,13 +663,14 @@ function preparation()
     autoplayButtonOutput: false,
     touch: true,
     mouseDrag: true,
-    controls: true,
-    controlsText: ['&#xf111;','&#xf112;'],
-    nav: false,
+    controls: false,
+//    controlsText: ['&#xf111;','&#xf112;'],
+    nav: true,
     autoplayHoverPause: true,
     loop: false
   });
 
+  SliderTrilce.init();
 
   // For enrollment finish modal
   if(modal_open.length){

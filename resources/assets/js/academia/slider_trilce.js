@@ -4,7 +4,8 @@ const SliderTrilce = {
   {
     this.setVariables();
     this.setListener();
-    this.run();
+
+    window.onload = () => this.run();
   },
 
   setListener: function()
@@ -23,56 +24,43 @@ const SliderTrilce = {
   {
     [].forEach.call(this.items, (item, i) => {
       this.setPositionBar(item);
-      console.log( item);
-      console.log(i)
+      this.setShadowContent(item);
     });
+  },
+
+  setShadowContent: function(item)
+  {
+    item.pseudoStyle("before","z-index", item.dataset.shadow);
   },
 
   setPositionBar : function(item)
   {
-/*
-var heightContent = this.getStyle(item.querySelector('.banner__content'), 'height').replace('px',''),
-    heightBox  = this.getStyle(item.querySelector('.banner__box'), 'height').replace('px',''),
+    let borderColor   = item.dataset.bordercolor;
+    let banner__box   = item.querySelector('.banner__box'),
+        heightContent = item.querySelector('.banner__content').offsetHeight,
+        heightBox     = banner__box.offsetHeight,
 
-*/
-    let heightContent = item.querySelector('.banner__content').getBoundingClientRect().height,
-        heightBox  = item.querySelector('.banner__box').getBoundingClientRect().height,
-
-        widthBox      = this.getStyle(item.querySelector('.banner__box'), 'width').replace('px',''),
+        widthBox      = this.getStyle(banner__box, 'width').replace('px',''),
         widthBanner   = this.getStyle(item.querySelector('.banner__image'), 'width').replace('px',''),
         bar           = item.querySelector('.banner_box-bar');
 
-
-
-    let widthSide  = (widthBanner-widthBox)/2;
-    let heightSide = (heightBox-heightContent)/2;
-
-    let fillHeight = heightSide/heightBox*100;
-    let fillHeightFinish = 100-fillHeight;
-
-
-//    console.log( heightBox + " --- " + )
-
-console.log(`${fillHeight}  -- ${fillHeightFinish}`)
-
+    let widthSide  = (widthBanner-widthBox)/2,
+        heightSide = (heightBox-heightContent)/2,
+        fillHeight = (heightSide/heightBox*100)-5,
+        fillHeightFinish = (100-fillHeight)+3;
 
     bar.style.background = `linear-gradient(to bottom,
-      #fff 0%,
-      #fff ${fillHeight}%,
+      ${borderColor} 0%,
+      ${borderColor} ${fillHeight}%,
       rgba(255, 255, 255,0) ${fillHeight}%,
       rgba(255, 255, 255,0) ${fillHeightFinish}%,
-      #fff ${fillHeightFinish}%,
-      #fff 0%
+      ${borderColor} ${fillHeightFinish}%,
+      ${borderColor} 100%
     )`;
 
     bar.style.marginLeft = widthSide + 'px';
     bar.style.visibility = 'visible';
-  },
 
-  run: function()
-  {
-    this.loopSet();
-//    this.setPositionBar();
   },
 
   getStyle: function (elem, prop)
@@ -83,6 +71,11 @@ console.log(`${fillHeight}  -- ${fillHeightFinish}`)
       throw "No se encontro la propiedad css: " + prop;
     }
     return value
+  },
+
+  run: function()
+  {
+    this.loopSet();
   }
 }
 

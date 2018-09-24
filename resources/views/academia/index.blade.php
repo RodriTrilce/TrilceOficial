@@ -65,44 +65,61 @@
   </div>
 -->
   <div class="index-banners">
-
+<!--
     <div>
       <div class="banner__item banner__item--left banner__item--background-orange ">
 
-        <div class="banner__image" style="background-image:url(http://www.trilce.edu.pe/edit.png)"></div>
+        <div class="banner__image" style="background-image:url(http://www.trilce.edu.pe/dd.png)"></div>
         <div class="banner_box-bar"></div>
         <div class="banner__box"></div>
         <div class="banner__content">
           <div class="banner__title">
-            <span>1<sup>er</sup> puesto <br /> San Marcos</span>
+            <span>1<sup>er</sup> puesto San Marcos</span>
           </div>
           <div class="banner__subtitle">
-            <span>
-              Diego Castillo Utani <br>
-              Ingenieria Ambiental<br>
-              hola<br>
-              nais<br>
-              AKKJAKA XD<BR>
-                AOAA
+            <span class="normal">
+              Diego Castillo Utani<br>
+            </span>
+            <span class="small">
+              Ingenieria Ambiental
             </span>
           </div>
         </div>
 
       </div>
     </div>
+-->
     <div>
-      <div class="banner__item banner__item--left banner__item--background-orange ">
+      <div class="banner__item banner__item--left" data-shadow="10" data-bordercolor="white">
 
-        <div class="banner__image" style="background-image:url(http://www.trilce.edu.pe/edit.png)"></div>
-        <div class="banner_box-bar"></div>
-        <div class="banner__box"></div>
-        <div class="banner__content">
+        <div
+        class="
+        banner__image
+        "
+        style="
+
+        background-image:url(http://www.trilce.edu.pe/cmla_.png);
+        background-color: #f4633a;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 9;
+
+        "
+        ></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index:12;"></div>
+        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:12;"></div>
+
+        <div class="banner__content" style="z-index:11;">
           <div class="banner__title">
-            <span>1<sup>er</sup> puesto <br /> San Marcos</span>
+            <span>1<sup>er</sup> puesto San Marcos</span>
           </div>
           <div class="banner__subtitle">
-            <span>
-              Diego Castillo Utani <br>
+            <span class="normal">
+              Diego Castillo Utani<br>
+            </span>
+            <span class="small">
               Ingenieria Ambiental
             </span>
           </div>

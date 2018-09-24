@@ -14,6 +14,33 @@ import SliderTrilce from './academia/slider_trilce';
 
 window.SlimSelect = SlimSelect;
 
+
+
+window.UID = {
+  _current: 0,
+  getNew: function(){
+    this._current++;
+    return this._current;
+  }
+};
+
+HTMLElement.prototype.pseudoStyle = function(element,prop,value){
+  var _this = this;
+  var _sheetId = "pseudoStyles";
+  var _head = document.head || document.getElementsByTagName('head')[0];
+  var _sheet = document.getElementById(_sheetId) || document.createElement('style');
+  _sheet.id = _sheetId;
+  var className = "pseudoStyle" + window.UID.getNew();
+
+  _this.className +=  " "+className;
+
+  _sheet.innerHTML += "\n."+className+":"+element+"{"+prop+":"+value+"}";
+  _head.appendChild(_sheet);
+  return this;
+};
+
+
+
 // Constants
 const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/matricula-en-linea/descargar-pdf'
 

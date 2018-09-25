@@ -16,10 +16,10 @@
           </a>
         </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="/academia/por-que-somos-tu-mejor-opcion">
-              <i class="fa fa-star-o"></i>
-              <h3>Somos tu mejor opción</h3>
-              <p>¡Descúbrelo aquí!</p>
+            <a href="/academia/blog">
+              <i class="fa fa-newspaper-o"></i>
+              <h3>Las últimas noticias</h3>
+              <p>¡Visita nuestro blog!</p>
             </a>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">

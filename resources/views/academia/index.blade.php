@@ -65,55 +65,35 @@
   </div>
 -->
   <div class="index-banners">
-<!--
     <div>
-      <div class="banner__item banner__item--left banner__item--background-orange ">
-
-        <div class="banner__image" style="background-image:url(http://www.trilce.edu.pe/dd.png)"></div>
-        <div class="banner_box-bar"></div>
-        <div class="banner__box"></div>
-        <div class="banner__content">
-          <div class="banner__title">
-            <span>1<sup>er</sup> puesto San Marcos</span>
-          </div>
-          <div class="banner__subtitle">
-            <span class="normal">
-              Diego Castillo Utani<br>
-            </span>
-            <span class="small">
-              Ingenieria Ambiental
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </div>
--->
-    <div>
-      <div class="banner__item banner__item--left" data-shadow="10" data-bordercolor="white">
-
         <div
         class="
-        banner__image
-        "
-        style="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="10"
+        data-bordercolor="white"
 
+        style="
+          background-color: #f4633a;
+        ">
+
+        <div
+        class="banner__image"
+        style="
         background-image:url(http://www.trilce.edu.pe/cmla_.png);
-        background-color: #f4633a;
         background-position: right bottom;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 9;
-
-        "
-        ></div>
+        "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index:12;"></div>
         <div class="banner__box"  style="border-color:white;border-width:10px; z-index:12;"></div>
 
         <div class="banner__content" style="z-index:11;">
           <div class="banner__title">
-            <span>1<sup>er</sup> puesto San Marcos</span>
+            <span><i class="fa fa-graduation-cap"></i> hola</span>
           </div>
           <div class="banner__subtitle">
             <span class="normal">
@@ -128,6 +108,49 @@
       </div>
     </div>
 
+    <div>
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="10"
+        data-bordercolor="white"
+
+        style="
+          background-color: #f4633a;
+        ">
+
+        <div
+        class="banner__image"
+
+        style="
+        background-image:url(http://www.trilce.edu.pe/dd.png);
+        background-position: 80% bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 12;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:11;"></div>
+
+        <div class="banner__content" style="z-index:13;">
+          <div class="banner__title">
+            <span>1<sup>er</sup> puesto San&nbsp;Marcos</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              Diego Castillo Utani<br>
+            </span>
+            <span class="small">
+              Ingenieria Ambiental
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 

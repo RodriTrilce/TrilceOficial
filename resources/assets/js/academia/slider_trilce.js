@@ -5,6 +5,7 @@ const SliderTrilce = {
     this.setVariables();
     this.setListener();
 
+    this.runOutLoaded();
     window.onload = () => this.run();
   },
 
@@ -24,13 +25,13 @@ const SliderTrilce = {
   {
     [].forEach.call(this.items, (item, i) => {
       this.setPositionBar(item);
-      this.setShadowContent(item);
     });
   },
 
   setShadowContent: function(item)
   {
     item.pseudoStyle("before","z-index", item.dataset.shadow);
+    item.pseudoStyle("before","opacity", item.getAttribute("data-shadow-opacity"));
   },
 
   setPositionBar : function(item)
@@ -63,6 +64,16 @@ const SliderTrilce = {
 
   },
 
+  removeLoading: function()
+  {
+    var loader = document.querySelector('.banner__loader');
+    loader.style.opacity = "0";
+
+    loader.addEventListener('transitionend', evt => {
+      loader.style.height = "0";
+    });
+  },
+
   getStyle: function (elem, prop)
   {
     var styles = window.getComputedStyle(elem, null);
@@ -76,6 +87,14 @@ const SliderTrilce = {
   run: function()
   {
     this.loopSet();
+    this.removeLoading()
+  },
+
+  runOutLoaded: function()
+  {
+    [].forEach.call(this.items, (item, i) => {
+      this.setShadowContent(item);
+    });
   }
 }
 

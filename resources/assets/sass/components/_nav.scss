@@ -9,7 +9,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
   display: block;
   line-height: initial;
   padding-top: 1%;
-  z-index: 12;
+  z-index: 50;
   text-align: left;
   transition: 0.3s all;
   visibility: visible;
@@ -481,7 +481,7 @@ nav{
         width: 100vw;
         background-color: white;
         text-align: center;
-        margin-top: 85px;
+        margin-top: 80px;
         top: 0;
         opacity: 0;
         overflow: hidden;

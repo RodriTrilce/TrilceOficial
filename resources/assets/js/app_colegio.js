@@ -9,6 +9,7 @@ import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider';
 import { Tabs } from './require/tabs';
 import VanillaModal from 'vanilla-modal';
+import SliderTrilce from './academia/slider_trilce';
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",
@@ -81,9 +82,29 @@ String.prototype.capitalize = function(){
    return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
 }
 
-var show  = elem => elem.style.display = 'block';
-var hide  = elem => elem.style.display = 'none';
-var gid   = elem => document.getElementById(elem);
+window.UID = {
+  _current: 0,
+  getNew: function(){
+    this._current++;
+    return this._current;
+  }
+};
+
+HTMLElement.prototype.pseudoStyle = function(element,prop,value){
+  var _this = this;
+  var _sheetId = "pseudoStyles";
+  var _head = document.head || document.getElementsByTagName('head')[0];
+  var _sheet = document.getElementById(_sheetId) || document.createElement('style');
+  _sheet.id = _sheetId;
+  var className = "pseudoStyle" + window.UID.getNew();
+
+  _this.className +=  " "+className;
+
+  _sheet.innerHTML += "\n."+className+":"+element+"{"+prop+":"+value+"}";
+  _head.appendChild(_sheet);
+  return this;
+};
+
 
 var get = (url) => {
   return new Promise((resolve, reject) => {
@@ -105,7 +126,6 @@ var get = (url) => {
 /**!
  *  Index
  */
- (function(){
    if(page == 'index'){
      // Slider
      var slider = tns({
@@ -116,21 +136,22 @@ var get = (url) => {
        autoplayButtonOutput: false,
        touch: true,
        mouseDrag: true,
-       controls: true,
-       controlsText: ['&#xf111;','&#xf112;'],
-       nav: false,
+       controls: false,
+   //    controlsText: ['&#xf111;','&#xf112;'],
+       nav: true,
        autoplayHoverPause: true,
        loop: false
      });
 
+     SliderTrilce.init();
+
+     // Loader wrap
+     setTimeout(function(){
+       document.body.className += ' loaded'
+     }, 1000)
    }
 
-  // Loader wrap
- setTimeout(function(){
-   document.body.className += ' loaded'
- }, 1000)
 
- })();
 
  /**!
   *  Contact

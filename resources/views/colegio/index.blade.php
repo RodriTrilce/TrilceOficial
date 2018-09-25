@@ -16,6 +16,7 @@
 
 @section('content')
 
+  <!--
   <div class="index-banners">
     @foreach ($banners as $banner)
       @if( (strtotime($banner->start) < time()) && (strtotime($banner->expire) > time()) )
@@ -28,6 +29,109 @@
 
       @endif
     @endforeach
+  </div>
+-->
+
+
+
+  <div class="banner__loader">
+    <div class="banner__loader-title"></div>
+    <div class="banner__loader-line"></div>
+    <div class="banner__loader-line"></div>
+  </div>
+  <div class="index-banners">
+    <div>
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="9"
+        data-shadow-opacity=".2"
+        data-bordercolor="#f4633a"
+
+        style="
+          background-color: #ffffff;
+        ">
+
+        <div
+        class="banner__image banner__image--bg-m-cover banner__image--colegio"
+        style="
+        background-image:url(http://www.trilce.edu.pe/bg__t.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 8;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
+
+        <div class="banner__content" style="z-index:11;">
+          <div class="banner__title">
+            <span>San Marcos</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              Ciclo Repaso Semestral<br>
+            </span>
+            <span class="small">
+              24 de septiembre
+            </span>
+            <span style="display:block;margin: 20px auto;">
+              <button class="button_cta1"><a href="/academia/preparacion-san-marcos" class="link">Saber más</a></button>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!--    <div>
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="10"
+        data-shadow-opacity=".3"
+        data-bordercolor="white"
+
+        style="
+          background-color: #f4633a;
+        ">
+
+        <div
+        class="banner__image"
+
+        style="
+        background-image:url(http://www.trilce.edu.pe/dd.png);
+        background-position: 80% bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 12;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:11;"></div>
+
+        <div class="banner__content" style="z-index:13;">
+          <div class="banner__title">
+            <span>1<sup>er</sup> puesto San&nbsp;Marcos</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              Diego Castillo Utani<br>
+            </span>
+            <span class="small">
+              Ingenieria Ambiental
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+-->
   </div>
 
   <div class="nuevos-i container-base">

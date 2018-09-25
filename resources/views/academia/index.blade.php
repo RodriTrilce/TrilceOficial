@@ -64,6 +64,12 @@
     @endforeach
   </div>
 -->
+
+  <div class="banner__loader">
+    <div class="banner__loader-title"></div>
+    <div class="banner__loader-line"></div>
+    <div class="banner__loader-line"></div>
+  </div>
   <div class="index-banners">
     <div>
         <div
@@ -71,7 +77,7 @@
           banner__item
           banner__item--left
           "
-        data-shadow="10"
+        data-shadow="9"
         data-bordercolor="white"
 
         style="
@@ -79,28 +85,31 @@
         ">
 
         <div
-        class="banner__image"
+        class="banner__image banner__image--bg-m-cover"
         style="
-        background-image:url(http://www.trilce.edu.pe/cmla_.png);
-        background-position: right bottom;
+        background-image:url(http://www.trilce.edu.pe/bg__t.png);
+        background-position: right;
         background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 9;
+        background-size: contain;
+        z-index: 8;
         "></div>
 
-        <div class="banner_box-bar" style="width:10px; z-index:12;"></div>
-        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:12;"></div>
+        <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:white;border-width:10px; z-index: 10;"></div>
 
         <div class="banner__content" style="z-index:11;">
           <div class="banner__title">
-            <span><i class="fa fa-graduation-cap"></i> hola</span>
+            <span>San Marcos</span>
           </div>
           <div class="banner__subtitle">
             <span class="normal">
-              Diego Castillo Utani<br>
+              Ciclo Repaso Semestral<br>
             </span>
             <span class="small">
-              Ingenieria Ambiental
+              24 de septiembre
+            </span>
+            <span style="display:block;margin: 20px auto;">
+              <button class="button_cta1"><a href="/academia/preparacion-san-marcos" class="link">Saber más</a></button>
             </span>
           </div>
         </div>
@@ -115,6 +124,7 @@
           banner__item--left
           "
         data-shadow="10"
+        data-shadow-opacity=".3"
         data-bordercolor="white"
 
         style="
@@ -151,7 +161,6 @@
 
       </div>
     </div>
-
   </div>
 
 

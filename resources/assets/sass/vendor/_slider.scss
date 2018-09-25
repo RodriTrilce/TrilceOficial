@@ -293,8 +293,9 @@ $banner__box--size-mobile: 5px;
 
   @include breakpoint(baby){
     min-height: 350px;
-  }
 
+
+  }
   &::before{
     content: '';
     display: block;
@@ -307,7 +308,12 @@ $banner__box--size-mobile: 5px;
     opacity: .3;
     z-index: 0;
     box-sizing: border-box;
-  };
+  }
+  @include breakpoint(baby){
+    &::before{
+      opacity: .5;
+    }
+  }
 
 }
 
@@ -339,6 +345,7 @@ $banner__box--size-mobile: 5px;
     @include breakpoint(baby){
       font-size: 2.1rem;
       line-height: 40px;
+      text-shadow: 0px 0px 2px $gray;
     }
   }
 }
@@ -369,7 +376,61 @@ $banner__box--size-mobile: 5px;
 }
 
 
+.button_cta1{
+  border: 0;
+  background: white;
+  color: #f4633a;
+  cursor: pointer;
+  font-family: $font_geo_reg;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px 20px;
 
+  &.link{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.banner__image--colegio{
+
+  .banner__title{
+    span{
+    color: white;
+
+      @include breakpoint(baby){
+        text-shadow: 0px 0px 2px $gray;
+      }
+    }
+  }
+
+  .banner__subtitle{
+    span.normal{
+      color: $orange;
+    }
+
+    span.small{
+      color: $orange;
+    }
+  }
+
+  .button_cta1{
+    background: $orange;
+    color: white;
+  }
+
+}
+
+
+// Modificadores bg banner
+@include breakpoint(baby)
+{
+  .banner__image--bg-m-cover{
+    background-size: cover !important;
+  }
+}
 
 
 
@@ -377,3 +438,62 @@ $banner__box--size-mobile: 5px;
 
 
 /**/
+
+// Loading block effect
+
+.banner__loader{
+  width: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  height: 500px;
+  z-index: 15;
+  transition: all .5s ease-in-out;
+  opacity: 1;
+  pointer-events: none;
+  padding-top: 100px;
+  overflow: hidden;
+
+  @include  breakpoint(baby){
+    height: 350px;
+    padding-top: 50px;
+  }
+
+  .banner__loader-title{
+    height: 20px;
+    margin: 25px;
+    width: 60%;
+    animation: pulse .5s infinite ease-in-out;
+  }
+
+  .banner__loader-line{
+    	height: 12px;
+    	margin: 25px;
+    	animation: pulse 1s infinite ease-in-out;
+
+      @for $i from 0 to 10{
+        &:nth-child(#{$i}){
+          width: (random(80))+20 + %;
+        }
+      }
+  }
+
+  .banner__loader-img{
+  }
+}
+
+.banner__loader-waiting{
+
+}
+
+@keyframes pulse
+{
+	0%{
+		background-color: rgba(165,165,165,.1);
+	}
+	50%{
+		background-color: rgba(165,165,165,.3);
+	}
+	100%{
+		background-color: rgba(165,165,165,.1);
+	}
+}

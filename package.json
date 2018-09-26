@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "ajv": "^6.5.2",
+    "array-from-polyfill": "^1.0.1",
     "badger-accordion": "^1.1.2",
     "bourbon": "^5.0.1",
     "bunnyjs": "^0.14.41",

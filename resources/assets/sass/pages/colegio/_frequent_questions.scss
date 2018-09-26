@@ -17,10 +17,15 @@
 
 .frequentquestions-block{
   margin-top: 1rem;
+
+  >div:nth-child(odd){
+    background: #efefef;
+    border-radius: 5px;
+  }
 }
 
 .frequentquestions-question{
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   counter-increment: item;
   color: $gray;
 
@@ -40,30 +45,31 @@
   }
 
   .question-content{
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     font-family: $font_geo_reg !important;
     p{
       font-family: inherit;
     }
     &:first-child{
-      margin-top: 1rem;
+      margin-top: 10px;
     }
   }
 
   .question-title{
-    font-family: $font_geo_smbold;
-    font-size: 1.2rem;
+    font-family: $font_geo_reg;
+    font-size: 1.8rem;
     margin-bottom: 5px;
     color: $gray;
+    cursor: pointer;
 
     @media screen and (max-width: 700px){
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 
   .question-answer{
     text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   ul{

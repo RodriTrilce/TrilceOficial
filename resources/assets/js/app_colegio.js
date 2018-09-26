@@ -4,13 +4,15 @@
  * Released under the Trilce Group.
  */
 
-// Imports
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider';
 import { Tabs } from './require/tabs';
 import VanillaModal from 'vanilla-modal';
 import SliderTrilce from './academia/slider_trilce';
 import AcorditionProposal from './colegio/educational_proposal';
+import pollyfill from 'array-from-polyfill';
+import BadgerAccordion from 'badger-accordion';
+
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",
@@ -21,7 +23,6 @@ const ValidationLang = {
   onlytext: "Solo es permitido texto",
   captcha: "Verfica el captcha"
 };
-
 const ValidationConfig = {
   classInputGroup: 'form-group',
   classInputGroupError: 'has-danger',
@@ -30,7 +31,6 @@ const ValidationConfig = {
   classError: 'text-help',
   selectorInput: '[name]'
 };
-
 Validation.ui.config  = ValidationConfig;
 Validation.lang       = ValidationLang;
 Validation.validators.captcha = input => {
@@ -75,7 +75,7 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 String.prototype.capitalize = function(){
    return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
 }
-document.addEventListener('touchstart', function() {},false);
+//document.addEventListener('touchstart', function() {},false);
 window.UID = {
   _current: 0,
   getNew: function(){
@@ -97,6 +97,7 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   _head.appendChild(_sheet);
   return this;
 };
+
 
 /**!
  *  Index
@@ -124,15 +125,12 @@ if(page == 'index'){
  }, 1000)
 }
 
-
-
 /**!
 *  Contact
 */
 if(page == 'contact'){
   Validation.init(document.forms[0], true);
 }
-
 
 /**!
 *  Blog post
@@ -155,7 +153,6 @@ if(page == 'blog_post'){
 
   //backgroundEffect.init();
 }
-
 
 /**!
  *  Propuesta educativa
@@ -199,3 +196,11 @@ if(page == 'venue_colegio'){
   });
 
 }
+
+/**!
+ *  Sede Colegio
+ */
+ if(page == 'frequent_questions'){
+   const accordion = new BadgerAccordion('.js-badger-accordion');
+
+ }

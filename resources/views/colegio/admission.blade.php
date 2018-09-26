@@ -5,14 +5,12 @@
 
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-admision.jpg') }}" alt="">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-admision.png') }}" alt="">
     </div>
     <div class="header-double-image-mobile">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-admision-movil.jpg') }}" alt="">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-admision-movil.png') }}" alt="">
     </div>
   </div>
-
-
 
   <div class="nuevos-i container-base">
     <div class="row center-xs">

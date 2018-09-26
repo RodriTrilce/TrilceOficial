@@ -12,7 +12,7 @@
           <li><a href="/colegio">Trilce Colegio</a></li>
           <li><a href="/academia">Trilce Academia</a></li>
           {{-- <li><a href="#">Vacaciones útiles</a></li> --}}
-          <li><a href="/storage/other/documents/menu/2018/menu-julio.pdf" target="_blank">Menú</a></li>
+          <li><a href="/storage/other/documents/menu/2018/menu-julio.pdf" target="_blank">Menú escolar</a></li>
           {{-- <li><a href="#">Trabaja con nosotros</a></li> --}}
         </ul>
       </div>

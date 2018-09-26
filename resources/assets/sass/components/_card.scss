@@ -43,7 +43,7 @@
         a{
           padding: 20px;
         }
-        
+
         i{
           font-size: 1rem;
         }
@@ -98,9 +98,10 @@
 .card2{
   background: $background-form;
 
-  @media screen and (max-width: 768px) {
+  @include breakpoint(baby){
     margin-bottom: 2rem;
     margin-top: 2rem;
+    background: #f3f3f3;
   }
 
   .container-fluid{
@@ -151,27 +152,27 @@
         font-family: $font_geo_reg;
       }
 
-/*
-      @media screen and (min-width: 768px) {
-        position: relative;
+      /*
+            @media screen and (min-width: 768px) {
+              position: relative;
 
-        &::after{
-          content: "";
-          position: absolute;
-          top: 25%;
-          right: 0;
-          width: 1px;
-          height: 90px;
-          background: $colegio_gray;
-        }
+              &::after{
+                content: "";
+                position: absolute;
+                top: 25%;
+                right: 0;
+                width: 1px;
+                height: 90px;
+                background: $colegio_gray;
+              }
 
-        &:last-child{
-          &::after{
-            width: 0;
-          }
-        }
-      }
-*/
+              &:last-child{
+                &::after{
+                  width: 0;
+                }
+              }
+            }
+      */
 
       @media screen and (max-width: 768px) {
         text-align: center;
@@ -186,7 +187,7 @@
         }
 
         i{
-//          font-size: 1rem;
+          //          font-size: 1rem;
           display: none
         }
 

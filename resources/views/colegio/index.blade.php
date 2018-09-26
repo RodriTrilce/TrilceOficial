@@ -47,7 +47,7 @@
           banner__item--left
           "
         data-shadow="9"
-        data-shadow-opacity=".2"
+        data-shadow-opacity=".15"
         data-bordercolor="#f4633a"
 
         style="
@@ -55,83 +55,94 @@
         ">
 
         <div
-        class="banner__image banner__image--bg-m-cover banner__image--colegio"
+        class="banner__image"
+
+        data-image-md="http://www.trilce.edu.pe/tt_nina.png"
+        data-position-md="80% bottom"
+        data-size-md="contain"
+
+        data-image-xs="http://www.trilce.edu.pe/tt_nina.png"
+        data-position-xs="bottom right"
+        data-size-xs="60%"
+
         style="
-        background-image:url(http://www.trilce.edu.pe/bg__t.png);
-        background-position: right;
         background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 8;
+        z-index: 11;
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
         <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
 
-        <div class="banner__content" style="z-index:11;">
+        <div class="banner__content banner__content--colegio" style="z-index:11;">
           <div class="banner__title">
-            <span>San Marcos</span>
+            <span>
+              <i style="font-size:" class="fa fa-graduation-cap"></i>
+              <br>
+              Admisión 2019
+            </span>
           </div>
           <div class="banner__subtitle">
             <span class="normal">
-              Ciclo Repaso Semestral<br>
-            </span>
-            <span class="small">
-              24 de septiembre
+              ¡No te quedes sin <strong>vacante</strong>!<br>
             </span>
             <span style="display:block;margin: 20px auto;">
-              <button class="button_cta1"><a href="/academia/preparacion-san-marcos" class="link">Saber más</a></button>
+              <button class="button_cta1"><a href="/academia/preparacion-san-marcos" class="link">Regístrate aquí</a></button>
             </span>
           </div>
         </div>
 
       </div>
     </div>
-
-<!--    <div>
+-
+    <div>
         <div
         class="
           banner__item
           banner__item--left
           "
         data-shadow="10"
-        data-shadow-opacity=".3"
-        data-bordercolor="white"
+        data-shadow-opacity=".15"
+        data-bordercolor="#f4633a"
 
         style="
-          background-color: #f4633a;
+          background-color: #fff;
         ">
 
         <div
         class="banner__image"
 
+        data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
+        data-position-md="right bottom"
+        data-size-md="contain"
+
+        data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
+        data-position-xs="25vw bottom"
+        data-size-xs="contain"
+
         style="
-        background-image:url(http://www.trilce.edu.pe/dd.png);
-        background-position: 80% bottom;
         background-repeat: no-repeat;
-        background-size: contain;
         z-index: 12;
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
 
         <div class="banner__content" style="z-index:13;">
-          <div class="banner__title">
-            <span>1<sup>er</sup> puesto San&nbsp;Marcos</span>
-          </div>
+
           <div class="banner__subtitle">
-            <span class="normal">
-              Diego Castillo Utani<br>
-            </span>
-            <span class="small">
-              Ingenieria Ambiental
+            <span class="semibig orange font-cae-bold" style="">
+              <br>
+              Trilce reafirma su compromiso
+              con el planeta y eliminará
+              progresivamente el uso del
+              plástico en sus sedes y cafeterías.
             </span>
           </div>
         </div>
 
       </div>
     </div>
--->
+
   </div>
 
   <div class="nuevos-i container-base">

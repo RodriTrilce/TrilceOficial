@@ -85,12 +85,18 @@
         ">
 
         <div
-        class="banner__image banner__image--bg-m-cover"
+        class="banner__image"
+
+        data-image-md="http://www.trilce.edu.pe/bg__t.png"
+        data-position-md="right bottom"
+        data-size-md="contain"
+
+        data-image-xs="http://www.trilce.edu.pe/bg__t.png"
+        data-position-xs="right"
+        data-size-xs="cover"
+
         style="
-        background-image:url(http://www.trilce.edu.pe/bg__t.png);
-        background-position: right;
         background-repeat: no-repeat;
-        background-size: contain;
         z-index: 8;
         "></div>
 
@@ -134,11 +140,16 @@
         <div
         class="banner__image"
 
+        data-image-md="http://www.trilce.edu.pe/dd.png"
+        data-position-md="80% bottom"
+        data-size-md="contain"
+
+        data-image-xs="http://www.trilce.edu.pe/dd.png"
+        data-position-xs="80% bottom"
+        data-size-xs="80%"
+
         style="
-        background-image:url(http://www.trilce.edu.pe/dd.png);
-        background-position: 80% bottom;
         background-repeat: no-repeat;
-        background-size: contain;
         z-index: 12;
         "></div>
 

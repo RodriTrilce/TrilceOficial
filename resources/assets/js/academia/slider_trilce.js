@@ -25,7 +25,31 @@ const SliderTrilce = {
   {
     [].forEach.call(this.items, (item, i) => {
       this.setPositionBar(item);
+      this.setImages(item);
     });
+  },
+
+  setImages: function(item)
+  {
+    var banner = item.querySelector('.banner__image');
+
+    var md      = banner.getAttribute("data-image-md"),
+    mdPosition  = banner.getAttribute("data-position-md"),
+    mdSize      = banner.getAttribute("data-size-md");
+
+    var xs      = banner.getAttribute("data-image-xs"),
+    xsPosition  = banner.getAttribute("data-position-xs"),
+    xsSize      = banner.getAttribute("data-size-xs");
+
+    if(window.screen.availWidth < 768){
+      banner.style.backgroundImage = `url(${xs})`;
+      banner.style.backgroundPosition = `${xsPosition}`;
+      banner.style.backgroundSize = `${xsSize}`;
+    }else{
+      banner.style.backgroundImage = `url(${md})`;
+      banner.style.backgroundPosition = `${mdPosition}`;
+      banner.style.backgroundSize = `${mdSize}`;
+    }
   },
 
   setShadowContent: function(item)
@@ -47,8 +71,8 @@ const SliderTrilce = {
 
     let widthSide  = (widthBanner-widthBox)/2,
         heightSide = (heightBox-heightContent)/2,
-        fillHeight = (heightSide/heightBox*100)-5,
-        fillHeightFinish = (100-fillHeight)+3;
+        fillHeight = (heightSide/heightBox*100)-2,
+        fillHeightFinish = (100-fillHeight)+1.5;
 
     bar.style.background = `linear-gradient(to bottom,
       ${borderColor} 0%,

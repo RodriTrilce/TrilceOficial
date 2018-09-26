@@ -1,11 +1,10 @@
 /*!
- * App.js v1.0
+ * App.js v1.1
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
 
  //import 'datalist-polyfill/datalist-polyfill'
-
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
 import VanillaModal from 'vanilla-modal';
@@ -24,7 +23,6 @@ window.UID = {
     return this._current;
   }
 };
-
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   var _this = this;
   var _sheetId = "pseudoStyles";
@@ -40,14 +38,10 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   return this;
 };
 
-// Modal Config
-var modal = new VanillaModal();
-
 // Define methods utils
 Element.prototype.remove = function() {
    this.parentElement.removeChild(this);
 }
-
 NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
    for(var i = this.length - 1; i >= 0; i--) {
        if(this[i] && this[i].parentElement) {
@@ -55,81 +49,28 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
        }
    }
 }
-
 NodeList.prototype.forEach = Array.prototype.forEach;
 
 // Safari fix hover touch
 document.addEventListener('touchstart', function() {},false);
-/*var supportsTouch = (typeof Touch == "object");
-if(supportsTouch){
-}
-*/
+
 // Capitalize frist letter upper
 String.prototype.capitalize = function(){
   return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
 }
 
-/**
- * Make a request get for purposes
- * @param  {url} get
- * @return {Promise}        The XHR request as a Promise
- */
-var get = url => {
-  return new Promise((resolve, reject) => {
-    var req = new XMLHttpRequest();
-    req.open('GET', url);
-    req.onload = () => {
-      if (req.status == 200) {
-        resolve(req.response);
-      }else{
-        reject(Error(req.statusText));
-      }
-    };
-    req.onerror = () => reject(Error('Network Error'));
-    req.send();
-  });
-}
-
-
-/**
- * Make a request post for purposes
- * @param  {url} post
- * @param  {data}
- * @return {Promise}        The XHR request as a Promise
- */
-var post = (url, data) => {
-  return new Promise((resolve, reject) => {
-    var req = new XMLHttpRequest();
-    req.open('POST', url, true);
-    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    req.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name=csrf-token]').content);
-    req.onload  = () => {
-      if(req.status==200){
-        resolve(req.response);
-      }else{
-        reject(Error(req.statusText));
-      }
-    }
-
-    req.onerror = ()  => reject(Error('Network Error'));
-    req.send(data);
-  });
-}
+// Modal Config
+var modal = new VanillaModal();
 
 
 /**!
  *  Index
  */
  if(page == 'index'){
-   // Show effect open page
-/*   window.onload = function()
-   {*/
-     setTimeout(function(){
-       document.body.className += ' loaded'
-     }, 1000);
-//   }
+  setTimeout(function(){
+    document.body.className += ' loaded';
+  }, 1000);
 
-  // Slider
   var slider = tns({
     container: '.index-banners',
     items: 1,
@@ -139,18 +80,16 @@ var post = (url, data) => {
     touch: true,
     mouseDrag: true,
     controls: false,
-//    controlsText: ['&#xf111;','&#xf112;'],
     nav: true,
     autoplayHoverPause: true,
-    loop: false
+    loop: true
   });
+  //    controlsText: ['&#xf111;','&#xf112;'],
 
   SliderTrilce.init();
 
-  // Enrolment
-  if(modal_open.length){
-    modal.open(modal_open[0]);
-  }
+  if(modal_open.length) modal.open(modal_open[0]);
+
  }
 
 /**!
@@ -162,19 +101,17 @@ var post = (url, data) => {
   }
 
 
-// Enrollment
-(function(){
-  if(page !== 'enrollment') return false;
+/**!
+ *  Enrollment
+ */
+  if(page == 'enrollment'){
+    let enrolment = new Enrollment('next', 'prev', 'enrollment-form', 'flex');
+    enrolment.init();
 
-  let a = new Enrollment('next', 'prev', 'enrollment-form', 'flex');
-  a.init();
-
-  document.querySelector("#termsActive").addEventListener('click', () => {
-    document.querySelector("#terms").style.display = 'block';
-  });
-
-})();
-
+    document.querySelector("#termsActive").addEventListener('click', () => {
+      document.querySelector("#terms").style.display = 'block';
+    });
+  }
 
 
 /**!
@@ -184,33 +121,35 @@ var post = (url, data) => {
     Validation.init(document.forms[0], true);
   }
 
-
-/*
-// Banner double ; center title
-var doubleHeader = document.querySelector('.header-double-top');
-var doubleHeaderComputed = window.getComputedStyle(doubleHeader);
-var doubleHeaderComputedWindow = doubleHeaderComputed.width;
-console.log(doubleHeaderComputedWindow)
-
-left: 0
-trasnform: translate(x{h1.width-(parent/2)}, y{50%})
-*/
-
-if(page == 'blog_post'){
-  var slider = tns({
-   container: '#blog-banners',
-   items: 1,
-   slideBy: 'page',
-   autoplay: true,
-   autoplayButtonOutput: false,
-   touch: true,
-   mouseDrag: true,
-   controls: true,
-   controlsText: ['&#xf111;','&#xf112;'],
-   nav: false,
-   autoplayHoverPause: true,
-   loop: false
-  });
+/**!
+ *  Blog
+ */
+  if(page == 'blog_post'){
+    var slider = tns({
+      container: '#blog-banners',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true,
+      autoplayButtonOutput: false,
+      touch: true,
+      mouseDrag: true,
+      controls: true,
+      controlsText: ['&#xf111;','&#xf112;'],
+      nav: false,
+      autoplayHoverPause: true,
+      loop: true
+    });
 
   //backgroundEffect.init();
+
+  /*
+  // Banner double ; center title
+  var doubleHeader = document.querySelector('.header-double-top');
+  var doubleHeaderComputed = window.getComputedStyle(doubleHeader);
+  var doubleHeaderComputedWindow = doubleHeaderComputed.width;
+  console.log(doubleHeaderComputedWindow)
+
+  left: 0
+  trasnform: translate(x{h1.width-(parent/2)}, y{50%})
+  */
 }

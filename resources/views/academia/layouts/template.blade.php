@@ -102,14 +102,14 @@
                     <li><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                     <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
                     <li><a href="/academia/sede/comas">Comas</a></li>
-                    <li><a href="/academia/sede/villa-el-salvador">Villa el Salvador</a></li>
+                    <li><a href="/academia/sede/villa-el-salvador">Villa El Salvador</a></li>
                     <li><a href="/academia/sede/torrico">Torrico</a></li>
                     <li><a href="/academia/sede/marsano">Marsano</a></li>
                     <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
                   </ul>
                 </li>
 
-                <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Matrícula en línea</a></li>
+                <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Prematrícula</a></li>
                 <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
                 <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>

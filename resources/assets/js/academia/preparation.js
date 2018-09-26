@@ -8,6 +8,7 @@ const Preparation = function()
     this.selectTurn   = document.getElementById('beginning-turn');
     this.paintable    = document.getElementById('drawTables');
     this.work         = false;
+    this.api          = '/api/academia/beginnings';
 
     this.hear();
   }
@@ -46,18 +47,43 @@ const Preparation = function()
     this.selectVenue.disabled = true;
     this.selectTurn.disabled  = true;
 
-    var valueCycle  = this.selectCycle.options[this.selectCycle.selectedIndex].value;
-    var valueVenue  = this.selectVenue.options[this.selectVenue.selectedIndex].value;
-    var valueTurn   = this.selectTurn.options[this.selectTurn.selectedIndex].value;
+    var valueCycle  = this.selectCycle.options[this.selectCycle.selectedIndex].value,
+        valueVenue  = this.selectVenue.options[this.selectVenue.selectedIndex].value,
+        valueTurn   = this.selectTurn.options[this.selectTurn.selectedIndex].value;
 
     if(this.work === false){
       this.drawLoading();
       this.work = true;
 
-      post('/api/academia/beginnings', `university=${this.university}&combo=${type}&venue=${valueVenue}&cycle=${valueCycle}&turn=${valueTurn}`).then(
-          response  => this.responseAction(response),
-          error     => console.log('error')
-        );
+      var getResults = async () => {
+        const setting = {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            'university': this.university,
+            'combo':      type,
+            'venue':      valueVenue,
+            'cycle':      valueCycle,
+            'turn':       valueTurn
+          })
+        };
+
+        const data = await fetch(this.api, setting)
+        .then(response => response.json())
+        .then(json => {
+            this.responseAction(json);
+        })
+        .catch(e => {
+          return e
+        });
+
+        return data;
+      }
+
+      getResults();
     }
 
   }
@@ -69,8 +95,6 @@ const Preparation = function()
       this.selectCycle.disabled = false;
       this.selectVenue.disabled = false;
       this.selectTurn.disabled  = false;
-
-      data = JSON.parse(data);
 
       if(Object.keys(data).length){
         this.draw(data);

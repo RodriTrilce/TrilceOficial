@@ -28,7 +28,7 @@
   </div>
 
   <div class="blog-blur">
-    {{-- <div class="background-image"></div> --}}
+    <div class="background-image"></div> 
     <div class="container-blog-banners">
     <div id="blog-banners" class="">
       @foreach ($post->blogGallery->images as $image)

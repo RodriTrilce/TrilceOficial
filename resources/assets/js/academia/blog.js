@@ -1,6 +1,11 @@
 var backgroundEffect = {
-  init : function(){
-    setInterval(this.hearSelector.bind(this), 1);
+  init : function(slider){
+    this.hearSelector();
+    try {
+      slider.events.on('indexChanged', () => this.hearSelector());
+    } catch (e) {
+        console.log('error: '+ e);
+    }
   },
 
   hearSelector : function(){

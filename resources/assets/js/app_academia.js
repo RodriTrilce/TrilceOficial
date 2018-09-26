@@ -86,7 +86,7 @@ var modal = new VanillaModal();
   });
   //    controlsText: ['&#xf111;','&#xf112;'],
 
-  SliderTrilce.init();
+  SliderTrilce.init(slider);
 
   if(modal_open.length) modal.open(modal_open[0]);
 
@@ -121,6 +121,7 @@ var modal = new VanillaModal();
     Validation.init(document.forms[0], true);
   }
 
+
 /**!
  *  Blog
  */
@@ -140,16 +141,5 @@ var modal = new VanillaModal();
       loop: true
     });
 
-  //backgroundEffect.init();
-
-  /*
-  // Banner double ; center title
-  var doubleHeader = document.querySelector('.header-double-top');
-  var doubleHeaderComputed = window.getComputedStyle(doubleHeader);
-  var doubleHeaderComputedWindow = doubleHeaderComputed.width;
-  console.log(doubleHeaderComputedWindow)
-
-  left: 0
-  trasnform: translate(x{h1.width-(parent/2)}, y{50%})
-  */
+  backgroundEffect.init(slider);
 }

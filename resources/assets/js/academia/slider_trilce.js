@@ -1,7 +1,10 @@
 
 const SliderTrilce = {
-  init: function()
+  init: function(slider)
   {
+    this.slider = slider;
+    this.slider.pause();
+
     this.setVariables();
     this.setListener();
 
@@ -112,6 +115,7 @@ const SliderTrilce = {
   {
     this.loopSet();
     this.removeLoading()
+    this.slider.play();
   },
 
   runOutLoaded: function()

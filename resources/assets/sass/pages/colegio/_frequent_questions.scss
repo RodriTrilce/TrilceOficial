@@ -59,14 +59,14 @@
 
   .question-title{
     font-family: $font_cae_rom;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 5px;
     color: $gray;
     cursor: pointer;
     line-height: 150%;
 
     @media screen and (max-width: 700px){
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -105,5 +105,31 @@
   .question-title__signe::before{
     content: "\f290";
     color: $orange;
+  }
+}
+
+.frequent_questions__tabs{
+
+  .js-tabs__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >li{
+      min-width: 25%;
+
+      @include breakpoint(baby){
+        width: 100%;
+      }
+
+      >a{
+        min-height: 80px;
+        font-size: 1.5rem;
+
+        @include breakpoint(baby){
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }

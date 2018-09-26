@@ -116,8 +116,8 @@
         data-size-md="contain"
 
         data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
-        data-position-xs="25vw bottom"
-        data-size-xs="contain"
+        data-position-xs="55vw bottom"
+        data-size-xs="60vw"
 
         style="
         background-repeat: no-repeat;

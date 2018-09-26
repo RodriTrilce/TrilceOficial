@@ -52,7 +52,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 NodeList.prototype.forEach = Array.prototype.forEach;
 
 // Safari fix hover touch
-document.addEventListener('touchstart', function() {},false);
+//document.addEventListener('touchstart', function() {},false);
 
 // Capitalize frist letter upper
 String.prototype.capitalize = function(){

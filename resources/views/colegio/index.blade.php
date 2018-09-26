@@ -76,7 +76,7 @@
         <div class="banner__content banner__content--colegio" style="z-index:11;">
           <div class="banner__title">
             <span>
-              <i style="font-size:" class="fa fa-graduation-cap"></i>
+              <i class="fa fa-graduation-cap"></i>
               <br>
               Admisión 2019
             </span>
@@ -130,11 +130,10 @@
         <div class="banner__content" style="z-index:13;">
 
           <div class="banner__subtitle">
-            <span class="semibig orange font-cae-bold" style="">
-              <br>
-              Trilce reafirma su compromiso
+            <span class="semibig orange font-geo-smbold" style="">
+              Trilce reafirma su compromiso <br>
               con el planeta y eliminará
-              progresivamente el uso del
+              progresivamente <br> el uso del
               plástico en sus sedes y cafeterías.
             </span>
           </div>

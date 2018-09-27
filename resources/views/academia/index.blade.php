@@ -115,7 +115,9 @@
               24 de septiembre
             </span>
             <span style="display:block;margin: 20px auto;">
-              <button class="button_cta1"><a href="/academia/preparacion-san-marcos" class="link">Saber más</a></button>
+              <button class="banner__button-cta banner__button-cta--white">
+                <a href="/academia/preparacion-san-marcos">Saber más</a>
+              </button>
             </span>
           </div>
         </div>

@@ -86,7 +86,7 @@
               ¡No te quedes sin <strong>vacante</strong>!<br>
             </span>
             <span style="display:block;margin: 20px auto;">
-              <button class="button_cta1"><a href="/academia/preparacion-san-marcos" class="link">Regístrate aquí</a></button>
+              <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/admision-nuevo">Regístrate aquí</a></button>
             </span>
           </div>
         </div>
@@ -116,8 +116,8 @@
         data-size-md="contain"
 
         data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
-        data-position-xs="55vw bottom"
-        data-size-xs="60vw"
+        data-position-xs="40vw bottom"
+        data-size-xs="85vw"
 
         style="
         background-repeat: no-repeat;

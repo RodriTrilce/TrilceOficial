@@ -9,14 +9,13 @@ import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
 import VanillaModal from 'vanilla-modal';
 import SlimSelect from 'slim-select'
-import SliderTrilce from './academia/slider_trilce';
+import SliderTrilce from './require/slider_trilce';
 import Enrollment from './academia/enrollment';
 import Preparation from './academia/preparation';
 import { backgroundEffect } from './academia/blog';
 
 window.SlimSelect = SlimSelect;
-
-window.UID = {
+window.UID        = {
   _current: 0,
   getNew: function(){
     this._current++;
@@ -37,8 +36,6 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   _head.appendChild(_sheet);
   return this;
 };
-
-// Define methods utils
 Element.prototype.remove = function() {
    this.parentElement.removeChild(this);
 }
@@ -50,17 +47,10 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
    }
 }
 NodeList.prototype.forEach = Array.prototype.forEach;
-
-// Safari fix hover touch
-//document.addEventListener('touchstart', function() {},false);
-
-// Capitalize frist letter upper
 String.prototype.capitalize = function(){
   return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
 }
-
-// Modal Config
-var modal = new VanillaModal();
+//document.addEventListener('touchstart', function() {},false);
 
 
 /**!
@@ -71,6 +61,7 @@ var modal = new VanillaModal();
     document.body.className += ' loaded';
   }, 1000);
 
+  var modal = new VanillaModal();
   var slider = tns({
     container: '.index-banners',
     items: 1,
@@ -100,7 +91,6 @@ var modal = new VanillaModal();
     init_preparation.init();
   }
 
-
 /**!
  *  Enrollment
  */
@@ -113,14 +103,12 @@ var modal = new VanillaModal();
     });
   }
 
-
 /**!
  *  Contact
  */
   if(page == 'contact'){
     Validation.init(document.forms[0], true);
   }
-
 
 /**!
  *  Blog
@@ -141,5 +129,5 @@ var modal = new VanillaModal();
       loop: true
     });
 
-  backgroundEffect.init(slider);
+    //backgroundEffect.init(slider);
 }

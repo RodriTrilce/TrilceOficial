@@ -8,10 +8,11 @@ import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider';
 import { Tabs } from './require/tabs';
 import VanillaModal from 'vanilla-modal';
-import SliderTrilce from './academia/slider_trilce';
+import SliderTrilce from './require/slider_trilce';
 import AcorditionProposal from './colegio/educational_proposal';
 import pollyfill from 'array-from-polyfill';
-import BadgerAccordion from 'badger-accordion';
+//import BadgerAccordion from 'badger-accordion';
+import BadgerAccordion from './require/badger_accordion';
 
 
 const ValidationLang = {
@@ -164,6 +165,7 @@ if(page == 'educational_proposal'){
   });
 
   AcorditionProposal.init();
+  tabs.init();
 
   var modal = new VanillaModal();
   if(modal_open.length){
@@ -198,7 +200,7 @@ if(page == 'venue_colegio'){
 }
 
 /**!
- *  Sede Colegio
+ *  Preguntas frecuentes
  */
  if(page == 'frequent_questions'){
    const accordion = new BadgerAccordion('.js-badger-accordion_1');
@@ -207,5 +209,9 @@ if(page == 'venue_colegio'){
      open: 0
    });
 
-   accordion.open(0);
+   tabs.events.on('openTab', info => {
+     accordion.open(0);
+   });
+
+   tabs.init();
  }

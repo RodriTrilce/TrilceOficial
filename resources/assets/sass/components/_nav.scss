@@ -337,18 +337,41 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
   }
 }
 
-.nav-info-colegio{
-  background-color: #e5e7e7 !important;
+.nav-info-responsive{
+  display: none;
 
-  color: $gray !important;
+  @include breakpoint(baby){
+    display: block !important;
+    background-color: $orange;
+    color: white;
+    padding: 1rem;
+    border-top: 0;
+  }
+}
+
+.nav-info-responsive > a{
+  display: contents;
+}
+
+.nav-info-colegio{
+  background-color: #e5e7e7;
+  color: $gray;
+
   a:link,a:visited{
+    color: white;
+  }
+
+  .nav-info-colegio__phone, .nav-info-colegio__intranet{
     color: $gray !important;
   }
+}
 
-  .phone{
-    color: $orange !important;
+
+.nav-info-academia{
+
+  .nav-info-academia__phone, .nav-info-academia__intranet{
+    color: white !important;
   }
-
 }
 
 nav{
@@ -597,18 +620,6 @@ nav{
         }//end a
       }//en li
     }
-}
-
-.nav-info-responsive{
-  display: none;
-
-  @include breakpoint(baby){
-    display: block !important;
-    background-color: $orange;
-    color: white;
-    padding: 1rem;
-    border-top: 0;
-  }
 }
 
 

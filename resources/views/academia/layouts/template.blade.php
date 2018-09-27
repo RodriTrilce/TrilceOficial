@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -7,7 +8,6 @@
     {!! Meta::tag('description') !!}
     {!! Meta::tag('robots') !!}
     {!! Meta::tag('url', Request::url()); !!}
-
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -43,7 +43,7 @@
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs">
           <div class="col-xs-12 nav-info">
-              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <b class="phone">619-8100</b></span>
+              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <a class="phone" href="tel:+51016198100"><b>619-8100</b></a></span>
           </div>
           <div class="col-xs-12">
             <nav class="nav-burger">
@@ -53,7 +53,8 @@
               </div>
 
               <ul>
-                <li class="nav-info-responsive">Intranet para alumnos | Call center: <b>619-8100</b></li>
+                <li class="nav-info-responsive nav-info-academia"><a class="nav-info-academia__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a> | Call center: <a class="nav-info-academia__phone" href="tel:+51016198100"><b>619-8100</b></a></li>
+
                 <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
 
                 <li class="nav-venues xs-hide" id="sedes">

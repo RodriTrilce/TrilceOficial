@@ -4,6 +4,9 @@
  * @version 1.0.0
  */
 
+import { Events } from './helpers/events';
+import Loading from './helpers/loading_trilce';
+
 /**
  * @description
  * Vanilla Javascript Tabs
@@ -18,9 +21,24 @@ var Tabs = function(options) {
         titleClass   = 'js-tabs__title',
         activeClass  = 'js-tabs__title-active',
         contentClass = 'js-tabs__content',
-        tabsNum      = elem.querySelectorAll('.' + titleClass).length;
+        tabsNum      = elem.querySelectorAll('.' + titleClass).length,
+        events       = new Events();
 
-    render();
+
+    /**
+     * Start tabs.
+     */
+    function init() {
+      /*      if(asyncTabs){
+              window.onload = () => {
+
+              }
+            }else{
+              render();
+            }
+      */
+      render();
+    }
 
     /**
      * Initial rendering of the tabs.
@@ -94,8 +112,10 @@ var Tabs = function(options) {
         var i = checkTab(n);
 
         elem.querySelectorAll('.' + titleClass)[i].className += ' ' + activeClass;
-        //elem.querySelectorAll('.' + contentClass)[i].style.visibility = 'visible';
         elem.querySelectorAll('.' + contentClass)[i].classList.add('js-tab-container-active');
+
+        // Emit openTab event
+        events.emit('openTab', info());
     }
 
     /**
@@ -120,10 +140,30 @@ var Tabs = function(options) {
         elem.removeEventListener('click', onClick);
     }
 
+    /**
+     * Info tabs for events emit callback.
+     *
+     * @public
+     */
+    function info (e) {
+      return {
+        elem,
+        open,
+        titleClass,
+        activeClass,
+        contentClass,
+        tabsNum,
+        events,
+        event: e || {},
+      };
+    }
+
     return {
         open: openTab,
         update: update,
-        destroy: destroy
+        destroy: destroy,
+        events: events,
+        init: init
     };
 };
 

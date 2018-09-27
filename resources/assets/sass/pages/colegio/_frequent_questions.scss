@@ -59,20 +59,20 @@
 
   .question-title{
     font-family: $font_cae_rom;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 5px;
     color: $gray;
     cursor: pointer;
     line-height: 150%;
 
     @media screen and (max-width: 700px){
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
   }
 
   .question-answer{
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   ul{
@@ -108,7 +108,16 @@
   }
 }
 
+
+// Tabs
 .frequent_questions__tabs{
+  @include breakpoint(baby){
+    .js-tabs__header{
+      border-radius: 5px;
+    }
+    // border-top-right-radius: 5px;
+    // border-top-left-radius: 5px;
+  }
 
   .js-tabs__header{
     display: flex;

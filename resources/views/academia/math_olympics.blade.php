@@ -14,45 +14,115 @@
     </div>
   </div>
 
+
   <div class="row center-xs center-sm math-olympic">
-    <div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 text-init math-olympic-table">
-      @foreach ($data as $v)
-      <div class="row col-xs">
+    <div class="col-xs-11 col-sm-8 text-init">
 
-        <div class="col-xs-12 math-olympic-title">{{$v->venue}}</div>
+              <div class="js-tabs om__tabs" id="om__tabs">
 
-        <div class="row col-xs-12 col-sm col-md-7 math-olympic-content">
-          <div class="col-xs-2 "><span class="a">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->finish_at)) }}</span></div>
-          <div class="col-xs-7 col-sm-8">{{$v->title}}</div>
-          <div class="col-xs">{{$v->grade}}</div>
-        </div>
+                  <ul class="js-tabs__header">
+                      <li><a href="#" class="js-tabs__title">Lima</a></li>
+                      <li><a href="#" class="js-tabs__title">Provincias</a></li>
+                  </ul>
 
-        <div class="row col-xs-12 col-sm col-md">
-          <ul class="math-olympic-list">
-            <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
-            <li {!! ($v->inscription_url ? 'class="active"' : '') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
-            <li {!! ($v->inscription_group_url ? 'class="active"' : '') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
-            <li {!! (count($v->results) ? 'class="active"' : '') !!}>
-              @if(count($v->results))
-                <select id="result_{{$v->id}}">
-                  <option >Resultados</option>
-                  @foreach ($v->results as $result)
-                    <option data-url="{{$result->fileUrl()}}">{{$result->name}}</option>
-                  @endforeach
-                </select>
-              @else
-                <a href="" target="_blank">Resultados</a>
-              @endif
-            </li>
-          </ul>
-        </div>
+                  <div class="js-tabs__content js-badger-accordion_1">
+                    @foreach ($lima as $v)
+                      <div class="om__item row col-xs-12">
+                          <h3 class="om__title js-badger-accordion-header">
+                            <div class="om__signed"></div>
+                            <span class="om__date"><span class="a">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->finish_at)) }}</span></span>
+                            <div class="om__title-content">
+                              {{$v->venue}}
+                            </div>
+                          </h3>
 
+                          <dd class="badger-accordion__panel js-badger-accordion-panel">
+                            <div class="js-badger-accordion-panel-inner om__content">
 
-      </div>
-      @endforeach
+                              <div class="om__content-subtitle">{{$v->title}}</div>
+                              <div class="om__content-subtitle">{{$v->grade}}</div>
 
+                              <ul class="math-olympic-list">
+                                <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
+                                <li {!! ($v->inscription_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
+                                <li {!! ($v->inscription_group_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
+                                <li {!! (count($v->results) ? 'class="active"' : 'class="hidden"') !!}>
+                                  @if(count($v->results))
+                                    <select id="result_{{$v->id}}">
+                                      <option >Resultados</option>
+                                      @foreach ($v->results as $result)
+                                        <option data-url="{{$result->fileUrl()}}">{{$result->name}}</option>
+                                      @endforeach
+                                    </select>
+                                  @else
+                                    <!--<a target="_blank">Resultados</a> -->
+                                  @endif
+                                </li>
+                              </ul>
+                            </div>
+                          </dd>
+
+                      </div>
+                    @endforeach
+                  </div>
+
+                  <div class="js-tabs__content js-badger-accordion_2">
+                    @foreach ($province as $v)
+                      <div class="om__item row col-xs-12">
+                          <h3 class="om__title js-badger-accordion-header">
+                            <div class="om__signed"></div>
+                            <span class="om__date"><span class="a">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->finish_at)) }}</span></span>
+                            <div class="om__title-content">
+                              {{$v->venue}}
+                            </div>
+                          </h3>
+
+                          <dd class="badger-accordion__panel js-badger-accordion-panel">
+                            <div class="js-badger-accordion-panel-inner om__content">
+
+                              <div class="om__content-subtitle">{{$v->title}}</div>
+                              <div class="om__content-subtitle">{{$v->grade}}</div>
+
+                              <ul class="math-olympic-list">
+                                <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
+                                <li {!! ($v->inscription_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
+                                <li {!! ($v->inscription_group_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
+                                <li {!! (count($v->results) ? 'class="active"' : 'class="hidden"') !!}>
+                                  @if(count($v->results))
+                                    <select id="result_{{$v->id}}">
+                                      <option >Resultados</option>
+                                      @foreach ($v->results as $result)
+                                        <option data-url="{{$result->fileUrl()}}">{{$result->name}}</option>
+                                      @endforeach
+                                    </select>
+                                  @else
+                                    <!--<a target="_blank">Resultados</a> -->
+                                  @endif
+                                </li>
+                              </ul>
+                            </div>
+                          </dd>
+
+                      </div>
+                    @endforeach
+
+                  </div>
+
+              </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="row center-xs center-sm math-olympic-onam">
     <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>

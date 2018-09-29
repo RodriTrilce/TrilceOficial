@@ -23,6 +23,7 @@ class CreateMathOlympicsModelsTable extends Migration
             $table->string('inscription_url')->nullable();
             $table->string('inscription_group_url')->nullable();
             $table->timestamp('finish_at')->nullable();
+            $table->string('isprovince')->nullable();
             $table->timestamps();
         });
     }

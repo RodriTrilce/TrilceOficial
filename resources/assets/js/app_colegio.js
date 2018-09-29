@@ -11,8 +11,8 @@ import VanillaModal from 'vanilla-modal';
 import SliderTrilce from './require/slider_trilce';
 import AcorditionProposal from './colegio/educational_proposal';
 import pollyfill from 'array-from-polyfill';
-//import BadgerAccordion from 'badger-accordion';
 import BadgerAccordion from './require/badger_accordion';
+//import BadgerAccordion from 'badger-accordion';
 
 
 const ValidationLang = {

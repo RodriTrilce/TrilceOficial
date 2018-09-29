@@ -15,7 +15,22 @@ class MathOlympicsController extends Controller
    */
    public function index()
    {
+
      $data =  MathOlympicsModel::all();
-     return view('/academia/math_olympics')->with(['data' => $data]);
+
+     $lima = MathOlympicsModel::whereNull('isprovince')
+     ->orderBy('finish_at', 'asc')
+     ->get();
+
+     $province = MathOlympicsModel::where('isprovince',  '=', '1')
+     ->orderBy('finish_at', 'asc')
+     ->get();
+
+
+     return view('/academia/math_olympics')->with([
+       'lima'       => $lima,
+       'province'   => $province,
+       'data'       => $data
+     ]);
    }
 }

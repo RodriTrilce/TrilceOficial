@@ -21,4 +21,4 @@ var backgroundEffect = {
   }
 }
 
-export {backgroundEffect};
+export default backgroundEffect;

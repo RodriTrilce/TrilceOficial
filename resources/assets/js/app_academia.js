@@ -7,12 +7,15 @@
  //import 'datalist-polyfill/datalist-polyfill'
 import { Validation } from 'bunnyjs/src/Validation';
 import { tns } from 'tiny-slider/src/tiny-slider'
+import { Tabs } from './require/tabs';
+import pollyfill from 'array-from-polyfill';
 import VanillaModal from 'vanilla-modal';
 import SlimSelect from 'slim-select'
+import BadgerAccordion from './require/badger_accordion';
 import SliderTrilce from './require/slider_trilce';
 import Enrollment from './academia/enrollment';
 import Preparation from './academia/preparation';
-import { backgroundEffect } from './academia/blog';
+import backgroundEffect from './academia/blog';
 
 window.SlimSelect = SlimSelect;
 window.UID        = {
@@ -130,4 +133,19 @@ String.prototype.capitalize = function(){
     });
 
     //backgroundEffect.init(slider);
-}
+  }
+
+/**!
+ *  Math Olympics
+ */
+ if(page == 'math_olympics'){
+   const tabs      = new Tabs({
+     elem: 'om__tabs',
+     open: 0
+   });
+
+   tabs.init();
+
+   const accordion = new BadgerAccordion('.js-badger-accordion_1');
+   const accordion2 = new BadgerAccordion('.js-badger-accordion_2');
+ }

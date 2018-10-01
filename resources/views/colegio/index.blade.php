@@ -131,10 +131,10 @@
 
           <div class="banner__subtitle">
             <span class="semibig orange font-geo-smbold" style="">
-              Trilce reafirma su compromiso <br>
-              con el planeta y eliminará
+              Reafirmamos nuestro compromiso <br>
+              con el planeta y eliminaremos
               progresivamente <br> el uso del
-              plástico en sus sedes y cafeterías.
+              plástico en nuestras sedes y cafeterías.
             </span>
           </div>
         </div>

@@ -19,11 +19,11 @@ class MathOlympicsController extends Controller
      $data =  MathOlympicsModel::all();
 
      $lima = MathOlympicsModel::whereNull('isprovince')
-     ->orderBy('finish_at', 'asc')
+     ->orderBy('finish_at', 'desc')
      ->get();
 
      $province = MathOlympicsModel::where('isprovince',  '=', '1')
-     ->orderBy('finish_at', 'asc')
+     ->orderBy('finish_at', 'desc')
      ->get();
 
 

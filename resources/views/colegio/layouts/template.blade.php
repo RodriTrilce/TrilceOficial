@@ -37,7 +37,7 @@
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs">
           <div class="col-xs-12 nav-info">
-              <span class="nav-info-content nav-info-colegio"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <b class="phone">619-8100</b></span>
+              <span class="nav-info-content nav-info-colegio"><a href="/"><i class="fa fa-home"></i></a> | <a href="http://intranet.trilce.edu.pe" target="_blank">Intranet para alumnos</a> | Call center: <a class="nav-info-colegio__phone" href="tel:016198100"><b>619-8100</b></a></span>
           </div>
           <div class="col-xs-12">
             <nav class="nav-burger">
@@ -48,10 +48,9 @@
 
               <ul>
                 <li class="nav-info-responsive nav-info-colegio">
-                  <a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a>
-                   | Call center: <a class="nav-info-colegio__phone" href="tel:+51016198100"><b>619-8100</b>
-                   </a>
-                 </li>
+                  <div><a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a></div>
+                  <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>619-8100</b></a></div>
+                </li>
 
                 <li class="nav-colegio-aboutus">
                   <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -53,8 +52,10 @@
               </div>
 
               <ul>
-                <li class="nav-info-responsive nav-info-academia"><a class="nav-info-academia__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a> | Call center: <a class="nav-info-academia__phone" href="tel:+51016198100"><b>619-8100</b></a></li>
-
+                <li class="nav-info-responsive nav-info-academia">
+                  <div><a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a></div>
+                  <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>619-8100</b></a></div>
+                </li>
                 <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
 
                 <li class="nav-venues xs-hide" id="sedes">

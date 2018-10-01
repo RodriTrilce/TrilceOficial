@@ -141,6 +141,11 @@
       font-size: 1.7rem;
       color: $gray;
       font-family: $font_geo_reg;
+
+      @include breakpoint(baby)
+      {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -151,7 +156,7 @@
     margin-top: 0.5rem;
   }
 
-  .inscription{
+  .inscription, .texts{
     font-family: $font_geo_reg;
     @media screen and (max-width: 768px){
       font-size: 0.8rem;
@@ -193,35 +198,42 @@
     }
   }
 
+}
 
-  .sponsor{
-    margin-top: 2rem;
+.sponsor{
+  margin-top: 2rem;
 
-    >div{
-      &:first-child{
-        @media screen and (max-width: 768px){
-          margin-top: 1rem;
-          margin-bottom: 2rem;
-        }
-
-        span{
-          color: $orange;
-          font-weight: bold;
-        }
+  >div{
+    &:first-child{
+      @media screen and (max-width: 768px){
+        margin-top: 1rem;
+        margin-bottom: 2rem;
       }
 
-      &:last-child{
-
+      span{
+        color: $orange;
+        font-weight: bold;
       }
     }
 
-    .title{
-      color: $orange;
-      font-size: 0.8rem;
-      font-weight: bold;
+    &:last-child{
+
     }
   }
 
+  .title{
+    color: $orange;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .information{
+    font-size: 1rem;
+
+    @include breakpoint(baby){
+      font-size: .9rem;
+    }
+  }
 }
 
 /**
@@ -243,6 +255,7 @@
      transition: all .3s ease-in-out;
      display: inline-block;
    }
+
  }
 
  // Acordion
@@ -316,6 +329,19 @@
   margin-left: 30px;
   display: inline-block;
   font-size: .9rem;
+
+  .b{
+    display: none;
+  }
+
+  @include breakpoint(baby){
+    .a{
+      display: none;
+    }
+    .b{
+      display: block;
+    }
+  }
 }
 
 .om__title-content{
@@ -323,6 +349,10 @@
   margin-top: 5px;
   margin-left: 30px;
   font-size: 1.8rem;
+
+  @include breakpoint(baby){
+    font-size: 1.3rem;
+  }
 }
 
 .om__content-subtitle{
@@ -331,6 +361,10 @@
   font-size: .9rem;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @include breakpoint(baby){
+    font-size: .8rem;
+  }
 }
 
 

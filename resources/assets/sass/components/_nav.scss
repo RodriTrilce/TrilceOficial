@@ -362,7 +362,11 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
   }
 
   .nav-info-colegio__phone, .nav-info-colegio__intranet{
-    color: $gray !important;
+    color: white;
+
+    @include breakpoint(baby){
+      color: $gray !important;
+    }
   }
 }
 
@@ -371,6 +375,22 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
 
   .nav-info-academia__phone, .nav-info-academia__intranet{
     color: white !important;
+  }
+}
+
+.nav-info-responsive.nav-info-colegio{
+  a{
+    display: inline;
+  }
+}
+
+
+.nav-info-responsive.nav-info-academia{
+  color: white;
+  
+  a,a:hover,a:visited{
+    color: white;
+    padding: 0;
   }
 }
 

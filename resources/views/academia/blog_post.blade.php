@@ -6,8 +6,8 @@
 
   <div class="blog-post container-padding-mobile">
     <div class="blog-date">
-      <div class="date-number">27</div>
-      <div class="date-text">Abr</div>
+      <div class="date-number">{{Date::parse($post->created_at)->format('j')}}</div>
+      <div class="date-text">{{Date::parse($post->created_at)->format('m')}}/{{Date::parse($post->created_at)->format('y')}}</div>
     </div>
 
     <h1 class="blog-post-title">{{$post->title}}</h1>
@@ -28,7 +28,7 @@
   </div>
 
   <div class="blog-blur">
-    <div class="background-image"></div> 
+    <div class="background-image"></div>
     <div class="container-blog-banners">
     <div id="blog-banners" class="">
       @foreach ($post->blogGallery->images as $image)

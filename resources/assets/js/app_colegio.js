@@ -200,18 +200,18 @@ if(page == 'venue_colegio'){
 }
 
 /**!
- *  Preguntas frecuentes
- */
- if(page == 'frequent_questions'){
-   const accordion = new BadgerAccordion('.js-badger-accordion_1');
-   const tabs      = new Tabs({
-     elem: 'tabs_frequent_questions',
-     open: 0
-   });
+*  Frecuent Questions
+*/
+if(page == 'frequent_questions'){
+  const accordion = new BadgerAccordion('.js-badger-accordion_1');
+  const tabs      = new Tabs({
+   elem: 'tabs_frequent_questions',
+   open: 0
+  });
 
-   tabs.events.on('openTab', info => {
-     accordion.open(0);
-   });
+  tabs.events.on('openTab', info => {
+   accordion.open(0);
+  });
 
-   tabs.init();
- }
+  tabs.init();
+}

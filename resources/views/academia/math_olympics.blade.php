@@ -15,7 +15,7 @@
   </div>
 
 
-  <div class="row center-xs center-sm math-olympic">
+  <div class="row center-xs center-sm math_olympics">
     <div class="col-xs-11 col-sm-8 text-init">
 
               <div class="js-tabs om__tabs" id="om__tabs">
@@ -30,7 +30,7 @@
                       <div class="om__item row col-xs-12">
                           <h3 class="om__title js-badger-accordion-header">
                             <div class="om__signed"></div>
-                            <span class="om__date"><span class="a">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->finish_at)) }}</span></span>
+                            <span class="om__date">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span>
                             <div class="om__title-content">
                               {{$v->venue}}
                             </div>
@@ -71,7 +71,7 @@
                       <div class="om__item row col-xs-12">
                           <h3 class="om__title js-badger-accordion-header">
                             <div class="om__signed"></div>
-                            <span class="om__date"><span class="a">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span><span class="b">{{ date('j/n', strtotime($v->finish_at)) }}</span></span>
+                            <span class="om__date">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span>
                             <div class="om__title-content">
                               {{$v->venue}}
                             </div>
@@ -167,7 +167,7 @@
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-artesco.jpg') }}}" alt="Aresto"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-dgnotas.jpg') }}}" alt="Gnotas"></div>
-        <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>
+        {{-- <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div> --}}
       </div>
     </div>
   </div>

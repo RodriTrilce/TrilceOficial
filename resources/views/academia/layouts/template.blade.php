@@ -111,7 +111,7 @@
                   </ul>
                 </li>
 
-                <li class=""><a href="/academia/matricula-en-linea" class="{{ (Request::is('academia/matricula-en-linea')?'nav-item-active nav-item-noclick':'') }}">Prematrícula</a></li>
+                <li class=""><a href="/academia/prematricula" class="{{ (Request::is('academia/prematricula')?'nav-item-active nav-item-noclick':'') }}">Prematrícula</a></li>
                 <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
                 <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctenos</a></li>
               </ul>

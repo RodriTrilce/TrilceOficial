@@ -1552,8 +1552,8 @@
                                   <div class="projectContainer" class="no-barba"><a href="/colegio/propuesta-educativa" class="no-barba link" data-info="Colegio" rel="">Propuesta<br>educativa</a></div>
                               </li>
 
-                              <li class="projectsLi" data-barba="HomeTransition" class="no-barba" onclick="link('/academia/matricula-en-linea')">
-                                  <div class="projectContainer" class="no-barba"><a href="/academia/matricula-en-linea" class="no-barba link" data-info="Academia" rel="">Matrícula en<br>línea</a></div>
+                              <li class="projectsLi" data-barba="HomeTransition" class="no-barba" onclick="link('/academia/prematricula')">
+                                  <div class="projectContainer" class="no-barba"><a href="/academia/prematricula" class="no-barba link" data-info="Academia" rel="">Matrícula en<br>línea</a></div>
                               </li>
 
                             </ul>

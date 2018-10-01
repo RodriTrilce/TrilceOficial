@@ -133,13 +133,13 @@ Route::post('/academia/contacto', 'Academia\ContactController@send');
 
 // Matricula en linea (Enrollment)
 Route::name('academia-enrollment')
-      ->get('/academia/matricula-en-linea', 'Academia\EnrollmentController@create');
+      ->get('/academia/prematricula', 'Academia\EnrollmentController@create');
 
 Route::name('academia-enrollment-finish')
-      ->post('/academia/matricula-en-linea', 'Academia\EnrollmentController@store');
+      ->post('/academia/prematricula', 'Academia\EnrollmentController@store');
 
 Route::name('academia-enrollment-download')
-      ->match(['get', 'post'], '/academia/matricula-en-linea/descargar-pdf', 'Academia\EnrollmentController@download');
+      ->match(['get', 'post'], '/academia/prematricula/descargar-pdf', 'Academia\EnrollmentController@download');
 
 // Blog (Blog)
 Route::name('academia-blogpost')

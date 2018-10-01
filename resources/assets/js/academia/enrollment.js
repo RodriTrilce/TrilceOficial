@@ -6,7 +6,7 @@
  import { Validation } from 'bunnyjs/src/Validation';
 
  // Constants
- const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/matricula-en-linea/descargar-pdf'
+ const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/prematricula/descargar-pdf'
 
  const ValidationLang = {
    required      : "'{label}' es obligatorio.",

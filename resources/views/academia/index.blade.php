@@ -22,7 +22,7 @@
               <p class="finish-text">Puede descargar su ficha de inscripción prematrícula aquí: </p>
             </div>
             <div class="col-xs-12 finish-button-container">
-              <form action="/academia/matricula-en-linea/descargar-pdf" method="post" target="_blank">
+              <form action="/academia/prematricula/descargar-pdf" method="post" target="_blank">
                 {{ csrf_field() }}
                 <input name="token" type="hidden" value="{{ session('dni') }}">
                 <button type="submit" class="enrollment-finish--button">

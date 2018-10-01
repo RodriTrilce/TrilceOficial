@@ -157,3 +157,9 @@ Breadcrumbs::for('academia-your-best-option', function ($trail) {
     $trail->parent('academia-index');
     $trail->push('¿Por qué somos tu mejor opción?', route('academia-your-best-option'));
 });
+
+// Colegio > FrequentQuestions
+Breadcrumbs::for('academia-frequentquestions', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Preguntas Frecuentes', route('academia-frequentquestions'));
+});

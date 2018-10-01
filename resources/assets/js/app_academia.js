@@ -16,6 +16,9 @@ import SliderTrilce from './require/slider_trilce';
 import Enrollment from './academia/enrollment';
 import Preparation from './academia/preparation';
 import backgroundEffect from './academia/blog';
+import AcorditionProposal from './colegio/educational_proposal';
+
+
 
 window.SlimSelect = SlimSelect;
 window.UID        = {
@@ -148,4 +151,21 @@ String.prototype.capitalize = function(){
 
    const accordion = new BadgerAccordion('.js-badger-accordion_1');
    const accordion2 = new BadgerAccordion('.js-badger-accordion_2');
+ }
+
+/**!
+ *  Frecuent Questions
+ */
+ if(page == 'frequent_questions'){
+   const accordion = new BadgerAccordion('.js-badger-accordion_1');
+   const tabs      = new Tabs({
+     elem: 'tabs_frequent_questions',
+     open: 0
+   });
+
+   tabs.events.on('openTab', info => {
+     accordion.open(0);
+   });
+
+   tabs.init();
  }

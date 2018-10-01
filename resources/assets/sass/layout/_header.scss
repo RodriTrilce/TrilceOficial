@@ -23,6 +23,10 @@
   align-items: baseline;
   user-select: none;
 
+  @include breakpoint(baby){
+    margin-top: 5px;
+    margin-bottom: 6px;
+  }
 
     img{
       max-width: 180px;

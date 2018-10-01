@@ -158,6 +158,11 @@ Route::name('academia-multimedia')
         return view('errors.work');
       });
 
+// Preguntas Frecuentes (FrequentQuestions)
+Route::name('academia-frequentquestions')
+      ->get('/academia/preguntas-frecuentes', 'Academia\FrequentQuestionsController@index');
+
+
 /**
  *  Colegio
  */

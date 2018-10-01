@@ -550,7 +550,8 @@ function () {
           header.classList.remove(this.settings.activeClass); // 4. Set aria attrs
 
           header.setAttribute('aria-expanded', false);
-          header.setAttribute('aria-label', this.settings.headerOpenLabel); // 5. Resetting toggling so a new event can be fired
+          header.setAttribute('aria-label', this.settings.headerOpenLabel);
+          panelToClose.style.overflow = 'hidden'; // 5. Resetting toggling so a new event can be fired
 
           panelToClose.onCSSTransitionEnd(function () {
             return _this7.toggling = false;
@@ -575,6 +576,9 @@ function () {
           panelToOpen.onCSSTransitionEnd(function () {
             return _this7.toggling = false;
           });
+          panelToOpen.onCSSTransitionEnd(function () {
+            panelToOpen.style.overflow = 'visible';
+          }.bind(this));
         }
       }
     } // @TODO - is this needed anymore?
@@ -690,7 +694,7 @@ function () {
     value: function calculatePanelHeight(panel) {
       var panelInner = panel.querySelector(this.settings.panelInnerClass);
       panel.addEventListener('transitionend', function () {
-        panel.style.maxHeight = "".concat(panelInner.offsetHeight, "px");
+        panel.style.maxHeight = "".concat(panelInner.offsetHeight + 10, "px");
       }.bind(this));
     }
   }, {

@@ -169,5 +169,3 @@ String.prototype.capitalize = function(){
 
    tabs.init();
  }
-
-// test

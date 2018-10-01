@@ -579,28 +579,6 @@ nav{
 
         }
 
-        li.menu-click-sedes{
-          &:hover .menu-sedes-ul{
-            display: block;
-          }
-
-          >a{
-            &::after{
-              font-family: $font_icon;
-              content: "\f110";
-              font-size: 15px;
-              color: $orange;
-              position: absolute;
-              margin-left: 6px;
-              background: white;
-            }
-
-            &:hover::after{
-              content: "";
-            }
-
-          }
-        }// Fin li.menu-click-sedes
 
       }
 
@@ -638,19 +616,50 @@ nav{
         height: auto;
 
         a{
-          color: $orange;
+          color: $gray;
 
           &:link{
             text-transform: none;
             padding: 0.2rem;
+            color: $gray
           }
           &:visited{
-            color: $orange !important;
+            color: $gray !important;
           }
         }//end a
       }//en li
     }
 }
+
+
+
+
+.menu-click-sedes{
+  &:hover .menu-sedes-ul{
+    display: block;
+  }
+
+  >a{
+    &::after{
+      font-family: $font_icon;
+      content: "\f110";
+      font-size: 15px;
+      color: $orange;
+      position: absolute;
+      margin-left: 6px;
+      background: white;
+    }
+
+    &:hover::after{
+      content: "";
+    }
+
+  }
+
+  >li > a,a:hover,a:link,a:visited{
+    color: $gray;
+  }
+}// Fin li.menu-click-sedes
 
 
 .nav-colegio-structure{

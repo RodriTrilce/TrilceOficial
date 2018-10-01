@@ -132,6 +132,7 @@
       <div class="col-xs">2.° prim a 5.° sec.</div>
     </div>
 
+    <!--
     <div class="row col-xs-12 col-sm-9 text-init center-onam">
       <div class="row col-xs-12 col-sm-3 middle-sm middle-xs center-sm center-xs basics">
         <i class="fa fa-search"></i> Bases
@@ -151,6 +152,7 @@
         </div>
       </div>
     </div>
+  -->
 
     <div class="row col-xs-12 col-sm-9 text-init sponsor">
 

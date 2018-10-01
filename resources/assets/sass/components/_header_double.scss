@@ -51,10 +51,15 @@
   top: 50%;
 
   @include breakpoint(baby){
-    transform: translate(-80%, 110%);
+//    transform: translate(-80%, 110%);
     right: -83%;
     width: 100%;
     left: unset;
+
+    transform: unset;
+    position: relative;
+    top: -30px;
+    left: 11px;
 
     &::before{
       content: "";
@@ -78,6 +83,11 @@
     @include breakpoint(baby){
       font-size: 1.3rem;
       padding: 0.1rem;
+    }
+
+    @include breakpoint(minibaby){
+      font-size: 1rem;
+      padding: .1rem;
     }
 
   }

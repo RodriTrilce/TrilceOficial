@@ -158,7 +158,7 @@
         <div class="col-xs-12 col-sm-12 center-xs">
           <p>
             <span>Informes e inscripciones</span> <br/>
-            Av. Arequipa 1381, Santa Beatriz - olimpiadas@trilce.edu.pe
+            Av. Arequipa 1381, Santa Beatriz - <a href="mail:olimpiadas@trilce.edu.pe">olimpiadas@trilce.edu.pe</a>
           </p>
         </div>
       </div>

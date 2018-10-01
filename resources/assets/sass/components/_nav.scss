@@ -344,7 +344,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
     display: block !important;
     background-color: $orange;
     color: white;
-    padding: 1rem;
+    padding: .5rem;
     border-top: 0;
   }
 }
@@ -379,7 +379,13 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
 }
 
 .nav-info-responsive.nav-info-colegio{
+
+  div{
+    margin-top: 5px;
+  }
+
   a{
+    padding: 0;
     display: inline;
   }
 }
@@ -387,7 +393,11 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
 
 .nav-info-responsive.nav-info-academia{
   color: white;
-  
+
+  div{
+    margin-top: 5px;
+  }
+
   a,a:hover,a:visited{
     color: white;
     padding: 0;

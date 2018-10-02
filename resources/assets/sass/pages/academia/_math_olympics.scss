@@ -1,44 +1,3 @@
-/*
-
-.math-olympic-table{
-  >.row{
-    border-bottom: 1px solid transparentize($gray, 0.7);
-    padding-bottom: 0.8rem;
-    margin-bottom: 0.8rem;
-
-    >.math-olympic-title{
-      color: $orange;
-      text-transform: uppercase;
-      padding-bottom: 0.5rem;
-    }
-
-    >.math-olympic-content{
-      color: $gray;
-      font-size: 0.9rem;
-      font-family: $font_geo_reg;
-
-      >div{
-          padding-right: 5px;
-      }
-
-      .b{
-        display: none;
-      }
-
-      @include breakpoint(baby){
-        .a{
-          display: none;
-        }
-        .b{
-          display: block;
-        }
-      }//end media
-
-    }// end math olympic content
-  }// end div.row
-}
-*/
-
 .math_olympics{
   margin: 40px 0;
   @include breakpoint(baby){
@@ -357,6 +316,28 @@
   }
 }
 
+.om__state{
+  display: inline-block;
+  float: right;
+  font-size: .9rem;
+
+  @include breakpoint(baby)
+  {
+    font-size: .8rem;
+  }
+
+  &.om__state--active{
+    color: $state_active;
+  }
+
+  &.om__state--modified{
+    color: $state_alert;
+  }
+
+  &.om__state--end{
+    color: $gray;
+  }
+}
 
 
 

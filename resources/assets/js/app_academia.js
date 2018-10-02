@@ -149,11 +149,6 @@ String.prototype.capitalize = function(){
            open: 0
          });
 
-   tabs.events.on('render', info => {
-     accordion1.open(0);
-     accordion2.open(0);
-   });
-
    tabs.init();
  }
 

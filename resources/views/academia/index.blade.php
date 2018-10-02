@@ -89,7 +89,7 @@
 
         data-image-md="http://www.trilce.edu.pe/bg__t.png"
         data-position-md="right bottom"
-        data-size-md="contain"
+        data-size-md="cover"
 
         data-image-xs="http://www.trilce.edu.pe/bg__t.png"
         data-position-xs="right"

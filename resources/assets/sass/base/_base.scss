@@ -78,7 +78,7 @@ a:active{
 
 h1,h2,h3,h4,h5,h6{
   color: $orange;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 h1{
@@ -111,4 +111,11 @@ a:hover,li:hover{
 
 *, *:before, *:after {
   box-sizing: border-box !important;
+}
+
+// Safari text ajust fix
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: 100%;
+  }
 }

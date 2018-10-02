@@ -543,11 +543,7 @@ function () {
           // 1. Getting ID of panel that we want to close
           var header = this.headers[headerIndex];
           var panelToClose = this.panels[headerIndex]; //panelToClose.style.removeProperty('overflow');
-
-          console.log("\n ----------------");
-          console.log(this.panels[headerIndex]);
-          console.log(panelToClose.style);
-          console.log("\n ----------------"); // 2. Closeing panel
+          // 2. Closeing panel
 
           panelToClose.classList.add(this.settings.hiddenClass); // 3. Removing active classes
 

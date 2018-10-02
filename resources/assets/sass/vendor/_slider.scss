@@ -165,6 +165,10 @@
 
 .index-banners{
   max-height: 500px;
+
+  @include  breakpoint(baby){
+    max-height: 350px;
+  }
   overflow: hidden;
 }
 

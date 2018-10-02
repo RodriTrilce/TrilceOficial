@@ -142,15 +142,19 @@ String.prototype.capitalize = function(){
  *  Math Olympics
  */
  if(page == 'math_olympics'){
-   const tabs      = new Tabs({
-     elem: 'om__tabs',
-     open: 0
+   const accordion1  = new BadgerAccordion('.js-badger-accordion_1'),
+         accordion2 = new BadgerAccordion('.js-badger-accordion_2'),
+         tabs       = new Tabs({
+           elem: 'om__tabs',
+           open: 0
+         });
+
+   tabs.events.on('render', info => {
+     accordion1.open(0);
+     accordion2.open(0);
    });
 
    tabs.init();
-
-   const accordion = new BadgerAccordion('.js-badger-accordion_1');
-   const accordion2 = new BadgerAccordion('.js-badger-accordion_2');
  }
 
 /**!
@@ -162,15 +166,12 @@ String.prototype.capitalize = function(){
          accordion3 = new BadgerAccordion('.js-badger-accordion_3'),
          accordion4 = new BadgerAccordion('.js-badger-accordion_4'),
          tabs       = new Tabs({
-     elem: 'tabs_frequent_questions',
-     open: 0
-   });
+           elem: 'tabs_frequent_questions',
+           open: 0
+         });
 
    tabs.events.on('render', info => {
      accordion1.open(0);
-     accordion2.open(0);
-     accordion3.open(0);
-     accordion4.open(0);
    });
 
    tabs.init();

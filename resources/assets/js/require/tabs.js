@@ -52,6 +52,7 @@ var Tabs = function(options) {
             elem.querySelectorAll('.' + titleClass)[i].setAttribute('data-index', i);
             if (i === init) openTab(i);
         }
+        events.emit('render', info());
     }
 
     /**

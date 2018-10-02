@@ -157,14 +157,20 @@ String.prototype.capitalize = function(){
  *  Frecuent Questions
  */
  if(page == 'frequent_questions'){
-   const accordion = new BadgerAccordion('.js-badger-accordion_1');
-   const tabs      = new Tabs({
+   const accordion1 = new BadgerAccordion('.js-badger-accordion_1'),
+         accordion2 = new BadgerAccordion('.js-badger-accordion_2'),
+         accordion3 = new BadgerAccordion('.js-badger-accordion_3'),
+         accordion4 = new BadgerAccordion('.js-badger-accordion_4'),
+         tabs       = new Tabs({
      elem: 'tabs_frequent_questions',
      open: 0
    });
 
-   tabs.events.on('openTab', info => {
-     accordion.open(0);
+   tabs.events.on('render', info => {
+     accordion1.open(0);
+     accordion2.open(0);
+     accordion3.open(0);
+     accordion4.open(0);
    });
 
    tabs.init();

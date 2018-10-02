@@ -542,7 +542,12 @@ function () {
         if (animationAction === 'closed') {
           // 1. Getting ID of panel that we want to close
           var header = this.headers[headerIndex];
-          var panelToClose = this.panels[headerIndex]; // 2. Closeing panel
+          var panelToClose = this.panels[headerIndex]; //panelToClose.style.removeProperty('overflow');
+
+          console.log("\n ----------------");
+          console.log(this.panels[headerIndex]);
+          console.log(panelToClose.style);
+          console.log("\n ----------------"); // 2. Closeing panel
 
           panelToClose.classList.add(this.settings.hiddenClass); // 3. Removing active classes
 
@@ -550,8 +555,7 @@ function () {
           header.classList.remove(this.settings.activeClass); // 4. Set aria attrs
 
           header.setAttribute('aria-expanded', false);
-          header.setAttribute('aria-label', this.settings.headerOpenLabel);
-          panelToClose.style.overflow = 'hidden'; // 5. Resetting toggling so a new event can be fired
+          header.setAttribute('aria-label', this.settings.headerOpenLabel); // 5. Resetting toggling so a new event can be fired
 
           panelToClose.onCSSTransitionEnd(function () {
             return _this7.toggling = false;
@@ -563,7 +567,9 @@ function () {
 
           panelToOpen.classList.remove(this.settings.hiddenClass); // 3. Adding active classes
 
-          panelToOpen.classList.add(this.settings.activeClass);
+          panelToOpen.onCSSTransitionEnd(function () {
+            return panelToOpen.classList.add(_this7.settings.activeClass);
+          });
 
           _header.classList.add(this.settings.activeClass); // 4. Set aria attrs
 
@@ -576,9 +582,11 @@ function () {
           panelToOpen.onCSSTransitionEnd(function () {
             return _this7.toggling = false;
           });
-          panelToOpen.onCSSTransitionEnd(function () {
-            panelToOpen.style.overflow = 'visible';
+          /*
+          panelToOpen.onCSSTransitionEnd(function(){
+              panelToOpen.style.overflow = 'visible';
           }.bind(this));
+          */
         }
       }
     } // @TODO - is this needed anymore?

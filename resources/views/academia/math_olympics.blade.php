@@ -33,8 +33,10 @@
 
                     @if(count($v->results))
                       <span class="om__state om__state--end">CULMINADO</span>
-                    @elseif($v->finish_at <= Date::now() && (!empty($v->inscription_url)))
+                    @elseif(date("Y-m-d H:i:s") <= $v->finish_at && !empty($v->inscription_url))
                       <span class="om__state om__state--active">INSCRIPCIONES</span>
+                    @elseif(date("Y-m-d H:i:s") < $v->finish_at && (!empty($v->inscription_url) && (count($v->results) > 1) ))
+                      <span class="om__state om__state--run">EN CURSO</span>
                     @endif
 
                     <div class="om__title-content">
@@ -81,9 +83,9 @@
 
                     @if(count($v->results))
                       <span class="om__state om__state--end">CULMINADO</span>
-                    @elseif(Date::now() >= $v->finish_at && (!empty($v->inscription_url)))
+                    @elseif(date("Y-m-d H:i:s") <= $v->finish_at && !empty($v->inscription_url))
                       <span class="om__state om__state--active">INSCRIPCIONES</span>
-                    @elseif(Date::now() > $v->finish_at && (!empty($v->inscription_url) && (count($v->results) > 1) ))
+                    @elseif(date("Y-m-d H:i:s") < $v->finish_at && (!empty($v->inscription_url) && (count($v->results) > 1) ))
                       <span class="om__state om__state--run">EN CURSO</span>
                     @endif
 

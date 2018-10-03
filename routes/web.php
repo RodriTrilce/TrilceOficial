@@ -46,30 +46,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
  */
 
 // Inicio (Home)
-Route::name('home')->get('/x', function () {
-  return view('home');
-});
-
-Route::name('home2')->get('/home2', function(){
-  return view('home2');
-});
-
-Route::name('home3')->get('/home3', function(){
-  return view('home3');
-});
-
-// texto grande
-Route::name('home')->get('/3', function () {
-  return view('home_3');
-});
-
-// Scubidu papa con el bum bum bum bum bum
-Route::name('home4')->get('/4', function () {
-  return view('home4');
-});
-
 Route::name('home')->get('/', function () {
-  return view('home5');
+  return view('home');
 });
 
 

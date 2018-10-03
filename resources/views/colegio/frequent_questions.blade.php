@@ -437,7 +437,9 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Si el padre de familia desea trasladar a su hijo a otra sede de Trilce, tendrá que realizar el siguiente trámite:<br><br>
+                      Si el padre de familia desea trasladar a su hijo a otra sede de Trilce, tendrá que realizar el siguiente trámite:
+                      <br />
+                      <br />
                       <strong>Requisitos:</strong><br>
                       - Libreta de notas<br>
                       - Copia del DNI del alumno<br>

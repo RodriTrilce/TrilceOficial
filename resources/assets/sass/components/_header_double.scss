@@ -12,33 +12,28 @@
     flex-wrap: wrap;
     overflow: hidden;
 
-
     @include breakpoint(baby){
-      height: 140px;
+      height: 130px;
     }
+  }
+}
 
-    >div.col-xs-12,div.col-sm-6,div.col-md-12{
-      &:nth-child(1){
-        background: $orange;
+.header-double-bottom{
+  background: $orange;
 
-        @include breakpoint(baby){
-          height: 65px;
-        }
-      }
+  @include breakpoint(baby){
+    height: 30px;
+  }
+}
 
-      &:nth-child(2){
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: cover;
+.header-double-content-top{
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 
-        @include breakpoint(baby){
-          order: -1;
-          height: 75px;
-        }
-      }
-
-    }
-
+  @include breakpoint(baby){
+    order: -1;
+    height: 100px;
   }
 }
 
@@ -51,23 +46,17 @@
   top: 50%;
 
   @include breakpoint(baby){
-//    transform: translate(-80%, 110%);
     right: -83%;
     width: 100%;
     left: unset;
-
     transform: unset;
     position: relative;
-    top: -30px;
-    left: 11px;
+    top: -28px;
+    left: 0;
+    text-align: center;
 
     &::before{
-      content: "";
-      width: 20px;
-      height: 50px;
-      background: $orange;
-      bottom: -45px;
-      position: absolute;
+      display: none;
     }
   }
 
@@ -109,16 +98,12 @@
   border: 10px solid white;
   width: 65.3%;
   height: 70%;
-  //@include margin(3rem, 20%, 2%, 20%);
-  //left: 0;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
 
-  @media screen and (max-width: 768px){
-    border: 0.3rem solid white;
-    transform: translate(-50%, 15%);
-    width: 93%;
+  @include breakpoint(baby){
+    display: none; // v2
   }
 }
 

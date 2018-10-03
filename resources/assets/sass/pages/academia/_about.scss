@@ -1,6 +1,11 @@
 .about-container{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @include breakpoint(baby){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .about-history{
@@ -52,7 +57,11 @@
 }
 
 .about-history--pcontainer{
-  margin-top: 25px;
+  margin-top: 20px;
+
+  @include breakpoint(baby){
+    margin-top: 10px;
+  }
 
   p{
     padding-bottom: 20px;
@@ -65,12 +74,8 @@
       font-size: 0.9;
     }
 
-    @media (max-width: 900px) {
-      font-size: 0.85;
-    }
-
     @media (max-width: 767px) {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
 
   }

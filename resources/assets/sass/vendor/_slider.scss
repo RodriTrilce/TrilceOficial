@@ -376,6 +376,24 @@ $banner__box--size-mobile: 5px;
   }
 }
 
+.banner__content--md{
+
+}
+
+.banner__content--xs{
+  display: none;
+}
+
+@include breakpoint(baby){
+  .banner__content--md{
+    display: none;
+  }
+
+  .banner__content--xs{
+    display: block;
+  }
+}
+
 .banner__title{
   width: 100%;
   margin-bottom: 10px;

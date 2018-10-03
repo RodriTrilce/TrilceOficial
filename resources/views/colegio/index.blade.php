@@ -129,14 +129,26 @@
 
         <div class="banner__content" style="z-index:13;">
 
-          <div class="banner__subtitle">
-            <span class="semibig orange font-geo-smbold" style="">
-              Reafirmamos nuestro compromiso <br>
-              con el planeta y eliminaremos
-              progresivamente <br> el uso del
-              plástico en nuestras sedes y cafeterías.
-            </span>
+          <div class="banner__content--md">
+            <div class="banner__subtitle">
+              <span class="semibig orange font-geo-smbold" style="">
+                Reafirmamos nuestro compromiso <br>
+                con el planeta y eliminaremos
+                progresivamente <br> el uso del
+                plástico en nuestras sedes y cafeterías.
+              </span>
+            </div>
           </div>
+
+          <div class="banner__content--xs">
+            <div class="banner__subtitle">
+              <span class="semibig orange font-geo-smbold" style="">
+                Eliminaremos progresivamente <br>
+                el uso del plástico en nuestras sedes.
+              </span>
+            </div>
+          </div>
+
         </div>
 
       </div>

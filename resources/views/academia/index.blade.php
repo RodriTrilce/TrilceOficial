@@ -160,16 +160,17 @@
 
         <div class="banner__content" style="z-index:13;">
           <div class="banner__title">
-            <span>1<sup>er</sup> puesto San&nbsp;Marcos</span>
+            <span>1.<sup>er</sup> puesto San&nbsp;Marcos</span>
           </div>
           <div class="banner__subtitle">
             <span class="normal">
               Diego Castillo Utani<br>
             </span>
             <span class="small">
-              Ingenieria Ambiental
+              ingeniería ambiental
             </span>
           </div>
+
         </div>
 
       </div>

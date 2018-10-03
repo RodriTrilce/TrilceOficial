@@ -203,14 +203,16 @@ if(page == 'venue_colegio'){
 *  Frecuent Questions
 */
 if(page == 'frequent_questions'){
-  const accordion = new BadgerAccordion('.js-badger-accordion_1');
-        tabs      = new Tabs({
-         elem: 'tabs_frequent_questions',
-         open: 0
+  const accordion1 = new BadgerAccordion('.js-badger-accordion_1'),
+        accordion2 = new BadgerAccordion('.js-badger-accordion_2'),
+        accordion3 = new BadgerAccordion('.js-badger-accordion_3'),
+        tabs       = new Tabs({
+          elem: 'tabs_frequent_questions',
+          open: 0
         });
 
   tabs.events.on('render', info => {
-   accordion.open(0);
+   accordion1.open(0);
   });
 
   tabs.init();

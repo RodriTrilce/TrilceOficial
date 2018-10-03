@@ -20,7 +20,7 @@
       <div class="js-tabs frequent_questions__tabs" id="tabs_frequent_questions">
 
           <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">Propuesta Educativa</a></li>
+              <li><a href="#" class="js-tabs__title">Sobre la academia</a></li>
               <li><a href="#" class="js-tabs__title">Matrícula</a></li>
               <li><a href="#" class="js-tabs__title">Simulacros</a></li>
               <li><a href="#" class="js-tabs__title">Otros</a></li>

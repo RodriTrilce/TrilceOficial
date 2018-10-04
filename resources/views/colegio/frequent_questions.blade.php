@@ -37,6 +37,7 @@
                       <p class="question-answer">
                         Es un sistema desarrollado por una plana docente de la especialidad según el curso que dicta, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes (exámenes diarios y simulacros semanales tipo admisión). Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, la cual va de la mano con el apoyo de un equipo de tutoras especializadas en la rama de psicología, educación o ciencias sociales.
                       </p>
+                      @include('colegio.partials.ads')
                     </div>
                   </dd>
                 </div>
@@ -709,6 +710,8 @@
 
   </div>
 </div>
+
+@include('colegio.partials.ads')
 
   @include('colegio.partials.card_bottom')
 @endsection

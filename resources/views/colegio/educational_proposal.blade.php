@@ -464,15 +464,16 @@
     </div>
   </div>
 
-<div class="row center-xs center-sm container-base">
-  <div class="row col-xs-12 col-sm-9 col-md-8 start-center start-center start-center educationalproposal__video">
-    <h1 class="educationalproposal__video-title">Nuestra propuesta</h1>
-    <br>
-    <video class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls poster="/storage/static/video/video-cover.png">
-    </video>
+  <div class="row center-xs center-sm container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-center start-center start-center educationalproposal__video">
+      <h1 class="educationalproposal__video-title">Nuestra propuesta</h1>
+      <br>
+      <video class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls poster="/storage/static/video/video-cover.png">
+      </video>
+    </div>
   </div>
-</div>
 
+  @include('colegio.partials.ads')
 
   @include('colegio.partials.card_bottom')
 @endsection

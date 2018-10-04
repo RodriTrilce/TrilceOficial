@@ -62,6 +62,9 @@
       @break
   @endswitch
 
+
+@include('colegio.partials.ads')
+
 @include('colegio.partials.card_bottom')
 
 @endsection

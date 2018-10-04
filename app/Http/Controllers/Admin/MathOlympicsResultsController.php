@@ -8,6 +8,7 @@ use App\Models\File;
 use App\Models\Academia\MathOlympicsModel as MathOlympics;
 use \Mimey\MimeTypes as Mime;
 use Storage;
+use Date;
 
 class MathOlympicsResultsController extends Controller
 {
@@ -24,7 +25,7 @@ class MathOlympicsResultsController extends Controller
 
       $i=0;
       foreach ($request->file('file_type') as $uploadme) {
-        $token            = 'resultados-' . str_slug($result->venue) . '-' . str_slug($request->file_name[$i]);
+        $token            = 'resultados-' . str_slug($result->venue) . '-' . str_slug($request->file_name[$i] . Date::parse($result->finish_at)->format("d-m-Y") );
         $location_folder  = 'academia/documents/olimpiadas-matematicas/resultados';
 
         $uploadme->storeAs('public/' . $location_folder, $token. '.' . $mime->getExtension($uploadme->getMimeType()));

@@ -16,7 +16,7 @@ class Controller extends BaseController
     public function __construct()
     {
         # Default title
-        Meta::title('Trilce');
+        Meta::title();
 
         # Default robots
         Meta::set('robots', 'index,follow');

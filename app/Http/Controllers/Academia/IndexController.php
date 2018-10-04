@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Academia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\BannersModel as Banner;
+use Meta;
 
 class IndexController extends Controller
 {
@@ -22,10 +23,17 @@ class IndexController extends Controller
     ->orderBy('position', 'asc')
     ->get();
 
+
+    Meta::set('title', ' Academia Trilce');
+    Meta::set('description', 'Academia Trilce con más de 38 años de experiencia potenciando el nivel académico y desarrollo personal de nuestros alumnos.');
+
+
+
     return view('/academia/index')
     ->with([
       'print'   => (parse_url(request()->headers->get('referer'), PHP_URL_PATH) == '/' ? true : false),
       'banners' => $banners
     ]);
+
   }
 }

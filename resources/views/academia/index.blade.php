@@ -87,6 +87,58 @@
         <div
         class="banner__image"
 
+        data-image-md="http://www.trilce.edu.pe/f/back.jpg"
+        data-position-md="right bottom"
+        data-size-md="cover"
+
+        data-image-xs="http://www.trilce.edu.pe/f/back-mobile.jpg"
+        data-position-xs="right"
+        data-size-xs="cover"
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 8;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:white;border-width:10px; z-index: 10;"></div>
+
+        <div class="banner__content" style="z-index:11;">
+          <div class="banner__title">
+            <span>No te quedes sin vacante</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              Nuevos ciclos e incorporaciones disponibles<br>
+            </span>
+            <span style="display:block;margin: 20px auto;">
+              <button class="banner__button-cta banner__button-cta--white">
+                <a href="/academia/preparacion-san-marcos">Regístrate aquí</a>
+              </button>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div>
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="9"
+        data-bordercolor="white"
+
+        style="
+          background-color: #f4633a;
+        ">
+
+        <div
+        class="banner__image"
+
         data-image-md="http://www.trilce.edu.pe/bg__t.png"
         data-position-md="right bottom"
         data-size-md="cover"
@@ -175,6 +227,8 @@
 
       </div>
     </div>
+
+
   </div>
 
 

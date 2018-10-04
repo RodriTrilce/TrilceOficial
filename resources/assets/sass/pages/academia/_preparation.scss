@@ -264,3 +264,13 @@
   }
 
 }
+
+.preparation-overflow{
+  max-height: 500px;
+  overflow-x: scroll;
+
+  @include breakpoint(baby){
+    overflow-x: visible;
+    max-height: none;
+  }
+}

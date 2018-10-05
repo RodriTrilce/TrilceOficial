@@ -139,7 +139,6 @@
 }
 
 .admission-ads{
-  background: $orange;
 
   margin-top: 20px;
   margin-bottom: 40px;
@@ -157,28 +156,35 @@
 }
 
 .admission-ads__container{
-  padding: 25px;
-  min-height: 100px;
-  color: #ffffff;
+    padding: 25px;
+    min-height: 100px;
+    color: $orange;
+    max-width: 600px;
+    /* border: 1px solid $orange; */
+    background: #efefef;
 
   @include breakpoint(baby){
     padding: 15px;
   }
 
   h1{
-    font-size: 2rem;
-
+    font-size: 1.7rem;
+    @include breakpoint(baby){
+      font-size: 1.3rem;
+    }
   }
 
 
   h1,h2{
-    color: white;
+    color: $orange;
     font-family: $font_geo_reg;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }
 
 .admission-ads__container-cta{
   padding: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  background:  $orange;
+  color: white;
 }

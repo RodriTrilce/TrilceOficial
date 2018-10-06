@@ -19,7 +19,7 @@
       <div class="js-tabs frequent_questions__tabs" id="tabs_frequent_questions">
 
           <ul class="js-tabs__header">
-            <li><a href="#" class="js-tabs__title">Propuesta Educativa</a></li>
+            <li><a href="#" class="js-tabs__title">Propuesta educativa</a></li>
             <li><a href="#" class="js-tabs__title">Trámites y admisión</a></li>
             <li><a href="#" class="js-tabs__title">Otros</a></li>
           </ul>
@@ -35,7 +35,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Es un sistema desarrollado por una plana docente de la especialidad según el curso que dicta, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes (exámenes diarios y simulacros semanales tipo admisión). Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, la cual va de la mano con el apoyo de un equipo de tutoras especializadas en la rama de psicología, educación o ciencias sociales.
+                        Es un sistema desarrollado por una plana docente de la especialidad según el curso que dicta, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes. Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, la cual va de la mano con el apoyo de un equipo de tutoras especializadas en la rama de psicología, educación o ciencias sociales.
                       </p>
                       @include('colegio.partials.ads')
                     </div>
@@ -80,12 +80,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Por qué en 4.o y 5.o de secundaria no existen horas de inglés en el horario regular?
+                    ¿Por qué en 4.<sup>o</sup> y 5.<sup>o</sup> de secundaria no existen horas de inglés en el horario regular?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Los tres primeros años, los alumnos de Trilce reciben una formación sólida en inglés y llevan ocho horas del curso a la semana (a diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales), lo que se complementa en los posteriores grados (4.o y 5.o) mediante talleres de 4 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.
+                        Los tres primeros años, los alumnos de Trilce reciben una formación sólida en inglés y llevan ocho horas del curso a la semana (a diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales), lo que se complementa en los posteriores grados (4.<sup>o</sup> y 5.<sup>o</sup>) mediante talleres de 4 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.
                       </p>
                     </div>
                   </dd>
@@ -166,12 +166,12 @@
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
                         <strong>Inicial:</strong> <br>
-                        4 a 5 años (prekínder y kínder): Se les entrega fichas para delinear y pintar. <br><br>
+                        4 a 5 años (prekínder y kínder): se les entrega fichas para delinear y pintar. <br><br>
                         <strong>Primaria:</strong><br>
                         1.<sup>o</sup> a 6.<sup>o</sup> grado: se les entrega libros por áreas.<br>
-                        1.<sup>o</sup> a 4.<sup>o</sup> grado: cuentan con un profesor por varios cursos, un profesor de inglés y uno de computación.<br>
+                        1.<sup>o</sup> a 4.<sup>o</sup> grado: cuentan con un profesor para varios cursos, un profesor de inglés y uno de computación.<br>
                         *A partir de 5.o grado cuentan con un profesor por curso (polidocencia).<br>
-                        *Religión: se dicta el curso de religión a los alumnos de inicial (prekínder y kínder) y primaria.<br><br>
+                        *Se dicta el curso de religión a los alumnos de prekínder, kínder y primaria.<br><br>
                         <strong>Secundaria:</strong><br>
                         Formación de valores: de 1.<sup>o</sup> a 5.<sup>o</sup> de secundaria, se trabaja un valor por mes.
                       </p>
@@ -312,6 +312,7 @@
                 </div>
               </div>
 
+
               <div class="frequentquestions-question row col-xs-12">
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
@@ -328,6 +329,7 @@
                 </div>
               </div>
 
+<!-- FALTA CONFIRMAR CANTIDAD DE ALUMNOS
               <div class="frequentquestions-question row col-xs-12">
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
@@ -343,6 +345,7 @@
                   </dd>
                 </div>
               </div>
+-->
 
               <div class="frequentquestions-question row col-xs-12">
                 <div class="col-xs question-content">
@@ -477,22 +480,6 @@
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
                   <div class="question-title__signe"></div>
-                  Solicitudes de descuentos por hermanos
-                </h3>
-                <dd class="badger-accordion__panel js-badger-accordion-panel">
-                  <div class="js-badger-accordion-panel-inner">
-                    <p class="question-answer">
-                      El padre de familia puede presentar su solicitud de descuento, en la cual tendrá que exponer y sustentar los motivos por los que lo solicita. Se otorgará la beca al mayor de los hermanos. La solicitud se envía hasta el 15 de enero.
-                    </p>
-                  </div>
-                </dd>
-              </div>
-            </div>
-
-            <div class="frequentquestions-question row col-xs-12">
-              <div class="col-xs question-content">
-                <h3 class="question-title js-badger-accordion-header">
-                  <div class="question-title__signe"></div>
                   Código modular del colegio
                 </h3>
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
@@ -514,7 +501,7 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Los precios son accesibles, nos permiten cubrir los costos en infraestructura y poderles brindar un servicio de excelente calidad, tanto en lo formativo como en lo académico. Solo si el padre insiste, se debe involucrar el mantenimiento de la infraestructura, el incremento del costo de vida, insumos, etc.
+                      Los precios son accesibles, nos permiten cubrir los costos en infraestructura y poderles brindar un servicio de excelente calidad, tanto en lo formativo como en lo académico.
                     </p>
                   </div>
                 </dd>
@@ -525,12 +512,12 @@
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
                   <div class="question-title__signe"></div>
-                  Descuentos para hermanos y alumnos nuevos
+                  ¿Hay descuentos por hermanos?
                 </h3>
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      En caso el padre de familia desee un descuento, tendrá que presentar su solicitud, exponiendo y sustentando los motivos por los cuales solicita el descuento. Asimismo, recalcamos que por dos hermanos matriculados en nuestra institución, uno recibe un cuarto de beca; por tres y cuatro hermanos, uno de ellos recibe media beca. Para esto, deben ser evaluados como cualquier alumno que ingresa a Trilce. Se otorga la beca al mayor de los hermanos.
+                      El padre de familia puede presentar su solicitud de descuento, en la cual tendrá que exponer y sustentar los motivos por los que lo solicita. Asimismo, recalcamos que por dos hermanos matriculados en nuestra institución, uno recibe un cuarto de beca; por tres y cuatro hermanos, uno de ellos recibe media beca. Para esto, deben ser evaluados como cualquier alumno que ingresa a Trilce. Se otorga la beca al mayor de los hermanos.
                     </p>
                   </div>
                 </dd>

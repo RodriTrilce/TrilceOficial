@@ -52,6 +52,8 @@
                   <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>619-8100</b></a></div>
                 </li>
 
+                <li class=""><a href="/academia">Academia</a></li>
+
                 <li class="nav-colegio-aboutus">
                   <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>
                   <div class="dropdown-desk xs-hide-force">

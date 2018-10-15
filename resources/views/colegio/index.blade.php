@@ -3,7 +3,7 @@
 
 @section('title', '')
 
-@if($print)
+{{-- @if($print)
   @section('afterBody')
     <div id="loader-wrapper"><div id="loader" class=""></div><div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
@@ -12,7 +12,7 @@
       </div>
     </div>
   @endsection
-@endif
+@endif --}}
 
 @section('content')
 

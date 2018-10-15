@@ -56,6 +56,9 @@
                   <div><a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a></div>
                   <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>619-8100</b></a></div>
                 </li>
+
+                <li class=""><a href="/colegio">Colegio</a></li>
+
                 <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
 
                 <li class="nav-venues xs-hide" id="sedes">

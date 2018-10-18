@@ -24,9 +24,24 @@
     </div>
   </div>
 
+  @switch($type)
+    @case('san-marcos')
+      @include('academia.partials.preparation.san-marcos')
+      @break
+
+    @case('uni')
+      @include('academia.partials.preparation.uni')
+      @break
+
+    @case('pucp')
+      @include('academia.partials.preparation.pucp')
+      @break
+  @endswitch
+
+
+<!--
   <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
-    <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-sm center-md">
-      <div class="row col-xs-12 col-sm-8 col-md-7 start-xs start-sm start-md beginning-container beginning-minus">
+      <div class="row col-xs-12 col-sm-3 col-md-3 start-xs start-sm start-md beginning-container beginning-minus">
 
         <div class="col-xs beginning--item @if($type=='uni') beginning--item-active @endif">
           <a href="/academia/preparacion-uni" class="item-a">
@@ -63,46 +78,12 @@
         </div>
 
       </div>
-    </div>
   </div>
-
-  <input type="text" id="_university" value="{{ ($type=='san-marcos'?'sm':$type) }}" hidden>
-
-  <div class="row col-xs-12 center-xs nuevos-i-list container-base">
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-md start-xs start-sm nuevos-i-list-selects">
-      @switch($type)
-        @case('san-marcos')
-          @include('academia.partials.preparation.san-marcos')
-          @break
-
-        @case('uni')
-          @include('academia.partials.preparation.uni')
-          @break
-
-        @case('pucp')
-          @include('academia.partials.preparation.pucp')
-          @break
-      @endswitch
-    </div>
-
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs table-responsive preparation-overflow" id="drawTables">
-    </div>
-
-  </div>
-
-  {{-- <div class="row col-xs-12 center-xs button-register-academia">
-    <div class="col-xs-10 col-sm-5">
-      <a href="http://www.trilce.edu.pe/inscripcion/" target="_blank"><img src="/static/images/academia/button-register.png" alt="No te quedes sin vacante"></a>
-    </div>
-  </div> --}}
-
-</div>
+-->
 
 @include('academia.partials.card_bottom')
 @endsection
-
 @section('scripts')
   page = 'preparation';
 @parent
-
 @endsection

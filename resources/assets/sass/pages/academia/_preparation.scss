@@ -267,10 +267,49 @@
 
 .preparation-overflow{
   max-height: 500px;
-  overflow-x: scroll;
+  overflow-y: scroll;
 
   @include breakpoint(baby){
     overflow-x: visible;
     max-height: none;
+  }
+}
+
+
+.preparation__section{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+.preparation__title{
+
+}
+
+.preparation__title{
+  display: block;
+  font-size: 3rem;
+  font-family: $font_cae_heavy;
+
+  @include breakpoint(baby){
+    font-size: 1.3rem;
+  }
+
+  &.preparation__title--and{
+    color: $gray;
+    font-size: 2rem;
+  }
+}
+
+.preparation__subtitle{
+  display: block;
+  margin-top: 10px;
+  font-family: $font_geo_md;
+  color: $gray;
+  letter-spacing: 2px;
+
+  @include breakpoint(baby){
+    font-size: 1rem;
   }
 }

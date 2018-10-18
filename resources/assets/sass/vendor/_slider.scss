@@ -206,6 +206,7 @@
   //    width: 100% !important;
 }
 
+
 .tns-nav{
   bottom: 30px;
   display: flex;
@@ -215,14 +216,18 @@
   width: 100%;
   z-index: 1;
 
+  @include breakpoint(baby){
+    bottom: 20px;
+  }
+
   button{
     border: 0;
     border-radius: 5px;
     background: #fff;
-    opacity: .2;
+    opacity: .9;
     margin-right: 10px;
-    height: 12px;
-    width: 12px;
+    height: 11px;
+    width: 11px;
     padding: 0;
     box-shadow: 0px 0px 5px $gray;
     transition: width height .1s ease-in-out;
@@ -236,12 +241,12 @@
 }
 
 button.tns-nav-active{
-  height: 15px;
-  width: 15px;
+  height: 11px;
+  width: 11px;
   opacity: 1;
-  background: transparent !important;
+  background: white !important;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 10px black;
 
 }
 
@@ -261,7 +266,6 @@ button.tns-nav-active{
 
 $banner__box--size: 10px;
 $banner__box--size-mobile: 5px;
-
 
 .banner__box{
   position: absolute;
@@ -330,15 +334,15 @@ $banner__box--size-mobile: 5px;
 
 .banner__content{
   position: relative;
-  padding-right: 25%;
-  width: 80%;
+  width: 75%;
   margin-right: 0;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-54%);
 
   @include breakpoint(baby){
     width: 90%;
+    transform: translateX(-51.5%);
   }
 
 
@@ -439,6 +443,16 @@ $banner__box--size-mobile: 5px;
     }
   }
 
+  span.normal-litle{
+    font-family: $font_geo_lite;
+    font-size: 1.5rem;
+    line-height: 95%;
+
+    @include breakpoint(baby){
+      font-size: 1rem;
+    }
+  }
+
   span.small{
     color: white;
     font-family: $font_geo_reg;
@@ -491,7 +505,6 @@ $banner__box--size-mobile: 5px;
   color: $orange;
 }
 
-
 .banner__content--colegio{
 
   .banner__title{
@@ -501,7 +514,7 @@ $banner__box--size-mobile: 5px;
 
       @include breakpoint(baby){
         text-shadow: none;
-//        text-shadow: 0px 0px 2px $gray;
+        //        text-shadow: 0px 0px 2px $gray;
       }
     }
   }
@@ -526,13 +539,27 @@ $banner__box--size-mobile: 5px;
 
 }
 
+.banner__content__rigth{
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 27%;
+  padding: 10px;
+  line-height: 23px;
 
-// Modificadores bg banner
-@include breakpoint(baby)
-{
-  .banner__image--bg-m-cover{
-    background-size: cover !important;
+  &.banner__content__rigth--align-center{
+    top: 50%;
+    transform: translateY(-50%);
   }
+}
+
+.banner__content--mobile-padding-left{
+  @include breakpoint(baby){
+    padding-right: 30%;
+  }
+}
+.banner__content--desktop-padding-left{
+    padding-right: 30%;
 }
 
 
@@ -540,7 +567,10 @@ $banner__box--size-mobile: 5px;
 
 
 
-/**/
+
+
+
+
 
 // Loading block effect
 
@@ -550,7 +580,7 @@ $banner__box--size-mobile: 5px;
   position: absolute;
   height: 500px;
   z-index: 15;
-//  transition: all .5s ease-in-out;
+  //  transition: all .5s ease-in-out;
   opacity: 1;
   pointer-events: none;
   padding-top: 100px;

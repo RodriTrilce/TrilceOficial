@@ -103,7 +103,10 @@
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
         <div class="banner__box"  style="border-color:white;border-width:10px; z-index: 10;"></div>
 
-        <div class="banner__content" style="z-index:11;">
+        <div class="
+        banner__content
+        banner__content--mobile-padding-left
+        " style="z-index:11;">
           <div class="banner__title">
             <span>No te quedes sin vacante</span>
           </div>
@@ -155,7 +158,10 @@
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
         <div class="banner__box"  style="border-color:white;border-width:10px; z-index: 10;"></div>
 
-        <div class="banner__content" style="z-index:11;">
+        <div class="
+        banner__content
+        banner__content--mobile-padding-left
+        " style="z-index:11;">
           <div class="banner__title">
             <span>San Marcos</span>
           </div>
@@ -210,7 +216,9 @@
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
         <div class="banner__box"  style="border-color:white;border-width:10px; z-index:11;"></div>
 
-        <div class="banner__content" style="z-index:13;">
+        <div class="
+        banner__content
+        " style="z-index:13;">
           <div class="banner__title">
             <span>1.<sup>er</sup> puesto San&nbsp;Marcos</span>
           </div>

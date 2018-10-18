@@ -40,7 +40,7 @@
     <div class="banner__loader-line"></div>
   </div>
   <div class="index-banners">
-    <div>
+    <div data-title="admision 2019">
         <div
         class="
           banner__item
@@ -63,7 +63,7 @@
 
         data-image-xs="http://www.trilce.edu.pe/tt_nina.png"
         data-position-xs="bottom right"
-        data-size-xs="60%"
+        data-size-xs="58vw"
 
         style="
         background-repeat: no-repeat;
@@ -73,7 +73,10 @@
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
         <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
 
-        <div class="banner__content banner__content--colegio" style="z-index:11;">
+        <div class="banner__content
+        banner__content--colegio
+        banner__content--mobile-padding-left
+        " style="z-index:11;">
           <div class="banner__title">
             <span>
               <style>
@@ -115,8 +118,7 @@
 
       </div>
     </div>
-
-    <div>
+    <div data-title="eco trilce">
         <div
         class="
           banner__item
@@ -149,7 +151,9 @@
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
         <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
 
-        <div class="banner__content" style="z-index:13;">
+        <div class="banner__content
+        banner__content--mobile-padding-left
+        " style="z-index:13;">
 
           <div class="banner__content--md">
             <div class="banner__subtitle">
@@ -170,6 +174,68 @@
               </span>
             </div>
           </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div data-title="tablet gratuita">
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="9"
+        data-shadow-opacity=".15"
+        data-bordercolor="#f4633a"
+
+        style="
+          background-color: #ffffff;
+        ">
+
+        <div
+        class="banner__image"
+
+        data-image-md="https://kindlesupportnumber.com/images/banner3.png"
+        data-position-md="center"
+        data-size-md="contain"
+
+        data-image-xs="https://kindlesupportnumber.com/images/banner3.png"
+        data-position-xs="bottom right"
+        data-size-xs="58vw"
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 11;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
+
+        <div class="banner__content
+        banner__content--colegio
+        banner__content--mobile-padding-left
+        " style="z-index:11;">
+
+            <br>
+            <div class="banner__title">
+              <span>
+                Tablet gratuita
+              </span>
+            </div>
+            <div class="banner__subtitle">
+              <span class="normal">
+                Contribuyendo con el medio ambiente<br>
+              </span>
+            </div>
+            <div class="banner__content__rigth banner__content__rigth--align-center xs-hide">
+              <div class="banner__subtitle">
+                <span class="normal-litle">
+                  Hemos dejado de imprimir <br >300 000 libros, lo que equivale a más de mil árboles talados al año.<br>
+                </span>
+              </div>
+            </div>
+            <br>
 
         </div>
 

@@ -468,7 +468,7 @@
     <div class="row col-xs-12 col-sm-9 col-md-8 start-center start-center start-center educationalproposal__video">
       <h1 class="educationalproposal__video-title">Nuestra propuesta</h1>
       <br>
-      <video class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls poster="/storage/static/video/video-cover.png">
+      <video poster="/storage/static/images/other/cover_video.png" class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls poster="/storage/static/video/video-cover.png">
       </video>
     </div>
   </div>

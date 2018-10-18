@@ -76,14 +76,36 @@
         <div class="banner__content banner__content--colegio" style="z-index:11;">
           <div class="banner__title">
             <span>
-              <i class="fa fa-graduation-cap"></i>
-              <br>
+              <style>
+                .b1__birrete{
+                  max-width: 80px;
+                  fill: #f4633a;
+                  display: block;
+                }
+
+                @media (max-width: 765px){
+                  .b1__birrete{
+                    max-width: 40px;
+                  }
+                }
+              </style>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="b1__birrete" x="0px" y="0px" viewBox="0 0 42.672 42.672" xml:space="preserve">
+              	<g>
+              		<path d="M38.729,25.815v-4.09l3.943-2.179L21.337,8.151L0,19.547l8.506,4.94v2.909v0.229c0.023-0.012,0.052-0.023,0.077-0.035    c-0.091,0.125-0.15,0.247-0.15,0.375c0,1.428,5.774,2.592,12.904,2.592c7.126,0,12.906-1.164,12.906-2.592    c0-0.128-0.062-0.25-0.15-0.375c0.025,0.015,0.054,0.023,0.076,0.035v-0.229v-2.917l3.711-2.283v3.619    c-0.405,0.166-0.69,0.568-0.69,1.034c0,0.616,0.499,1.116,1.114,1.116c0.621,0,1.119-0.5,1.119-1.116    C39.423,26.383,39.139,25.981,38.729,25.815z M21.337,29.574c-6.327,0-11.453-0.722-11.453-1.608s5.126-1.606,11.453-1.606    c6.324,0,11.452,0.72,11.452,1.606S27.661,29.574,21.337,29.574z M33.89,22.103c-0.85-0.909-3.908-3.295-12.553-3.295    c-8.65,0-11.703,2.388-12.552,3.298v-0.864c0,0,2.476-3.717,12.552-3.717c10.075,0,12.553,3.717,12.553,3.717V22.103z"/>
+              		<path d="M37.4,28.194l-0.468,6.328c1.36-2.109,2.481-1.314,2.481-1.314v-5.014C37.963,28.757,37.4,28.194,37.4,28.194z"/>
+              	</g>
+              </svg>
+            </span>
+
+            <span>
+              {{-- <i class="fa fa-graduation-cap"></i>
+              <br> --}}
               Admisión 2019
             </span>
           </div>
           <div class="banner__subtitle">
             <span class="normal">
-              ¡No te quedes sin <strong>vacante</strong>!<br>
+              ¡Separa la vacante de tu <strong>hijo</strong>!<br>
             </span>
             <span style="display:block;margin: 20px auto;">
               <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/admision-nuevo">Regístrate aquí</a></button>
@@ -93,7 +115,7 @@
 
       </div>
     </div>
--
+
     <div>
         <div
         class="

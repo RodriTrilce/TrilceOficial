@@ -144,7 +144,7 @@
 
                 </li>
 
-                <li><a href="/colegio/admision-nuevo" class="{{ (Request::is('colegio/admision*')?'nav-item-active nav-item-noclick':'') }}">Admisión</a></li>
+                <li><a href="/colegio/matricula-nuevo" class="{{ (Request::is('colegio/matricula*')?'nav-item-active nav-item-noclick':'') }}">Matrícula</a></li>
 
                 <!-- Only mobile -->
                 <li class="menu-click-sedes">

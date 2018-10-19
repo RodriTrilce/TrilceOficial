@@ -32,13 +32,12 @@
   </div>
 -->
 
-
-
   <div class="banner__loader">
     <div class="banner__loader-title"></div>
     <div class="banner__loader-line"></div>
     <div class="banner__loader-line"></div>
   </div>
+
   <div class="index-banners">
     <div data-title="admision 2019">
         <div
@@ -186,7 +185,7 @@
           banner__item--left
           "
         data-shadow="9"
-        data-shadow-opacity=".2"
+        data-shadow-opacity=".15"
         data-bordercolor="#f4633a"
 
         style="
@@ -197,11 +196,11 @@
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_19_octubre_500x500.png"
-        data-position-md="center"
+        data-position-md="center bottom"
         data-size-md="26%"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_19_octubre_250x250.png"
-        data-position-xs="center right"
+        data-position-xs="bottom right"
         data-size-xs="53vw"
 
         style="
@@ -241,7 +240,91 @@
 
       </div>
     </div>
+    <div data-title="ser mejores personas">
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="9"
+        data-shadow-opacity=".15"
+        data-bordercolor="#f4633a"
 
+        style="
+          background-color: #ffffff;
+        ">
+
+        <div
+        class="banner__image"
+
+        data-image-md="/storage/static/images/banner/ogro/banner_sumate_19_octubre_500x500.png"
+        data-position-md="75% bottom"
+        data-size-md="26%"
+
+        data-image-xs="/storage/static/images/banner/ogro/banner_sumate_19_octubre_250x250.png"
+        data-position-xs="bottom right"
+        data-size-xs="50vw"
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 11;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
+
+        <div class="banner__content
+        banner__content--colegio
+        banner__content--mobile-padding-left
+        " style="z-index:11;">
+          <div class="banner__title">
+            <span>
+              <style>
+                .b1__svg-smp{
+                  max-width: 60px;
+                  fill: #f4633a;
+                  display: block;
+                  padding-left: 10px;
+                }
+
+                @media (max-width: 765px){
+                  .b1__svg-smp{
+                    padding-left: 5px;
+                    max-width: 35px;
+                  }
+                }
+              </style>
+              <svg version="1.1" class="b1__svg-smp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 57 62">
+              	<g>
+              		<path d="M43,32.2c-3.9,0-7.2-3.1-7.2-7.2c0-3.9,3.1-7.2,7.2-7.2c3.9,0,7.2,3.1,7.2,7.2C50.1,29,46.9,32.2,43,32.2
+              			L43,32.2z M43,20.2c-2.7,0-5,2.3-5,5c0,2.7,2.3,5,5,5c2.7,0,5-2.3,5-5C48,22.4,45.8,20.2,43,20.2L43,20.2z M43,20.2"/>
+              		<path d="M49.6,56.5H36.4v-6.9h-4.2V40c0-3.8,2.4-6.8,5.3-6.8h11.2c2.9,0,5.3,3,5.3,6.8v9.5h-4.2v6.9H49.6z
+              			 M38.4,54.3h9v-6.9h4.2v-7.5c0-2.5-1.4-4.7-3.1-4.7H37.4c-1.7,0-3.1,2.2-3.1,4.7v7.5h4.2v6.9H38.4z M38.4,54.3"/>
+              		<path d="M13.9,32.2c-3.9,0-7.2-3.1-7.2-7c0-4,3.3-7.2,7.2-7.2s7.2,3.1,7.2,7.2C21,29.1,17.8,32.2,13.9,32.2
+              			L13.9,32.2z M13.9,20.2c-2.8,0-5,2.2-5,5c0,2.8,2.3,5,5,5s5-2.3,5-5C18.9,22.4,16.6,20.2,13.9,20.2L13.9,20.2z M13.9,20.2"/>
+              		<path d="M20.5,56.5H7.3v-6.9H3.1V40c0-3.8,2.4-6.8,5.3-6.8h11.2c2.9,0,5.3,3,5.3,6.8v9.5h-4.2v6.9H20.5z M9.4,54.3
+              			h9v-6.9h4.2v-7.5c0-2.5-1.4-4.7-3.1-4.7H8.3c-1.7,0-3.1,2.2-3.1,4.7v7.5h4.2V54.3z M9.4,54.3"/>
+              		<path d="M22.4,19.8v-2.7h-0.8c-0.5,0-1.1-0.4-1.1-1.1V6.6c0-0.5,0.4-1.1,1.1-1.1h15.7c0.5,0,1.1,0.4,1.1,1.1v9.5
+              			c0,0.5-0.4,1.1-1.1,1.1h-9.8l-3.5,3.5C23.5,21.2,22.4,20.9,22.4,19.8L22.4,19.8z M22.7,15.1h0.8c0.5,0,1.1,0.4,1.1,1.1v1.2
+              			l1.9-1.9c0.2-0.2,0.4-0.3,0.8-0.3h9.1V7.7H22.7V15.1z M22.7,15.1"/>
+              	</g>
+              </svg>
+            </span>
+
+            <span>
+              ¡Súmate a la campaña!
+            </span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              Ser mejores personas<br />
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <div class="nuevos-i container-base">
@@ -255,7 +338,7 @@
 
       <div class="row col-xs-12 col-sm-10 between-xs center-sm nuevos-i-box nuevos-colegio block-effecthover">
         <div class="col-xs block-effecthover-item">
-          <a href="/colegio/admision-nuevo">
+          <a href="/colegio/matricula-nuevo">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="UNI">
               <h3>Alumno <div class="modality modality-blue">nuevo</div></h3>
@@ -263,7 +346,7 @@
           </a>
         </div>
         <div class="col-xs block-effecthover-item">
-          <a href="/colegio/admision-traslado">
+          <a href="/colegio/matricula-traslado">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="UNMSM">
               <h3>Alumno <div class="modality modality-yellow">traslado</div></h3>
@@ -271,7 +354,7 @@
           </a>
         </div>
         <div class="col-xs block-effecthover-item">
-          <a href="/colegio/admision-regular">
+          <a href="/colegio/matricula-regular">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="PUCP">
               <h3>Alumno <div class="modality modality-orange">regular</div></h3>

@@ -151,7 +151,7 @@ Route::name('colegio-index')
 
 // Admisión (Admission)
 Route::name('colegio-admission')
-      ->get('/colegio/admision-{modality}', 'Colegio\AdmissionController@index');
+      ->get('/colegio/matricula-{modality}', 'Colegio\AdmissionController@index');
 
 // Nosotros (AboutUs)
 Route::name('colegio-aboutus')

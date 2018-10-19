@@ -17,7 +17,7 @@ Breadcrumbs::for('colegio-index', function ($trail) {
 // Colegio > Admission
 Breadcrumbs::for('colegio-admission', function ($trail, $modality) {
     $trail->parent('colegio-index');
-    $trail->push('Admisión alumno ' . ($modality), route('colegio-admission', $modality));
+    $trail->push('Matrícula alumno ' . ($modality), route('colegio-admission', $modality));
 });
 
 // Colegio > AboutUs

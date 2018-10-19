@@ -321,7 +321,7 @@
 .preparation_tabs{
 
   .js-tabs__content{
-    padding-top: 50px;
+    padding-top: 20px;
 
     @include breakpoint(baby){
       padding-top: 10px;
@@ -355,7 +355,7 @@
   li{
     text-align: start;
     font-family: $font_geo_reg;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
   }
 }
 
@@ -367,6 +367,14 @@
      list-style: outside none none;
      width: 50%;
    }
+
+}
+
+.preparation__courses-list{
+  h1.sub-title{
+    margin-bottom: 10px;
+  }
+
 }
 
 
@@ -389,5 +397,17 @@
 
   @include breakpoint(baby){
     margin-top: 0;
+  }
+
+  strong.orange{
+    color: $orange;
+  }
+
+  &.preparation__cicles__section--double{
+    padding-right: 40px;
+
+    @include breakpoint(baby){
+      padding-right: 0;
+    }
   }
 }

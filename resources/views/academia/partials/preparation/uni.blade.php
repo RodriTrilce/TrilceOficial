@@ -1,4 +1,4 @@
-<div class="row col-xs-12 center-xs preparation__section">
+<div class="row col-xs-12 center-xs container-base preparation__section">
     <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-md preparation__title">
       <h1 class="preparation__title">¡Estudia con los mejores!</h1>
       <h3 class="preparation__subtitle">Encuentra todos nuestros ciclos disponibles</h3>
@@ -54,23 +54,23 @@
               <div class="row col-xs-12 col-sm-10 start-sm preparation__cicles">
                 <div class="col-xs-12 col-sm-6 preparation__cicles__section">
                   <p>
-                    <strong>Anual:</strong> Dirigido a alumnos que desean iniciar su preparación académica. Duración: 42 semanas aprox.
+                    <strong class="orange">Anual:</strong> Dirigido a alumnos que desean iniciar su preparación académica. Duración: 42 semanas aprox.
                   </p>
 
                   <p>
-                    <strong>Repaso:</strong> Dirigido a alumnos que cuentan con base académica (Anual o Semestral completos) y próximos a postular en febrero. Duración: 9 semanas (primer inicio), 6 semanas (segundo inicio).
+                    <strong class="orange">Repaso:</strong> Dirigido a alumnos que cuentan con base académica (Anual o Semestral completos) y próximos a postular en febrero. Duración: 9 semanas (primer inicio), 6 semanas (segundo inicio).
                   </p>
 
                   <p>
-                    <strong>Semestral Mañana:</strong> Dirigido a alumnos que cuentan con una preparación académica previa. Duración: 23 semanas aprox.
+                    <strong class="orange">Semestral Mañana:</strong> Dirigido a alumnos que cuentan con una preparación académica previa. Duración: 23 semanas aprox.
                   </p>
 
                   <p>
-                    <strong>Semestral Tarde:</strong> Dirigido a escolares que desean postular en el examen de Ingreso Escolar Nacional UNI. Duración: 18 semanas aprox.
+                    <strong class="orange">Semestral Tarde:</strong> Dirigido a escolares que desean postular en el examen de Ingreso Escolar Nacional UNI. Duración: 18 semanas aprox.
                   </p>
 
                   <p>
-                    <strong>Verano:</strong> Dirigido a alumnos que desean adquirir una base académica previa a una preparación  preuniversitaria. Duración: 7 semanas aprox.
+                    <strong class="orange">Verano:</strong> Dirigido a alumnos que desean adquirir una base académica previa a una preparación  preuniversitaria. Duración: 7 semanas aprox.
                   </p>
 
                 </div>
@@ -117,7 +117,7 @@
 
 
 
-<div class="row col-xs-12 center-xs preparation__section">
+<div class="row col-xs-12 center-xs container-base preparation__section">
     <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-md preparation__title">
       <h1 class="preparation__title preparation__title--and">También contamos con la preparación</h1>
     </div>
@@ -130,7 +130,7 @@
           <a href="/academia/preparacion-san-marcos" class="item-a">
             <div class="item-a-container">
               <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="Nuevos Inicios">
-              <div class="item-a-preparation">Preparación</div>
+              <div class="item-a-preparation"><br /></div>
               <span class="item-a-university">SAN MARCOS</span>
             </div>
           </a>
@@ -142,7 +142,7 @@
           <a href="/academia/preparacion-pucp" class="item-a">
             <div class="item-a-container">
               <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="Nuevos Inicios">
-              <div class="item-a-preparation">Preparación</div>
+              <div class="item-a-preparation"><br /></div>
               <span class="item-a-university">PUCP</span>
             </div>
           </a>

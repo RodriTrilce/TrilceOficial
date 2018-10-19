@@ -329,23 +329,23 @@
                 </div>
               </div>
 
-<!-- FALTA CONFIRMAR CANTIDAD DE ALUMNOS
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿Qué pasa si mi hijo no entiende algunos cursos?
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        Al alumno se le brindará asesorías gratuitas y un control constante por parte de la tutora del aula para que el padre de familia conozca el progreso de su hijo.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
--->
+              <!-- FALTA CONFIRMAR CANTIDAD DE ALUMNOS
+                            <div class="frequentquestions-question row col-xs-12">
+                              <div class="col-xs question-content">
+                                <h3 class="question-title js-badger-accordion-header">
+                                  <div class="question-title__signe"></div>
+                                  ¿Qué pasa si mi hijo no entiende algunos cursos?
+                                </h3>
+                                <dd class="badger-accordion__panel js-badger-accordion-panel">
+                                  <div class="js-badger-accordion-panel-inner">
+                                    <p class="question-answer">
+                                      Al alumno se le brindará asesorías gratuitas y un control constante por parte de la tutora del aula para que el padre de familia conozca el progreso de su hijo.
+                                    </p>
+                                  </div>
+                                </dd>
+                              </div>
+                            </div>
+              -->
 
               <div class="frequentquestions-question row col-xs-12">
                 <div class="col-xs question-content">
@@ -690,10 +690,7 @@
 
           </div>
 
-
-
       </div>
-
 
   </div>
 </div>

@@ -103,7 +103,7 @@
             <span>
               {{-- <i class="fa fa-graduation-cap"></i>
               <br> --}}
-              Admisión 2019
+              Matrícula 2019
             </span>
           </div>
           <div class="banner__subtitle">
@@ -186,7 +186,7 @@
           banner__item--left
           "
         data-shadow="9"
-        data-shadow-opacity=".15"
+        data-shadow-opacity=".2"
         data-bordercolor="#f4633a"
 
         style="
@@ -196,13 +196,13 @@
         <div
         class="banner__image"
 
-        data-image-md="https://kindlesupportnumber.com/images/banner3.png"
+        data-image-md="/storage/static/images/banner/ogro/banner_19_octubre_500x500.png"
         data-position-md="center"
-        data-size-md="contain"
+        data-size-md="26%"
 
-        data-image-xs="https://kindlesupportnumber.com/images/banner3.png"
-        data-position-xs="bottom right"
-        data-size-xs="58vw"
+        data-image-xs="/storage/static/images/banner/ogro/banner_19_octubre_250x250.png"
+        data-position-xs="center right"
+        data-size-xs="53vw"
 
         style="
         background-repeat: no-repeat;
@@ -223,7 +223,7 @@
                 Tablet gratuita
               </span>
             </div>
-            <div class="banner__subtitle">
+            <div class="banner__subtitle xs-hide">
               <span class="normal">
                 Contribuyendo con el medio ambiente<br>
               </span>
@@ -248,7 +248,7 @@
     <div class="row center-xs">
       <div class="col-xs-12 col-sm-9 col-md-8 start-xs nuevos-i-title">
         <div class="box">
-          <h2>Admisión 2019</h2>
+          <h2>Matrícula 2019</h2>
           <p>Elige la modalidad que más se adecúe a tus necesidades</p>
         </div>
       </div>

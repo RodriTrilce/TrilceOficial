@@ -85,5 +85,6 @@
 @endsection
 @section('scripts')
   page = 'preparation';
+  var type = '{{$type}}'
 @parent
 @endsection

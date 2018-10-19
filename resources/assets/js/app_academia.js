@@ -63,9 +63,11 @@ String.prototype.capitalize = function(){
  *  Index
  */
  if(page == 'index'){
+  /*
   setTimeout(function(){
     document.body.className += ' loaded';
   }, 1000);
+  */
 
   var modal = new VanillaModal();
   var slider = tns({
@@ -93,8 +95,27 @@ String.prototype.capitalize = function(){
   * Preparation
   */
   if(page == 'preparation'){
-    var init_preparation = new Preparation();
+    var init_preparation = new Preparation(),
+        init_tabs = new Tabs({
+          elem : 'preparation_tabs',
+          open : 0
+        });
+
+    init_tabs.init();
     init_preparation.init();
+
+    /*
+        switch (type) {
+          case 'uni':
+          break;
+
+          case 'san-marcos':
+          break;
+
+          case 'pucp':
+          break;
+        }
+    */
   }
 
 /**!
@@ -142,7 +163,7 @@ String.prototype.capitalize = function(){
  *  Math Olympics
  */
  if(page == 'math_olympics'){
-   const accordion1  = new BadgerAccordion('.js-badger-accordion_1'),
+   var accordion1  = new BadgerAccordion('.js-badger-accordion_1'),
          accordion2 = new BadgerAccordion('.js-badger-accordion_2'),
          tabs       = new Tabs({
            elem: 'om__tabs',
@@ -156,7 +177,7 @@ String.prototype.capitalize = function(){
  *  Frecuent Questions
  */
  if(page == 'frequent_questions'){
-   const accordion1 = new BadgerAccordion('.js-badger-accordion_1'),
+   var accordion1 = new BadgerAccordion('.js-badger-accordion_1'),
          accordion2 = new BadgerAccordion('.js-badger-accordion_2'),
          accordion3 = new BadgerAccordion('.js-badger-accordion_3'),
          accordion4 = new BadgerAccordion('.js-badger-accordion_4'),

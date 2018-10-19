@@ -299,6 +299,10 @@
   &.preparation__title--and{
     color: $gray;
     font-size: 2rem;
+
+    @include breakpoint(baby){
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -311,5 +315,79 @@
 
   @include breakpoint(baby){
     font-size: 1rem;
+  }
+}
+
+.preparation_tabs{
+
+  .js-tabs__content{
+    padding-top: 50px;
+
+    @include breakpoint(baby){
+      padding-top: 10px;
+    }
+  }
+}
+
+.preparation__courses-list{
+  padding-top: 70px;
+
+  @include breakpoint(baby){
+    padding-top: 0;
+  }
+}
+
+.ul-li-squared{
+  li{
+    &::before{
+      content: "\F323";
+      color: $orange;
+      font-family: $font_icon;
+      font-size: 12px;
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
+
+.preparation__list-ul{
+  li{
+    text-align: start;
+    font-family: $font_geo_reg;
+    margin-bottom: 10px;    
+  }
+}
+
+.preparation__courses-list-ul{
+  display: inline-block;
+
+   li{
+     float: left;
+     list-style: outside none none;
+     width: 50%;
+   }
+}
+
+
+.preparation__cicles{
+
+  p{
+    margin-bottom: 30px;
+    padding-right: 5px;
+    text-align: justify;
+    font-family: $font_geo_reg;
+
+    @include breakpoint(baby){
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.preparation__cicles__section{
+  margin-top: 70px;
+
+  @include breakpoint(baby){
+    margin-top: 0;
   }
 }

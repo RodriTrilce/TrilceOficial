@@ -1,0 +1,68 @@
+.banner__style_primer-reverse{
+  display: none;
+
+  @include breakpoint(baby){
+    display: block;
+  }
+}
+
+.banner__style_primer{
+  width: 100%;
+}
+
+.banner__style_primer__a{
+  display: inline-block;
+  min-width: 400px;
+}
+
+.banner__style_primer__b{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+
+  @include breakpoint(baby){
+    display: none;
+  }
+}
+
+.banner__style_primer__number{
+  color: white; ////////////////////////////////////////
+  text-align: center;
+
+  .number{
+    font-size: 7rem;
+    line-height: 95px;
+    position: relative;
+    right: -10px;
+  }
+
+  sup{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .banner__style_primer__number-puesto{
+    display: block;
+    font-size: 1.3rem;
+    font-family: $font_geo_smbold;
+  }
+}
+
+.banner__style_primer__text{
+  text-align: center;
+  font-size: 3rem;
+  color: white; ////////////////////////////////////////
+  font-family: $font_cae_bold;
+}
+
+.banner__style_primer--colegio{
+  .banner__style_primer__number{
+    color: $orange;
+  }
+
+  .banner__style_primer__text{
+    color: $orange;
+  }
+}

@@ -338,6 +338,8 @@
 }
 
 .ul-li-squared{
+  text-align: start;
+
   li{
     &::before{
       content: "\F323";

@@ -539,6 +539,7 @@ $banner__box--size-mobile: 5px;
 
 }
 
+
 .banner__content__rigth{
   position: absolute;
   right: 0;
@@ -630,3 +631,7 @@ $banner__box--size-mobile: 5px;
 		background-color: rgba(165,165,165,.1);
 	}
 }
+
+
+// importar estilos banners slider
+@import "banner_styles/all";

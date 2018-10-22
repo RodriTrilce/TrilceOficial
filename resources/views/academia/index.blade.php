@@ -49,6 +49,7 @@
       </div>
     </div>
   @endif
+
 <!--
   <div class="index-banners">
     @foreach ($banners as $banner)
@@ -70,6 +71,7 @@
     <div class="banner__loader-line"></div>
     <div class="banner__loader-line"></div>
   </div>
+
   <div class="index-banners">
     <div>
         <div
@@ -124,8 +126,6 @@
 
       </div>
     </div>
-
-
     <div>
         <div
         class="
@@ -182,7 +182,6 @@
 
       </div>
     </div>
-
     <div>
         <div
         class="
@@ -227,7 +226,7 @@
               Diego Castillo Utani<br>
             </span>
             <span class="small">
-              ingeniería ambiental
+              Ingeniería Ambiental
             </span>
           </div>
 
@@ -235,11 +234,7 @@
 
       </div>
     </div>
-
-
   </div>
-
-
 
   <div class="nuevos-i">
     <div class="row center-xs">

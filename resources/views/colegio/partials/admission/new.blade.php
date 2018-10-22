@@ -20,8 +20,8 @@
       <div class="col-xs admission-new-item-content">
         <h3 class="item-content-title">Inscripción</h3>
         <ul>
-          <li>Completar la ficha de admisión 2019 de cada sede.</li>
-          <li>Pago por derecho de evaluación.</li>
+          <li>Completar la ficha de matrícula 2019 de cada sede</li>
+          <li>Pago por derecho de evaluación</li>
           <li>Entrega de:</li>
           <ul>
             <li>1 copia de DNI</li>
@@ -56,7 +56,8 @@
         <h3 class="item-content-title">Matrícula</h3>
         <ul>
           <li>Completar ficha de matrícula</li>
-          <li>Firma de compromiso de honor.<br />Entrega de constancia de no adeudo o comprobante de pago de pensión del mes anterior</li>
+          <li>Firma de compromiso de honor</li>
+          <li>Entrega de Constancia de No Adeudo o comprobante de pago de pensión del mes anterior</li>
           <li>Pago de matrícula</li>
         </ul>
       </div>
@@ -78,7 +79,7 @@
             <li>Certificado de estudio</li>
             <li>Resolución de traslado</li>
             <li>Constancia de conducta</li>
-            <li>2 fotos tamaño de carné</li>
+            <li>2 fotos tamaño carné</li>
             <li>1 copia del DNI de ambos padres o apoderados</li>
             <li>1 copia de la partida de nacimiento del alumno</li>
             <li>Constancia de matrícula emitida por SIAGIE</li>

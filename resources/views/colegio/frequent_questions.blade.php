@@ -20,7 +20,7 @@
 
           <ul class="js-tabs__header">
             <li><a href="#" class="js-tabs__title">Propuesta educativa</a></li>
-            <li><a href="#" class="js-tabs__title">Trámites y admisión</a></li>
+            <li><a href="#" class="js-tabs__title">Trámites y matrícula</a></li>
             <li><a href="#" class="js-tabs__title">Otros</a></li>
           </ul>
 
@@ -112,12 +112,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Por qué Trilce no cuenta con talleres de danzas, deportes, etc. que otros colegios sí tienen?
+                    ¿Trilce cuenta con talleres de danzas, deportes, etc.?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        La información no es correcta, en Trilce contamos con un taller de teatro y otras actividades como las ferias regionales, concursos de declamación, debate, ajedrez, entre otros, porque consideramos que son importantes para la formación de nuestros estudiantes.
+                        Contamos con talleres de teatro y otras actividades como las ferias regionales, concursos de declamación, debate, ajedrez, entre otros, porque consideramos que son importantes para la formación de nuestros estudiantes.
                       </p>
                     </div>
                   </dd>
@@ -422,7 +422,7 @@
                       <div class="js-badger-accordion-panel-inner">
                         <p class="question-answer">
                           El ingreso por ITS es una modalidad dirigida a los mejores alumnos de 5.° de secundaria de un grupo de colegios seleccionados por la PUCP a partir de un estudio sobre el rendimiento de sus egresados en la universidad.
-                          El alumno también puede rendir el examen de admisión de la PUCP en la modalidad de Primera Opción; para esto, contamos con un aula exclusiva de preparación para la PUCP.
+                          El alumno también puede rendir el examen de matrícula de la PUCP en la modalidad de Primera Opción; para esto, contamos con un aula exclusiva de preparación para la PUCP.
                         </p>
                       </div>
                     </dd>
@@ -551,7 +551,7 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      El alumno deberá pasar por evaluaciones según el proceso de admisión.
+                      El alumno deberá pasar por evaluaciones según el proceso de matrícula.
                     </p>
                   </div>
                 </dd>
@@ -567,13 +567,14 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Si ya pasó más de un año académico, el alumno tendrá que pasar el proceso de admisión nuevamente.
+                      Si ya pasó más de un año académico, el alumno tendrá que pasar el proceso de matrícula nuevamente.
                     </p>
                   </div>
                 </dd>
               </div>
             </div>
 
+{{--
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
@@ -583,12 +584,12 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Sí podrá hacerlo, pero deberá haber transcurrido un año desde dicho proceso de admisión.
+                      Sí podrá hacerlo, pero deberá haber transcurrido un año desde dicho proceso de matrícula.
                     </p>
                   </div>
                 </dd>
               </div>
-            </div>
+            </div> --}}
 
           </div>
           <div class="js-tabs__content js-badger-accordion_3">
@@ -648,7 +649,7 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Sí aceptamos a niños especiales, ya que somos un colegio inclusivo. El alumno deberá rendir las evaluaciones de admisión para saber el nivel académico en el que se encuentra.
+                      Sí aceptamos a niños especiales, ya que somos un colegio inclusivo. El alumno deberá rendir las evaluaciones de matrícula para saber el nivel académico en el que se encuentra.
                     </p>
                   </div>
                 </dd>

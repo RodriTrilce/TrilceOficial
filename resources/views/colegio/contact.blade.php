@@ -30,7 +30,7 @@
     <div class="col-xs-12 col-sm contact-info container-padding-mobile">
       <h2 class="contact-subtitle contact-subtitle-colegio">Información de contacto</h2>
       <ul class="contant-info-ul">
-        <li>Central Telefónica: 619-8100</li>
+        <li>Central telefónica: 619-8100</li>
         <li>Correo: atencionalcliente@trilce.edu.pe</li>
       </ul>
 
@@ -66,15 +66,15 @@
         <form action="/colegio/contacto" method="post">
           @csrf
           <fieldset class="form-group">
-            <input type="onlytext" name="contact_names" placeholder="Nombres y Apellidos" pattern="[A-Za-z ]+" required>
+            <input type="onlytext" name="contact_names" placeholder="Nombres y apellidos" pattern="[A-Za-z ]+" required>
           </fieldset>
 
           <fieldset class="form-group">
-            <input type="email" name="contact_email" placeholder="E-mail" required>
+            <input type="email" name="contact_email" placeholder="Correo" required>
           </fieldset>
 
           <fieldset class="form-group">
-            <input type="tel" type="tel" class="contant-form-phone" minlength="6" min="0" name="contact_phone" placeholder="Télefono" pattern="([0-9]+)" required>
+            <input type="tel" type="tel" class="contant-form-phone" minlength="6" min="0" name="contact_phone" placeholder="Teléfono" pattern="([0-9]+)" required>
           </fieldset>
 
           <fieldset class="form-group">

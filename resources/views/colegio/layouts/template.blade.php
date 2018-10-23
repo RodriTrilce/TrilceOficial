@@ -56,6 +56,7 @@
 
                 <li class="nav-colegio-aboutus">
                   <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>
+<!--
                   <div class="dropdown-desk xs-hide-force">
                     <div class="dropdown-desk-content dropdown-desk-colegio-aboutus">
                       <div class="row col-xs-12">
@@ -73,13 +74,15 @@
                       </div>
                     </div>
                   </div>
+-->
                 </li>
 
                 <!-- Only mobile -->
+<!--
                 <li class="nav-colegio-aboutusmobile">
                   <a href="/colegio/propuesta-educativa" class="aboutusmobile-link"><img src="{{url('static/images/colegio/imagen-menu-pe-movil.jpg')}}" alt="Propuesta educativa"></a>
                 </li>
-
+-->
                 <li class="nav-venues xs-hide" id="sedes">
                   <a href="#" class="{{ (Request::is('colegio/sede/*')?'nav-item-active':'') }}">Sedes</a>
                   <div class="dropdown-desk">

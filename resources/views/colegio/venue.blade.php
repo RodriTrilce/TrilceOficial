@@ -109,7 +109,7 @@
       </div>
 
       <div class="row col-xs-12 col-sm investment-block">
-{{-- 
+{{--
         @foreach ($investment as $k)
           <div class="row col-xs-12 investment-block-item">
             <div class="col-xs-12 col-sm-2 start-xs center-sm"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
@@ -142,7 +142,7 @@
             @endif
 
             @if($k->monthlypayment)
-            <div class=""><span class="venue-colegio-title-span">Mensualidad: {!! $k->monthlypayment !!}</span></div>
+            <div class=""><span class="venue-colegio-title-span">Mensualidad {!! $k->monthlypayment !!}</span></div>
             @endif
           </div>
         @endforeach

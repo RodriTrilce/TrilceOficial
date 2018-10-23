@@ -63,7 +63,7 @@
               <div class="row col-xs-12 col-sm-10 start-sm preparation__cicles">
                 <div class="col-xs-12 col-sm-6 preparation__cicles__section">
                   <p>
-                    <strong class="orange">Primera Opción:</strong> Dirigido a alumnos que se encuentran en 5.o de secundaria.
+                    <strong class="orange">Primera Opción:</strong> Dirigido a alumnos que se encuentran en 5.<sup>o</sup> de secundaria.
                   </p>
 
                   <p>

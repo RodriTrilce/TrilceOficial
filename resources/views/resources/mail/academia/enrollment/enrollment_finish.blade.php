@@ -10,7 +10,7 @@
 </head>
 <body>
   <center>
-    <a href="{{ env('APP_URL') }}/academia/prematricula/descargar-pdf?token={{ encrypt($data->step1_dni) }}" target="_blank">
+    <a href="{{ env('APP_URL') }}/academia/preinscripcion/descargar-pdf?token={{ encrypt($data->step1_dni) }}" target="_blank">
       <img src="{{ $message->embed($image) }}" alt="">
     </a>
   </center>

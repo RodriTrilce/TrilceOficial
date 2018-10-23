@@ -5,9 +5,9 @@
       <thead>
         <tr>
           <th></th>
-          <th>Aptitudes académica y humanidades</th>
+          <th>Aptitudes Académica y Humanidades</th>
           <th>Matemática</th>
-          <th>Física y química</th>
+          <th>Física y Química</th>
         </tr>
       </thead>
       <tbody>

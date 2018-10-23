@@ -6,16 +6,16 @@
  import { Validation } from 'bunnyjs/src/Validation';
 
  // Constants
- const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/prematricula/descargar-pdf'
+ const ACADEMIA_DOWNLOAD_PDF_LINK = '/academia/preinscripcion/descargar-pdf'
 
  const ValidationLang = {
    required      : "'{label}' es obligatorio.",
-   email         : "'{label}' debe ser una dirección de e-mail valida.",
-   maxLength     : "'{label}' debe tener maximo {maxLength} digitos.",
-   minLength     : "'{label}' debe tener minimo {minLength} digitos.",
-   tel           : "{label} debe ser un número telefónico.",
-   onlytext      : "Solo es permitido texto",
-   captcha       : "Verfica el captcha"
+   email         : "'{label}' debe ser una dirección de e-mail válida.",
+   maxLength     : "'{label}' debe tener maximo {maxLength} dígitos.",
+   minLength     : "'{label}' debe tener minimo {minLength} dígitos.",
+   tel           : "{label} debe ser un número teléfono.",
+   onlytext      : "Solo es permitido texto.",
+   captcha       : "Verfica el captcha."
  };
 
  const ValidationConfig = {

@@ -1,6 +1,6 @@
 {{! $breadcrumbs = Breadcrumbs::render('academia-enrollment') }}
 @extends('academia.layouts.template')
-@section('title', 'Prematrícula en línea')
+@section('title', 'Preinscripción en línea')
 @section('content')
 
   <div class="header-double-top">
@@ -9,7 +9,7 @@
       <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-enrollment"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>Prematrícula</h1>
+        <h1>Preinscripción</h1>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
 
   <div class="row col-xs-12 center-xs container-base">
     <div class="row col-xs-12 col-sm-9 start col-md-8 start-sm start-md enrollment-forms">
-    <form class="col-xs-12" name="formenrollment" method="post" url="matricula-en-linea">
+    <form class="col-xs-12" name="formenrollment" method="post" url="preinscripcion">
       @csrf
 
       <div class="tab tab1 row">
@@ -46,7 +46,7 @@
           </div>
 
           <div class="col-xs start-xs blockb">
-            <h2>Ficha de inscripción <span>2018</span></h2>
+            <h2>Ficha de preinscripción <span>2018</span></h2>
             <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
 
             <div class="form">
@@ -59,7 +59,7 @@
                   </div>
 
                   <div class="col-xs-12 enrollment-forms--dnidownload" id="dnidownload">
-                    <a id="dnidownload-link" target="_blank">Usted ya se encuentra registrado, <b>descargue su ficha de inscripción.</b></a>
+                    <a id="dnidownload-link" target="_blank">Usted ya se encuentra registrado, <b>descargue su ficha de preinscripción.</b></a>
                   </div>
 
                   <div class="col-xs-12">
@@ -148,7 +148,7 @@
                       <select name="step2_district" id="step2_district" aria-label="Distrito" required>
                         <option value="" selected disabled>Distrito</option>
                         <option value="Lima">Lima</option>
-                        <option value="Ancon">Ancon</option>
+                        <option value="Ancon">Ancón</option>
                         <option value="Ate">Ate</option>
                         <option value="Barranco">Barranco</option>
                         <option value="Brena">Bre&ntilde;a</option>
@@ -159,14 +159,14 @@
                         <option value="Comas">Comas</option>
                         <option value="El Agustino">El Agustino</option>
                         <option value="Independencia">Independencia</option>
-                        <option value="Jesus Maria">Jesus Maria</option>
+                        <option value="Jesus Maria">Jesús María</option>
                         <option value="La Molina">La Molina</option>
                         <option value="La Victoria">La Victoria</option>
                         <option value="Lince">Lince</option>
                         <option value="Los Olivos">Los Olivos</option>
                         <option value="Lurigancho">Lurigancho</option>
-                        <option value="Lurin">Lurin</option>
-                        <option value="Magdalena Del Mar">Magdalena Del Mar</option>
+                        <option value="Lurin">Lurín</option>
+                        <option value="Magdalena del Mar">Magdalena del Mar</option>
                         <option value="Magdalena Vieja">Magdalena Vieja</option>
                         <option value="Miraflores">Miraflores</option>
                         <option value="Pachacamac">Pachacamac</option>
@@ -174,22 +174,22 @@
                         <option value="Puente Piedra">Puente Piedra</option>
                         <option value="Punta Hermosa">Punta Hermosa</option>
                         <option value="Punta Negra">Punta Negra</option>
-                        <option value="Rimac">Rimac</option>
+                        <option value="Rimac">Rímac</option>
                         <option value="San Bartolo">San Bartolo</option>
                         <option value="San Borja">San Borja</option>
                         <option value="San Isidro">San Isidro</option>
-                        <option value="San Juan De Lurigancho">San Juan De Lurigancho</option>
-                        <option value="San Juan De Miraflores">San Juan De Miraflores</option>
+                        <option value="San Juan De Lurigancho">San Juan de Lurigancho</option>
+                        <option value="San Juan De Miraflores">San Juan de Miraflores</option>
                         <option value="San Luis">San Luis</option>
-                        <option value="San Martin De Porres">San Martin De Porres</option>
+                        <option value="San Martin De Porres">San Martín de Porres</option>
                         <option value="San Miguel">San Miguel</option>
                         <option value="Santa Anita">Santa Anita</option>
-                        <option value="Santa Maria Del Mar">Santa Maria Del Mar</option>
+                        <option value="Santa Maria Del Mar">Santa María del Mar</option>
                         <option value="Santa Rosa">Santa Rosa</option>
-                        <option value="Santiago De Surco">Santiago De Surco</option>
+                        <option value="Santiago De Surco">Santiago de Surco</option>
                         <option value="Surquillo">Surquillo</option>
                         <option value="Villa El Salvador">Villa El Salvador</option>
-                        <option value="Villa Maria Del Triunfo">Villa Maria Del Triunfo</option>
+                        <option value="Villa Maria Del Triunfo">Villa María del Triunfo</option>
                       </select>
                     </fieldset>
                   </div>
@@ -826,7 +826,7 @@
       <div class="row col-xs-12 between-xs stepsarrows">
         <div class="col-xs start-xs">
           <fieldset>
-            <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atras</button>
+            <button type="button" id="prev" class="validate"><i class="fa fa-angle-left"></i> Atrás</button>
           </fieldset>
         </div>
         <div class="col-xs end-xs">

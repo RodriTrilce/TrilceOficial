@@ -115,13 +115,13 @@ Breadcrumbs::for('academia-solutions', function ($trail, $modality) {
 // Academia > Enrollment
 Breadcrumbs::for('academia-enrollment', function ($trail) {
     $trail->parent('academia-index');
-    $trail->push('Prematrícula en línea', route('academia-enrollment'));
+    $trail->push('Preinscripción en línea', route('academia-enrollment'));
 });
 
 // Academia > Math Olympics
 Breadcrumbs::for('academia-matholympics', function ($trail) {
     $trail->parent('academia-index');
-    $trail->push('Olimpiadas Matemáticas', route('academia-matholympics'));
+    $trail->push('Olimpiadas de Matemáticas', route('academia-matholympics'));
 });
 
 // Academia > Contact

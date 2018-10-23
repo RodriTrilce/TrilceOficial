@@ -21,14 +21,14 @@
             <li><a href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" title="Chatea con nosotros" target="_blank" rel="nofollow"><i class="fa fa-whatsapp"></i></a></li>
             <li><a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook" target="_blank" rel="nofollow"><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" title="Suscríbete en Youtube" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" title="Suscríbete en YouTube" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
             <li><a href="https://www.instagram.com/trilcecolegioacademia/" title="Síguenos en Instagram" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
           </ul>
       </div>
     </div>
 
     <div class="col-xs-12 center-xs footer-bottom">
-      © {{date("Y")}} Colegio Trilce todos los derechos reservados.
+      © {{date("Y")}} Colegio Trilce. Todos los derechos reservados.
     </div>
   </div>
 </footer>

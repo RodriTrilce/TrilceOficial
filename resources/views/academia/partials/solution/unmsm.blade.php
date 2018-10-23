@@ -15,37 +15,37 @@
 
 
         <tr>
-          <td data-label=""> Año 2018 - 2</td>
+          <td data-label=""> Año 2018 - II</td>
           <td data-label="Área A, B y D"><a href="/storage/academia/documents/solutions/san-marcos/2018/2/clavesabd.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Área C y E"><a href="/storage/academia/documents/solutions/san-marcos/2018/2/clavesce.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
         </tr>
 
         <tr>
-          <td data-label=""> Año 2018 - 1</td>
+          <td data-label=""> Año 2018 - I</td>
           <td data-label="Área A, B y D"><a href="/storage/academia/documents/solutions/san-marcos/2018/1/a-b-d-2018-i.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Área C y E"><a href="/storage/academia/documents/solutions/san-marcos/2018/1/c-e.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
         </tr>
 
         <tr>
-          <td data-label=""> Año 2017 - 2</td>
+          <td data-label=""> Año 2017 - II</td>
           <td data-label="Área A, B y D"><a href="/storage/academia/documents/solutions/san-marcos/2017/2/solucionarios-a-b-d-2017-2.pdf "><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Área C y E"><a href="/storage/academia/documents/solutions/san-marcos/2017/2/solucionario-c-e-2017-2.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
         </tr>
 
         <tr>
-          <td data-label=""> Año 2017 - 1</td>
+          <td data-label=""> Año 2017 - I</td>
           <td data-label="Área A, B y D"><a href="/storage/academia/documents/solutions/san-marcos/2017/1/sm-2017-i-solucionario.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Área C y E"><a href="/storage/academia/documents/solutions/san-marcos/2017/1/sm-2017-i-solucionario-c-y-e.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
         </tr>
 
         <tr>
-          <td data-label=""> Año 2016 - 2</td>
+          <td data-label=""> Año 2016 - II</td>
           <td data-label="Área A, B y D"><a href="/storage/academia/documents/solutions/san-marcos/2016/2/solucionario-san-marcos-a-d-f-2016-ii.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Área C y E"><a href="/storage/academia/documents/solutions/san-marcos/2016/2/solucionario-2016-ii-bloques-b-c-e.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
         </tr>
 
         <tr>
-          <td data-label=""> Año 2016 - 1</td>
+          <td data-label=""> Año 2016 - I</td>
           <td data-label="Área A, B y D"><a href="/storage/academia/documents/solutions/san-marcos/2016/1/respuestas-san-marcos-2016-i.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Área C y E"><a href="/storage/academia/documents/solutions/san-marcos/2016/1/respuestas-san-marcos-2016-i-areas-b-c-e.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
         </tr>

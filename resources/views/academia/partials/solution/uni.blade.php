@@ -14,77 +14,77 @@
         <tr>
         </tr>
           <tr>
-            <td data-label=""> Año 2018 - 1</td>
+            <td data-label=""> Año 2018 - I</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2018/1/examen-2018-uni-i-solucionario-aptitudes-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2018/1/examen-2018-uni-i-solucionario-matematicas.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2018/1/examen-2018-uni-i-solucionario-fisica-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2017 - 2</td>
+            <td data-label=""> Año 2017 - II</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2017/2/uni-2017-ii-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2017/2/uni-2017-ii-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2017/2/uni-2017-ii-fisica-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2017 - 1</td>
+            <td data-label=""> Año 2017 - I</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2017/1/solucionario-uni-2017-i-aptitud-academica-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2017/1/solucionario-2017-i-uni-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2017/1/solucionario-uni-2017-i-fisica-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2016 - 2</td>
+            <td data-label=""> Año 2016 - II</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2016/2/uni-2016-ii-aptitud-academica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2016/2/uni-2016-ii-matematica-solucionario.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2016/2/solucionario-fisica-quimica-uni-2016-ii.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2016 - 1</td>
+            <td data-label=""> Año 2016 - I</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2016/1/uni-2016-i-cultura-general-y-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2016/1/uni-2016-i-matematica-solucionario.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2016/1/uni-2016-i-fisica-quimica-solucionario-2016-i.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2013 - 2</td>
+            <td data-label=""> Año 2013 - II</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-ii-cultura-general-y-aptitud-academica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-ii-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2013/2/solucionario-uni-2013-ii-fisica-y-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2013 - 1</td>
+            <td data-label=""> Año 2013 - I</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2013/1/solucionario-uni-2013-i-aptitud-academica-y-cultura-general.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2013/1/solucionario-uni-2013-i-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2013/1/solucionario-uni-2013-i-fisica-y-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2012 - 2</td>
+            <td data-label=""> Año 2012 - II</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2012/2/claves-uni-2012-ii-aptitud-academica-y-cultura-general.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2012/2/claves-uni-2012-ii-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2012/2/claves-uni-2012-ii-fisica-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2012 - 1</td>
+            <td data-label=""> Año 2012 - I</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2012/1/claves-uni-2012-i-aptitud-y-cultura.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2012/1/claves-uni-2012-i-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2012/1/claves-uni-2012-i-fisica-y-quimica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2011 - 2</td>
+            <td data-label=""> Año 2011 - II</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2011/2/solucionario-aptitud-academica-cultura-general-uni-2011-ii.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2011/2/solucionario-matematica-uni-2011-ii.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2011/2/solucionario-fisica-quimica-uni-2011-ii.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           </tr>
 
           <tr>
-            <td data-label=""> Año 2011 - 1</td>
+            <td data-label=""> Año 2011 - I</td>
             <td data-label="Aptitudes académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2011/1/solucionario-aptitud-academica-cultura-general-uni-2011-i.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Matemática"><a href="/storage/academia/documents/solutions/uni/2011/1/solucionario-matematica-uni-2011-i.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
             <td data-label="Física y química"><a href="/storage/academia/documents/solutions/uni/2011/1/solucionario-fisica-quimica-uni-2011-i.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>

@@ -126,7 +126,7 @@ class BeginningsApiResourceController extends Controller
             });
           });
 
-          $_body[$_type[0]] = array_reverse($temp);
+          $_body[$_type[0]] = ($temp);
 
           $_body['head'] = $_head;
 

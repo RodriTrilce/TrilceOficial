@@ -400,7 +400,7 @@
         </div>
           <div class="banner__style_primer-reverse banner__style_primer--colegio">
             <div class="banner__title">
-              <span>1.<sup>er</sup> puesto San&nbsp;Marcos</span>
+              <span>1.<sup>er</sup> puesto<br >San&nbsp;Marcos</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">

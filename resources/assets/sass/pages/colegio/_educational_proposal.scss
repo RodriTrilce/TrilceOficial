@@ -157,6 +157,19 @@
   font-size: 1.3rem;
   font-family: $font_cae_bold;
   margin-bottom: 15px;
+
+  @include breakpoint(baby){
+    font-size: 1.1rem;
+  }
+}
+
+.ep-stepsix-titlelist__number{
+  font-size: 1.5rem;
+  color: $orange;
+
+  @include breakpoint(baby){
+    font-size: 1.2rem;
+  }
 }
 
 .ep-stepsix-list{
@@ -178,12 +191,17 @@
     font-size: 1rem;
     color: $gray;
     font-family: $font_cae_bold;
+
+    i{
+      color: $orange;
+    }
   }
 
   .list-text{
     font-family: $font_geo_reg;
     font-size: 1rem;
   }
+
 }
 
 .ep-stepsix-bottom{

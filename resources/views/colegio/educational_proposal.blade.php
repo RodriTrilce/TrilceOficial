@@ -322,27 +322,24 @@
 
             <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container">
 
-              <h2 class="ep-stepsix-titlelist">Entrega gratuita de <i>tablets</i></h2>
+              <h2 class="ep-stepsix-titlelist"><span class="ep-stepsix-titlelist__number">1</span> Entrega gratuita de <i>tablets</i></h2>
 
               <div class="row col-xs-12">
                 <div class="row col-xs-12 ep-stepsix-list">
-                  <div class="row col-xs-1 list-number">1</div>
                   <div class="col-xs">
-                    <h3 class="list-title">Contribuyendo con la salud de los estudiantes</h3>
+                    <h3 class="list-title"><i class="fa fa-stop"></i> Contribuyendo con la salud de los estudiantes</h3>
                     <p class="list-text">Son más fáciles de transportar y, al no tener que cargar libros pesados, se evitará que desarrollen malformaciones óseas en la espalda.</p>
                   </div>
                 </div>
                 <div class="row col-xs-12 ep-stepsix-list">
-                  <div class="row col-xs-1 list-number">2</div>
                   <div class="col-xs">
-                    <h3 class="list-title">Contribuyendo con el medio ambiente</h3>
+                    <h3 class="list-title"><i class="fa fa-stop"></i> Contribuyendo con el medio ambiente</h3>
                     <p class="list-text">Trilce ha dejado de imprimir 300 000 libros, lo que equivale a más de mil árboles talados al año.</p>
                   </div>
                 </div>
                 <div class="row col-xs-12 ep-stepsix-list">
-                  <div class="row col-xs-1 list-number">3</div>
                   <div class="col-xs">
-                    <h3 class="list-title">Potencian el aprendizaje</h3>
+                    <h3 class="list-title"><i class="fa fa-stop"></i> Potencian el aprendizaje</h3>
                     <p class="list-text">Los estudiantes interactúan cotidianamente con las nuevas herramientas tecnológicas, las utilizan con naturalidad y adoptan con mayor facilidad sus códigos y formas cognitivas.</p>
                   </div>
                 </div>
@@ -355,27 +352,30 @@
 
           <div class="row col-xs-12 ep-large-container">
             <div class="col-xs-12 col-sm ep-stepfour-left">
-              <h2 class="ep-stepsix-titlelist">Intranet para padres y alumnos</h2>
+              <h2 class="ep-stepsix-titlelist"><span class="ep-stepsix-titlelist__number">2</span> Intranet para padres y alumnos</h2>
 
               <div class="row col-xs-12">
 
                 <div class="row col-xs-12 ep-stepsix-list">
-                  <div class="row col-xs-1 list-number">1</div>
                   <div class="col-xs">
-                    <h3 class="list-title">Toda la información de sus hijos al alcance de un solo clic</h3>
+                    <h3 class="list-title"><i class="fa fa-stop"></i> Toda la información de sus hijos al alcance de un solo clic</h3>
                     <p class="list-text">Ahorre mucho más tiempo usando nuestra intranet para el seguimiento de las calificaciones de sus niños, actividades en general, entre otros.</p>
                   </div>
                 </div>
 
                 <div class="row col-xs-12 ep-stepsix-list">
-                  <div class="row col-xs-1 list-number">2</div>
                   <div class="col-xs">
-                    <h3 class="list-title">Contribuyendo con el medio ambiente</h3>
+                    <h3 class="list-title"><i class="fa fa-stop"></i> Contribuyendo con el medio ambiente</h3>
                     <p class="list-text">Tutoría, libros, notas y otros servicios e información online.</p>
                   </div>
                 </div>
 
               </div>
+
+
+              <h2 class="ep-stepsix-titlelist"><span class="ep-stepsix-titlelist__number">3</span> Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.</h2>
+
+
             </div>
 
             <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container xs-hide">
@@ -384,12 +384,6 @@
 
           </div>
 
-          <div class="row col-xs-12 center-xs">
-            <div class="col-xs-12 col-sm-10 center-xs ep-stepsix-bottom">
-              <img src="/static/images/colegio/old-educational-propuse/img-innovacion-tecnologia-03.svg" alt="Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.">
-              <h2>Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.</h2>
-            </div>
-          </div>
 
         </div>
 
@@ -410,11 +404,33 @@
             <div class="row col-xs-12 col-sm-12 table-responsive" id="tableade">
               <table class="ep-stepseven-table">
                 <tbody>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
+                    <td data-label="Examen">2019-I</td>
+                    <td data-label="Nombres">Diego Castillo Utani</td>
+                    <td data-label="Carrera">Ingeniería Ambiental</td>
+                  </tr>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto PUCP</td>
+                    <td data-label="Examen">2018-I</td>
+                    <td data-label="Nombres">Santiago Mendoza</td>
+                    <td data-label="Carrera">Arquitectura</td>
+                  </tr>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
+                    <td data-label="Examen">2018-I</td>
+                    <td data-label="Nombres">Alejandro Tapia</td>
+                    <td data-label="Carrera">Ingeniería Mecánica de Fluidos</td>
+                  </tr>
+
                   <tr>
                     <td data-label="">1.<sup>er</sup> puesto UNI</td>
                     <td data-label="Examen">2018-I</td>
-                    <td data-label="Nombres">Luis Flores</td>
-                    <td data-label="Carrera">Ingeniería de Minas</td>
+                    <td data-label="Nombres">Rodrigo Ponte</td>
+                    <td data-label="Carrera">Petróleo y Gas Natural</td>
                   </tr>
 
                   <tr>
@@ -427,29 +443,8 @@
                   <tr>
                     <td data-label="">1.<sup>er</sup> puesto UNI</td>
                     <td data-label="Examen">2018-I</td>
-                    <td data-label="Nombres">Rodrigo Ponte</td>
-                    <td data-label="Carrera">Petróleo y Gas Natural</td>
-                  </tr>
-
-                  <tr>
-                    <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
-                    <td data-label="Examen">2018-I</td>
-                    <td data-label="Nombres">Alejandro Tapia</td>
-                    <td data-label="Carrera">Ingeniería Mecánica de Fluidos</td>
-                  </tr>
-
-                  <tr>
-                    <td data-label="">1.<sup>er</sup> puesto PUCP</td>
-                    <td data-label="Examen">2018-I</td>
-                    <td data-label="Nombres">Santiago Mendoza</td>
-                    <td data-label="Carrera">Arquitectura</td>
-                  </tr>
-
-                  <tr>
-                    <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
-                    <td data-label="Examen">2019-I</td>
-                    <td data-label="Nombres">Diego Castillo Utani</td>
-                    <td data-label="Carrera">Ingeniería Ambiental</td>
+                    <td data-label="Nombres">Luis Flores</td>
+                    <td data-label="Carrera">Ingeniería de Minas</td>
                   </tr>
 
                 </tbody>

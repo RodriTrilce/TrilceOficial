@@ -118,7 +118,7 @@
             </span>
             <span style="display:block;margin-top: 20px; margin-bottom:10px;">
               <button class="banner__button-cta banner__button-cta--white">
-                <a href="/academia/preparacion-san-marcos">Regístrate aquí</a>
+                <a href="/inscripcion-academia/" target="_blank">Regístrate aquí</a>
               </button>
             </span>
           </div>

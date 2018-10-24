@@ -203,7 +203,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="tel" minlength="6" name="step2_phonehome" placeholder="Telf. Casa" aria-label="Telf. Casa" required>
+                      <input type="tel" minlength="6" name="step2_phonehome" placeholder="Telf. Casa" aria-label="Telf. Casa">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">
@@ -684,7 +684,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="tel" name="step3_phonehome" id="step3_phonehome" placeholder="Telf. Casa" required>
+                      <input type="tel" name="step3_phonehome" id="step3_phonehome" placeholder="Telf. Casa">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
@@ -715,7 +715,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="onlytext" name="step3_profession" id="step3_profession" placeholder="Ocupación" required>
+                      <input type="onlytext" name="step3_profession" id="step3_profession" placeholder="Ocupación">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-6">

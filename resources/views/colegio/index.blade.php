@@ -320,6 +320,9 @@
             <span class="normal">
               Ser mejores personas<br />
             </span>
+            <span style="display:block;margin: 20px auto;">
+              <button class="banner__button-cta banner__button-cta--orange"><a href="https://www.youtube.com/watch?v=_LZUrX_RRzQ" target="_blank">Ver más</a></button>
+            </span>
           </div>
         </div>
 

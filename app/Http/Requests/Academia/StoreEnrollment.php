@@ -38,7 +38,6 @@ class StoreEnrollment extends FormRequest
           'step2_birth' => 'required',
           'step2_district' => 'required',
           'step2_address' => 'required',
-          'step2_phonehome' => 'required',
           'step2_mobile' => 'required',
           'step2_email' => 'required',
           'step2_year_finish_school' => 'required',
@@ -54,6 +53,8 @@ class StoreEnrollment extends FormRequest
     }
 
 /*
+
+//          'step2_phonehome' => 'required',
 
 'step3_names' => 'required',
 'step3_dni' => 'required',

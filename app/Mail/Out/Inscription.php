@@ -47,7 +47,7 @@ class Inscription extends Mailable
       $img = storage_path('app/public/mail/template-out-mail.jpg');
 
       $img = Image::make($img);
-      $img = $img->text($name, 350, 326, function($font) {
+      $img = $img->text($name . "!", 350, 340, function($font) {
         $font->file(resource_path('assets/fonts/33FA0F_E_0.ttf'));
         $font->size(22);
         $font->color('#FFFFFF');

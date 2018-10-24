@@ -16,10 +16,10 @@
       <div class="modal-b50">
         <div class="row col-xs-12 center-xs enrollment-finish">
             <div class="col-xs-12">
-              <h1 class="finish-title">Gracias por registrarse <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por inscribirse"></h1>
+              <h1 class="finish-title">Gracias por registrarte. <img src="{{url('/static/images/academia/svg/icon-thanks-enrolltment.svg')}}" class="finish-thanks" alt="Gracias por inscribirse"></h1>
             </div>
             <div class="col-xs-12">
-              <p class="finish-text">Puede descargar su ficha de inscripción prematrícula aquí: </p>
+              <p class="finish-text">Descarga tu ficha de preinscripción aquí: </p>
             </div>
             <div class="col-xs-12 finish-button-container">
               <form action="/academia/preinscripcion/descargar-pdf" method="post" target="_blank">

@@ -203,7 +203,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="tel" minlength="6" name="step2_phonehome" placeholder="Telf. Casa" aria-label="Telf. Casa">
+                      <input type="tel" name="step2_phonehome" placeholder="Telf. Casa" aria-label="Telf. Casa">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">

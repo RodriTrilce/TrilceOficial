@@ -9,6 +9,7 @@
   img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
   @media (max-width: 700px){
     height: auto;
@@ -80,6 +81,10 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2.5rem;
+
+  p{
+    text-align: left;
+  }
 }
 
 .blog-home-top-section--section{

@@ -4,23 +4,29 @@
 @section('content')
 
     @if($posts->currentPage() < 2)
-      <div class="row col-xs-12 blog-home-top">
-        <div class="col-xs-12 col-xs-12 col-md-6 blog-home-top-imge"><img src="{{ url( $markers->first()->blogFile->blogImage() ) }}" alt=""></div>
+      <div class="row col-xs-12 center-xs blog-home-grid">
+        <div class="row col-xs-12 col-sm-10 col-md-9 start-sm">
 
-        <div class="row col-xs-12 col-xs-12 col-md blog-home-top-section">
-          <div class="col-xs-12">
-            <section class="blog-home-top-section--section">
-              <h1 class="blog-home-top-title"><a href="/{{$markers->first()->site}}/blog/{{$markers->first()->slug}}">{{$markers->first()->title}}</a></h1>
-              <div class="blog-home-top-date">{{$markers->first()->blogDate()}} <i class="fa fa-calendar"></i></div>
-              <div class="blog-home-top-content">
-                <p>{{ strip_tags($markers->first()->content) }}</p>
+          <div class="row col-xs-12 blog-home-top">
+            <div class="col-xs-12 col-xs-12 col-md-6 blog-home-top-imge"><img src="{{ url( $markers->first()->blogFile->blogImage() ) }}" alt=""></div>
+
+            <div class="row col-xs-12 col-xs-12 col-md blog-home-top-section">
+              <div class="col-xs-12">
+                <section class="blog-home-top-section--section">
+                  <h1 class="blog-home-top-title"><a href="/{{$markers->first()->site}}/blog/{{$markers->first()->slug}}">{{$markers->first()->title}}</a></h1>
+                  <div class="blog-home-top-date">{{$markers->first()->blogDate()}} <i class="fa fa-calendar"></i></div>
+                  <div class="blog-home-top-content">
+                    <p>{{ strip_tags($markers->first()->content) }}</p>
+                  </div>
+                  <div class="row col-xs-12 between-xs blog-home-top-bottom">
+                    <div class="col-xs start-xs blog-home-top-bottom--more"><a href="/{{$markers->first()->site}}/blog/{{$markers->first()->slug}}">Leer más <i class="fa fa-search"></i></a></div>
+                    <div class="col-xs end-xs blog-home-top--view"><i class="fa fa-eye"></i> {{$markers->first()->visits()->count()}}</div>
+                  </div>
+                </section>
               </div>
-              <div class="row col-xs-12 between-xs blog-home-top-bottom">
-                <div class="col-xs start-xs blog-home-top-bottom--more"><a href="/{{$markers->first()->site}}/blog/{{$markers->first()->slug}}">Leer más <i class="fa fa-search"></i></a></div>
-                <div class="col-xs end-xs blog-home-top--view"><i class="fa fa-eye"></i> {{$markers->first()->visits()->count()}}</div>
-              </div>
-            </section>
+            </div>
           </div>
+
         </div>
       </div>
 

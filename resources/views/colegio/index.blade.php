@@ -39,7 +39,7 @@
   </div>
 
   <div class="index-banners">
-    <div data-title="admision 2019">
+<!--    <div data-title="admision 2019">
         <div
         class="
           banner__item
@@ -178,6 +178,7 @@
 
       </div>
     </div>
+-->
     <div data-title="tablet gratuita">
         <div
         class="
@@ -200,8 +201,8 @@
         data-size-md="26%"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_19_octubre_250x250.png"
-        data-position-xs="bottom right"
-        data-size-xs="53vw"
+        data-position-xs="140% bottom"
+        data-size-xs="71vw"
 
         style="
         background-repeat: no-repeat;
@@ -240,6 +241,7 @@
 
       </div>
     </div>
+<!--
     <div data-title="ser mejores personas">
         <div
         class="
@@ -345,12 +347,12 @@
         <div
         class="banner__image"
 
-        data-image-md="http://www.trilce.edu.pe/dd.png"
+        data-image-md="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-500x500.png"
         data-position-md="80% bottom"
         data-size-md="contain"
 
-        data-image-xs="http://www.trilce.edu.pe/dd.png"
-        data-position-xs="80% bottom"
+        data-image-xs="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-250x250.png"
+        data-position-xs="180% bottom"
         data-size-xs="80%"
 
         style="
@@ -435,13 +437,13 @@
         <div
         class="banner__image"
 
-        data-image-md="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_500x500.png"
+        data-image-md="/storage/static/images/banner/ogro/banner_26_octubre_academia-uni-ingresante-500x500.png"
         data-position-md="80% bottom"
         data-size-md="contain"
 
-        data-image-xs="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_250x250.png"
+        data-image-xs="/storage/static/images/banner/ogro/banner_26_octubre_academia-uni-ingresante-250x250.png"
         data-position-xs="120% bottom"
-        data-size-xs="70%"
+        data-size-xs="65%"
 
         style="
         background-repeat: no-repeat;
@@ -598,6 +600,7 @@
 
       </div>
     </div>
+-->
   </div>
 
   <div class="nuevos-i container-base">

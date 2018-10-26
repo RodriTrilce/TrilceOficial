@@ -373,7 +373,7 @@
               </div>
 
 
-              <h2 class="ep-stepsix-titlelist"><span class="ep-stepsix-titlelist__number">3</span> Además de la entrega de todo lo antes mencionado, tenemos salones multimedia y laboratorios de cómputo.</h2>
+              <h2 class="ep-stepsix-titlelist ep-stepsix-titlelist_more"><span class="ep-stepsix-titlelist__number">3</span> Salones multimedia y laboratorios de cómputo.</h2>
 
 
             </div>
@@ -462,15 +462,30 @@
   <div class="row center-xs center-sm container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-center start-center start-center educationalproposal__video">
       <h1 class="educationalproposal__video-title">Nuestra propuesta</h1>
-      <br>
-      <video id="proposal" poster="/storage/static/images/other/cover_video.png" class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls poster="/storage/static/video/video-cover.png">
+      <br><br>
+      <div class="educationalproposal__video">
+        <div class="educationalproposal__video-bg"></div>
+        <div class="bt-play">
+          <i class="fa fa-play-circle-o"></i>
+        </div>
+        <video id="proposal" class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls>
+      </div>
       </video>
       <script>
-        var v = document.getElementById("proposal");
+        var v = document.getElementById("proposal"),
+            play = document.querySelector(".bt-play"),
+            c = document.querySelector(".educationalproposal__video-bg");
         v.addEventListener("ended", function(){
           v.play();
           v.pause();
+          c.style.display = "block";
+          play.style.display = "flex";
         });
+        play.addEventListener("click", function(){
+          v.play();
+          c.style.display = "none";
+          play.style.display = "none";
+        })
       </script>
     </div>
   </div>

@@ -81,7 +81,9 @@ String.prototype.capitalize = function(){
     controls: false,
     nav: true,
     autoplayHoverPause: true,
-    loop: true
+    loop: true,
+    arrowKeys: true,
+    speed: 700    
   });
   //    controlsText: ['&#xf111;','&#xf112;'],
 

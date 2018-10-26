@@ -115,15 +115,19 @@ if(page == 'index'){
    controls: false,
    nav: true,
    autoplayHoverPause: true,
-   loop: true
+   loop: true,
+   arrowKeys: true,
+   speed: 700
  });
  //    controlsText: ['&#xf111;','&#xf112;'],
 
  SliderTrilce.init(slider);
 
+/*
  setTimeout(function(){
    document.body.className += ' loaded'
  }, 1000)
+*/
 }
 
 /**!

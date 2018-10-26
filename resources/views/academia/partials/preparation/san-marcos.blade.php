@@ -131,7 +131,7 @@
 
 <div class="row col-xs-12 center-xs container-base preparation__section">
     <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-md preparation__title">
-      <h1 class="preparation__title preparation__title--and">También contamos con la preparación</h1>
+      <h1 class="preparation__title preparation__title--and">También preparamos a nuestros alumnos para ingresar a estas universidades:</h1>
     </div>
 </div>
   <div class="row col-xs-12 center-xs beginning beginning-minus container-base">

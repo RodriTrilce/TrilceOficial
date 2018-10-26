@@ -267,9 +267,71 @@
 }
 
 .educationalproposal__video-video{
-  max-height: 500px;
+  max-height: 550px;
 
   @include breakpoint(baby){
     max-height: 300px;
   }
 }
+
+.ep-stepsix-titlelist_more{
+  margin-top: 10px;
+}
+
+
+/**
+ *  Video proposal
+ */
+
+.educationalproposal__video{
+  position: relative;
+}
+
+.educationalproposal__video-bg{
+  background: url(/storage/static/images/other/bg-video.jpg) no-repeat 0 0;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+
+.bt-play{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10rem;
+    opacity: .8;
+    cursor: pointer;
+
+    >*{
+      transition: all .3s ease-out;
+    }
+
+    &:hover{
+      i{
+        transform: scale(1.4);
+      }
+    }
+
+    @include breakpoint(baby){
+      font-size: 5rem;
+    }
+}
+
+
+
+
+
+
+
+
+//

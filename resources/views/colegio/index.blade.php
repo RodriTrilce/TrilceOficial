@@ -39,7 +39,7 @@
   </div>
 
   <div class="index-banners">
-<!--    <div data-title="admision 2019">
+    <div data-title="admision 2019">
         <div
         class="
           banner__item
@@ -178,7 +178,6 @@
 
       </div>
     </div>
--->
     <div data-title="tablet gratuita">
         <div
         class="
@@ -241,7 +240,6 @@
 
       </div>
     </div>
-<!--
     <div data-title="ser mejores personas">
         <div
         class="
@@ -600,7 +598,6 @@
 
       </div>
     </div>
--->
   </div>
 
   <div class="nuevos-i container-base">

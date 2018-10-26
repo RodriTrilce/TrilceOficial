@@ -369,3 +369,17 @@
 .venue-colegio-title-span{
   font-size: .9rem;
 }
+
+.venue-preparation-item{
+  display: inline-flex;
+  height: 75px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: $gray;
+
+  >img{
+    margin-bottom: 5px;
+  }
+}

@@ -40,46 +40,50 @@
           <br />
 
           <style>
-          .ref{
-            width: 100%;
-            margin-bottom: 20px;
-            padding: 8px;
-            font-size: 14px;
-            font-family: "Geogrotesque-Rg" !important;
-            border: 1px solid #ddd;
+            .ref{
+              width: 100%;
+              margin-bottom: 20px;
+              padding: 8px;
+              font-size: 14px;
+              font-family: "Geogrotesque-Rg" !important;
+              border: 1px solid #ddd;
 
-          }
-          .ref2{
-            margin-bottom: 0;
-            display: flex;
-            align-items: center;
-            flex-wrap: nowrap;
+            }
+            .ref2{
+              margin-bottom: 0;
+              display: flex;
+              align-items: center;
+              flex-wrap: nowrap;
 
-          }
-          .ref strong{
-            margin-right: 5px;
-          }
+            }
+            .ref strong{
+              margin-right: 5px;
+            }
 
-          .reflog{
-            display: inline-block;
-          }
+            .reflog{
+              display: inline-block;
+            }
 
-          .reflog img{
-            width: 48px;
-          }
+            .reflog img{
+              width: 48px;
+            }
           </style>
 
           <div class="venue-content-editable">
             {!! $x =
               str_replace(
-                'alt=',
-                'title='
+                [
+                  'alt=',
+                  'title="UNI"></a>'
+                ],
+                [
+                  'title=',
+                  'title="UNI"><strong>UNI</strong></a>'
+                ]
                 ,$data->content) !!}
           </div>
 
-
         </div>
-
       </div>
 
       <div class="col-xs-12 col-sm map-container">

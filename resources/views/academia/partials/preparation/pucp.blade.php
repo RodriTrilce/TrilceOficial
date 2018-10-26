@@ -128,7 +128,7 @@
   <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
       <div class="row col-xs-12 col-sm-3 col-md-3 start-xs start-sm start-md beginning-container beginning-minus">
 
-        <div class="col-xs beginning--item @if($type=='uni') beginning--item-active @endif">
+        <div class="col-xs beginning--item beginning--item--activecolors">
           <a href="/academia/preparacion-uni" class="item-a">
             <div class="item-a-container">
               <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="Nuevos Inicios">
@@ -140,7 +140,7 @@
 
         <div class="beginning-breakline"></div>
 
-        <div class="col-xs beginning--item @if($type=='san-marcos') beginning--item-active @endif">
+        <div class="col-xs beginning--item beginning--item--activecolors">
           <a href="/academia/preparacion-san-marcos" class="item-a">
             <div class="item-a-container">
               <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="Nuevos Inicios">

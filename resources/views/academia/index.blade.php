@@ -197,6 +197,67 @@
 
       </div>
     </div>
+    <div data-title="eco trilce">
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+        data-shadow="10"
+        data-shadow-opacity=".15"
+        data-bordercolor="#fff"
+
+        style="
+          background-color: #f4633a;
+        ">
+
+        <div
+        class="banner__image"
+
+        data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
+        data-position-md="right bottom"
+        data-size-md="contain"
+
+        data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
+        data-position-xs="40vw bottom"
+        data-size-xs="85vw"
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 12;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#fff;border-width:10px; z-index:11;"></div>
+
+        <div class="banner__content
+        banner__content--mobile-padding-left
+        " style="z-index:13;">
+
+          <div class="banner__content--md">
+            <div class="banner__subtitle">
+              <span class="semibig white font-geo-smbold" style="">
+                Reafirmamos nuestro compromiso <br>
+                con el planeta y eliminaremos
+                progresivamente <br> el uso del
+                plástico en nuestras sedes y cafeterías.
+              </span>
+            </div>
+          </div>
+
+          <div class="banner__content--xs">
+            <div class="banner__subtitle">
+              <span class="semibig white font-geo-smbold" style="">
+                Eliminaremos progresivamente <br>
+                el uso del plástico en nuestras sedes.
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
     <div data-title="primer puesto san marcos">
         <div
         class="

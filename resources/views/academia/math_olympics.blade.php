@@ -47,8 +47,8 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner om__content">
 
-                      <div class="om__content-subtitle">{{$v->title}}</div>
-                      <div class="om__content-subtitle">{{$v->grade}}</div>
+                      <div class="om__content-subtitle">{!! $v->title !!}</div>
+                      <div class="om__content-subtitle">{!! $v->grade !!}</div>
 
                       <ul class="math-olympic-list">
                         <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>

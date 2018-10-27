@@ -382,4 +382,20 @@
   >img{
     margin-bottom: 5px;
   }
+
+  &:link, :visited{
+    color: $gray;
+  }
+
+  strong{
+    color: $gray;
+    transition: all .2s ease-in-out;
+    margin-right: 0 !important;
+  }
+
+  &:hover{
+    strong{
+      color: $orange;
+    }
+  }
 }

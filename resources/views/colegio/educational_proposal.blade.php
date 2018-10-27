@@ -375,6 +375,16 @@
 
               <h2 class="ep-stepsix-titlelist ep-stepsix-titlelist_more"><span class="ep-stepsix-titlelist__number">3</span> Salones multimedia y laboratorios de cómputo.</h2>
 
+              <div class="row col-xs-12">
+
+                <div class="row col-xs-12 ep-stepsix-list">
+                  <div class="col-xs">
+                    <p class="list-text">Potencian el aprendizaje de nuestros alumnos utilizando herramientas imprescindibles en nuestra era digital.</p>
+                  </div>
+                </div>
+              </div>
+
+
 
             </div>
 
@@ -471,22 +481,6 @@
         <video id="proposal" class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls>
       </div>
       </video>
-      <script>
-        var v = document.getElementById("proposal"),
-            play = document.querySelector(".bt-play"),
-            c = document.querySelector(".educationalproposal__video-bg");
-        v.addEventListener("ended", function(){
-          v.play();
-          v.pause();
-          c.style.display = "block";
-          play.style.display = "flex";
-        });
-        play.addEventListener("click", function(){
-          v.play();
-          c.style.display = "none";
-          play.style.display = "none";
-        })
-      </script>
     </div>
   </div>
 

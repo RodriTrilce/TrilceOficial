@@ -74,10 +74,12 @@
               str_replace(
                 [
                   'alt=',
+                  '<a href="/academia/preparacion-uni">'
                   'title="UNI"></a>'
                 ],
                 [
                   'title=',
+                  '<a href="/academia/preparacion-uni" class="">'
                   'title="UNI"><strong>UNI</strong></a>'
                 ]
                 ,$data->content) !!}

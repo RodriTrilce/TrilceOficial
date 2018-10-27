@@ -175,6 +175,23 @@ if(page == 'educational_proposal'){
   if(modal_open.length){
     modal.open(modal_open[0]);
   }
+
+  // video play
+  var v = document.getElementById("proposal"),
+      play = document.querySelector(".bt-play"),
+      c = document.querySelector(".educationalproposal__video-bg");
+  v.addEventListener("ended", function(){
+    v.play();
+    v.pause();
+    c.style.display = "block";
+    play.style.display = "flex";
+  });
+  play.addEventListener("click", function(){
+    v.play();
+    c.style.display = "none";
+    play.style.display = "none";
+  })
+
 }
 
 /**!

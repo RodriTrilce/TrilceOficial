@@ -59,7 +59,7 @@
                   </div>
 
                   <div class="col-xs-12 enrollment-forms--dnidownload" id="dnidownload">
-                    <a id="dnidownload-link" target="_blank">Usted ya se encuentra registrado, <b>descargue su ficha de preinscripción.</b></a>
+                    <a id="dnidownload-link" target="_blank">Ya te encuentras registrado, <b>descarga tu ficha de preinscripción.</b></a>
                   </div>
 
                   <div class="col-xs-12">
@@ -203,7 +203,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="tel" name="step2_phonehome" placeholder="Telf. Casa" aria-label="Telf. Casa">
+                      <input type="tel" name="step2_phonehome" placeholder="Telf. casa" aria-label="Telf. casa">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">
@@ -684,7 +684,7 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm">
                     <fieldset class="form-group">
-                      <input type="tel" name="step3_phonehome" id="step3_phonehome" placeholder="Telf. Casa">
+                      <input type="tel" name="step3_phonehome" id="step3_phonehome" placeholder="Telf. casa">
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm">
@@ -707,7 +707,7 @@
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <fieldset class="form-group">
-                      <input type="tel" name="step3_work_phone" id="step3_work_phone" placeholder="Télefono centro de trabajo">
+                      <input type="tel" name="step3_work_phone" id="step3_work_phone" placeholder="Teléfono centro de trabajo">
                     </fieldset>
                   </div>
                 </div>
@@ -731,7 +731,7 @@
                       <label for="step3_tos"><span>Términos y Condiciones</span></label>
                       <input type="checkbox" name="checkbox" class="checkterms" id="step3_tos" aria-label="Confirmar Términos y Condiciones" required>
                     </fieldset>
-                    <span><a id="termsActive">Leer términos y condiciones</a></span>
+                    <span><a id="termsActive">Leer Términos y Condiciones</a></span>
                   </div>
 
                   <div class="terms" id="terms">
@@ -775,7 +775,7 @@
                     conducta. Dichas condiciones se tomarán en cuenta para las calificaciones de aula o
                     reagrupaciones.</li>
 
-                    <li>La pérdida del libro <div id="terms-9"><select id="terms-9-s" class="terms-9"><option value="ciencia" selected>Ciencia</option><option value="letras">Letras</option></select></div> que otorga la institución dará lugar al cobro de S/<div id="terms-91"></div> por concepto
+                    <li>La pérdida del libro <div id="terms-9"><select id="terms-9-s" class="terms-9"><option value="ciencia" selected>Ciencias</option><option value="letras">Letras</option></select></div> que otorga la institución dará lugar al cobro de S/<div id="terms-91"></div> por concepto
                     de duplicado.</li>
 
                     <li>La institución realiza maratones académicas en horario diurno y nocturno, sin ser

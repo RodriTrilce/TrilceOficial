@@ -17,9 +17,9 @@ import BadgerAccordion from './require/badger_accordion';
 
 const ValidationLang = {
   required: "'{label}' es obligatorio.",
-  email: "'{label}' debe ser una dirección de e-mail valida.",
-  maxLength: "'{label}' debe tener maximo {maxLength} digitos.",
-  minLength: "'{label}' debe tener minimo {minLength} digitos.",
+  email: "'{label}' debe ser una dirección de e-mail válida.",
+  maxLength: "'{label}' debe tener máximo {maxLength} dígitos.",
+  minLength: "'{label}' debe tener minimo {minLength} dígitos.",
   tel: "{label} debe ser un número telefónico.",
   onlytext: "Solo es permitido texto",
   captcha: "Verfica el captcha"

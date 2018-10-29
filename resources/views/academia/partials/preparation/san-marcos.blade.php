@@ -113,7 +113,7 @@
                     <li>Más horas de clases por menos costo</li>
                   </ul>
                   <br>
-                  <i><strong>*Beca completa, media beca y 1/4 de beca (según su rendimiento).</strong></i>
+                  <strong>*Beca completa, media beca y 1/4 de beca (según su rendimiento).</strong>
                 </div>
                 <div class="col-sm-6 xs-hide">
                   <img src="/static/images/academia/preparacion/sm-3-beneficios.png" class="preparation__item-image" alt="">

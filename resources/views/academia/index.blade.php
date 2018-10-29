@@ -586,7 +586,7 @@
     </div>
   </div>
 
-  <div class="nuevos-i">
+  <div class="nuevos-i" id="inicios">
     <div class="row center-xs">
       <div class="col-xs-9 col-sm-11 col-md-10 start-xs nuevos-i-title">
         <div class="box">

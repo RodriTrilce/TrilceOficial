@@ -197,6 +197,7 @@
 
       </div>
     </div>
+<!--
     <div data-title="eco trilce">
         <div
         class="
@@ -258,95 +259,69 @@
 
       </div>
     </div>
-    <div data-title="primer puesto san marcos">
-        <div
-        class="
-          banner__item
-          banner__item--left
-          "
-          data-shadow="9"
-          data-shadow-opacity=".1"
-          data-bordercolor="white"
+-->
+<div data-title="eco trilce">
+    <div
+    class="
+      banner__item
+      banner__item--left
+      "
+    data-shadow="10"
+    data-shadow-opacity=".15"
+    data-bordercolor="#f4633a"
 
-          style="
-            background-color: #f4633a;
-          ">
+    style="
+      background-color: #fff;
+    ">
 
-        <div
-        class="banner__image"
+    <div
+    class="banner__image"
 
-        data-image-md="http://www.trilce.edu.pe/dd.png"
-        data-position-md="80% bottom"
-        data-size-md="contain"
+    data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
+    data-position-md="right bottom"
+    data-size-md="contain"
 
-        data-image-xs="http://www.trilce.edu.pe/dd.png"
-        data-position-xs="80% bottom"
-        data-size-xs="80%"
+    data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
+    data-position-xs="40vw bottom"
+    data-size-xs="85vw"
 
-        style="
-        background-repeat: no-repeat;
-        z-index: 12;
-        "></div>
+    style="
+    background-repeat: no-repeat;
+    z-index: 12;
+    "></div>
 
-        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:11;"></div>
+    <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+    <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
 
-        <div class="
-        banner__content
-        " style="z-index:13;">
-          <div class="banner__style_primer xs-hide">
-          <div class="banner__style_primer__a">
-            <div class="banner__title">
-              <span>¡Felicitaciones,<br>Cachimbo!</span>
-            </div>
-            <div class="banner__subtitle">
-              <span class="normal">
-                Diego Castillo Utani<br>
-              </span>
-              <span class="small">
-                Ingeniería Ambiental
-              </span>
+    <div class="banner__content
+    banner__content--mobile-padding-left
+    " style="z-index:13;">
 
-            </div>
-          </div>
-
-          <div class="banner__style_primer__b">
-
-            <div class="banner__style_primer__number">
-              <span class="number">
-                1<sup>er</sup>
-                <br>
-              </span>
-              <span class="banner__style_primer__number-puesto">
-                PUESTO 2019-I
-              </span>
-
-            </div>
-
-            <div class="banner__style_primer__text">
-              <span>San&nbsp;Marcos</span>
-            </div>
-
-          </div>
-
+      <div class="banner__content--md">
+        <div class="banner__subtitle">
+          <span class="semibig orange font-geo-smbold" style="">
+            Reafirmamos nuestro compromiso <br>
+            con el planeta y eliminaremos
+            progresivamente <br> el uso del
+            plástico en nuestras sedes y cafeterías.
+          </span>
         </div>
-          <div class="banner__style_primer-reverse">
-            <div class="banner__title">
-              <span>1.<sup>er</sup> puesto<br>San&nbsp;Marcos</span>
-            </div>
-            <div class="banner__subtitle">
-              <span class="normal">
-                Diego Castillo Utani<br>
-              </span>
-              <span class="small">
-                Ingeniería Ambiental
-              </span>
-            </div>
-          </div>
-       </div>
-
       </div>
+
+      <div class="banner__content--xs">
+        <div class="banner__subtitle">
+          <span class="semibig orange font-geo-smbold" style="">
+            Eliminaremos progresivamente <br>
+            el uso del plástico en nuestras sedes.
+          </span>
+        </div>
+      </div>
+
     </div>
+
+  </div>
+</div>
+
     <div data-title="primer puesto uni">
         <div
         class="
@@ -429,6 +404,90 @@
               </span>
               <span class="small">
                 Ingeniería Industrial
+              </span>
+            </div>
+          </div>
+       </div>
+
+      </div>
+    </div>
+    <div data-title="primer puesto san marcos">
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+          data-shadow="9"
+          data-shadow-opacity=".1"
+          data-bordercolor="white"
+
+          style="
+            background-color: #f4633a;
+          ">
+
+        <div
+        class="banner__image"
+
+        data-image-md="http://www.trilce.edu.pe/dd.png"
+        data-position-md="80% bottom"
+        data-size-md="contain"
+
+        data-image-xs="http://www.trilce.edu.pe/dd.png"
+        data-position-xs="80% bottom"
+        data-size-xs="80%"
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 12;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:white;border-width:10px; z-index:11;"></div>
+
+        <div class="
+        banner__content
+        " style="z-index:13;">
+
+          <div class="banner__style_primer xs-hide">
+            <div class="banner__style_primer__a">
+              <div class="banner__title">
+                <span>¡Felicitaciones,<br>Cachimbo!</span>
+              </div>
+              <div class="banner__subtitle">
+                <span class="normal">
+                  Diego Castillo Utani<br>
+                </span>
+                <span class="small">
+                  Ingeniería Ambiental
+                </span>
+              </div>
+            </div>
+            <div class="banner__style_primer__b">
+              <div class="banner__style_primer__number">
+                <span class="number">
+                  1<sup>er</sup>
+                  <br>
+                </span>
+                <span class="banner__style_primer__number-puesto">
+                  PUESTO 2019-I
+                </span>
+              </div>
+              <div class="banner__style_primer__text">
+                <span>San&nbsp;Marcos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner__style_primer-reverse">
+            <div class="banner__title">
+              <span>1.<sup>er</sup> puesto<br>San&nbsp;Marcos</span>
+            </div>
+            <div class="banner__subtitle">
+              <span class="normal">
+                Diego Castillo Utani<br>
+              </span>
+              <span class="small">
+                Ingeniería Ambiental
               </span>
             </div>
           </div>

@@ -214,7 +214,7 @@
   order: 2;
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
 
   @include breakpoint(baby){
     bottom: 20px;
@@ -253,23 +253,67 @@ button.tns-nav-active{
 @import "animate";
 
 
-		@keyframes trilce_slider_item_active {
-            0% {
-				transform: scale(1.8);
+@keyframes trilce_slider_item_active {
+        0% {
+		transform: scale(1.8);
 
-			}
-			100% {
-				transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
 
-			}
-		}
+	}
+}
 
-
+/*
 .tns-slide-active .banner__image{
   transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
-  
+
   animation: trilce_slider_item_active 800ms ease;
+}
+*/
+
+
+
+.from-left {
+    transform: translate3d(-100%,0,0)
+}
+
+.from-right {
+    transform: translate3d(100%,0,0)
+}
+
+.is-animate {
+    z-index: 0;
+    transition: transform 400ms cubic-bezier(0.26,0.59,0.34,0.99);
+}
+
+
+
+@keyframes trilce_from_rigth {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+	}
+	100% {
+	}
+}
+@keyframes trilce_from_left {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+	}
+	100% {
+	}
+}
+
+.trilce_carousel_in{
+  opacity: 1 !important;
+  //animation: trilce_carousel_outa 800ms ease;
+  transition: transform 400ms cubic-bezier(0.26,0.59,0.34,0.99);
+}
+
+.trilce_carousel_out{
+  z-index: 0;
+  opacity: 1 !important;
 }
 
 
@@ -655,6 +699,13 @@ $banner__box--size-mobile: 5px;
 	100%{
 		background-color: rgba(165,165,165,.1);
 	}
+}
+
+.tns-gallery{
+  height: 500px;
+  @include breakpoint(baby){
+    height: 350px;
+  }
 }
 
 

@@ -71,10 +71,11 @@ String.prototype.capitalize = function(){
 
   var modal = new VanillaModal();
   var slider = tns({
+    mode: 'gallery',
     container: '.index-banners',
     items: 1,
     slideBy: 'page',
-    autoplay: true,
+    autoplay: false,
     autoplayButtonOutput: false,
     touch: true,
     mouseDrag: true,
@@ -83,8 +84,50 @@ String.prototype.capitalize = function(){
     autoplayHoverPause: true,
     loop: true,
     arrowKeys: true,
-    speed: 700    
+    speed: 700,
+/*
+    animateIn: 'trilce_carousel_in',
+    animateOut: 'trilce_carousel_out',
+  */
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    swipeAngle : 50,
   });
+/*
+  slider.events.on('indexChanged', function(info){
+    var from;
+    var currentIndex  = info.indexCached;
+    var index         = info.index % info.slideCount;
+    var force = true;
+
+    if (currentIndex - index > 0) {
+      if (!force && currentIndex === total - 1 && index === 0) {
+        from = 'from-right';
+      } else {
+        from = 'from-left';
+      }
+    } else {
+      from = 'from-right';
+    }
+
+    var nextElem = info.slideItems[info.index];
+    console.log(nextElem)
+
+    nextElem.style.transition = "";
+    nextElem.classList.add(from);
+
+    nextElem.classList.add('is-animate');
+
+    slider.events.on('transitionStart', function(){
+    })
+
+    slider.events.on('transitionEnd', function(){
+      nextElem.classList.remove(from);
+//      nextElem.classList.remove('is-animate');
+    })
+
+  });
+  */
   //    controlsText: ['&#xf111;','&#xf112;'],
 
   SliderTrilce.init(slider);

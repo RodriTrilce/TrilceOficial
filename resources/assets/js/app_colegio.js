@@ -105,6 +105,7 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
  */
 if(page == 'index'){
  var slider = tns({
+   mode: 'gallery',
    container: '.index-banners',
    items: 1,
    slideBy: 'page',
@@ -117,7 +118,11 @@ if(page == 'index'){
    autoplayHoverPause: true,
    loop: true,
    arrowKeys: true,
-   speed: 700
+   speed: 700,
+   animateIn: 'fadeIn',
+   animateOut: 'fadeOut',
+   swipeAngle : 50,
+
  });
  //    controlsText: ['&#xf111;','&#xf112;'],
 

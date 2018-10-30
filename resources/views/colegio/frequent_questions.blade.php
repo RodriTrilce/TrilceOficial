@@ -20,7 +20,7 @@
 
           <ul class="js-tabs__header">
             <li><a href="#" class="js-tabs__title">Propuesta educativa</a></li>
-            <li><a href="#" class="js-tabs__title">Trámites y matrícula</a></li>
+            <li><a href="#" class="js-tabs__title">Matrícula</a></li>
             <li><a href="#" class="js-tabs__title">Otros</a></li>
           </ul>
 
@@ -30,12 +30,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Cómo es el sistema Trilce?
+                    ¿Cuál es nuestra propuesta educativa?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Es un sistema desarrollado por una plana docente de la especialidad según el curso que dicta, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes. Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, la cual va de la mano con el apoyo de un equipo de tutoras especializadas en la rama de psicología, educación o ciencias sociales.
+                        Nuestra propuesta ha sido desarrollada por una plana docente especializada en diversas materias, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes. Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, la cual va de la mano con el apoyo de un equipo de tutoras.
                       </p>
                       @include('colegio.partials.ads')
                     </div>
@@ -63,13 +63,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Por qué en Trilce se clasifica a los alumnos por niveles (avanzado, intermedio y básico)?
+                    ¿Cuántas horas de inglés se dictan en el horario regular?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Las reagrupaciones (clasificación en aulas según el rendimiento académico de los alumnos) existen para que aprendan a su propio ritmo e incentivar su esfuerzo para mejorar su nivel. Todos los niveles cuentan con la misma calidad de enseñanza.
-                        <br/>Buscamos que nuestros alumnos se esfuercen, bimestre a bimestre, para mejorar su nivel académico. En Trilce todos los docentes son de excelente nivel y la disciplina es fundamental, independientemente de la sección en que se encuentren.
+                        Nuestros alumnos reciben una sólida formación en inglés durante sus cuatro primeros años de secundaria. A diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales, en Trilce nuestros estudiantes de 1.<sup>o</sup> a 3.<sup>o</sup> reciben ocho horas del curso a la semana y en 4.<sup>o</sup>, cuatro horas a la semana. Además, en 4.<sup>o</sup> y 5.<sup>o</sup> reforzamos su aprendizaje con talleres de 2 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.
                       </p>
                     </div>
                   </dd>
@@ -80,12 +79,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Por qué en 4.<sup>o</sup> y 5.<sup>o</sup> de secundaria no existen horas de inglés en el horario regular?
+                    ¿En Trilce se enseña el curso de religión?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Los tres primeros años, los alumnos de Trilce reciben una formación sólida en inglés y llevan ocho horas del curso a la semana (a diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales), lo que se complementa en los posteriores grados (4.<sup>o</sup> y 5.<sup>o</sup>) mediante talleres de 4 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.
+                        Solamente se dicta el curso de religión en primaria (una hora a la semana). Trilce es un colegio laico que respeta la diversidad de creencias, por eso, trabajamos un programa de valores que contempla la formación ética del individuo. Este programa se desarrolla durante todo el año académico; se basa en las vivencias de los alumnos y la expresión de su sentir mediante actividades que promueven la sensibilidad y la toma de conciencia frente al entorno y la autonomía del adolescente. Si bien es cierto se respetan las creencias, se promueve la fe; por eso, los sacramentos como la primera comunión y confirmación son coordinados con representantes de la Iglesia. En los meses de mayo, agosto y octubre se organizan actividades en honor a la Virgen María, Santa Rosa y el Señor de los Milagros, respectivamente.
                       </p>
                     </div>
                   </dd>
@@ -96,12 +95,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿En Trilce se enseña religión?
+                    ¿Trilce cuenta con talleres extracurriculares?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Trilce es un colegio laico que respeta la diversidad de creencias; por ello, trabajamos un programa de valores que contempla la formación ética del individuo. Este programa se desarrolla durante todo el año académico; se basa en las vivencias de los alumnos y la expresión de su sentir mediante actividades que promueven la sensibilidad y la toma de conciencia frente al entorno y la autonomía del adolescente. Si bien es cierto se respetan las creencias, se promueve la fe; por eso, los sacramentos como la primera comunión y confirmación son coordinados con representantes de la Iglesia. En los meses de mayo, agosto y octubre se organizan actividades en honor a la Virgen María, Santa Rosa y el Señor de los Milagros, respectivamente.
+                        Sí, en Trilce contamos con un taller de teatro y otras actividades como las ferias regionales, concursos de declamación, debate, ajedrez, entre otros, porque consideramos que son importantes para la formación de nuestros estudiantes.
                       </p>
                     </div>
                   </dd>
@@ -112,28 +111,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Trilce cuenta con talleres de danzas, deportes, etc.?
+                    Mi hijo(a) no es bueno(a) en matemáticas. ¿Se adaptará al nivel académico de Trilce?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Contamos con talleres de teatro y otras actividades como las ferias regionales, concursos de declamación, debate, ajedrez, entre otros, porque consideramos que son importantes para la formación de nuestros estudiantes.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
-
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    Mi hijo(a) no es bueno(a) en matemáticas. ¿Se adaptará al sistema de Trilce?
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        Sí, en Trilce contribuimos al desarrollo de las habilidades de los alumnos en diferentes áreas, y logramos que destaquen según sus capacidades. Con respecto a los cursos de matemáticas, nosotros contamos con un servicio de asesorías especializadas en los cursos de mayor dificultad, de esta manera los reforzamos para que minimicen sus falencias. Asimismo, a través del Departamento Psicopedagógico brindamos al padre de familia las pautas que estimulen y motiven a su hijo a adaptarse al sistema.
+                        Sí, en Trilce contribuimos al desarrollo de las habilidades de los alumnos en diferentes áreas, y logramos que destaquen según sus capacidades. Con respecto a los cursos de matemáticas, nosotros contamos con un servicio de asesorías especializadas en los cursos de mayor dificultad. Asimismo, a través del Departamento Psicopedagógico brindamos al padre de familia las pautas que estimulen y motiven a su hijo a adaptarse al sistema.
                       </p>
                     </div>
                   </dd>
@@ -160,59 +143,24 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    Sobre la entrega de libros, material de estudio y cursos
+                    Sobre la entrega de libros y material de estudio.
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        <strong>Inicial:</strong> <br>
-                        4 a 5 años (prekínder y kínder): se les entrega fichas para delinear y pintar. <br><br>
+                        <strong>Inicial:</strong><br>
+                        4 a 5 años (prekínder y kínder): se les entrega fichas para delinear y pintar.
+                        <br><br>
                         <strong>Primaria:</strong><br>
-                        1.<sup>o</sup> a 6.<sup>o</sup> grado: se les entrega libros por áreas.<br>
-                        1.<sup>o</sup> a 4.<sup>o</sup> grado: cuentan con un profesor para varios cursos, un profesor de inglés y uno de computación.<br>
-                        *A partir de 5.o grado cuentan con un profesor por curso (polidocencia).<br>
-                        *Se dicta el curso de religión a los alumnos de prekínder, kínder y primaria.<br><br>
+                        1.<sup>o</sup> a 6.<sup>o</sup> grado: se les entrega 9 libros al año de manera gratuita
+                        <br><br>
                         <strong>Secundaria:</strong><br>
-                        Formación de valores: de 1.<sup>o</sup> a 5.<sup>o</sup> de secundaria, se trabaja un valor por mes.
+                        1.<sup>o</sup> a 5.<sup>o</sup> de secundaria: se les entrega, de manera totalmente gratuita, una tablet que incluye todos los libros de estudio.
                       </p>
                     </div>
                   </dd>
                 </div>
               </div>
-
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    Sobre la cantidad de alumnos
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        El personal de tutoría se encuentra capacitado para el dominio de grupos y está especializado en las carreras de psicología y educación. Por otro lado, nuestras aulas son amplias, ventiladas y con bastante iluminación natural y artificial.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
-
-              <!--
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    Sobre la infraestructura
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        En todos los locales: resaltar las comodidades en las aulas, corredores, baños, entre otros.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
-            -->
 
               <div class="frequentquestions-question row col-xs-12">
                 <div class="col-xs question-content">
@@ -255,7 +203,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Si el padre de familia desea conversar con los docentes, debe solicitar una entrevista anticipadamente.
+                        Sí existe una comunicación frecuente entre padres y docentes; los padres de familia pueden solicitar una reunión a través de la agenda de control.
                       </p>
                     </div>
                   </dd>
@@ -271,9 +219,9 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Nuestros alumnos no utilizan uniforme escolar<sup>1</sup>, dado que no deseamos generar más gastos al padre de familia. Además, es importante que el alumno se sienta más cómodo para estudiar. El Ministerio de Educación tiene una disposición en la que se indica que el uso de uniforme no es obligatorio. Sin embargo, el alumno recibe las Normas de Convivencia (Reglamento Interno), en las cuales se hacen precisiones sobre la vestimenta que puede utilizar.
+                        Nuestros alumnos no utilizan uniforme escolar1, dado que no deseamos generar más gastos al padre de familia. Además, es importante que el alumno se sienta más cómodo para estudiar. El Ministerio de Educación tiene una disposición en la que se indica que el uso de uniforme no es obligatorio. Sin embargo, el alumno recibe las Normas de Convivencia (Reglamento Interno), en las cuales se hacen precisiones sobre la vestimenta que puede utilizar. 
                         <br><br>
-                        <small><sup>1</sup> No aplica a todas las sedes.</small>
+                        <sup>1</sup> No aplica a todas las sedes.
                       </p>
                     </div>
                   </dd>
@@ -289,7 +237,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Todos nuestros docentes poseen un excelente nivel académico y tienen la experiencia necesaria para enseñar adecuadamente.
+                        Todos nuestros docentes poseen un excelente nivel académico y tienen la experiencia necesaria para enseñar adecuadamente; además, son evaluados constantemente en el transcurso del año para garantizar su preparación.
                       </p>
                     </div>
                   </dd>
@@ -305,58 +253,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Trilce cuenta con una excelente plana docente y sistema académico; por otro lado, nuestros resultados hablan por sí solos: primeros puestos en universidades prestigiosas como UNI, San Marcos y PUCP, y, sobre todo, miles de ingresantes (que después se convierten en excelentes universitarios) en diversas universidades del país.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
-
-
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿Cómo me garantizan que mi hijo ingresará a la universidad?
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        Eso no se puede garantizar. Lo que sí le garantizamos es que le brindaremos a su hijo una excelente preparación académica, pues contamos con un alto nivel en matemática, ciencias y letras, además de una sólida formación en valores.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
-
-              <!-- FALTA CONFIRMAR CANTIDAD DE ALUMNOS
-                            <div class="frequentquestions-question row col-xs-12">
-                              <div class="col-xs question-content">
-                                <h3 class="question-title js-badger-accordion-header">
-                                  <div class="question-title__signe"></div>
-                                  ¿Qué pasa si mi hijo no entiende algunos cursos?
-                                </h3>
-                                <dd class="badger-accordion__panel js-badger-accordion-panel">
-                                  <div class="js-badger-accordion-panel-inner">
-                                    <p class="question-answer">
-                                      Al alumno se le brindará asesorías gratuitas y un control constante por parte de la tutora del aula para que el padre de familia conozca el progreso de su hijo.
-                                    </p>
-                                  </div>
-                                </dd>
-                              </div>
-                            </div>
-              -->
-
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿Cuántas horas de clases enseñan arte?
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        Si bien es cierto que la dedicación al aspecto académico es una de las prioridades, también lo es la parte formativa. En Trilce se estimula al alumno según sus cualidades, ya sea en las danzas, declamación, teatro y en toda expresión que permita el desarrollo de la creatividad. No se puede indicar el número preciso de horas que se dedican a las artes, pero sí la forma en que se trabaja este aspecto.
+                        Los resultados hablan por sí solos: primeros puestos en universidades prestigiosas como UNI, San Marcos y PUCP, y, sobre todo, miles de ingresantes (que después se convierten en excelentes universitarios) en diversas universidades del país.
                       </p>
                     </div>
                   </dd>
@@ -367,12 +264,12 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Los postulantes reciben algún temario de cursos antes de rendir evaluaciones?
+                    ¿En Trilce se enseña el curso de arte?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        No se entrega ningún tipo de temario antes de las evaluaciones, ya que los postulantes son evaluados de acuerdo a su edad y nivel académico.
+                        En Trilce se estimula al estudiante según sus cualidades en teatro, danza, declamación y en toda expresión que permita el desarrollo del arte y la creatividad. En primaria, nuestros alumnos llevan el curso en su horario de clases.
                       </p>
                     </div>
                   </dd>
@@ -383,55 +280,23 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Qué cursos son evaluados en primaria?
+                    ¿Qué cursos son evaluados en primaria y secundaria?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        De 2.<sup>o</sup> a 6.<sup>o</sup> grado se evalúa matemática, comunicación, ciencia y ambiente, personal social e inglés (básico).
+                        <strong>Primaria:</strong> De 2.<sup>o</sup> a 6.<sup>o</sup> grado se evalúa matemática, comunicación, ciencia y ambiente, personal social e inglés (básico).
+                        <br><br>
+                        <strong>Secundaria:</strong> Matemática, comunicación e inglés (básico). Los exámenes cuentan con 50 preguntas aproximadamente.
                       </p>
                     </div>
                   </dd>
                 </div>
               </div>
 
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                     ¿Qué cursos son evaluados en secundaria?
-                  </h3>
-                  <dd class="badger-accordion__panel js-badger-accordion-panel">
-                    <div class="js-badger-accordion-panel-inner">
-                      <p class="question-answer">
-                        Matemática, comunicación e inglés (básico). Los exámenes cuentan con 50 preguntas aproximadamente.
-                      </p>
-                    </div>
-                  </dd>
-                </div>
-              </div>
-
-                <!--
-                <div class="frequentquestions-question row col-xs-12">
-                  <div class="col-xs question-content">
-                    <h3 class="question-title js-badger-accordion-header">
-                      <div class="question-title__signe"></div>
-                      ¿Por qué solo algunos colegios Trilce cuentan con ITS?
-                    </h3>
-                    <dd class="badger-accordion__panel js-badger-accordion-panel">
-                      <div class="js-badger-accordion-panel-inner">
-                        <p class="question-answer">
-                          El ingreso por ITS es una modalidad dirigida a los mejores alumnos de 5.° de secundaria de un grupo de colegios seleccionados por la PUCP a partir de un estudio sobre el rendimiento de sus egresados en la universidad.
-                          El alumno también puede rendir el examen de matrícula de la PUCP en la modalidad de Primera Opción; para esto, contamos con un aula exclusiva de preparación para la PUCP.
-                        </p>
-                      </div>
-                    </dd>
-                  </div>
-                </div>
-                -->
           </div>
-          <div class="js-tabs__content js-badger-accordion_2">
 
+          <div class="js-tabs__content js-badger-accordion_2">
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
@@ -485,7 +350,7 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Consultar con la sede Trilce indicada (para que se coordine con el Área de Actas).
+                      Consultar con la sede indicada (para que se coordine con el Área de Actas).
                     </p>
                   </div>
                 </dd>
@@ -496,12 +361,28 @@
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
                   <div class="question-title__signe"></div>
-                  ¿Las pensiones son elevadas?
+                  ¿Qué edad deben tener los niños que se matriculen en 1.<sup>o</sup> de primaria?
                 </h3>
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Los precios son accesibles, nos permiten cubrir los costos en infraestructura y poderles brindar un servicio de excelente calidad, tanto en lo formativo como en lo académico.
+                      Los niños que van a matricularse en 1.<sup>o</sup> de primaria deben cumplir 6 años, como máximo, el 30 de marzo.
+                    </p>
+                  </div>
+                </dd>
+              </div>
+            </div>
+
+            <div class="frequentquestions-question row col-xs-12">
+              <div class="col-xs question-content">
+                <h3 class="question-title js-badger-accordion-header">
+                  <div class="question-title__signe"></div>
+                  ¿Los postulantes a los colegios Trilce reciben algún temario de cursos antes de pasar el proceso de admisión?
+                </h3>
+                <dd class="badger-accordion__panel js-badger-accordion-panel">
+                  <div class="js-badger-accordion-panel-inner">
+                    <p class="question-answer">
+                      No se entrega ningún tipo de temario para el proceso de admisión, ya que los postulantes son evaluados de acuerdo a su edad y nivel académico.
                     </p>
                   </div>
                 </dd>
@@ -517,46 +398,12 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      El padre de familia puede presentar su solicitud de descuento, en la cual tendrá que exponer y sustentar los motivos por los que lo solicita. Asimismo, recalcamos que por dos hermanos matriculados en nuestra institución, uno recibe un cuarto de beca; por tres y cuatro hermanos, uno de ellos recibe media beca. Para esto, deben ser evaluados como cualquier alumno que ingresa a Trilce. Se otorga la beca al mayor de los hermanos.
+                      Sí, si estudian dos o más hermanos en nuestro colegio, hay un descuento de 15 soles para cada uno de ellos. Para aplicar a este descuento, es indispensable presentar una solicitud y una copia del recibo de matrícula.
                     </p>
                   </div>
                 </dd>
               </div>
             </div>
-
-            <!--
-            <div class="frequentquestions-question row col-xs-12">
-              <div class="col-xs question-content">
-                <h3 class="question-title js-badger-accordion-header">
-                  <div class="question-title__signe"></div>
-                   Retención de la tarjeta de control por falta de pago
-                </h3>
-                <dd class="badger-accordion__panel js-badger-accordion-panel">
-                  <div class="js-badger-accordion-panel-inner">
-                    <p class="question-answer">
-                      Sistema por el cual el padre de familia debe acercarse al colegio para conversar con la Dirección sobre su deuda y reprogramar dichas fechas. La retención de la tarjeta de control no implica que el alumno esté impedido de ingresar al colegio.
-                    </p>
-                  </div>
-                </dd>
-              </div>
-            </div>-->
-
-            <!--
-            <div class="frequentquestions-question row col-xs-12">
-              <div class="col-xs question-content">
-                <h3 class="question-title js-badger-accordion-header">
-                  <div class="question-title__signe"></div>
-                   ¿Se aceptan repitentes?
-                </h3>
-                <dd class="badger-accordion__panel js-badger-accordion-panel">
-                  <div class="js-badger-accordion-panel-inner">
-                    <p class="question-answer">
-                      El alumno deberá pasar por evaluaciones según el proceso de matrícula.
-                    </p>
-                  </div>
-                </dd>
-              </div>
-            </div>-->
 
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
@@ -567,14 +414,14 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Si ya pasó más de un año académico, el alumno tendrá que pasar el proceso de matrícula nuevamente.
+                      Si ya pasó más de un año académico, el alumno tendrá que pasar el proceso de admisión nuevamente.
                     </p>
                   </div>
                 </dd>
               </div>
             </div>
 
-{{--
+            <!--
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
@@ -584,14 +431,17 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Sí podrá hacerlo, pero deberá haber transcurrido un año desde dicho proceso de matrícula.
+                      Sí podrá hacerlo, pero deberá haber transcurrido un año desde dicho proceso de admisión.
                     </p>
                   </div>
                 </dd>
               </div>
-            </div> --}}
+            </div>
+            -->
 
           </div>
+
+
           <div class="js-tabs__content js-badger-accordion_3">
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
@@ -608,48 +458,17 @@
                 </dd>
               </div>
             </div>
-            <div class="frequentquestions-question row col-xs-12">
-              <div class="col-xs question-content">
-                <h3 class="question-title js-badger-accordion-header">
-                  <div class="question-title__signe"></div>
-                  ¿Qué edad deben tener los niños que se matriculen en 1.<sup>o</sup> de primaria?
-                </h3>
-                <dd class="badger-accordion__panel js-badger-accordion-panel">
-                  <div class="js-badger-accordion-panel-inner">
-                    <p class="question-answer">
-                      Los niños que van a matricularse en 1.<sup>o</sup> de primaria deben cumplir 6 años, como máximo, el 30 de junio del año en curso.
-                    </p>
-                  </div>
-                </dd>
-              </div>
-            </div>
 
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
                   <div class="question-title__signe"></div>
-                   ¿Qué edad deben tener los alumnos que se matriculen en secundaria?
+                  ¿Se aceptan niños con NEE (Necesidades Educativas Especiales) en el colegio?
                 </h3>
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      El tercer y último nivel dura cinco años. Según las disposiciones del Ministerio de Educación, los alumnos de secundaria deben ser jóvenes de entre 11 (o 12) a 16 (o 17) años de edad.
-                    </p>
-                  </div>
-                </dd>
-              </div>
-            </div>
-
-            <div class="frequentquestions-question row col-xs-12">
-              <div class="col-xs question-content">
-                <h3 class="question-title js-badger-accordion-header">
-                  <div class="question-title__signe"></div>
-                  ¿Se aceptan niños especiales en el colegio?
-                </h3>
-                <dd class="badger-accordion__panel js-badger-accordion-panel">
-                  <div class="js-badger-accordion-panel-inner">
-                    <p class="question-answer">
-                      Sí aceptamos a niños especiales, ya que somos un colegio inclusivo. El alumno deberá rendir las evaluaciones de matrícula para saber el nivel académico en el que se encuentra.
+                      Sí aceptamos a niños con NEE, ya que somos un colegio inclusivo. El alumno deberá rendir las evaluaciones de admisión para que podamos conocer el nivel académico en el que se encuentra.
                     </p>
                   </div>
                 </dd>
@@ -676,18 +495,19 @@
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
                   <div class="question-title__signe"></div>
-                  ¿Cuál es el tiempo de refrigerio (recreos)?
+                  ¿Cuentan con horarios de refrigerio (recreos)?
                 </h3>
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                   <div class="js-badger-accordion-panel-inner">
                     <p class="question-answer">
-                      Existen dos recreos, el primero dura 15 minutos y el segundo 20 minutos. En 5.<sup>o</sup> de secundaria tienen otro régimen: dos recreos de 15 minutos y 20 minutos para el almuerzo.
-                      <br>Si el alumno tiene actividades fuera del horario, contará con un descanso de 45 minutos a una hora.
+                      Sí, existen dos recesos para refrigerios y recreación tanto en primaria como en secundaria.
                     </p>
                   </div>
                 </dd>
               </div>
             </div>
+
+
 
           </div>
 

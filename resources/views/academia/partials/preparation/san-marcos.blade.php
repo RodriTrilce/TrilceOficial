@@ -60,25 +60,30 @@
               <div class="row col-xs-12 col-sm-10 start-sm preparation__cicles">
                 <div class="col-xs-12 col-sm-6 preparation__cicles__section preparation__cicles__section--double">
                   <p>
-                    <strong class="orange">Anual:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y postulen a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Anual:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y que desean postular a San Marcos en el examen de admisión de marzo.
                   </p>
 
                   <p>
-                    <strong class="orange">Semestral:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y postulen a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Semestral:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y que desean postular a San Marcos en el examen de admisión de marzo.
                   </p>
 
                   <p>
-                    <strong class="orange">Intensivo:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y postulen a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Semestral Avanzado:</strong> Es 30 % teórico y 70 % práctico; está dirigido a los alumnos que se han preparado anteriormente.
                   </p>
 
                   <p>
-                    <strong class="orange">Repaso:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y postulen a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Intensivo:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y que desean postular a San Marcos en el examen de admisión de marzo.
                   </p>
 
                 </div>
                 <div class="col-xs-12 col-sm-6 preparation__cicles__section preparation__cicles__section--double">
+
                   <p>
-                    <strong class="orange">Reforzamiento:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y postulen a San Marcos en el examen de admisión de septiembre.
+                    <strong class="orange">Repaso:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y que desean postular a San Marcos en el examen de admisión de marzo.
+                  </p>
+
+                  <p>
+                    <strong class="orange">Reforzamiento:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y desean postular a San Marcos en el examen de admisión de septiembre.
                   </p>
 
                   <p>
@@ -86,9 +91,14 @@
                   </p>
 
                   <p>
-                    <strong class="orange">¿Cuál es la diferencia entre el Semestral Avanzado y el Semestral Escolarizado?:</strong> El Semestral Avanzado es 30% teórico y 70% práctico; está dirigido a los alumnos que han tenido preparación anteriormente. El Semestral Escolarizado es 50% teórico y 50% práctico, y es para los alumnos que se encuentran en el colegio y/o que no han tenido preparación anteriormente.
+                    <strong class="orange">Semestral Escolarizado:</strong> El Semestral Escolarizado es 50% teórico y 50% práctico, y es para los alumnos que se encuentran en el colegio y/o que no han tenido preparación anteriormente.
                   </p>
 
+<!--
+                  <p>
+                    <strong class="orange">¿Cuál es la diferencia entre el Semestral Avanzado y el Semestral Escolarizado?:</strong> El Semestral Avanzado es 30% teórico y 70% práctico; está dirigido a los alumnos que han tenido preparación anteriormente. El Semestral Escolarizado es 50% teórico y 50% práctico, y es para los alumnos que se encuentran en el colegio y/o que no han tenido preparación anteriormente.
+                  </p>
+-->
                 </div>
               </div>
             </div>

@@ -248,6 +248,7 @@
 .educationalproposal__video{
   justify-content: center;
   margin-bottom: 40px;
+  width: 100%;
 
   @include breakpoint(baby){
     margin-bottom: 20px;
@@ -267,11 +268,7 @@
 }
 
 .educationalproposal__video-video{
-  max-height: 550px;
-
-  @include breakpoint(baby){
-    max-height: 300px;
-  }
+  width: 100%;
 }
 
 .ep-stepsix-titlelist_more{

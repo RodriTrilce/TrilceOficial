@@ -22,8 +22,8 @@
           <ul class="js-tabs__header">
               <li><a href="#" class="js-tabs__title">Propuesta Educativa</a></li>
               <li><a href="#" class="js-tabs__title">Inscripción</a></li>
-              <li><a href="#" class="js-tabs__title">Otros</a></li>
               <li><a href="#" class="js-tabs__title">Simulacros</a></li>
+              <li><a href="#" class="js-tabs__title">Otros</a></li>
           </ul>
 
           <div class="js-tabs__content js-badger-accordion_1">
@@ -228,6 +228,68 @@
 
           </div>
           <div class="js-tabs__content js-badger-accordion_3">
+              <div class="frequentquestions-question row col-xs-12">
+                <div class="col-xs question-content">
+                  <h3 class="question-title js-badger-accordion-header">
+                    <div class="question-title__signe"></div>
+                    ¿Hay simulacros y tienen algún costo?
+                  </h3>
+                    <dd class="badger-accordion__panel js-badger-accordion-panel">
+                      <div class="js-badger-accordion-panel-inner">
+                        <p class="question-answer">
+                          Sí hay simulacros en la academia, sus fechas se anuncian previamente por la sede que los organice. Son gratuitos y las inscripciones se realizan <a href="/academia/simulacros-uni" title="Simulacros UNI, PUCP y San Marcos" alt="Simulacros UNI, PUCP y San Marcos">aquí</a>.
+                        </p>
+                      </div>
+                    </dd>
+                </div>
+              </div>
+              <div class="frequentquestions-question row col-xs-12">
+                <div class="col-xs question-content">
+                  <h3 class="question-title js-badger-accordion-header">
+                    <div class="question-title__signe"></div>
+                    ¿Qué pasa si olvidé el código de inscripción del simulacro?
+                  </h3>
+                    <dd class="badger-accordion__panel js-badger-accordion-panel">
+                      <div class="js-badger-accordion-panel-inner">
+                        <p class="question-answer">
+                          Te recomendamos comunicarte con tu sede.
+                        </p>
+                      </div>
+                    </dd>
+                </div>
+              </div>
+              <div class="frequentquestions-question row col-xs-12">
+                <div class="col-xs question-content">
+                  <h3 class="question-title js-badger-accordion-header">
+                    <div class="question-title__signe"></div>
+                    ¿En dónde encuentro los resultados del simulacro?
+                  </h3>
+                    <dd class="badger-accordion__panel js-badger-accordion-panel">
+                      <div class="js-badger-accordion-panel-inner">
+                        <p class="question-answer">
+                          Te recomendamos ingresar <a href="/academia/simulacros-uni">aquí</a>.
+                        </p>
+                      </div>
+                    </dd>
+                </div>
+              </div>
+              <div class="frequentquestions-question row col-xs-12">
+                <div class="col-xs question-content">
+                  <h3 class="question-title js-badger-accordion-header">
+                    <div class="question-title__signe"></div>
+                    ¿En dónde encuentro los solucionarios?
+                  </h3>
+                    <dd class="badger-accordion__panel js-badger-accordion-panel">
+                      <div class="js-badger-accordion-panel-inner">
+                        <p class="question-answer">
+                          Te recomendamos ingresar <a href="/academia/solucionarios-uni" title="Solucionarios UNI, PUCP y San Marcos" alt="Solucionarios UNI, PUCP y San Marcos">aquí</a>.
+                        </p>
+                      </div>
+                    </dd>
+                </div>
+              </div>
+          </div>
+          <div class="js-tabs__content js-badger-accordion_4">
 
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
@@ -320,68 +382,6 @@
               </div>
             </div>
 
-          </div>
-          <div class="js-tabs__content js-badger-accordion_4">
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿Hay simulacros y tienen algún costo?
-                  </h3>
-                    <dd class="badger-accordion__panel js-badger-accordion-panel">
-                      <div class="js-badger-accordion-panel-inner">
-                        <p class="question-answer">
-                          Sí hay simulacros en la academia, sus fechas se anuncian previamente por la sede que los organice. Son gratuitos y las inscripciones se realizan <a href="/academia/simulacros-uni" title="Simulacros UNI, PUCP y San Marcos" alt="Simulacros UNI, PUCP y San Marcos">aquí</a>.
-                        </p>
-                      </div>
-                    </dd>
-                </div>
-              </div>
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿Qué pasa si olvidé el código de inscripción del simulacro?
-                  </h3>
-                    <dd class="badger-accordion__panel js-badger-accordion-panel">
-                      <div class="js-badger-accordion-panel-inner">
-                        <p class="question-answer">
-                          Te recomendamos comunicarte con tu sede.
-                        </p>
-                      </div>
-                    </dd>
-                </div>
-              </div>
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿En dónde encuentro los resultados del simulacro?
-                  </h3>
-                    <dd class="badger-accordion__panel js-badger-accordion-panel">
-                      <div class="js-badger-accordion-panel-inner">
-                        <p class="question-answer">
-                          Te recomendamos ingresar <a href="/academia/simulacros-uni">aquí</a>.
-                        </p>
-                      </div>
-                    </dd>
-                </div>
-              </div>
-              <div class="frequentquestions-question row col-xs-12">
-                <div class="col-xs question-content">
-                  <h3 class="question-title js-badger-accordion-header">
-                    <div class="question-title__signe"></div>
-                    ¿En dónde encuentro los solucionarios?
-                  </h3>
-                    <dd class="badger-accordion__panel js-badger-accordion-panel">
-                      <div class="js-badger-accordion-panel-inner">
-                        <p class="question-answer">
-                          Te recomendamos ingresar <a href="/academia/solucionarios-uni" title="Solucionarios UNI, PUCP y San Marcos" alt="Solucionarios UNI, PUCP y San Marcos">aquí</a>.
-                        </p>
-                      </div>
-                    </dd>
-                </div>
-              </div>
           </div>
 
       </div>

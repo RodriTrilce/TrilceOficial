@@ -42,7 +42,7 @@
       </div>
       <div class="row col-xs col-sm-9 col-lg-10 end-xs">
           <div class="col-xs-12 nav-info">
-              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <a class="phone" href="tel:+51016198100"><b>619-8100</b></a></span>
+              <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <a class="phone" href="tel:+51016198100"><b>619-8100</b></a> <span>|</span> <a href="/menu-trilce" target="_blank">Menú Trilce</a> </span>
           </div>
           <div class="col-xs-12">
             <nav class="nav-burger">

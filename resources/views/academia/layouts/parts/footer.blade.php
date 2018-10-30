@@ -10,8 +10,8 @@
       <div class="col-xs start-xs links">
         <ul>
           <li><a href="/colegio">Colegio Trilce</a></li>
+          <li><a href="/menu-trilce" target="_blank">Menú Trilce</a></li>
           {{-- <li><a href="#">Vacaciones útiles</a></li> --}}
-          <li><a href="/storage/other/documents/menu/2018/menu.pdf" target="_blank">Menú Trilce</a></li>
           {{-- <li><a href="#">Trabaja con nosotros</a></li> --}}
         </ul>
       </div>

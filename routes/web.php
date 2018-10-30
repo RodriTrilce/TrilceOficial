@@ -50,6 +50,10 @@ Route::name('home')->get('/', function () {
   return view('home');
 });
 
+Route::name('menu-trilce')
+      ->get('/menu-trilce', function(){
+        return Redirect::to('/storage/other/documents/menu/2018/menu.pdf');
+});
 
 
 /**

@@ -470,7 +470,7 @@
   </div>
 
   <div class="row center-xs center-sm container-base">
-    <div class="row col-xs-12 start-center educationalproposal__video">
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md educationalproposal__video">
       <h1 class="educationalproposal__video-title">Nuestra propuesta</h1>
       <br><br>
       <div class="educationalproposal__video">
@@ -479,8 +479,8 @@
           <i class="fa fa-play-circle-o"></i>
         </div>
         <video id="proposal" class="educationalproposal__video-video" src="/storage/static/video/propuesta-educativa.mp4" controls>
+        </video>
       </div>
-      </video>
     </div>
   </div>
 

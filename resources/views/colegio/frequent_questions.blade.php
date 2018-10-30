@@ -63,6 +63,24 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
+                    ¿Por qué en Trilce se clasifica a los alumnos?
+                  </h3>
+                  <dd class="badger-accordion__panel js-badger-accordion-panel">
+                    <div class="js-badger-accordion-panel-inner">
+                      <p class="question-answer">
+                        <p>Las reagrupaciones se realizan al inicio de cada bimestre y tienen como objetivo agrupar a los alumnos con mayor conocimiento y, principalmente, motivar a los estudiantes a elevar su nivel académico.</p><br>
+                        <p>Se clasifica a los alumnos en el primer salón, segundo salón y salones promedio. Por cada año de estudio, hay dos salones conformados por los alumnos con el mejor rendimiento académico (el primer y segundo salón). En los demás salones (salones promedio) se agrupan a los alumnos con diversos rendimientos académicos, para que de esta manera tengan el mismo nivel en promedio.</p><br>
+                        <p>Cabe resaltar que la apertura de un primer o segundo salón depende de la cantidad de salones por año, por lo que puede darse el caso de que se abran solamente salones promedio.</p>
+                      </p>
+                    </div>
+                  </dd>
+                </div>
+              </div>
+
+              <div class="frequentquestions-question row col-xs-12">
+                <div class="col-xs question-content">
+                  <h3 class="question-title js-badger-accordion-header">
+                    <div class="question-title__signe"></div>
                     ¿Cuántas horas de inglés se dictan en el horario regular?
                   </h3>
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
@@ -440,7 +458,6 @@
             -->
 
           </div>
-
 
           <div class="js-tabs__content js-badger-accordion_3">
             <div class="frequentquestions-question row col-xs-12">

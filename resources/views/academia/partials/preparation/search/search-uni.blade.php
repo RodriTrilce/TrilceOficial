@@ -2,9 +2,10 @@
   <select id="beginning-cyle">
     <option value="0" selected hidden disable>Ciclos</option>
     <option value="0">Todos</option>
-    <option value=30>Anual</option>
-    <option value=35>Semestral</option>
-
+    <option value="30">Anual</option>
+    <option value="50">Repaso</option>
+    <option value="35">Semestral</option>
+    <option value="46">Verano</option>
   </select>
 </div>
 

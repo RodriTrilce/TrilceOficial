@@ -119,12 +119,39 @@ if(page == 'index'){
    loop: true,
    arrowKeys: true,
    speed: 700,
-   animateIn: 'fadeIn',
-   animateOut: 'fadeOut',
+   animateIn: 'trilce_carousel_in',
+   animateOut: 'trilce_carousel_out',
    swipeAngle : 50,
 
  });
  //    controlsText: ['&#xf111;','&#xf112;'],
+
+ slider.events.on('indexChanged', function(info){
+   var from;
+   var currentIndex  = info.indexCached;
+   var index         = info.index % info.slideCount;
+   var force = true;
+
+   if (currentIndex - index > 0) {
+     if (!force && currentIndex === total - 1 && index === 0) {
+       from = 'trilce_carousel_in_rigth';
+     } else {
+       from = 'trilce_carousel_in_left';
+     }
+   } else {
+     from = 'trilce_carousel_in_rigth';
+   }
+
+   var nextElem = info.slideItems[info.index];
+
+   nextElem.style.transition = "";
+   nextElem.classList.add(from);
+
+   slider.events.on('transitionEnd', function(){
+     nextElem.classList.remove(from);
+   })
+
+ });
 
  SliderTrilce.init(slider);
 

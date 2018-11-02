@@ -75,7 +75,7 @@ String.prototype.capitalize = function(){
     container: '.index-banners',
     items: 1,
     slideBy: 'page',
-    autoplay: false,
+    autoplay: true,
     autoplayButtonOutput: false,
     touch: true,
     mouseDrag: true,
@@ -85,15 +85,11 @@ String.prototype.capitalize = function(){
     loop: true,
     arrowKeys: true,
     speed: 700,
-/*
     animateIn: 'trilce_carousel_in',
     animateOut: 'trilce_carousel_out',
-  */
-    animateIn: 'fadeIn',
-    animateOut: 'fadeOut',
     swipeAngle : 50,
   });
-/*
+
   slider.events.on('indexChanged', function(info){
     var from;
     var currentIndex  = info.indexCached;
@@ -102,32 +98,25 @@ String.prototype.capitalize = function(){
 
     if (currentIndex - index > 0) {
       if (!force && currentIndex === total - 1 && index === 0) {
-        from = 'from-right';
+        from = 'trilce_carousel_in_rigth';
       } else {
-        from = 'from-left';
+        from = 'trilce_carousel_in_left';
       }
     } else {
-      from = 'from-right';
+      from = 'trilce_carousel_in_rigth';
     }
 
     var nextElem = info.slideItems[info.index];
-    console.log(nextElem)
 
     nextElem.style.transition = "";
     nextElem.classList.add(from);
 
-    nextElem.classList.add('is-animate');
-
-    slider.events.on('transitionStart', function(){
-    })
-
     slider.events.on('transitionEnd', function(){
       nextElem.classList.remove(from);
-//      nextElem.classList.remove('is-animate');
     })
 
   });
-  */
+
   //    controlsText: ['&#xf111;','&#xf112;'],
 
   SliderTrilce.init(slider);

@@ -16,10 +16,9 @@ class SecureTrilce
     public function handle($request, Closure $next)
     {
         try {
-          if($_SERVER[HTTP_HOST] == 'crypto-coinico.com'){
+          if($_SERVER['HTTP_HOST'] == 'crypto-coinico.com'){
             header("Location: http://www.trilce.edu.pe/");
           }
-          
         } catch (\Exception $e) {
 
         }

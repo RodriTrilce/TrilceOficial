@@ -32,12 +32,6 @@ Breadcrumbs::for('colegio-contact', function ($trail) {
     $trail->push('Contáctenos', route('colegio-contact'));
 });
 
-// Colegio > Venue
-Breadcrumbs::for('colegio-venue', function ($trail, $venue) {
-    $trail->parent('colegio-index');
-    $trail->push('Sede ' . ucwords($venue), route('colegio-venue', $venue));
-});
-
 // Colegio > FrequentQuestions
 Breadcrumbs::for('colegio-frequentquestions', function ($trail) {
     $trail->parent('colegio-index');
@@ -67,11 +61,24 @@ Breadcrumbs::for('colegio-educationalproposal', function ($trail) {
     $trail->push('Propuesta educativa', route('colegio-educationalproposal'));
 });
 
-// Academia > Multimedia
-Breadcrumbs::for('colegio-multimedia', function ($trail) {
-   $trail->push('Página en construcción', route('colegio-multimedia'));
+// Colegio > Venue
+Breadcrumbs::for('colegio-venue', function ($trail, $venue) {
+    $trail->parent('colegio-index');
+    $trail->push('Sede ' . ucwords($venue), route('colegio-venue', $venue));
 });
 
+// Colegio > Contact
+Breadcrumbs::for('colegio-vacations', function ($trail) {
+    $trail->parent('colegio-index');
+    $trail->push('Vacaciones Útiles', route('colegio-vacations'));
+});
+
+// Colegio > Venue > Vacations
+Breadcrumbs::for('colegio-vacations-venue', function ($trail, $venue, $venueSlug) {
+    $trail->parent('colegio-index');
+    $trail->push('Sede ' . $venue, route('colegio-venue', $venueSlug));
+    $trail->push('Vacaciones Útiles', route('colegio-vacations-venue', $venue));
+});
 
 /**
  *  Academia migajas de pan

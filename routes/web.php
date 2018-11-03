@@ -167,14 +167,6 @@ Route::name('colegio-contact')
 
 Route::post('/colegio/contacto', 'Colegio\ContactController@send');
 
-// Sedes (Venue)
-Route::name('colegio-venue')
-      ->get('/colegio/sede/{barrack}', 'Colegio\VenueController@index');
-
-Route::get('/colegio/sede', function(){
-  return redirect('/colegio');
-});
-
 // Preguntas Frecuentes (FrequentQuestions)
 Route::name('colegio-frequentquestions')
       ->get('/colegio/preguntas-frecuentes', 'Colegio\FrequentQuestionsController@index');
@@ -190,13 +182,22 @@ Route::name('colegio-blogpost')
 Route::name('colegio-blog')
       ->get('/colegio/blog', 'Colegio\BlogController@index');
 
-
 // Página Princial (Index)
 Route::name('colegio-educationalproposal')
       ->get('/colegio/propuesta-educativa', 'Colegio\EducationalProposalController@index');
 
-// Multimedia
-Route::name('colegio-multimedia')
-      ->get('/colegio/multimedia', function(){
-        return view('errors.work');
-      });
+
+// Sedes (Venue)
+Route::name('colegio-venue')
+      ->get('/colegio/sede/{barrack}', 'Colegio\VenueController@index');
+
+Route::get('/colegio/sede', function(){
+  return redirect('/colegio');
+});
+
+// Vacaciones Útiles
+Route::name('colegio-vacations')
+      ->get('/colegio/vacaciones-utiles', 'Colegio\VacationsController@index');
+
+Route::name('colegio-vacations-venue')
+      ->get('/colegio/sede/{barrack}/vacaciones-utiles', 'Colegio\VacationsController@venue');

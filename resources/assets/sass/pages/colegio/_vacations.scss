@@ -1,0 +1,24 @@
+.header-vacations{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+.vacations__logo{
+  padding-left: 12px;
+
+  @include breakpoint(baby){
+    padding-right: 12px;
+  }
+}
+
+.vacations__txt{
+  font-family: $font_geo_reg;
+  font-size: 1.2rem;
+  text-align: center;
+
+  @include breakpoint(baby){
+    font-size: 1rem;
+  }
+}

@@ -12,9 +12,11 @@ import SliderTrilce from './require/slider_trilce';
 import AcorditionProposal from './colegio/educational_proposal';
 import pollyfill from 'array-from-polyfill';
 import BadgerAccordion from './require/badger_accordion';
+import SlimSelect from 'slim-select'
 //import BadgerAccordion from 'badger-accordion';
 
 
+window.SlimSelect = SlimSelect;
 const ValidationLang = {
   required: "'{label}' es obligatorio.",
   email: "'{label}' debe ser una dirección de e-mail válida.",
@@ -269,4 +271,26 @@ if(page == 'frequent_questions'){
   });
 
   tabs.init();
+}
+
+
+/**!
+*  Frecuent Questions
+*/
+if(page == 'vacations_venue'){
+  var slider = tns({
+   container: '#vacations_slider',
+   items: 1,
+   slideBy: 'page',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   touch: true,
+   mouseDrag: true,
+   controls: true,
+   controlsText: ['&#xf111;','&#xf112;'],
+   nav: false,
+   autoplayHoverPause: true,
+   loop: true
+  });
+
 }

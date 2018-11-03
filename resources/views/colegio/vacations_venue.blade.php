@@ -3,14 +3,36 @@
 @section('title', $data->name)
 @section('content')
 
-  <div class="header-double-image">
-    <div class="row col-xs-12 header-double-image-desk">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes.jpg') }}" alt="">
-    </div>
-    <div class="header-double-image-mobile">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes-movil.jpg') }}" alt="">
+  <div class="header-vacations">
+    <div class="row col-xs-12 end-sm start-xs">
+      <div class="row col-sm-11 col-xs-12">
+        <div class="row col-sm-4 col-xs-12 start-xs middle-xs">
+
+          <div class="vacations__logo">
+            <div class="vacations__container-logo center-xs">
+              <img src="{{asset('static/images/colegio/vacations/logo.png')}}" alt="Vacaciones Útiles">
+            </div>
+            <div class="vacations__txt"><span>Elige la sede de tu preferencia</span></div>
+            <div class="vacations__select"></div>
+          </div>
+
+        </div>
+        <div class="col-sm start-xs xs-hide">
+          <div class="vacations__slider" id="vacations_slider">
+            <div>
+              <img src="{{asset('static/images/colegio/vacations/slider_1.png')}}" alt="Vacaciones Útiles">
+            </div>
+
+            <div>
+              <img src="{{asset('static/images/colegio/vacations/slider_1.png')}}" alt="Vacaciones Útiles">
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <div class="row col-xs-12 center-xs venue">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">

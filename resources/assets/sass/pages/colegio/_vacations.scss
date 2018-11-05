@@ -7,9 +7,15 @@
 
 .vacations__logo{
   padding-left: 12px;
+  padding-right: 12px;
+}
 
+.vacations__container-logo{
   @include breakpoint(baby){
-    padding-right: 12px;
+    text-align: center;
+    img{
+      max-width: 70%;
+    }
   }
 }
 
@@ -17,8 +23,140 @@
   font-family: $font_geo_reg;
   font-size: 1.2rem;
   text-align: center;
+  margin: 10px 0;
 
   @include breakpoint(baby){
     font-size: 1rem;
   }
+}
+
+.vacations__select-item{
+  padding: 15px;
+
+  @include breakpoint(baby){
+    padding: 10px;
+  }
+}
+
+.vacations__home-container{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
+  .vacations_starth1, .vacations_starth2{
+    font-family: $font_geo_reg;
+  }
+
+  .vacations_starth1{
+    font-size: 2.5rem;
+
+    @include breakpoint(baby){
+      font-size: 1.8rem;
+    }
+  }
+
+  .vacations_starth2{
+    font-size: 1,92;
+    color: $gray;
+    margin-top: 10px;
+
+    @include breakpoint(baby){
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.select-vacations{
+  font-family: $font_geo_reg;
+
+  .ss-single-selected {
+      background-color: $orange;
+      color: white !important;
+      border: none
+  }
+
+  .ss-single-selected .ss-arrow * {
+      border-color: #fff !important;
+  }
+
+  .placeholder .ss-disabled{
+    color: white !important;
+  }
+
+  .ss-option.ss-disabled{
+    color: $gray !important;
+  }
+
+  .ss-content{
+    color: white;
+    background: $orange;
+  }
+
+  .ss-option:hover{
+    background: white !important;
+    color: $orange !important;
+  }
+}
+
+.vacations__title{
+  font-size: 2.5rem;
+  font-family: $font_cae_bold;
+
+  @include breakpoint(baby){
+    font-size: 1.8rem;
+  }
+}
+
+
+.js-tabs__vacations{
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
+  .js-tabs__title > svg, img{
+    pointer-events: none;
+  }
+
+  .js-tabs__header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .js-tabs__header li{
+    min-width: 150px;
+  }
+
+  .js-tabs__title-active{
+    background: white;
+    color: $orange !important;
+
+    svg{
+      fill: $orange;
+    }
+  }
+
+  .js-tabs__title{
+    @include breakpoint(baby){
+      font-size: 1.05rem;
+    }
+  }
+}
+
+.vacations-svg{
+  width: 80px;
+  fill: $gray;
+  height: auto;
+  transition: all .2s ease-out;
+
+  @include breakpoint(baby){
+    width: 60px;
+  }
+}
+
+.vacations-svg__title{
+  position: relative;
+  top: -10px;
+  font-size: 1.2rem;
 }

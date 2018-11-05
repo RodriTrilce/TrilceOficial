@@ -6,14 +6,13 @@
   <div class="header-vacations">
     <div class="row col-xs-12 end-sm start-xs">
       <div class="row col-sm-11 col-xs-12">
-        <div class="row col-sm-4 col-xs-12 start-xs middle-xs">
+        <div class="row col-sm-4 col-xs-12 center-xs middle-xs">
 
           <div class="vacations__logo">
             <div class="vacations__container-logo center-xs">
               <img src="{{asset('static/images/colegio/vacations/logo.png')}}" alt="Vacaciones Útiles">
             </div>
-            <div class="vacations__txt"><span>Elige la sede de tu preferencia</span></div>
-            <div class="vacations__select"></div>
+            @include('colegio.partials.vacations.selects')
           </div>
 
         </div>
@@ -34,19 +33,15 @@
   </div>
 
 
-  <div class="row col-xs-12 center-xs venue">
+  <div class="row col-xs-12 center-xs container-base vacations__home-container">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-      <div class="col-xs-12 col-sm container-base venue-info-container">
-        <div class="col-xs-12 venue-info-title"><h2 class="colegio">{{ $data->name}}</h2></div>
-        <div class="row col-xs-12 col-sm-12 table-responsive" id="tableade">
-
-
-        </div>
-
+      <div class="col-xs-12 center-xs">
+        <h1 class="vacations__title">Sede {{$data->name}}</h1>
       </div>
-      <div class="col-xs-12 col-sm map-container">
-        <div id="map"></div>
+
+      <div class="row col-xs-12">
+        @include('colegio.partials.vacations.venues.' . $data->slug)
       </div>
 
     </div>

@@ -129,11 +129,6 @@
     </div>
   </div>
 
-
-
-
-
-
   <div class="row center-xs center-sm math-olympic-onam">
     <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
     <div class="row col-xs-12 col-sm-8 between-xs between-sm data">

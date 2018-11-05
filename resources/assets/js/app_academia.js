@@ -198,11 +198,11 @@ String.prototype.capitalize = function(){
  */
  if(page == 'math_olympics'){
    var accordion1  = new BadgerAccordion('.js-badger-accordion_1'),
-         accordion2 = new BadgerAccordion('.js-badger-accordion_2'),
-         tabs       = new Tabs({
-           elem: 'om__tabs',
-           open: 0
-         });
+       accordion2  = new BadgerAccordion('.js-badger-accordion_2'),
+       tabs        = new Tabs({
+         elem: 'om__tabs',
+         open: 0
+       });
 
    tabs.init();
  }

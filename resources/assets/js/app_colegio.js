@@ -13,8 +13,6 @@ import AcorditionProposal from './colegio/educational_proposal';
 import pollyfill from 'array-from-polyfill';
 import BadgerAccordion from './require/badger_accordion';
 import SlimSelect from 'slim-select'
-//import BadgerAccordion from 'badger-accordion';
-
 
 window.SlimSelect = SlimSelect;
 const ValidationLang = {
@@ -275,9 +273,9 @@ if(page == 'frequent_questions'){
 
 
 /**!
-*  Frecuent Questions
+*  Vacations
 */
-if(page == 'vacations_venue'){
+if(page == 'vacations_venue' || page == 'vacations'){
   var slider = tns({
    container: '#vacations_slider',
    items: 1,
@@ -292,5 +290,34 @@ if(page == 'vacations_venue'){
    autoplayHoverPause: true,
    loop: true
   });
+
+  new SlimSelect({
+    select: '#slimselect_lima',
+    placeholder: 'Lima',
+    showSearch: false,
+    onChange: (info) => {
+      location.href = info.value;
+    }
+  });
+
+  new SlimSelect({
+    select: '#slimselect_provincia',
+    placeholder: 'Provincia',
+    showSearch: false,
+    onChange: (info) => {
+      location.href = info.value;
+    }
+  });
+
+}
+
+if(page == 'vacations_venue'){
+
+  var tabs = new Tabs({
+    elem: 'om__tabs',
+    open: 0
+  });
+
+tabs.init();
 
 }

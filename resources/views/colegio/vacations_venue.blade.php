@@ -32,7 +32,6 @@
     </div>
   </div>
 
-
   <div class="row col-xs-12 center-xs container-base vacations__home-container">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
@@ -43,11 +42,39 @@
       <div class="row col-xs-12">
         @include('colegio.partials.vacations.venues.' . $data->slug)
       </div>
+      <div class="col-xs-12 vacations__bottom vacations__bottom--orange">
+        <div>
+          <h1><span><i class="fa fa-lightbulb-o"></i> Inicios: 4, 7 y 8 de enero</span></h1>
+        </div>
+        <div>
+          <h3><span>Fin: 23 de febrero</span></h3>
+        </div>
+      </div>
+      <div class="col-xs-12 vacations__bottom vacations__bottom--white">
+        <div class="table-responsive" style="width:100%;">
+            <table class="venue-table">
+              <thead>
+                <tr>
+                  <th>Nivel</th>
+                  <th>Dirección</th>
+                  <th>Teléfono</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($address as $k)
+                  <tr>
+                    <td data-label="Nivel">{!! $k->grades !!}</td>
+                    <td data-label="Dirección">{{ $k->address }}</td>
+                    <td data-label="Teléfono">{{ $k->phone }}</td>
+                  </tr>
+                @endforeach
+              </tbody>
+            </table>
+        </div>
+      </div>
 
     </div>
   </div>
-
-
 
   @include('colegio.partials.card_bottom')
 @endsection

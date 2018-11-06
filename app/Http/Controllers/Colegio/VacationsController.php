@@ -23,6 +23,7 @@ class VacationsController extends Controller
     return view('/colegio/vacations_venue')->with([
       'data' => $venue,
       'slug' => $barrack,
+      'address' => $venue->address,
       'page' => 'vacations'
     ]);
   }

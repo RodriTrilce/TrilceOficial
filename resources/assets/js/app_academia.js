@@ -75,7 +75,7 @@ String.prototype.capitalize = function(){
     container: '.index-banners',
     items: 1,
     slideBy: 'page',
-    autoplay: true,
+    autoplay: false,
     autoplayButtonOutput: false,
     touch: true,
     mouseDrag: true,

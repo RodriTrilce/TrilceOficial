@@ -38,7 +38,7 @@
     <div class="banner__loader-line"></div>
   </div>
 
-  <div class="index-banners">
+  <div class="index-banners index-banners--colegio">
     <div data-title="admision 2019">
         <div
         class="
@@ -70,7 +70,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="banner__content
         banner__content--colegio
@@ -80,23 +86,34 @@
             <span>
               <style>
                 .b1__birrete{
-                  max-width: 80px;
+                  max-width: 70px;
                   fill: #f4633a;
                   display: block;
+                  position: relative;
+                  left: -12px;
                 }
 
                 @media (max-width: 765px){
                   .b1__birrete{
-                    max-width: 40px;
+                    left: 0;
+                    max-width: 30px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                   }
                 }
               </style>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="b1__birrete" x="0px" y="0px" viewBox="0 0 42.672 42.672" xml:space="preserve">
-              	<g>
-              		<path d="M38.729,25.815v-4.09l3.943-2.179L21.337,8.151L0,19.547l8.506,4.94v2.909v0.229c0.023-0.012,0.052-0.023,0.077-0.035    c-0.091,0.125-0.15,0.247-0.15,0.375c0,1.428,5.774,2.592,12.904,2.592c7.126,0,12.906-1.164,12.906-2.592    c0-0.128-0.062-0.25-0.15-0.375c0.025,0.015,0.054,0.023,0.076,0.035v-0.229v-2.917l3.711-2.283v3.619    c-0.405,0.166-0.69,0.568-0.69,1.034c0,0.616,0.499,1.116,1.114,1.116c0.621,0,1.119-0.5,1.119-1.116    C39.423,26.383,39.139,25.981,38.729,25.815z M21.337,29.574c-6.327,0-11.453-0.722-11.453-1.608s5.126-1.606,11.453-1.606    c6.324,0,11.452,0.72,11.452,1.606S27.661,29.574,21.337,29.574z M33.89,22.103c-0.85-0.909-3.908-3.295-12.553-3.295    c-8.65,0-11.703,2.388-12.552,3.298v-0.864c0,0,2.476-3.717,12.552-3.717c10.075,0,12.553,3.717,12.553,3.717V22.103z"/>
-              		<path d="M37.4,28.194l-0.468,6.328c1.36-2.109,2.481-1.314,2.481-1.314v-5.014C37.963,28.757,37.4,28.194,37.4,28.194z"/>
-              	</g>
+
+              <svg version="1.1" class="b1__birrete" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 200 121.2" enable-background="new 0 0 200 121.2" xml:space="preserve">
+              <path d="M0.7,42.3c0,4.4,2.7,8.3,6.8,9.7l32.9,11.2l0,40.2c0,15.1,45.6,16.3,59.6,16.3s59.6-1.2,59.5-16.3l0-40.2
+              	l14.9-5.1l0,13.5l-9.4,19.3l8.9,4.6l5.5-11.3l5.5,11.3l8.9-4.6l-9.4-19.3l0-16.9l8.1-2.8c4.1-1.4,6.8-5.3,6.8-9.7
+              	c0-4.4-2.7-8.3-6.8-9.7L103.1,2c-1-0.3-2.1-0.5-3.1-0.5c-1.1,0-2.1,0.2-3.1,0.5L7.5,32.6C3.5,34,0.7,37.9,0.7,42.3z M50.4,46.9
+              	c3.4-2.6,20.7-7.2,49.6-7.2c29,0,46.2,4.5,49.6,7.1l0,46.5c-14.2-5.7-39.8-6.2-49.6-6.2c-9.9,0-35.4,0.6-49.6,6.3L50.4,46.9z
+              	 M52.3,103.4c6-2.6,22.3-6.1,47.7-6.1c25.4,0,41.8,3.5,47.8,6.1c-6,2.6-22.3,6.1-47.7,6.1C74.6,109.5,58.3,106,52.3,103.4z
+              	 M10.7,42.3L100,11.7l89.3,30.5l-29.8,10.2l0-6.6c0-15.1-45.6-16.3-59.6-16.3s-59.6,1.2-59.5,16.3l0,6.6L10.7,42.3z"/>
               </svg>
+
+
             </span>
 
             <span>
@@ -148,7 +165,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="banner__content
         banner__content--mobile-padding-left
@@ -209,7 +232,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="banner__content
         banner__content--colegio
@@ -271,7 +300,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="banner__content
         banner__content--colegio
@@ -359,7 +394,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="
         banner__content
@@ -449,7 +490,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="
         banner__content
@@ -539,7 +586,13 @@
         "></div>
 
         <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div class="
         banner__content

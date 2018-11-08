@@ -18,10 +18,7 @@
         </div>
         <div class="col-sm start-xs xs-hide">
           <div class="vacations__slider" id="vacations_slider">
-            <div>
-              <img src="{{asset('static/images/colegio/vacations/slider_1.png')}}" alt="Vacaciones Útiles">
-            </div>
-
+            
             <div>
               <img src="{{asset('static/images/colegio/vacations/slider_1.png')}}" alt="Vacaciones Útiles">
             </div>
@@ -62,11 +59,13 @@
               </thead>
               <tbody>
                 @foreach ($address as $k)
-                  <tr>
-                    <td data-label="Nivel">{!! $k->grades !!}</td>
-                    <td data-label="Dirección">{{ $k->address }}</td>
-                    <td data-label="Teléfono">{{ $k->phone }}</td>
-                  </tr>
+                  @if($k->vacations)
+                    <tr>
+                      <td data-label="Nivel">{!! $k->grades !!}</td>
+                      <td data-label="Dirección">{{ $k->address }}</td>
+                      <td data-label="Teléfono">{{ $k->phone }}</td>
+                    </tr>
+                  @endif
                 @endforeach
               </tbody>
             </table>

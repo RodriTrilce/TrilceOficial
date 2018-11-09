@@ -343,7 +343,7 @@
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_500x500.png"
-        data-position-md="80% bottom"
+        data-position-md="88% bottom"
         data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_250x250.png"
@@ -438,7 +438,7 @@
         class="banner__image"
 
         data-image-md="http://www.trilce.edu.pe/dd.png"
-        data-position-md="80% bottom"
+        data-position-md="90% bottom"
         data-size-md="contain"
 
         data-image-xs="http://www.trilce.edu.pe/dd.png"
@@ -528,7 +528,7 @@
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_pucp-ingresante_22_octubre_2018_500x500.png"
-        data-position-md="80% bottom"
+        data-position-md="91% bottom"
         data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_pucp-ingresante_22_octubre_2018_250x250.png"
@@ -606,7 +606,7 @@
       </div>
     </div>
   </div>
-  
+
   <!--
     <div data-title="San Marcos ciclo repaso">
         <div

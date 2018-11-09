@@ -38,6 +38,14 @@
     <div class="banner__loader-line"></div>
   </div>
 
+  <style>
+   @media (min-width: 767px) and (max-width: 1300px) {
+     .banner__matricula-img{
+       visibility: hidden;
+     }
+  }
+  </style>
+  
   <div class="index-banners index-banners--colegio">
     <div data-title="admision 2019">
         <div
@@ -215,8 +223,9 @@
           background-color: #ffffff;
         ">
 
+
         <div
-        class="banner__image"
+        class="banner__image banner__matricula-img"
 
         data-image-md="/storage/static/images/banner/ogro/banner_19_octubre_500x500.png"
         data-position-md="center bottom"

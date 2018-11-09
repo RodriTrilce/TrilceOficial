@@ -39,7 +39,6 @@
   </div>
 
   <div class="index-banners index-banners--colegio">
-<!--
     <div data-title="admision 2019">
         <div
         class="
@@ -270,7 +269,6 @@
 
       </div>
     </div>
-  -->
     <div data-title="ser mejores personas">
         <div
         class="
@@ -365,7 +363,6 @@
 
       </div>
     </div>
-<!--
     <div data-title="primer puesto san marcos">
         <div
         class="
@@ -654,7 +651,6 @@
 
       </div>
     </div>
--->
   </div>
 
   <div class="nuevos-i container-base">

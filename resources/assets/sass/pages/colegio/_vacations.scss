@@ -171,8 +171,12 @@
 
   img{
         position: relative;
-        height: fit-content;
+//        height: fit-content;
         bottom: 0;
+  }
+
+  @include breakpoint(baby){
+    display: none !important;
   }
 }
 

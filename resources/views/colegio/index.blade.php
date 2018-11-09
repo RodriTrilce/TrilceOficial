@@ -56,14 +56,14 @@
         <div
         class="banner__image"
 
-        data-image-md="http://www.trilce.edu.pe/tt_nina.png"
+        data-image-md="/storage/static/images/banner/ogro/banner_8_nov_matricula-500x500.png"
         data-position-md="80% bottom"
         data-size-md="contain"
 
-        data-image-xs="http://www.trilce.edu.pe/tt_nina.png"
+        data-image-xs="/storage/static/images/banner/ogro/banner_8_nov_matricula-250x250.png"
         data-position-xs="bottom right"
         data-size-xs="58vw"
-
+  
         style="
         background-repeat: no-repeat;
         z-index: 11;

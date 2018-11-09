@@ -2,10 +2,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="/colegio/propuesta-educativa">
-          <i class="fa fa-graduation-cap"></i>
-          <h3>Propuesta educativa</h3>
-          <p>Conoce más sobre nosotros</p>
+        <a href="/colegio/vacaciones-utiles">
+          <i class="fa fa-sun-o"></i>
+          <h3>Vacaciones Útiles 2019</h3>
+          <p>Estudia y diviértete este verano</p>
         </a>
       </div>
         <div class="col-xs-12 col-sm-6 col-md-3">

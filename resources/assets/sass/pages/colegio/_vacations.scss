@@ -165,8 +165,14 @@
 }
 
 .vacations-venue__image-rigth{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
   img{
-    vertical-align: bottom;
+        position: relative;
+        height: fit-content;
+        bottom: 0;
   }
 }
 

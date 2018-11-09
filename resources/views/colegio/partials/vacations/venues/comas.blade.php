@@ -4,15 +4,27 @@
       <li>
           <a href="#" class="js-tabs__title">
             <div>
-              <svg class="vacations-svg" version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 38" xml:space="preserve">
-                <path  d="M19.4,8.9c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0l-8.7,5.6c-0.1,0-0.1,0.1-0.1,0.2l0,9.3c0,0.1,0,0.2,0.1,0.2
-                  l8.7,5.4c0.1,0,0.2,0,0.2,0l8.7-5.4c0.1,0,0.1-0.1,0.1-0.2l0-9.3c0-0.1,0-0.2-0.1-0.2L19.4,8.9z M19.2,9.6L23,12l-3.7,2.4L15.5,12
-                  L19.2,9.6z M14.6,26.1l-3.7-2.3v-4l3.7,2.2V26.1z M14.6,21.4l-3.7-2.3v-4l3.7,2.4V21.4z M11.3,14.6l3.6-2.3l3.6,2.3l-3.6,2.3
-                  L11.3,14.6z M18.9,15.1v4l-3.7,2.3v-3.9L18.9,15.1z M18.9,28.7l-0.4-0.3l-3.3-2v-4l0,0v0l0.2,0.1l2.7,1.7l0,0l0.8,0.5l0,0.2V28.7z
-                   M19.2,24.3l-3.7-2.3l3.7-2.3l3.7,2.3L19.2,24.3z M23.2,26.5l-3.7,2.3v-3.9l0.8-0.5l0,0l0.2-0.1l2.7-1.7V26.5z M23.2,21.4l-3.7-2.3
-                  v-4l3.7,2.4V21.4z M20,14.6l3.6-2.3l3.6,2.3l-3.6,2.3L20,14.6z M27.6,23.8l-3.7,2.3v-3.9l3.7-2.3V23.8z M27.6,19.1l-3.7,2.3v-3.9
-                  l3.7-2.4V19.1z"/>
+              <svg class="vacations-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+              <g>
+              	<g>
+              		<path fill="#51555A" d="M638.7,162c-33.5-33.5-88.1-33.5-121.6,0L172.7,506.4c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.4,0.5-0.5,0.7
+              			c-0.5,0.8-0.9,1.5-1.2,2.3c-0.1,0.3-0.2,0.5-0.3,0.7c0,0.1-0.1,0.2-0.1,0.3l-33.8,141.8c-0.1,0.7-0.2,1.3-0.2,1.9
+              			c0,0.1,0,0.3,0,0.3c0,1.1,0.2,2.2,0.6,3.2c0.1,0.2,0.2,0.5,0.3,0.7c0.5,1,1.1,2,1.9,2.8c0.9,0.9,1.9,1.6,3.1,2.1
+              			c1.2,0.4,2.4,0.7,3.6,0.7c0.7,0,1.5,0,2.2-0.2l141.8-33.7c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.6-0.2,0.9-0.4
+              			c0.7-0.3,1.3-0.7,1.9-1.2c0.2-0.1,0.5-0.3,0.7-0.5c0.1-0.1,0.2-0.1,0.2-0.2l344.5-344.4C672.3,250,672.3,195.5,638.7,162
+              			L638.7,162z M625.2,175.5c23.7,23.8,25.8,61.1,6.2,87.3l-93.5-93.5C564.2,149.7,601.4,151.7,625.2,175.5L625.2,175.5z
+              			 M577.9,317.3l-94.6-94.6l13.5-13.5l94.6,94.6L577.9,317.3z M183.5,617.2c-3.7-3.7-9.8-3.7-13.5,0l-7.2,7.2L187.2,522l42.3-4.7
+              			l-5.4,48.9c0,0.3,0.1,0.7,0.1,1.1c0,0.4-0.1,0.7-0.1,1c0,0.3,0.2,0.6,0.2,0.9c0.1,0.6,0.2,1.1,0.5,1.6c0.2,0.6,0.5,1.2,0.9,1.7
+              			c0.3,0.5,0.6,0.8,0.9,1.2c0.4,0.5,1,0.9,1.5,1.3c0.4,0.3,0.8,0.6,1.3,0.8c0.6,0.3,1.3,0.5,1.9,0.6c0.4,0.1,0.7,0.3,1,0.3
+              			c0.4,0.1,0.7,0.1,1.1,0.1h0c0.3,0,0.7,0,1-0.1l48.9-5.4l-4.7,42.2L176.3,638l7.3-7.3C187.2,627,187.2,620.9,183.5,617.2
+              			L183.5,617.2z M303.4,564.9l213.8-213.7c3.7-3.7,3.7-9.8,0-13.5c-3.7-3.7-9.8-3.7-13.5,0L289.9,551.3l-45.6,5.1l5.1-45.6
+              			l213.8-213.7c3.7-3.7,3.7-9.7,0-13.5c-3.7-3.7-9.7-3.7-13.5,0L235.9,497.3l-30.4,3.4l264.5-264.4l94.5,94.5L300,595.3L303.4,564.9
+              			z M605,290.3l-94.6-94.6l13.5-13.5l94.6,94.6L605,290.3z M605,290.3"/>
+              	</g>
+              </g>
               </svg>
+
             </div>
             <div><span class="vacations-svg__title">Primaria</span></div>
           </a>
@@ -36,6 +48,8 @@
       <li>
             <a href="#" class="js-tabs__title">
               <div>
+
+
                 <svg version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 viewBox="0 0 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
                   <g>
@@ -53,6 +67,7 @@
                   		c0.1,0.2,0.5,0.3,0.7,0.2c3.6-2.3,5.7-6.2,5.7-10.4C31.4,12.2,25.8,6.6,19,6.6L19,6.6z M19,6.6"/>
                   </g>
                 </svg>
+
 
               </div>
               <div><span class="vacations-svg__title">Ciclo Especial</span></div>
@@ -179,7 +194,7 @@
           </ul>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -263,7 +278,7 @@
           </ul>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/ciclo-especial.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -320,7 +335,7 @@
           </ul>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/cursos-adicionales.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -352,7 +367,7 @@
           </ul>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
         </div>
       </div>
     </div>

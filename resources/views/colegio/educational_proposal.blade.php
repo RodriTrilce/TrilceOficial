@@ -20,7 +20,7 @@
 
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
-      <img src="{{ url('/static/images/colegio/pages-banners/banner-prop-educativa.jpg') }}" alt="">
+      <img src="{{ url('/static/images/colegio/pages-banners/banner-propuesta-educativa.png') }}" alt="">
     </div>
     <div class="header-double-image-mobile">
       <img src="{{ url('/static/images/colegio/pages-banners/banner-propuesta-educativa-movil.png') }}" alt="">

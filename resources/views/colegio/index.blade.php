@@ -381,7 +381,7 @@
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-500x500.png"
-        data-position-md="80% bottom"
+        data-position-md="88% bottom"
         data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-250x250.png"
@@ -477,7 +477,7 @@
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_26_octubre_academia-uni-ingresante-500x500.png"
-        data-position-md="80% bottom"
+        data-position-md="90% bottom"
         data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_26_octubre_academia-uni-ingresante-250x250.png"
@@ -573,7 +573,7 @@
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_pucp-ingresante_22_octubre_2018_500x500.png"
-        data-position-md="80% bottom"
+        data-position-md="90% bottom"
         data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_pucp-ingresante_22_octubre_2018_250x250.png"
@@ -650,7 +650,7 @@
        </div>
 
       </div>
-    </div>
+  </div>
   </div>
 
   <div class="nuevos-i container-base">

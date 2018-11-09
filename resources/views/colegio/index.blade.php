@@ -47,7 +47,6 @@
   </style>
 
   <div class="index-banners index-banners--colegio">
-<!--
     <div data-title="admision 2019">
         <div
         class="
@@ -210,7 +209,6 @@
 
       </div>
     </div>
--->
     <div data-title="tablet gratuita">
         <div
         class="
@@ -280,7 +278,6 @@
 
       </div>
     </div>
-<!--
     <div data-title="ser mejores personas">
         <div
         class="
@@ -662,7 +659,6 @@
        </div>
 
       </div>
--->
   </div>
   </div>
 

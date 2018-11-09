@@ -58,12 +58,12 @@
 
         data-image-md="/storage/static/images/banner/ogro/banner_8_nov_matricula-500x500.png"
         data-position-md="80% bottom"
-        data-size-md="contain"
+        data-size-md="22vw"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_8_nov_matricula-250x250.png"
         data-position-xs="bottom right"
         data-size-xs="58vw"
-  
+
         style="
         background-repeat: no-repeat;
         z-index: 11;
@@ -153,7 +153,7 @@
 
         data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
         data-position-md="right bottom"
-        data-size-md="contain"
+        data-size-md="35vw"
 
         data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
         data-position-xs="40vw bottom"
@@ -220,7 +220,7 @@
 
         data-image-md="/storage/static/images/banner/ogro/banner_19_octubre_500x500.png"
         data-position-md="center bottom"
-        data-size-md="26%"
+        data-size-md="20%"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_19_octubre_250x250.png"
         data-position-xs="140% bottom"
@@ -288,7 +288,7 @@
 
         data-image-md="/storage/static/images/banner/ogro/banner_sumate_19_octubre_500x500.png"
         data-position-md="75% bottom"
-        data-size-md="26%"
+        data-size-md="21%"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_sumate_19_octubre_250x250.png"
         data-position-xs="bottom right"

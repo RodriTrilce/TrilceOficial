@@ -231,7 +231,7 @@
     margin: 0 2px;
     border: 1px solid transparent;
     height: 12px;
-    width: 8px;
+    width: 12px;
 
     &:hover{
       opacity: .5;
@@ -241,8 +241,8 @@
 }
 
 button.tns-nav-active{
-  height: 12px;
-  width: 11px;
+  height: 13px;
+  width: 13px;
   opacity: 1;
   background: white;
   border: 1px solid $gray_candy;

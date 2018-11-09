@@ -22,7 +22,7 @@
             <li><a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook" target="_blank" rel="nofollow"><i class="fa fa-facebook-f"></i></a></li>
             <li><a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" title="Suscríbete en YouTube" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
-            <li><a href="https://www.instagram.com/trilcecolegioacademia/" title="Síguenos en Instagram" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
           </ul>
       </div>
     </div>

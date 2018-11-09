@@ -39,6 +39,7 @@
   </div>
 
   <div class="index-banners index-banners--colegio">
+<!--
     <div data-title="admision 2019">
         <div
         class="
@@ -58,7 +59,7 @@
 
         data-image-md="/storage/static/images/banner/ogro/banner_8_nov_matricula-500x500.png"
         data-position-md="80% bottom"
-        data-size-md="22vw"
+        data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_8_nov_matricula-250x250.png"
         data-position-xs="bottom right"
@@ -134,7 +135,6 @@
 
       </div>
     </div>
-<!--
     <div data-title="eco trilce">
         <div
         class="
@@ -221,7 +221,7 @@
 
         data-image-md="/storage/static/images/banner/ogro/banner_19_octubre_500x500.png"
         data-position-md="center bottom"
-        data-size-md="20%"
+        data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_19_octubre_250x250.png"
         data-position-xs="140% bottom"
@@ -270,6 +270,7 @@
 
       </div>
     </div>
+  -->
     <div data-title="ser mejores personas">
         <div
         class="
@@ -289,7 +290,7 @@
 
         data-image-md="/storage/static/images/banner/ogro/banner_sumate_19_octubre_500x500.png"
         data-position-md="75% bottom"
-        data-size-md="21%"
+        data-size-md="contain"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_sumate_19_octubre_250x250.png"
         data-position-xs="bottom right"
@@ -364,6 +365,7 @@
 
       </div>
     </div>
+<!--
     <div data-title="primer puesto san marcos">
         <div
         class="

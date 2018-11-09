@@ -451,7 +451,7 @@
                 Diego Castillo Utani<br>
               </span>
               <span class="small">
-                ingeniería Ambiental
+                Ingeniería Ambiental
               </span>
             </div>
           </div>

@@ -12,6 +12,18 @@
 
 .banner__style_primer__a{
   display: inline-block;
+
+
+  .banner__subtitle span.small, span.normal {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 767px) {
+    .banner__subtitle span.small, span.normal {
+      font-size: .8rem;
+    }
+  }
+
 }
 
 .banner__style_primer__b{

@@ -153,7 +153,7 @@
 
         data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
         data-position-md="right bottom"
-        data-size-md="35vw"
+        data-size-md="45vw"
 
         data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
         data-position-xs="40vw bottom"
@@ -356,7 +356,7 @@
               Ser mejores personas<br />
             </span>
             <span style="display:block;margin: 20px auto;">
-              <button class="banner__button-cta banner__button-cta--orange"><a href="https://www.youtube.com/watch?v=_LZUrX_RRzQ" target="_blank">Ver más</a></button>
+              <button class="banner__button-cta banner__button-cta--orange"><a href="https://www.youtube.com/watch?v=868wD20iBoE" target="_blank">Ver más</a></button>
             </span>
           </div>
         </div>

@@ -80,6 +80,7 @@
   </div>
 
   <div class="index-banners index-banners--colegio">
+
     <div data-title="no te quedes sin vacante">
         <div
         class="
@@ -605,6 +606,7 @@
       </div>
     </div>
   </div>
+  
   <!--
     <div data-title="San Marcos ciclo repaso">
         <div

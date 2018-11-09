@@ -47,6 +47,11 @@
     line-height: 95px;
     position: relative;
     right: -10px;
+
+    .text{
+      font-size: 2rem;
+      font-family: $font_cae_bold;
+    }
   }
 
   sup{

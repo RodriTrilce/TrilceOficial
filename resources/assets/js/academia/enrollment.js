@@ -12,9 +12,9 @@
    required      : "'{label}' es obligatorio.",
    email         : "'{label}' debe ser una dirección de e-mail válida.",
    maxLength     : "'{label}' debe tener máximo {maxLength} dígitos.",
-   minLength     : "'{label}' debe tener minimo {minLength} dígitos.",
-   tel           : "{label} debe ser un número teléfono.",
-   onlytext      : "Solo es permitido texto.",
+   minLength     : "'{label}' debe tener mínimo {minLength} dígitos.",
+   tel           : "{label} debe ser un número de teléfono.",
+   onlytext      : "Solo se permite texto.",
    captcha       : "Verfica el captcha."
  };
 

@@ -86,7 +86,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Nuestros alumnos reciben una sólida formación en inglés durante sus cuatro primeros años de secundaria. A diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales, en Trilce nuestros estudiantes de 1.<sup>o</sup> a 3.<sup>o</sup> reciben ocho horas del curso a la semana y en 4.<sup>o</sup>, cuatro horas a la semana. Además, en 4.<sup>o</sup> y 5.<sup>o</sup> reforzamos su aprendizaje con talleres de 2 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.
+                        Nuestros alumnos reciben una sólida formación en inglés durante sus cuatro primeros años de secundaria. A diferencia de los colegios tradicionales, que lo llevan solo 2 horas semanales, en Trilce nuestros estudiantes de 1.<sup>o</sup> a 3.<sup>o</sup> reciben ocho horas del curso a la semana y en 4.<sup>o</sup>, cuatro horas a la semana. Además, en 5.<sup>o</sup> reforzamos su aprendizaje con talleres de 2 horas semanales por las tardes. Esto les permite obtener un buen nivel en el idioma.
                       </p>
                     </div>
                   </dd>

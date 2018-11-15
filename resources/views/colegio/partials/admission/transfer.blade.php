@@ -80,8 +80,8 @@
             <li>Resolución de traslado</li>
             <li>Constancia de conducta</li>
             <li>2 fotos tamaño carné</li>
-            <li>1 Copia del DNI de ambos padres o apoderados</li>
-            <li>1 Copia de la partida de nacimiento del alumno</li>
+            <li>1 copia del DNI de ambos padres o apoderados</li>
+            <li>1 copia de la partida de nacimiento del alumno</li>
             <li>Constancia de matrícula emitida por SIAGIE</li>
           </ul>
         </ul>

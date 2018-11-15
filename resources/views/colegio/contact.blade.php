@@ -1,6 +1,6 @@
 {{! $breadcrumbs = Breadcrumbs::render('colegio-contact') }}
 @extends('colegio.layouts.template')
-@section('title', 'Contáctenos')
+@section('title', 'Contáctanos')
 @section('content')
 
   <div class="header-double-image">

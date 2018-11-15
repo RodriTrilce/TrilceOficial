@@ -16,13 +16,13 @@ import SlimSelect from 'slim-select'
 
 window.SlimSelect = SlimSelect;
 const ValidationLang = {
-  required: "'{label}' es obligatorio.",
-  email: "'{label}' debe ser una dirección de e-mail válida.",
-  maxLength: "'{label}' debe tener máximo {maxLength} dígitos.",
-  minLength: "'{label}' debe tener minimo {minLength} dígitos.",
-  tel: "{label} debe ser un número telefónico.",
-  onlytext: "Solo es permitido texto",
-  captcha: "Verfica el captcha"
+  required      : "'{label}' es obligatorio.",
+  email         : "'{label}' debe ser una dirección de e-mail válida.",
+  maxLength     : "'{label}' debe tener máximo {maxLength} dígitos.",
+  minLength     : "'{label}' debe tener mínimo {minLength} dígitos.",
+  tel           : "{label} debe ser un número de teléfono.",
+  onlytext      : "Solo se permite texto.",
+  captcha       : "Verfica el captcha."
 };
 const ValidationConfig = {
   classInputGroup: 'form-group',

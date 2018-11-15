@@ -653,7 +653,7 @@
       <div class="tab tab3 row center-xs">
 
           <div class="row col-xs-12 start-xs">
-              <h2>Datos generales del <i>Padre y/o apoderado</i></h2>
+              <h2>Datos generales del <i>padre y/o apoderado</i></h2>
 
                 <div class="row col-xs-12">
                   <div class="col-xs start-xs">

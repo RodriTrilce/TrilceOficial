@@ -66,7 +66,7 @@
           <li>
             <a href="javascript:void(0);" class="js-tabs__title">
               <div><img src="/static/images/colegio/old-educational-propuse/p_desarrollo_personal.svg" alt=""></div>
-              <div>Desarrollo Personal</div>
+              <div>Desarrollo personal</div>
             </a>
           </li>
 
@@ -284,7 +284,7 @@
             <div class="col-xs-12 col-sm ep-stepfour-right ep-stepfour-container">
 
               <div class="row col-xs-12 ep-generic-title">
-                <h2><span class="number">5 </span>Sistema 5.° Año - Más cerca a la universidad</h2>
+                <h2><span class="number">5 </span>Sistema 5.° Año - Más cerca de la universidad</h2>
               </div>
 
               <div class="col-xs-12 ep-stepfive-container">
@@ -359,7 +359,7 @@
                 <div class="row col-xs-12 ep-stepsix-list">
                   <div class="col-xs">
                     <h3 class="list-title"><i class="fa fa-stop"></i> Toda la información de sus hijos al alcance de un solo clic</h3>
-                    <p class="list-text">Ahorre mucho más tiempo usando nuestra intranet para el seguimiento de las calificaciones de sus niños, actividades en general, entre otros.</p>
+                    <p class="list-text">Ahorra mucho más tiempo usando nuestra intranet para el seguimiento de las calificaciones de sus niños, actividades en general, entre otros.</p>
                   </div>
                 </div>
 
@@ -373,7 +373,7 @@
               </div>
 
 
-              <h2 class="ep-stepsix-titlelist ep-stepsix-titlelist_more"><span class="ep-stepsix-titlelist__number">3</span> Salones multimedia y laboratorios de cómputo.</h2>
+              <h2 class="ep-stepsix-titlelist ep-stepsix-titlelist_more"><span class="ep-stepsix-titlelist__number">3</span> Salones multimedia y laboratorios de cómputo</h2>
 
               <div class="row col-xs-12">
 

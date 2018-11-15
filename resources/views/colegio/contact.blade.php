@@ -30,7 +30,7 @@
     <div class="col-xs-12 col-sm contact-info container-padding-mobile">
       <h2 class="contact-subtitle contact-subtitle-colegio">Información de contacto</h2>
       <ul class="contant-info-ul">
-        <li>Central telefónica: 619-8100</li>
+        <li>Central telefónica: 6198 100</li>
         <li>Correo: atencionalcliente@trilce.edu.pe</li>
       </ul>
 
@@ -45,7 +45,6 @@
 
         </a>
       </div> --}}
-
 
       <div class="fb-page"
         data-href="https://www.facebook.com/ColegioTrilce/"

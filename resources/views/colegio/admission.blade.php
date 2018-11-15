@@ -21,7 +21,7 @@
           <a href="/colegio/matricula-nuevo">
             <div class="row nuevos-i-top">
               <div class="col-xs-12 xs-center"><img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="Alumno nuevo"></div>
-              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-blue">Nuevo</div></h3></div>
+              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-blue">nuevo</div></h3></div>
             </div>
           </a>
         </div>
@@ -30,7 +30,7 @@
           <a href="/colegio/matricula-traslado">
             <div class="row nuevos-i-top">
               <div class="col-xs-12 xs-center"><img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="Alumno Traslado"></div>
-              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-yellow">Traslado</div></h3></div>
+              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-yellow">traslado</div></h3></div>
             </div>
           </a>
         </div>
@@ -39,7 +39,7 @@
           <a href="/colegio/matricula-regular">
             <div class="row nuevos-i-top">
               <div class="col-xs-12 xs-center"><img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="Alumno Regular"></div>
-              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-orange">Regular</div></h3></div>
+              <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-orange">regular (actual)</div></h3></div>
             </div>
           </a>
         </div>

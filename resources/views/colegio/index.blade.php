@@ -257,12 +257,12 @@
             <br>
             <div class="banner__title">
               <span>
-                Tablet gratuita
+                Tablet Trilce
               </span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                Contribuyendo con el medio ambiente<br>
+                Menos papel, más vida<br>
               </span>
             </div>
             <div class="banner__content__rigth banner__content__rigth--align-center xs-hide">
@@ -357,12 +357,12 @@
             </span>
 
             <span>
-              ¡Súmate a la campaña!
+              Ser mejores personas
             </span>
           </div>
           <div class="banner__subtitle">
             <span class="normal">
-              Ser mejores personas<br />
+              ¡Súmate a la campaña!<br />
             </span>
             <span style="display:block;margin: 20px auto;">
               <button class="banner__button-cta banner__button-cta--orange"><a href="https://www.youtube.com/watch?v=868wD20iBoE" target="_blank">Ver más</a></button>
@@ -692,7 +692,7 @@
           <a href="/colegio/matricula-regular">
             <div class="nuevos-i-top">
               <img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="PUCP">
-              <h3>Alumno <div class="modality modality-orange">regular</div></h3>
+              <h3>Alumno <div class="modality modality-orange">regular (actual)</div></h3>
             </div>
           </a>
         </div>

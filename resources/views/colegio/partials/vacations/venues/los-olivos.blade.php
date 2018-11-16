@@ -236,23 +236,23 @@
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 4.<sup>o</sup> grado</h2>
               <p><strong>Matemática, Comunicación, Raz. Matemático y Raz. Verbal</strong></p>
-              <p><strong>1.<sup>er</sup> y 4.<sup>o</sup> grado:</strong></p>
-              <p>Lunes, miércoles y viernes de 8 a. m. a 12 m.</p>
+              <p><strong>1.<sup>er</sup> y 2.<sup>o</sup> grado:</strong></p>
+              <p>Lunes, martes y jueves de 8 a. m. a 12 m.</p>
               <br>
-              <p><strong>2.<sup>o</sup> y 3.<sup>er</sup> grado:</strong></p>
-              <p>Martes, jueves y viernes de 8 a. m. a 12 m.</p>
+              <p><strong>3.<sup>er</sup> y 4.<sup>o</sup> grado:</strong></p>
+              <p>Martes, miércoles y jueves de 8 a. m. a 12 m.</p>
             </li>
 
             <li>
-                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 5.<sup>o</sup> y 6.<sup>o</sup> grado</h2>
+                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> grado</h2>
                 <p><strong>Aritmética, Álgebra, Lenguaje, Raz. Matemático, Raz. Verbal y Elementos de Geometría</strong></p>
-                <p>Martes, jueves y viernes de 8 a. m. a 12 m.</p>
+                <p>Lunes, miércoles y viernes de 8 a. m. a 12 m.</p>
             </li>
 
             <li>
               <br />
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico</span>
+              <span>(pago por ciclo completo) <br> Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
                   <span class="orange">· Al contado: S/290</span><br>
@@ -289,16 +289,16 @@
             <li>
                 <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> año</h2>
                 <p><strong>Aritmética, Álgebra, Geometría, Trigonometría, Física, Química, Raz. Matemático y Raz. Verbal</strong></p>
-                <p>De lunes a jueves de 8 a. m. a 12 m.</p>
+                <p>De martes a viernes de 8 a. m. a 12 m.</p>
             </li>
 
             <li>
               <br />
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico</span>
+              <span>(pago por ciclo completo)<br> Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
-                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>o</sup> año</strong></h4>
+                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>er</sup> año</strong></h4>
                   <span class="orange">· Al contado: S/290</span><br>
                   <span class="orange">· 2 partes: S/310</span><br>
                   · S/190 (al matricularse)<br>
@@ -307,9 +307,9 @@
 
                 <li>
                   <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> año</strong></h4>
-                  <span class="orange">· Al contado: S/340</span><br>
-                  <span class="orange">· 2 partes: S/360</span><br>
-                  · S/260 (al matricularse)<br>
+                  <span class="orange">· Al contado: S/350</span><br>
+                  <span class="orange">· 2 partes: S/370</span><br>
+                  · S/270 (al matricularse)<br>
                   · S/100 (30 de enero)
                 </li>
               </ul>
@@ -334,13 +334,19 @@
               </li>
             </li>
             <li>
-              <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 4.<sup>o</sup> grado</h3>
-              <p>Martes y jueves de 8 a. m. a 11 a. m.</p>
+              <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 2.<sup>o</sup> grado</h3>
+              <p>Miércoles y viernes de 8 a. m. a 11 a. m.</p>
             </li>
 
             <li>
-                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 2.<sup>o</sup>, 3.<sup>er</sup>, 5.<sup>o</sup> y 6.<sup>o</sup> grado</h3>
-                <p>Lunes y miércoles de 8 a. m. a 11 a. m.</p>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> y 4.<sup>o</sup> grado</h3>
+                <p>Lunes y viernes de 8 a. m. a 11 a. m.</p>
+                <br>
+            </li>
+
+            <li>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 5.<sup>o</sup> y 6.<sup>o</sup> grado</h3>
+                <p>Martes y jueves de 8 a. m. a 11 a. m.</p>
                 <br>
             </li>
 
@@ -362,7 +368,7 @@
             <li>
               <br />
               <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico</span>
+              <span>(pago por ciclo completo)<br>Incluye material didáctico</span>
             </li>
 
           </ul>
@@ -375,37 +381,16 @@
     <div class="js-tabs__content">
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
-          <ul class="ep-generic-list ep-generic-list--off">
-            <li>
-              <h3><strong>Primaria</strong></h3><br>
-              <strong>Taller de Lectura</strong><br>
-              Lunes y miércoles
-            </li>
-            <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>6 y 7 años:</sup></strong> miércoles de 8 a. m. a 10 a. m.</li>
-            <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>8 a 11 años</strong> miércoles de 10 a. m. a 12 m.</li>
-
-            <br>
-
-            <li>
-              <strong><span class="orange">INVERSIÓN: S/150</span></strong> <br>
-              <span>(pago por ciclo completo)</span>
-            </li>
-          </ul>
 
           <ul class="ep-generic-list ep-generic-list--off">
             <li>
               <h3><strong>Secundaria</strong></h3><br>
-              <strong>Historia del Perú</strong><br>
-              Martes de 8 a. m. a 11 a. m.
+              <strong>Historia Universal</strong><br>
+              <strong>Geografía</strong><br>
+              3 horas semanales<br>
+              (consultar frecuencia de horarios)
             </li>
-            <li>
-              <strong>Historia Universal<br>Geografía</strong><br>
-              Jueves de 8 a. m. a 11 a. m.
-            </li>
-
-
             <br>
-
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
               <span>pago por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
@@ -426,39 +411,47 @@
           <ul class="ep-generic-list ep-generic-list--off">
             <li>
               <strong><span class="orange">MANUALIDADES</span></strong> <br>
-              (de 6 años a más)
-              <p>Pintura, Cerámica, Pedrería y Trupán</p><br>
-            </li>
-
-            <li>
-              <strong><span class="orange">ETIQUETA SOCIAL Y MODELAJE</span></strong> <br>
-              (de 6 a 12 años)
-              <p>Lunes y miércoles de 12 m. a 2 p. m.</p><br>
-            </li>
-
-            <li>
-              <strong><span class="orange">AJEDREZ</span></strong> <br>
-              (de 8 a 8 años)<br>
+              (de 8 años a más)<br>
+              <strong>Termoformado en Microporoso, Caritas Pintadas, Bisutería y Decoración de Globos</strong>
               <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
-              <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago por ciclo completo)<br> No incluye materiales</span>
-              <br><br>
+              <strong><span class="orange">VÓLEY</span></strong> <br>
+              (de 6 a más)
+              <p>Horarios según categoría</p><br>
             </li>
-
 
             <li>
               <strong><span class="orange">EXPRESIÓN CORPORAL</span></strong> <br>
-              (a partir de los 6 años)<br>
+              (a partir de los 8 años)<br>
               <strong>Danzas Modernas y Folklóricas</strong>
-              <p>Lunes y miércoles de 12 m. a 2 p. m.</p><br>
+              <p>Lunes y viernes de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
+              <strong><span class="orange">MINICHEF</span></strong> <br>
+              (a partir de los 8 años)<br>
+              <p>Martes y jueves de 10 a. m. a 12 m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">AJEDREZ</span></strong> <br>
+              (a partir de los 8 años)<br>
+              <p>Lunes y viernes de 12 m. a 2 p. m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">PSICOMOTRICIDAD</span></strong> <br>
+              (6 y 7 años)<br>
+              <p>Miércoles y viernes de 10 a. m. a 12 m.</p><br>
+            </li>
+
+
+
+            <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span class="orange">(pago único por todo el ciclo)</span>
+              <span class="orange">Por cada taller <br> (pago por ciclo completo)<br> No incluye materiales</span>
               <br><br>
             </li>
 
@@ -475,17 +468,18 @@
           <ul class="ep-generic-list ep-generic-list--off">
             <li>
               <strong><span class="orange">PRIMARIA</span></strong> <br>
-              <strong>Aprendo a dibujar y a escribir en la computadora (1.<sup>er</sup> y 2.<sup>o</sup> grado)</strong>
+              <strong>Compukids (de 5 a 6 años)</strong>
               <p>
-                Lunes y miércoles de 12 m. a 2 p. m.
+                Lunes y viernes de 8 a. m. a 10 a. m.
               </p><br>
-              <strong>Proyectos educativos con Office e Internet (3.<sup>er</sup> y 4.<sup>o</sup> grado)</strong>
+              <strong>Edición de Videos y Animación (de 7 a 8 años)</strong>
               <p>
-                Lunes y miércoles de 8 a. m. a 10 a. m.
+                Miércoles de 8 a. m. a 10 a. m.<br>
+                Viernes de 10 a. m. a 12 m.
               </p><br>
-              <strong>MS-Excel y creación de videos con Movie Maker (5.<sup>o</sup> y 6.<sup>o</sup> grado)</strong>
+              <strong>Edición de Imágenes y Videos (de 9 a 11 años)</strong>
               <p>
-                Lunes y miércoles de 10:15 a. m. a 12 m.
+                Lunes y miércoles de 10 a. m. a 12 m.
               </p><br>
             </li>
 
@@ -497,17 +491,17 @@
 
             <li>
               <strong><span class="orange">SECUNDARIA</span></strong> <br>
-              <strong>Taller de Office: Word y Excel</strong>
+              <strong>Taller 1: Diseño Gráfico Digital</strong>
               <p>
-                Martes y jueves de 8 a. m. a 9:45 a. m.
+                Martes y jueves de 8 a. m. a 10 a. m.
               </p><br>
-              <strong>Taller de Diseño Gráfico: Inkscape</strong>
+              <strong>Taller 2: Edición de Videos</strong>
               <p>
-                Martes y jueves de 10 a. m. a 11:45 a. m.
+                Martes y jueves de 10 a. m. a 12 m.
               </p><br>
-              <strong>Taller de Multimedia: Creación de Videos en PowerPoint</strong>
+              <strong>Taller 3: Ensamblaje y Reparación de Computadoras</strong>
               <p>
-                Martes y jueves de 12 m. a 1:45 p. m.
+                Martes y jueves de 12 m. a 2 p. m.
               </p><br>
             </li>
 
@@ -546,7 +540,7 @@
 
             <li>
               <strong><span class="orange">SISTEMA 5.<sup>o</sup> AÑO SAN MARCOS</span></strong> <br>
-              <strong>Aritmética, Álgebra, Geometría, Física, Química y Biología</strong>
+              <strong>Aritmética, Álgebra, Geometría, Química y Biología</strong>
               <br>
             </li>
 
@@ -562,14 +556,13 @@
               <br>
             </li>
 
-
             <li>
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
               <span class="orange">(pago por ciclo completo) <br> Incluye material didáctico</span>
               <br><br>
               <span class="orange">
                 <strong>
-                <i class="fa fa-stop"></i> Al Contado: S/350 <br>
+                <i class="fa fa-stop"></i> Al contado: S/350 <br>
                 <i class="fa fa-stop"></i> 2 partes: S/370 <br>
                 </strong>
                 <br>

@@ -123,10 +123,17 @@
   .js-tabs__header{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .js-tabs__header li{
     min-width: 150px;
+    max-width: 30%;
+
+    @include breakpoint(baby){
+      width: 100%;
+      min-width: 100%;
+    }
   }
 
   .js-tabs__title-active{
@@ -139,8 +146,38 @@
   }
 
   .js-tabs__title{
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    >div{
+      &:first-child{
+        overflow: hidden;
+        width: 70px;
+        height: 70px;
+      }
+
+      &:last-child{
+
+      }
+    }
+
     @include breakpoint(baby){
       font-size: 1.05rem;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      >div{
+        &:first-child{
+        }
+
+        &:last-child{
+          text-align: left;;
+        }
+      }
+
     }
   }
 }
@@ -153,7 +190,7 @@
   font-size: 3.7rem;
 
   @include breakpoint(baby){
-    width: 40px;
+    width: 50px;
     font-size: 1.4rem;
   }
 }

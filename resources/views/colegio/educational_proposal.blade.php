@@ -416,6 +416,13 @@
                 <tbody>
 
                   <tr>
+                    <td data-label="">1.<sup>er</sup> puesto PUCP POP</td>
+                    <td data-label="Examen">2019</td>
+                    <td data-label="Nombres">Jimm Cisneros</td>
+                    <td data-label="Carrera"><strong>Máximo puntaje</strong></td>
+                  </tr>
+
+                  <tr>
                     <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
                     <td data-label="Examen">2019-I</td>
                     <td data-label="Nombres">Diego Castillo Utani</td>

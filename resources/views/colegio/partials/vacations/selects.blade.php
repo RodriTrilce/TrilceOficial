@@ -6,9 +6,9 @@
       <option value="/colegio/sede/callao/vacaciones-utiles">Callao</option>
       <option value="/colegio/sede/comas/vacaciones-utiles">Comas</option>
       <option value="/colegio/sede/chorrillos/vacaciones-utiles">Chorrillos</option>
-      <!--
       <option value="/colegio/sede/jesus-maria-salaverry/vacaciones-utiles">Jesús María (Salaverry)</option>
       <option value="/colegio/sede/los-olivos/vacaciones-utiles">Los Olivos</option>
+      <!--
       <option value="/colegio/sede/pro/vacaciones-utiles">Pro</option>
       <option value="/colegio/sede/santa-beatriz-roma/vacaciones-utiles">Santa Beatriz (Roma)</option>
 -->

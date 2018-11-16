@@ -18,7 +18,7 @@
         </div>
         <div class="col-sm start-xs xs-hide">
           <div class="vacations__slider" id="vacations_slider">
-            
+
             <div>
               <img src="{{asset('static/images/colegio/vacations/slider_1.png')}}" alt="Vacaciones Útiles">
             </div>

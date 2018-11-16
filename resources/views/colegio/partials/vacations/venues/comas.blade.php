@@ -261,8 +261,8 @@
               <p>(De lunes a viernes de 8 a. m. a 12 m.)</p>
             </li>
 
+            <h3>“MÁS CERCA DE LA UNIVERSIDAD”</h3><br>
             <li>
-              <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> “MÁS CERCA DE LA UNIVERSIDAD”</h2><br>
 
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
               <span>(pago por ciclo completo) Incluye material didáctico de la academia (libros)</span>
@@ -372,4 +372,12 @@
         </div>
       </div>
     </div>
+</div>
+<div class="col-xs-12 vacations__bottom vacations__bottom--orange">
+  <div>
+    <h1><span><i class="fa fa-lightbulb-o"></i> Inicios: 4, 7 y 8 de enero</span></h1>
+  </div>
+  <div>
+    <h3><span>Fin: 23 de febrero</span></h3>
+  </div>
 </div>

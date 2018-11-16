@@ -312,12 +312,15 @@ if(page == 'vacations_venue' || page == 'vacations'){
 }
 
 if(page == 'vacations_venue'){
+  try {
+      var tabs = new Tabs({
+        elem: 'om__tabs',
+        open: 0
+      });
 
-  var tabs = new Tabs({
-    elem: 'om__tabs',
-    open: 0
-  });
-
-tabs.init();
+      tabs.init();
+  }
+  catch(err) {
+  }
 
 }

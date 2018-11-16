@@ -18,7 +18,7 @@
         </div>
         <div class="col-sm start-xs xs-hide">
           <div class="vacations__slider" id="vacations_slider">
-            
+
             <div>
               <img src="{{asset('static/images/colegio/vacations/slider_1.png')}}" alt="Vacaciones Útiles">
             </div>
@@ -39,14 +39,7 @@
       <div class="row col-xs-12">
         @include('colegio.partials.vacations.venues.' . $data->slug)
       </div>
-      <div class="col-xs-12 vacations__bottom vacations__bottom--orange">
-        <div>
-          <h1><span><i class="fa fa-lightbulb-o"></i> Inicios: 4, 7 y 8 de enero</span></h1>
-        </div>
-        <div>
-          <h3><span>Fin: 23 de febrero</span></h3>
-        </div>
-      </div>
+
       <div class="col-xs-12 vacations__bottom vacations__bottom--white">
         <div class="table-responsive" style="width:100%;">
             <table class="venue-table">

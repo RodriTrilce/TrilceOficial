@@ -4,9 +4,9 @@ namespace App\Console\Commands\Mail;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
-use App\Models\Out\Ecotrilce;
 use App\Models\Out\Listdriver;
 use App\Mail\Report\ReportBasicMail;
+use App\Models\Out\Ecotrilce;
 use App\Mail\Out\BecaMail;
 
 class MailBecaCommand extends Command

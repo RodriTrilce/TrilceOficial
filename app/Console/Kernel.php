@@ -29,7 +29,8 @@ class Kernel extends ConsoleKernel
 
 //        $schedule->command('command:testmail')->everyMinute();
 //        $schedule->command('command:eco')->everyMinute();
-      $schedule->command('command:sendmailbeca')->everyMinute();
+//        $schedule->command('command:sendmailbeca')->everyMinute();
+          $schedule->command('command:sendmailpucp')->everyMinute();
     }
 
     /**

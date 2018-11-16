@@ -9,9 +9,7 @@
       <option value="/colegio/sede/jesus-maria-salaverry/vacaciones-utiles">Jesús María (Salaverry)</option>
       <option value="/colegio/sede/los-olivos/vacaciones-utiles">Los Olivos</option>
       <option value="/colegio/sede/pro/vacaciones-utiles">Pro</option>
-      <!--
       <option value="/colegio/sede/santa-beatriz-roma/vacaciones-utiles">Santa Beatriz (Roma)</option>
--->
     </select>
   </div>
   <div class="col-xs-12 col-sm-6 vacations__select-item">

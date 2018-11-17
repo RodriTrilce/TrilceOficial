@@ -10,6 +10,7 @@
       <option value="/colegio/sede/los-olivos/vacaciones-utiles">Los Olivos</option>
       <option value="/colegio/sede/pro/vacaciones-utiles">Pro</option>
       <option value="/colegio/sede/santa-beatriz-roma/vacaciones-utiles">Santa Beatriz (Roma)</option>
+      <option value="/colegio/sede/brena/vacaciones-utiles">Breña</option>
     </select>
   </div>
   <div class="col-xs-12 col-sm-6 vacations__select-item">

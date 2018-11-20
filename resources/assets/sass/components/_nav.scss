@@ -170,7 +170,7 @@ $nav-li-hover-transition : unquote("all .1s ease-in");
     .title{
       font-size: 2rem;
       padding-top: 9vh;
-      
+
       @media screen and (max-width: 1000px) {
         font-size: 1.5rem;
       }
@@ -771,4 +771,20 @@ nav{
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+}
+
+.nav__highlight{
+  padding-right: 15px;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: $orange;
+    left: 100%;
+    top: 3px;
+  }
 }

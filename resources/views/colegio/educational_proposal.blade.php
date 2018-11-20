@@ -105,7 +105,7 @@
               </li>
               <li>
                   <span class="icon_local_span"><i class="fa fa-stop"></i></span>
-                  38 años de experiencia en preparación preuniversitaria.
+                  Más de 38 años de experiencia potenciando el nivel académico y desarrollo personal de nuestros alumnos.
               </li>
               <li>
                   <span class="icon_local_span"><i class="fa fa-stop"></i></span>

@@ -262,9 +262,11 @@
 .educationalproposal__video-title{
   display: block;
   font-family: $font_geo_smbold;
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
   width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
   @include breakpoint(baby){
     font-size: 1.2rem;
@@ -290,7 +292,7 @@
 
 .educationalproposal__video-bg{
   background: url(/storage/static/images/other/bg-video.jpg) no-repeat 0 0;
-  background-size: 100%;
+  background-size: cover;
   position: absolute;
   left: 0;
   width: 100%;

@@ -151,9 +151,9 @@
             </li>
 
 
-
+<br>
             <li>
-              <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> y 6.<sup>o</sup> grado</h2>
+              <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> a 6.<sup>o</sup> grado</h2>
               <p><strong>Técnicas de Razonamiento, Cálculo Mental y Ortografía</strong></p>
               <p><strong>Talleres: Piensa Verde, Robotic Space, Lectura, Ajedrez y Danza</strong></p>
               <p>Lunes, miércoles y viernes de 8 a. m. a 12:50 p. m.</p>

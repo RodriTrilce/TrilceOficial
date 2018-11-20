@@ -132,32 +132,30 @@
   <div class="row center-xs center-sm math-olympic-onam">
     <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
     <div class="row col-xs-12 col-sm-8 between-xs between-sm data">
-      <div class="col-xs">25 de noviembre</div>
-      <div class="col-xs">XXX OLIMPIADA NACIONAL DE MATEMÁTICA</div>
-      <div class="col-xs">2.° prim a 5.° sec.</div>
+      <div class="col-xs-12 col-sm">25 de noviembre</div>
+      <div class="col-xs-12 col-sm">XXX OLIMPIADA NACIONAL DE MATEMÁTICA</div>
+      <div class="col-xs-12 col-sm">2.° prim a 5.° sec.</div>
     </div>
 
-    <!--
-    <div class="row col-xs-12 col-sm-9 text-init center-onam">
+    <div class="row col-xs-12 col-sm-9 text-init center-onam container-base">
       <div class="row col-xs-12 col-sm-3 middle-sm middle-xs center-sm center-xs basics">
-        <i class="fa fa-search"></i> Bases
+        <a href="/storage/other/documents/bases-onam-2018.pdf" target="_blank" class="basics__linkto"><i class="fa fa-search"></i> Bases</a>
       </div>
       <div class="row col-xs-12 col-sm block-onam">
         <div class="row col-xs-12 between-xs">
           <div class="col-xs inscription">INSCRIPCIONES</div>
-          <div class="col-xs texts"><i class="fa fa-user"></i> Individual</div>
-          <div class="col-xs texts"><i class="fa fa-users"></i> Grupal</div>
-          <div class="col-xs texts"><i class="fa fa-bullhorn"></i> Resultados</div>
+          <div class="col-xs texts"><a href="http://app.trilce.edu.pe/olimpiadas-onamtrilce/" target="_blank"><i class="fa fa-user"></i> Individual</a></div>
+          <div class="col-xs texts"><a href="http://app.trilce.edu.pe/olimpiadas-onamtrilcegrupo/" target="_blank"><i class="fa fa-users"></i> Grupal</a></div>
+          <div class="col-xs texts desactive-link"><a href="" target="_blank"><i class="fa fa-bullhorn"></i> Resultados</a></div>
         </div>
         <div class="row col-xs-12 between-xs">
           <div class="col-xs inscription">INSCRIPCIONES EXTERNAS</div>
-          <div class="col-xs texts"><i class="fa fa-user"></i> Individual</div>
-          <div class="col-xs texts"><i class="fa fa-users"></i> Grupal</div>
-          <div class="col-xs texts"><i class="fa fa-bullhorn"></i> Resultados</div>
+          <div class="col-xs texts"><a href="http://app.trilce.edu.pe/olimpiadas-onamotros/" target="_blank"><i class="fa fa-user"></i> Individual</a></div>
+          <div class="col-xs texts"><a href="http://app.trilce.edu.pe/olimpiadas-onamotrosgrupo/" target="_blank"><i class="fa fa-users"></i> Grupal</a></div>
+          <div class="col-xs texts desactive-link"><a href="" target="_blank"><i class="fa fa-bullhorn"></i> Resultados</a></div>
         </div>
       </div>
     </div>
-  -->
 
     <div class="row col-xs-12 col-sm-9 text-init sponsor">
 

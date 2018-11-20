@@ -125,6 +125,15 @@
     }
   }
 
+  .desactive-link{
+    pointer-events: none;
+    cursor: none;
+    color: $gray !important;
+    a{
+      font-weight: normal !important;
+    }
+  }
+
   .center-onam{
     margin-top: 1.5rem;
   }
@@ -339,6 +348,15 @@
   }
 }
 
+
+.basics__linkto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
 
 
 

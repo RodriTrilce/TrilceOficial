@@ -176,7 +176,6 @@
             </li>
 
             <li>
-              <br />
               <strong><span class="orange">INVERSIÓN: S/140</span></strong> <br>
               <span>(pago por ciclo completo)<br>Incluye material didáctico</span>
             </li>

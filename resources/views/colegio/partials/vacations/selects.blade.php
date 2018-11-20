@@ -22,10 +22,9 @@
   <div class="col-xs-12 col-sm-6 vacations__select-item">
     <select id="slimselect_provincia" class="select-vacations">
       <option data-placeholder="true"></option>
-<!--
+      <option value="/colegio/sede/arequipa/vacaciones-utiles">Arequipa</option>
       <option value="/colegio/sede/chanchamayo/vacaciones-utiles">Chanchamayo</option>
       <option value="/colegio/sede/huancayo/vacaciones-utiles">Huancayo</option>
--->
     </select>
   </div>
 </div>

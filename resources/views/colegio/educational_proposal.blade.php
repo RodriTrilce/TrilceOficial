@@ -269,7 +269,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.89 61.79"><path d="M53.07,22.16c-.93-.48-1.84-1-2.77-1.44-1.8-.91-3.47-2.2-5.44-2.62s-4.35,0-6.54,0-4.48,0-6.75,0V15.67h13c.18-2.66-.25-5.74-.09-8.1-2.11-.67-5.14-.66-12.85-1.86C31.41,4.45,31.38.19,31,.2L30.39,0h.32l-2.87.1-.32,5.2s-5.75-.68-7.78-1c-4.84-.68-4.84-.69-9.24,1l-8,3.07V9.7c3.73,2,7.38,3.93,11.08,5.82a8.62,8.62,0,0,0,2.21.4l11.65-.11v2.48c-1.12.06-2.07.15-3,.17-2.9.07-5.8.11-8.71.16a3,3,0,0,0-2.36.73A43.68,43.68,0,0,0,13,27.47c2.58.11,5,.22,7.33.3s4.73.14,7.11.21V30c-.7,0-1.27,0-1.83,0-3.41-.25-6.81-.56-10.22-.76a8.52,8.52,0,0,0-3,.33c-3.6,1.15-7.14,2.4-10.7,3.62-.52.18-1,.41-1.74.71a6.9,6.9,0,0,0,1.24,1.24q5.42,3,10.91,5.93a3.81,3.81,0,0,0,1.81.39c2.71-.09,5.41-.28,8.12-.38,1.77-.06,3.55,0,5.55,0-.08,6,.13,11-.16,16.92,0,0-7.52,1-12.12,3.75H40.91a21,21,0,0,0-9.3-4.21s-.08-6.14-.18-8.73,0-5.37,0-8.1L44,40.06c.08-2.56.17-4.94.22-7.33,0-.77-.57-1.26-1.49-1.42s-1.66-.19-2.49-.25l-8.67-.64V28.17c.8,0,1.44,0,2.08,0,3,.09,6.07.21,9.1.28a4.55,4.55,0,0,0,1.87-.23c3.11-1.46,6.17-3,9.12-4.45A1.13,1.13,0,0,0,53.07,22.16ZM17.64,14.05a6.26,6.26,0,0,1-3-.67C11.94,12,9.23,10.64,6.16,9.09c.87-.35.58-.64,1.15-.86,2.39-.91,5.37-1.66,7.63-2.55a5.23,5.23,0,0,1,2.61-.35c4.34.51,8.69,1,13,1.49,3.34.38,6.67.79,10,1.19.27,0,.54.09,1,.18-.1,1.9-.21,3.78-.31,5.75-.74,0-1.29.08-1.84.08C32.18,14,24.91,14,17.64,14.05ZM38.27,61c-4.62-.42-16.41-.2-17.35-.24C29.78,58.12,34.23,58.89,38.27,61Zm1.87-28.63,1.23.14a40.92,40.92,0,0,1-.31,5.83c-.56.06-1,.14-1.45.15q-6.47.27-12.93.51c-3.45.13-6.9.22-10.34.36a5.71,5.71,0,0,1-2.92-.56c-2.53-1.26-5.1-2.46-7.64-3.69-.41-.2-.78-.44-1.36-.77,1-.34,1.77-.61,2.55-.86,2.32-.73,4.67-1.43,7-2.2a8.22,8.22,0,0,1,3.17-.41c4.64.31,9.29.59,13.93.89C34.08,31.93,37.11,32.14,40.14,32.35Zm8.37-8.81c-2.08.91-4.14,1.86-6.25,2.73a5.28,5.28,0,0,1-2,.41C32.3,26.47,24.4,26.2,16.5,26a4,4,0,0,1-.58-.14c0-1.94,0-3.85.2-5.83,1.27-.06,2.37-.16,3.48-.18,7.07-.14,14.15-.25,21.22-.41a5.59,5.59,0,0,1,3,.68c1.76,1,3.57,1.89,5.86,3.09C49.1,23.34,48.79,23.42,48.51,23.54Z" transform="translate(0.03 0.02)" style="fill-rule:evenodd"/></svg>
                     <br>
                     Actividades psicopedagógicas</div>
-                  <div class="col-xs-12 item-content">Escuela para padres. Talleres psicológicos. Programa de orientación vocacional y de motivación Cachimbo Trilce. Visitas guiadas a la UNI, San Marcos y PUCP.</div>
+                  <div class="col-xs-12 item-content">Escuela para padres. Talleres psicológicos. Programa de orientación vocacional y de motivación Cachimbo Trilce. Visitas guiadas a la UNI, San Marcos y Católica.</div>
                 </div>
 
             </div>
@@ -294,11 +294,11 @@
               <ul class="ep-generic-list ep-stepfive-list">
                 <li>
                     <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> Docentes especializados por cada universidad</h3>
-                    <p>Nuestras aulas de 5.<sup>o</sup> año cuentan con docentes especializados por cada universidad, sea UNI, San Marcos o PUCP.</p>
+                    <p>Nuestras aulas de 5.<sup>o</sup> año cuentan con docentes especializados por cada universidad, sea UNI, San Marcos o Católica.</p>
                 </li>
                 <li>
                     <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> Aulas exclusivas por cada universidad</h3>
-                    <p>Aulas con contenido curricular adecuado al prospecto del examen de admisión de la UNI, San Marcos, PUCP y generales (otras).</p>
+                    <p>Aulas con contenido curricular adecuado al prospecto del examen de admisión de la UNI, San Marcos, Católica y generales (otras).</p>
                 </li>
               </ul>
 
@@ -416,7 +416,7 @@
                 <tbody>
 
                   <tr>
-                    <td data-label="">1.<sup>er</sup> puesto PUCP POP</td>
+                    <td data-label="">1.<sup>er</sup> puesto Católica POP</td>
                     <td data-label="Examen">2019</td>
                     <td data-label="Nombres">Jimm Cisneros</td>
                     <td data-label="Carrera"><strong>Máximo puntaje</strong></td>
@@ -430,7 +430,7 @@
                   </tr>
 
                   <tr>
-                    <td data-label="">1.<sup>er</sup> puesto PUCP</td>
+                    <td data-label="">1.<sup>er</sup> puesto Católica</td>
                     <td data-label="Examen">2018-I</td>
                     <td data-label="Nombres">Santiago Mendoza</td>
                     <td data-label="Carrera">Arquitectura</td>

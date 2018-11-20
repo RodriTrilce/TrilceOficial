@@ -17,7 +17,7 @@
           @elseif($type == 'san-marcos')
             Preparación San Marcos
           @elseif($type == 'pucp')
-            Preparación PUCP
+            Preparación Católica
           @endif
         </h1>
       </div>

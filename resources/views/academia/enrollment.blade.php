@@ -68,7 +68,7 @@
                         <option value="" selected disabled hidden>Universidad</option>
                         <option value="uni">UNI</option>
                         <option value="sm">San Marcos</option>
-                        <option value="pucp">PUCP</option>
+                        <option value="pucp">PUCP (Católica)</option>
                       </select>
                     </fieldset>
                   </div>

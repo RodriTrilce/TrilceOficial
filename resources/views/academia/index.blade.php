@@ -81,6 +81,101 @@
 
   <div class="index-banners index-banners--colegio">
 
+    <div data-title="primer puesto pucp JIIM">
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+          data-shadow="9"
+          data-shadow-opacity=".1"
+          data-bordercolor="white"
+
+          style="
+            background-color: #f4633a;
+          ">
+
+        <div
+        class="banner__image"
+
+        data-image-md="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
+        data-position-md="90% bottom"
+        data-size-md="contain"
+
+        data-image-xs="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png"
+        data-position-xs="110% bottom"
+        data-size-xs="65%"
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 12;
+        "></div>
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
+
+        <div class="
+        banner__content
+        " style="z-index:13;">
+          <div class="banner__style_primer xs-hide">
+          <div class="banner__style_primer__a">
+            <div class="banner__title">
+              <span>¡Máximo<br>puntaje!</span>
+            </div>
+            <div class="banner__subtitle">
+              <span class="normal">
+                Jimm Cisneros<br>
+              </span>
+              <span class="small">
+
+              </span>
+
+            </div>
+          </div>
+
+          <div class="banner__style_primer__b">
+
+            <div class="banner__style_primer__number">
+              <span class="number">
+                1<sup>er</sup>
+                <br>
+              </span>
+              <span class="banner__style_primer__number-puesto">
+                PUESTO 2019 POP
+              </span>
+
+            </div>
+
+            <div class="banner__style_primer__text">
+              <span>Católica</span>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="banner__style_primer-reverse banner__style_primer--colegio">
+          <div class="banner__title">
+            <span>1.<sup>er</sup> puesto<br>Católica</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              PUCP POP 2019<br>
+            </span>
+            <span class="small">
+              Jimm Cisneros
+            </span>
+          </div>
+        </div>
+       </div>
+
+      </div>
+    </div>
     <div data-title="no te quedes sin vacante">
         <div
         class="
@@ -255,73 +350,6 @@
             </span>
           </div>
         </div>
-
-      </div>
-    </div>
-    <div data-title="eco trilce">
-      <div
-      class="
-        banner__item
-        banner__item--left
-        "
-      data-shadow="10"
-      data-shadow-opacity=".15"
-      data-bordercolor="#f4633a"
-
-      style="
-        background-color: #fff;
-      ">
-
-      <div
-      class="banner__image"
-
-      data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
-      data-position-md="right bottom"
-      data-size-md="45vw"
-
-      data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
-      data-position-xs="40vw bottom"
-      data-size-xs="85vw"
-
-      style="
-      background-repeat: no-repeat;
-      z-index: 12;
-      "></div>
-
-      <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-      <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
-        <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-        <polygon fill="#f4633a" points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-        </svg>
-      </div>
-
-      <div class="banner__content
-      banner__content--mobile-padding-left
-      " style="z-index:13;">
-
-        <div class="banner__content--md">
-          <div class="banner__subtitle">
-            <span class="semibig orange font-geo-smbold" style="">
-              Reafirmamos nuestro compromiso <br>
-              con el planeta y eliminaremos
-              progresivamente <br> el uso del
-              plástico en nuestras sedes y cafeterías.
-            </span>
-          </div>
-        </div>
-
-        <div class="banner__content--xs">
-          <div class="banner__subtitle">
-            <span class="semibig orange font-geo-smbold" style="">
-              Eliminaremos progresivamente <br>
-              el uso del plástico en nuestras sedes.
-            </span>
-          </div>
-        </div>
-
-      </div>
 
       </div>
     </div>
@@ -582,7 +610,7 @@
             </div>
 
             <div class="banner__style_primer__text">
-              <span>PUCP</span>
+              <span>Católica</span>
             </div>
 
           </div>
@@ -590,7 +618,7 @@
         </div>
           <div class="banner__style_primer-reverse banner__style_primer--colegio">
             <div class="banner__title">
-              <span>1.<sup>er</sup> puesto<br>PUCP</span>
+              <span>1.<sup>er</sup> puesto<br>Católica</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
@@ -602,6 +630,73 @@
             </div>
           </div>
        </div>
+
+      </div>
+    </div>
+    <div data-title="eco trilce">
+      <div
+      class="
+        banner__item
+        banner__item--left
+        "
+      data-shadow="10"
+      data-shadow-opacity=".15"
+      data-bordercolor="#f4633a"
+
+      style="
+        background-color: #fff;
+      ">
+
+      <div
+      class="banner__image"
+
+      data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
+      data-position-md="right bottom"
+      data-size-md="45vw"
+
+      data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
+      data-position-xs="40vw bottom"
+      data-size-xs="85vw"
+
+      style="
+      background-repeat: no-repeat;
+      z-index: 12;
+      "></div>
+
+      <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+      <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+        <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+        <polygon fill="#f4633a" points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+        </svg>
+      </div>
+
+      <div class="banner__content
+      banner__content--mobile-padding-left
+      " style="z-index:13;">
+
+        <div class="banner__content--md">
+          <div class="banner__subtitle">
+            <span class="semibig orange font-geo-smbold" style="">
+              Reafirmamos nuestro compromiso <br>
+              con el planeta y eliminaremos
+              progresivamente <br> el uso del
+              plástico en nuestras sedes y cafeterías.
+            </span>
+          </div>
+        </div>
+
+        <div class="banner__content--xs">
+          <div class="banner__subtitle">
+            <span class="semibig orange font-geo-smbold" style="">
+              Eliminaremos progresivamente <br>
+              el uso del plástico en nuestras sedes.
+            </span>
+          </div>
+        </div>
+
+      </div>
 
       </div>
     </div>
@@ -713,7 +808,7 @@
             <div class="nuevos-i-top">
               <img src="/static/images/academia/svg/logo-pucp.svg" alt="PUCP">
               <h4>Preparación</h4>
-              <h3>PUCP</h3>
+              <h3>Católica</h3>
             </div>
           </a>
         </div>

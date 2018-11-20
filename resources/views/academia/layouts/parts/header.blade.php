@@ -29,7 +29,7 @@
                 <div class="dropdown-desk">
                   <div class="dropdown-desk-content dropdown-desk-academia">
                     <div>
-                      <h3>UNI - San Marcos - PUCP</h3>
+                      <h3>UNI - San Marcos - Católica</h3>
                       <ul>
                         <li class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                       </ul>
@@ -43,7 +43,7 @@
                       </ul>
                     </div>
                     <div>
-                      <h3>UNI - PUCP</h3>
+                      <h3>UNI - Católica</h3>
                       <ul>
                         <li class="{{ (Request::is('academia/sede/torrico')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/torrico">Torrico</a></li>
                       </ul>
@@ -55,7 +55,7 @@
                       </ul>
                     </div>
                     <div>
-                      <h3>PUCP</h3>
+                      <h3>Católica</h3>
                       <ul>
                         <li class="{{ (Request::is('academia/sede/san-isidro')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/san-isidro">San Isidro</a></li>
                       </ul>

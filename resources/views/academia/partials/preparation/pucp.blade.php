@@ -92,7 +92,7 @@
               <div class="row col-xs-12 col-sm-10 start-sm preparation__courses">
                 <div class="col-xs-12 col-sm-6 preparation__courses-list">
                   <ul class="preparation__list-ul ul-li-squared">
-                    <li>La mejor plana docente especializada en el sistema PUCP</li>
+                    <li>La mejor plana docente especializada en el sistema Católica</li>
                     <li>Material académico gratuito</li>
                     <li>Tutoría personalizada</li>
                     <li>Exigencia y disciplina</li>

@@ -232,9 +232,18 @@ body, html{
   align-items: center;
   justify-content: center;
 
+  @include breakpoint(baby){
+    margin-top: 0;
+  }
+
   span{
     font-size: 1.4rem;
   }
+
+  span .fa{
+    vertical-align: middle;
+  }
+
 }
 
 .href{
@@ -378,14 +387,14 @@ body, html{
 */
 
 .logo-adrian{
-  max-height: 65px;
+  max-height: 70px;
   padding: 10px;
-  display: none !important;
+  padding-bottom: 0;
 }
 
 .container-adrian{
 //  height: calc(100% - 65px);
-  height: 100%;
+  height: calc(100% - 70px);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -393,6 +402,7 @@ body, html{
 }
 
 .block{
+//  height: calc(50% - 30px);
   height: 50%;
   overflow: hidden;
 
@@ -418,7 +428,6 @@ body, html{
 
   .enter{
     color: white;
-    margin-top: 25px;
   }
 }
 
@@ -444,6 +453,23 @@ body, html{
   img{
     max-width: calc(100% - 2vw);
   }
+
+  @include breakpoint(baby){
+    img{
+      width: calc(100% - 20px);
+    }
+
+    @media (orientation: landscape) {
+      width: 0;
+
+      img{
+        display: none;
+      }
+    }
+
+  }
+
+
 }
 
 .block__colegio{
@@ -462,7 +488,7 @@ body, html{
   opacity: 1 !important;
 
   svg{
-    width: 300px;
+    width: 280px;
     max-width: 300px !important;
   }
 }

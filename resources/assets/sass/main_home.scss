@@ -185,6 +185,14 @@ body, html{
   img{
     min-width: calc(48vh - 10vw) !important;
   }
+
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  display: none;
+  }
+
 }
 
 .logo{
@@ -204,11 +212,22 @@ body, html{
 .logo-colegio{
   fill: $orange;
   left: -135px;
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    left: -100px;
+  }
+
 }
 
 .logo-academia{
   fill: white;
   right: -135px;
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    right: -100px;
+  }
 }
 
 .cta{

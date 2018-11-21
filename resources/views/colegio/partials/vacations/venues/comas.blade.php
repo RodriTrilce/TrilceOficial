@@ -31,6 +31,49 @@
           </a>
       </li>
       <li>
+        <a href="#" class="js-tabs__title">
+          <div>
+            <svg version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
+                <g>
+                	<path d="M18,27.2l-4.3-1.5c-0.1,0-0.2-0.1-0.3-0.1c-0.4,0-0.8,0.3-0.9,0.7c-0.2,0.5,0.1,1.1,0.6,1.2l4.3,1.5
+                		c0.1,0,0.2,0.1,0.3,0.1c0.4,0,0.8-0.3,0.9-0.7C18.8,27.9,18.5,27.3,18,27.2z M18,28.2c-0.1,0.2-0.2,0.2-0.4,0.2l-4.3-1.5
+                		c-0.2-0.1-0.3-0.2-0.2-0.4c0-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.1,0l4.3,1.5C18,27.9,18,28,18,28.2z"/>
+                	<path d="M12.3,27.7c-0.3,0.8,0.1,1.7,0.8,2.2c0,0.7,0.4,1.3,1,1.5c0.2,0.1,0.3,0.1,0.5,0.1c0.5,0,0.9-0.2,1.2-0.6
+                		c0.9,0.1,1.7-0.4,2-1.2l0.1-0.3l-5.6-1.9L12.3,27.7z M15.8,30.1l-0.1,0l-2-0.7l-0.1-0.1c-0.5-0.2-0.7-0.7-0.7-1.1l4.2,1.5
+                		C16.8,30.1,16.2,30.3,15.8,30.1z M13.8,30l1.5,0.5c-0.2,0.2-0.6,0.3-0.9,0.2C14,30.6,13.8,30.3,13.8,30z"/>
+                	<path d="M24.8,14.8c-0.8-1.6-2.1-2.8-3.7-3.3c-0.7-0.2-1.4-0.4-2.2-0.4c-2.8,0-5.3,1.8-6.2,4.4
+                		c-0.5,1.4-0.5,2.9,0,4.3c0.4,1.1,0.7,2.2,0.9,3.3l-0.8,2.2l6,2.1l0.7-2.1c0.9-0.7,2-1.5,2.8-2.1c1.3-0.8,2.2-2,2.7-3.4
+                		C25.7,18.2,25.6,16.4,24.8,14.8z M16.3,20.5l0.9-0.2L17,22l1.3-1.5l0,1.1l0.9-0.1l-2.6,4.3l-1-0.3L16.3,20.5z M17.2,26.1l2.8-4.6h0
+                		v0l0.7-1.1L20.2,20l-0.6,1L18.9,21v-2l-1.2,1.3l0.1-0.9l-1.4,0.4l0.1-1.2l-0.7-0.1l-0.8,6.6l-1.2-0.4l0.6-1.7l0-0.1
+                		c-0.2-1.2-0.6-2.4-0.9-3.5c-0.4-1.3-0.4-2.6,0-3.8c0.8-2.4,3.1-3.9,5.6-3.9c0.7,0,1.3,0.1,1.9,0.3c1.5,0.5,2.7,1.6,3.4,3
+                		c0.7,1.4,0.8,3,0.3,4.5c-0.4,1.3-1.3,2.3-2.4,3c-0.9,0.6-2,1.4-3,2.2L19,24.8l-0.6,1.7L17.2,26.1z"/>
+                	<path d="M21.7,10.5C21.7,10.5,21.7,10.5,21.7,10.5c0.2,0,0.3-0.1,0.4-0.2L23,7.6c0-0.1,0-0.2,0-0.2
+                		c0-0.1-0.1-0.1-0.2-0.2c-0.2-0.1-0.3,0-0.4,0.2l-0.9,2.7C21.4,10.3,21.5,10.5,21.7,10.5z"/>
+                	<path d="M25.4,13c0,0,0.1,0,0.1,0c0.1,0,0.1,0,0.2-0.1l2.2-1.8c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.3-0.1-0.4,0
+                		l-2.2,1.8c-0.1,0.1-0.2,0.3,0,0.4C25.3,12.9,25.4,13,25.4,13z"/>
+                	<path d="M29.8,16.1l-2.9,0.4c-0.2,0-0.3,0.2-0.3,0.3c0,0.1,0.1,0.2,0.2,0.2c0,0,0.1,0,0.1,0l2.9-0.4
+                		c0.1,0,0.2-0.1,0.2-0.1c0.1-0.1,0.1-0.1,0.1-0.2C30.1,16.2,29.9,16.1,29.8,16.1z M27,17L27,17L27,17L27,17z"/>
+                	<path d="M26.6,20.5c-0.2-0.1-0.3,0-0.4,0.2c-0.1,0.2,0,0.3,0.2,0.4l2.6,1.1l0,0c0,0,0.1,0,0.1,0
+                		c0.1,0,0.2-0.1,0.3-0.2c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.2-0.2L26.6,20.5z"/>
+                	<path d="M24,24.2c-0.1-0.1-0.3-0.2-0.4-0.1c-0.1,0.1-0.2,0.3-0.1,0.4l1.7,2.3c0,0.1,0.1,0.1,0.2,0.1
+                		c0,0,0.1,0,0.1,0c0.1,0,0.1,0,0.2-0.1c0.1,0,0.1-0.1,0.1-0.2c0-0.1,0-0.2-0.1-0.2L24,24.2z"/>
+                	<path d="M16.8,9.9c0,0,0.1,0,0.1,0l0.1,0c0.2,0,0.3-0.2,0.2-0.4l-0.6-2.8c0-0.1-0.2-0.2-0.3-0.2l-0.1,0
+                		c-0.2,0-0.3,0.2-0.2,0.4l0.6,2.8C16.6,9.8,16.7,9.9,16.8,9.9z M16.9,9.8L16.9,9.8L16.9,9.8L16.9,9.8z"/>
+                	<path d="M13,12.2c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0,0.1,0c0.1,0,0.2,0,0.2-0.1c0.1-0.1,0.1-0.1,0.1-0.2
+                		c0-0.1,0-0.2-0.1-0.2l-1.9-2.1c-0.1-0.1-0.3-0.1-0.4,0c-0.1,0.1-0.1,0.3,0,0.4L13,12.2z"/>
+                	<path d="M11.2,15.1l-2.7-0.8c-0.2,0-0.3,0.1-0.4,0.2c0,0.2,0,0.3,0.2,0.4l2.7,0.8c0,0,0.1,0,0.1,0
+                		c0.1,0,0.3-0.1,0.3-0.2C11.5,15.3,11.4,15.2,11.2,15.1z"/>
+                	<path d="M10.9,19.6l-2.7,0.8c-0.2,0-0.3,0.2-0.2,0.4c0,0.1,0.1,0.2,0.2,0.2c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0
+                		l2.7-0.8c0.2,0,0.3-0.2,0.2-0.4C11.2,19.6,11,19.5,10.9,19.6z"/>
+                </g>
+            </svg>
+          </div>
+          <div><span class="vacations-svg__title">Talleres recreativos primaria</span></div>
+        </a>
+      </li>
+
+      <li>
           <a href="#" class="js-tabs__title">
             <div>
               <svg class="vacations-svg" version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 38" xml:space="preserve">
@@ -71,7 +114,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo Especial</span></div>
+              <div><span class="vacations-svg__title">Ciclo especial</span></div>
             </a>
       </li>
       <li>
@@ -157,7 +200,7 @@
                 </g>
             </svg>
           </div>
-          <div><span class="vacations-svg__title">Inglés Intensivo</span></div>
+          <div><span class="vacations-svg__title">Inglés intensivo</span></div>
         </a>
       </li>
     </ul>
@@ -196,6 +239,63 @@
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="js-tabs__content">
+      <div class="row col-xs-12">
+        <div class="col-sm-6 col-xs-12">
+          <ul class="ep-generic-list ep-generic-list--off">
+            <li>
+              <strong><span class="orange">MANUALIDADES</span></strong> <br>
+              (de 8 años a más)<br>
+              <strong>Termoformado en Microporoso, Caritas Pintadas, Bisutería y Decoración de Globos</strong>
+              <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">VÓLEY</span></strong> <br>
+              (de 6 a más)
+              <p>Horarios según categoría</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">EXPRESIÓN CORPORAL</span></strong> <br>
+              (a partir de los 8 años)<br>
+              <strong>Danzas Modernas y Folklóricas</strong>
+              <p>Lunes y viernes de 12 m. a 2 p. m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">MINICHEF</span></strong> <br>
+              (a partir de los 8 años)<br>
+              <p>Martes y jueves de 10 a. m. a 12 m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">AJEDREZ</span></strong> <br>
+              (a partir de los 8 años)<br>
+              <p>Lunes y viernes de 12 m. a 2 p. m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">PSICOMOTRICIDAD</span></strong> <br>
+              (6 y 7 años)<br>
+              <p>Miércoles y viernes de 10 a. m. a 12 m.</p><br>
+            </li>
+
+
+
+            <li>
+              <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
+              <span class="orange">Por cada taller <br> (pago por ciclo completo)<br> No incluye materiales</span>
+              <br><br>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -265,7 +365,7 @@
             <li>
 
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico de la academia (libros)</span>
+              <span>(pago por ciclo completo)<br> Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
                   <span class="orange">· Al contado: S/330</span><br>
@@ -304,7 +404,7 @@
               Taller de Lectura
             </li>
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>6 a 8 años:</strong> martes y jueves de 11 a. m. a 1 p. m.</li>
-            <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>9 a 11 años</strong> lunes y miércoles de 11 a. m. a 1 p. m.</li>
+            <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>9 a 11 años:</strong> lunes y miércoles de 11 a. m. a 1 p. m.</li>
             <li>
               <strong><span class="orange">INVERSIÓN: S/120</span></strong> <br>
               <span>(pago por ciclo completo)</span>
@@ -379,6 +479,6 @@
     <h1><span><i class="fa fa-lightbulb-o"></i> Inicios: 4, 7 y 8 de enero</span></h1>
   </div>
   <div>
-    <h3><span>Fin: 23 de febrero</span></h3>
+    <h3><span>Fin: 21 de febrero</span></h3>
   </div>
 </div>

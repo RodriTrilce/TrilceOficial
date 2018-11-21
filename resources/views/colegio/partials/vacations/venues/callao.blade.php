@@ -39,7 +39,7 @@
                 </svg>
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo Especial</span></div>
+              <div><span class="vacations-svg__title">Ciclo especial</span></div>
             </a>
       </li>
       <li>
@@ -126,7 +126,7 @@
             </g>
             </svg>
           </div>
-          <div><span class="vacations-svg__title">Inglés Intensivo</span></div>
+          <div><span class="vacations-svg__title">Inglés intensivo</span></div>
         </a>
       </li>
     </ul>
@@ -159,7 +159,7 @@
               <span>(pago por ciclo completo) Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
-                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 2.<sup>o</sup> año</strong></h4>
+                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>er</sup> año</strong></h4>
                   <span class="orange">· Al contado: S/250</span><br>
                   <span class="orange">· 2 partes: S/270</span><br>
                   · S/170 (al matricularse)<br>
@@ -177,6 +177,9 @@
             </li>
 
           </ul>
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
@@ -227,7 +230,7 @@
             <li>
               <br>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span>(Por cada curso (pago por ciclo completo) Incluye material didáctico)</span>
+              <span>Por cada curso<br>(pago por ciclo completo)<br> Incluye material didáctico</span>
             </li>
           </ul>
         </div>
@@ -270,6 +273,6 @@
     <h1><span><i class="fa fa-lightbulb-o"></i> Inicios: 4, 7 y 8 de enero</span></h1>
   </div>
   <div>
-    <h3><span>Fin: 23 de febrero</span></h3>
+    <h3><span>Fin: 21 de febrero</span></h3>
   </div>
 </div>

@@ -5,7 +5,7 @@
         <a href="/colegio/vacaciones-utiles">
           <i class="fa fa-sun-o"></i>
           <h3>Vacaciones Útiles 2019</h3>
-          <p>Estudia y diviértete este verano</p>
+          <p>¡Estudia y diviértete este verano!</p>
         </a>
       </div>
         <div class="col-xs-12 col-sm-6 col-md-3">

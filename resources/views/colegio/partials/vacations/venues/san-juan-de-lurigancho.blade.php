@@ -69,7 +69,7 @@
                 </g>
             </svg>
           </div>
-          <div><span class="vacations-svg__title">Talleres Primaria</span></div>
+          <div><span class="vacations-svg__title">Talleres primaria</span></div>
         </a>
       </li>
       <li>

@@ -23,9 +23,7 @@ const SliderTrilce = {
     try {
       this.items = document.querySelectorAll('.banner__item');
     } catch (e) {
-    } finally {
     }
-
   },
 
   run: function()
@@ -41,6 +39,7 @@ const SliderTrilce = {
         this.setPositionBar(item);
         this.setImages(item);
       });
+
   },
 
   removeLoading: function()
@@ -70,7 +69,16 @@ const SliderTrilce = {
 
         xsSizeLandscape = banner.getAttribute("data-size-xs-landscape");
 
-        if(window.screen.availWidth < 768){
+        if(window.screen.availWidth < 767){
+
+          banner.style.visibility = "visible";
+          if(xsSize == 'hidden'){
+            banner.style.visibility = "hidden";
+          }else{
+            banner.style.backgroundSize = `${xsSize}`;
+          }
+
+
           banner.style.backgroundImage = `url(${xs})`;
           banner.style.backgroundPosition = `${xsPosition}`;
           banner.style.backgroundSize = `${xsSize}`;
@@ -92,12 +100,19 @@ const SliderTrilce = {
         }else{
           banner.style.backgroundImage = `url(${md})`;
           banner.style.backgroundPosition = `${mdPosition}`;
-          banner.style.backgroundSize = `${mdSize}`;
+
+          banner.style.visibility = "visible";
+          if(mdSize == 'hidden'){
+            banner.style.visibility = "hidden";
+          }else{
+            banner.style.backgroundSize = `${mdSize}`;
+          }
+
         }
       }
     } catch (e) {
-      console.log("slider_trilce: e:setImages");
-      console.log(e)
+      console.log('Slider_trilce: e:setImages');
+      console.log(e);
     }
   },
 
@@ -109,9 +124,29 @@ const SliderTrilce = {
 
   setPositionBar : function(item)
   {
+
+    this.container_bar_referer = '.banner__content';
+
+    if(item.getAttribute("data-border-referer")){
+      this.container_bar_referer = item.getAttribute("data-border-referer");
+    }
+
+    if(item.getAttribute("data-border-referer-xs") && window.screen.availWidth < 767){
+      this.container_bar_referer = item.getAttribute("data-border-referer-xs");
+    }
+
+    try {
+      var heightContent = item.querySelector(this.container_bar_referer).offsetHeight;
+
+    } catch (e) {
+      console.log(this.container_bar_referer)
+      console.log(e);
+      console.log(item)
+    }
+
+
     let borderColor   = item.dataset.bordercolor;
     let banner__box   = item.querySelector('.banner__box'),
-        heightContent = item.querySelector('.banner__content').offsetHeight,
         heightBox     = banner__box.offsetHeight,
 
         widthBox      = this.getStyle(banner__box, 'width').replace('px',''),

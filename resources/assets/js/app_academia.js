@@ -90,36 +90,43 @@ String.prototype.capitalize = function(){
     swipeAngle : 50,
   });
 
-  slider.events.on('indexChanged', function(info){
-    var from;
-    var currentIndex  = info.indexCached;
-    var index         = info.index % info.slideCount;
-    var force = true;
 
-    if (currentIndex - index > 0) {
-      if (!force && currentIndex === total - 1 && index === 0) {
-        from = 'trilce_carousel_in_rigth';
+  try {
+    slider.events.on('indexChanged', function(info){
+      var from;
+      var currentIndex  = info.indexCached;
+      var index         = info.index % info.slideCount;
+      var force = true;
+
+      if (currentIndex - index > 0) {
+        if (!force && currentIndex === total - 1 && index === 0) {
+          from = 'trilce_carousel_in_rigth';
+        } else {
+          from = 'trilce_carousel_in_left';
+        }
       } else {
-        from = 'trilce_carousel_in_left';
+        from = 'trilce_carousel_in_rigth';
       }
-    } else {
-      from = 'trilce_carousel_in_rigth';
-    }
 
-    var nextElem = info.slideItems[info.index];
+      var nextElem = info.slideItems[info.index];
 
-    nextElem.style.transition = "";
-    nextElem.classList.add(from);
+      nextElem.style.transition = "";
+      nextElem.classList.add(from);
 
-    slider.events.on('transitionEnd', function(){
-      nextElem.classList.remove(from);
-    })
+      slider.events.on('transitionEnd', function(){
+        nextElem.classList.remove(from);
+      })
+    });
 
-  });
 
-  //    controlsText: ['&#xf111;','&#xf112;'],
+  } catch (e) {
+  }
 
   SliderTrilce.init(slider);
+
+
+
+  //    controlsText: ['&#xf111;','&#xf112;'],
 
   if(modal_open.length) modal.open(modal_open[0]);
 

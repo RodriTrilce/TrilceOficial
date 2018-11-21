@@ -617,13 +617,13 @@
 
 
   .xs-hide{
-    @media (max-width: 768px){
+    @media (max-width: 767px){
       display: none;
     }
   }
 
   .xs-hide-force{
-    @media (max-width: 768px){
+    @media (max-width: 767px){
       display: none !important;
     }
   }
@@ -637,13 +637,13 @@
     width: 100%;
     padding: 0 12px;
 
-    @media (max-width: 768px){
+    @media (max-width: 767px){
       padding: 0;
     }
   }
 
   .container-padding-mobile{
-    @media (max-width: 768px){
+    @media (max-width: 767px){
       padding: 0 12px;
     }
   }

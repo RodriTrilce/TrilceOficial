@@ -3,7 +3,6 @@ const SliderTrilce = {
   init: function(slider)
   {
     this.slider = slider;
-    this.slider.pause();
 
     this.setVariables();
     this.setListener();
@@ -21,37 +20,84 @@ const SliderTrilce = {
 
   setVariables: function()
   {
-    this.items = document.querySelectorAll('.banner__item');
+    try {
+      this.items = document.querySelectorAll('.banner__item');
+    } catch (e) {
+    } finally {
+    }
+
+  },
+
+  run: function()
+  {
+    this.loopSet();
+    this.removeLoading()
   },
 
   loopSet: function()
   {
-    [].forEach.call(this.items, (item, i) => {
-      this.setPositionBar(item);
-      this.setImages(item);
+    if(this.items)
+      [].forEach.call(this.items, (item, i) => {
+        this.setPositionBar(item);
+        this.setImages(item);
+      });
+  },
+
+  removeLoading: function()
+  {
+    var loader = document.querySelector('.banner__loader');
+    loader.style.opacity = "0";
+
+    loader.addEventListener('transitionend', evt => {
+      loader.style.height = "0";
     });
   },
 
   setImages: function(item)
   {
-    var banner = item.querySelector('.banner__image');
+    try {
+      var banner = item.querySelector('.banner__image');
 
-    var md      = banner.getAttribute("data-image-md"),
-    mdPosition  = banner.getAttribute("data-position-md"),
-    mdSize      = banner.getAttribute("data-size-md");
+      if(banner)
+      {
+        var md      = banner.getAttribute("data-image-md"),
+        mdPosition  = banner.getAttribute("data-position-md"),
+        mdSize      = banner.getAttribute("data-size-md");
 
-    var xs      = banner.getAttribute("data-image-xs"),
-    xsPosition  = banner.getAttribute("data-position-xs"),
-    xsSize      = banner.getAttribute("data-size-xs");
+        var xs      = banner.getAttribute("data-image-xs"),
+        xsPosition  = banner.getAttribute("data-position-xs"),
+        xsSize      = banner.getAttribute("data-size-xs"),
 
-    if(window.screen.availWidth < 768){
-      banner.style.backgroundImage = `url(${xs})`;
-      banner.style.backgroundPosition = `${xsPosition}`;
-      banner.style.backgroundSize = `${xsSize}`;
-    }else{
-      banner.style.backgroundImage = `url(${md})`;
-      banner.style.backgroundPosition = `${mdPosition}`;
-      banner.style.backgroundSize = `${mdSize}`;
+        xsSizeLandscape = banner.getAttribute("data-size-xs-landscape");
+
+        if(window.screen.availWidth < 768){
+          banner.style.backgroundImage = `url(${xs})`;
+          banner.style.backgroundPosition = `${xsPosition}`;
+          banner.style.backgroundSize = `${xsSize}`;
+
+          let orientation = window.matchMedia("(orientation: landscape)");
+          if(orientation.matches){
+
+            var xsPositionLandscape = banner.getAttribute("data-position-xs-landscape");
+            if(xsPositionLandscape){
+              banner.style.backgroundPosition = `${xsPositionLandscape}`;
+            }
+
+            if(xsSizeLandscape == 'hidden')
+              banner.style.visibility = "hidden";
+            else
+              banner.style.backgroundSize = `${xsSizeLandscape}`;
+          }
+
+        }else{
+          banner.style.backgroundImage = `url(${md})`;
+          banner.style.backgroundPosition = `${mdPosition}`;
+          banner.style.backgroundSize = `${mdSize}`;
+        }
+      }
+    } catch (e) {
+      console.log("slider_trilce: e:setImages");
+      console.log(e)
     }
   },
 
@@ -69,7 +115,7 @@ const SliderTrilce = {
         heightBox     = banner__box.offsetHeight,
 
         widthBox      = this.getStyle(banner__box, 'width').replace('px',''),
-        widthBanner   = this.getStyle(item.querySelector('.banner__image'), 'width').replace('px',''),
+        widthBanner   = this.getStyle(item, 'width').replace('px',''),
         bar           = item.querySelector('.banner_box-bar');
 
     let widthSide  = (widthBanner-widthBox)/2,
@@ -91,16 +137,6 @@ const SliderTrilce = {
 
   },
 
-  removeLoading: function()
-  {
-    var loader = document.querySelector('.banner__loader');
-    loader.style.opacity = "0";
-
-    loader.addEventListener('transitionend', evt => {
-      loader.style.height = "0";
-    });
-  },
-
   getStyle: function (elem, prop)
   {
     var styles = window.getComputedStyle(elem, null);
@@ -109,13 +145,6 @@ const SliderTrilce = {
       throw "No se encontro la propiedad css: " + prop;
     }
     return value
-  },
-
-  run: function()
-  {
-    this.loopSet();
-    this.removeLoading()
-    this.slider.play();
   },
 
   runOutLoaded: function()

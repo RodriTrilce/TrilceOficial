@@ -126,40 +126,45 @@ if(page == 'index'){
  });
  //    controlsText: ['&#xf111;','&#xf112;'],
 
- slider.events.on('indexChanged', function(info){
-   var from;
-   var currentIndex  = info.indexCached;
-   var index         = info.index % info.slideCount;
-   var force = true;
 
-   if (currentIndex - index > 0) {
-     if (!force && currentIndex === total - 1 && index === 0) {
-       from = 'trilce_carousel_in_rigth';
-     } else {
-       from = 'trilce_carousel_in_left';
-     }
-   } else {
-     from = 'trilce_carousel_in_rigth';
-   }
+  try {
+    slider.events.on('indexChanged', function(info){
+      var from;
+      var currentIndex  = info.indexCached;
+      var index         = info.index % info.slideCount;
+      var force = true;
 
-   var nextElem = info.slideItems[info.index];
+      if (currentIndex - index > 0) {
+        if (!force && currentIndex === total - 1 && index === 0) {
+          from = 'trilce_carousel_in_rigth';
+        } else {
+          from = 'trilce_carousel_in_left';
+        }
+      } else {
+        from = 'trilce_carousel_in_rigth';
+      }
 
-   nextElem.style.transition = "";
-   nextElem.classList.add(from);
+      var nextElem = info.slideItems[info.index];
 
-   slider.events.on('transitionEnd', function(){
-     nextElem.classList.remove(from);
-   })
+      nextElem.style.transition = "";
+      nextElem.classList.add(from);
 
- });
+      slider.events.on('transitionEnd', function(){
+        nextElem.classList.remove(from);
+      })
 
- SliderTrilce.init(slider);
+    });
 
-/*
- setTimeout(function(){
-   document.body.className += ' loaded'
- }, 1000)
-*/
+  } catch (e) {
+  }
+
+  SliderTrilce.init(slider);
+
+  /*
+   setTimeout(function(){
+     document.body.className += ' loaded'
+   }, 1000)
+  */
 }
 
 /**!

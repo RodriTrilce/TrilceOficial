@@ -48,7 +48,7 @@
             <div class="item-a-container">
               <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="Nuevos Inicios">
               <div class="item-a-preparation">Preparación</div>
-              <span class="item-a-university">PUCP</span>
+              <span class="item-a-university">CATÓLICA</span>
             </div>
           </a>
         </div>

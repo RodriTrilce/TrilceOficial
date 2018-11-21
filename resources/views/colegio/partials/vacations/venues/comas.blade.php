@@ -72,7 +72,6 @@
           <div><span class="vacations-svg__title">Talleres recreativos primaria</span></div>
         </a>
       </li>
-
       <li>
           <a href="#" class="js-tabs__title">
             <div>
@@ -203,6 +202,31 @@
           <div><span class="vacations-svg__title">Inglés intensivo</span></div>
         </a>
       </li>
+      <li>
+            <a href="#" class="js-tabs__title">
+              <div>
+
+
+                <svg version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+                <g>
+                	<path  d="M611.4,400c0-116.6-94.8-211.4-211.4-211.4c-4.7,0-8.5,3.8-8.5,8.5v78.2h-4c-39.6,0-71.8,32.2-71.8,71.8
+                		v105.8c0,39.6,32.2,71.8,71.8,71.8h24.9c39.6,0,71.8-32.2,71.8-71.8V347.1c0-39.6-32.2-71.8-71.8-71.8h-4v-69.5
+                		c103.3,4.5,185.9,89.9,185.9,194.2c0,68.6-35.1,130.8-93.8,166.4c-60.7,36.7-134.8,37.3-203.1,1.6c-28.1-14.7-50.8-37.4-65.5-65.6
+                		c-46-88.2-30.8-185.4,38.7-247.4c3.5-3.1,3.8-8.5,0.7-12.1c-3.1-3.5-8.5-3.8-12.1-0.7c-34.6,30.9-58.4,72.8-67,118
+                		c-9.3,49.2-0.9,101.1,24.5,149.8c16.3,31.4,41.5,56.6,72.8,72.9c36.2,19,74,28.4,110.9,28.4c38.2,0,75.5-10.2,109.1-30.5
+                		C573.3,542.3,611.4,474.6,611.4,400L611.4,400z M412.5,292.3c30.2,0,54.7,24.6,54.7,54.7v105.8c0,30.2-24.6,54.7-54.7,54.7h-24.9
+                		c-30.2,0-54.7-24.6-54.7-54.7V347.1c0-30.2,24.6-54.7,54.7-54.7H412.5z M412.5,292.3"/>
+                	<path  d="M400,378.4c4.7,0,8.5-3.8,8.5-8.5v-42.2c0-4.7-3.8-8.5-8.5-8.5c-4.7,0-8.5,3.8-8.5,8.5v42.2
+                		C391.5,374.6,395.3,378.4,400,378.4L400,378.4z M400,378.4"/>
+                </g>
+                </svg>
+
+
+              </div>
+              <div><span class="vacations-svg__title">Computación</span></div>
+            </a>
+      </li>
     </ul>
 
     <div class="js-tabs__content">
@@ -247,44 +271,38 @@
         <div class="col-sm-6 col-xs-12">
           <ul class="ep-generic-list ep-generic-list--off">
             <li>
-              <strong><span class="orange">MANUALIDADES</span></strong> <br>
-              (de 8 años a más)<br>
-              <strong>Termoformado en Microporoso, Caritas Pintadas, Bisutería y Decoración de Globos</strong>
+              <strong><span class="orange">EXPRESIÓN CREATIVA I</span></strong> <br>
+              (6 a 8 años)<br>
+              <strong>Dibujo y Pintura, Collage, Reciclaje Artístico</strong>
+              <p>Lunes y miércoles de 12 m. a 2 p. m.</p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">EXPRESIÓN CREATIVA II</span></strong> <br>
+              (9 a 11 años)<br>
+              <storng>Bisutería, Trupán, Repujado y Muñequería</storng>
               <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
-              <strong><span class="orange">VÓLEY</span></strong> <br>
-              (de 6 a más)
-              <p>Horarios según categoría</p><br>
-            </li>
-
-            <li>
-              <strong><span class="orange">EXPRESIÓN CORPORAL</span></strong> <br>
-              (a partir de los 8 años)<br>
-              <strong>Danzas Modernas y Folklóricas</strong>
-              <p>Lunes y viernes de 12 m. a 2 p. m.</p><br>
+              <strong><span class="orange">PEQUEÑOS CIENTÍFICOS</span></strong> <br>
+              <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
               <strong><span class="orange">MINICHEF</span></strong> <br>
-              (a partir de los 8 años)<br>
-              <p>Martes y jueves de 10 a. m. a 12 m.</p><br>
+              <p>Lunes y miércoles de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
-              <strong><span class="orange">AJEDREZ</span></strong> <br>
-              (a partir de los 8 años)<br>
-              <p>Lunes y viernes de 12 m. a 2 p. m.</p><br>
+              <strong><span class="orange">MARINERA NORTEÑA</span></strong> <br>
+              <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
-              <strong><span class="orange">PSICOMOTRICIDAD</span></strong> <br>
-              (6 y 7 años)<br>
-              <p>Miércoles y viernes de 10 a. m. a 12 m.</p><br>
+              <strong><span class="orange">BAILE MODERNO</span></strong> <br>
+              <p>Lunes y miércoles de 12 m. a 2 p. m.</p><br>
             </li>
-
-
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
@@ -293,6 +311,10 @@
             </li>
 
           </ul>
+
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
@@ -446,7 +468,7 @@
           <ul class="ep-generic-list ep-generic-list--off">
             <li>
               <li>
-                <span class="orange"><strong>PRIMARIA</strong></span>
+                <span class="orange"><strong>SECUNDARIA</strong></span>
               </li>
             </li>
             <li>
@@ -466,6 +488,79 @@
             </li>
 
           </ul>
+        </div>
+        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="js-tabs__content">
+      <div class="row col-xs-12">
+        <div class="col-sm-6 col-xs-12">
+          <ul class="ep-generic-list ep-generic-list--off">
+
+            <li>
+              <strong><span class="orange">PRIMARIA</span></strong> <br>
+            </li>
+
+            <li>
+              <p>(1.<sup>er</sup> y 2.<sup>o</sup> grado)</p>
+              <strong>Aprendo a dibujar y a escribir en la computadora</strong>
+              <p>
+                Lunes y miércoles de 8 a. m. a 10 a. m.
+              </p>
+            </li>
+
+            <li>
+              <p>(3.<sup>er</sup> y 4.<sup>o</sup> grado)</p>
+              <strong>Proyectos educativos con Office e Internet</strong>
+              <p>
+                Lunes y miércoles de 10 a. m. a 12 m.
+              </p>
+            </li>
+
+            <li>
+              <p>(5.<sup>o</sup> y 6.<sup>o</sup> grado)</p>
+              <strong>Creación de videos en PPT</strong>
+              <p>
+                Lunes y miércoles de 12 m. a 2 p. m.
+              </p>
+            </li>
+
+            <li>
+              <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
+              <span class="orange">Por cada curso <br> (pago único por todo el ciclo) Incluye material didáctico</span>
+              <br><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">SECUNDARIA</span></strong> <br>
+              <strong>Taller de Office: Word y Excel</strong>
+              <p>
+                Martes y jueves de 8 a. m. a 10 a. m.
+              </p><br>
+              <strong>Taller de Diseño Gráfico: Inkscape</strong>
+              <p>
+                Martes y jueves de 10 a. m. a 12 m.
+              </p><br>
+              <strong>Taller de Multimedia: Creación de Videos en PowerPoint</strong>
+              <p>
+                Martes y jueves de 12 m. a 2 p. m.
+              </p><br>
+            </li>
+
+            <li>
+              <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
+              <span class="orange">Por cada taller <br> (pago único por ciclo completo) Incluye material didáctico</span>
+              <br><br>
+            </li>
+
+
+
+          </ul>
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">

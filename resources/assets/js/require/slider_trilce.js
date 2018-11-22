@@ -30,6 +30,32 @@ const SliderTrilce = {
   {
     this.loopSet();
     this.removeLoading()
+    this.helpers();
+  },
+
+  helpers: function()
+  {
+
+    try {
+      let all = document.querySelectorAll("div");
+      [].forEach.call(all, (item, i) => {
+        var position = item.getAttribute("data-banner-img-position");
+        if(position){
+          var father = document.querySelector(".tns-outer").offsetHeight;
+          var formula = (father - item.offsetHeight)/2 + "px";
+          switch (position) {
+            case 'top':
+                item.style.top = formula;
+              break;
+
+          }
+        }
+      });
+
+    } catch (e) {
+      console.log('Slider_trilce: e:helper:img_position')
+    }
+
   },
 
   loopSet: function()

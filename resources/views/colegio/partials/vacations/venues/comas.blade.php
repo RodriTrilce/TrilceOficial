@@ -113,7 +113,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo especial</span></div>
+              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
             </a>
       </li>
       <li>
@@ -456,6 +456,9 @@
               </span>
             </li>
           </ul>
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/cursos-adicionales.png')}}" alt="">
@@ -466,6 +469,30 @@
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
           <ul class="ep-generic-list ep-generic-list--off">
+
+            <li>
+              <li>
+                <span class="orange"><strong>PRIMARIA</strong></span>
+              </li>
+            </li>
+            <li>
+              <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 2.<sup>o</sup> grado</h3>
+              <p>Martes y jueves de 8 a. m. a 11 a. m.</p>
+            </li>
+
+            <li>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> y 4.<sup>o</sup> grado</h3>
+                <p>Martes y jueves de 11 a. m. a 2 p. m.</p>
+            </li>
+
+            <li>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 5.<sup>o</sup> y 6.<sup>o</sup> grado</h3>
+                <p>Lunes y miércoles de 8 a. m. a 11 a. m.</p>
+            </li>
+
+
+            <br>
+
             <li>
               <li>
                 <span class="orange"><strong>SECUNDARIA</strong></span>
@@ -487,6 +514,9 @@
               <span>(pago por ciclo completo) Incluye material didáctico</span>
             </li>
 
+
+
+
           </ul>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
@@ -500,7 +530,7 @@
           <ul class="ep-generic-list ep-generic-list--off">
 
             <li>
-              <strong><span class="orange">PRIMARIA</span></strong> <br>
+              <strong><span class="orange">PRIMARIA</span></strong>
             </li>
 
             <li>
@@ -551,7 +581,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago único por ciclo completo) Incluye material didáctico</span>
+              <span class="orange">Por cada taller <br> (pago único por ciclo completo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 

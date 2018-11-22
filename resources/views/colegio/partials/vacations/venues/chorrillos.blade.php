@@ -224,7 +224,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo especial</span></div>
+              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
             </a>
       </li>
     </ul>
@@ -252,7 +252,7 @@
             <li>
               <br />
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico</span>
+              <span>(pago por ciclo completo)<br>Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
                   <span class="orange">· Al contado: S/270</span><br>
@@ -295,7 +295,7 @@
             <li>
               <br />
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico</span>
+              <span>(pago por ciclo completo)<br>Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
                   <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 3.<sup>o</sup> año</strong></h4>
@@ -316,6 +316,10 @@
             </li>
 
           </ul>
+
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
@@ -360,7 +364,7 @@
             <li>
               <br />
               <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
-              <span>(pago por ciclo completo) Incluye material didáctico</span>
+              <span>(pago por ciclo completo)<br>Incluye material didáctico</span>
             </li>
 
           </ul>
@@ -393,7 +397,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span>(pago por ciclo completo)</span>
+              <span>Por cada curso (pago por ciclo completo)</span>
             </li>
           </ul>
 
@@ -429,10 +433,14 @@
               Por cada curso
               <span>
                 <br />
-                (pago por ciclo completo) Incluye material didáctico
+                (pago por ciclo completo)<br>Incluye material didáctico
               </span><br><br>
             </li>
           </ul>
+
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/cursos-adicionales.png')}}" alt="">
@@ -446,7 +454,9 @@
             <li>
               <strong><span class="orange">MANUALIDADES</span></strong> <br>
               (de 6 años a más)
-              <p>Pintura, Cerámica, Pedrería y Trupán</p><br>
+              <p>Pintura, Cerámica, Pedrería y Trupán</p>
+              <p>Martes y jueves de 12 m. a 2 p. m. </p>
+              <br>
             </li>
 
             <li>
@@ -465,7 +475,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago por ciclo completo) No incluye materiales</span>
+              <span class="orange">Por cada taller <br> (pago por ciclo completo)<br>No incluye materiales</span>
             </li>
 
 
@@ -499,7 +509,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
-              <span class="orange">Por cada curso <br> (pago único por todo el ciclo) Incluye material didáctico</span>
+              <span class="orange">Por cada curso <br> (pago único por todo el ciclo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 
@@ -521,7 +531,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago único por ciclo completo) Incluye material didáctico</span>
+              <span class="orange">Por cada taller <br> (pago único por ciclo completo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 
@@ -571,7 +581,7 @@
               <br><br>
               <span class="orange">
                 <strong>
-                <i class="fa fa-stop"></i> Al Contado: S/330 <br>
+                <i class="fa fa-stop"></i> Al contado: S/330 <br>
                 <i class="fa fa-stop"></i> 2 partes: S/350 <br>
                 </strong>
                 <br>

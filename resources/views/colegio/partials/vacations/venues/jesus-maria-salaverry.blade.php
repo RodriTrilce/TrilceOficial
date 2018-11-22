@@ -224,7 +224,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo especial</span></div>
+              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
             </a>
       </li>
     </ul>
@@ -298,10 +298,10 @@
               <span>(pago por ciclo completo) Incluye material didáctico</span>
               <ul class="ep-generic-list">
                 <li>
-                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>o</sup> año</strong></h4>
+                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>er</sup> año</strong></h4>
                   <span class="orange">· Al contado: S/290</span><br>
                   <span class="orange">· 2 partes: S/310</span><br>
-                  · S/190 (al matricularse)<br>
+                  · S/210 (al matricularse)<br>
                   · S/100 (30 de enero)
                 </li>
 
@@ -316,6 +316,7 @@
             </li>
 
           </ul>
+          <br>
           <br>
           <br>
         </div>
@@ -382,7 +383,7 @@
               Lunes y miércoles
             </li>
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>6 y 7 años:</sup></strong> miércoles de 8 a. m. a 10 a. m.</li>
-            <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>8 a 11 años</strong> miércoles de 10 a. m. a 12 m.</li>
+            <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> <strong>8 a 11 años:</strong> miércoles de 10 a. m. a 12 m.</li>
 
             <br>
 
@@ -408,7 +409,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span>pago por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
+              <span>Pago por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
             </li>
           </ul>
 
@@ -427,7 +428,8 @@
             <li>
               <strong><span class="orange">MANUALIDADES</span></strong> <br>
               (de 6 años a más)
-              <p>Pintura, Cerámica, Pedrería y Trupán</p><br>
+              <p>Pintura, Cerámica, Pedrería y Trupán</p>
+              <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
             </li>
 
             <li>
@@ -438,7 +440,7 @@
 
             <li>
               <strong><span class="orange">AJEDREZ</span></strong> <br>
-              (de 8 a 8 años)<br>
+              (de 6 a 8 años)<br>
               <p>Martes y jueves de 12 m. a 2 p. m.</p><br>
             </li>
 
@@ -463,6 +465,9 @@
             </li>
 
           </ul>
+          <br>
+          <br>
+          <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
@@ -491,7 +496,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/200</span></strong> <br>
-              <span class="orange">Por cada curso <br> (pago único por todo el ciclo) Incluye material didáctico</span>
+              <span class="orange">Por cada taller <br> (pago único por todo el ciclo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 
@@ -513,7 +518,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/200</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago único por ciclo completo) Incluye material didáctico</span>
+              <span class="orange">Por cada taller <br> (pago único por ciclo completo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 
@@ -569,7 +574,7 @@
               <br><br>
               <span class="orange">
                 <strong>
-                <i class="fa fa-stop"></i> Al Contado: S/350 <br>
+                <i class="fa fa-stop"></i> Al contado: S/350 <br>
                 <i class="fa fa-stop"></i> 2 partes: S/370 <br>
                 </strong>
                 <br>

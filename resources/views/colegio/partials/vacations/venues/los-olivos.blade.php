@@ -224,7 +224,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo especial</span></div>
+              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
             </a>
       </li>
     </ul>
@@ -244,7 +244,7 @@
             </li>
 
             <li>
-                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> grado</h2>
+                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 5.<sup>o</sup> y 6.<sup>o</sup> grado</h2>
                 <p><strong>Aritmética, Álgebra, Lenguaje, Raz. Matemático, Raz. Verbal y Elementos de Geometría</strong></p>
                 <p>Lunes, miércoles y viernes de 8 a. m. a 12 m.</p>
             </li>
@@ -393,7 +393,7 @@
             <br>
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span>pago por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
+              <span>Por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
             </li>
           </ul>
 
@@ -418,7 +418,7 @@
 
             <li>
               <strong><span class="orange">VÓLEY</span></strong> <br>
-              (de 6 a más)
+              (de 6 años a más)
               <p>Horarios según categoría</p><br>
             </li>
 
@@ -451,8 +451,8 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago por ciclo completo)<br> No incluye materiales</span>
-              <br><br>
+              <span class="orange">Por cada taller <br> (pago por ciclo completo)</span>
+              <br><br><br>
             </li>
 
           </ul>
@@ -507,7 +507,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/200</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago único por ciclo completo) Incluye material didáctico</span>
+              <span class="orange">Por cada taller <br> (pago único por ciclo completo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 

@@ -224,7 +224,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclo especial</span></div>
+              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
             </a>
       </li>
     </ul>
@@ -394,7 +394,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span>pago por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
+              <span>Por cada curso <br> (pago por ciclo completo) <br> Incluye material didáctico</span>
             </li>
           </ul>
 
@@ -436,18 +436,20 @@
             <li>
               <strong>Taller de Office: Word y Excel</strong>
             </li>
-
             <li>
               <strong>Taller de Diseño Gráfico: Inkscape</strong>
-              <br><br>
-              Viernes de 8 a. m. a 12 m.
+            </li>
+
+            <li>
+              <p>              Viernes de 8 a. m. a 12 m.
+            </p>
             </li>
 
             <br>
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/190</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago único por ciclo completo) Incluye material didáctico</span>
+              <span class="orange">Por cada taller <br> (pago único por ciclo completo)<br>Incluye material didáctico</span>
               <br><br>
             </li>
 
@@ -491,7 +493,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span class="orange">(pago por ciclo completo) <br> Incluye material didáctico</span>
+              <span class="orange">(pago por ciclo completo) <br> Incluye material exclusivo de la academia (libros)</span>
               <br><br>
               <span class="orange">
                 <strong>

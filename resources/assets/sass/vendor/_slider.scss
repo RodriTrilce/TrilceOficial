@@ -548,6 +548,17 @@ $banner__box--size-mobile: 5px;
       font-size: .8rem;
     }
   }
+
+  span.xtrasmall{
+      color: white;
+      font-family: $font_geo_reg;
+      font-size: .8rem;
+      line-height: 95%;
+
+      @include breakpoint(baby){
+        font-size: .75rem;
+      }
+  }
 }
 
 .banner__button-cta{

@@ -81,7 +81,7 @@
 
   <div class="index-banners index-banners--colegio">
 
-    <div data-title="primer puesto pucp JIIM">
+    <div data-title="primer puesto pucp Jimm">
         <div
         class="
           banner__item
@@ -90,92 +90,114 @@
           data-shadow="9"
           data-shadow-opacity=".1"
           data-bordercolor="white"
+          data-border-referer=".banner__style_primer__a"
+          data-border-referer-xs=".banner__style_primer-reverse"
+
 
           style="
             background-color: #f4633a;
           ">
+
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+            128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
         data-position-md="90% bottom"
-        data-size-md="contain"
+        data-size-md="hidden"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png"
         data-position-xs="110% bottom"
         data-size-xs="65%"
+
+        data-position-xs-landscape = "80% bottom"
+        data-size-xs-landscape="50vw"
+
+
 
         style="
         background-repeat: no-repeat;
         z-index: 12;
         "></div>
 
-        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
-          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-          </svg>
-        </div>
-
         <div class="
         banner__content
+
         " style="z-index:13;">
-          <div class="banner__style_primer xs-hide">
-          <div class="banner__style_primer__a">
+          <div class="banner__style_primer  xs-hide">
+            <div class="banner__style_primer__a">
+              <div class="banner__title">
+                <span>¡Máximo<br>puntaje!</span>
+              </div>
+              <div class="banner__subtitle">
+                <span class="normal">
+                  Jimm Cisneros<br>
+                </span>
+                <span class="small">
+                </span>
+
+              </div>
+            </div>
+            <div class="banner__style_primer__b">
+
+              <div class="banner__style_primer__number">
+                <span class="number">
+                  1<sup>er</sup>
+                  <br>
+                </span>
+                <span class="banner__style_primer__number-puesto">
+                  PUESTO 2019 POP
+                </span>
+
+              </div>
+
+              <div class="banner__style_primer__text">
+                <span>Católica</span>
+              </div>
+
+            </div>
+            <div class="banner__style_primer__img"
+            data-banner-img-position="top"
+            >
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png">
+                <img  src="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
+                      alt="">
+              </picture>
+
+            </div>
+          </div>
+          <div class="banner__style_primer-reverse banner__style_primer--colegio">
+
             <div class="banner__title">
-              <span>¡Máximo<br>puntaje!</span>
+              <span>1.<sup>er</sup> puesto<br>Católica</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                Jimm Cisneros<br>
+                PUCP POP 2019<br>
               </span>
               <span class="small">
-
+                Jimm Cisneros
               </span>
-
-            </div>
-          </div>
-
-          <div class="banner__style_primer__b">
-
-            <div class="banner__style_primer__number">
-              <span class="number">
-                1<sup>er</sup>
-                <br>
-              </span>
-              <span class="banner__style_primer__number-puesto">
-                PUESTO 2019 POP
-              </span>
-
-            </div>
-
-            <div class="banner__style_primer__text">
-              <span>Católica</span>
             </div>
 
           </div>
-
-        </div>
-        <div class="banner__style_primer-reverse banner__style_primer--colegio">
-          <div class="banner__title">
-            <span>1.<sup>er</sup> puesto<br>Católica</span>
-          </div>
-          <div class="banner__subtitle">
-            <span class="normal">
-              PUCP POP 2019<br>
-            </span>
-            <span class="small">
-              Jimm Cisneros
-            </span>
-          </div>
-        </div>
        </div>
 
       </div>
     </div>
+
+
     <div data-title="no te quedes sin vacante">
         <div
         class="
@@ -192,7 +214,7 @@
         <div
         class="banner__image"
 
-        data-image-md="/storage/static/images/banner/ogro/banner_callenrollment_23_octubre_2018_gigant.png"
+        data-image-md="https://i.ibb.co/KxptG5D/vacante-2.png"
         data-position-md="center"
         data-size-md="cover"
 
@@ -235,6 +257,8 @@
 
       </div>
     </div>
+
+
     <div data-title="ciclo repaso">
         <div
         class="
@@ -294,6 +318,8 @@
 
       </div>
     </div>
+
+
     <div data-title="ciclo verano">
         <div
         class="
@@ -353,7 +379,9 @@
 
       </div>
     </div>
-    <div data-title="primer puesto uni">
+
+
+    <div data-title="primer puesto uni leonard">
         <div
         class="
           banner__item
@@ -362,93 +390,120 @@
           data-shadow="9"
           data-shadow-opacity=".1"
           data-bordercolor="white"
+          data-border-referer=".banner__style_primer__a"
+          data-border-referer-xs=".banner__style_primer-reverse"
+
 
           style="
             background-color: #f4633a;
           ">
 
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+            128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
+
         <div
         class="banner__image"
 
         data-image-md="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_500x500.png"
-        data-position-md="88% bottom"
-        data-size-md="contain"
+        data-position-md="90% bottom"
+        data-size-md="hidden"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_250x250.png"
-        data-position-xs="120% bottom"
-        data-size-xs="70%"
+        data-position-xs="110% bottom"
+        data-size-xs="65%"
+
+        data-position-xs-landscape = "80% bottom"
+        data-size-xs-landscape="50vw"
+
+
 
         style="
         background-repeat: no-repeat;
         z-index: 12;
         "></div>
 
-        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
-          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-          </svg>
-        </div>
-
         <div class="
         banner__content
+
         " style="z-index:13;">
-          <div class="banner__style_primer xs-hide">
-          <div class="banner__style_primer__a">
-            <div class="banner__title">
-              <span>¡Felicitaciones,<br>Cachimbo!</span>
+          <div class="banner__style_primer  xs-hide">
+            <div class="banner__style_primer__a">
+              <div class="banner__title">
+                <span>¡Felicitaciones,<br>Cachimbo!</span>
+              </div>
+              <div class="banner__subtitle">
+                <span class="normal">
+                  Leonard Panta Ortega<br>
+                </span>
+                <span class="small">
+                  Ingeniería Industrial
+                </span>
+
+              </div>
             </div>
-            <div class="banner__subtitle">
-              <span class="normal">
-                Leonard Panta Ortega<br>
-              </span>
-              <span class="small">
-                Ingeniería Industrial
-              </span>
+            <div class="banner__style_primer__b">
+
+              <div class="banner__style_primer__number">
+                <span class="number">
+                  1<sup>er</sup>
+                  <br>
+                </span>
+                <span class="banner__style_primer__number-puesto">
+                  PUESTO 2018-II
+                </span>
+
+              </div>
+
+              <div class="banner__style_primer__text">
+                <span>UNI</span>
+              </div>
+
+            </div>
+            <div class="banner__style_primer__img"
+            data-banner-img-position="top"
+            >
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="http://67.205.139.190/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_250x250.png">
+                <img  src="http://67.205.139.190/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_500x500.png"
+                      alt="">
+              </picture>
 
             </div>
           </div>
-
-          <div class="banner__style_primer__b">
-
-            <div class="banner__style_primer__number">
-              <span class="number">
-                1<sup>er</sup>
-                <br>
-              </span>
-              <span class="banner__style_primer__number-puesto">
-                PUESTO 2018-II
-              </span>
-
-            </div>
-
-            <div class="banner__style_primer__text">
-              <span>UNI</span>
-            </div>
-
-          </div>
-
-        </div>
           <div class="banner__style_primer-reverse">
+
             <div class="banner__title">
-              <span>1.<sup>er</sup> puesto<br>UNI</span>
+              <span>1.<sup>er</sup> puesto<br>Católica</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                Leonard Panta Ortega<br>
+                UNI 2018-II<br>
               </span>
               <span class="small">
+                Leonard Panta Ortega
+              </span><br>
+              <span class="xtrasmall">
                 Ingeniería Industrial
               </span>
             </div>
+
           </div>
        </div>
 
       </div>
     </div>
-    <div data-title="primer puesto san marcos">
+
+
+
+    <div data-title="primer puesto san marcos diego">
         <div
         class="
           banner__item
@@ -457,41 +512,50 @@
           data-shadow="9"
           data-shadow-opacity=".1"
           data-bordercolor="white"
+          data-border-referer=".banner__style_primer__a"
+          data-border-referer-xs=".banner__style_primer-reverse"
+
 
           style="
             background-color: #f4633a;
           ">
+
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+            128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
         <div
         class="banner__image"
 
         data-image-md="http://www.trilce.edu.pe/dd.png"
         data-position-md="90% bottom"
-        data-size-md="contain"
+        data-size-md="hidden"
 
         data-image-xs="http://www.trilce.edu.pe/dd.png"
-        data-position-xs="80% bottom"
-        data-size-xs="80%"
+        data-position-xs="110% bottom"
+        data-size-xs="65%"
+
+        data-position-xs-landscape = "80% bottom"
+        data-size-xs-landscape="50vw"
+
+
 
         style="
         background-repeat: no-repeat;
         z-index: 12;
         "></div>
 
-        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
-          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-          </svg>
-        </div>
-
         <div class="
         banner__content
-        " style="z-index:13;">
 
-          <div class="banner__style_primer xs-hide">
+        " style="z-index:13;">
+          <div class="banner__style_primer  xs-hide">
             <div class="banner__style_primer__a">
               <div class="banner__title">
                 <span>¡Felicitaciones,<br>Cachimbo!</span>
@@ -503,9 +567,11 @@
                 <span class="small">
                   Ingeniería Ambiental
                 </span>
+
               </div>
             </div>
             <div class="banner__style_primer__b">
+
               <div class="banner__style_primer__number">
                 <span class="number">
                   1<sup>er</sup>
@@ -514,125 +580,52 @@
                 <span class="banner__style_primer__number-puesto">
                   PUESTO 2019-I
                 </span>
+
               </div>
+
               <div class="banner__style_primer__text">
                 <span>San&nbsp;Marcos</span>
               </div>
+
+            </div>
+            <div class="banner__style_primer__img"
+            data-banner-img-position="top"
+            >
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="http://www.trilce.edu.pe/dd.png">
+                <img  src="http://www.trilce.edu.pe/dd.png"
+                      alt="">
+              </picture>
+
             </div>
           </div>
-
           <div class="banner__style_primer-reverse">
-            <div class="banner__title">
-              <span>1.<sup>er</sup> puesto<br>San&nbsp;Marcos</span>
-            </div>
-            <div class="banner__subtitle">
-              <span class="normal">
-                Diego Castillo Utani<br>
-              </span>
-              <span class="small">
-                Ingeniería Ambiental
-              </span>
-            </div>
-          </div>
-       </div>
 
-      </div>
-    </div>
-    <div data-title="primer puesto pucp">
-        <div
-        class="
-          banner__item
-          banner__item--left
-          "
-          data-shadow="9"
-          data-shadow-opacity=".1"
-          data-bordercolor="white"
-
-          style="
-            background-color: #f4633a;
-          ">
-
-        <div
-        class="banner__image"
-
-        data-image-md="/storage/static/images/banner/ogro/banner_pucp-ingresante_22_octubre_2018_500x500.png"
-        data-position-md="91% bottom"
-        data-size-md="contain"
-
-        data-image-xs="/storage/static/images/banner/ogro/banner_pucp-ingresante_22_octubre_2018_250x250.png"
-        data-position-xs="110% bottom"
-        data-size-xs="65%"
-
-        style="
-        background-repeat: no-repeat;
-        z-index: 12;
-        "></div>
-
-        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
-          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-          </svg>
-        </div>
-
-        <div class="
-        banner__content
-        " style="z-index:13;">
-          <div class="banner__style_primer xs-hide">
-          <div class="banner__style_primer__a">
-            <div class="banner__title">
-              <span>¡Felicitaciones,<br>Cachimbo!</span>
-            </div>
-            <div class="banner__subtitle">
-              <span class="normal">
-                Santiago Mendoza<br>
-              </span>
-              <span class="small">
-                Arquitectura
-              </span>
-
-            </div>
-          </div>
-
-          <div class="banner__style_primer__b">
-
-            <div class="banner__style_primer__number">
-              <span class="number">
-                1<sup>er</sup>
-                <br>
-              </span>
-              <span class="banner__style_primer__number-puesto">
-                PUESTO 2018-II
-              </span>
-
-            </div>
-
-            <div class="banner__style_primer__text">
-              <span>Católica</span>
-            </div>
-
-          </div>
-
-        </div>
-          <div class="banner__style_primer-reverse banner__style_primer--colegio">
             <div class="banner__title">
               <span>1.<sup>er</sup> puesto<br>Católica</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                Santiago Mendoza<br>
+                San&nbsp;Marcos 2019-I<br>
               </span>
+
               <span class="small">
-                Arquitectura
+                Diego Castillo Utani
+              </span><br>
+              <span class="xtrasmall">
+                Ingeniería Ambiental
               </span>
             </div>
+
           </div>
        </div>
 
       </div>
     </div>
+
+
+
     <div data-title="eco trilce">
       <div
       class="
@@ -700,80 +693,16 @@
 
       </div>
     </div>
+
+
+<!--
+
+
+
+-->
+
   </div>
 
-  <!--
-    <div data-title="San Marcos ciclo repaso">
-        <div
-        class="
-          banner__item
-          banner__item--left
-          "
-        data-shadow="9"
-        data-shadow-opacity=".0"
-        data-bordercolor="white"
-
-        style="
-          background-color: #f4633a;
-        ">
-
-        <style media="screen">
-          @media (max-width: 767px){
-            .bn1{
-                filter: opacity(.3);
-            }
-          }
-        </style>
-        <div
-        class="banner__image bn1"
-
-        data-image-md="/storage/static/images/banner/ogro/banner_academia-nuevos_23_octubre_2018_gigant.png"
-        data-position-md="right bottom"
-        data-size-md="50% 100%"
-
-        data-image-xs="/storage/static/images/banner/ogro/banner_academia-nuevos_23_octubre_2018_gigant.png"
-        data-position-xs="right"
-        data-size-xs="cover"
-
-        style="
-        background-repeat: no-repeat;
-        z-index: 8;
-        "></div>
-
-        <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
-        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index: 10;">
-          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          	128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-          </svg>
-        </div>
-
-        <div class="
-        banner__content
-        banner__content--mobile-padding-left
-        " style="z-index:11;">
-          <div class="banner__title">
-            <span>San Marcos</span>
-          </div>
-          <div class="banner__subtitle">
-            <span class="normal">
-              Ciclo Repaso Semestral<br>
-            </span>
-            <span class="small">
-              Incorporaciones
-            </span>
-            <span style="display:block;margin: 20px auto;">
-              <button class="banner__button-cta banner__button-cta--white">
-                <a href="/academia/preparacion-san-marcos">Saber más</a>
-              </button>
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </div>
--->
 
   <div class="nuevos-i" id="inicios">
     <div class="row center-xs">

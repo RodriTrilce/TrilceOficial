@@ -231,12 +231,14 @@
                       </div>
 
                     </div>
-                    <div class="banner__style_primer__img">
+                    <div class="banner__style_primer__img"
+                    data-banner-img-position="top"
+                    >
 
                       <picture>
                         <source media="(max-width: 767px)" srcset="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png">
                         <img  src="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
-                              alt="Chris standing up holding his daughter Elva">
+                              alt="">
                       </picture>
 
                     </div>
@@ -287,7 +289,7 @@
 
         data-image-xs="/storage/static/images/banner/ogro/banner_22_nov_propuesta-250x250.png"
         data-position-xs="bottom right"
-        data-size-xs="58vw"
+        data-size-xs="68vw"
 
         data-position-xs-landscape="80% bottom"
         data-size-xs-landscape="45vw"
@@ -470,8 +472,6 @@
 
         </div>
     </div>
-
-
     <div data-title="ser mejores personas">
         <div
         class="
@@ -566,8 +566,6 @@
 
         </div>
     </div>
-
-
     <div data-title="eco trilce">
       <div
       class="
@@ -598,49 +596,45 @@
       z-index: 12;
       "></div>
 
-      <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-      <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
-        <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-        <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-        128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-      </svg>
-    </div>
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+            <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+            <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+            128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
 
-    <div class="banner__content
-    banner__content--mobile-padding-left
-    " style="z-index:13;">
+          <div class="banner__content
+          banner__content--mobile-padding-left
+          " style="z-index:13;">
 
-    <div class="banner__content--md">
-      <div class="banner__subtitle">
-        <span class="semibig orange font-geo-smbold" style="">
-          Reafirmamos nuestro compromiso <br>
-          con el planeta y eliminaremos
-          progresivamente <br> el uso del
-          plástico en nuestras sedes y cafeterías.
-        </span>
+          <div class="banner__content--md">
+            <div class="banner__subtitle">
+              <span class="semibig orange font-geo-smbold" style="">
+                Reafirmamos nuestro compromiso <br>
+                con el planeta y eliminaremos
+                progresivamente <br> el uso del
+                plástico en nuestras sedes y cafeterías.
+              </span>
+            </div>
+          </div>
+
+          <div class="banner__content--xs">
+            <div class="banner__subtitle">
+              <span class="semibig orange font-geo-smbold" style="">
+                Eliminaremos progresivamente <br>
+                el uso del plástico en nuestras sedes.
+              </span>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
-    <div class="banner__content--xs">
-      <div class="banner__subtitle">
-        <span class="semibig orange font-geo-smbold" style="">
-          Eliminaremos progresivamente <br>
-          el uso del plástico en nuestras sedes.
-        </span>
-      </div>
-    </div>
 
-  </div>
-
-</div>
-</div>
-
-    <!--
-
-
-
--->
 
 
 <!--

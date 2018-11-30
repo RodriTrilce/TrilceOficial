@@ -43,6 +43,9 @@ const SliderTrilce = {
         if(position){
           var father = document.querySelector(".tns-outer").offsetHeight;
           var formula = (father - item.offsetHeight)/2 + "px";
+
+          item.style.position = "relative";
+
           switch (position) {
             case 'top':
                 item.style.top = formula;

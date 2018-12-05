@@ -170,8 +170,8 @@
             >
 
               <picture>
-                <source media="(max-width: 767px)" srcset="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png">
-                <img  src="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
+                <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png">
+                <img  src="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
                       alt="">
               </picture>
 
@@ -471,8 +471,8 @@
             >
 
               <picture>
-                <source media="(max-width: 767px)" srcset="http://67.205.139.190/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_250x250.png">
-                <img  src="http://67.205.139.190/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_500x500.png"
+                <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_250x250.png">
+                <img  src="/storage/static/images/banner/ogro/banner_uni-ingresante_22_octubre_2018_500x500.png"
                       alt="">
               </picture>
 

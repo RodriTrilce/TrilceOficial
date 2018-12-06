@@ -2,6 +2,8 @@
 
 Creation of the repository for the website of the Trilce group. Frontend, Backend and environment.
 
+Developer: Franco Salcedo Castro (franco.salcedo.i3@gmail.com)
+
 ---
 
 ## Environment
@@ -27,3 +29,8 @@ Technologies to use:
 1. ISPConfig 3
 2. Laravel Framework 5.6
 
+
+
+## DB
+1. Laravel
+2. landing pages

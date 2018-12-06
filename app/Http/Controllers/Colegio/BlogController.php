@@ -22,7 +22,6 @@ class BlogController extends Controller
   {
     $posts = Post::where([
       ['type', '=', $this->typePost],
-      ['site', '=', $this->site],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
       ['marker', '=', '0']

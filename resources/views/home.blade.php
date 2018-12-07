@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="{{{ asset('favicon.ico') }}}">
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
   <link rel="stylesheet" href="{{ mix('/css/main_home.css') }}">
+  @include('tracking.in_head')
 </head>
 <body>
 

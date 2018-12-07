@@ -12,20 +12,12 @@
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
-  <link rel="stylesheet" href="{{ mix('/css/main.css') }}?{{rand(0,999999)}}">
-  <link rel="stylesheet" href="{{ mix('/css/main_academia.css') }}?{{rand(0,999999)}}">
+  <link rel="stylesheet" href="{{ mix('/css/main.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/main_academia.css') }}">
+  @include('tracking.in_head')
 </head>
 <body>
-
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
+  @include('tracking.init_body')
   @yield('afterBody')
 
   <div class="modal">

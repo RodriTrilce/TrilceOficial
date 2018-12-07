@@ -11,6 +11,10 @@
 |
 */
 
+// Redirect old website
+include 'redirect_oldweb.php';
+
+
 // Test url for any propouses
 Route::name('prueba')->get('/prueba', function () {
    return view('academia.test');

@@ -31,7 +31,7 @@
 .colegio-cardsv2__herotitle{
   font-family: $font_geo_smbold;
   color: $orange;
-  font-size: 3.6rem;
+  font-size: 3.7rem;
   text-align: left;
   line-height: 65px;
   margin-bottom: 15px;
@@ -42,7 +42,7 @@
   }
 
   @include breakpoint(baby){
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: unset;
   }
 
@@ -57,12 +57,16 @@
 .colegio-cardsv2__herosubtitle{
   font-family: $font_geo_reg;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: $gray;
 
   @media (max-width: 1160px){
     text-align: center;
     margin-bottom: 15px;
+  }
+
+  @include breakpoint(baby){
+    font-size: 1rem;
   }
 
   .salt{
@@ -89,6 +93,21 @@
     flex-wrap: wrap;
   }
 
+}
+.colegio-cardsv2-items--hovereffect{
+  &:hover{
+    .colegio-cardsv2-items__item:not(:hover){
+      border: 1px solid transparentize($gray, .7);
+
+      .colegio-cardsv2-items__symbol i{
+        color: transparentize($gray, .7);
+      }
+
+      .colegio-cardsv2-items__text span{
+        color: transparentize($gray, .7);
+      }
+    }
+  }
 }
 .colegio-cardsv2-items__item{
   width: 100%;

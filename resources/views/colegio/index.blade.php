@@ -804,7 +804,7 @@
           <div class="colegio-cardsv2__herosubtitle"><span>Elige la modalidad que más se<br class="salt">adecúe a tus necesidades</span></div>
         </div>
 
-        <div class="colegio-cardsv2-items">
+        <div class="colegio-cardsv2-items colegio-cardsv2-items--hovereffect">
           <a href="/colegio/matricula-nuevo" class="colegio-cardsv2-items__item">
               <div class="colegio-cardsv2-items__symbol">
                 <span><i class="fa fa-plus"></i></span>

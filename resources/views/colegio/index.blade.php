@@ -38,15 +38,6 @@
     <div class="banner__loader-line"></div>
   </div>
 
-  <style>
-   @media (min-width: 767px) and (max-width: 1300px) {
-     .banner__matricula-img{
-       background-size: 35% !important;
-     }
-  }
-  </style>
-
-
   <div class="index-banners index-banners--colegio">
 
     <div data-title="admision 2019">
@@ -795,13 +786,76 @@
 
   <div class="nuevos-i container-base">
     <div class="row center-xs">
-      <div class="col-xs-12 col-sm-9 col-md-8 start-xs nuevos-i-title">
+
+
+      <!--
+        <div class="col-xs-12 col-sm-9 col-md-8 start-xs nuevos-i-title">
         <div class="box">
           <h2>Matrícula 2019</h2>
           <p>Elige la modalidad que más se adecúe a tus necesidades</p>
         </div>
       </div>
+      -->
 
+      <div class="row col-xs-12 col-sm-10 colegio-cardsv2">
+
+        <div class="colegio-cardsv2__title">
+          <div class="colegio-cardsv2__herotitle"><span>Matrícula<br class="salt"> 2019</span></div>
+          <div class="colegio-cardsv2__herosubtitle"><span>Elige la modalidad que más se<br class="salt">adecúe a tus necesidades</span></div>
+        </div>
+
+        <div class="colegio-cardsv2-items">
+          <a href="/colegio/matricula-nuevo" class="colegio-cardsv2-items__item">
+              <div class="colegio-cardsv2-items__symbol">
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="colegio-cardsv2-items__text">
+                <span class="alumno">
+                  ALUMNO
+                </span>
+                <span class="modality">
+                  NUEVO
+                </span>
+              </div>
+          </a>
+
+          <a href="/colegio/matricula-traslado" class="colegio-cardsv2-items__item">
+              <div class="colegio-cardsv2-items__symbol">
+                <span><i class="fa fa-exchange"></i></span>
+              </div>
+              <div class="colegio-cardsv2-items__text">
+                <span class="alumno">
+                  ALUMNO
+                </span>
+                <span class="modality">
+                  TRASLADO
+                </span>
+              </div>
+          </a>
+
+          <a href="/colegio/matricula-regular" class="colegio-cardsv2-items__item">
+              <div class="colegio-cardsv2-items__symbol">
+                <span><i class="fa fa-star"></i></span>
+              </div>
+              <div class="colegio-cardsv2-items__text">
+                <span class="alumno">
+                  ALUMNO
+                </span>
+                <span class="modality">
+                  REGULAR
+                </span>
+                <span class="op">
+                  (actual)
+                </span>
+              </div>
+          </a>
+
+        </div>
+
+      </div>
+
+
+<!--
       <div class="row col-xs-12 col-sm-10 between-xs center-sm nuevos-i-box nuevos-colegio block-effecthover">
         <div class="col-xs block-effecthover-item">
           <a href="/colegio/matricula-nuevo">
@@ -828,6 +882,7 @@
           </a>
         </div>
       </div>
+-->
 
     </div>
   </div>

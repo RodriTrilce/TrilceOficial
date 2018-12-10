@@ -533,11 +533,11 @@
         <div
         class="banner__image"
 
-        data-image-md="http://www.trilce.edu.pe/dd.png"
+        data-image-md="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_10_diciembre__academia-500x500.png"
         data-position-md="90% bottom"
         data-size-md="hidden"
 
-        data-image-xs="http://www.trilce.edu.pe/dd.png"
+        data-image-xs="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_10_diciembre__academia-250x250.png"
         data-position-xs="110% bottom"
         data-size-xs="65%"
 
@@ -593,8 +593,8 @@
             >
 
               <picture>
-                <source media="(max-width: 767px)" srcset="http://www.trilce.edu.pe/dd.png">
-                <img  src="http://www.trilce.edu.pe/dd.png"
+                <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_10_diciembre__academia-500x500.png">
+                <img  src="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_10_diciembre__academia-500x500.png"
                       alt="">
               </picture>
 
@@ -643,11 +643,11 @@
       <div
       class="banner__image"
 
-      data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
+      data-image-md="/storage/static/images/banner/ogro/banner_10_dic_2018_medio_ambiente.png"
       data-position-md="right bottom"
       data-size-md="45vw"
 
-      data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
+      data-image-xs="/storage/static/images/banner/ogro/banner_10_dic_2018_medio_ambiente.png"
       data-position-xs="40vw bottom"
       data-size-xs="85vw"
 

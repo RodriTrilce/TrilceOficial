@@ -227,8 +227,8 @@
               >
 
                 <picture>
-                  <source media="(max-width: 767px)" srcset="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png">
-                  <img  src="http://67.205.139.190/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
+                  <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png">
+                  <img  src="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-500x500.png"
                         alt="">
                 </picture>
 
@@ -731,11 +731,11 @@
       <div
       class="banner__image"
 
-      data-image-md="http://www.trilce.edu.pe/tt_arbol.png"
+      data-image-md="/storage/static/images/banner/ogro/banner_10_dic_2018_medio_ambiente.png"
       data-position-md="right bottom"
       data-size-md="45vw"
 
-      data-image-xs="http://www.trilce.edu.pe/tt_arbol.png"
+      data-image-xs="/storage/static/images/banner/ogro/banner_10_dic_2018_medio_ambiente.png"
       data-position-xs="40vw bottom"
       data-size-xs="85vw"
 

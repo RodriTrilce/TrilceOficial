@@ -5,6 +5,13 @@
   }
 }
 
+.vacations__container{
+  margin-bottom: 40px;
+  @include breakpoint(baby){
+    margin-bottom: 20px;
+  }
+}
+
 .vacations__logo{
   padding-left: 12px;
   padding-right: 12px;
@@ -39,26 +46,28 @@
 }
 
 .vacations__home-container{
-  margin: 40px 0;
+  background: $orange;
+  padding: 40px 0;
+
   @include breakpoint(baby){
     margin: 20px 0;
   }
 
   .vacations_starth1, .vacations_starth2{
     font-family: $font_geo_reg;
+    color: white;
   }
 
   .vacations_starth1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 
     @include breakpoint(baby){
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
   }
 
   .vacations_starth2{
     font-size: 1,92;
-    color: $gray;
     margin-top: 10px;
 
     @include breakpoint(baby){
@@ -264,4 +273,70 @@
       padding-bottom: 0px;
     }
   }
+}
+
+.landing__title{
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint(baby){
+    margin:0;
+  }
+}
+
+
+.landing__title h1{
+  font-size: 2rem;
+  color: #f4633a;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+
+  @include breakpoint(baby){
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.admission__form-submit-captcha{
+  height: 78px;
+  overflow: hidden;
+}
+
+.admission__form > div > .form-group{
+  @include breakpoint(baby){
+    width: 100% !important;
+  }
+}
+
+.admission__form .checkbox{
+
+  input{
+    width: 15px;
+  }
+}
+
+.admission__form-submit-button{
+  margin-top: 20px;
+
+  button{
+    @include breakpoint(baby){
+      font-size: 1.5rem
+    }
+  }
+}
+
+.vacations__image-container{
+  justify-content: center;
+}
+
+.vacations__image-girl{
+  align-self: flex-end;
+  max-width: 250px;
+  width: 100%;
+}
+
+.admission__register{
+  justify-content: flex-start !important;
 }

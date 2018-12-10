@@ -1,6 +1,9 @@
 <?php
 
 
+Route::get('//vacaciones-utiles/pdf/{a}', function(){
+  return Redirect::to('/colegio/vacaciones-utiles/', 301);
+});
 
 Route::get('/admision-2019/', function(){
   return Redirect::to('/matricula-2019/', 301);

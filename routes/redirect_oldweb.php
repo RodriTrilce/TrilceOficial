@@ -1,7 +1,11 @@
 <?php
 
 
-Route::get('//vacaciones-utiles/pdf/{a}', function(){
+Route::get('/politica-de-datos-personales.pdf', function(){
+  return Redirect::to('/storage/other/documents/politica-de-datos-personales.pdf', 301);
+});
+
+Route::get('/vacaciones-utiles/pdf/{a}', function(){
   return Redirect::to('/colegio/vacaciones-utiles/', 301);
 });
 

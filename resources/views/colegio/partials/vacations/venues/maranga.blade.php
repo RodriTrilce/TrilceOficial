@@ -175,9 +175,9 @@
             </li>
 
             <li>
-                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> año</h2>
+                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> año</h2>
                 <p><strong>Aritmética, Álgebra, Geometría, Trigonometría, Física, Química, Raz. Matemático y Raz. Verbal</strong></p>
-                <p>De martes a viernes de 8 a. m. a 12 m.</p>
+                <p>De lunes a jueves de 8 a. m. a 12 m.</p>
             </li>
 
             <li>
@@ -194,7 +194,7 @@
                 </li>
 
                 <li>
-                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> año</strong></h4>
+                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> año</strong></h4>
                   <span class="orange">· Al contado: S/340</span><br>
                   <span class="orange">· 2 partes: S/360</span><br>
                   · S/260 (al matricularse)<br>
@@ -218,8 +218,14 @@
           <ul class="ep-generic-list ep-generic-list--off">
 
             <li>
-                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>er</sup> año</h3>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 2.<sup>o</sup> año</h3>
                 <p>Martes y jueves de 8 a. m. a 11 a. m.</p>
+                <br>
+            </li>
+
+            <li>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> año</h3>
+                <p>Martes y jueves de 11 a. m. a 2 p. m.</p>
                 <br>
             </li>
 
@@ -246,6 +252,7 @@
               <strong>Historia del Perú</strong><br>
               <strong>Historia Universal</strong><br>
               <strong>Geografía</strong><br>
+              <strong>Biología</strong><br>
               Tres horas semanales<br>
               (consultar frecuencia de horarios)
             </li>
@@ -272,6 +279,14 @@
               <strong>Taller de Office: Word y Excel</strong>
               <p>
                 Viernes de 8 a. m. a 12 m.
+              </p><br>
+            </li>
+
+            <br>
+            <li>
+              <strong>Taller de Diseño Gráfico: Inkscape</strong>
+              <p>
+                Viernes de 8 a. m a 12 m.
               </p><br>
             </li>
 
@@ -317,7 +332,7 @@
                 </strong>
               </span>
               S/260 (al matricularse) <br>
-              S/100 (30 de enero)              
+              S/100 (30 de enero)
               <br><br>
             </li>
 

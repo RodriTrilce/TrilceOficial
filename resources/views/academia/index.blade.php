@@ -116,8 +116,8 @@
         data-size-md="hidden"
 
         data-image-xs="/storage/static/images/banner/ogro/banner_20_nov_computo_jim-250x250.png"
-        data-position-xs="110% bottom"
-        data-size-xs="65%"
+        data-position-xs="120% bottom"
+        data-size-xs="75%"
 
         data-position-xs-landscape = "80% bottom"
         data-size-xs-landscape="50vw"
@@ -254,6 +254,126 @@
             </span>
           </div>
         </div>
+
+      </div>
+    </div>
+
+
+    <div data-title="primer puesto uni - velarde">
+        <div
+        class="
+          banner__item
+          banner__item--left
+          "
+          data-shadow="9"
+          data-shadow-opacity=".1"
+          data-bordercolor="white"
+          data-border-referer=".banner__style_primer__a"
+          data-border-referer-xs=".banner__style_primer-reverse"
+
+
+          style="
+            background-color: #f4633a;
+          ">
+
+
+        <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+        <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+          <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+            128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          </svg>
+        </div>
+
+        <div
+        class="banner__image"
+
+        data-image-md="/storage/static/images/banner/ogro/banner_10_dic_2018_uni-chica-500x500.png"
+        data-position-md="90% bottom"
+        data-size-md="hidden"
+
+        data-image-xs="/storage/static/images/banner/ogro/banner_10_dic_2018_uni-chica-250x250.png"
+        data-position-xs="120% bottom"
+        data-size-xs="75%"
+
+        data-position-xs-landscape = "80% bottom"
+        data-size-xs-landscape="50vw"
+
+
+
+        style="
+        background-repeat: no-repeat;
+        z-index: 12;
+        "></div>
+
+        <div class="
+        banner__content
+
+        " style="z-index:13;">
+          <div class="banner__style_primer  xs-hide">
+            <div class="banner__style_primer__a">
+              <div class="banner__title">
+                <span>¡Máximo<br>puntaje!</span>
+              </div>
+              <div class="banner__subtitle">
+                <span class="normal">
+                  Daniela Velarde<br>
+                </span>
+                <span class="normal">
+                  Examen Escolares<br>
+                </span>
+                <span class="small">
+                </span>
+
+              </div>
+            </div>
+            <div class="banner__style_primer__b">
+
+              <div class="banner__style_primer__number">
+                <span class="number">
+                  1<sup>er</sup>
+                  <br>
+                </span>
+                <span class="banner__style_primer__number-puesto">
+                  PUESTO UNI 2019-1
+                </span>
+
+              </div>
+
+              <div class="banner__style_primer__text">
+                <span>UNI</span>
+              </div>
+
+            </div>
+            <div class="banner__style_primer__img"
+            data-banner-img-position="top"
+            >
+
+              <picture>
+                <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_10_dic_2018_uni-chica-250x250.png">
+                <img  src="/storage/static/images/banner/ogro/banner_10_dic_2018_uni-chica-500x500.png"
+                      alt="">
+              </picture>
+
+            </div>
+          </div>
+          <div class="banner__style_primer-reverse banner__style_primer--colegio">
+
+            <div class="banner__title">
+              <span>1.<sup>er</sup> puesto</span>
+            </div>
+            <div class="banner__subtitle">
+              <span class="normal">
+                UNI 2019-1<br>
+              </span>
+              <span class="small">
+                Daniela Velarde
+              </span>
+            </div>
+
+          </div>
+       </div>
 
       </div>
     </div>

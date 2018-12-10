@@ -9,8 +9,12 @@
   .new-t-title{
     font-family: $font_geo_bold;
     color: $gray;
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 28px;
+
+    @include breakpoint(baby){
+      font-size: 1.8rem;
+    }
   }
 
   .new-t-subtitle{

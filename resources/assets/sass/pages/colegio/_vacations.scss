@@ -46,11 +46,14 @@
 }
 
 .vacations__home-container{
-  background: $orange;
   padding: 40px 0;
 
   @include breakpoint(baby){
     margin: 20px 0;
+  }
+
+  &.vacations__home-container--init{
+    background: $orange;
   }
 
   .vacations_starth1, .vacations_starth2{

@@ -51,7 +51,7 @@
       </div>
 
       <div class="col-xs-12">
-        <div class="col-xs-12 center-xs vacations__home-container">
+        <div class="col-xs-12 center-xs vacations__home-container vacations__home-container--init">
           <h1 class="vacations_starth1"><i class="fa fa-lightbulb-o"></i> Inicios: desde el 4 de enero</h1>
           <h2 class="vacations_starth2">Fin: hasta el 21 de febrero</h2>
         </div>

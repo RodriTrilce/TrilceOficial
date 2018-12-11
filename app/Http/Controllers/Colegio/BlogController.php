@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use App\Events\PostViewed;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class BlogController extends Controller
 {
@@ -38,15 +39,11 @@ class BlogController extends Controller
     ->take(4)
     ->get();
 
-    $filtrado = $posts->filter(function($v){
-      if($v->site !== $this->site && $v->marker !== 1){
-        return $v;
-      }
-    });
 
     return view('/colegio/blog')->with([
                                         'posts'    => $posts,
-                                        'markers'  => $markers
+                                        'markers'  => $markers,
+                                        'site'     => $this->site
                                       ]);
   }
 

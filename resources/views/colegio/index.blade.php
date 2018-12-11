@@ -41,7 +41,6 @@
   <div class="index-banners index-banners--colegio">
 
 
-
     <div data-title="admision 2019">
         <div
         class="
@@ -255,7 +254,6 @@
 
         </div>
       </div>
-
     <div data-title="primer puesto uni velarde">
           <div
           class="
@@ -376,29 +374,22 @@
 
         </div>
       </div>
-
-
-          <!--
-    -->
-
-
-
     <div data-title="vacaciones utiles">
           <div
-          class="
-            banner__item
-            banner__item--left
-            "
-            data-shadow="9"
-            data-shadow-opacity=".15"
-            data-bordercolor="#f4633a"
-            data-border-referer=".banner__style_primer__a"
-            data-border-referer-xs=".banner__style_primer-reverse"
+            class="
+              banner__item
+              banner__item--left
+              "
+              data-shadow="9"
+              data-shadow-opacity=".15"
+              data-bordercolor="#f4633a"
+              data-border-referer=".banner__style_primer__a"
+              data-border-referer-xs=".banner__style_primer__a"
 
 
-            style="
-              background-color: #ffffff;
-            ">
+              style="
+                background-color: #ffffff;
+              ">
 
           <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
           <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
@@ -457,18 +448,31 @@
             max-width: 680px !important;
           }
 
+          @media (max-width: 767px){
+           .banner__title span{
+              font-size: 1.2rem !important;
+            }
+          }
+
+          @media (max-width: 767px){
+            .banner__svg_vacaciones_utiles{
+              max-width: 150px;
+              min-width: 130px;
+            }
+
+            .banner__style_vacaciones_left_content{
+              min-width: 170px;
+            }
+
+           .banner__style_vacaciones_left_content .banner__propuesta-educativa__title{
+              font-size: 1.2rem !important;
+            }
+          }
           </style>
 
             <div class="banner__style_primer banner__style_primer--colegio banner__style_primer__mobile-container">
 
-              <div class="banner__style_primer-reverse">
-                <span class="banner__propuesta-educativa__title">
-                  Vacaciones
-                </span>
-
-              </div>
-
-              <div class="banner__style_primer__a xs-hide">
+              <div class="banner__style_primer__a">
                 <div class="banner__title">
                   <svg version="1.1" class="banner__svg_vacaciones_utiles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 viewBox="0 0 281.2 242" enable-background="new 0 0 281.2 242" xml:space="preserve">
@@ -597,13 +601,14 @@
                       	</g>
                       </g>
                   </svg>
-
                 </div>
+
               </div>
 
               <div data-guide="img__"
                 class=" banner__style_primer__img_varios
                         banner__style_primer__img_varios__vacaciones_utiles
+                        xs-hide
                         "
                 data-banner-img-position="top">
 
@@ -623,8 +628,7 @@
 
               </div>
 
-              <div class="banner__style_primer__b xs-hide banner__style_vacaciones_left_content">
-
+              <div class="banner__style_vacaciones_left_content">
                 <div class="banner__title">
                   <span class="banner__propuesta-educativa__title">
                     <i class="fa fa-lightbulb-o"></i> Inicio 4, 7 y 8 de enero
@@ -637,8 +641,6 @@
                     <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/vacaciones-utiles">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
                   </span>
                 </div>
-
-
               </div>
 
 
@@ -651,10 +653,6 @@
 
         </div>
     </div>
-
-
-
-
     <div data-title="propuesta educativa">
         <div
         class="
@@ -800,12 +798,6 @@
             <div class="banner__style_primer-reverse banner__style_primer__mobile-primeros">
 
               <div class="banner__style_primer_mobile-puesto">
-                <span class="opt puesto">1.<sup>er</sup> puesto <br /> UNI</span>
-                <span class="opt name">Leonard Panta</span>
-                <span class="opt carrer">Ingeniería Industrial</span>
-              </div>
-
-              <div class="banner__style_primer_mobile-puesto">
                 <span class="opt puesto">1.<sup>er</sup> puesto <br /> San&nbsp;Marcos</span>
                 <span class="opt name">Diego Castillo Utani</span>
                 <span class="opt carrer">Ingeniería Ambiental</span>
@@ -819,31 +811,6 @@
               </div>
             </div>
 
-            <div class="banner__style_primer__b xs-hide" style="margin:15px; min-width:165px; ">
-              <div class="banner__style_primer__number">
-                <span class="number">
-                  1<sup>er</sup>
-                </span>
-                <span class="banner__style_primer__number-puesto">
-                  PUESTO 2018-II
-                </span>
-              </div>
-
-              <div class="banner__style_primer__text">
-                <span>UNI</span>
-              </div>
-
-              <div class="banner__style_primer__name">
-                <span>
-                  Leonard Panta Ortega
-                </span>
-                <br>
-                <span class="small">
-                  Ingeniería Industrial
-                </span>
-              </div>
-
-            </div>
 
             <div class="banner__style_primer__b xs-hide" style="margin:15px;">
               <div class="banner__style_primer__number">
@@ -1184,10 +1151,8 @@
       </div>
     </div>
 
-    <!--
 
     <!--
-
   -->
 
   </div>
@@ -1261,36 +1226,6 @@
         </div>
 
       </div>
-
-
-<!--
-      <div class="row col-xs-12 col-sm-10 between-xs center-sm nuevos-i-box nuevos-colegio block-effecthover">
-        <div class="col-xs block-effecthover-item">
-          <a href="/colegio/matricula-nuevo">
-            <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/svg/ico-admision-01.svg') }}" alt="UNI">
-              <h3>Alumno <div class="modality modality-blue">nuevo</div></h3>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs block-effecthover-item">
-          <a href="/colegio/matricula-traslado">
-            <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/svg/ico-admision-02.svg') }}" alt="UNMSM">
-              <h3>Alumno <div class="modality modality-yellow">traslado</div></h3>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs block-effecthover-item">
-          <a href="/colegio/matricula-regular">
-            <div class="nuevos-i-top">
-              <img src="{{ url('static/images/colegio/svg/ico-admision-03.svg') }}" alt="PUCP">
-              <h3>Alumno <div class="modality modality-orange">regular (actual)</div></h3>
-            </div>
-          </a>
-        </div>
-      </div>
--->
 
     </div>
   </div>

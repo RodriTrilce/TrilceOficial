@@ -41,9 +41,8 @@
   <div class="index-banners index-banners--colegio">
 
 
-    <!--
 
-        -->
+
     <div data-title="admision 2019">
         <div
         class="
@@ -380,7 +379,10 @@
       </div>
 
 
-<!--
+
+
+
+
     <div data-title="vacaciones utiles">
           <div
           class="
@@ -391,7 +393,7 @@
             data-shadow-opacity=".15"
             data-bordercolor="#f4633a"
             data-border-referer=".banner__style_primer__a"
-            data-border-referer-xs=".banner__style_primer__mobile-primeros"
+            data-border-referer-xs=".banner__style_primer-reverse"
 
 
             style="
@@ -438,23 +440,24 @@
             width: 100%;
             max-width: 300px;
           }
+
+          .banner__style_vacaciones_left_content{
+            padding: 10px;
+            text-align: center;
+          }
+
+          .banner__style_vacaciones_left_content .banner__propuesta-educativa__title{
+            font-size: 2rem;
+
+          }
           </style>
 
             <div class="banner__style_primer banner__style_primer--colegio banner__style_primer__mobile-container">
 
-              <div class="banner__style_primer-reverse banner__style_primer__mobile-primeros">
-
-                <div class="banner__style_primer_mobile-puesto">
-                  <span class="opt puesto">1.<sup>er</sup> puesto <br /> UNI</span>
-                  <span class="opt name">Leonard Panta</span>
-                  <span class="opt carrer">Ingeniería Industrial</span>
-                </div>
-
-                <div class="banner__style_primer_mobile-puesto">
-                  <span class="opt puesto">1.<sup>er</sup> puesto <br /> San&nbsp;Marcos</span>
-                  <span class="opt name">Diego Castillo Utani</span>
-                  <span class="opt carrer">Ingeniería Ambiental</span>
-                </div>
+              <div class="banner__style_primer-reverse">
+                <span class="banner__propuesta-educativa__title">
+                  Vacaciones
+                </span>
 
               </div>
 
@@ -598,68 +601,36 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="/storage/static/images/banner/ogro/banner_3_dic_2018_primeros_puestos-250x250.png"
+                    srcset="/storage/static/images/banner/ogro/banner_11_dic_vacaciones_utiles_354x250.png"
                     sizes="200px">
 
                   <source
                     media="(min-width: 767px)"
-                    srcset="/storage/static/images/banner/ogro/banner_3_dic_2018_primeros_puestos-500x500.png"
+                    srcset="/storage/static/images/banner/ogro/banner_11_dic_vacaciones_utiles_708x500.png"
                     sizes="10vw">
 
-                  <img src="" srcset="/storage/static/images/banner/ogro/banner_3_dic_2018_primeros_puestos-500x500.png">
+                  <img src="" srcset="/storage/static/images/banner/ogro/banner_11_dic_vacaciones_utiles_708x500.png">
                 </picture>
 
               </div>
 
-              <div class="banner__style_primer__b xs-hide" style="margin:15px; min-width:165px; ">
-                <div class="banner__style_primer__number">
-                  <span class="number">
-                    1<sup>er</sup>
+              <div class="banner__style_primer__b xs-hide banner__style_vacaciones_left_content" style="margin:15px;">
+
+
+
+                <div class="banner__title">
+                  <span class="banner__propuesta-educativa__title">
+                    <i class="fa fa-lightbulb-o"></i> Inicio 4 de enero
                   </span>
-                  <span class="banner__style_primer__number-puesto">
-                    PUESTO 2018-II
+                </div>
+                <div class="banner__subtitle">
+                  <span class="normal">
+                  </span>
+                  <span style="display:block;margin: 10px auto;">
+                    <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/vacaciones-utiles">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
                   </span>
                 </div>
 
-                <div class="banner__style_primer__text">
-                  <span>UNI</span>
-                </div>
-
-                <div class="banner__style_primer__name">
-                  <span>
-                    Leonard Panta Ortega
-                  </span>
-                  <br>
-                  <span class="small">
-                    Ingeniería Industrial
-                  </span>
-                </div>
-
-              </div>
-
-              <div class="banner__style_primer__b xs-hide" style="margin:15px;">
-                <div class="banner__style_primer__number">
-                  <span class="number">
-                    1<sup>er</sup>
-                  </span>
-                  <span class="banner__style_primer__number-puesto">
-                    PUESTO 2019-I
-                  </span>
-                </div>
-
-                <div class="banner__style_primer__text">
-                  <span>San&nbsp;Marcos</span>
-                </div>
-
-                <div class="banner__style_primer__name">
-                  <span>
-                    Diego Castillo Utani
-                  </span>
-                  <br>
-                  <span class="small">
-                    Ingeniería Ambiental
-                  </span>
-                </div>
 
               </div>
 
@@ -673,7 +644,8 @@
 
         </div>
     </div>
--->
+
+
 
 
     <div data-title="propuesta educativa">

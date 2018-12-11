@@ -31,7 +31,7 @@
               @foreach ($address as $k)
                 <tr>
                   <td data-label="Nivel">{!! $k->grades !!}</td>
-                  <td data-label="Dirección">{{!! $k->address !!}}</td>
+                  <td data-label="Dirección">{!! $k->address !!}</td>
                   <td data-label="Teléfono">{{ $k->phone }}</td>
                 </tr>
               @endforeach

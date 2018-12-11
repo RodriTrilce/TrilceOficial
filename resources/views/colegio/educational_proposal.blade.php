@@ -416,6 +416,13 @@
                 <tbody>
 
                   <tr>
+                    <td data-label="">1.<sup>er</sup> puesto UNI Examen Escolares</td>
+                    <td data-label="Examen">2019-1</td>
+                    <td data-label="Nombres">Daniela Velarde</td>
+                    <td data-label="Carrera"><strong>Máximo puntaje</strong></td>
+                  </tr>
+
+                  <tr>
                     <td data-label="">1.<sup>er</sup> puesto Católica POP</td>
                     <td data-label="Examen">2019</td>
                     <td data-label="Nombres">Jimm Cisneros</td>

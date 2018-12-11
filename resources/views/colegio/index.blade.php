@@ -42,7 +42,6 @@
 
 
 
-
     <div data-title="admision 2019">
         <div
         class="
@@ -379,7 +378,8 @@
       </div>
 
 
-
+          <!--
+    -->
 
 
 
@@ -439,17 +439,24 @@
           .banner__svg_vacaciones_utiles{
             width: 100%;
             max-width: 300px;
+            min-width: 250px;
           }
 
           .banner__style_vacaciones_left_content{
-            padding: 10px;
             text-align: center;
+            min-width: 290px;
+            padding-right: 15px;
           }
 
           .banner__style_vacaciones_left_content .banner__propuesta-educativa__title{
-            font-size: 2rem;
-
+            font-size: 1.6rem;
           }
+
+          .banner__style_primer__img_varios__vacaciones_utiles picture img {
+            width: 100%;
+            max-width: 680px !important;
+          }
+
           </style>
 
             <div class="banner__style_primer banner__style_primer--colegio banner__style_primer__mobile-container">
@@ -595,7 +602,9 @@
               </div>
 
               <div data-guide="img__"
-                class="banner__style_primer__img_varios"
+                class=" banner__style_primer__img_varios
+                        banner__style_primer__img_varios__vacaciones_utiles
+                        "
                 data-banner-img-position="top">
 
                 <picture>
@@ -614,13 +623,11 @@
 
               </div>
 
-              <div class="banner__style_primer__b xs-hide banner__style_vacaciones_left_content" style="margin:15px;">
-
-
+              <div class="banner__style_primer__b xs-hide banner__style_vacaciones_left_content">
 
                 <div class="banner__title">
                   <span class="banner__propuesta-educativa__title">
-                    <i class="fa fa-lightbulb-o"></i> Inicio 4 de enero
+                    <i class="fa fa-lightbulb-o"></i> Inicio 4, 7 y 8 de enero
                   </span>
                 </div>
                 <div class="banner__subtitle">
@@ -1179,6 +1186,7 @@
 
     <!--
 
+    <!--
 
   -->
 

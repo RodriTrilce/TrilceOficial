@@ -154,6 +154,7 @@
                   </div>
                 </li>
 
+                <li class=""><a href="/colegio/vacaciones-utiles" class="{{ (Request::is('*vacaciones-utiles*')?'nav-item-active':'') }}">Vacaciones Útiles</a></li>
                 <li class=""><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active':'') }}">Blog</a></li>
                 <li><a href="/colegio/propuesta-educativa" class="{{ (Request::is('colegio/propuesta-educativa')?'nav-item-active':'') }} ">Propuesta educativa</a></li>
                 <li class=""><a href="/colegio/contacto" class="{{ (Request::is('colegio/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctanos</a></li>

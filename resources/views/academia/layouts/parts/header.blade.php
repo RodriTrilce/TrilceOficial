@@ -5,7 +5,7 @@
     </div>
     <div class="row col-xs col-sm-9 col-lg-10 end-xs">
         <div class="col-xs-12 nav-info">
-            <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <a class="phone" href="tel:+51016198100"><b>6198 100</b></a> <span>|</span> <a href="/menu-trilce" target="_blank">Menú Trilce</a> </span>
+            <span class="nav-info-content"><a href="/"><i class="fa fa-home"></i></a> <span>|</span> <a href="http://app.trilce.edu.pe/App/" target="_blank">Intranet para alumnos</a> <span>|</span> Call center: <a class="phone" href="tel:+51016198100"><b>6198 100</b></a> <span>|</span> <a href="/menu-trilce" target="_blank">Menú Trilce</a> </span>
         </div>
         <div class="col-xs-12">
           <nav class="nav-burger">
@@ -16,7 +16,7 @@
 
             <ul>
               <li class="nav-info-responsive nav-info-academia">
-                <div><a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a></div>
+                <div><a class="nav-info-colegio__intranet" href="http://app.trilce.edu.pe/App/" target="_blank">Intranet para alumnos</a></div>
                 <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>6198 100</b></a></div>
               </li>
 

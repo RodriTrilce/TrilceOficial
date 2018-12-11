@@ -51,7 +51,7 @@
     <div class="row col-xs-12 col-sm-10 col-md-9 start-sm">
 
       @foreach ($posts as $post)
-        @if($post->site == $site && $post->marker !== 1)
+        @if($post->marker !== 1)
 
           <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
             <div class="col-xs-4 col-sm-6 blog-home-grid--item-image">

@@ -24,7 +24,6 @@ class BlogController extends Controller
       ['type', '=', $this->typePost],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
-      ['marker', '=', '0']
     ])
     ->orderBy('created_at', 'desc')
     ->paginate(10);
@@ -34,11 +33,16 @@ class BlogController extends Controller
       ['site', '=', $this->site],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
-      ['marker' , '=', '1']
     ])
     ->orderBy('created_at', 'desc')
     ->take(4)
     ->get();
+
+    $filtrado = $posts->filter(function($v){
+      if($v->site !== $this->site && $v->marker !== 1){
+        return $v;
+      }
+    });
 
     return view('/colegio/blog')->with([
                                         'posts'    => $posts,

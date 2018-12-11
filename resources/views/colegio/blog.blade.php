@@ -33,6 +33,7 @@
     </div>
 
 
+    <!--
     <div class="row col-xs-12 blog-home-aftertop">
       @foreach ($markers->slice(1) as $marker)
         <div class="row col-xs-12 col-sm-4 blog-home-aftertop--item">
@@ -41,6 +42,8 @@
         </div>
       @endforeach
     </div>
+  -->
+
   @endif
 
 

@@ -33,6 +33,7 @@ class BlogController extends Controller
       ['site', '=', $this->site],
       ['visible', '=', '1'],
       ['approved', '=', '1'],
+      ['marker', '=', '1']
     ])
     ->orderBy('created_at', 'desc')
     ->take(4)

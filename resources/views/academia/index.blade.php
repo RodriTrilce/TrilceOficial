@@ -379,7 +379,6 @@
     </div>
 
 
-<!--
 
 
     <div data-title="ciclo repaso">
@@ -433,7 +432,7 @@
             </span>
             <span style="display:block;margin-top: 20px; margin-bottom:10px;">
               <button class="banner__button-cta banner__button-cta--white">
-                <a href="#inicios" target="_blank">10 de diciembre</a>
+                <a href="#inicios" target="_blank">Incorporaciones</a>
               </button>
             </span>
           </div>
@@ -443,7 +442,8 @@
     </div>
 
 
-  -->
+
+
 
     <div data-title="ciclo verano">
         <div
@@ -625,8 +625,6 @@
 
       </div>
     </div>
-
-
 
     <div data-title="primer puesto san marcos diego">
         <div
@@ -819,12 +817,6 @@
       </div>
     </div>
 
-
-<!--
-
-
-
--->
 
   </div>
 

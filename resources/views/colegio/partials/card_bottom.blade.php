@@ -1,7 +1,7 @@
 <div class="card2">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="col-xs-12 col-sm-6 col-md-3 nuevos-i__vacations">
         <a href="/colegio/vacaciones-utiles">
           <i class="fa fa-sun-o"></i>
           <h3>Vacaciones Útiles 2019</h3>

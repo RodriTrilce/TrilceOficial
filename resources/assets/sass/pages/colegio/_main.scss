@@ -581,3 +581,18 @@
   }
 
 }
+
+.nuevos-i__vacations{
+  background: $orange;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+
+  i,h3,p{
+    transition: all .2s ease-in-out;
+    color: white !important;
+  }
+
+  &:hover{
+    transform: scale(1.03);
+  }
+}

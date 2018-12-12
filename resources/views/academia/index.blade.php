@@ -184,7 +184,7 @@
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                PUCP POP 2019<br>
+                POP 2019<br>
               </span>
               <span class="small">
                 Jimm Cisneros
@@ -196,8 +196,6 @@
 
       </div>
     </div>
-
-
     <div data-title="no te quedes sin vacante">
         <div
         class="
@@ -257,8 +255,6 @@
 
       </div>
     </div>
-
-
     <div data-title="primer puesto uni - velarde">
         <div
         class="
@@ -361,11 +357,11 @@
           <div class="banner__style_primer-reverse banner__style_primer--colegio">
 
             <div class="banner__title">
-              <span>1.<sup>er</sup> puesto</span>
+              <span>1.<sup>er</sup> puesto<br>UNI</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                UNI 2019-1<br>
+                Examen Escolares<br>2019-1<br>
               </span>
               <span class="small">
                 Daniela Velarde
@@ -377,10 +373,6 @@
 
       </div>
     </div>
-
-
-
-
     <div data-title="ciclo repaso">
         <div
         class="
@@ -440,11 +432,6 @@
 
       </div>
     </div>
-
-
-
-
-
     <div data-title="ciclo verano">
         <div
         class="
@@ -504,8 +491,6 @@
 
       </div>
     </div>
-
-
     <div data-title="primer puesto uni leonard">
         <div
         class="
@@ -606,11 +591,11 @@
           <div class="banner__style_primer-reverse">
 
             <div class="banner__title">
-              <span>1.<sup>er</sup> puesto<br>Católica</span>
+              <span>1.<sup>er</sup> puesto<br>UNI</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                UNI 2018-II<br>
+                2018-II<br>
               </span>
               <span class="small">
                 Leonard Panta Ortega
@@ -625,7 +610,6 @@
 
       </div>
     </div>
-
     <div data-title="primer puesto san marcos diego">
         <div
         class="
@@ -726,11 +710,11 @@
           <div class="banner__style_primer-reverse">
 
             <div class="banner__title">
-              <span>1.<sup>er</sup> puesto<br>Católica</span>
+              <span>1.<sup>er</sup> puesto<br>San&nbsp;Marcos</span>
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                San&nbsp;Marcos 2019-I<br>
+                2019-I<br>
               </span>
 
               <span class="small">
@@ -746,9 +730,6 @@
 
       </div>
     </div>
-
-
-
     <div data-title="eco trilce">
       <div
       class="
@@ -816,7 +797,6 @@
 
       </div>
     </div>
-
 
   </div>
 

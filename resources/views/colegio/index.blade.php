@@ -242,7 +242,7 @@
               </div>
               <div class="banner__subtitle">
                 <span class="normal">
-                  PUCP POP 2019<br>
+                  2019 POP<br>
                 </span>
                 <span class="small">
                   Jimm Cisneros
@@ -359,7 +359,7 @@
               </div>
               <div class="banner__subtitle">
                 <span class="normal">
-                  UNI 2019-1<br>
+                  2019-1<br>
                 </span>
                 <span class="small">
                   Daniela Velarde

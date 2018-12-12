@@ -113,7 +113,7 @@ if(page == 'index'){
    autoplayButtonOutput: false,
    touch: true,
    mouseDrag: true,
-   controls: false,
+   controls: true,
    nav: true,
    autoplayHoverPause: true,
    loop: true,
@@ -122,9 +122,8 @@ if(page == 'index'){
    animateIn: 'trilce_carousel_in',
    animateOut: 'trilce_carousel_out',
    swipeAngle : 50,
-
+   controlsText: ['&#xf111;','&#xf112;'],
  });
- //    controlsText: ['&#xf111;','&#xf112;'],
 
 
   try {

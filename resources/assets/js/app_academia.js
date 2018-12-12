@@ -79,7 +79,7 @@ String.prototype.capitalize = function(){
     autoplayButtonOutput: false,
     touch: true,
     mouseDrag: true,
-    controls: false,
+    controls: true,
     nav: true,
     autoplayHoverPause: true,
     loop: true,
@@ -88,6 +88,7 @@ String.prototype.capitalize = function(){
     animateIn: 'trilce_carousel_in',
     animateOut: 'trilce_carousel_out',
     swipeAngle : 50,
+    controlsText: ['&#xf111;','&#xf112;'],
   });
 
 
@@ -124,9 +125,6 @@ String.prototype.capitalize = function(){
 
   SliderTrilce.init(slider);
 
-
-
-  //    controlsText: ['&#xf111;','&#xf112;'],
 
   if(modal_open.length) modal.open(modal_open[0]);
 

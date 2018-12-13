@@ -83,6 +83,8 @@
 @section('scripts')
 
     page = 'index';
-
+    var modal_open = [
+      '#modal-ads',
+    ];
     @parent
 @endsection

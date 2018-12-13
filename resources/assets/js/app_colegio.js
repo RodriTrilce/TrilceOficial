@@ -104,7 +104,9 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
  *  Index
  */
 if(page == 'index'){
- var slider = tns({
+  var modal = new VanillaModal();
+
+  var slider = tns({
    mode: 'gallery',
    container: '.index-banners',
    items: 1,
@@ -123,7 +125,7 @@ if(page == 'index'){
    animateOut: 'trilce_carousel_out',
    swipeAngle : 50,
    controlsText: ['&#xf111;','&#xf112;'],
- });
+  });
 
 
   try {
@@ -158,12 +160,7 @@ if(page == 'index'){
   }
 
   SliderTrilce.init(slider);
-
-  /*
-   setTimeout(function(){
-     document.body.className += ' loaded'
-   }, 1000)
-  */
+  if(modal_open.length) modal.open(modal_open[0]);
 }
 
 /**!

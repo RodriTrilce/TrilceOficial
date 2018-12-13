@@ -787,4 +787,14 @@ nav{
     left: 100%;
     top: 3px;
   }
+
+  &.nav__highlight--left{
+    padding-right: 0;
+    padding-left: 15px;
+    
+    &::before{
+      left: auto;
+      right: 100%;
+    }
+  }
 }

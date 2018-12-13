@@ -73,3 +73,9 @@
     stroke:#f4633a;
   }
 }
+
+.xs-reverse{
+  @include reverse-breakpoint(baby){
+    display: none;
+  }
+}

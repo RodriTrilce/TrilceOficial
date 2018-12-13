@@ -55,7 +55,7 @@
                   @if($k->vacations)
                     <tr>
                       <td data-label="Nivel">{!! $k->grades !!}</td>
-                      <td data-label="Dirección">{{!! $k->address !!}}</td>
+                      <td data-label="Dirección">{!! $k->address !!}</td>
                       <td data-label="Teléfono">{{ $k->phone }}</td>
                     </tr>
                   @endif

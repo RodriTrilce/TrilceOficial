@@ -17,6 +17,11 @@
   padding-right: 12px;
 }
 
+.vacations__logo-svg{
+  width: 100%;
+
+}
+
 .vacations__container-logo{
   @include breakpoint(baby){
     text-align: center;
@@ -270,7 +275,7 @@
 
   &.vacations__bottom--white{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background: white;
     padding: 0;
 
@@ -304,7 +309,7 @@
   @include breakpoint(baby){
     margin-top: 20px;
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -348,4 +353,41 @@
 
 .admission__register{
   justify-content: flex-start !important;
+}
+
+.vacations__lm-container{
+  margin: 40px 0;
+}
+
+.vacations__lm-block{
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.vacations__lm__title{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: $font_geo_smbold;
+}
+
+.vacations_lm__list{
+
+  li{
+    font-family: $font_geo_reg;
+    font-size: 1rem;
+    padding-left: 35px;
+    text-indent: -12px;
+    margin-bottom: 10px;
+
+
+    &::before{
+      content: "\F323";
+      position: relative;
+      left: -5px;
+      color: #f4633a;
+      font-family: "FontAwesome";
+      font-size: 12px;
+      vertical-align: middle;
+    }
+  }
 }

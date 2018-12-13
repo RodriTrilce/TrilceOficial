@@ -77,7 +77,7 @@
                 </ul>
               </li>
 
-              li class=""><a href="/academia/preinscripcion" class="{{ (Request::is('academia/preinscripcion')?'nav-item-active nav-item-noclick':'') }}">Preinscripción</a></li>
+              <li class=""><a href="/academia/preinscripcion" class="{{ (Request::is('academia/preinscripcion')?'nav-item-active nav-item-noclick':'') }}">Preinscripción</a></li>
 
               <li class=""><a href="/academia/#inicios">Ciclos</a></li>
               <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>

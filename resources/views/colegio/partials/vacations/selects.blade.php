@@ -8,7 +8,7 @@
       <option value="/colegio/sede/comas/vacaciones-utiles">Comas</option>
       <option value="/colegio/sede/chorrillos/vacaciones-utiles">Chorrillos</option>
       <option value="/colegio/sede/jesus-maria-salaverry/vacaciones-utiles">Jesús María (Salaverry)</option>
-      <option value="/colegio/sede/la-molina/vacaciones-utiles">La Molina</option>
+      <!--<option value="/colegio/sede/la-molina/vacaciones-utiles">La Molina</option>-->
       <option value="/colegio/sede/los-olivos/vacaciones-utiles">Los Olivos</option>
       <option value="/colegio/sede/maranga/vacaciones-utiles">Maranga</option>
       <option value="/colegio/sede/pro/vacaciones-utiles">Pro</option>

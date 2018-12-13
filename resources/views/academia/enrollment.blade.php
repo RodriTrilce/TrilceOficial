@@ -46,7 +46,7 @@
           </div>
 
           <div class="col-xs start-xs blockb">
-            <h2>Ficha de preinscripción <span>2018</span></h2>
+            <h2>Ficha de <span>preinscripción</span></h2>
             <p>Para ayudarte a realizar este proceso rápidamente, ingresa los siguientes datos.</p>
 
             <div class="form">
@@ -65,10 +65,10 @@
                   <div class="col-xs-12">
                     <fieldset class="form-group">
                       <select name="step1_university" id="step1_university" aria-label="Universidad" required>
-                        <option value="" selected disabled hidden>Universidad</option>
+                        <option value="" selected disabled hidden>Tipo de preparación</option>
                         <option value="uni">UNI</option>
                         <option value="sm">San Marcos</option>
-                        <option value="pucp">PUCP (Católica)</option>
+                        <option value="pucp">Católica</option>
                       </select>
                     </fieldset>
                   </div>

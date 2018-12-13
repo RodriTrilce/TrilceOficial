@@ -775,7 +775,7 @@
 
         <div class="banner__style_primer__a xs-hide">
           <div class="banner__title">
-            <span>¡Nuestros<br>Cachimbos!</span>
+            <span>¡Nuestro<br>Cachimbo!</span>
           </div>
         </div>
 

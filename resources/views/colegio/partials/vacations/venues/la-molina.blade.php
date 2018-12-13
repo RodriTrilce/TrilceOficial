@@ -67,6 +67,18 @@
               <li>Geometría (2.<sup>o</sup> y 3.<sup>o</sup>)</li>
               <li>Química (sólo para 3.<sup>o</sup>)</li>
             </ul>
+            <h4 class="vacations__lm__title">Talleres</h4>
+            <ul class="vacations_lm__list">
+              <li>
+                Talleres de computación:
+                <ul class="vacations_lm__list">
+                  <li>1.<sup>o</sup> Dreamweaver CS6: Diseñadores web básicos</li>
+                  <li>2.<sup>o</sup> 3D studio max 2013: Modeladores de objetos en 3D</li>
+                  <li>3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
+                </ul>
+              </li>
+              <li></li>
+            </ul>
           </div>
           <div class="col-xs-12 col-sm-6 vacations__lm-block">
             <h4 class="vacations__lm__title">Hola titulo</h4>

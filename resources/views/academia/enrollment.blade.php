@@ -54,7 +54,7 @@
 
                   <div class="col-xs-12">
                     <fieldset class="form-group">
-                      <input type="number" min="0" name="step1_dni" placeholder="DNI" aria-label="DNI" id="step1_dni" minlength="8" maxLength="8" required>
+                      <input type="number" min="0" name="step1_dni" placeholder="DNI del alumno" aria-label="DNI" id="step1_dni" minlength="8" maxLength="8" required>
                     </fieldset>
                   </div>
 

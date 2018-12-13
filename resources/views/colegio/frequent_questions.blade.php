@@ -237,7 +237,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Nuestros alumnos no utilizan uniforme escolar1, dado que no deseamos generar más gastos al padre de familia. Además, es importante que el alumno se sienta más cómodo para estudiar. El Ministerio de Educación tiene una disposición en la que se indica que el uso de uniforme no es obligatorio. Sin embargo, el alumno recibe las Normas de Convivencia (Reglamento Interno), en las cuales se hacen precisiones sobre la vestimenta que puede utilizar. 
+                        Nuestros alumnos no utilizan uniforme escolar<sup>1</sup>, dado que no deseamos generar más gastos al padre de familia. Además, es importante que el alumno se sienta más cómodo para estudiar. El Ministerio de Educación tiene una disposición en la que se indica que el uso de uniforme no es obligatorio. Sin embargo, el alumno recibe las Normas de Convivencia (Reglamento Interno), en las cuales se hacen precisiones sobre la vestimenta que puede utilizar. 
                         <br><br>
                         <sup>1</sup> No aplica a todas las sedes.
                       </p>

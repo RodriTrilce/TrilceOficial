@@ -10,10 +10,10 @@
 
           <div class="vacations__logo">
             <div class="vacations__container-logo center-xs">
-              <svg version="1.1" class="vacations__logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" class="vacations__logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 149.7 126" enable-background="new 0 0 149.7 126" xml:space="preserve">
               <g>
-                <g>
+                <g class="banner__svg_vacaciones_utiles__sun">
                   <g>
                     <g>
                       <path fill="#FFC200" d="M98.8,16.2c-0.3-0.5-0.9-0.7-1.4-0.4l-5.1,2.9c-0.5,0.3-0.7,0.9-0.4,1.4c0.3,0.5,0.9,0.7,1.4,0.4

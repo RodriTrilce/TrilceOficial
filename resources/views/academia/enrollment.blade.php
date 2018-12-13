@@ -755,7 +755,7 @@
                     justificación. El monto restante podrá ser utilizado para las inscripciones en otro ciclo,
                     debiéndose abonar la diferencia.</li>
 
-                    <li>En el caso de que el padre de familia, apoderado o alumno mayo de edad requiera la
+                    <li>En el caso de que el padre de familia, apoderado o alumno mayor de edad requiera la
                     devolución del dinero antes de iniciado el periodo de clases, la institución realizará el
                     cobro de S/<div id="terms-5">50</div> por concepto de gastos administrativos.</li>
 

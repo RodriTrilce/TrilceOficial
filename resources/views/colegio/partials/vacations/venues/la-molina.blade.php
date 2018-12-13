@@ -51,13 +51,182 @@
     <div class="js-tabs__content">
       <div class="row col-xs-12">
 
+        <div class="col-xs-12 col-sm-4 vacations__lm-block">
+          <h4 class="vacations__lm__title">
+            1.<sup>o</sup> a 2.<sup>o</sup> grado<br>
+            <span>
+              Martes y jueves<br>
+              8:15 a. m. a 1:45 p. m. <br>
+              Costo: S/ 460
+            </span>
+          </h4>
+          <ul class="vacations_lm__list">
+            <li>
+              Jugando con las matemáticas
+              <ul class="vacations_lm__list">
+                <li>Matemática</li>
+                <li>Raz. Matemático</li>
+              </ul>
+            </li>
+            <li>
+              Descubriendo las letras
+              <ul class="vacations_lm__list">
+                <li>Comunicación</li>
+                <li>Raz. Verbal</li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="vacations__lm__title">Talleres</h4>
+          <ul class="vacations_lm__list">
+            <li>Cómputo: (permanente)<br>
+              <ul class="vacations_lm__list">
+                <li>1.<sup>o</sup> TUX PAINT – GCOMPRIS<br> Dibujando mis primeras imágenes</li>
+                <li>2.<sup>o</sup> POWER POINT 2013<br> Soy un gran expositor </li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
+          <ul class="vacations_lm__list">
+            <li>Iniciación al ajedrez</li>
+            <li>
+              Dibujo y pintura: Tres proyectos:
+              <ul class="vacations_lm__list">
+                <li>Pista con autos de carrera</li>
+                <li>La danza de las canicas</li>
+                <li>Paisaje plano</li>
+              </ul>
+            </li>
+            <li>Danza: Mi primera marinera</li>
+            <li>Deporte: Mini básquet</li>
+          </ul>
+          <br>
+          <strong>HACER LA  INSCRIPCIÓN DESDE LA MATRÍCULA</strong>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 vacations__lm-block">
+          <h4 class="vacations__lm__title">
+            3.<sup>o</sup> a 4.<sup>o</sup> grado<br>
+            <span>
+              Martes y jueves<br>
+              8:15 a. m. a 1:45 p. m. <br>
+              Costo: S/ 460
+            </span>
+          </h4>
+          <ul class="vacations_lm__list">
+            <li>
+              Matemateando
+              <ul class="vacations_lm__list">
+                <li>Matemática</li>
+                <li>Raz. Matemático</li>
+              </ul>
+            </li>
+            <li>
+              Leo y escribo en Trilce
+              <ul class="vacations_lm__list">
+                <li>Comunicación</li>
+                <li>Raz. Verbal</li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="vacations__lm__title">Talleres</h4>
+          <ul class="vacations_lm__list">
+            <li>Cómputo: (permanente)<br>
+              <ul class="vacations_lm__list">
+                <li>3.<sup>o</sup> CODE - MOVIE MAKER<br> Editando mis videos caseros</li>
+                <li>2.<sup>o</sup> COREL DRAW X7<br> Ilustrando mi verano </li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
+          <ul class="vacations_lm__list">
+            <li>Ajedrez</li>
+            <li>
+              Dibujo y pintura: Tres proyectos:
+              <ul class="vacations_lm__list">
+                <li>Iconografía precolombina</li>
+                <li>Collage de animales</li>
+                <li>Viaje al espacio</li>
+              </ul>
+            </li>
+            <li>Danza: Marinera nivel I</li>
+            <li>Deporte: Basquet nivel I</li>
+          </ul>
+          <br>
+          <strong>HACER LA  INSCRIPCIÓN DESDE LA MATRÍCULA</strong>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 vacations__lm-block">
+          <h4 class="vacations__lm__title">
+            5.<sup>o</sup> y 6.<sup>o</sup> grado<br>
+            <span>
+              Martes - Miércoles y Viernes<br>
+              8:15 a. m. a 1:45 p. m. <br>
+              Costo: S/ 510
+            </span>
+          </h4>
+          <ul class="vacations_lm__list">
+            <li>
+              Divirtiéndome con las matemáticas
+              <ul class="vacations_lm__list">
+                <li>Matemática</li>
+                <li>Raz. Matemático</li>
+              </ul>
+            </li>
+            <li>
+              Pequeños escritores
+              <ul class="vacations_lm__list">
+                <li>Comunicación</li>
+                <li>Raz. Verbal</li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="vacations__lm__title">Talleres</h4>
+          <ul class="vacations_lm__list">
+            <li>Cómputo: (permanente)<br>
+              <ul class="vacations_lm__list">
+                <li>3.<sup>o</sup> PHOTOSHOP CS6<br> Retocando mis fotografías</li>
+                <li>2.<sup>o</sup> FLASH CS6<br> Animando ando </li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
+          <ul class="vacations_lm__list">
+            <li>Ajedrez</li>
+            <li>Deporte: basquet nivel II</li>
+            <li>
+              Dibujo y pintura: Tres proyectos:
+              <ul class="vacations_lm__list">
+                <li>Esgrafiado</li>
+                <li>Pintando con plastilina</li>
+                <li>Oleo pastel sobre lija</li>
+              </ul>
+            </li>
+            <li>Danza: Marinera nivel II</li>
+          </ul>
+          <br>
+          <strong>HACER LA  INSCRIPCIÓN DESDE LA MATRÍCULA</strong>
+
+        </div>
+
+
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="js-tabs__content">
+      <div class="row col-xs-12">
+
         <div class="row col-xs-12 vacations__lm-container">
 
-          <div class="col-xs-12 col-sm-6 vacations__lm-block">
+          <div class="col-xs-12 col-sm-4 vacations__lm-block">
             <h4 class="vacations__lm__title">
               1.<sup>o</sup> a 3.<sup>o</sup> Secundaria<br />
-              Lunes, miércoles y viernes <br />
-              8:00 a. m. a 1:10 p. m.
+              <span>
+                Lunes, miércoles y viernes <br />
+                8:00 a. m. a 1:10 p. m.<br>
+                Costo: S/ 615
+              </span>
             </h4>
             <ul class="vacations_lm__list">
               <li>Aritmética</li>
@@ -77,86 +246,117 @@
                   <li>3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
                 </ul>
               </li>
-              <li></li>
+              <li>Taller literario y de redacción</li>
+              <li>Taller de experiencias científicas</li>
             </ul>
+            <h4 class="vacations__lm__title"><span>Evaluaciones semanales</span></h4>
           </div>
-          <div class="col-xs-12 col-sm-6 vacations__lm-block">
-            <h4 class="vacations__lm__title">Hola titulo</h4>
+          <div class="col-xs-12 col-sm-4 vacations__lm-block">
+            <h4 class="vacations__lm__title">
+              1.<sup>o</sup> a 3.<sup>o</sup> secundaria<br>
+              <span>
+                Martes - Jueves<br>
+                8:00 a. m. a 2:10 p. m.<br>
+                Costo: S/ 510
+              </span>
+            </h4>
             <ul class="vacations_lm__list">
-              <li>Matemática</li>
-              <li>Matemática</li>
+              <li>Aritmética</li>
+              <li>Raz. Matemático</li>
+              <li>Álgebra</li>
+              <li>Raz. Verbal</li>
+              <li>Geometría (2.<sup>o</sup> y 3.<sup>o</sup>)</li>
+              <li>Química (sólo para 3.<sup>o</sup>)</li>
             </ul>
+
+            <h4 class="vacations__lm__title">Talleres</h4>
+            <ul class="vacations_lm__list">
+              <li>
+                Talleres de computación:
+                <ul class="vacations_lm__list">
+                  <li>1.<sup>o</sup> Dreamweaver CS6: Diseñadores web básicos</li>
+                  <li>2.<sup>o</sup> 3D studio max 2013: Modeladores de objetos en 3D</li>
+                  <li>3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
+                </ul>
+              </li>
+              <li>Taller literario y de redacción</li>
+              <li>Taller de experiencias científicas</li>
+            </ul>
+            <h4 class="vacations__lm__title"><span>Evaluaciones semanales</span></h4>
           </div>
-          <div class="col-xs-12 col-sm-6 vacations__lm-block">
-            <h4 class="vacations__lm__title">Hola titulo</h4>
+          <div class="col-xs-12 col-sm-4 vacations__lm-block">
+            <h4 class="vacations__lm__title">
+              4.<sup>o</sup> Básico <br>
+              <span>
+                Miércoles - Viernes<br>
+                8:00 a. m. a 2:10 p. m.<br>
+                Costo: S/ 520
+              </span>
+            </h4>
             <ul class="vacations_lm__list">
-              <li>Matemática</li>
-              <li>Matemática</li>
+              <li>Geometría</li>
+              <li>Trigonometría</li>
+              <li>Raz. Matemático</li>
+              <li>Física</li>
+              <li>Raz. Verbal</li>
             </ul>
+            <h4 class="vacations__lm__title">
+              <span>
+                Evaluaciones semanales<br/>
+                Solucionario de exámenes
+              </span>
+            </h4>
           </div>
-          <div class="col-xs-12 col-sm-6 vacations__lm-block">
-            <h4 class="vacations__lm__title">Hola titulo</h4>
+          <div class="col-xs-12 col-sm-4 vacations__lm-block">
+            <h4 class="vacations__lm__title">
+              4.<sup>o</sup> Avanzado<br>
+              <span>
+                Martes - Miércoles - Jueves Y Viernes<br>
+                8:00 a. m. a 2:10 p. m. <br>
+                Costo: S/ 770
+              </span>
+            </h4>
             <ul class="vacations_lm__list">
-              <li>Matemática</li>
-              <li>Matemática</li>
+              <li>Aritmética</li>
+              <li>Álgebra</li>
+              <li>Geometría</li>
+              <li>Trigonometría</li>
+              <li>Raz. Matemático</li>
+              <li>Raz. Verba</li>
+              <li>Química</li>
+              <li>Física</li>
             </ul>
+            <h4 class="vacations__lm__title"><span>
+              Evaluaciones semanales<br>
+              Solucionario de exámenes
+            </span></h4>
+          </div>
+          <div class="col-xs-12 col-sm-4 vacations__lm-block">
+            <h4 class="vacations__lm__title">
+              5.<sup>o</sup> Avanzado<br>
+              <span>
+                Martes - Miércoles - Jueves y Viernes<br>
+                8:00 a. m. a 2:10 p. m. <br>
+                Costo: S/ 770
+              </span>
+            </h4>
+            <ul class="vacations_lm__list">
+              <li>Aritmética</li>
+              <li>Álgebra</li>
+              <li>Geometría</li>
+              <li>Trigonometría</li>
+              <li>Raz. Matemático</li>
+              <li>Raz. Verba</li>
+              <li>Química</li>
+              <li>Física</li>
+            </ul>
+            <h4 class="vacations__lm__title"><span>
+              Evaluaciones semanales<br>
+              Solucionario de exámenes
+            </span></h4>
           </div>
         </div>
 
-      </div>
-    </div>
-    <div class="js-tabs__content">
-      <div class="row col-xs-12">
-        <div class="col-sm-6 col-xs-12">
-          <ul class="ep-generic-list ep-generic-list--off">
-            <li>
-              <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 2.<sup>o</sup> año</h2>
-              <p><strong>Aritmética, Álgebra, Física, Raz. Matemático, Raz. Verbal y Elementos de Geometría</strong></p>
-              <p>Lunes, miércoles y viernes de 8 a. m. a 12 m.</p>
-            </li>
-
-            <li>
-                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> año</h2>
-                <p><strong>Aritmética, Álgebra, Geometría, Química, Raz. Matemático y Raz. Verbal</strong></p>
-                <p>Lunes, miércoles y viernes de 8 a. m. a 12 m.</p>
-            </li>
-
-            <li>
-                <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> año</h2>
-                <p><strong>Aritmética, Álgebra, Geometría, Trigonometría, Física, Química, Raz. Matemático y Raz. Verbal</strong></p>
-                <p>De martes a viernes de 8 a. m. a 12 m.</p>
-            </li>
-
-            <li>
-              <br />
-              <strong><span class="orange">INVERSIÓN</span></strong> <br>
-              <span>(pago por ciclo completo)<br> Incluye material didáctico</span>
-              <ul class="ep-generic-list">
-                <li>
-                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>er</sup> año</strong></h4>
-                  <span class="orange">· Al contado: S/290</span><br>
-                  <span class="orange">· 2 partes: S/310</span><br>
-                  · S/190 (al matricularse)<br>
-                  · S/100 (30 de enero)
-                </li>
-
-                <li>
-                  <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> año</strong></h4>
-                  <span class="orange">· Al contado: S/350</span><br>
-                  <span class="orange">· 2 partes: S/370</span><br>
-                  · S/270 (al matricularse)<br>
-                  · S/100 (30 de enero)
-                </li>
-              </ul>
-            </li>
-
-          </ul>
-          <br>
-          <br>
-        </div>
-        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
-        </div>
       </div>
     </div>
 </div>

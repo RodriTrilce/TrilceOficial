@@ -19,7 +19,6 @@
 
 .vacations__logo-svg{
   width: 100%;
-
 }
 
 .vacations__container-logo{
@@ -368,6 +367,12 @@
   margin-bottom: 20px;
   font-size: 1.2rem;
   font-family: $font_geo_smbold;
+
+  span{
+    font-size: 1.1rem;
+    color: $gray;
+    font-family: $font_geo_reg;
+  }
 }
 
 .vacations_lm__list{

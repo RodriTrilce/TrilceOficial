@@ -86,5 +86,6 @@
     var modal_open = [
       '#modal-ads',
     ];
+    
     @parent
 @endsection

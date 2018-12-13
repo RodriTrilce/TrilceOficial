@@ -383,50 +383,6 @@
       banner__content--colegio
       " style="z-index:13;">
 
-      <style>
-      .banner__svg_vacaciones_utiles{
-        width: 100%;
-        max-width: 300px;
-        min-width: 250px;
-      }
-
-      .banner__style_vacaciones_left_content{
-        text-align: center;
-        min-width: 290px;
-        padding-right: 15px;
-      }
-
-      .banner__style_vacaciones_left_content .banner__propuesta-educativa__title{
-        font-size: 1.6rem;
-      }
-
-      .banner__style_primer__img_varios__vacaciones_utiles picture img {
-        width: 100%;
-        max-width: 680px !important;
-      }
-
-      @media (max-width: 767px){
-       .banner__title span{
-          font-size: 1.2rem !important;
-        }
-      }
-
-      @media (max-width: 767px){
-        .banner__svg_vacaciones_utiles{
-          max-width: 150px;
-          min-width: 130px;
-        }
-
-        .banner__style_vacaciones_left_content{
-          min-width: 170px;
-        }
-
-       .banner__style_vacaciones_left_content .banner__propuesta-educativa__title{
-          font-size: 1.2rem !important;
-        }
-      }
-      </style>
-
         <div class="banner__style_primer banner__style_primer--colegio banner__style_primer__mobile-container">
 
           <div class="banner__style_primer__a">
@@ -434,7 +390,7 @@
               <svg version="1.1" class="banner__svg_vacaciones_utiles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 149.7 126" enable-background="new 0 0 149.7 126" xml:space="preserve">
                   <g>
-                  	<g>
+                  	<g class="banner__svg_vacaciones_utiles__sun">
                   		<g>
                   			<g>
                   				<path fill="#FFC200" d="M98.8,16.2c-0.3-0.5-0.9-0.7-1.4-0.4l-5.1,2.9c-0.5,0.3-0.7,0.9-0.4,1.4c0.3,0.5,0.9,0.7,1.4,0.4

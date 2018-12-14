@@ -97,120 +97,6 @@
 
   </div>
 </div>
-<div data-title="primer puesto pucp Jimm">
-      <div
-      class="
-        banner__item
-        banner__item--left
-        "
-        data-shadow="9"
-        data-shadow-opacity=".15"
-        data-bordercolor="#f4633a"
-        data-border-referer=".banner__style_primer__a"
-        data-border-referer-xs=".banner__style_primer-reverse"
-
-
-        style="
-          background-color: #ffffff;
-        ">
-
-      <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-      <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
-        <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-        <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-          128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-        </svg>
-      </div>
-
-      <div
-      class="banner__image"
-
-      data-image-md="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-500x500.png"
-      data-position-md="90% bottom"
-      data-size-md="hidden"
-
-      data-image-xs="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-250x250.png"
-      data-position-xs="110% bottom"
-      data-size-xs="65%"
-
-      data-position-xs-landscape = "80% bottom"
-      data-size-xs-landscape="50vw"
-
-
-
-      style="
-      background-repeat: no-repeat;
-      z-index: 12;
-      "></div>
-
-      <div class="
-      banner__content
-      banner__content--colegio
-      " style="z-index:13;">
-        <div class="banner__style_primer banner__style_primer--colegio xs-hide">
-          <div class="banner__style_primer__a">
-            <div class="banner__title">
-              <span>¡Máximo<br>puntaje!</span>
-            </div>
-            <div class="banner__subtitle">
-              <span class="normal">
-                Jimm Cisneros<br>
-              </span>
-              <span class="small">
-              </span>
-
-            </div>
-          </div>
-          <div class="banner__style_primer__b">
-
-            <div class="banner__style_primer__number">
-              <span class="number">
-                1<sup>er</sup>
-                <br>
-              </span>
-              <span class="banner__style_primer__number-puesto">
-                PUESTO 2019 POP
-              </span>
-
-            </div>
-
-            <div class="banner__style_primer__text">
-              <span>Católica</span>
-            </div>
-
-          </div>
-          <div class="banner__style_primer__img"
-          data-banner-img-position="top"
-          >
-
-            <picture>
-              <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-250x250.png">
-              <img  src="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-500x500.png"
-                    alt="">
-            </picture>
-
-          </div>
-        </div>
-        <div class="banner__style_primer-reverse banner__style_primer--colegio">
-
-          <div class="banner__title">
-            <span>1.<sup>er</sup> puesto<br>Católica</span>
-          </div>
-          <div class="banner__subtitle">
-            <span class="normal">
-              2019 POP<br>
-            </span>
-            <span class="small">
-              Jimm Cisneros
-            </span>
-          </div>
-
-        </div>
-     </div>
-
-    </div>
-  </div>
 <div data-title="primer puesto uni velarde">
       <div
       class="
@@ -323,6 +209,120 @@
             </span>
             <span class="normal">
               <br>Examen Escolares<br>
+            </span>
+          </div>
+
+        </div>
+     </div>
+
+    </div>
+  </div>
+<div data-title="primer puesto pucp Jimm">
+      <div
+      class="
+        banner__item
+        banner__item--left
+        "
+        data-shadow="9"
+        data-shadow-opacity=".15"
+        data-bordercolor="#f4633a"
+        data-border-referer=".banner__style_primer__a"
+        data-border-referer-xs=".banner__style_primer-reverse"
+
+
+        style="
+          background-color: #ffffff;
+        ">
+
+      <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+      <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+        <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+        <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+        </svg>
+      </div>
+
+      <div
+      class="banner__image"
+
+      data-image-md="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-500x500.png"
+      data-position-md="90% bottom"
+      data-size-md="hidden"
+
+      data-image-xs="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-250x250.png"
+      data-position-xs="110% bottom"
+      data-size-xs="65%"
+
+      data-position-xs-landscape = "80% bottom"
+      data-size-xs-landscape="50vw"
+
+
+
+      style="
+      background-repeat: no-repeat;
+      z-index: 12;
+      "></div>
+
+      <div class="
+      banner__content
+      banner__content--colegio
+      " style="z-index:13;">
+        <div class="banner__style_primer banner__style_primer--colegio xs-hide">
+          <div class="banner__style_primer__a">
+            <div class="banner__title">
+              <span>¡Máximo<br>puntaje!</span>
+            </div>
+            <div class="banner__subtitle">
+              <span class="normal">
+                Jimm Cisneros<br>
+              </span>
+              <span class="small">
+              </span>
+
+            </div>
+          </div>
+          <div class="banner__style_primer__b">
+
+            <div class="banner__style_primer__number">
+              <span class="number">
+                1<sup>er</sup>
+                <br>
+              </span>
+              <span class="banner__style_primer__number-puesto">
+                PUESTO 2019 POP
+              </span>
+
+            </div>
+
+            <div class="banner__style_primer__text">
+              <span>Católica</span>
+            </div>
+
+          </div>
+          <div class="banner__style_primer__img"
+          data-banner-img-position="top"
+          >
+
+            <picture>
+              <source media="(max-width: 767px)" srcset="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-250x250.png">
+              <img  src="/storage/static/images/banner/ogro/banner_10_dic_computo_jim-500x500.png"
+                    alt="">
+            </picture>
+
+          </div>
+        </div>
+        <div class="banner__style_primer-reverse banner__style_primer--colegio">
+
+          <div class="banner__title">
+            <span>1.<sup>er</sup> puesto<br>Católica</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+              2019 POP<br>
+            </span>
+            <span class="small">
+              Jimm Cisneros
             </span>
           </div>
 

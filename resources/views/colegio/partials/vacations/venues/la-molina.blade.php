@@ -266,7 +266,6 @@
       </div>
     </div>
     <div class="js-tabs__content">
-
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
 
@@ -287,39 +286,39 @@
               <ul class="vacations_lm__list">
                 <li>Cómputo: (permanente)<br>
                   <ul class="vacations_lm__list">
-                    <li>- 1.<sup>o</sup> TUX PAINT – GCOMPRIS<br> Dibujando mis primeras imágenes</li>
-                    <li>- 2.<sup>o</sup> POWER POINT 2013<br> Soy un gran expositor </li>
+                    <li>- 3.<sup>o</sup> CODE - MOVIE MAKER<br> Editando mis videos caseros</li>
+                    <li>- 2.<sup>o</sup> COREL DRAW X7<br> Ilustrando mi verano </li>
                   </ul>
                 </li>
               </ul>
-              <h4 class="vacations__lm__title"><span><small>A escoger 2 que dura todo el ciclo:</small></span></h4>
               <ul class="vacations_lm__list">
-                <li>Iniciación al ajedrez</li>
+                <li>Ajedrez</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
-                    <li>- Pista con autos de carrera</li>
-                    <li>- La danza de las canicas</li>
-                    <li>- Paisaje plano</li>
+                    <li>- Iconografía precolombina</li>
+                    <li>- Collage de animales</li>
+                    <li>- Viaje al espacio</li>
                   </ul>
                 </li>
-                <li>Danza: Mi primera marinera</li>
-                <li>Deporte: Mini básquet</li>
+                <li>Danza: Marinera nivel I</li>
+                <li>Deporte: Basquet nivel I</li>
               </ul>
               <br>
             </div>
+
             <div class="col-xs-12 col-md-6">
               <h4 class="vacations__lm__title">Cursos</h4>
               <ul class="vacations_lm__list">
                 <li>
-                  Jugando con las matemáticas
+                  Matemateando
                   <ul class="vacations_lm__list">
                     <li>- Matemática</li>
                     <li>- Raz. Matemático</li>
                   </ul>
                 </li>
                 <li>
-                  Descubriendo las letras
+                  Leo y escribo en Trilce
                   <ul class="vacations_lm__list">
                     <li>- Comunicación</li>
                     <li>- Raz. Verbal</li>
@@ -337,64 +336,76 @@
           <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
         </div>
       </div>
-
     </div>
     <div class="js-tabs__content">
       <div class="row col-xs-12">
-
-        <div class="row col-xs-12 vacations__lm-container">
-          <div class="col-xs-12 col-sm-4 vacations__lm-block">
-            <h4 class="vacations__lm__title">
-              5.<sup>o</sup> y 6.<sup>o</sup> grado<br>
-              <span>
-                Martes - Miércoles y Viernes<br>
-                8:15 a. m. a 1:45 p. m. <br>
-                Costo: S/ 510
-              </span>
-            </h4>
-            <ul class="vacations_lm__list">
-              <li>
-                Divirtiéndome con las matemáticas
-                <ul class="vacations_lm__list">
-                  <li>Matemática</li>
-                  <li>Raz. Matemático</li>
-                </ul>
-              </li>
-              <li>
-                Pequeños escritores
-                <ul class="vacations_lm__list">
-                  <li>Comunicación</li>
-                  <li>Raz. Verbal</li>
-                </ul>
-              </li>
-            </ul>
-            <h4 class="vacations__lm__title">Talleres</h4>
-            <ul class="vacations_lm__list">
-              <li>Cómputo: (permanente)<br>
-                <ul class="vacations_lm__list">
-                  <li>3.<sup>o</sup> PHOTOSHOP CS6<br> Retocando mis fotografías</li>
-                  <li>2.<sup>o</sup> FLASH CS6<br> Animando ando </li>
-                </ul>
-              </li>
-            </ul>
-            <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
-            <ul class="vacations_lm__list">
-              <li>Ajedrez</li>
-              <li>Deporte: basquet nivel II</li>
-              <li>
-                Dibujo y pintura: Tres proyectos:
-                <ul class="vacations_lm__list">
-                  <li>Esgrafiado</li>
-                  <li>Pintando con plastilina</li>
-                  <li>Oleo pastel sobre lija</li>
-                </ul>
-              </li>
-              <li>Danza: Marinera nivel II</li>
-            </ul>
-            <br>
+        <div class="col-sm-6 col-xs-12">
 
 
+          <div class="col-xs-12 vacations__lm__information">
+            <h4 class="vacations__lm__title">Información:</h4>
+            <div class="row col-xs-12 between-xs">
+              <div><i class="fa fa-calendar"></i> Martes, Miércoles y Viernes</div>
+              <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 510</div>
+            </div>
           </div>
+          <br>
+
+          <div class="row col-xs-12">
+            <div class="col-xs-12 col-md-6">
+              <h4 class="vacations__lm__title">Talleres</h4>
+              <ul class="vacations_lm__list">
+                <li>Cómputo: (permanente)<br>
+                  <ul class="vacations_lm__list">
+                    <li>- 3.<sup>o</sup> PHOTOSHOP CS6<br> Retocando mis fotografías</li>
+                    <li>- 2.<sup>o</sup> FLASH CS6<br> Animando ando </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="vacations_lm__list">
+                <li>Ajedrez</li>
+                <li>Deporte: basquet nivel II</li>
+                <li>
+                  Dibujo y pintura: Tres proyectos:
+                  <ul class="vacations_lm__list">
+                    <li>- Esgrafiado</li>
+                    <li>- Pintando con plastilina</li>
+                    <li>- Oleo pastel sobre lija</li>
+                  </ul>
+                </li>
+                <li>Danza: Marinera nivel II</li>
+              </ul>
+              <br>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+              <h4 class="vacations__lm__title">Cursos</h4>
+              <ul class="vacations_lm__list">
+                <li>
+                  Matemateando
+                  <ul class="vacations_lm__list">
+                    <li>- Matemática</li>
+                    <li>- Raz. Matemático</li>
+                  </ul>
+                </li>
+                <li>
+                  Pequeños escritores
+                  <ul class="vacations_lm__list">
+                    <li>- Comunicación</li>
+                    <li>- Raz. Verbal</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <br><br><br>
+
+        </div>
+        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
         </div>
       </div>
     </div>

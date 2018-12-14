@@ -411,51 +411,66 @@
     </div>
     <div class="js-tabs__content">
       <div class="row col-xs-12">
-        <div class="row col-xs-12 vacations__lm-container">
-          <div class="col-xs-12 col-sm-4 vacations__lm-block">
-            <h4 class="vacations__lm__title">
-              1.<sup>o</sup> a 3.<sup>o</sup> Secundaria<br />
-              <span>
-                Lunes, miércoles y viernes <br />
-                8:00 a. m. a 1:10 p. m.<br>
-                Costo: S/ 615
-              </span>
-            </h4>
-            <ul class="vacations_lm__list">
-              <li>Aritmética</li>
-              <li>Raz. Matemático</li>
-              <li>Álgebra</li>
-              <li>Raz. Verbal</li>
-              <li>Geometría (2.<sup>o</sup> y 3.<sup>o</sup>)</li>
-              <li>Química (sólo para 3.<sup>o</sup>)</li>
-            </ul>
-            <h4 class="vacations__lm__title">Talleres</h4>
-            <ul class="vacations_lm__list">
-              <li>
-                Talleres de computación:
-                <ul class="vacations_lm__list">
-                  <li>1.<sup>o</sup> Dreamweaver CS6: Diseñadores web básicos</li>
-                  <li>2.<sup>o</sup> 3D studio max 2013: Modeladores de objetos en 3D</li>
-                  <li>3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
-                </ul>
-              </li>
-              <li>Taller literario y de redacción</li>
-              <li>Taller de experiencias científicas</li>
-            </ul>
-            <h4 class="vacations__lm__title"><span>Evaluaciones semanales</span></h4>
+        <div class="col-sm-6 col-xs-12">
+
+          <div class="col-xs-12 vacations__lm__information">
+            <h4 class="vacations__lm__title">Información:</h4>
+            <div class="row col-xs-12 between-xs">
+              <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
+              <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 615</div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row col-xs-12">
+            <div class="col-xs-12 col-md-6">
+              <h4 class="vacations__lm__title">Talleres</h4>
+              <ul class="vacations_lm__list">
+                <li>Talleres de computación:<br>
+                  <ul class="vacations_lm__list">
+                    <li>- 1.<sup>o</sup> Dreamweaver CS6: Diseñadores web básicos</li>
+                    <li>- 2.<sup>o</sup> 3D studio max 2013: Modeladores de objetos en 3D</li>
+                    <li>- 3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
+                  </ul>
+                </li>
+                <li>Taller literario y de redacción</li>
+                <li>Taller de experiencias científicas</li>
+              </ul>
+              <h4 class="vacations__lm__title"><span>* Evaluaciones semanales</span></h4>
+              <br>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+              <h4 class="vacations__lm__title">Cursos</h4>
+              <ul class="vacations_lm__list">
+                <li>Aritmética</li>
+                <li>Raz. Matemático</li>
+                <li>Álgebra</li>
+                <li>Raz. Verbal</li>
+                <li>Geometría (2.<sup>o</sup> y 3.<sup>o</sup>)</li>
+                <li>Química (sólo para 3.<sup>o</sup>)</li>
+              </ul>
+            </div>
           </div>
 
+
+          <br><br><br>
+
+        </div>
+        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
         </div>
       </div>
     </div>
     <div class="js-tabs__content">
       <div class="row col-xs-12">
-        <div class="row col-xs-12 vacations__lm-container">
-          <div class="col-xs-12 col-sm-4 vacations__lm-block">
+        <div class="row col-xs-12 col-sm vacations__lm-container">
+          <div class="col-xs-12 col-sm vacations__lm-block">
             <h4 class="vacations__lm__title">
               4.<sup>o</sup> Básico <br>
               <span>
-                Miércoles - Viernes<br>
+                Miércoles y viernes<br>
                 8:00 a. m. a 2:10 p. m.<br>
                 Costo: S/ 520
               </span>
@@ -469,16 +484,15 @@
             </ul>
             <h4 class="vacations__lm__title">
               <span>
-                Evaluaciones semanales<br/>
-                Solucionario de exámenes
+                Evaluaciones semanales
               </span>
             </h4>
           </div>
-          <div class="col-xs-12 col-sm-4 vacations__lm-block">
+          <div class="col-xs-12 col-sm vacations__lm-block">
             <h4 class="vacations__lm__title">
               4.<sup>o</sup> Avanzado<br>
               <span>
-                Martes - Miércoles - Jueves Y Viernes<br>
+                Martes, miércoles, jueves y viernes<br>
                 8:00 a. m. a 2:10 p. m. <br>
                 Costo: S/ 770
               </span>
@@ -494,40 +508,55 @@
               <li>Física</li>
             </ul>
             <h4 class="vacations__lm__title"><span>
-              Evaluaciones semanales<br>
-              Solucionario de exámenes
+              Evaluaciones semanales
             </span></h4>
           </div>
+        </div>
+        <div class="col-sm-4 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
         </div>
       </div>
     </div>
     <div class="js-tabs__content">
       <div class="row col-xs-12">
-        <div class="row col-xs-12 vacations__lm-container">
-          <div class="col-xs-12 col-sm-4 vacations__lm-block">
-            <h4 class="vacations__lm__title">
-              5.<sup>o</sup> Avanzado<br>
-              <span>
-                Martes - Miércoles - Jueves y Viernes<br>
-                8:00 a. m. a 2:10 p. m. <br>
-                Costo: S/ 770
-              </span>
-            </h4>
-            <ul class="vacations_lm__list">
-              <li>Aritmética</li>
-              <li>Álgebra</li>
-              <li>Geometría</li>
-              <li>Trigonometría</li>
-              <li>Raz. Matemático</li>
-              <li>Raz. Verba</li>
-              <li>Química</li>
-              <li>Física</li>
-            </ul>
-            <h4 class="vacations__lm__title"><span>
-              Evaluaciones semanales<br>
-              Solucionario de exámenes
-            </span></h4>
+        <div class="col-sm-6 col-xs-12">
+
+          <div class="col-xs-12 vacations__lm__information">
+            <h4 class="vacations__lm__title">Información:</h4>
+            <div class="row col-xs-12 between-xs">
+              <div><i class="fa fa-calendar"></i> Martes, miércoles, jueves y viernes</div>
+              <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 615</div>
+            </div>
           </div>
+          <br>
+
+          <div class="row col-xs-12">
+            <div class="col-xs-12">
+              <h4 class="vacations__lm__title">Talleres</h4>
+              <ul class="vacations_lm__list">
+                <li>Aritmética</li>
+                <li>Álgebra</li>
+                <li>Geometría</li>
+                <li>Trigonometría</li>
+                <li>Raz. Matemático</li>
+                <li>Raz. Verba</li>
+                <li>Química</li>
+                <li>Física</li>
+              </ul>
+              <h4 class="vacations__lm__title"><span>
+                *Evaluaciones semanales
+              </span></h4>
+            </div>
+
+          </div>
+
+
+          <br><br><br>
+
+        </div>
+        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
         </div>
       </div>
     </div>

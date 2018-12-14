@@ -75,7 +75,7 @@
               <br>
             </span>
             <span class="banner__style_primer__number-puesto">
-              PUESTO UNI 2019-1
+              PUESTO 2019-1
             </span>
 
           </div>

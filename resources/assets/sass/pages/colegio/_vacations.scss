@@ -436,3 +436,54 @@
     flex-direction: column;
   }
 }
+
+
+// Colores:
+/*
+.js-tabs__vacations .js-tabs__header{
+
+  li{
+    &:nth-child(1){
+      .vacations-svg{
+        fill: #30b774;
+      }
+
+      .vacations-svg__title{
+        color: #30b774;
+      }
+
+    }
+    &:nth-child(2){
+      .vacations-svg{
+        fill: #2bbeb4;
+      }
+
+      .vacations-svg__title{
+        color: #2bbeb4;
+      }
+
+    }
+    &:nth-child(3){
+      .vacations-svg{
+        fill: #d155a0;
+      }
+
+      .vacations-svg__title{
+        color: #d155a0;
+      }
+
+    }
+    &:nth-child(4){
+      .vacations-svg{
+        fill: #5b6cb3;
+      }
+
+      .vacations-svg__title{
+        color: #5b6cb3;
+      }
+
+    }
+  }
+
+}
+*/

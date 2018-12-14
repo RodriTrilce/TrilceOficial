@@ -219,7 +219,7 @@
                   </ul>
                 </li>
               </ul>
-              <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
+              <h4 class="vacations__lm__title"><span><small>A escoger 2 que dura todo el ciclo:</small></span></h4>
               <ul class="vacations_lm__list">
                 <li>Iniciación al ajedrez</li>
                 <li>
@@ -540,7 +540,7 @@
                 <li>Geometría</li>
                 <li>Trigonometría</li>
                 <li>Raz. Matemático</li>
-                <li>Raz. Verbal</li>
+                <li>Raz. Verba</li>
                 <li>Química</li>
                 <li>Física</li>
               </ul>

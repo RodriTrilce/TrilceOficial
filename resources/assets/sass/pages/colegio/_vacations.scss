@@ -220,7 +220,21 @@
   position: relative;
   top: -10px;
   font-size: 1.2rem;
+
+  sup{
+    font-size: .8rem;
+  }
+
+  &.vacations-svg__title--lm{
+    display: block;
+    padding-top: 20px;
+
+    @include breakpoint(baby){
+      padding-top: 0;
+    }
+  }
 }
+
 
 .vacations-venue__image-rigth{
   display: flex;
@@ -380,19 +394,45 @@
   li{
     font-family: $font_geo_reg;
     font-size: 1rem;
-    padding-left: 35px;
-    text-indent: -12px;
+    padding-left: 30px;
+    text-indent: -10px;
     margin-bottom: 10px;
 
+    li{
+      margin-bottom: 5px;
+
+      &::before{
+        content: "";
+      }
+    }
 
     &::before{
       content: "\F323";
       position: relative;
-      left: -5px;
+      left: -2px;
       color: #f4633a;
       font-family: "FontAwesome";
       font-size: 12px;
       vertical-align: middle;
     }
+  }
+}
+
+
+.vacations__lm__information{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+
+  >div{
+    font-family: $font_geo_reg;
+  }
+
+  i{
+    color: $orange;
+  }
+
+  @include breakpoint(baby){
+    flex-direction: column;
   }
 }

@@ -389,7 +389,9 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      var term91 = document.getElementById('terms-91');
 
      var university = document.getElementById('step1_university');
-     university = university.options[university.selectedIndex].text.toLowerCase();
+     university = university.options[university.selectedIndex].value.toLowerCase();
+
+     console.log(university);
 
      var route = this.cost[0].one[university];
 

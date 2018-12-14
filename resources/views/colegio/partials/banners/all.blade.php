@@ -730,8 +730,8 @@
     <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
       <svg class="t_de_trilce_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-      <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-        128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+          <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+            128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
       </svg>
     </div>
 
@@ -812,16 +812,16 @@
 
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcset="/storage/static/images/banner/ogro/banner_3_dic_2018_primeros_puestos-250x250.png"
+              media="(max-width: 750px)"
+              srcset="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-250x250.png"
               sizes="200px">
 
             <source
-              media="(min-width: 767px)"
-              srcset="/storage/static/images/banner/ogro/banner_3_dic_2018_primeros_puestos-500x500.png"
+              media="(min-width: 750px)"
+              srcset="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-500x500.png"
               sizes="10vw">
 
-            <img src="" srcset="/storage/static/images/banner/ogro/banner_3_dic_2018_primeros_puestos-500x500.png">
+            <img src="" srcset="/storage/static/images/banner/ogro/banner_san-marcos_ingresante_26_octubre-500x500.png">
           </picture>
 
         </div>

@@ -22,29 +22,6 @@
                   <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>6198 100</b></a></div>
                 </li>
 
-                <li class="nav-colegio-aboutus">
-                  <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>
-                  <!--
-                  <div class="dropdown-desk xs-hide-force">
-                    <div class="dropdown-desk-content dropdown-desk-colegio-aboutus">
-                      <div class="row col-xs-12">
-                        <a href="/colegio/propuesta-educativa" class="dd-colegio-aboutus-link">
-                          <div class="row col-xs-4 dd-colegio-aboutus-textleft">
-                            <h2><i class="fa fa-graduation-cap"></i> Propuesta educativa</h2>
-                          </div>
-
-                          <div class="col-xs dd-colegio-aboutus-rocket"></div>
-
-                          <div class="row col-xs dd-colegio-aboutus-textright">
-                            <h2>Conoce nuestra propuesta educativa</h2>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                -->
-                </li>
-
                 <!-- Only mobile -->
                   <!--
                 <li class="nav-colegio-aboutusmobile">
@@ -154,9 +131,31 @@
                   </div>
                 </li>
 
-                <li class=""><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active':'') }}">Blog</a></li>
                 <li><a href="/colegio/propuesta-educativa" class="{{ (Request::is('colegio/propuesta-educativa')?'nav-item-active':'') }} ">Propuesta educativa</a></li>
+                <li class=""><a href="/colegio/blog" class="{{ (Request::is('colegio/blog*')?'nav-item-active':'') }}">Blog</a></li>
                 <li class=""><a href="/colegio/contacto" class="{{ (Request::is('colegio/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctanos</a></li>
+                <li class="nav-colegio-aboutus">
+                  <a href="/colegio/nosotros" class="{{ (Request::is('colegio/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a>
+                  <!--
+                  <div class="dropdown-desk xs-hide-force">
+                    <div class="dropdown-desk-content dropdown-desk-colegio-aboutus">
+                      <div class="row col-xs-12">
+                        <a href="/colegio/propuesta-educativa" class="dd-colegio-aboutus-link">
+                          <div class="row col-xs-4 dd-colegio-aboutus-textleft">
+                            <h2><i class="fa fa-graduation-cap"></i> Propuesta educativa</h2>
+                          </div>
+
+                          <div class="col-xs dd-colegio-aboutus-rocket"></div>
+
+                          <div class="row col-xs dd-colegio-aboutus-textright">
+                            <h2>Conoce nuestra propuesta educativa</h2>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                -->
+                </li>
                 <li class="nav__highlight nav__highlight--left"><a href="/academia">Academia</a></li>
               </ul>
             </nav>

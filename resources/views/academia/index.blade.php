@@ -3,9 +3,7 @@
 @section('title', '')
 @section('content')
 
-@include('academia.partials.modal.ads')
-@include('academia.partials.modal.enrollment')
-@include('academia.partials.modal.contact')
+@include('academia.partials.modal.all')
 
   <div class="banner__loader">
     <div class="banner__loader-title"></div>
@@ -67,8 +65,11 @@
     page = 'index';
 
     var modal_open = [
-    '#modal-ads',
-    
+
+    @if(!session('enrollment') && !session('contact'))
+      '#modal-ads',
+    @endif
+
     @if(session('enrollment'))
       '#modal-1'
     @endif

@@ -100,7 +100,7 @@
             <li>Deporte: Mini básquet</li>
           </ul>
           <br>
-          <strong>HACER LA  INSCRIPCIÓN DESDE LA MATRÍCULA</strong>
+          
 
         </div>
         <div class="col-xs-12 col-sm-4 vacations__lm-block">
@@ -152,7 +152,7 @@
             <li>Deporte: Basquet nivel I</li>
           </ul>
           <br>
-          <strong>HACER LA  INSCRIPCIÓN DESDE LA MATRÍCULA</strong>
+          
 
         </div>
         <div class="col-xs-12 col-sm-4 vacations__lm-block">
@@ -204,7 +204,7 @@
             <li>Danza: Marinera nivel II</li>
           </ul>
           <br>
-          <strong>HACER LA  INSCRIPCIÓN DESDE LA MATRÍCULA</strong>
+          
 
         </div>
 

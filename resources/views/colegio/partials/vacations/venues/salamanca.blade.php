@@ -234,6 +234,72 @@
           <div class="col-xs-12 vacations__lm__information">
             <h4 class="vacations__lm__title">Información:</h4>
             <div class="row col-xs-12 between-xs">
+              <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
+              <div><i class="fa fa-clock-o"></i> 8:30 a. m. a 12:30 p. m.</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 320</div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row col-xs-12">
+            <div class="col-xs-12 col-md-6">
+              <h4 class="vacations__lm__title">Talleres</h4>
+              <ul class="vacations_lm__list">
+                <li>Pequeños cocineros: Mini chef</li>
+                <li>Danza: bailes lúdicos</li>
+                <li>
+                  Dibujo y pintura:
+                  <ul class="vacations_lm__list">
+                    <li>- Máscaras con plato de tecnopor</li>
+                    <li>- Pintura sobre lienzo</li>
+                    <li>- Cofre de cartón</li>
+                  </ul>
+                </li>
+              </ul>
+              <br>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <h4 class="vacations__lm__title">Cursos</h4>
+              <ul class="vacations_lm__list">
+                <li>
+                  Descubriendo las matemáticas
+                  <ul class="vacations_lm__list">
+                    <li>- Matemática</li>
+                  </ul>
+                </li>
+                <li>
+                  Descubriendo las letras
+                  <ul class="vacations_lm__list">
+                    <li>- Comunicación</li>
+                  </ul>
+                </li>
+                <li>
+                  Motricidad fina
+                  <ul class="vacations_lm__list">
+                    <li>- Preparación para la escritura</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <br><br><br>
+
+        </div>
+        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
+          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="js-tabs__content">
+      <div class="row col-xs-12">
+        <div class="col-sm-6 col-xs-12">
+
+
+          <div class="col-xs-12 vacations__lm__information">
+            <h4 class="vacations__lm__title">Información:</h4>
+            <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Martes y jueves</div>
               <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
               <div><i class="fa fa-money"></i> Costo: S/ 320</div>
@@ -252,9 +318,10 @@
                   </ul>
                 </li>
               </ul>
-              <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
+              <h4 class="vacations__lm__title"><span><strong>A escoger 2 talleres que durarán todo el ciclo:</strong></span></h4>
               <ul class="vacations_lm__list">
-                <li>Iniciación al ajedrez</li>
+                <li>Taller de Iniciación al ajedrez</li>
+                <li>Danza: Marinera</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
@@ -263,8 +330,6 @@
                     <li>- Paisaje plano</li>
                   </ul>
                 </li>
-                <li>Danza: Mi primera marinera</li>
-                <li>Deporte: Mini básquet</li>
               </ul>
               <br>
             </div>
@@ -309,78 +374,6 @@
               <div><i class="fa fa-calendar"></i> Martes y jueves</div>
               <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
               <div><i class="fa fa-money"></i> Costo: S/ 320</div>
-            </div>
-          </div>
-          <br>
-
-          <div class="row col-xs-12">
-            <div class="col-xs-12 col-md-6">
-              <h4 class="vacations__lm__title">Talleres</h4>
-              <ul class="vacations_lm__list">
-                <li>Cómputo: (permanente)<br>
-                  <ul class="vacations_lm__list">
-                    <li>- 1.<sup>o</sup> TUX PAINT – GCOMPRIS<br> Dibujando mis primeras imágenes</li>
-                    <li>- 2.<sup>o</sup> POWER POINT 2013<br> Soy un gran expositor </li>
-                  </ul>
-                </li>
-              </ul>
-              <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
-              <ul class="vacations_lm__list">
-                <li>Iniciación al ajedrez</li>
-                <li>
-                  Dibujo y pintura: Tres proyectos:
-                  <ul class="vacations_lm__list">
-                    <li>- Pista con autos de carrera</li>
-                    <li>- La danza de las canicas</li>
-                    <li>- Paisaje plano</li>
-                  </ul>
-                </li>
-                <li>Danza: Mi primera marinera</li>
-                <li>Deporte: Mini básquet</li>
-              </ul>
-              <br>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <h4 class="vacations__lm__title">Cursos</h4>
-              <ul class="vacations_lm__list">
-                <li>
-                  Jugando con las matemáticas
-                  <ul class="vacations_lm__list">
-                    <li>- Matemática</li>
-                    <li>- Raz. Matemático</li>
-                  </ul>
-                </li>
-                <li>
-                  Descubriendo las letras
-                  <ul class="vacations_lm__list">
-                    <li>- Comunicación</li>
-                    <li>- Raz. Verbal</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-
-          <br><br><br>
-
-        </div>
-        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="js-tabs__content">
-      <div class="row col-xs-12">
-        <div class="col-sm-6 col-xs-12">
-
-
-          <div class="col-xs-12 vacations__lm__information">
-            <h4 class="vacations__lm__title">Información:</h4>
-            <div class="row col-xs-12 between-xs">
-              <div><i class="fa fa-calendar"></i> Martes y jueves</div>
-              <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 460</div>
             </div>
           </div>
           <br>
@@ -397,7 +390,7 @@
                 </li>
               </ul>
               <ul class="vacations_lm__list">
-                <li>Ajedrez</li>
+                <li>Taller de ajedrez</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
@@ -406,8 +399,7 @@
                     <li>- Viaje al espacio</li>
                   </ul>
                 </li>
-                <li>Danza: Marinera nivel I</li>
-                <li>Deporte: Basquet nivel I</li>
+                <li>Danza: Marinera</li>
               </ul>
               <br>
             </div>
@@ -450,9 +442,9 @@
           <div class="col-xs-12 vacations__lm__information">
             <h4 class="vacations__lm__title">Información:</h4>
             <div class="row col-xs-12 between-xs">
-              <div><i class="fa fa-calendar"></i> Martes, Miércoles y Viernes</div>
-              <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 510</div>
+              <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
+              <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:00 p. m.</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 340</div>
             </div>
           </div>
           <br>
@@ -469,8 +461,8 @@
                 </li>
               </ul>
               <ul class="vacations_lm__list">
-                <li>Ajedrez</li>
-                <li>Deporte: basquet nivel II</li>
+                <li>Taller de ajedrez</li>
+                <li>Danza: Marinera</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
@@ -479,7 +471,6 @@
                     <li>- Oleo pastel sobre lija</li>
                   </ul>
                 </li>
-                <li>Danza: Marinera nivel II</li>
               </ul>
               <br>
             </div>
@@ -488,7 +479,7 @@
               <h4 class="vacations__lm__title">Cursos</h4>
               <ul class="vacations_lm__list">
                 <li>
-                  Matemateando
+                  Divirtiéndome con las matemáticas
                   <ul class="vacations_lm__list">
                     <li>- Matemática</li>
                     <li>- Raz. Matemático</li>
@@ -523,7 +514,7 @@
             <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 615</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 340</div>
             </div>
           </div>
           <br>
@@ -539,8 +530,13 @@
                     <li>- 3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
                   </ul>
                 </li>
-                <li>Taller literario y de redacción</li>
-                <li>Taller de experiencias científicas</li>
+                <li>Taller de danza Folk dance (permanente)</li>
+                <li>(Un taller a escoger)
+                  <ul class="vacations_lm__list">
+                    <li>Taller literario y de redacción</li>
+                    <li>Taller de experiencias científicas</li>
+                  </ul>
+                </li>
               </ul>
               <h4 class="vacations__lm__title"><span>* Evaluaciones semanales</span></h4>
               <br>
@@ -570,37 +566,22 @@
     </div>
     <div class="js-tabs__content">
       <div class="row col-xs-12">
-        <div class="row col-xs-12 col-sm vacations__lm-container">
-          <div class="col-xs-12 col-sm vacations__lm-block">
-            <h4 class="vacations__lm__title">
-              4.<sup>o</sup> Básico <br>
-              <span>
-                Miércoles y viernes<br>
-                8:00 a. m. a 2:10 p. m.<br>
-                Costo: S/ 520
-              </span>
-            </h4>
-            <ul class="vacations_lm__list">
-              <li>Geometría</li>
-              <li>Trigonometría</li>
-              <li>Raz. Matemático</li>
-              <li>Física</li>
-              <li>Raz. Verbal</li>
-            </ul>
-            <h4 class="vacations__lm__title">
-              <span>
-                Evaluaciones semanales
-              </span>
-            </h4>
+        <div class="col-xs-12 col-sm vacations__lm-container">
+
+
+          <div class="col-xs-12 vacations__lm__information">
+            <h4 class="vacations__lm__title">Información:</h4>
+            <div class="row col-xs-12 col-sm-10 between-xs">
+              <div><i class="fa fa-calendar"></i> Lunes a viernes</div>
+              <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 440</div>
+            </div>
           </div>
+          <br>
+
           <div class="col-xs-12 col-sm vacations__lm-block">
             <h4 class="vacations__lm__title">
               4.<sup>o</sup> Avanzado<br>
-              <span>
-                Martes, miércoles, jueves y viernes<br>
-                8:00 a. m. a 2:10 p. m. <br>
-                Costo: S/ 770
-              </span>
             </h4>
             <ul class="vacations_lm__list">
               <li>Aritmética</li>
@@ -631,7 +612,7 @@
             <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Martes, miércoles, jueves y viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 615</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 440</div>
             </div>
           </div>
           <br>

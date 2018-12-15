@@ -6,40 +6,6 @@
             <div>
               <svg version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
-                  <path d="M346.3,487.1c0,0,0-0.1,0-0.1l-26.6-79.8c-1.2-3.4-4.2-5.8-7.8-6c-3.5-0.2-7,1.7-8.6,4.9l-35.5,71
-                  	c-2.2,4.4-0.4,9.7,4,11.9c4.4,2.2,9.7,0.4,11.9-4l4.9-9.8l42,21l7.7,23.1c1.3,3.7,4.7,6.1,8.4,6.1c0.9,0,1.9-0.1,2.8-0.5
-                  	c4.6-1.5,7.2-6.6,5.6-11.2L346.3,487.1z M296.6,459.3l13.1-26.1l13.1,39.2L296.6,459.3z M368.5,384.3L262,331.1
-                  	c-4.4-2.2-9.7-0.4-11.9,4c-2.2,4.4-0.4,9.7,4,11.9l106.5,53.2c1.3,0.6,2.6,0.9,4,0.9c3.2,0,6.4-1.8,7.9-4.9
-                  	C374.6,391.9,372.9,386.5,368.5,384.3z M400,436.7c-4.9,0-8.9,4-8.9,8.9v124.2c0,4.9,4,8.9,8.9,8.9s8.9-4,8.9-8.9V445.5
-                  	C408.9,440.6,404.9,436.7,400,436.7z M467.3,295.3c-0.5-10.8-6.6-20.1-16.3-25c-15.3-7.6-33.8-6.8-48.2,2.3l-3.3,2
-                  	c-1.6-7.7-6.6-14.2-13.8-17.8c-7.6-3.9-16.7-3.7-24.2,0.5L307,286.9c-2.9,1.6-4.8,4.8-4.6,8.1s2.1,6.4,5.2,7.8l97.6,44.4
-                  	c1.2,0.5,2.4,0.8,3.7,0.8c1.7,0,3.3-0.4,4.7-1.4l39.9-24.9C462.6,316,467.8,306.1,467.3,295.3z M331.2,294l38.8-21.1
-                  	c2.4-1.3,5.3-1.4,7.7-0.2c3.9,2,4.5,5.6,4.6,7c0.1,1.5-0.2,5.1-4,7.5l-25.6,16.5L331.2,294z M444.1,306.6L408.2,329l-36.1-16.4
-                  	l40-25c9.3-5.8,21.1-6.4,31-1.4c3.9,1.9,6.2,5.6,6.5,9.9C449.7,300.4,447.7,304.3,444.1,306.6z M565.5,273.8
-                  	c-0.4-0.3-0.8-0.6-1.2-0.8l-142.5-79.5c-0.6-0.3-1.2-0.6-1.8-0.7c-12.8-5.9-27.1-6-39.9,0c-0.7,0.2-1.3,0.4-1.9,0.8L235.7,273
-                  	c-0.4,0.2-0.8,0.5-1.2,0.8c-12.9,7.4-20.8,20.4-20.8,34.2v186.3c0,13.8,7.9,26.8,20.8,34.2c0.4,0.3,0.8,0.6,1.2,0.8l142.5,79.5
-                  	c0.6,0.3,1.2,0.6,1.8,0.7c6.4,3,13.1,4.5,20,4.5c6.9,0,13.6-1.5,19.9-4.5c0.7-0.2,1.3-0.4,1.9-0.8l142.5-79.5
-                  	c0.4-0.2,0.8-0.5,1.2-0.8c12.9-7.4,20.8-20.4,20.8-34.2V308C586.3,294.2,578.4,281.2,565.5,273.8z M568.6,494.3
-                  	c0,7.9-4.8,15.1-12.7,19.3c-0.5,0.2-1,0.6-1.4,0.9l-139.9,78.1c-0.4,0.1-0.7,0.3-1.1,0.5c-8.6,4.3-18.2,4.3-26.8,0
-                  	c-0.4-0.2-0.7-0.3-1.1-0.4l-140-78.1c-0.4-0.3-0.9-0.6-1.4-0.9c-8-4.2-12.7-11.4-12.7-19.3V308c0-7.9,4.8-15.1,12.7-19.3
-                  	c0.5-0.2,1-0.6,1.4-0.9l139.9-78.1c0.4-0.1,0.7-0.3,1.1-0.5c8.6-4.3,18.2-4.3,26.8,0c0.4,0.2,0.7,0.3,1.1,0.4l140,78.1
-                  	c0.4,0.3,0.9,0.6,1.4,0.9c8,4.2,12.7,11.4,12.7,19.3V494.3z M538,331.1l-106.5,53.2c-4.4,2.2-6.2,7.5-4,11.9
-                  	c1.6,3.1,4.7,4.9,7.9,4.9c1.3,0,2.7-0.3,4-0.9L545.9,347c4.4-2.2,6.2-7.5,4-11.9C547.7,330.7,542.4,328.9,538,331.1z M524.2,464.6
-                  	c-4.9,0-8.9,4-8.9,8.9c0,6.8-3.8,12.9-9.8,15.9c-5.6,2.8-12,2.5-17.3-0.8c-5.4-3.3-8.4-8.8-8.4-15.1v-23.7
-                  	c0-10.1,5.6-19.3,14.7-23.8c4.6-2.3,9.6-2,14,0.6c4.3,2.7,6.8,7.1,6.8,12.2c0,4.9,4,8.9,8.9,8.9s8.9-4,8.9-8.9
-                  	c0-11.2-5.7-21.4-15.2-27.3c-9.5-5.9-21.2-6.4-31.2-1.4c-15.1,7.6-24.5,22.8-24.5,39.7v23.7c0,12.4,6.3,23.7,16.8,30.2
-                  	c5.7,3.5,12.2,5.3,18.6,5.3c5.4,0,10.8-1.3,15.9-3.8c12.1-6.1,19.6-18.2,19.6-31.7C533.1,468.5,529.1,464.6,524.2,464.6z"/>
-              </svg>
-
-            </div>
-            <div><span class="vacations-svg__title vacations-svg__title--lm">Inicial</span></div>
-          </a>
-      </li>
-      <li>
-          <a href="#" class="js-tabs__title">
-            <div>
-              <svg version="1.1" class="vacations-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
               <g>
               	<path  d="M604.7,258H435.3c-3.9,0-7.1,3.2-7.1,7.1v63.5c0,3.9,3.2,7.1,7.1,7.1c0.8,0,1.5-0.1,2.2-0.4l8.9-3
               		c9.6-3.2,20,2.1,23.1,11.7c3.2,9.6-2.1,20-11.7,23.1c-3.7,1.2-7.7,1.2-11.4,0l-8.9-3c-3.7-1.2-7.7,0.8-8.9,4.5
@@ -231,78 +197,13 @@
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
 
-          <div class="col-xs-12 vacations__lm__information">
-            <h4 class="vacations__lm__title">Información:</h4>
-            <div class="row col-xs-12 between-xs">
-              <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
-              <div><i class="fa fa-clock-o"></i> 8:30 a. m. a 12:30 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 320</div>
-            </div>
-          </div>
-          <br>
-
-          <div class="row col-xs-12">
-            <div class="col-xs-12 col-md-6">
-              <h4 class="vacations__lm__title">Talleres</h4>
-              <ul class="vacations_lm__list">
-                <li>Pequeños cocineros: Mini chef</li>
-                <li>Danza: bailes lúdicos</li>
-                <li>
-                  Dibujo y pintura:
-                  <ul class="vacations_lm__list">
-                    <li>- Máscaras con plato de tecnopor</li>
-                    <li>- Pintura sobre lienzo</li>
-                    <li>- Cofre de cartón</li>
-                  </ul>
-                </li>
-              </ul>
-              <br>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <h4 class="vacations__lm__title">Cursos</h4>
-              <ul class="vacations_lm__list">
-                <li>
-                  Descubriendo las matemáticas
-                  <ul class="vacations_lm__list">
-                    <li>- Matemática</li>
-                  </ul>
-                </li>
-                <li>
-                  Descubriendo las letras
-                  <ul class="vacations_lm__list">
-                    <li>- Comunicación</li>
-                  </ul>
-                </li>
-                <li>
-                  Motricidad fina
-                  <ul class="vacations_lm__list">
-                    <li>- Preparación para la escritura</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-
-          <br><br><br>
-
-        </div>
-        <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="js-tabs__content">
-      <div class="row col-xs-12">
-        <div class="col-sm-6 col-xs-12">
-
 
           <div class="col-xs-12 vacations__lm__information">
             <h4 class="vacations__lm__title">Información:</h4>
             <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Martes y jueves</div>
               <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 320</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 270</div>
             </div>
           </div>
           <br>
@@ -321,13 +222,14 @@
               <h4 class="vacations__lm__title"><span><strong>A escoger 2 talleres que durarán todo el ciclo:</strong></span></h4>
               <ul class="vacations_lm__list">
                 <li>Taller de Iniciación al ajedrez</li>
-                <li>Danza: Marinera</li>
+                <li>Danza: Folk dance</li>
+                <li>Deporte: Mini básquet</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
-                    <li>- Pista con autos de carrera</li>
-                    <li>- La danza de las canicas</li>
-                    <li>- Paisaje plano</li>
+                    <li>- Dibujo con plumones: con líneas y formas</li>
+                    <li>- Pintura “si yo fuese…. ” pop art</li>
+                    <li>- Modelado: con tiras de cartulina</li>
                   </ul>
                 </li>
               </ul>
@@ -373,7 +275,7 @@
             <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Martes y jueves</div>
               <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 320</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 270</div>
             </div>
           </div>
           <br>
@@ -391,15 +293,16 @@
               </ul>
               <ul class="vacations_lm__list">
                 <li>Taller de ajedrez</li>
+                <li>Deporte básquet nivel I</li>
+                <li>Danza Folk Dance</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
-                    <li>- Iconografía precolombina</li>
-                    <li>- Collage de animales</li>
-                    <li>- Viaje al espacio</li>
+                    <li>- Dibujo con lápiz carboncillo: “Retrato fantástico”</li>
+                    <li>- Pintura ”Pintamos como Jackson Pollock”</li>
+                    <li>- Modelado de mascaras con papel</li>
                   </ul>
                 </li>
-                <li>Danza: Marinera</li>
               </ul>
               <br>
             </div>
@@ -444,7 +347,7 @@
             <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:00 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 340</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 300</div>
             </div>
           </div>
           <br>
@@ -462,13 +365,14 @@
               </ul>
               <ul class="vacations_lm__list">
                 <li>Taller de ajedrez</li>
-                <li>Danza: Marinera</li>
+                <li>Deporte Básquet nivel II</li>
+                <li>Danza Folk dance</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
-                    <li>- Esgrafiado</li>
-                    <li>- Pintando con plastilina</li>
-                    <li>- Oleo pastel sobre lija</li>
+                    <li>- Pintura: Interpretación plástica “Nos expresamos como Van Gogh.”</li>
+                    <li>- Modelado de máscaras de animales</li>
+                    <li>- Collage y pintura: retrato fantástico</li>
                   </ul>
                 </li>
               </ul>
@@ -514,7 +418,7 @@
             <div class="row col-xs-12 between-xs">
               <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 340</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 355</div>
             </div>
           </div>
           <br>
@@ -530,11 +434,12 @@
                     <li>- 3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
                   </ul>
                 </li>
-                <li>Taller de danza Folk dance (permanente)</li>
-                <li>(Un taller a escoger)
+                <li>A escoger dos talleres
                   <ul class="vacations_lm__list">
-                    <li>Taller literario y de redacción</li>
-                    <li>Taller de experiencias científicas</li>
+                    <li>- Taller literario y de redacción</li>
+                    <li>- Taller de experiencias científicas</li>
+                    <li>- Taller deportivo: básquett</li>
+                    <li>- Taller de danza: Folk dance</li>
                   </ul>
                 </li>
               </ul>
@@ -574,7 +479,7 @@
             <div class="row col-xs-12 col-sm-10 between-xs">
               <div><i class="fa fa-calendar"></i> Lunes a viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 440</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 380</div>
             </div>
           </div>
           <br>
@@ -610,9 +515,9 @@
           <div class="col-xs-12 vacations__lm__information">
             <h4 class="vacations__lm__title">Información:</h4>
             <div class="row col-xs-12 between-xs">
-              <div><i class="fa fa-calendar"></i> De lunes a viernes</div>
+              <div><i class="fa fa-calendar"></i> De Lunes a Viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:00 a. m. a 1:10 p. m.</div>
-              <div><i class="fa fa-money"></i> Costo: S/ 440</div>
+              <div><i class="fa fa-money"></i> Costo: S/ 380</div>
             </div>
           </div>
           <br>

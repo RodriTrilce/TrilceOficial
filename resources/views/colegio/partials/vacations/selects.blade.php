@@ -16,7 +16,7 @@
       <option value="/colegio/sede/san-isidro/vacaciones-utiles">San Isidro</option>
       <option value="/colegio/sede/san-juan-de-lurigancho/vacaciones-utiles">San Juan de Lurigancho</option>
       <option value="/colegio/sede/san-juan-de-lurigancho-wiesse/vacaciones-utiles">San Juan de Lurigancho (Wiesse)</option>
-      <option value="/colegio/sede/salamanca/vacaciones-utiles">Salamanca</option>
+      {{-- <option value="/colegio/sede/salamanca/vacaciones-utiles">Salamanca</option> --}}
       <option value="/colegio/sede/surco/vacaciones-utiles">Surco</option>
       <option value="/colegio/sede/villa-el-salvador/vacaciones-utiles">Villa El Salvador</option>
       <option value="/colegio/sede/villa-maria/vacaciones-utiles">Villa Maria</option>

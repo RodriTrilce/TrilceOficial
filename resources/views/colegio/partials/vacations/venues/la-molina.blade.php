@@ -345,7 +345,7 @@
           <div class="col-xs-12 vacations__lm__information">
             <h4 class="vacations__lm__title">Información:</h4>
             <div class="row col-xs-12 between-xs">
-              <div><i class="fa fa-calendar"></i> Martes, Miércoles y Viernes</div>
+              <div><i class="fa fa-calendar"></i> Lunes, miércoles y viernes</div>
               <div><i class="fa fa-clock-o"></i> 8:15 a. m. a 1:45 p. m.</div>
               <div><i class="fa fa-money"></i> Costo: S/ 510</div>
             </div>

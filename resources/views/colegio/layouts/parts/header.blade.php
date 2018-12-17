@@ -47,24 +47,24 @@
                                 <li class="item {{ (Request::is('colegio/sede/callao*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/callao">Callao</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/chorrillos*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/chorrillos">Chorrillos</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/comas*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/comas">Comas</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/jesus-maria-salaverry*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/la-molina*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/la-molina">La Molina</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/los-olivos*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/los-olivos">Los Olivos</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/maranga*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/maranga">Maranga</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/pro*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/pro">Pro</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/santa-beatriz-roma*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/jesus-maria-salaverry*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</a></li>
                               </ul>
                             </div>
                             <div class="col-xs">
                               <ul class="ul-venue">
-                                <li class="item {{ (Request::is('colegio/sede/surco*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/surco">Surco</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/san-isidro*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/san-isidro">San Isidro</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/villa-maria*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/villa-maria">Villa María</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/villa-el-salvador*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/villa-el-salvador">Villa El Salvador</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/la-molina*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/la-molina">La Molina</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/salamanca*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/salamanca">Salamanca</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/santa-anita*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/santa-anita">Santa Anita</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/san-isidro*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/san-isidro">San Isidro</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/san-juan-de-lurigancho')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/san-juan-de-lurigancho">San Juan de Lurigancho</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/san-juan-de-lurigancho-wiesse')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/san-juan-de-lurigancho-wiesse">San Juan de Lurigancho (Wiesse)</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/santa-anita*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/santa-anita">Santa Anita</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/santa-beatriz-roma*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/surco*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/surco">Surco</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/villa-el-salvador*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/villa-el-salvador">Villa El Salvador</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/villa-maria*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/villa-maria">Villa María</a></li>
                               </ul>
                             </div>
                           </div>
@@ -104,20 +104,20 @@
                        <option value="/colegio/sede/callao">Callao</option>
                        <option value="/colegio/sede/chorrillos">Chorrillos</option>
                        <option value="/colegio/sede/comas">Comas</option>
+                       <option value="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</option>
+                       <option value="/colegio/sede/la-molina">La Molina</option>
                        <option value="/colegio/sede/los-olivos">Los Olivos</option>
                        <option value="/colegio/sede/maranga">Maranga</option>
                        <option value="/colegio/sede/pro">Pro</option>
-                       <option value="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</option>
-                       <option value="/colegio/sede/jesus-maria-salaverry">Jesús María (Salaverry)</option>
-                       <option value="/colegio/sede/surco">Surco</option>
-                       <option value="/colegio/sede/san-isidro">San Isidro</option>
-                       <option value="/colegio/sede/villa-maria">Villa María</option>
-                       <option value="/colegio/sede/villa-el-salvador">Villa El Salvador</option>
-                       <option value="/colegio/sede/la-molina">La Molina</option>
                        <option value="/colegio/sede/salamanca">Salamanca</option>
-                       <option value="/colegio/sede/santa-anita">Santa Anita</option>
+                       <option value="/colegio/sede/san-isidro">San Isidro</option>
                        <option value="/colegio/sede/san-juan-de-lurigancho">San Juan de Lurigancho</option>
                        <option value="/colegio/sede/san-juan-de-lurigancho-wiesse">San Juan de Lurigancho (Wiesse)</option>
+                       <option value="/colegio/sede/santa-anita">Santa Anita</option>
+                       <option value="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</option>
+                       <option value="/colegio/sede/surco">Surco</option>
+                       <option value="/colegio/sede/villa-el-salvador">Villa El Salvador</option>
+                       <option value="/colegio/sede/villa-maria">Villa María</option>
                     </select>
                     <select class="menu-colegio-sedes-select" id="selectRedirectProvince" onchange="location = this.value;">
                        <option value="" selected disabled hidden>Colegios en Provincia</option>

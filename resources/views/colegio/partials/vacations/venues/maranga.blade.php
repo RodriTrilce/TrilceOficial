@@ -153,7 +153,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
+              <div><span class="vacations-svg__title">Ciclo especial</span></div>
             </a>
       </li>
     </ul>

@@ -370,7 +370,7 @@
             </li>
 
             <li><br>
-              <p><i>*Se requiere un mínimo de 10 inscritos para la apertura de cada taller.</i></p>
+              <p><i>*Se requiere un mínimo de 10 alumnos inscritos para su apertura.</i></p>
             </li>
 
 
@@ -466,7 +466,7 @@
 
             <li><br>
               <strong><span class="orange">INVERSIÓN: S/100</span></strong> <br>
-              <span>Por cada taller <br> (pago por ciclo completo) <br> No incluye uniforme</span>
+              <span>Por cada taller <br> (pago por ciclo completo) <br> No incluye materiales</span>
             </li>
 
             <br>
@@ -490,7 +490,7 @@
             <br>
             <li>
               <p><i>
-                * Cada taller de primaria y secundaria deberá tener un mínimo de 10 alumnos inscritos para su apertura
+                *Se requiere un mínimo de 10 alumnos inscritos para su apertura.
               </i></p>
             </li>
           </ul>
@@ -530,7 +530,7 @@
 
             <li><br>
               <strong><span class="orange">INVERSIÓN: S/100</span></strong> <br>
-              <span>Por cada taller <br> (pago por ciclo completo) <br> No incluye MATERIALES</span>
+              <span>Por cada taller <br> (pago por ciclo completo) <br> No incluye materiales</span>
             </li>
 
             <br>
@@ -551,7 +551,7 @@
             <br>
             <li>
               <p><i>
-                * Cada taller de primaria y secundaria deberá tener un mínimo de 10 alumnos inscritos para su apertura
+                *Se requiere un mínimo de 10 alumnos inscritos para su apertura.
               </i></p>
             </li>
           </ul>

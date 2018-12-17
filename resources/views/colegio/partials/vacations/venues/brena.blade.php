@@ -170,7 +170,7 @@
             </li>
 
             <li>
-                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup></h3>
+                <h3><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> año</h3>
                 <p>Martes y jueves de 10 a. m. a 12 m.</p>
                 <br>
             </li>

@@ -153,7 +153,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
+              <div><span class="vacations-svg__title">Ciclo especial</span></div>
             </a>
       </li>
     </ul>
@@ -317,7 +317,7 @@
                 </strong>
               </span>
               S/260 (al matricularse) <br>
-              S/100 (30 de enero)              
+              S/100 (30 de enero)
               <br><br>
             </li>
 

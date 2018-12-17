@@ -226,11 +226,16 @@
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> Historia del Perú</li>
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> Historia Universal</li>
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> Geografía</li>
-            <li><span>(pago por ciclo completo) Incluye material didáctico de la academia (libros)</span></li>
             <li>
               <br>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span>Por cada curso<br>(pago por ciclo completo)<br> Incluye material didáctico</span>
+              <span>
+                Tres horas semanales<br>
+                (consultar frecuencia de horarios)<br>
+                Por cada curso<br>
+                (pago por ciclo completo)<br>
+                 Incluye material didáctico
+               </span>
             </li>
           </ul>
         </div>

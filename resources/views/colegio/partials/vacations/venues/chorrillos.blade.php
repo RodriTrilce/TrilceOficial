@@ -418,8 +418,8 @@
             </li>
             <li><br>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              Por cada curso
               <span>
+                Por cada curso
                 <br />
                 (pago por ciclo completo)<br>Incluye material didáctico
               </span><br><br>

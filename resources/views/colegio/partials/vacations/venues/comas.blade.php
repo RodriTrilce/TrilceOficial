@@ -100,7 +100,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
+              <div><span class="vacations-svg__title">Ciclo especial</span></div>
             </a>
       </li>
       <li>
@@ -293,7 +293,7 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/110</span></strong> <br>
-              <span class="orange">Por cada taller <br> (pago por ciclo completo)<br> No incluye materiales</span>
+              <span class="orange">Por cada taller <br> (pago por ciclo completo)</span>
               <br><br>
             </li>
 
@@ -424,7 +424,6 @@
           <ul class="ep-generic-list ep-generic-list--off">
             <li>
               <h3><strong>SECUNDARIA</strong></h3>
-              Historia - Geografía
             </li>
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> Biología</li>
             <li><span class="icon_local_span"><i class="fa fa-stop"></i></span> Historia del Perú</li>

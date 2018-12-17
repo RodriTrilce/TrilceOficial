@@ -402,7 +402,8 @@
 
             <li>
               <strong><span class="orange">INVERSIÓN: S/220</span></strong> <br>
-              <span>(pago por ciclo completo)</span>
+              <span>(pago por ciclo completo)</span><br>
+              <span>(Incluye material didáctico)</span>
             </li>
 
 
@@ -547,7 +548,7 @@
 
             <li>
               <strong>ROBÓTICA LEGO*</strong><br>
-              <p>Grupo 1: Martes y jueves de 2 p. m. a 4 p. m.<br>
+              <p>Grupo 1: Martes y jueves de 8 a. m. a 10 a. m.<br>
                 Grupo 2: Martes y jueves de 10:30 a. m. a 12:30 p. m.
               </p><br>
             </li>
@@ -581,13 +582,13 @@
             </li>
 
             <li>
-              <strong><span class="orange">SISTEMA 5.<sup>o</sup> AÑO UNI</span></strong> <br>
+              <strong><span class="orange">SISTEMA 5.<sup>o</sup> PRE UNI</span></strong> <br>
               <strong>Aritmética, Álgebra, Geometría, Trigonometría, Física y Química</strong>
               <br>
             </li>
 
             <li>
-              <strong><span class="orange">SISTEMA 5.<sup>o</sup> AÑO SAN MARCOS</span></strong> <br>
+              <strong><span class="orange">SISTEMA 5.<sup>o</sup> PRE SAN MARCOS</span></strong> <br>
               <strong>Aritmética, Álgebra, Geometría, Raz. Matemático, Raz. Verbal, Física y Química</strong>
               <br>
             </li>

@@ -126,7 +126,7 @@
 
 
               </div>
-              <div><span class="vacations-svg__title">Ciclos especial</span></div>
+              <div><span class="vacations-svg__title">Ciclos especiales</span></div>
             </a>
       </li>
     </ul>
@@ -154,7 +154,7 @@
             <li>
                 <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 4.<sup>o</sup> y 5.<sup>o</sup> PRE</h2>
                 <p><strong>Aritmética, Álgebra, Geometría, Trigonometría, Raz. Matemático, Raz. Verbal, Física y Química</strong></p>
-                <p>De martes a viernes de 7:50 a. m. a 1:10 p. m./p>
+                <p>De martes a viernes de 7:50 a. m. a 1:10 p. m.</p>
             </li>
 
             <li>
@@ -218,6 +218,11 @@
             </li>
 
           </ul>
+          <p>
+            <br>
+            <br>
+            <br> <i>*Se requiere un mínimo de 10 inscritos para la apertura de cada taller.</i>
+          </p>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
@@ -252,6 +257,12 @@
 
 
           </ul>
+
+          <p>
+            <br>
+            <br>
+            <br> <i>*Se requiere un mínimo de 10 inscritos para la apertura de cada taller.</i>
+          </p>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
           <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
@@ -290,7 +301,7 @@
                 </strong>
               </span>
               S/350 (al matricularse) <br>
-              S/230 (30 de enero)
+              S/230 (26 de enero)
               <br><br>
             </li>
 

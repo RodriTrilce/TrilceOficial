@@ -358,8 +358,8 @@
               <ul class="vacations_lm__list">
                 <li>Cómputo: (permanente)<br>
                   <ul class="vacations_lm__list">
-                    <li>- 3.<sup>o</sup> PHOTOSHOP CS6<br> Retocando mis fotografías</li>
-                    <li>- 2.<sup>o</sup> FLASH CS6<br> Animando ando </li>
+                    <li>- 5.<sup>o</sup> PHOTOSHOP CS6<br> Retocando mis fotografías</li>
+                    <li>- 6.<sup>o</sup> FLASH CS6<br> Animando ando </li>
                   </ul>
                 </li>
               </ul>

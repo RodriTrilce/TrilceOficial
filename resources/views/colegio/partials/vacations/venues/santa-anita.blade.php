@@ -287,7 +287,7 @@
                 <li>Cómputo: (permanente)<br>
                   <ul class="vacations_lm__list">
                     <li>- 3.<sup>o</sup> CODE - MOVIE MAKER<br> Editando mis videos caseros</li>
-                    <li>- 2.<sup>o</sup> COREL DRAW X7<br> Ilustrando mi verano </li>
+                    <li>- 4.<sup>o</sup> COREL DRAW X7<br> Ilustrando mi verano </li>
                   </ul>
                 </li>
               </ul>

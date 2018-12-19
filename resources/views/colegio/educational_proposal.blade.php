@@ -145,7 +145,7 @@
               </li>
               <li>
                   <span class="icon_local_span"><i class="fa fa-stop"></i></span>
-                  Seleccionados de las mejores universidades del Perú.
+                  Profesores especializados y del más alto nivel.
               </li>
               <li>
                   <span class="icon_local_span"><i class="fa fa-stop"></i></span>

@@ -1,3 +1,4 @@
+
 <div data-title="admision 2019">
     <div
     class="
@@ -621,6 +622,8 @@
 
     </div>
 </div>
+
+
 <div data-title="propuesta educativa">
     <div
     class="
@@ -709,6 +712,98 @@
 
   </div>
 </div>
+
+<div data-title="propuesta educativa">
+    <div
+    class="
+    banner__item
+    banner__item--left
+    "
+    data-shadow="9"
+    data-shadow-opacity=".15"
+    data-bordercolor="#f4633a"
+
+    data-border-referer=".banner__propuesta_guide"
+    data-border-referer-xs=".banner__propuesta_guide"
+
+
+    style="
+    background-color: #ffffff;
+    ">
+
+    <div
+    class="banner__image"
+
+    data-image-md="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-big.png"
+    data-position-md="70% bottom"
+    data-size-md="hidden"
+
+    data-image-xs="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-litle.png"
+    data-position-xs="bottom right"
+    data-size-xs="68vw"
+
+    data-position-xs-landscape="80% bottom"
+    data-size-xs-landscape="45vw"
+
+
+    style="
+    background-repeat: no-repeat;
+    z-index: 11;
+    "></div>
+
+    <div class="banner_box-bar" style="width:10px; z-index: 10;"></div>
+    <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index: 10;">
+      <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+        <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+        128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+      </svg>
+    </div>
+
+  <div class="banner__content
+  banner__content--colegio
+  banner__content--mobile-padding-left
+  " style="z-index:11;">
+    <div class="banner__propuesta-educativa__container">
+      <div class="banner__propuesta_guide">
+        <div class="banner__title">
+          <span class="banner__propuesta-educativa__title">
+            ¿Por&nbsp;qué&nbsp;estudiar<br>con nosotros?
+          </span>
+        </div>
+        <div class="banner__subtitle">
+          <span class="normal">
+          </span>
+          <span style="display:block;margin: 10px auto;">
+            <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/propuesta-educativa">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+          </span>
+        </div>
+      </div>
+      <div class="banner__propuesta-educativa__image xs-hide"
+      data-banner-img-position="top"
+      >
+        <picture>
+          <img src="" alt="">
+        </picture>
+
+
+        <picture>
+          <source media="(max-width: 920px)" srcset="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-litle.png">
+          <img  src="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-big.png"
+                alt="Propuesta educativa">
+        </picture>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+
+
 <div data-title="primeros puestos">
     <div
     class="

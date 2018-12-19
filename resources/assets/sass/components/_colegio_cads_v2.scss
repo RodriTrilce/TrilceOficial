@@ -86,6 +86,7 @@
   flex-wrap: nowrap;
   width: 100%;
   justify-content: center;
+  align-items: center;
 
   @include breakpoint(baby){
     justify-content: center;
@@ -149,7 +150,7 @@
 
   @include breakpoint(baby){
     width: 100%;
-    height: 150px;
+    height: 140px;
     padding: 8px;
   }
 
@@ -189,7 +190,7 @@
   }
 
   span.modality{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
 
   span.op{

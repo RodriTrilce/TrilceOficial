@@ -1,4 +1,6 @@
 
+  
+
 <div data-title="admision 2019">
     <div
     class="
@@ -624,6 +626,8 @@
 </div>
 
 
+
+
 <div data-title="propuesta educativa">
     <div
     class="
@@ -767,8 +771,8 @@
     <div class="banner__propuesta-educativa__container">
       <div class="banner__propuesta_guide">
         <div class="banner__title">
-          <span class="banner__propuesta-educativa__title">
-            ¿Por&nbsp;qué&nbsp;estudiar<br>con nosotros?
+          <span class="banner__propuesta-educativa__title banner__propuesta-educativa__title--two">
+            ¿Por&nbsp;qué estudiar<br>con nosotros?
           </span>
         </div>
         <div class="banner__subtitle">
@@ -800,6 +804,7 @@
 
   </div>
 </div>
+
 
 
 

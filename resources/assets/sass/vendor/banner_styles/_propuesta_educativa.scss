@@ -5,6 +5,15 @@
   @include breakpoint(baby){
         line-height: 33px !important;
   }
+
+  &.banner__propuesta-educativa__title--two{
+    line-height: 43px !important;
+    font-size: 2.5rem;
+
+    @include breakpoint(baby){
+      line-height: 30px !important;
+    }
+  }
 }
 
 .banner__propuesta-educativa__container{

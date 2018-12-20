@@ -443,8 +443,8 @@
                   <ul class="vacations_lm__list">
                     <li>- Taller literario y de redacción</li>
                     <li>- Taller de experiencias científicas</li>
-                    <li>- Taller deportivo: básquett</li>
-                    <li>- Taller de danza: Folk dance</li>
+                    <li>- Taller deportivo: básquet</li>
+                    <li>- Taller de danza: folk dance</li>
                   </ul>
                 </li>
 

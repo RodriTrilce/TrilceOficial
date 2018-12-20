@@ -32,9 +32,11 @@
 <div class="nuevos-i container-base">
   <div class="row center-xs">
 
-    <div class="row col-xs-12 col-sm-6 col-md-6 between-xs center-sm center-md center-lg nuevos-i-box nuevos-i-force-minus">
+    <!-- nuevos-i-box nuevos-i-force-minus -->
+    <div class="row col-xs-12 col-sm-6 col-md-6 center-xs center-sm center-md center-lg ">
 
       @if($type!=='nuevo')
+      <!--
       <div class="col-xs hover-blue">
         <a href="/colegio/matricula-nuevo">
           <div class="row nuevos-i-top">
@@ -43,9 +45,25 @@
           </div>
         </a>
       </div>
+      -->
+
+      <a href="/colegio/matricula-nuevo" class="colegio-cardsv2-items__item">
+        <div class="colegio-cardsv2-items__symbol">
+          <span><i class="fa fa-plus"></i></span>
+        </div>
+        <div class="colegio-cardsv2-items__text">
+          <span class="alumno">
+            ALUMNO
+          </span>
+          <span class="modality">
+            NUEVO
+          </span>
+        </div>
+      </a>
       @endif
 
       @if($type!=='traslado')
+        <!--
       <div class="col-xs hover-yellow">
         <a href="/colegio/matricula-traslado">
           <div class="row nuevos-i-top">
@@ -53,10 +71,26 @@
             <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-yellow">traslado</div></h3></div>
           </div>
         </a>
-      </div>
+      </div>-->
+
+      <a href="/colegio/matricula-traslado" class="colegio-cardsv2-items__item">
+          <div class="colegio-cardsv2-items__symbol">
+            <span><i class="fa fa-exchange"></i></span>
+          </div>
+          <div class="colegio-cardsv2-items__text">
+            <span class="alumno">
+              ALUMNO
+            </span>
+            <span class="modality">
+              TRASLADO
+            </span>
+          </div>
+      </a>
+
       @endif
 
       @if($type!=='regular')
+      <!--
       <div class="col-xs hover-orange">
         <a href="/colegio/matricula-regular">
           <div class="row nuevos-i-top">
@@ -64,7 +98,24 @@
             <div class="col-xs-12 xs-center"><h3>Alumno <br /><div class="modality modality-orange">regular (actual)</div></h3></div>
           </div>
         </a>
-      </div>
+      </div>-->
+
+      <a href="/colegio/matricula-regular" class="colegio-cardsv2-items__item">
+          <div class="colegio-cardsv2-items__symbol">
+            <span><i class="fa fa-star"></i></span>
+          </div>
+          <div class="colegio-cardsv2-items__text">
+            <span class="alumno">
+              ALUMNO
+            </span>
+            <span class="modality">
+              REGULAR
+            </span>
+            <span class="op">
+              (actual)
+            </span>
+          </div>
+      </a>
       @endif
 
 

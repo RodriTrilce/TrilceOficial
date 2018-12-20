@@ -300,7 +300,7 @@
                     <li>- Dibujo con lápiz carboncillo: “Retrato fantástico”</li>
                     <li>- Pintura: “Pintamos como Jackson Pollock”</li>
                     <li>- Modelado de máscaras con papel</li>
-                  </ul>
+                  </ul> 
                 </li>
               </ul>
               <br>

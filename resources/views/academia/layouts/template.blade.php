@@ -22,7 +22,7 @@
 
   <div class="modal">
     <div class="modal-inner">
-      <span data-modal-close>&times;</span>
+      <span data-modal-close><i class="fa fa-close"></i></span>
       <div class="modal-content"></div>
     </div>
   </div>

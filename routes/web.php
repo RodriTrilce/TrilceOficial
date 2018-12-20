@@ -24,6 +24,8 @@ Route::get('/img', 'prueba@index');
 Route::get('/prueba3', 'prueba3@index');
 Route::get('/ecotrilce', 'Out\EcotrilceController@index');
 
+Route::get('/navidad', 'NavidadController@index');
+
 
 
 /**

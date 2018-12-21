@@ -138,11 +138,13 @@
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> año</h2>
               <p><strong>Aritmética, Álgebra, Raz. Matemático, Raz. Verbal, Escritura Creativa y Lectura</strong></p>
+              <p>Lunes, miércoles y viernes de 7:50 a. m. a 1:10 p. m.</p>
             </li>
 
             <li>
                 <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 2.<sup>o</sup> año</h2>
                 <p><strong>Aritmética, Álgebra, Geometría, Química, Raz. Matemático y Raz. Verbal</strong></p>
+                <p>Lunes, miércoles y viernes de 7:50 a. m. a 1:10 p. m.</p>
             </li>
 
             <li>

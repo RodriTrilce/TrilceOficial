@@ -183,13 +183,12 @@
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 4.<sup>o</sup> grado</h2>
               <p><strong>Matemática, Comunicación, Raz. Matemático, Raz. Verbal, Actividades Lúdicas y Gráfico-Plásticas, Club de Lectura y Talleres Recreativos</strong></p>
+              <p>Lunes, miércoles y viernes de 8 a. m. a 1 p. m.</p>
             </li>
 
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 5.<sup>o</sup> y 6.<sup>o</sup> grado</h2>
               <p><strong>Aritmética, Álgebra, Raz. Matemático, Raz. Verbal, Comunicación, Actividades Lúdicas y Gráfico-Plásticas, Club de Lectura y Talleres Recreativos</strong></p>
-
-              <br>
               <p>Lunes, miércoles y viernes de 8 a. m. a 1 p. m.</p>
             </li>
 
@@ -265,11 +264,13 @@
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> año</h2>
               <p><strong>Aritmética, Raz. Matemático, Álgebra, Raz. Verbal, Escritura Creativa y Lectura</strong></p>
+              <p>Lunes, miércoles y viernes de 7:50 a. m. a 1:10 p. m.</p>
             </li>
 
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 2.<sup>o</sup> año</h2>
               <p><strong>Aritmética, Raz. Matemático, Álgebra, Raz. Verbal, Escritura Creativa y Lectura</strong></p>
+              <p>Lunes, miércoles y viernes de 7:50 a. m. a 1:10 p. m.</p>
             </li>
 
             <li>

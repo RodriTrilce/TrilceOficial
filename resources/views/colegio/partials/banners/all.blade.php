@@ -1,5 +1,5 @@
 
-  
+
 
 <div data-title="admision 2019">
     <div
@@ -100,6 +100,8 @@
 
   </div>
 </div>
+
+
 <div data-title="primer puesto uni velarde">
       <div
       class="
@@ -220,6 +222,8 @@
 
     </div>
   </div>
+
+
 <div data-title="primer puesto pucp Jimm">
       <div
       class="
@@ -334,6 +338,8 @@
 
     </div>
   </div>
+
+
 <div data-title="vacaciones utiles">
     <div
       class="
@@ -717,6 +723,7 @@
   </div>
 </div>
 
+
 <div data-title="propuesta educativa">
     <div
     class="
@@ -935,6 +942,7 @@
 
   </div>
 </div>
+
 <div data-title="tablet gratuita">
     <div
     class="
@@ -1057,6 +1065,7 @@
 
     </div>
 </div>
+
 <div data-title="ser mejores personas">
     <div
     class="
@@ -1151,6 +1160,7 @@
 
     </div>
 </div>
+
 <div data-title="eco trilce">
   <div
   class="

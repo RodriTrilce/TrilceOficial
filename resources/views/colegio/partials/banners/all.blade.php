@@ -1,5 +1,5 @@
 
-<!--
+
 
 <div data-title="admision 2019">
     <div
@@ -102,7 +102,7 @@
 </div>
 
 
--->
+
 
 <div data-title="primer puesto uni velarde">
       <div
@@ -228,7 +228,7 @@
   </div>
 
 
-<!--
+
 
 <div data-title="primer puesto pucp Jimm">
       <div
@@ -1234,7 +1234,3 @@
 
   </div>
 </div>
-
-
-
--->

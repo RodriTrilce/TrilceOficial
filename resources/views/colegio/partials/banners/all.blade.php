@@ -1,5 +1,5 @@
 
-
+<!--
 
 <div data-title="admision 2019">
     <div
@@ -102,6 +102,8 @@
 </div>
 
 
+-->
+
 <div data-title="primer puesto uni velarde">
       <div
       class="
@@ -156,16 +158,18 @@
         <div class="banner__style_primer banner__style_primer--colegio xs-hide">
           <div class="banner__style_primer__a">
             <div class="banner__title">
-              <span>¡Máximo<br>puntaje!</span>
+              <span>¡Primera entre<br>cientos de ingresantes!</span>
+              <!--<span>¡Máximo<br>puntaje!</span>-->
             </div>
             <div class="banner__subtitle">
               <span class="normal">
-                Daniela Velarde<br>
+                ¡Máximo puntaje!<br>
               </span>
               <span class="normal">
-                Examen Escolares<br>
+                Daniela Velarde<br>
               </span>
               <span class="small">
+                Examen Escolares
               </span>
 
             </div>
@@ -223,6 +227,8 @@
     </div>
   </div>
 
+
+<!--
 
 <div data-title="primer puesto pucp Jimm">
       <div
@@ -1228,3 +1234,7 @@
 
   </div>
 </div>
+
+
+
+-->

@@ -158,13 +158,13 @@
         <div class="banner__style_primer banner__style_primer--colegio xs-hide">
           <div class="banner__style_primer__a">
             <div class="banner__title">
-              <span>¡Primera entre<br>cientos de ingresantes!</span>
-              <!--<span>¡Máximo<br>puntaje!</span>-->
+              {{-- <span>¡Primera entre<br>cientos de ingresantes!</span> --}}
+              <span>¡Máximo<br>puntaje!</span>
             </div>
             <div class="banner__subtitle">
-              <span class="normal">
+              {{-- <span class="normal">
                 ¡Máximo puntaje!<br>
-              </span>
+              </span> --}}
               <span class="normal">
                 Daniela Velarde<br>
               </span>

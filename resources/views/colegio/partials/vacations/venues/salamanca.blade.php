@@ -245,12 +245,12 @@
             <div class="col-xs-12 col-md-6">
               <h4 class="vacations__lm__title">Talleres</h4>
               <ul class="vacations_lm__list">
-                <li>Pequeños cocineros: Mini chef</li>
+                <li>Pequeños cocineros: minichef</li>
                 <li>Danza: bailes lúdicos</li>
                 <li>
                   Dibujo y pintura:
                   <ul class="vacations_lm__list">
-                    <li>- Máscaras con plato de tecnopor</li>
+                    <li>- Máscaras con platos de tecnopor</li>
                     <li>- Pintura sobre lienzo</li>
                     <li>- Cofre de cartón</li>
                   </ul>
@@ -313,17 +313,16 @@
               <ul class="vacations_lm__list">
                 <li>Cómputo: (permanente)<br>
                   <ul class="vacations_lm__list">
-                    <li>- 1.<sup>o</sup> TUX PAINT – GCOMPRIS<br> Dibujando mis primeras imágenes</li>
-                    <li>- 2.<sup>o</sup> POWER POINT 2013<br> Soy un gran expositor </li>
+                    <li>- Tux Paint y GCompris: Dibujando mis primeras imágenes (1.<sup>er</sup>  grado)</li>
+                    <li>- PowerPoint 2013: Soy un gran expositor (2.<sup>o</sup> grado) </li>
                   </ul>
                 </li>
               </ul>
-              <h4 class="vacations__lm__title"><span><strong>A escoger 2 talleres que durarán todo el ciclo:</strong></span></h4>
               <ul class="vacations_lm__list">
-                <li>Taller de Iniciación al ajedrez</li>
+                <li>Iniciación al ajedrez (permanente)</li>
                 <li>Danza: Marinera</li>
                 <li>
-                  Dibujo y pintura: Tres proyectos:
+                  Dibujo y pintura:
                   <ul class="vacations_lm__list">
                     <li>- Pista con autos de carrera</li>
                     <li>- La danza de las canicas</li>
@@ -384,15 +383,15 @@
               <ul class="vacations_lm__list">
                 <li>Cómputo: (permanente)<br>
                   <ul class="vacations_lm__list">
-                    <li>- 3.<sup>o</sup> CODE - MOVIE MAKER<br> Editando mis videos caseros</li>
-                    <li>- 2.<sup>o</sup> COREL DRAW X7<br> Ilustrando mi verano </li>
+                    <li>- Code y Movie Maker: Editando mis videos caseros (3.<sup>er</sup>  grado)</li>
+                    <li>- Corel Draw X7: Ilustrando mi verano (4.<sup>o</sup>  grado) </li>
                   </ul>
                 </li>
               </ul>
               <ul class="vacations_lm__list">
                 <li>Taller de ajedrez</li>
                 <li>
-                  Dibujo y pintura: Tres proyectos:
+                  Dibujo y pintura:
                   <ul class="vacations_lm__list">
                     <li>- Iconografía precolombina</li>
                     <li>- Collage de animales</li>
@@ -455,20 +454,20 @@
               <ul class="vacations_lm__list">
                 <li>Cómputo: (permanente)<br>
                   <ul class="vacations_lm__list">
-                    <li>- 3.<sup>o</sup> PHOTOSHOP CS6<br> Retocando mis fotografías</li>
-                    <li>- 2.<sup>o</sup> FLASH CS6<br> Animando ando </li>
+                    <li>- Photoshop CS6: Retocando mis fotografías (5.<sup>o</sup> grado)</li>
+                    <li>- Flash CS6: Animando ando (6.<sup>o</sup> grado) </li>
                   </ul>
                 </li>
               </ul>
               <ul class="vacations_lm__list">
-                <li>Taller de ajedrez</li>
+                <li>Taller de ajedrez (permanente)</li>
                 <li>Danza: Marinera</li>
                 <li>
                   Dibujo y pintura: Tres proyectos:
                   <ul class="vacations_lm__list">
                     <li>- Esgrafiado</li>
                     <li>- Pintando con plastilina</li>
-                    <li>- Oleo pastel sobre lija</li>
+                    <li>- Óleo pastel sobre lija</li>
                   </ul>
                 </li>
               </ul>
@@ -525,13 +524,13 @@
               <ul class="vacations_lm__list">
                 <li>Talleres de computación:<br>
                   <ul class="vacations_lm__list">
-                    <li>- 1.<sup>o</sup> Dreamweaver CS6: Diseñadores web básicos</li>
-                    <li>- 2.<sup>o</sup> 3D studio max 2013: Modeladores de objetos en 3D</li>
-                    <li>- 3.<sup>o</sup> Premier CS6: Editores de video digital y audio</li>
+                    <li>- Dreamweaver CS6: diseñadores web principiantes (1.<sup>er</sup> año)</li>
+                    <li>- 3D Studio Max 2013: modeladores de objetos en 3D (2.<sup>o</sup> año)</li>
+                    <li>- Premiere CS6: editores de video digital y audio (3.<sup>er</sup> año)</li>
                   </ul>
                 </li>
-                <li>Taller de danza Folk dance (permanente)</li>
-                <li>(Un taller a escoger)
+                <li>Taller de danza: folk dance (permanente)</li>
+                <li>Puedes escoger uno de los siguientes talleres:
                   <ul class="vacations_lm__list">
                     <li>Taller literario y de redacción</li>
                     <li>Taller de experiencias científicas</li>
@@ -589,12 +588,13 @@
               <li>Geometría</li>
               <li>Trigonometría</li>
               <li>Raz. Matemático</li>
-              <li>Raz. Verba</li>
+              <li>Raz. Verbal</li>
               <li>Química</li>
               <li>Física</li>
             </ul>
             <h4 class="vacations__lm__title"><span>
-              Evaluaciones semanales
+              * Evaluaciones semanales <br>
+              * Solucionario de exámenes
             </span></h4>
           </div>
         </div>

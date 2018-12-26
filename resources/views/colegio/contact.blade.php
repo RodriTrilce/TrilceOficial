@@ -32,6 +32,7 @@
       <ul class="contant-info-ul">
         <li>Central telefónica: 6198 100</li>
         <li>Correo: atencionalcliente@trilce.edu.pe</li>
+        <li>Whatsapp: <a href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" title="Chatea con nosotros" target="_blank" rel="nofollow">922 33 6565</a></li>
       </ul>
 
       <br />

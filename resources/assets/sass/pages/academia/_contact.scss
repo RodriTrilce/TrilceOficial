@@ -24,7 +24,12 @@
     margin-bottom: 0.5rem;
 
     a, a:link, a:visited{
-      color: $orange;
+      color: $gray;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      text-decoration-color: $gray;
     }
 
     &::before{
@@ -48,7 +53,7 @@
 
     &:nth-child(3){
       &::before{
-        content: "\f27d";
+        content: "\f37a";
       }
     }
 
@@ -93,7 +98,7 @@
     font-size: 1.5rem;
     text-align: left;
     position: relative;
-    
+
     &::after{
       position: absolute;
       content: "";

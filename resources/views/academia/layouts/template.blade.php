@@ -39,5 +39,6 @@ var page;
 @show
 
 @include('tracking.before_end_body')
+@include('tracking.before_end_body_academia')
 </body>
 </html>

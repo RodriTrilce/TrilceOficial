@@ -34,5 +34,6 @@
 @show
 
 @include('tracking.before_end_body')
+@include('tracking.before_end_body_colegio')
 </body>
 </html>

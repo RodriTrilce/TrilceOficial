@@ -5,4 +5,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5HQRN8J');</script>
 <!-- End Google Tag Manager -->
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c23dcccd02b6e0010eca28a&product=sticky-share-buttons' async='async'></script>

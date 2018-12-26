@@ -212,14 +212,14 @@
             <div class="col-xs-12 col-md-6">
               <h4 class="vacations__lm__title">Talleres</h4>
               <ul class="vacations_lm__list">
-                <li>Cómputo: (permanente)<br>
+                <li>Cómputo (permanente)<br>
                   <ul class="vacations_lm__list">
-                    <li>- 1.<sup>o</sup> TUX PAINT – GCOMPRIS<br> Dibujando mis primeras imágenes</li>
-                    <li>- 2.<sup>o</sup> POWER POINT 2013<br> Soy un gran expositor </li>
+                    <li>- Tux Paint y GCompris: dibujando mis primeras imágenes (1.<sup>er</sup> grado)</li>
+                    <li>- PowerPoint 2013: soy un gran expositor (2.<sup>o</sup> grado)</li>
                   </ul>
                 </li>
               </ul>
-              <h4 class="vacations__lm__title"><span><strong>A escoger 2 que dura todo el ciclo:</strong></span></h4>
+              <h4 class="vacations__lm__title"><span><strong>Puedes escoger dos de los siguientes talleres:</strong></span></h4>
               <ul class="vacations_lm__list">
                 <li>Iniciación al ajedrez</li>
                 <li>

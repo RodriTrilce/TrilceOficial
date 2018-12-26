@@ -32,5 +32,7 @@
 </script>
 <script src="{{ mix('/js/app_colegio.js') }}" charset="utf-8"></script>
 @show
+
+@include('tracking.before_end_body')
 </body>
 </html>

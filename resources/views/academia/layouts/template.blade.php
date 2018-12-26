@@ -38,5 +38,6 @@ var page;
 <script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>
 @show
 
+@include('tracking.before_end_body')
 </body>
 </html>

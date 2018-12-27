@@ -181,6 +181,8 @@ class EnrollmentController extends Controller
 
      // DNI
      $pdf->SetXY(16, 43);
+     echo $enrollment->student_dni;
+     die;
      $pdf->Write(0, "x {$enrollment->student_dni}");
 
      // Ciclo

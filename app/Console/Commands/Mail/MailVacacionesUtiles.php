@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Out\Listdriver;
 use App\Mail\Report\ReportBasicMail;
-use App\Mail\Out\VacacionesUtiles as MailVacacionesUtiles;
+use App\Mail\Out\VacacionesUtiles as MailVacacionesUtilesOut;
 use App\Models\Out\MailVacacionesUtilesModel;
 
 class MailVacacionesUtiles extends Command
@@ -75,7 +75,7 @@ class MailVacacionesUtiles extends Command
 
           die;
 
-          Mail::send( new MailVacacionesUtiles($user) );
+          Mail::send( new MailVacacionesUtilesOut($user) );
           $user->update(['send1' => 1]);
           $count->update(['count' => $count->count + 1]);
 

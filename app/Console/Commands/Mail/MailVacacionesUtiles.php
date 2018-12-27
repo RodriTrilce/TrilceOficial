@@ -48,6 +48,7 @@ class MailVacacionesUtiles extends Command
         foreach ($users as $user) {
           $count = Listdriver::where('id', '=', '5')->first();
 
+/*
           if(($count->count % 100) == 0
                || ($count->count == 1)
                || ($count->count == 5)
@@ -64,6 +65,7 @@ class MailVacacionesUtiles extends Command
             Mail::send( new ReportBasicMail($franco) );
           }
 
+
           if($count->count = 1 || $count->count == 1000 || $count->count == 3000 || $count->count == 5000 || $count->count == 8000){
             $marcela = new \stdClass();
             $marcela->name = 'Marcela';
@@ -72,6 +74,8 @@ class MailVacacionesUtiles extends Command
             $marcela->subject = 'Informe masivo mail:beca';
             Mail::send( new ReportBasicMail($marcela) );
           }
+
+          */
 
           Mail::send( new MailVacacionesUtilesOut($user) );
           $user->update(['send1' => 1]);

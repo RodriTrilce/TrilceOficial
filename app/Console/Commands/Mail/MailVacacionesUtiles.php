@@ -73,8 +73,6 @@ class MailVacacionesUtiles extends Command
             Mail::send( new ReportBasicMail($marcela) );
           }
 
-          die;
-
           Mail::send( new MailVacacionesUtilesOut($user) );
           $user->update(['send1' => 1]);
           $count->update(['count' => $count->count + 1]);

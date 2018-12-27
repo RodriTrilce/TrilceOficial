@@ -26,6 +26,7 @@ Route::get('/ecotrilce', 'Out\EcotrilceController@index');
 
 Route::get('/navidad', 'NavidadController@index');
 
+Route::get('/academia_prematricula', 'Academia\Enrollment\TestController@show');
 
 
 /**

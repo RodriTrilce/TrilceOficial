@@ -150,9 +150,8 @@
               <span>(pago por ciclo completo) <br> Incluye material didáctico</span>
             </li>
 
-
-<br>
             <li>
+              <br>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 3.<sup>er</sup> a 6.<sup>o</sup> grado</h2>
               <p><strong>Técnicas de Razonamiento, Cálculo Mental y Ortografía</strong></p>
               <p><strong>Talleres: Piensa Verde, Robotic Space, Lectura, Ajedrez y Danza</strong></p>
@@ -163,9 +162,6 @@
               <strong><span class="orange">INVERSIÓN: S/320</span></strong> <br>
               <span>(pago por ciclo completo) <br> Incluye material didáctico</span>
             </li>
-
-
-
 
           </ul>
         </div>
@@ -210,7 +206,7 @@
           <br><br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/cursos-adicionales.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/talleres-primaria.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -316,7 +312,7 @@
 
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/cursos-adicionales.png')}}" alt="">
         </div>
       </div>
     </div>

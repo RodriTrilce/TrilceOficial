@@ -288,7 +288,7 @@
 
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/inicial.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -358,7 +358,7 @@
 
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/talleres-primaria.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -429,7 +429,7 @@
 
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -559,7 +559,7 @@
 
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/secundaria.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -599,7 +599,7 @@
           </div>
         </div>
         <div class="col-sm-4 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/cursos-adicionales.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -642,7 +642,7 @@
 
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/primaria.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/ciclo-especial.png')}}" alt="">
         </div>
       </div>
     </div>

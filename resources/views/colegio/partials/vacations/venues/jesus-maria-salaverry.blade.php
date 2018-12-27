@@ -457,7 +457,7 @@
           <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/talleres-primaria.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -517,7 +517,7 @@
           <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/computacion.png')}}" alt="">
         </div>
       </div>
     </div>
@@ -580,7 +580,7 @@
           <br>
         </div>
         <div class="col-sm-6 xs-hide vacations-venue__image-rigth">
-          <img src="{{asset('static/images/colegio/vacations/ingles-intensivo.png')}}" alt="">
+          <img src="{{asset('static/images/colegio/vacations/ciclo-especial.png')}}" alt="">
         </div>
       </div>
     </div>

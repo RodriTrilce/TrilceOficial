@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use Artisaninweb\SoapWrapper\SoapWrapper;
-use App\Soap\Request\GetConversionAmount;
-use App\Soap\Response\GetConversionAmountResponse;
 
 class TestController extends Controller
 {
@@ -32,33 +30,27 @@ class TestController extends Controller
       */
      public function show()
      {
-       $this->soapWrapper->add('Currency', function ($service) {
+
+       $this->soapWrapper->add('ClientePublicoServicio', function ($service) {
          $service
-           ->wsdl('http://currencyconverter.kowabunga.net/converter.asmx?WSDL')
-           ->customHeader("SoapApi")
-           ->trace(true)
-           ->classmap([
-             GetConversionAmount::class,
-             GetConversionAmountResponse::class,
-           ]);
+           ->wsdl('http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl')
+           ->trace(true);
        });
 
        // Without classmap
-       $response = $this->soapWrapper->call('Currency.GetConversionAmount', [
-         'CurrencyFrom' => 'USD',
-         'CurrencyTo'   => 'EUR',
-         'RateDate'     => '2014-06-05',
-         'Amount'       => '1000',
+       $response = $this->soapWrapper->call('ClientePublicoServicio.FA_TipoServicio', [
+         'ANIO_ACADEMICO' => '2019'
        ]);
 
-       var_dump($response);
-
+       print_r($response);
+/*
        // With classmap
        $response = $this->soapWrapper->call('Currency.GetConversionAmount', [
          new GetConversionAmount('USD', 'EUR', '2014-06-05', '1000')
        ]);
 
        var_dump($response);
+       */
        exit;
      }
 }

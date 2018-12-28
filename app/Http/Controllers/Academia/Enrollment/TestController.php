@@ -35,6 +35,7 @@ class TestController extends Controller
        $this->soapWrapper->add('Currency', function ($service) {
          $service
            ->wsdl('http://currencyconverter.kowabunga.net/converter.asmx?WSDL')
+           ->customHeader()
            ->trace(true)
            ->classmap([
              GetConversionAmount::class,

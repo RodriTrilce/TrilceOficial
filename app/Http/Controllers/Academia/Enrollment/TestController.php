@@ -37,12 +37,21 @@ class TestController extends Controller
            ->trace(true);
        });
 
-       // Without classmap
-       $response = $this->soapWrapper->call('ClientePublicoServicio.FA_TipoServicio', [
-         'ANIO_ACADEMICO' => '2019'
-       ]);
+       try {
+         // Without classmap
+         $response = $this->soapWrapper->call('ClientePublicoServicio.FA_TipoServicio', [
+           'ANIO_ACADEMICO' => "2019"
+         ]);
 
-       print_r($response);
+         print_r($response);
+
+       } catch (\Exception $e) {
+
+         dd($e);
+
+       }
+
+
 /*
        // With classmap
        $response = $this->soapWrapper->call('Currency.GetConversionAmount', [

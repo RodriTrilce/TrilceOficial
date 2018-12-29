@@ -30,6 +30,8 @@
             <div><span class="vacations-svg__title">Primaria</span></div>
           </a>
       </li>
+
+      <!--
       <li>
         <a href="#" class="js-tabs__title">
           <div>
@@ -72,6 +74,8 @@
           <div><span class="vacations-svg__title">Talleres primaria</span></div>
         </a>
       </li>
+      -->
+
       <li>
           <a href="#" class="js-tabs__title">
             <div>
@@ -173,6 +177,8 @@
         </div>
       </div>
     </div>
+
+    <!--
     <div class="js-tabs__content">
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
@@ -213,6 +219,8 @@
         </div>
       </div>
     </div>
+    -->
+
     <div class="js-tabs__content">
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">

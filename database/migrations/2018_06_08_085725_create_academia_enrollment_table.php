@@ -26,6 +26,7 @@ class CreateAcademiaEnrollmentTable extends Migration
           $table->string('student_phone_home');
           $table->string('student_phone_cell');
           $table->string('student_email');
+          $table->string('student_gender')->nullable();
           $table->integer('student_year_finish_school');
           $table->string('student_school');
           $table->string('student_postulate_university');

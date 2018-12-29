@@ -20,7 +20,7 @@
       <div class="js-tabs frequent_questions__tabs" id="tabs_frequent_questions">
 
           <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">Propuesta Academica</a></li>
+              <li><a href="#" class="js-tabs__title">Propuesta Académica</a></li>
               <li><a href="#" class="js-tabs__title">Inscripción</a></li>
               <li><a href="#" class="js-tabs__title">Simulacros</a></li>
               <li><a href="#" class="js-tabs__title">Otros</a></li>
@@ -91,7 +91,7 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Las academias se especializan en la preparación para ciertas carreras, como administración, ingeniería, etc.?
+                    ¿Las academias se especializan en la preparación para ciertas carreras, como Administración e ingeniería, etc.?
                   </h3>
                     <dd class="badger-accordion__panel js-badger-accordion-panel">
                       <div class="js-badger-accordion-panel-inner">

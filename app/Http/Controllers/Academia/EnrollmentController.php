@@ -51,6 +51,7 @@ class EnrollmentController extends Controller
       $enrollment->student_lastname_mother = $request->step2_lastname_mother;
       $enrollment->student_district = $request->step2_district;
       $enrollment->student_birth = Carbon::parse($request->step2_birth);
+      $enrollment->student_gender = $request->step2_gender;
 
       $enrollment->student_address = $request->step2_address;
       $enrollment->student_phone_home = $request->step2_phonehome;

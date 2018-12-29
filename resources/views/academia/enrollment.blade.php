@@ -218,7 +218,22 @@
                   </div>
                 </div>
 
-                <br />
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm form-group-gender">
+                    <fieldset class="form-group">
+
+                      <input type="radio" id="step2_gender_labelHombre" name="step2_gender" value="hombre" placeholder="sexo" aria-label="Sexo" required>
+                      <label for="step2_gender_labelHombre" class="radio">Sexo</label> <span class="gender_span">Hombre</span>                   
+
+                      <input type="radio" id="step2_gender_labelMujer" name="step2_gender" value="mujer" placeholder="sexo" aria-label="Sexo" required>
+                      <label for="step2_gender_labelMujer" class="radio">Sexo</label> <span class="gender_span">Mujer</span>
+
+                    </fieldset>
+                  </div>
+                </div>
+
+                <br /><br />
+
                 <h4>Datos académicos</h4>
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-6">

@@ -1,8 +1,9 @@
 /*!
- * Enrollment.js v0.1
+ * Enrollment.js v0.2
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */
+
  import { Validation } from 'bunnyjs/src/Validation';
 
  // Constants
@@ -26,7 +27,6 @@
    classError            : 'text-help',
    selectorInput         : '[name]'
  };
-
 
 
  // Define methods utils
@@ -165,7 +165,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
            "time" : 15
          }
        },
-       "san marcos" : {
+       "sm" : {
          "all" : {
            "cost" : 50,
            "time" : 15
@@ -177,7 +177,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
          "ciencia" : 12,
          "letras" : 15
        },
-       "san marcos" : {
+       "sm" : {
          "ciencia" : 12,
          "letras" : 15
        },
@@ -188,7 +188,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      }
    }];
 
-   this.init = function(){
+   this.init = function()
+   {
      Validation.init(document.forms[0], true);
      this.showTab(this.currentTab);
      this.dispatcher();
@@ -197,7 +198,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));
    }
 
-   this.dispatcher = function(){
+   this.dispatcher = function()
+   {
      this.hearUniversity();
      this.hearVenue();
      this.hearDNI();
@@ -391,10 +393,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      var university = document.getElementById('step1_university');
      university = university.options[university.selectedIndex].value.toLowerCase();
 
-     console.log(university);
-
      var route = this.cost[0].one[university];
-
      var routeNine = this.cost[0].nine[university];
      var sede = document.getElementById('step1_venue');
 
@@ -440,6 +439,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      switch (this.currentTab) {
        case 0:
          tb = '.tab1';
+         this.activeCloseAlert();
        break;
 
        case 1:
@@ -462,6 +462,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
              this.currentTab = this.currentTab + n;
 
              if (this.currentTab >= x.length) {
+               this.activeCloseAlert(false);
                document.formenrollment.submit();
                return false;
              }else{
@@ -476,7 +477,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
    }
 
-   this.fixStepIndicator = function(n) {
+   this.fixStepIndicator = function(n)
+   {
      let v = document.getElementById("steps-guide");
      let z = v.getElementsByTagName("div")
 
@@ -486,6 +488,18 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        if(i<n) a.classList.add('visited');
 
      });
+   }
+
+   this.activeCloseAlert = function(active = true)
+   {
+      console.log('sss')
+      if(active)
+        window.onbeforeunload = function()
+        {
+          return "Ha intentado salir de esta pagina. Si ha realizado algun cambio en los campos sin hacer clic en el boton Guardar, los cambios se perderan. Seguro que desea salir de esta pagina? ";
+        }
+      else
+        window.onbeforeunload = false;
    }
 
  }

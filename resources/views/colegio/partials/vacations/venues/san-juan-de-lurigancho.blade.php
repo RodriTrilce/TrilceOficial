@@ -30,6 +30,8 @@
             <div><span class="vacations-svg__title">Primaria</span></div>
           </a>
       </li>
+
+      <!--
       <li>
         <a href="#" class="js-tabs__title">
           <div>
@@ -72,6 +74,8 @@
           <div><span class="vacations-svg__title">Talleres primaria</span></div>
         </a>
       </li>
+      -->
+
       <li>
           <a href="#" class="js-tabs__title">
             <div>
@@ -138,6 +142,8 @@
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
           <ul class="ep-generic-list ep-generic-list--off">
+
+            <!--
             <li>
               <h2><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> y 2.<sup>o</sup> grado</h2>
               <p><strong>Lógica Matemática y Lectoescritura</strong></p>
@@ -149,6 +155,8 @@
               <strong><span class="orange">INVERSIÓN: S/300</span></strong> <br>
               <span>(pago por ciclo completo) <br> Incluye material didáctico</span>
             </li>
+
+          -->
 
             <li>
               <br>
@@ -170,6 +178,8 @@
         </div>
       </div>
     </div>
+
+    <!-- 
     <div class="js-tabs__content">
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">
@@ -210,6 +220,9 @@
         </div>
       </div>
     </div>
+    -->
+
+
     <div class="js-tabs__content">
       <div class="row col-xs-12">
         <div class="col-sm-6 col-xs-12">

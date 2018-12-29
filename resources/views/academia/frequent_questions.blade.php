@@ -91,7 +91,7 @@
                 <div class="col-xs question-content">
                   <h3 class="question-title js-badger-accordion-header">
                     <div class="question-title__signe"></div>
-                    ¿Las academias se especializan en la preparación para ciertas carreras, como Administración e ingeniería, etc.?
+                    ¿Las academias se especializan en la preparación para ciertas carreras, como Administración e Ingeniería, etc.?
                   </h3>
                     <dd class="badger-accordion__panel js-badger-accordion-panel">
                       <div class="js-badger-accordion-panel-inner">

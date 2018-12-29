@@ -79,17 +79,17 @@
     }
   }
 
-/*
-  [class*="col-xs"] {
-    padding-right: 0.5rem;
-  }
-
-  @media screen and (max-width: 768px) {
+  /*
     [class*="col-xs"] {
-      padding-right: 0rem;
+      padding-right: 0.5rem;
     }
-  }
-*/
+
+    @media screen and (max-width: 768px) {
+      [class*="col-xs"] {
+        padding-right: 0rem;
+      }
+    }
+  */
 
   //  Step 1
   .tab1{

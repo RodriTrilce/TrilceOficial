@@ -12,6 +12,15 @@ use App\Models\Academia\EnrollmentModel as Enrollment;
 
 class EnrollmentResourceController extends Controller
 {
+
+    public function __construct()
+    {
+      $url = "http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl";
+      $this->client = new \SoapClient($url, [
+        'trace' => 1
+      ]);
+    }
+
     public $url = [
       'sm'    => 'http://app.trilce.edu.pe/informacion-ciclos-sm/registro/',
       'uni'   => 'http://app.trilce.edu.pe/informacion-ciclos-uni/registro/',
@@ -59,22 +68,8 @@ class EnrollmentResourceController extends Controller
 
      private function getDataUniversity($university)
      {
-      /*
-       $urlU     = $this->url[$university];
-       $data     = $this->getUrl($urlU);
-       $collection = collect($this->getOptionsVenue($data));
-       $return     = new EnrollmentResource($collection);
-       Cache::put($university, $return, 20160);
-
-       return $return;
-       */
-
-        $url = "http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl";
-
         try {
-          $client = new \SoapClient($url, [ 'trace' => 1 ] );
-
-          $result = $client->FA_NivelEstudio([
+          $result = $this->client->FA_NivelEstudio([
             'ANIO_ACADEMICO'  => date("Y"),
             'TIPO_SERVICIO'   => 'ACADE',
             'SERVICIO'        => $university
@@ -87,11 +82,31 @@ class EnrollmentResourceController extends Controller
           return $return;
 
         } catch ( SoapFault $e ) {
-          echo $e->getMessage();
+          //echo $e->getMessage();
+          die;
         }
-
      }
 
+     public function cycle($university, $cycle)
+     {
+      try{
+          $result = $this->client->FA_Bldg([
+            'ANIO_ACADEMICO'  => date("Y"),
+            'TIPO_SERVICIO'   => 'ACADE',
+            'SERVICIO'        => $university,
+            'NIVEL_ESTUDIO'   => $cycle
+          ]);
+
+          $collection = collect($result->FA_BldgResult);
+          $return     = new EnrollmentResource($collection);
+          Cache::put($university, $return, 20160);
+
+          return $return;
+
+      }catch (SoapFault $e){
+        die;
+      }
+     }
 
 
      function explodeDiv($a,$b,$c)

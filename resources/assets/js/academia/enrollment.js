@@ -46,10 +46,7 @@
 
  // Safari fix hover touch
  document.addEventListener('touchstart', function() {},false);
- /*var supportsTouch = (typeof Touch == "object");
- if(supportsTouch){
- }
- */
+
  // Capitalize frist letter upper
  String.prototype.capitalize = function(){
    return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
@@ -191,6 +188,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    this.init = function()
    {
      Validation.init(document.forms[0], true);
+     this.setVaraibles();
      this.showTab(this.currentTab);
      this.dispatcher();
 
@@ -198,10 +196,17 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));
    }
 
+   this.setVaraibles = function()
+   {
+    this.selectCycle = document.getElementById('step1_cycle');
+    this.selectVenue = document.getElementById('step1_venue');
+    this.selectTurn  = document.getElementById('step1_turn');
+   }
+
    this.dispatcher = function()
    {
-     //this.hearUniversity();
-     this.hearUniversity2();
+     this.hearUniversity();
+     this.hearCycle();
      this.hearVenue();
      this.hearDNI();
      this.hearAttorneyIf();
@@ -298,100 +303,121 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    this.hearUniversity = function()
    {
      var elem = document.querySelector('#step1_university');
-     var select = document.getElementById('step1_venue');
-
-     elem.addEventListener('change', () => {
-       this.step1University = elem.options[elem.selectedIndex].value;
-
-       select.style.cursor  = 'wait';
-       select.disabled      = true;
-
-       this.cleanSelect(select, 'Sede');
-       this.cleanSelect(document.getElementById('step1_cycle'), 'Ciclo');
-
-       get(`/api/academia/enrollment/${this.step1University}`).then(
-           response  => this.makeResponsehear(response, select),
-           error     => this.forceHearEvent(elem)
-         );
-     });
-   }
-
-   this.hearUniversity2 = function(){
-     var elem = document.querySelector('#step1_university');
-     var select = document.getElementById('step1_cycle');
-
+     var select = this.selectCycle;
 
      elem.addEventListener('change', async () => {
 
        this.step1University = elem.options[elem.selectedIndex].value;
 
-/*
+       this.cleanSelect(select, 'Ciclo');
        select.style.cursor  = 'wait';
        select.disabled      = true;
-*/
 
-       let response = await this.hearUniversityFetch(this.step1University);
-       this.makeResponsehear2(response, select);
+       let response = await(await fetch(`/api/academia/enrollment/${this.step1University}`)).json();
+       console.log(response);
 
-       this.cleanSelect(select, 'Ciclo');
-       this.cleanSelect(document.getElementById('step1_venue'), 'Sede');
+       this.makeResponseCycle(response, select, 'Ciclos');
 
+       this.cleanSelect(this.selectVenue, 'Sede');
+       this.cleanSelect(this.selectTurn, 'Turno')
      });
 
    }
 
-   this.hearUniversityFetch = async function(university)
+   this.makeResponseCycle = function(response, select, name='')
    {
-      let data = await(await fetch(`/api/academia/enrollment/${university}`)).json();
-      return data;
+      if(Object.keys(response.data).length == 0){
+        select.style.cursor  = 'auto';
+        this.cleanSelect(select, `No hay ${name} disponibles`);
+        this.selectVenue.disabled = true;
+        this.selectTurn.disabled  = true;
+
+      }else{
+        this.selectVenue.disabled = false;
+        this.selectTurn.disabled  = false;
+
+        try{
+
+          if(Object.keys(response.data).length == 1)
+          {
+            let s = document.createElement('option');
+            s.text = response.data.ItemOfstring.Text;
+            s.value = response.data.ItemOfstring.Value;
+            select.add(s);
+
+          }else{
+            Object.keys(response.data.ItemOfstring).forEach(function(e) {
+              let s = document.createElement('option');
+              s.text = response.data.ItemOfstring[e].Text;
+              s.value = response.data.ItemOfstring[e].Value;
+              select.add(s);
+            });            
+          }
+
+         select.style.cursor  = 'auto';
+         select.disabled      = false;
+
+        }catch(err){
+          console.log(err);
+        }
+
+      }
    }
 
-
-   this.makeResponsehear2 = function(response, select)
+   this.hearCycle = function()
    {
+     this.selectCycle.addEventListener('change', async () => {
+       this.step1Select = this.selectCycle.options[this.selectCycle.selectedIndex].value;
 
-      var cccccc = document.getElementById('step1_cycle');
+       this.cleanSelect(this.selectVenue, 'Sede');
+       this.selectCycle.style.cursor  = 'wait';
+       this.selectCycle.disabled      = true;
 
-        cccccc.style.cursor = 'default';
-        cccccc.disabled     = false;
+       let response = await(await fetch(`/api/academia/enrollment/${this.step1University}/cycle/${this.step1Select}`)).json();
+       
+       this.makeResponseVenue(response, this.selectVenue);
+       this.cleanSelect(this.selectTurn, 'Turno')       
+     });
+   }
 
+   this.makeResponseVenue = function (response, select)
+   {
+      if(Object.keys(response.data).length == 0){
+        select.style.cursor  = 'auto';
+        this.cleanSelect(select, `No hay sedes disponibles`);
+        this.selectTurn.disabled  = true;
 
-          var dd = document.createElement('option');
-          dd.text = "xd";
-          dd.value = "cdfdfdfs";
-          cccccc.add(dd);
+      }else{
 
-          var xx = document.getElementById("steps-guide");
-          xx.innerHTML = cccccc;
+        this.selectCycle.disabled  = false;
+        this.selectTurn.disabled  = false;
 
-          console.log(dd);          
-          console.log(cccccc)
+        try{
+          Object.keys(response.data.ItemOfstring).forEach(function(e) {
 
-/*
-      try{
+            let s = document.createElement('option');
+            s.text = response.data.ItemOfstring[e].Text;
+            s.value = response.data.ItemOfstring[e].Value;
+            select.add(s);
 
-        Object.keys(response.data).forEach(function(e) {
+          });
 
-          let s = document.createElement('option');
-          s.text = response.data[e].Text;
-          s.value = response.data[e].Value;
-          select.add(s);
+         select.style.cursor  = 'auto';
+         select.disabled      = false;
 
-          console.log(select)
-        });
-
-      }catch(err){
-        console.log(err);
+        }catch(err){
+          console.log(err);
+        }
+        
       }
-*/
    }
 
    this.hearVenue = function()
    {
-     let elem = document.querySelector('#step1_venue');
-     const select = document.querySelector('#step1_cycle');
+     let elem     = this.selectVenue;
+     const select = this.selectCycle;
 
-     elem.addEventListener('change' , () => {
+     elem.addEventListener('change', () => {
        this.step1Venue = elem.options[elem.selectedIndex].value;
        let key         = this.step1Venue.split('|');
 

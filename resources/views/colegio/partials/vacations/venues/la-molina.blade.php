@@ -503,7 +503,7 @@
               <li>Geometría</li>
               <li>Trigonometría</li>
               <li>Raz. Matemático</li>
-              <li>Raz. Verba</li>
+              <li>Raz. Verbal</li>
               <li>Química</li>
               <li>Física</li>
             </ul>

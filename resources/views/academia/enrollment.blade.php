@@ -66,17 +66,9 @@
                     <fieldset class="form-group">
                       <select name="step1_university" id="step1_university" aria-label="Universidad" required>
                         <option value="" selected disabled hidden>Tipo de preparación</option>
-                        <option value="uni">UNI</option>
-                        <option value="sm">San Marcos</option>
-                        <option value="pucp">Católica</option>
-                      </select>
-                    </fieldset>
-                  </div>
-
-                  <div class="col-xs-12">
-                    <fieldset class="form-group">
-                      <select name="step1_venue" id="step1_venue" aria-label="Sede" required>
-                        <option value="" selected disabled>Sede</option>
+                        <option value="ACAUN">UNI</option>
+                        <option value="ACASM">San Marcos</option>
+                        <option value="ACACAT">Católica</option>
                       </select>
                     </fieldset>
                   </div>
@@ -85,6 +77,14 @@
                     <fieldset class="form-group">
                       <select name="step1_cycle" id="step1_cycle" aria-label="Ciclo" required>
                         <option value="" selected disabled>Ciclo</option>
+                      </select>
+                    </fieldset>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <fieldset class="form-group">
+                      <select name="step1_venue" id="step1_venue" aria-label="Sede" required>
+                        <option value="" selected disabled>Sede</option>
                       </select>
                     </fieldset>
                   </div>

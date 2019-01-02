@@ -55,8 +55,11 @@ class EnrollmentResourceController extends Controller
       return $data;
      }
 
+
+
      private function getDataUniversity($university)
      {
+      /*
        $urlU     = $this->url[$university];
        $data     = $this->getUrl($urlU);
        $collection = collect($this->getOptionsVenue($data));
@@ -64,7 +67,32 @@ class EnrollmentResourceController extends Controller
        Cache::put($university, $return, 20160);
 
        return $return;
+       */
+
+        $url = "http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl";
+
+        try {
+          $client = new \SoapClient($url, [ 'trace' => 1 ] );
+
+          $result = $client->FA_NivelEstudio([
+            'ANIO_ACADEMICO'  => date("Y"),
+            'TIPO_SERVICIO'   => 'ACADE',
+            'SERVICIO'        => $university
+          ]);
+
+          $collection = collect($result->FA_NivelEstudioResult);
+          $return     = new EnrollmentResource($collection);
+          Cache::put($university, $return, 20160);
+
+          return $return;
+
+        } catch ( SoapFault $e ) {
+          echo $e->getMessage();
+        }
+
      }
+
+
 
      function explodeDiv($a,$b,$c)
      {

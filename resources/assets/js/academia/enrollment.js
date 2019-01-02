@@ -145,7 +145,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    this.step1Venue;
    this.cost = [{
      one : {
-       "pucp" : {
+       "ACACAT" : {
          "san isidro" : {
            "cost" : 100,
            "time" : 30
@@ -159,13 +159,13 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
            "time" : 15
          }
        },
-       "uni" : {
+       "ACAUN" : {
          "all" : {
            "cost" : 50,
            "time" : 15
          }
        },
-       "sm" : {
+       "ACASM" : {
          "all" : {
            "cost" : 50,
            "time" : 15
@@ -173,15 +173,15 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        }
      },
      nine : {
-       "uni" : {
+       "ACAUN" : {
          "ciencia" : 12,
          "letras" : 15
        },
-       "sm" : {
+       "ACASM" : {
          "ciencia" : 12,
          "letras" : 15
        },
-       "pucp" : {
+       "ACACAT" : {
          "ciencia" : 30,
          "letras" : 30,
        }
@@ -200,13 +200,15 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
    this.dispatcher = function()
    {
-     this.hearUniversity();
+     //this.hearUniversity();
+     this.hearUniversity2();
      this.hearVenue();
      this.hearDNI();
      this.hearAttorneyIf();
    }
 
-   this.hearAttorneyIf = function(){
+   this.hearAttorneyIf = function()
+   {
 
      var birth = document.getElementById('step2_birth');
 
@@ -254,7 +256,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      });
    }
 
-   this.hearDNI = function(){
+   this.hearDNI = function()
+   {
      var elem              = document.getElementById('step1_dni');
      var containerDownload = document.getElementById('dnidownload');
      containerDownload.style.display = 'none';
@@ -271,7 +274,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      });
    }
 
-   this.hearDNIAction = function(response, hide=false){
+   this.hearDNIAction = function(response, hide=false)
+   {
      var containerDownload = document.getElementById('dnidownload');
      var linkDownload      = document.getElementById('dnidownload-link');
      var next              = document.querySelector('.stepsarrows');
@@ -291,7 +295,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      }
    }
 
-   this.hearUniversity = function(){
+   this.hearUniversity = function()
+   {
      var elem = document.querySelector('#step1_university');
      var select = document.getElementById('step1_venue');
 
@@ -311,7 +316,78 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      });
    }
 
-   this.hearVenue = function(){
+   this.hearUniversity2 = function(){
+     var elem = document.querySelector('#step1_university');
+     var select = document.getElementById('step1_cycle');
+
+
+     elem.addEventListener('change', async () => {
+
+       this.step1University = elem.options[elem.selectedIndex].value;
+
+/*
+       select.style.cursor  = 'wait';
+       select.disabled      = true;
+*/
+
+       let response = await this.hearUniversityFetch(this.step1University);
+       this.makeResponsehear2(response, select);
+
+       this.cleanSelect(select, 'Ciclo');
+       this.cleanSelect(document.getElementById('step1_venue'), 'Sede');
+
+     });
+
+   }
+
+   this.hearUniversityFetch = async function(university)
+   {
+      let data = await(await fetch(`/api/academia/enrollment/${university}`)).json();
+      return data;
+   }
+
+
+   this.makeResponsehear2 = function(response, select)
+   {
+
+      var cccccc = document.getElementById('step1_cycle');
+
+        cccccc.style.cursor = 'default';
+        cccccc.disabled     = false;
+
+
+          var dd = document.createElement('option');
+          dd.text = "xd";
+          dd.value = "cdfdfdfs";
+          cccccc.add(dd);
+
+          var xx = document.getElementById("steps-guide");
+          xx.innerHTML = cccccc;
+
+          console.log(dd);          
+          console.log(cccccc)
+
+/*
+      try{
+
+        Object.keys(response.data).forEach(function(e) {
+
+          let s = document.createElement('option');
+          s.text = response.data[e].Text;
+          s.value = response.data[e].Value;
+          select.add(s);
+
+          console.log(select)
+        });
+
+      }catch(err){
+        console.log(err);
+      }
+*/
+   }
+
+   this.hearVenue = function()
+   {
      let elem = document.querySelector('#step1_venue');
      const select = document.querySelector('#step1_cycle');
 
@@ -329,19 +405,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
            error     => this.forceHearEvent(elem)
          );
      });
-   }
-
-   this.makeResponsehear = function(response, select, wait=false)
-   {
-     response = JSON.parse(response).data;
-     for(var k in response){
-         let s = document.createElement('option');
-         s.text = k.capitalize();
-         s.value = response[k];
-         select.add(s);
-     }
-     select.style.cursor = 'default';
-     select.disabled     = false;
    }
 
    this.forceHearEvent = function(elem)
@@ -428,7 +491,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        term9.style.display = 'none';
        term91.innerHTML    = '30';
      }
-
    }
 
    this.nextPrev = function(n,e)
@@ -474,7 +536,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
          }
        }
      });
-
    }
 
    this.fixStepIndicator = function(n)

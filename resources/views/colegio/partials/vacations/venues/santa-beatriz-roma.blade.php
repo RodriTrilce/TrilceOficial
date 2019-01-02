@@ -244,7 +244,7 @@
             <li>
               <strong>Geografía</strong><br>
               Una vez por semana<br>
-              Martes de 11 a. m. a 1 p. m.<br>
+              Jueves de 11 a. m. a 1 p. m.<br>
               Alumnos de 1.<sup>o</sup> a 5.<sup>o</sup> de secundaria
             </li>
             <br>

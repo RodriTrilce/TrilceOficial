@@ -730,7 +730,7 @@
 </div>
 
 
-<div data-title="propuesta educativa">
+<div data-title="propuesta educativa 2">
     <div
     class="
     banner__item

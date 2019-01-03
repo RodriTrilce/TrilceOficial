@@ -23,7 +23,7 @@ class MailVacacionesUtiles extends Command
      *
      * @var string
      */
-    protected $description = 'Envio masivo mail vacaciones salaverry';
+    protected $description = 'Envio masivo mail vacaciones roma';
 
     /**
      * Create a new command instance.

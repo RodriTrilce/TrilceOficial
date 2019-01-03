@@ -1,5 +1,5 @@
 
-
+      <!--
 
 <div data-title="admision 2019">
     <div
@@ -638,6 +638,9 @@
 </div>
 
 
+          -->
+
+
 <div data-title="vacaciones inicial los olivos">
     <div
       class="
@@ -748,7 +751,7 @@
               </svg><br>
             </span>
             <div class="banner__title">
-              <span class="banner__style_inicialolivos__title">Inicial Sede Los&nbsp;Olivos</span>
+              <span class="banner__style_inicialolivos__title">Ahora Inicial en Los&nbsp;Olivos</span>
               <span class="xs-invert_">
                 <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/sede/los-olivos">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
               </span>
@@ -808,7 +811,7 @@
     </div>
 </div>
 
-
+    <!--
 
 
 <div data-title="propuesta educativa">
@@ -1403,3 +1406,6 @@
 
   </div>
 </div>
+
+
+-->

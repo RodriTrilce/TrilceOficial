@@ -7,8 +7,8 @@
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
-  <link rel="stylesheet" href="{{ mix('/css/main.css') }}?v3">
-  <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}?v4">
+  <link rel="stylesheet" href="{{ mix('/css/main.css') }}?v3.1">
+  <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}?v4.1">
   @include('tracking.in_head')
 </head>
 <body>

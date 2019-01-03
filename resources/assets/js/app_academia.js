@@ -21,6 +21,7 @@ import AcorditionProposal from './colegio/educational_proposal';
 
 
 window.SlimSelect = SlimSelect;
+
 window.UID        = {
   _current: 0,
   getNew: function(){
@@ -28,6 +29,7 @@ window.UID        = {
     return this._current;
   }
 };
+
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   var _this = this;
   var _sheetId = "pseudoStyles";
@@ -42,9 +44,11 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   _head.appendChild(_sheet);
   return this;
 };
+
 Element.prototype.remove = function() {
    this.parentElement.removeChild(this);
 }
+
 NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
    for(var i = this.length - 1; i >= 0; i--) {
        if(this[i] && this[i].parentElement) {
@@ -52,10 +56,14 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
        }
    }
 }
+
 NodeList.prototype.forEach = Array.prototype.forEach;
+
 String.prototype.capitalize = function(){
   return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
 }
+
+//Safari fix hover touch
 //document.addEventListener('touchstart', function() {},false);
 
 
@@ -63,12 +71,6 @@ String.prototype.capitalize = function(){
  *  Index
  */
  if(page == 'index'){
-  /*
-  setTimeout(function(){
-    document.body.className += ' loaded';
-  }, 1000);
-  */
-
   var modal = new VanillaModal();
   var slider = tns({
     mode: 'gallery',

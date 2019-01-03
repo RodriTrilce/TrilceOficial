@@ -29,77 +29,6 @@
  };
 
 
- // Define methods utils
- Element.prototype.remove = function() {
-    this.parentElement.removeChild(this);
- }
-
- NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-    for(var i = this.length - 1; i >= 0; i--) {
-        if(this[i] && this[i].parentElement) {
-            this[i].parentElement.removeChild(this[i]);
-        }
-    }
- }
-
- NodeList.prototype.forEach = Array.prototype.forEach;
-
- // Safari fix hover touch
- document.addEventListener('touchstart', function() {},false);
-
- // Capitalize frist letter upper
- String.prototype.capitalize = function(){
-   return this.replace(/\b(\w+)/g, (m,p) => p[0].toUpperCase() + p.substr(1).toLowerCase());
- }
-
- /**
-  * Make a request get for purposes
-  * @param  {url} get
-  * @return {Promise}        The XHR request as a Promise
-  */
- var get = url => {
-   return new Promise((resolve, reject) => {
-     var req = new XMLHttpRequest();
-     req.open('GET', url);
-     req.onload = () => {
-       if (req.status == 200) {
-         resolve(req.response);
-       }else{
-         reject(Error(req.statusText));
-       }
-     };
-     req.onerror = () => reject(Error('Network Error'));
-     req.send();
-   });
- }
-
-
- /**
-  * Make a request post for purposes
-  * @param  {url} post
-  * @param  {data}
-  * @return {Promise}        The XHR request as a Promise
-  */
- var post = (url, data) => {
-   return new Promise((resolve, reject) => {
-     var req = new XMLHttpRequest();
-     req.open('POST', url, true);
-     req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-     req.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name=csrf-token]').content);
-     req.onload  = () => {
-       if(req.status==200){
-         resolve(req.response);
-       }else{
-         reject(Error(req.statusText));
-       }
-     }
-
-     req.onerror = ()  => reject(Error('Network Error'));
-     req.send(data);
-   });
- }
-
-
  Validation.ui.config  = ValidationConfig;
  Validation.lang       = ValidationLang;
  Validation.validators.captcha = input => {
@@ -314,7 +243,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        select.disabled      = true;
 
        let response = await(await fetch(`/api/academia/enrollment/${this.step1University}`)).json();
-       console.log(response);
 
        this.makeResponseCycle(response, select, 'Ciclos');
 
@@ -326,13 +254,19 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
    this.makeResponseCycle = function(response, select, name='')
    {
+
       if(Object.keys(response.data).length == 0){
         select.style.cursor  = 'auto';
         this.cleanSelect(select, `No hay ${name} disponibles`);
         this.selectVenue.disabled = true;
         this.selectTurn.disabled  = true;
 
+        console.log('hear');
+
       }else{
+
+        console.log('vvvvvvvvv')
+
         this.selectVenue.disabled = false;
         this.selectTurn.disabled  = false;
 
@@ -579,7 +513,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
    this.activeCloseAlert = function(active = true)
    {
-      console.log('sss')
       if(active)
         window.onbeforeunload = function()
         {

@@ -358,8 +358,8 @@
 
                 <div class="row col-xs-12 ep-stepsix-list">
                   <div class="col-xs">
-                    <h3 class="list-title"><i class="fa fa-stop"></i> Toda la información de sus hijos al alcance de un solo clic</h3>
-                    <p class="list-text">Ahorra mucho más tiempo usando nuestra intranet para el seguimiento de las calificaciones de sus niños, actividades en general, entre otros.</p>
+                    <h3 class="list-title"><i class="fa fa-stop"></i> Toda la información de tus hijos al alcance de un solo clic</h3>
+                    <p class="list-text">Ahorra mucho más tiempo usando nuestra intranet para el seguimiento de las calificaciones de tus hijos, actividades en general, entre otros.</p>
                   </div>
                 </div>
 

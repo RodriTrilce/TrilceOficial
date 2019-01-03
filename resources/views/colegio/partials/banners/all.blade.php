@@ -754,7 +754,7 @@
               </span>
             </div>
             <div class="banner__subtitle xs-hide">
-              <span class="normal">¿Qué esperas para matricular a tu hijo?</span>
+              <span class="smbig">¿Qué esperas para matricular a tu hijo?</span>
             </div>
           </div>
 

@@ -46,7 +46,7 @@ class MailVacacionesUtiles extends Command
         $users = MailVacacionesUtilesModel::where('send1', '=', '0')->limit(5)->get();
 
         foreach ($users as $user) {
-          $count = Listdriver::where('id', '=', '5')->first();
+          $count = Listdriver::where('id', '=', '6')->first();
 
 /*
           if(($count->count % 100) == 0

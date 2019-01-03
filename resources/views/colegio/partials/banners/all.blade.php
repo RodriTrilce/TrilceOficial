@@ -748,9 +748,9 @@
               </svg><br>
             </span>
             <div class="banner__title">
-              <span class="banner__style_inicialolivos__title">Inicial Sede Los&nbsp;Olvios</span>
+              <span class="banner__style_inicialolivos__title">Inicial Sede Los&nbsp;Olivos</span>
               <span class="xs-invert_">
-                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/vacaciones-utiles">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/sede/los-olivos">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
               </span>
             </div>
             <div class="banner__subtitle xs-hide">
@@ -792,7 +792,7 @@
               <span class="normal">
               </span>
               <span style="display:block;margin: 10px auto;">
-                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/vacaciones-utiles">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/sede/los-olivos">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
               </span>
             </div>
           </div>

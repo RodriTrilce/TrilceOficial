@@ -638,6 +638,177 @@
 </div>
 
 
+<div data-title="vacaciones inicial los olivos">
+    <div
+      class="
+        banner__item
+        banner__item--left
+        "
+        data-shadow="9"
+        data-shadow-opacity=".15"
+        data-bordercolor="#f4633a"
+        data-border-referer=".banner__style_primer__a"
+        data-border-referer-xs=".banner__style_primer__a"
+
+
+        style="
+          background-color: #ffffff;
+        ">
+
+      <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+      <div class="banner__box"  style="border-color:#f4633a;border-width:10px; z-index:11;">
+        <svg class="t_de_trilce_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+        <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+          128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+        </svg>
+      </div>
+
+      <div
+      class="banner__image"
+
+      data-image-md=""
+      data-position-md="90% bottom"
+      data-size-md="hidden"
+
+      data-image-xs=""
+      data-position-xs="110% bottom"
+      data-size-xs="hidden"
+
+      data-position-xs-landscape = "80% bottom"
+      data-size-xs-landscape="50vw"
+
+
+
+      style="
+      background-repeat: no-repeat;
+      z-index: 12;
+      "></div>
+
+      <div class="
+      banner__content
+      banner__content--colegio
+      " style="z-index:13;">
+
+
+        <style>
+        .banner__style_inicialolivos__svg{
+          width: 50px;
+        }
+
+        .xs-invert_{
+          display: none !important;
+        }
+
+        @media (max-width: 767px){
+          .banner__style_inicialolivos__svg{
+            width: 30px;
+          }
+
+          .xs-invert_{
+            display: block !important;
+          }
+
+          .banner__style_inicialolivos__title{
+            line-height: 33px !important;
+          }
+
+        }
+        </style>
+
+        <div class="banner__style_primer banner__style_primer--colegio banner__style_primer__mobile-container">
+
+          <div class="banner__style_primer__a">
+            <span>
+              <svg version="1.1" class="banner__style_inicialolivos__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 37.8 51.3" enable-background="new 0 0 37.8 51.3" xml:space="preserve">
+                <g>
+                  <path fill="#FF6334" d="M9.3,28.7c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9
+                    C10.2,29.1,9.8,28.7,9.3,28.7z"/>
+                  <path fill="#FF6334" d="M9.3,32.4c-0.5,0-0.9,0.4-0.9,0.9v11.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9V33.4
+                    C10.2,32.9,9.8,32.4,9.3,32.4z"/>
+                  <path fill="#FF6334" d="M35.5,2.3c-0.1-0.3-0.3-0.5-0.6-0.7c-0.3-0.1-0.6-0.1-0.9,0.1c-0.9,0.7-5.7,4.2-6.5,6.4
+                    c-0.5,1.3-0.4,2.6,0.3,3.8c-1.2,1.7-2.4,4-3.4,6.2V2.6c0-0.5-0.4-0.9-0.9-0.9h-7.6c-0.5,0-0.9,0.4-0.9,0.9v18.5h-0.2l-1.6-6.3
+                    c0,0,0,0,0,0l-1.5-5.5c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0
+                    c0,0,0,0,0-0.1c0,0,0,0,0,0L5.9,2.4C5.7,2.1,5.3,2,5,2.1C4.6,2.1,4.3,2.4,4.3,2.8l-1.7,8.6c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0,0,0
+                    c0,0,0,0,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0,0,0c0,0,0,0.1,0,0.1l1.5,5.5l1,3.9c-0.6,0.1-1.1,0.4-1.5,0.8
+                    c-0.5,0.5-0.8,1.2-0.8,2c0,1.2,0.8,2.3,1.9,2.7v18.7c0,2.6,2.1,4.7,4.7,4.7h18.9c2.6,0,4.7-2.1,4.7-4.7V26.6
+                    c0.4-0.1,0.8-0.4,1.1-0.7c0.5-0.5,0.8-1.2,0.8-2c0-1.4-1-2.5-2.3-2.8c0.6-2.5,1.1-5,1.2-6.9c1.3-0.5,2.3-1.5,2.7-2.8
+                    C37.2,9.3,35.8,3.5,35.5,2.3z M25.2,21.1c1.4-3.3,2.8-5.9,3.9-7.6c0.4,0.3,0.8,0.6,1.3,0.7c0.5,0.2,0.9,0.3,1.4,0.3
+                    c-0.2,1.9-0.6,4.2-1.2,6.6H25.2z M16.9,3.5h5.7v2.2h-1.9c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h1.9v1.9h-1.9
+                    c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h1.9v1.9h-1.9c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9h1.9V17h-1.9
+                    c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h1.9v2.2h-5.7V3.5z M7,21.1l-1.1-4.3c0,0,0,0,0,0l-1-3.7c0.4,0.1,0.8,0.1,1.3,0.1
+                    c0.5,0,1.1-0.1,1.6-0.2c1-0.3,1.8-0.7,2.6-1.4l1,3.7l1.5,5.8H7z M5.7,5.1l3.9,4.6c-0.6,0.7-1.4,1.3-2.3,1.5
+                    c-0.9,0.2-1.9,0.2-2.7-0.2L5.7,5.1z M28.2,48.1H9.3c-1.6,0-2.8-1.3-2.8-2.8V26.8H31v18.5C31,46.9,29.8,48.1,28.2,48.1z M32.9,23.9
+                    c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3H5.5c-0.5,0-0.9-0.4-0.9-0.9c0-0.3,0.1-0.5,0.3-0.7C5,23.1,5.3,23,5.5,23h8.5
+                    c0,0,0,0,0,0c0,0,0,0,0,0h9.7c0,0,0,0,0,0c0,0,0,0,0,0h7.6c0,0,0,0,0,0c0,0,0,0,0,0H32C32.5,23,32.9,23.4,32.9,23.9z M34.7,10.8
+                    c-0.3,0.9-1.1,1.6-2.1,1.8c-0.5,0.1-1.1,0.1-1.6-0.1c-0.5-0.2-1-0.5-1.3-1c0,0,0,0,0,0c-0.6-0.8-0.7-1.8-0.4-2.7
+                    c0.4-1,2.7-3,4.7-4.6C34.6,6.7,35,9.8,34.7,10.8z"/>
+                </g>
+              </svg><br>
+            </span>
+            <div class="banner__title">
+              <span class="banner__style_inicialolivos__title">Inicial Sede Los&nbsp;Olvios</span>
+              <span class="xs-invert_">
+                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/vacaciones-utiles">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+              </span>
+            </div>
+            <div class="banner__subtitle xs-hide">
+              <span class="normal">¿Qué esperas para matricular a tu hijo?</span>
+            </div>
+          </div>
+
+          <div data-guide="img__"
+            class="
+                    banner__style_primer__img_varios__vacaciones_utiles
+
+                    "
+            data-banner-img-position="top">
+
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="/storage/static/images/banner/ogro/banner_03_ene_2019_losolivosinicial-150x250.png"
+                sizes="200px">
+
+              <source
+                media="(min-width: 767px)"
+                srcset="/storage/static/images/banner/ogro/banner_03_ene_2019_losolivosinicial-300x500.png"
+                sizes="10vw">
+
+              <img src="" srcset="/storage/static/images/banner/ogro/banner_03_ene_2019_losolivosinicial-300x500.png">
+            </picture>
+
+          </div>
+
+          <div class="banner__style_vacaciones_left_content xs-hide">
+            <div class="banner__title">
+              <span class="banner__propuesta-educativa__title banner__propuesta-educativa__title--two">
+                Matrícula 2019
+              </span>
+            </div>
+
+            <div class="banner__subtitle">
+              <span class="normal">
+              </span>
+              <span style="display:block;margin: 10px auto;">
+                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/vacaciones-utiles">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+              </span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+     </div>
+
+    </div>
+</div>
+
+
 
 
 <div data-title="propuesta educativa">
@@ -817,8 +988,6 @@
 
   </div>
 </div>
-
-
 
 
 

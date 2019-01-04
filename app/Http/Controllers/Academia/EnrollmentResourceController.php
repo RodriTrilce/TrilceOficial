@@ -77,7 +77,8 @@ class EnrollmentResourceController extends Controller
 
           $collection = collect($result->FA_NivelEstudioResult);
           $return     = new EnrollmentResource($collection);
-          Cache::put($university, $return, 20160);
+          
+          //Cache::put($university, $return, 20160);
 
           return $return;
 
@@ -99,7 +100,8 @@ class EnrollmentResourceController extends Controller
 
           $collection = collect($result->FA_BldgResult);
           $return     = new EnrollmentResource($collection);
-          Cache::put($university, $return, 20160);
+          
+          //Cache::put($university, $return, 20160);
 
           return $return;
 

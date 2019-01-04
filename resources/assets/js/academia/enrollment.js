@@ -136,7 +136,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    {
      this.hearUniversity();
      this.hearCycle();
-     this.hearVenue();
+     //this.hearVenue();
      this.hearDNI();
      this.hearAttorneyIf();
    }
@@ -249,11 +249,12 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        this.cleanSelect(this.selectVenue, 'Sede');
        this.cleanSelect(this.selectTurn, 'Turno')
      });
-
    }
 
    this.makeResponseCycle = function(response, select, name='')
    {
+
+    window.z = response;
 
       if(Object.keys(response.data).length == 0){
         select.style.cursor  = 'auto';
@@ -261,31 +262,29 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
         this.selectVenue.disabled = true;
         this.selectTurn.disabled  = true;
 
-        console.log('hear');
-
       }else{
-
-        console.log('vvvvvvvvv')
 
         this.selectVenue.disabled = false;
         this.selectTurn.disabled  = false;
 
         try{
 
-          if(Object.keys(response.data).length == 1)
+          if(Array.isArray(response.data.ItemOfstring))
           {
-            let s = document.createElement('option');
-            s.text = response.data.ItemOfstring.Text;
-            s.value = response.data.ItemOfstring.Value;
-            select.add(s);
-
-          }else{
             Object.keys(response.data.ItemOfstring).forEach(function(e) {
               let s = document.createElement('option');
               s.text = response.data.ItemOfstring[e].Text;
               s.value = response.data.ItemOfstring[e].Value;
               select.add(s);
-            });            
+            });
+
+          }else{
+
+            let s = document.createElement('option');
+            s.text = response.data.ItemOfstring.Text;
+            s.value = response.data.ItemOfstring.Value;
+            select.add(s);
+            
           }
 
          select.style.cursor  = 'auto';
@@ -316,8 +315,13 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
    this.makeResponseVenue = function (response, select)
    {
+      select.style.cursor  = 'auto';
+
+      window.x = response;
+
+
       if(Object.keys(response.data).length == 0){
-        select.style.cursor  = 'auto';
+
         this.cleanSelect(select, `No hay sedes disponibles`);
         this.selectTurn.disabled  = true;
 
@@ -327,14 +331,26 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
         this.selectTurn.disabled  = false;
 
         try{
-          Object.keys(response.data.ItemOfstring).forEach(function(e) {
 
+          if(Array.isArray(response.data.ItemOfstring))
+          {
+            Object.keys(response.data.ItemOfstring).forEach(function(e) {
+
+              let s = document.createElement('option');
+              s.text = response.data.ItemOfstring[e].Text.replace('Academia', '');
+              s.value = response.data.ItemOfstring[e].Value;
+              select.add(s);
+
+            });
+
+          }else{
             let s = document.createElement('option');
-            s.text = response.data.ItemOfstring[e].Text;
-            s.value = response.data.ItemOfstring[e].Value;
+            s.text = response.data.ItemOfstring.Text.replace('Academia', '');
+            s.value = response.data.ItemOfstring.Value;
             select.add(s);
 
-          });
+          }
+
 
          select.style.cursor  = 'auto';
          select.disabled      = false;
@@ -424,6 +440,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      sede = sede.toLowerCase();
 
      var time, cost, science, letter;
+
      if(Object.keys(route).length > 1){
        cost = route[sede].cost;
        time = route[sede].time;
@@ -436,7 +453,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      letter  = routeNine.letras;
 
      // Set
-     term2.innerHTML = cost;
+     term2.innerHTML  = cost;
      term21.innerHTML = time;
 
      if(university !== 'pucp'){

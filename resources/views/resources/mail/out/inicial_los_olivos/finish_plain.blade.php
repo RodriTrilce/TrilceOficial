@@ -1,6 +1,5 @@
-
-Inicial 5 años sede Los Olivos
-¿Qué esperas para matricular a tu hijo?
+Inicial en Trilce Los Olivos
+¿Qué esperas para matricular a tu hijo? 
 
 - Auxiliar permanente
 - Ingles intensivo

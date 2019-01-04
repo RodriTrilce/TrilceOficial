@@ -30,7 +30,7 @@ class InicialMail extends Mailable
      {
        return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                    ->to($this->data->email)
-                   ->subject('Inicial en la sede Los Olivos. ¿Qué esperas para matricular a tu hijo?')
+                   ->subject('Inicial en Trilce Los Olivos. ¿Qué esperas para matricular a tu hijo? ')
                    ->view('resources.mail.out.inicial_los_olivos.finish')
                    ->text('resources.mail.out.inicial_los_olivos.finish_plain')
                    ->with(

@@ -23,7 +23,7 @@ class MailVacacionesUtiles extends Command
      *
      * @var string
      */
-    protected $description = 'Envio masivo mail vacaciones roma';
+    protected $description = 'Envio masivo mail vacaciones los olivos';
 
     /**
      * Create a new command instance.
@@ -46,7 +46,7 @@ class MailVacacionesUtiles extends Command
         $users = MailVacacionesUtilesModel::where('send1', '=', '0')->limit(5)->get();
 
         foreach ($users as $user) {
-          $count = Listdriver::where('id', '=', '6')->first();
+          $count = Listdriver::where('id', '=', '7')->first();
 
 /*
           if(($count->count % 100) == 0

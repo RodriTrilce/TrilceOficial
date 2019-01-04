@@ -30,9 +30,9 @@ class VacacionesUtiles extends Mailable
      {
        return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                    ->to($this->data->email)
-                   ->subject('4 RAZONES PARA APROVECHAR LAS VACACIONES ÚTILES')
-                   ->view('resources.mail.out.vacaciones_roma.finish')
-                   ->text('resources.mail.out.vacaciones_roma.finish_plain')
+                   ->subject('5 RAZONES PARA APROVECHAR LAS VACACIONES ÚTILES')
+                   ->view('resources.mail.out.vacaciones_los_olivos.finish')
+                   ->text('resources.mail.out.vacaciones_los_olivos.finish_plain')
                    ->with(
                      [
                        'data' => $this->data

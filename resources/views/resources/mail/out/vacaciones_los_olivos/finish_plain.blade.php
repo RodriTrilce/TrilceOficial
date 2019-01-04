@@ -25,7 +25,7 @@ Toda la información aquí: http://www.trilce.edu.pe/colegio/sede/los-olivos/vac
 
 
 Inicio de clases: 4 de enero
-Sede Jesús María (Salaverry)
+Sede Los Olivos
 Av. Tomás Valle 845	 Tel: 6198 108
 
 

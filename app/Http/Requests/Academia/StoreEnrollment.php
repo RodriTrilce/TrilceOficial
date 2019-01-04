@@ -29,7 +29,7 @@ class StoreEnrollment extends FormRequest
           'step1_university' => 'required',
           'step1_venue' => 'required',
           'step1_cycle' => 'required',
-          'step1_turn' => 'required',
+          //'step1_turn' => 'required',
           'step1_condition' => 'required',
           'step2_names' => 'required',
           'step2_lastname' => 'required',

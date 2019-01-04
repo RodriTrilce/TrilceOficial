@@ -41,11 +41,15 @@ class EnrollmentController extends Controller
       $enrollment->student_dni = $request->step1_dni;
       $enrollment->interest_university = $request->step1_university;
 
+      /*
       $venue = explode('|', $request->step1_venue);
       $enrollment->interest_venue = $venue[0];
+      */
 
+      $enrollment->interest_venue = $request->step1_venue;
       $enrollment->interest_cycle = $request->step1_cycle;
-      $enrollment->interest_turn = $request->step1_turn;
+      //$enrollment->interest_turn = $request->step1_turn;
+      
       $enrollment->student_names = $request->step2_names;
       $enrollment->student_lastname = $request->step2_lastname;
       $enrollment->student_lastname_mother = $request->step2_lastname_mother;

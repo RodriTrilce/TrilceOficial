@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class VacacionesUtiles extends Mailable
+class InicialMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,10 +16,10 @@ class VacacionesUtiles extends Mailable
      *
      * @return void
      */
-     public function __construct($data)
-     {
-       $this->data = $data;
-     }
+    public function __construct($data)
+    {
+        $this->data = $data;
+    }
 
     /**
      * Build the message.
@@ -30,9 +30,9 @@ class VacacionesUtiles extends Mailable
      {
        return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                    ->to($this->data->email)
-                   ->subject('5 RAZONES PARA APROVECHAR LAS VACACIONES ÚTILES')
-                   ->view('resources.mail.out.vacaciones_los_olivos.finish')
-                   ->text('resources.mail.out.vacaciones_los_olivos.finish_plain')
+                   ->subject('Inicial en Trilce Los Olivos. ¿Qué esperas para matricular a tu hijo? ')
+                   ->view('resources.mail.out.inicial_los_olivos.finish')
+                   ->text('resources.mail.out.inicial_los_olivos.finish_plain')
                    ->with(
                      [
                        'data' => $this->data

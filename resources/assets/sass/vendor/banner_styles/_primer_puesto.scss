@@ -24,10 +24,20 @@
     font-size: 1rem;
   }
 
-  @media (max-width: 767px) {
+  .banner__subtitle span.smbig {
+    font-size: 1.8rem;
+    font-family: $font_geo_reg;
+  }
+
+  @include breakpoint(baby){
     .banner__subtitle span.small, span.normal {
       font-size: .8rem;
     }
+
+    .banner__subtitle span.smbig {
+      font-size: 1rem;
+    }
+
   }
 
 }

@@ -344,7 +344,7 @@
         </span>
         <span style="display:block;margin-top: 20px; margin-bottom:10px;">
           <button class="banner__button-cta banner__button-cta--white">
-            <a href="#inicios" target="_blank">2 de enero</a>
+            <a href="#inicios" target="_blank">Incorporaciones</a>
           </button>
         </span>
       </div>
@@ -403,7 +403,7 @@
         </span>
         <span style="display:block;margin-top: 20px; margin-bottom:10px;">
           <button class="banner__button-cta banner__button-cta--white">
-            <a href="#inicios" target="_blank">2 y 7 de enero</a>
+            <a href="#inicios" target="_blank">7 de enero</a>
           </button>
         </span>
       </div>

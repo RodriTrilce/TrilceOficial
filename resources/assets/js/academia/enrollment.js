@@ -129,7 +129,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    {
     this.selectCycle = document.getElementById('step1_cycle');
     this.selectVenue = document.getElementById('step1_venue');
-    
    }
 
    this.dispatcher = function()
@@ -241,6 +240,9 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
        this.step1University = elem.options[elem.selectedIndex].value;
 
+       // Set Key
+       document.getElementById('step1_university_key').value = this.step1University;
+
        this.cleanSelect(select, 'Ciclo');
        select.style.cursor  = 'wait';
        select.disabled      = true;
@@ -302,6 +304,9 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      this.selectCycle.addEventListener('change', async () => {
        this.step1Select = this.selectCycle.options[this.selectCycle.selectedIndex].value;
 
+       // Set key
+       document.getElementById('step1_cycle_key').value = this.step1Select;
+
        this.cleanSelect(this.selectVenue, 'Sede');
        this.selectCycle.style.cursor  = 'wait';
        this.selectCycle.disabled      = true;
@@ -321,10 +326,8 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
         this.cleanSelect(select, `No hay sedes disponibles`);
 
       }else{
-
         this.selectCycle.disabled  = false;
         
-
         try{
 
           if(Array.isArray(response.data.ItemOfstring))

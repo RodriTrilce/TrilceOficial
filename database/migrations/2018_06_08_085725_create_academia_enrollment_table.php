@@ -33,10 +33,22 @@ class CreateAcademiaEnrollmentTable extends Migration
         $table->string('student_postulate_profession');
         $table->string('student_last_academy')->nullable();
 
+
+
+
         $table->string('interest_university');
+        $table->string('interest_university_key');
+
         $table->string('interest_venue');
+        $table->string('interest_venue_key');
+
         $table->string('interest_cycle');
+        $table->string('interest_cycle_key');
+        
         $table->string('interest_turn')->nullable();
+
+
+
 
         $table->enum('attorney_type', ['mother', 'father', 'attorney', 'none']);
         $table->string('attorney_names')->nullable();

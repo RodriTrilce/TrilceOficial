@@ -129,14 +129,13 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    {
     this.selectCycle = document.getElementById('step1_cycle');
     this.selectVenue = document.getElementById('step1_venue');
-    this.selectTurn  = document.getElementById('step1_turn');
+    
    }
 
    this.dispatcher = function()
    {
      this.hearUniversity();
      this.hearCycle();
-     //this.hearVenue();
      this.hearDNI();
      this.hearAttorneyIf();
    }
@@ -196,12 +195,16 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      var containerDownload = document.getElementById('dnidownload');
      containerDownload.style.display = 'none';
 
-     elem.addEventListener('keyup', () => {
+     elem.addEventListener('keyup', async () => {
        if(elem.value.length==8){
-         post('/api/academia/enrollment/check', 'dni='+elem.value).then(
-             response  => this.hearDNIAction(response),
-             error     => console.log('Error API DNI checker')
-           );
+
+         let response = await(await fetch('/api/academia/enrollment/check', {
+          method: 'POST',
+          body  : new URLSearchParams('dni=' + elem.value)
+         })).json();
+         
+         this.hearDNIAction(response)
+
        }else {
          this.hearDNIAction(null, true);
        }
@@ -219,7 +222,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        next.style.display                = 'flex';
 
      }else{
-       response = JSON.parse(response).data;
+       response = response.data;
 
        if(response.register){
          containerDownload.style.display   = 'flex';
@@ -247,25 +250,22 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        this.makeResponseCycle(response, select, 'Ciclos');
 
        this.cleanSelect(this.selectVenue, 'Sede');
-       this.cleanSelect(this.selectTurn, 'Turno')
+       
      });
    }
 
    this.makeResponseCycle = function(response, select, name='')
    {
-
-    window.z = response;
-
       if(Object.keys(response.data).length == 0){
         select.style.cursor  = 'auto';
         this.cleanSelect(select, `No hay ${name} disponibles`);
         this.selectVenue.disabled = true;
-        this.selectTurn.disabled  = true;
+        
 
       }else{
 
         this.selectVenue.disabled = false;
-        this.selectTurn.disabled  = false;
+        
 
         try{
 
@@ -309,7 +309,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        let response = await(await fetch(`/api/academia/enrollment/${this.step1University}/cycle/${this.step1Select}`)).json();
        
        this.makeResponseVenue(response, this.selectVenue);
-       this.cleanSelect(this.selectTurn, 'Turno')       
+       
      });
    }
 
@@ -317,18 +317,13 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    {
       select.style.cursor  = 'auto';
 
-      window.x = response;
-
-
       if(Object.keys(response.data).length == 0){
-
         this.cleanSelect(select, `No hay sedes disponibles`);
-        this.selectTurn.disabled  = true;
 
       }else{
 
         this.selectCycle.disabled  = false;
-        this.selectTurn.disabled  = false;
+        
 
         try{
 
@@ -351,7 +346,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
           }
 
-
          select.style.cursor  = 'auto';
          select.disabled      = false;
 
@@ -360,27 +354,6 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
         }
         
       }
-   }
-
-   this.hearVenue = function()
-   {
-     let elem     = this.selectVenue;
-     const select = this.selectCycle;
-
-     elem.addEventListener('change', () => {
-       this.step1Venue = elem.options[elem.selectedIndex].value;
-       let key         = this.step1Venue.split('|');
-
-       this.cleanSelect(select, 'Ciclo');
-
-       select.style.cursor = 'wait';
-       select.disabled     = true;
-
-       get(`/api/academia/enrollment/${this.step1University}/${key[1]}`).then(
-           response  => this.makeResponsehear(response, select),
-           error     => this.forceHearEvent(elem)
-         );
-     });
    }
 
    this.forceHearEvent = function(elem)
@@ -430,9 +403,16 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      var term91 = document.getElementById('terms-91');
 
      var university = document.getElementById('step1_university');
-     university = university.options[university.selectedIndex].value.toLowerCase();
+     university = university.options[university.selectedIndex].value;
+
+     console.log(university);
+
+     console.log('..................');
+     console.log(this.cost[0].one);
 
      var route = this.cost[0].one[university];
+
+
      var routeNine = this.cost[0].nine[university];
      var sede = document.getElementById('step1_venue');
 
@@ -456,7 +436,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      term2.innerHTML  = cost;
      term21.innerHTML = time;
 
-     if(university !== 'pucp'){
+     if(university !== 'ACACAT'){
        term9.style.display = 'inline-block';
        let b = term9a.options[term9a.selectedIndex].value;
        term91.innerHTML = '12';

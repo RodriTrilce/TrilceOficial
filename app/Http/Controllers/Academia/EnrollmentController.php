@@ -98,7 +98,7 @@ class EnrollmentController extends Controller
      $internal_path = str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/';
      $cost = json_decode('{
          "one" : {
-           "pucp" : {
+           "ACACAT" : {
              "san isidro" : {
                "cost" : "100",
                "time" : "30"
@@ -112,13 +112,13 @@ class EnrollmentController extends Controller
                "time" : "15"
              }
            },
-           "uni" : {
+           "ACAUN" : {
              "all" : {
                "cost" : "50",
                "time" : "15"
              }
            },
-           "san marcos" : {
+           "ACASM" : {
              "all" : {
                "cost" : "50",
                "time" : "15"
@@ -126,20 +126,21 @@ class EnrollmentController extends Controller
            }
          },
          "nine" : {
-           "uni" : {
+           "ACAUN" : {
              "ciencia" : "12",
              "letras" : "15"
            },
-           "san marcos" : {
+           "ACASM" : {
              "ciencia" : "12",
              "letras" : "15"
            },
-           "pucp" : {
+           "ACACAT" : {
              "ciencia" : "30",
              "letras" : "30"
            }
          }
        }');
+
 
      $dni = decrypt($request->token);
      $enrollment = Enrollment::find($dni);
@@ -148,7 +149,9 @@ class EnrollmentController extends Controller
        return abort(404);
      }
 
-     $enrollment->interest_university = ($enrollment->interest_university=='sm'?'san marcos':$enrollment->interest_university);
+
+
+
      $terms_route = $cost->one->{$enrollment->interest_university};
 
      if(count((array)$terms_route) > 1){
@@ -200,9 +203,26 @@ class EnrollmentController extends Controller
      $pdf->SetXY(16, 54);
      $pdf->Write(0, ucwords(utf8_decode($enrollment->interest_venue)));
 
+
+
+     switch ($enrollment->interest_university) {
+
+       case 'ACASM':
+          $enrollment_interest_university_print = 'San marcos';
+         break;
+
+       case 'ACAUN':
+          $enrollment_interest_university_print = 'UNI';
+         break;
+
+       case 'ACACAT':
+          $enrollment_interest_university_print = 'Católica';
+         break;
+     }
+
      // Universidad
      $pdf->SetXY(47, 54);
-     $pdf->Write(0, strtoupper(utf8_decode($enrollment->interest_university)));
+     $pdf->Write(0, strtoupper(utf8_decode($enrollment_interest_university_print)));
 
      // Nombres
      $pdf->SetXY(78, 73.5);
@@ -231,6 +251,10 @@ class EnrollmentController extends Controller
      // Colegio
      $pdf->SetXY(47, 107);
      $pdf->Write(0, utf8_decode($enrollment->student_school));
+
+
+
+
 
      // Universidad postula
      $pdf->SetXY(16, 118.5);

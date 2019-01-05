@@ -89,6 +89,7 @@
                     </fieldset>
                   </div>
 
+                  {{--
                   <div class="col-xs-12">
                     <fieldset class="form-group">
                       <select name="step1_turn" id="step1_turn" aria-label="Turno" required>
@@ -98,6 +99,7 @@
                       </select>
                     </fieldset>
                   </div>
+                  --}}
 
                   <input type="text" class="condition" name="step1_condition" placeholder="Condición" value="P" hidden readonly>
                 </div>

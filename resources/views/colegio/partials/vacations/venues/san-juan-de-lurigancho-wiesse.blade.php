@@ -331,7 +331,7 @@
 
 <div class="col-xs-12 vacations__bottom vacations__bottom--orange">
   <div>
-    <h1><span><i class="fa fa-lightbulb-o"></i> Inicios: 4 y 7 de enero</span></h1>
+    <h1><span><i class="fa fa-lightbulb-o"></i> Inicio: 7 de enero</span></h1>
   </div>
   <div>
     <h3><span>Fin: 15 de febrero</span></h3>

@@ -59,6 +59,22 @@
 
   <div class="clearfix"></div>
 
+
+
+  @if($university->short_name=='UNI')
+    <div class="row col-xs-12 center-xs about-container container-base">
+      <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+
+        <p>¡Participa en nuestro Simulacro UNI - Ciclo Repaso!
+          <br>
+          Inscríbete en 👉 <a href="http://app.trilce.edu.pe/uni/registro/" target="_blank">http://app.trilce.edu.pe/uni/registro/</a>        
+        </p>
+      </div>
+    </div>
+  @endif
+
+
+
   {{-- <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 

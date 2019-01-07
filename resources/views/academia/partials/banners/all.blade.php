@@ -424,7 +424,7 @@
 
 
 
-<div data-title="ciclo repaso uni">
+<div data-title="simulacro ciclo repaso uni">
     <div
     class="
       banner__item
@@ -456,11 +456,11 @@
 
 
 
-    data-image-md="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_big.png"
+    data-image-md="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_repaso_big.png"
     data-position-md="100% bottom"
     data-size-md="cover"
 
-    data-image-xs="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_mobile.png"
+    data-image-xs="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_repaso_mobile.png"
     data-position-xs="100% bottom"
     data-size-xs="cover"
 
@@ -575,7 +575,7 @@
 </div>
 
 
-<div data-title="ciclo verano uni">
+<div data-title="simulacro ciclo verano uni">
     <div
     class="
       banner__item
@@ -668,7 +668,7 @@
             <div class="row col-xs-12 line">
               <div class="col-xs-4 number">
                 <div>01</div>
-                <div>Febrero</div>
+                <div>febrero</div>
               </div>
               <div class="col-xs text">Examen de Física <br>Y Química</div>
             </div>
@@ -709,7 +709,7 @@
             <div class="row col-xs-12 line">
               <div class="col-xs-4 number">
                 <div>01</div>
-                <div>Febrero</div>
+                <div>febrero</div>
               </div>
               <div class="col-xs text">Examen de Física <br>Y Química</div>
             </div>

@@ -13,7 +13,7 @@
       <tbody>
         <tr>
           <td data-label=""> Año 2019</td>
-          <td data-label="Primera Opción"><a href="/storage/academia/documents/solutions/pucp/2018/primera-opcion-2018-reconstruido.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
+          <td data-label="Primera Opción"><a href="/storage/academia/documents/solutions/pucp/2019/primera-opcion-2019-reconstruido.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>
           <td data-label="Evaluación del Talento - I">&nbsp;</td>
           <td data-label="Evaluación del Talento - II">&nbsp;</td>
         </tr>

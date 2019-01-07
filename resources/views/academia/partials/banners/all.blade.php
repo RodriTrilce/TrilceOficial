@@ -1,133 +1,7 @@
 
 
-<div data-title="verano uni">
-    <div
-    class="
-      banner__item
-      banner__item--left
-      "
-      data-shadow="9"
-      data-shadow-opacity=".1"
-      data-bordercolor="white"
-      data-border-referer=".banner__style_primer__a"
-      data-border-referer-xs=".banner__style_primer-reverse"
 
 
-      style="
-        background-color: #f4633a;
-      ">
-
-
-    <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
-    <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
-      <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-      <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
-        128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-      </svg>
-    </div>
-
-    <div
-    class="banner__image"
-
-    data-image-md="/storage/static/images/banner/ogro/banner_7_ene_2019_cicloverano.png"
-    data-position-md="100% bottom"
-    data-size-md="contain"
-
-    data-image-xs="/storage/static/images/banner/ogro/banner_7_ene_2019_cicloverano.png"
-    data-position-xs="120% bottom"
-    data-size-xs="75%"
-
-    data-position-xs-landscape = "80% bottom"
-    data-size-xs-landscape="50vw"
-
-
-
-    style="
-    background-repeat: no-repeat;
-    z-index: 12;
-    "></div>
-
-    <div class="
-    banner__content
-
-    " style="z-index:13;">
-
-
-
-      <div class="banner__style_primer  xs-hide">
-        <div class="banner__style_primer__a">
-          <div class="banner__title">
-            <span>Simulacro<br>UNI</span>
-          </div>
-          <div class="banner__subtitle">
-            <span class="semibig2">
-              Ciclo Verano
-            </span>
-
-          </div>
-        </div>
-
-        <div class="banner__style_primer__b">
-          
-          <div class="row col-xs-8 banner__simulacros__table">
-
-            <div class="row col-xs-12 line">
-              <div class="col-xs-4 number">
-                <div>28</div>
-                <div>enero</div>
-              </div>
-              <div class="col-xs text">Examen de aptitud <br>Académia y Humanidades</div>
-            </div>
-
-            <div class="row col-xs-12 line">
-              <div class="col-xs-4 number">
-                <div>30</div>
-                <div>enero</div>
-              </div>
-              <div class="col-xs text">Examen de <br>Matemática</div>
-            </div>
-
-            <div class="row col-xs-12 line">
-              <div class="col-xs-4 number">
-                <div>01</div>
-                <div>Febrero</div>
-              </div>
-              <div class="col-xs text">Examen de Física <br>Y Química</div>
-            </div>
-
-          </div>
-  
-        </div>
-
-        <div class="banner__style_primer__img">
-
-        </div>
-      </div>
-
-      <div class="banner__style_primer-reverse banner__style_primer--colegio">
-
-        <div class="banner__title">
-          <span>1.<sup>er</sup> puesto<br>UNI</span>
-        </div>
-        <div class="banner__subtitle">
-          <span class="normal">
-            Examen Escolares<br>2019-1<br>
-          </span>
-          <span class="small">
-            Daniela Velarde
-          </span>
-        </div>
-      </div>
-
-   </div>
-
-  </div>
-</div>
-
-
-
-<!--
 
 
 <div data-title="primer puesto uni - velarde">
@@ -539,7 +413,7 @@
         </span>
         <span style="display:block;margin-top: 20px; margin-bottom:10px;">
           <button class="banner__button-cta banner__button-cta--white">
-            <a href="#inicios" target="_blank">7 de enero</a>
+            <a href="#inicios" target="_blank">Incorporaciones</a>
           </button>
         </span>
       </div>
@@ -547,6 +421,309 @@
 
   </div>
 </div>
+
+
+
+<div data-title="ciclo repaso uni">
+    <div
+    class="
+      banner__item
+      banner__item--left
+      "
+      data-shadow="9"
+      data-shadow-opacity=".1"
+      data-bordercolor="white"
+      data-border-referer=".banner__style_primer__a"
+      data-border-referer-xs=".banner__style_primer-reverse"
+
+
+      style="
+        background-color: #f4633a;
+      ">
+
+
+    <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+    <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+      <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+      <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+        128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+      </svg>
+    </div>
+
+    <div
+    class="banner__image"
+
+
+
+    data-image-md="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_big.png"
+    data-position-md="100% bottom"
+    data-size-md="cover"
+
+    data-image-xs="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_mobile.png"
+    data-position-xs="100% bottom"
+    data-size-xs="cover"
+
+    data-position-xs-landscape = "100% bottom"
+    data-size-xs-landscape="cover"
+
+
+
+    style="
+    background-repeat: no-repeat;
+    z-index: 10;
+    "></div>
+
+    <div class="
+    banner__content
+
+    " style="z-index:13;">
+
+
+
+      <div class="banner__style_primer  xs-hide">
+        <div class="banner__style_primer__a">
+          <div class="banner__title">
+            <span>Simulacro<br>UNI</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="semibig2">
+              Ciclo Repaso
+            </span>
+
+          </div>
+        </div>
+
+        <div class="banner__style_primer__b">
+          
+          <div class="row col-xs-8 banner__simulacros__table">
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>14</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de aptitud <br>Académia y Humanidades</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>16</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de <br>Matemática</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>18</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de Física <br>Y Química</div>
+            </div>
+          </div>
+  
+        </div>
+
+        <div class="banner__style_primer__img">
+
+        </div>
+      </div>
+
+      <div class="banner__style_primer-reverse banner__style_primer--colegio">
+
+        <div class="banner__title">
+          <span>Simulacro UNI<br>Ciclo Repaso</span>
+        </div>
+        <div class="banner__subtitle">
+
+          <div class="row col-xs-8 banner__simulacros__table">
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>14</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de aptitud <br>Académia y Humanidades</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>16</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de <br>Matemática</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>18</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de Física <br>Y Química</div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+   </div>
+
+  </div>
+</div>
+
+
+<div data-title="ciclo verano uni">
+    <div
+    class="
+      banner__item
+      banner__item--left
+      "
+      data-shadow="9"
+      data-shadow-opacity=".1"
+      data-bordercolor="white"
+      data-border-referer=".banner__style_primer__a"
+      data-border-referer-xs=".banner__style_primer-reverse"
+
+
+      style="
+        background-color: #f4633a;
+      ">
+
+
+    <div class="banner_box-bar" style="width:10px; z-index:11;"></div>
+    <div class="banner__box banner__box--academia"  style="border-color:white;border-width:10px; z-index:11;">
+      <svg class="t_de_trilce_svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+      <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
+        128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
+      </svg>
+    </div>
+
+    <div
+    class="banner__image"
+
+
+
+    data-image-md="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_big.png"
+    data-position-md="100% bottom"
+    data-size-md="cover"
+
+    data-image-xs="/storage/static/images/banner/ogro/banner__7_ene_2019_simulacro_mobile.png"
+    data-position-xs="100% bottom"
+    data-size-xs="cover"
+
+    data-position-xs-landscape = "100% bottom"
+    data-size-xs-landscape="cover"
+
+
+
+    style="
+    background-repeat: no-repeat;
+    z-index: 10;
+    "></div>
+
+    <div class="
+    banner__content
+
+    " style="z-index:13;">
+
+
+
+      <div class="banner__style_primer  xs-hide">
+        <div class="banner__style_primer__a">
+          <div class="banner__title">
+            <span>Simulacro<br>UNI</span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="semibig2">
+              Ciclo Verano
+            </span>
+
+          </div>
+        </div>
+
+        <div class="banner__style_primer__b">
+          
+          <div class="row col-xs-8 banner__simulacros__table">
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>28</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de aptitud <br>Académia y Humanidades</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>30</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de <br>Matemática</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>01</div>
+                <div>Febrero</div>
+              </div>
+              <div class="col-xs text">Examen de Física <br>Y Química</div>
+            </div>
+          </div>
+  
+        </div>
+
+        <div class="banner__style_primer__img">
+
+        </div>
+      </div>
+
+      <div class="banner__style_primer-reverse banner__style_primer--colegio">
+
+        <div class="banner__title">
+          <span>Simulacro UNI<br>Ciclo Verano</span>
+        </div>
+        <div class="banner__subtitle">
+
+          <div class="row col-xs-8 banner__simulacros__table">
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>28</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de aptitud <br>Académia y Humanidades</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>30</div>
+                <div>enero</div>
+              </div>
+              <div class="col-xs text">Examen de <br>Matemática</div>
+            </div>
+
+            <div class="row col-xs-12 line">
+              <div class="col-xs-4 number">
+                <div>01</div>
+                <div>Febrero</div>
+              </div>
+              <div class="col-xs text">Examen de Física <br>Y Química</div>
+            </div>
+          </div>          
+        </div>
+      </div>
+
+   </div>
+
+  </div>
+</div>
+
+
+
 
 <div data-title="primer puesto san marcos diego">
     <div
@@ -740,5 +917,3 @@
 
 
 
-
--->

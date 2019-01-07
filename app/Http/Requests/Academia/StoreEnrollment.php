@@ -29,7 +29,6 @@ class StoreEnrollment extends FormRequest
           'step1_university' => 'required',
           'step1_venue' => 'required',
           'step1_cycle' => 'required',
-          //'step1_turn' => 'required',
           'step1_condition' => 'required',
           'step2_names' => 'required',
           'step2_lastname' => 'required',
@@ -54,7 +53,13 @@ class StoreEnrollment extends FormRequest
 
 /*
 
-//          'step2_phonehome' => 'required',
+//
+
+// Se quito para funcionar con el WSDL de Sistemas
+//'step1_turn' => 'required',
+
+// Quitado a pedido de Marcela
+'step2_phonehome' => 'required',
 
 'step3_names' => 'required',
 'step3_dni' => 'required',

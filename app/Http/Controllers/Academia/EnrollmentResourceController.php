@@ -15,8 +15,7 @@ class EnrollmentResourceController extends Controller
 
     public function __construct()
     {
-      $url = "http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl";
-      $this->client = new \SoapClient($url, [
+      $this->client = new \SoapClient(\Config::get('constants.API_ClientePublicoServicio'), [
         'trace' => 1
       ]);
     }
@@ -90,6 +89,7 @@ class EnrollmentResourceController extends Controller
 
      public function cycle($university, $cycle)
      {
+      
       try{
           $result = $this->client->FA_Bldg([
             'ANIO_ACADEMICO'  => date("Y"),
@@ -108,6 +108,7 @@ class EnrollmentResourceController extends Controller
       }catch (SoapFault $e){
         die;
       }
+
      }
 
 
@@ -176,8 +177,5 @@ class EnrollmentResourceController extends Controller
        }
        return $cycles;
      }
-
-
-
 
 }

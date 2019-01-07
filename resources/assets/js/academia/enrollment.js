@@ -135,6 +135,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    {
      this.hearUniversity();
      this.hearCycle();
+     this.hearVenue();
      this.hearDNI();
      this.hearAttorneyIf();
    }
@@ -241,7 +242,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        this.step1University = elem.options[elem.selectedIndex].value;
 
        // Set Key
-       document.getElementById('step1_university_key').value = this.step1University;
+       document.getElementById('step1_university_key').value = elem.options[elem.selectedIndex].text;
 
        this.cleanSelect(select, 'Ciclo');
        select.style.cursor  = 'wait';
@@ -262,12 +263,10 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
         select.style.cursor  = 'auto';
         this.cleanSelect(select, `No hay ${name} disponibles`);
         this.selectVenue.disabled = true;
-        
 
       }else{
 
         this.selectVenue.disabled = false;
-        
 
         try{
 
@@ -305,7 +304,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
        this.step1Select = this.selectCycle.options[this.selectCycle.selectedIndex].value;
 
        // Set key
-       document.getElementById('step1_cycle_key').value = this.step1Select;
+       document.getElementById('step1_cycle_key').value = this.selectCycle.options[this.selectCycle.selectedIndex].text;
 
        this.cleanSelect(this.selectVenue, 'Sede');
        this.selectCycle.style.cursor  = 'wait';
@@ -347,6 +346,9 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
             s.value = response.data.ItemOfstring.Value;
             select.add(s);
 
+           // Set key
+           document.getElementById('step1_venue_key').value = response.data.ItemOfstring.Text.replace('Academia', '');
+
           }
 
          select.style.cursor  = 'auto';
@@ -357,6 +359,16 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
         }
         
       }
+   }
+
+   this.hearVenue = function()
+   {
+     this.selectVenue.addEventListener('change', () => {
+
+       // Set key
+       document.getElementById('step1_venue_key').value = this.selectVenue.options[this.selectVenue.selectedIndex].text;
+       
+     });
    }
 
    this.forceHearEvent = function(elem)

@@ -51,7 +51,7 @@
                     <dd class="badger-accordion__panel js-badger-accordion-panel">
                       <div class="js-badger-accordion-panel-inner">
                         <p class="question-answer">
-                          Academias Trilce ofrece preparación para <a href="/academia/preparacion-pucp" title="Preparación PUCP" alt="Preparación PUCP">PUCP</a>, <a href="/academia/preparacion-uni" title="Preparación UNI" alt="Preparación UNI">UNI</a> y <a href="/academia/preparacion-san-marcos" title="Preparación San Marcos" alt="Preparación San Marcos">San Marcos</a>. Si deseas postular a otra universidad, te recomendamos la preparación San Marcos.
+                          Academias Trilce ofrece preparación para <a href="/academia/preparacion-pucp" title="Preparación Católica" alt="Preparación Católica">Católica</a>, <a href="/academia/preparacion-uni" title="Preparación UNI" alt="Preparación UNI">UNI</a> y <a href="/academia/preparacion-san-marcos" title="Preparación San Marcos" alt="Preparación San Marcos">San Marcos</a>. Si deseas postular a otra universidad, te recomendamos la preparación San Marcos.
                         </p>
                       </div>
                     </dd>
@@ -114,7 +114,7 @@
                   <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                        Las fechas de nuestros nuevos inicios se pueden consultar <a href="/academia#inicios" alt="Fechas de preparación UNI, PUCP y San Marcos" title="Fechas de preparación UNI, PUCP y San Marcos">aquí</a> y a través de nuestras redes sociales.
+                        Las fechas de nuestros nuevos inicios se pueden consultar <a href="/academia#inicios" alt="Fechas de preparación UNI, Católica y San Marcos" title="Fechas de preparación UNI, Católica y San Marcos">aquí</a> y a través de nuestras redes sociales.
                       </p>
                     </div>
                   </dd>
@@ -237,7 +237,7 @@
                     <dd class="badger-accordion__panel js-badger-accordion-panel">
                       <div class="js-badger-accordion-panel-inner">
                         <p class="question-answer">
-                          Sí hay simulacros en la academia, sus fechas se anuncian previamente por la sede que los organice. Son gratuitos y las inscripciones se realizan <a href="/academia/simulacros-uni" title="Simulacros UNI, PUCP y San Marcos" alt="Simulacros UNI, PUCP y San Marcos">aquí</a>.
+                          Sí hay simulacros en la academia, sus fechas se anuncian previamente por la sede que los organice. Son gratuitos y las inscripciones se realizan <a href="/academia/simulacros-uni" title="Simulacros UNI, Católica y San Marcos" alt="Simulacros UNI, Católica y San Marcos">aquí</a>.
                         </p>
                       </div>
                     </dd>
@@ -282,7 +282,7 @@
                     <dd class="badger-accordion__panel js-badger-accordion-panel">
                       <div class="js-badger-accordion-panel-inner">
                         <p class="question-answer">
-                          Te recomendamos ingresar <a href="/academia/solucionarios-uni" title="Solucionarios UNI, PUCP y San Marcos" alt="Solucionarios UNI, PUCP y San Marcos">aquí</a>.
+                          Te recomendamos ingresar <a href="/academia/solucionarios-uni" title="Solucionarios UNI, Católica y San Marcos" alt="Solucionarios UNI, Católica y San Marcos">aquí</a>.
                         </p>
                       </div>
                     </dd>

@@ -41,64 +41,64 @@
       viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
       <polygon points="17.5,10 17.5,50.6 43.7,50.6 43.7,40 83.8,40 83.8,163.8 71.8,163.8 71.8,190 128.5,190
       128.5,163.8 116.4,163.8 116.4,40 156.5,40 156.5,50.6 182.5,50.6 182.5,10 "/>
-    </svg>
-  </div>
+      </svg>
+    </div>
 
-  <div class="banner__content
-  banner__content--colegio
-  banner__content--mobile-padding-left
-  " style="z-index:11;">
-  <div class="banner__title">
-    <span>
-      <style>
-      .b1__birrete{
-        max-width: 70px;
-        fill: #f4633a;
-        display: block;
-        position: relative;
-        left: -12px;
-      }
-
-      @media (max-width: 765px){
+    <div class="banner__content
+    banner__content--colegio
+    banner__content--mobile-padding-left
+    " style="z-index:11;">
+    <div class="banner__title">
+      <span>
+        <style>
         .b1__birrete{
-          left: 0;
-          max-width: 30px;
-          padding-top: 5px;
-          padding-bottom: 5px;
+          max-width: 70px;
+          fill: #f4633a;
+          display: block;
+          position: relative;
+          left: -12px;
         }
-      }
-    </style>
 
-    <svg version="1.1" class="b1__birrete" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 200 121.2" enable-background="new 0 0 200 121.2" xml:space="preserve">
-    <path d="M0.7,42.3c0,4.4,2.7,8.3,6.8,9.7l32.9,11.2l0,40.2c0,15.1,45.6,16.3,59.6,16.3s59.6-1.2,59.5-16.3l0-40.2
-    l14.9-5.1l0,13.5l-9.4,19.3l8.9,4.6l5.5-11.3l5.5,11.3l8.9-4.6l-9.4-19.3l0-16.9l8.1-2.8c4.1-1.4,6.8-5.3,6.8-9.7
-    c0-4.4-2.7-8.3-6.8-9.7L103.1,2c-1-0.3-2.1-0.5-3.1-0.5c-1.1,0-2.1,0.2-3.1,0.5L7.5,32.6C3.5,34,0.7,37.9,0.7,42.3z M50.4,46.9
-    c3.4-2.6,20.7-7.2,49.6-7.2c29,0,46.2,4.5,49.6,7.1l0,46.5c-14.2-5.7-39.8-6.2-49.6-6.2c-9.9,0-35.4,0.6-49.6,6.3L50.4,46.9z
-    M52.3,103.4c6-2.6,22.3-6.1,47.7-6.1c25.4,0,41.8,3.5,47.8,6.1c-6,2.6-22.3,6.1-47.7,6.1C74.6,109.5,58.3,106,52.3,103.4z
-    M10.7,42.3L100,11.7l89.3,30.5l-29.8,10.2l0-6.6c0-15.1-45.6-16.3-59.6-16.3s-59.6,1.2-59.5,16.3l0,6.6L10.7,42.3z"/>
-  </svg>
+        @media (max-width: 765px){
+          .b1__birrete{
+            left: 0;
+            max-width: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+      </style>
+
+      <svg version="1.1" class="b1__birrete" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 200 121.2" enable-background="new 0 0 200 121.2" xml:space="preserve">
+      <path d="M0.7,42.3c0,4.4,2.7,8.3,6.8,9.7l32.9,11.2l0,40.2c0,15.1,45.6,16.3,59.6,16.3s59.6-1.2,59.5-16.3l0-40.2
+      l14.9-5.1l0,13.5l-9.4,19.3l8.9,4.6l5.5-11.3l5.5,11.3l8.9-4.6l-9.4-19.3l0-16.9l8.1-2.8c4.1-1.4,6.8-5.3,6.8-9.7
+      c0-4.4-2.7-8.3-6.8-9.7L103.1,2c-1-0.3-2.1-0.5-3.1-0.5c-1.1,0-2.1,0.2-3.1,0.5L7.5,32.6C3.5,34,0.7,37.9,0.7,42.3z M50.4,46.9
+      c3.4-2.6,20.7-7.2,49.6-7.2c29,0,46.2,4.5,49.6,7.1l0,46.5c-14.2-5.7-39.8-6.2-49.6-6.2c-9.9,0-35.4,0.6-49.6,6.3L50.4,46.9z
+      M52.3,103.4c6-2.6,22.3-6.1,47.7-6.1c25.4,0,41.8,3.5,47.8,6.1c-6,2.6-22.3,6.1-47.7,6.1C74.6,109.5,58.3,106,52.3,103.4z
+      M10.7,42.3L100,11.7l89.3,30.5l-29.8,10.2l0-6.6c0-15.1-45.6-16.3-59.6-16.3s-59.6,1.2-59.5,16.3l0,6.6L10.7,42.3z"/>
+    </svg>
 
 
-  </span>
+    </span>
 
-  <span>
-  {{-- <i class="fa fa-graduation-cap"></i>
-  <br> --}}
-  Matrícula 2019
-  </span>
-  </div>
-  <div class="banner__subtitle">
-  <span class="normal">
-  ¡Separa la vacante de tu <strong>hijo</strong>!<br>
-  </span>
-  <span style="display:block;margin: 20px auto;">
-  <button class="banner__button-cta banner__button-cta--orange"><a href="/matricula-2019">Regístrate aquí</a></button>
-  </span>
-  </div>
-  </div>
+    <span>
+    {{-- <i class="fa fa-graduation-cap"></i>
+    <br> --}}
+    Matrícula 2019
+    </span>
+    </div>
+    <div class="banner__subtitle">
+    <span class="normal">
+    ¡Separa la vacante de tu <strong>hijo</strong>!<br>
+    </span>
+    <span style="display:block;margin: 20px auto;">
+    <button class="banner__button-cta banner__button-cta--orange"><a href="/matricula-2019">Regístrate aquí</a></button>
+    </span>
+    </div>
+    </div>
 
-  </div>
+    </div>
 </div>
 
 
@@ -614,7 +614,7 @@
           <div class="banner__style_vacaciones_left_content">
             <div class="banner__title">
               <span class="banner__propuesta-educativa__title">
-                <i class="fa fa-lightbulb-o"></i> Inicio 4, 7 y 8 de enero
+                <i class="fa fa-lightbulb-o"></i> Últimas vacantes
               </span>
             </div>
             <div class="banner__subtitle">
@@ -861,47 +861,48 @@
       </svg>
     </div>
 
-  <div class="banner__content
-  banner__content--colegio
-  banner__content--mobile-padding-left
-  " style="z-index:11;">
-    <div class="banner__propuesta-educativa__container">
-      <div class="banner__propuesta_guide">
-        <div class="banner__title">
-          <span class="banner__propuesta-educativa__title">
-            Propuesta <br >
-            Educativa
-          </span>
-        </div>
-        <div class="banner__subtitle">
-          <span class="normal">
-          </span>
-          <span style="display:block;margin: 10px auto;">
-            <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/propuesta-educativa">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
-          </span>
+      <div class="banner__content
+      banner__content--colegio
+      banner__content--mobile-padding-left
+      " style="z-index:11;">
+        <div class="banner__propuesta-educativa__container">
+          <div class="banner__propuesta_guide">
+            <div class="banner__title">
+              <span class="banner__propuesta-educativa__title">
+                Propuesta <br >
+                Educativa
+              </span>
+            </div>
+            <div class="banner__subtitle">
+              <span class="normal">
+              </span>
+              <span style="display:block;margin: 10px auto;">
+                <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/propuesta-educativa">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+              </span>
+            </div>
+          </div>
+          <div class="banner__propuesta-educativa__image xs-hide"
+          data-banner-img-position="top"
+          >
+            <picture>
+              <img src="" alt="">
+            </picture>
+
+
+            <picture>
+              <source media="(max-width: 920px)" srcset="/storage/static/images/banner/ogro/banner_22_nov_propuesta-250x250.png">
+              <img  src="/storage/static/images/banner/ogro/banner_22_nov_propuesta-gigant.png"
+                    alt="Propuesta educativa">
+            </picture>
+
+          </div>
+
         </div>
       </div>
-      <div class="banner__propuesta-educativa__image xs-hide"
-      data-banner-img-position="top"
-      >
-        <picture>
-          <img src="" alt="">
-        </picture>
-
-
-        <picture>
-          <source media="(max-width: 920px)" srcset="/storage/static/images/banner/ogro/banner_22_nov_propuesta-250x250.png">
-          <img  src="/storage/static/images/banner/ogro/banner_22_nov_propuesta-gigant.png"
-                alt="Propuesta educativa">
-        </picture>
 
       </div>
-
-    </div>
-  </div>
-
-  </div>
 </div>
+
 
 
 <div data-title="propuesta educativa 2">
@@ -951,46 +952,47 @@
       </svg>
     </div>
 
-  <div class="banner__content
-  banner__content--colegio
-  banner__content--mobile-padding-left
-  " style="z-index:11;">
-    <div class="banner__propuesta-educativa__container">
-      <div class="banner__propuesta_guide">
-        <div class="banner__title">
-          <span class="banner__propuesta-educativa__title banner__propuesta-educativa__title--two">
-            ¿Por&nbsp;qué estudiar<br>con nosotros?
-          </span>
+    <div class="banner__content
+    banner__content--colegio
+    banner__content--mobile-padding-left
+    " style="z-index:11;">
+      <div class="banner__propuesta-educativa__container">
+        <div class="banner__propuesta_guide">
+          <div class="banner__title">
+            <span class="banner__propuesta-educativa__title banner__propuesta-educativa__title--two">
+              ¿Por&nbsp;qué estudiar<br>con nosotros?
+            </span>
+          </div>
+          <div class="banner__subtitle">
+            <span class="normal">
+            </span>
+            <span style="display:block;margin: 10px auto;">
+              <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/propuesta-educativa">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+            </span>
+          </div>
         </div>
-        <div class="banner__subtitle">
-          <span class="normal">
-          </span>
-          <span style="display:block;margin: 10px auto;">
-            <button class="banner__button-cta banner__button-cta--orange"><a href="/colegio/propuesta-educativa">&nbsp;&nbsp;&nbsp;&nbsp;Ver más&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
-          </span>
+        <div class="banner__propuesta-educativa__image xs-hide"
+        data-banner-img-position="top"
+        >
+          <picture>
+            <img src="" alt="">
+          </picture>
+
+
+          <picture>
+            <source media="(max-width: 920px)" srcset="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-litle.png">
+            <img  src="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-big.png"
+                  alt="Propuesta educativa">
+          </picture>
+
         </div>
-      </div>
-      <div class="banner__propuesta-educativa__image xs-hide"
-      data-banner-img-position="top"
-      >
-        <picture>
-          <img src="" alt="">
-        </picture>
-
-
-        <picture>
-          <source media="(max-width: 920px)" srcset="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-litle.png">
-          <img  src="/storage/static/images/banner/ogro/banner_19_dic_2018_propuesta_educativa2-big.png"
-                alt="Propuesta educativa">
-        </picture>
 
       </div>
+    </div>
 
     </div>
-  </div>
-
-  </div>
 </div>
+
 
 
 
@@ -1121,6 +1123,8 @@
   </div>
 </div>
 
+
+
 <div data-title="tablet gratuita">
     <div
     class="
@@ -1244,6 +1248,8 @@
     </div>
 </div>
 
+
+
 <div data-title="ser mejores personas">
     <div
     class="
@@ -1338,6 +1344,8 @@
 
     </div>
 </div>
+
+
 
 <div data-title="eco trilce">
   <div

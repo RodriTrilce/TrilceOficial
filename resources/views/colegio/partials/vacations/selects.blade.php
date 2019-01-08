@@ -1,4 +1,4 @@
-<div class="vacations__txt"><span>Elige la sede de tu preferencia</span></div>
+<div class="vacations__txt"><span><span style="color: #f4633a; font-size: 1.5rem;">¡Últimas vacantes!</span> <br><br>Elige la sede de tu preferencia</span><br></div>
 <div class="row col-xs-12 vacations__select">
   <div class="col-xs-12 col-sm-6 vacations__select-item">
     <select id="slimselect_lima" class="select-vacations">

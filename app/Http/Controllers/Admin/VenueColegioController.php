@@ -61,7 +61,7 @@ class VenueColegioController extends Controller
      */
     public function edit($id)
     {
-      $venue = VenueDB::find($id);
+        $venue = VenueDB::find($id);
         return view('admin.venue_colegio.edit')->with(['venue' => $venue]);
     }
 

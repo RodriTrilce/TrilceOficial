@@ -61,6 +61,7 @@ class BlogController extends Controller
           }
         }
       }
+
       return back()->with('success', 'Post creado correctamente');
     }
 
@@ -99,14 +100,26 @@ class BlogController extends Controller
       return true;
     }
 
-    public function edit()
+    public function edit($id)
     {
-
+        $post = Post::find($id);
+        return view('admin.blog.edit')->with(['post' => $post]);
     }
 
-    public function update()
+    public function update(Request $request, $id)
     {
+      $post           = Post::find($id);
 
+      $post->title    = $request->title;
+      $post->content  = Purifier::clean($request->content);
+      $post->site     = $request->site;
+
+      $post->marker   = ($request->marker == 'on' ? '1' : '0');
+      $post->visible  = ($request->visible == 'on' ? '0' : '1');
+
+      $post->save();
+
+      return back()->with('success', 'Actualizado correctamente');
     }
 
     public function destroy()

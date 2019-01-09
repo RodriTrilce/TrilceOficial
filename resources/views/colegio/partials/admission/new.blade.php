@@ -1,6 +1,7 @@
 <div class="row col-xs-12 center-xs admission-new-title">
   <div class="col-xs-12">
-    <h2 class="new-t-title">Alumno nuevo</h2>
+    <!--<h2 class="new-t-symbol"><span><i class="fa fa-plus"></i></span></h2>-->
+    <h2 class="new-t-title"><span class="alumno">Alumno</span> nuevo</h2>
     <h3 class="new-t-subtitle">Periodo: julio 2018 a abril 2019</h3>
   </div>
   <div class="col-xs-12 col-sm-4 new-t-p">

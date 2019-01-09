@@ -38,6 +38,31 @@
 			}
 
 		}
+
+		&.number--big{
+			
+			div{
+				line-height: 45px;
+			}
+
+			div:nth-child(1){
+				font-size: 4rem;
+
+				@include breakpoint(baby){
+					font-size: 2rem;
+				}
+			}
+
+			div:nth-child(2){
+				font-size: 2.2rem;
+				font-family: $font_cae_bold;
+				text-align: center;
+		
+				@include breakpoint(baby){
+					font-size: 1.3rem;
+				}
+			}
+		}
 	}
 
 	.text{

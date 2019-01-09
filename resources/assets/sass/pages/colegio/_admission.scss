@@ -1,31 +1,48 @@
 .admission-new-title{
   font-family: $font_geo_reg;
-
   padding: 40px 0;
+
   @include breakpoint(baby){
     padding: 20px 0;
   }
+}
 
-  .new-t-title{
-    font-family: $font_geo_bold;
-    color: $gray;
-    font-size: 2.2rem;
-    line-height: 28px;
+.new-t-symbol{
+  color: $gray;
+  font-size: 2rem;
 
-    @include breakpoint(baby){
-      font-size: 1.8rem;
+  @include breakpoint(baby){
+    font-size: 1.5rem;
+  }
+}
+
+.new-t-title{
+  font-family: $font_geo_bold;
+  color: $gray;
+  font-size: 2.2rem;
+  line-height: 28px;
+  margin-bottom: 30px;
+
+  /*
+    span.alumno{
+      font-size: 1rem;
+      display: block;
     }
-  }
+  */
 
-  .new-t-subtitle{
-    margin-top: 5px;
-    font-size: 1.2rem;
+  @include breakpoint(baby){
+    font-size: 1.8rem;
   }
+}
 
-  .new-t-p{
-    margin-top: 7px;
-    color: $gray;
-  }
+.new-t-subtitle{
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.new-t-p{
+  margin-top: 7px;
+  color: $gray;
 }
 
 .admission-new-table{

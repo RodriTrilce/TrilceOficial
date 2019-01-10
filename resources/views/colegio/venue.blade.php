@@ -151,6 +151,7 @@
 
     </div>
   </div>
+@include('colegio.partials.ads')
 
 
   @include('colegio.partials.card_bottom')

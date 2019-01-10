@@ -288,7 +288,7 @@
                   <h4><strong><span class="icon_local_span"><i class="fa fa-stop"></i></span> 1.<sup>er</sup> a 3.<sup>er</sup> año</strong></h4>
                   <span class="orange">· Al contado: S/290</span><br>
                   <span class="orange">· 2 partes: S/310</span><br>
-                  · S/190 (al matricularse)<br>
+                  · S/210 (al matricularse)<br>
                   · S/100 (30 de enero)
                 </li>
 

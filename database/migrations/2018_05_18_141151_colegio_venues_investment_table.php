@@ -17,7 +17,7 @@ class ColegioVenuesInvestmentTable extends Migration
             $table->increments('id');
             $table->integer('idvenue')->unsigned()->nullable();
             $table->string('range');
-            $table->text('admissionfee');
+            $table->text('admissionfee')->nullable();
             $table->text('enrollment');
             $table->text('monthlypayment');
             $table->timestamps();

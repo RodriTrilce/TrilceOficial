@@ -58,15 +58,18 @@ class BannersController extends Controller
       $banner = new Banner;
 
       $banner->title  = $request->title;
-      $banner->link   = $request->link;
+      $banner->content   = $request->content;
+
       $banner->type   = $request->type;
       $banner->state = '1';
       $banner->start = $request->start;
       $banner->expire = $request->expire;
 
-      $file = $this->storeBannerImage($request);
-      $banner->file_id = $file->id;
-
+      /*
+        $file = $this->storeBannerImage($request);
+        $banner->file_id = $file->id;
+      */
+      
       $position = Banner::where([
         ['type', '=', $request->type],
         ['state', '=', '1']

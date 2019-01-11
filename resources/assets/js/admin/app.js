@@ -364,7 +364,7 @@ if(page == 'banners_create'){
     }
   }
 
-  listenImage.init();
+  //listenImage.init();
 
   new SlimSelect({
     select: '#create_section',

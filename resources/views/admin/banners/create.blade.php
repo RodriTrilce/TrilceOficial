@@ -47,9 +47,8 @@
      </div>
 
      <div class="form-group">
-       <label for="image_banner">Selecione el banner (1920×500)</label><br>
-       <input type='file' id="image_banner" name="image" class="form-control-file" accept="image/*" required />
-       <div class="img-preview" id="img-preview"></div>
+       <label for="create_content">contenido</label>
+       <textarea name="content" id="create_content" cols="30" rows="10" class="form-control"></textarea>
      </div>
 
      <div class="form-group">

@@ -105,7 +105,7 @@
           </li>
 
 
-          <!--
+          
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file-text"></span>
@@ -117,7 +117,7 @@
               <li class="nav-item"><a href="/admin/banners/?type=index_colegio" class="nav-link"><span data-feather="corner-down-right"></span> index Colegio</a></li>
             </ul>
           </li>
-        -->
+        
 
 
         </ul>

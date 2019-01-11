@@ -26,7 +26,7 @@ class BannerCreateRequest extends FormRequest
       return [
         'title'   => 'required',
         'type' => 'required',
-        'image' => 'required',
+        'content' => 'required',
         'expire' => 'required'
       ];
     }

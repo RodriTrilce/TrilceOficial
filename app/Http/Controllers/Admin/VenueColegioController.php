@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Colegio\VenueModel as VenueDB;
+use App\Models\Colegio\VenueAddressModel;
+use App\Models\Colegio\VenueInvestmentModel;
 use Purifier;
 
 class VenueColegioController extends Controller
@@ -62,7 +64,14 @@ class VenueColegioController extends Controller
     public function edit($id)
     {
         $venue = VenueDB::find($id);
-        return view('admin.venue_colegio.edit')->with(['venue' => $venue]);
+        $venue_direction  = VenueAddressModel::where('idvenue', $id)->get();
+        $venue_investment = VenueInvestmentModel::where('idvenue', $id)->get();
+
+        return view('admin.venue_colegio.edit')->with([
+            'venue' => $venue,
+            'directions' => $venue_direction,
+            'investments' => $venue_investment
+        ]);
     }
 
     /**
@@ -74,6 +83,24 @@ class VenueColegioController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        foreach ($request->direcciones as $direccion) {
+            $temp = VenueAddressModel::find($direccion['id']);
+            $temp->grades  = $direccion['grades'];
+            $temp->address = $direccion['address'];
+            $temp->phone   = $direccion['phone'];
+            $temp->save();
+        }
+
+        foreach ($request->inversiones as $inversion) {
+            $temp = VenueInvestmentModel::find($inversion['id']);
+            $temp->range  = $inversion['range'];
+            $temp->admissionfee = $inversion['admissionfee'];
+            $temp->enrollment   = $inversion['enrollment'];
+            $temp->monthlypayment   = $inversion['monthlypayment'];
+            $temp->save();
+        }
+
         $venue = VenueDB::find($id);
         $venue->content  = Purifier::clean($request->content);
         $venue->save();

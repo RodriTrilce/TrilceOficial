@@ -21,7 +21,9 @@
     @foreach ($data as $key)
       <tr>
         <th scope="row">{{$key->id}}</th>
-        <td><a href="{{action('Admin\VenueColegioController@edit', $key->id)}}">{{$key->name}}</a></td>
+        <td>
+          <a href="{{action('Admin\VenueColegioController@edit', $key->id)}}">{{$key->name}}</a>
+        </td>
       </tr>
     @endforeach
 

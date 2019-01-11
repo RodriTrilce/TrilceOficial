@@ -31,14 +31,25 @@
     </div> --}}
 
     <div class="form-group">
-     <label for="create_content">Contenido</label>
+      <label for="create_content">Niveles, direcciones y telefonos</label>
+      <input type="text" name="aa[]">
+      <input type="text" name="bb[]">
+      <input type="text" name="aa[]">
+      <input type="text" name="bb[]">
+      <input type="text" name="aa[]">
+      <input type="text" name="bb[]">
+
+    </div>
+
+    <div class="form-group">
+     <label for="create_content">Horarios</label>
      <textarea class="form-control"rows="4" cols="50" id="create_content" name="content">
        {{$venue->content}}
      </textarea>
     </div>
 
     <div class="form-group">
-     <button class="btn btn-primary" type="submit">Enviar</button>
+     <button class="btn btn-primary" type="submit">Guardar</button>
     </div>
 
   </form>

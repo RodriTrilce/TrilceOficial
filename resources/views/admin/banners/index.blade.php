@@ -125,8 +125,6 @@
         <span class="title-text">{{ $banner->title }}</span>
       </div>
 
-      <br>
-      <br>
       <i>Vista previa (no se ve igual que el banner final):</i>
 
       <div class="info__banner">

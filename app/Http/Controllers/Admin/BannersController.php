@@ -129,7 +129,8 @@ class BannersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Banner::find($id);
+        return view('admin.banners.edit')->with(['banner' => $post]);
     }
 
     /**

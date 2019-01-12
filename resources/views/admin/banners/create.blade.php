@@ -32,11 +32,6 @@
        <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" required>
     </div>
 
-    <div class="form-group">
-       <label for="create_link">Enlace</label>
-       <input type="text" class="form-control" name="link" id="create_link" autocomplete="off" placeholder="Escribe aquí el enlace">
-    </div>
-
      <div class="form-group">
        <label for="create_section">Sección</label>
        <select class="form-control" name="type" id="create_section" required>

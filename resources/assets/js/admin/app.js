@@ -287,8 +287,8 @@ if(page == 'banners_index'){
 
     eventEdit : function(elem)
     {
-      var modal_open = ['#modal-1'];
-      modal.open(modal_open[0]);
+      //var modal_open = ['#modal-1'];
+      //modal.open(modal_open[0]);
     },
 
     getPosition : function()

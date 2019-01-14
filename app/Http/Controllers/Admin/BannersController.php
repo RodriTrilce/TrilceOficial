@@ -129,8 +129,8 @@ class BannersController extends Controller
      */
     public function edit($id)
     {
-        $post = Banner::find($id);
-        return view('admin.banners.edit')->with(['banner' => $post]);
+        $banner = Banner::find($id);
+        return view('admin.banners.edit')->with(['banner' => $banner]);
     }
 
     /**
@@ -140,9 +140,22 @@ class BannersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BannerCreateRequest $request, $id)
     {
-        //
+      $request->validated();
+
+      $banner = Banner::find($id);
+
+      $banner->title    = $request->title;
+      $banner->content  = $request->content;
+
+      $banner->type     = $request->type;
+      $banner->start    = $request->start;
+      $banner->expire   = $request->expire;
+
+      $banner->save();
+
+        return back()->with('success', 'Banner actualizado correctamente');
     }
 
     /**

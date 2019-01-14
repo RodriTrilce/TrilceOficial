@@ -49,13 +49,13 @@
      </div>  
 
      <div class="form-group">
-       <label for="create_finish">Inicio</label>
-       <input type="text" class="form-control" id="mo_start" name="start" value="<?php echo date("Y-m-d H:i:s"); ?>" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
+       <label for="create_finish">Inicio </label>
+       <input type="text" class="form-control" id="mo_start" name="start" value="{{$banner->start}}" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
      </div>
 
      <div class="form-group">
        <label for="mo_finish">Fin</label>
-       <input type="text" class="form-control" id="mo_finish" name="expire" value="<?php echo date("Y-m-d H:i:s"); ?>" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
+       <input type="text" class="form-control" id="mo_finish" name="expire" value="{{$banner->expire}}" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
      </div>
 
      <div class="form-group">

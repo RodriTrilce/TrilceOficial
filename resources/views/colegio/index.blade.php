@@ -13,7 +13,15 @@
   </div>
 
   <div class="index-banners index-banners--colegio">
-    @include('colegio.partials.banners.all')
+    {{--@include('colegio.partials.banners.all')--}}
+    
+    @foreach ($banners as $banner)
+      @if( (strtotime($banner->start) < time()) && (strtotime($banner->expire) > time()) )
+
+        {!! $banner->content !!}
+
+      @endif
+    @endforeach    
   </div>
 
   <div class="nuevos-i container-base">

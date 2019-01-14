@@ -58,15 +58,18 @@ class BannersController extends Controller
       $banner = new Banner;
 
       $banner->title  = $request->title;
-      $banner->link   = $request->link;
+      $banner->content   = $request->content;
+
       $banner->type   = $request->type;
       $banner->state = '1';
       $banner->start = $request->start;
       $banner->expire = $request->expire;
 
-      $file = $this->storeBannerImage($request);
-      $banner->file_id = $file->id;
-
+      /*
+        $file = $this->storeBannerImage($request);
+        $banner->file_id = $file->id;
+      */
+      
       $position = Banner::where([
         ['type', '=', $request->type],
         ['state', '=', '1']
@@ -126,7 +129,8 @@ class BannersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $banner = Banner::find($id);
+        return view('admin.banners.edit')->with(['banner' => $banner]);
     }
 
     /**
@@ -136,9 +140,22 @@ class BannersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BannerCreateRequest $request, $id)
     {
-        //
+      $request->validated();
+
+      $banner = Banner::find($id);
+
+      $banner->title    = $request->title;
+      $banner->content  = $request->content;
+
+      $banner->type     = $request->type;
+      $banner->start    = $request->start;
+      $banner->expire   = $request->expire;
+
+      $banner->save();
+
+        return back()->with('success', 'Banner actualizado correctamente');
     }
 
     /**

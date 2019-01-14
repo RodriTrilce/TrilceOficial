@@ -106,9 +106,7 @@
           </a>
       </div>
 
-      <img src="{{ $banner->file->fileUrl() }}" alt="">
-
-      <div class="info expire @if(strtotime($banner->start) > time()) red @endif">
+      <div class="info expire @if(strtotime($banner->start) > time()) red @endif"><br><br>
         <span class="text">Inicio: </span>
         <span class="expire-date">
           {{ Date::parse($banner->start)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}
@@ -122,14 +120,15 @@
         </span>
       </div>
 
-      <div class="info link">
-        <span class="text">Link:</span>
-        <span class="href"><a href="{{ $banner->link }}" target="_blank">{{ $banner->link }}</a></span>
-      </div>
-
       <div class="info title">
         <span class="text">Titulo:</span>
         <span class="title-text">{{ $banner->title }}</span>
+      </div>
+
+      <i>Vista previa (no se ve igual que el banner final):</i>
+
+      <div class="info__banner">
+        {!! $banner->content !!}
       </div>
 
     </div>

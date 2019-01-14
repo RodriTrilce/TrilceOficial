@@ -32,11 +32,6 @@
        <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" required>
     </div>
 
-    <div class="form-group">
-       <label for="create_link">Enlace</label>
-       <input type="text" class="form-control" name="link" id="create_link" autocomplete="off" placeholder="Escribe aquí el enlace">
-    </div>
-
      <div class="form-group">
        <label for="create_section">Sección</label>
        <select class="form-control" name="type" id="create_section" required>
@@ -47,9 +42,8 @@
      </div>
 
      <div class="form-group">
-       <label for="image_banner">Selecione el banner (1920×500)</label><br>
-       <input type='file' id="image_banner" name="image" class="form-control-file" accept="image/*" required />
-       <div class="img-preview" id="img-preview"></div>
+       <label for="create_content">contenido</label>
+       <textarea name="content" id="create_content" cols="30" rows="10" class="form-control"></textarea>
      </div>
 
      <div class="form-group">

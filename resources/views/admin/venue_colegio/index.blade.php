@@ -1,7 +1,7 @@
 @extends('admin.layouts.template')
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Olimpiadas Matemáticas</h1>
+    <h1 class="h2">Sedes colegio</h1>
   </div>
 
   @if(Session::has('success'))

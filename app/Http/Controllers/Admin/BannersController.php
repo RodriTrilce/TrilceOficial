@@ -24,7 +24,6 @@ class BannersController extends Controller
     {
         $data = Banner::where([
           ['type', '=', $_GET['type']],
-          ['state', '=', '1']
         ])
         ->orderBy('position', 'asc')
         ->get();
@@ -149,6 +148,7 @@ class BannersController extends Controller
       $banner->title    = $request->title;
       $banner->content  = $request->content;
 
+      $banner->state    = ($request->state == 'on' ? 1 : 0);
       $banner->type     = $request->type;
       $banner->start    = $request->start;
       $banner->expire   = $request->expire;

@@ -68,7 +68,7 @@
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
               <a href="http://app.trilce.edu.pe/uni/registro/" target="_blank" class="admission-ads__link">
-                <h1>¡Participa en nuestro Simulacro UNI - Ciclo Repaso!</h1>
+                <h1>¡Participa en nuestro Simulacro UNI - Ciclo Verano!</h1>
                 <button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
                   Inscríbete aquí
                 </button>

@@ -4,7 +4,8 @@ import dragula from "dragula"
 import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
 import $ from "jquery"
 import VanillaModal from 'vanilla-modal';
-import SlimSelect from 'slim-select'
+import SlimSelect from 'slim-select';
+import BootstrapTable from "bootstrap-table";
 
 window.SlimSelect = SlimSelect;
 window.modal      = new VanillaModal();

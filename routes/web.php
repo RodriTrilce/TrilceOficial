@@ -48,7 +48,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
   Route::resource('/venue-colegio', 'VenueColegioController');
   Route::resource('/venue-academia', 'VenueAcademiaController');
   Route::resource('/banners', 'BannersController');
-  Route::resource('/forms-rrhh', 'FormsRhController');
+  Route::resource('/rrhh-forms', 'RhFormsController');
 });
 
 

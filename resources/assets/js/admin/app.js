@@ -424,8 +424,8 @@ if(page == 'rrhh_forms'){
 
   excel.addEventListener('click', () => {
     var elt = document.getElementById('my-table');
-    var wb = XLSX.utils.table_to_book(elt, {sheet:"Sheet JS"});
-    return XLSX.writeFile(wb, 'test.' + 'xlsx');
+    var wb = XLSX.utils.table_to_book(elt, {sheet:"Formulario"});
+    return XLSX.writeFile(wb, 'Exportar_Formulario.' + 'xlsx');
 
   })
 

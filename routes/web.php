@@ -23,10 +23,15 @@ Route::get('/prueba2', 'Prueba2Controller@index');
 Route::get('/img', 'prueba@index');
 Route::get('/prueba3', 'prueba3@index');
 Route::get('/ecotrilce', 'Out\EcotrilceController@index');
-
 Route::get('/navidad', 'NavidadController@index');
-
 Route::get('/academia_prematricula', 'Academia\Enrollment\TestController@show');
+
+Route::get('/tyc-lp.pdf', function(){
+  return Redirect::to('/storage/other/documents/politica-de-datos-personales.pdf', 301);
+});
+
+
+
 
 
 /**
@@ -43,6 +48,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
   Route::resource('/venue-colegio', 'VenueColegioController');
   Route::resource('/venue-academia', 'VenueAcademiaController');
   Route::resource('/banners', 'BannersController');
+  Route::resource('/rrhh-forms', 'RhFormsController');
 });
 
 

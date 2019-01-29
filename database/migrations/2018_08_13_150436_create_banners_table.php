@@ -22,6 +22,7 @@ class CreateBannersTable extends Migration
 //             $table->integer('file_id')->unsigned();
              $table->integer('position');
              $table->integer('state')->default('0');
+             $table->integer('deleted')->nullable()->default('0');
              $table->timestamp('start')->nullable();
              $table->timestamp('expire')->nullable();
              $table->timestamps();

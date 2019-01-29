@@ -1,15 +1,37 @@
+import './jquery-global.js';
 import flatpickr from "flatpickr";
 import { Spanish } from "flatpickr/dist/l10n/es.js"
 import dragula from "dragula"
 import froalaEditor from "froala-editor/js/froala_editor.pkgd.min"
-import $ from "jquery"
+
 import VanillaModal from 'vanilla-modal';
-import SlimSelect from 'slim-select'
+import SlimSelect from 'slim-select';
+import BootstrapTable from 'bootstrap-table';
+import xlsx from 'xlsx';
+
+
+//import tableExport from 'tableexport.jquery.plugin/tableExport.js';
+//import jspdf from 'tableexport.jquery.plugin/libs/jsPDF/jspdf.min.js'
+//import jspdf-autotable from 'tableexport.jquery.plugin/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js'
+//import * as jsPDF from 'jspdf'
+
+import jsPDF from 'jspdf';
+import 'jspdf-autotable'
+
+import rasterizeHTML from 'rasterizehtml/dist/rasterizeHTML.min.js' 
+
 
 window.SlimSelect = SlimSelect;
 window.modal      = new VanillaModal();
-window.$          = $;
+window.rasterizeHTML = rasterizeHTML;
+window.XLSX = xlsx;
+
 flatpickr.localize(Spanish);
+
+
+
+
+
 
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
@@ -385,6 +407,45 @@ if(page == 'banners_create'){
       enableTime: true,
       dateFormat: "Y-m-d H:i:s",
   });
+}
 
 
+if(page == 'rrhh_forms'){
+
+
+    var tableOpts = {
+        addrbar: true,
+    }
+
+    $('#my-table').bootstrapTable(tableOpts);
+
+
+  let excel = document.getElementById("export_excel");
+
+  excel.addEventListener('click', () => {
+    var elt = document.getElementById('my-table');
+    var wb = XLSX.utils.table_to_book(elt, {sheet:"Formulario"});
+    return XLSX.writeFile(wb, 'Exportar_Formulario.' + 'xlsx');
+
+  })
+
+
+/*
+  var v = document.getElementById("exportar_pdf");
+
+  v.addEventListener('click', () => {
+
+      var doc = new jsPDF('l', 'pt');
+ 
+    doc.autoTable({
+        html: '#my-table',
+        styles: {fillColor: [255, 0, 0]},
+        columnStyles: {0: {halign: 'center', fillColor: [0, 255, 0]}}, // Cells in first column centered and green
+        margin: {top: 10},
+    })
+        
+      doc.save('export_rrhh_formulario.pdf');
+
+  });
+  */
 }

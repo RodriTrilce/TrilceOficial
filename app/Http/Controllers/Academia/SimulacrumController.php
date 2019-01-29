@@ -23,7 +23,9 @@ class SimulacrumController extends Controller
         if(!$university)
           return abort(404);
         
-        $results = Simulacrum::where('university_id', $university->id)->get();
+        $results = Simulacrum::where('university_id', $university->id)
+        ->orderBy('created_at', 'DESC')
+        ->get();
 
        return view('/academia/simulacrum')->with([
          'university' => $university,

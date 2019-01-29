@@ -33,6 +33,16 @@
        <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" value="{{$banner->title}}" required>
     </div>
 
+    <div class="form-group">
+      <input type="checkbox" id="create_state" name="state" class="switch-input"
+      {{ ($banner->state==1?'checked':'') }}
+      >
+      <label for="create_state" class="switch-label">
+        Visible
+        <span class="toggle--on">Si</span>
+        <span class="toggle--off">No</span></label>      
+    </div>
+
      <div class="form-group">
        <label for="create_section">Sección</label>
        <select class="form-control" name="type" id="create_section" required>

@@ -23,8 +23,8 @@ class BannersController extends Controller
     public function index()
     {
         $data = Banner::where([
-          ['type', '=', $_GET['type']],
-          ['state', '=', '1']
+          ['type',    '=', $_GET['type']],
+          ['deleted', '=', '0']
         ])
         ->orderBy('position', 'asc')
         ->get();
@@ -149,6 +149,7 @@ class BannersController extends Controller
       $banner->title    = $request->title;
       $banner->content  = $request->content;
 
+      $banner->state    = ($request->state == 'on' ? 1 : 0);
       $banner->type     = $request->type;
       $banner->start    = $request->start;
       $banner->expire   = $request->expire;
@@ -189,8 +190,11 @@ class BannersController extends Controller
           $i++;
         }
 
-        // Set state = 0 (archived banner);
-        $banner->state = '0';
+        // Deleted = 1 --> Banner eliminado (archivado en la db)
+        // State = 0 --> banner desactivado visiblemente en el sitio web, pero visible en el administrador
+
+        $banner->deleted  = '1';
+        $banner->state    = '0';
         $banner->save();
 
         return back()->with('success', 'Banner eliminado correctamente');

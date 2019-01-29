@@ -89,7 +89,10 @@
 
 <div class="admin-banners" id="banners">
   @foreach ($banners as $banner)
-    <div class="banner" data-position="{{ $banner->position }}" data-id="{{ $banner->id }}">
+    <div
+      class="banner {{ ($banner->state == 0 ? 'banner--desactive' : '') }}"
+      data-position="{{ $banner->position }}"
+      data-id="{{ $banner->id }}">
 
       <div class="op close">
         <form action="{{action('Admin\BannersController@destroy', $banner->id)}}" method="post" onsubmit="return secureDelete(this);">
@@ -106,7 +109,17 @@
           </a>
       </div>
 
-      <div class="info expire @if(strtotime($banner->start) > time()) red @endif"><br><br>
+      @if($banner->state==0)
+        <div class="info">
+          <br><br>
+          <h2><i>BANNER DESACTIVADO</i></h2>
+        </div>
+      @endif
+
+      <div class="info expire @if(strtotime($banner->start) > time()) red @endif">
+
+        @if($banner->state==1) <br><br> @endif
+
         <span class="text">Inicio: </span>
         <span class="expire-date">
           {{ Date::parse($banner->start)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}
@@ -135,6 +148,10 @@
   @endforeach
 </div>
 
+<br>
+<br>
+<br>
+<br>
 
 @endsection
 

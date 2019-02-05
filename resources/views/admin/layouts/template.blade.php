@@ -59,11 +59,15 @@
             <ul class="nav flex-column mb-5">
 
               <li class="nav-item">
-                <a href="/admin/rrhh-forms/?type=tutoras" class="nav-link">
-                  <span data-feather="corner-down-right"></span> Formulario: Tutoras
+                <a href="/admin/rrhh-forms/?type=tutoras_secundaria" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Formulario: Tutoras secundaria
                 </a>
               </li>
-
+              <li class="nav-item">
+                <a href="/admin/rrhh-forms/?type=docnete_parimaria_2019" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Formulario: Docentes primaria
+                </a>
+              </li>
             </ul>
           </li>
 
@@ -152,9 +156,7 @@
 
 <script>
 @section('scripts')
-feather.replace()
-
-
+  feather.replace()
 </script>
 @show
 

@@ -16,7 +16,12 @@ class RhFormsController extends Controller
     public function index()
     {
 
-        $data = Form::all();
+        $data = Form::where([
+          ['form',    '=', $_GET['type']]
+        ])
+        ->orderBy('register', 'asc')
+        ->get();
+
         return view('admin.rrhh_forms.index')->with([
             'data' => $data
         ]);

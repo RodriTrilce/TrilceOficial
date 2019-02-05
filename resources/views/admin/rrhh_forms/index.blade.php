@@ -23,35 +23,35 @@
 <table data-toggle="table" id="my-table">
   <thead>
     <tr>
+      <th>DNI</th>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Telefono</th>
       <th>Carrera</th>
       <th>Distrito</th>
-      <th>DNI</th>
-      <th>Email</th>
       <th>Expectativa salarial</th>
       <th>Experiencia</th>
       <th>Experiencia detalle</th>
-      <th>Nombre</th>
       <th>Porque Trilce</th>
-      <th>Porque tutora</th>
-      <th>Telefono</th>
-      <th>Fecha de register</th>
+      <th>Porque el puesto</th>
+      <th>Fecha de registro</th>
     </tr>
   </thead>
   <tbody>
 
     @foreach($data as $fila)
     <tr>
+      <td>{{$fila->dni}}</td>
+      <td>{{$fila->nombre}}</td>
+      <td>{{$fila->email}}</td>
+      <td>{{$fila->telefono}}</td>
       <td>{{$fila->carrera}}</td>
       <td>{{$fila->distrito}}</td>
-      <td>{{$fila->dni}}</td>
-      <td>{{$fila->email}}</td>
       <td>{{$fila->expectativa_salarial}}</td>
       <td>{{$fila->experiencia}}</td>
       <td>{{$fila->experiencia_detalle}}</td>
-      <td>{{$fila->nombre}}</td>
       <td>{{$fila->porque_trilce}}</td>
       <td>{{$fila->porque_tutora}}</td>
-      <td>{{$fila->telefono}}</td>
       <td>{{$fila->register}}</td>
     </tr>
     @endforeach

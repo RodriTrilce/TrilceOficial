@@ -71,5 +71,9 @@ class User extends Authenticatable
     {
       return $this->hasMany('Post');
     }
+
+    public function x(){
+        return 'a';
+    }
     
 }

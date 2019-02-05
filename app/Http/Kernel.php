@@ -60,6 +60,7 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'role' => \App\Http\Middleware\CheckRole::class,
+        'rolepageadmin' => \App\Http\Middleware\CheckRoleAdminPage::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
 
     ];

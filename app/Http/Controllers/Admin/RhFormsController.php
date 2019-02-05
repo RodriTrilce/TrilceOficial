@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Landing\FormTrabajaTutorasModel as Form;
+use Illuminate\Support\Facades\Route;
 
 class RhFormsController extends Controller
 {
@@ -15,6 +16,12 @@ class RhFormsController extends Controller
      */
     public function index()
     {
+
+        echo Route::currentRouteName();
+        echo "<br>\n";
+
+
+        die;
 
         $data = Form::where([
           ['form',    '=', $_GET['type']]

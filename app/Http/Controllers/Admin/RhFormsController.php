@@ -17,11 +17,8 @@ class RhFormsController extends Controller
     public function index()
     {
 
-        echo Route::currentRouteName();
-        echo "<br>\n";
 
 
-        die;
 
         $data = Form::where([
           ['form',    '=', $_GET['type']]

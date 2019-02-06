@@ -64,7 +64,7 @@
   @if($university->short_name=='UNI')
 
     <br><br>
-
+<!--
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
               <a href="http://app.trilce.edu.pe/uni/registro/" target="_blank" class="admission-ads__link">
@@ -76,7 +76,7 @@
             </div>
     </div>
 
-
+-->
   @endif
 
 

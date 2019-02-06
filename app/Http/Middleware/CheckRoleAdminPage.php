@@ -20,12 +20,6 @@ class CheckRoleAdminPage
 
 
 
-        echo Route::currentRouteName();
-        echo "<br>\n";
-
-        dd($request->User()->x());
-
-        die;
         return $next($request);
     }
 }

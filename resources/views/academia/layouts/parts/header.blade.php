@@ -43,7 +43,7 @@
                     <div>
                       <h3>UNI - Católica</h3>
                       <ul>
-                        <li class="{{ (Request::is('academia/sede/torrico')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/torrico">Torrico</a></li>
+                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></li>
                       </ul>
                     </div>
                     <div>

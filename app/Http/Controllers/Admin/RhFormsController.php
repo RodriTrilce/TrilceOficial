@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Landing\FormTrabajaTutorasModel as Form;
+use Illuminate\Support\Facades\Route;
 
 class RhFormsController extends Controller
 {
@@ -16,7 +17,32 @@ class RhFormsController extends Controller
     public function index()
     {
 
-        $data = Form::all();
+/*
+        echo Route::currentRouteName();
+        echo "<br>\n";
+
+        print_r(Route::getCurrentRoute()->controller);
+        echo "<br>\n";
+
+
+        $name = Route::currentRouteName();
+        echo($name);
+        echo "<br>\n";
+
+        $action = Route::currentRouteAction();
+        echo $action;
+        echo "<br>\n";
+
+        die;
+*/
+
+
+        $data = Form::where([
+          ['form',    '=', $_GET['type']]
+        ])
+        ->orderBy('register', 'asc')
+        ->get();
+
         return view('admin.rrhh_forms.index')->with([
             'data' => $data
         ]);

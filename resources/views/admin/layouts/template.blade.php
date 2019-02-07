@@ -27,7 +27,7 @@
   <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="#">Salir</a>
+      <a class="nav-link" href="/admin/salir">Salir</a>
     </li>
   </ul>
 </nav>
@@ -59,11 +59,15 @@
             <ul class="nav flex-column mb-5">
 
               <li class="nav-item">
-                <a href="/admin/rrhh-forms/?type=tutoras" class="nav-link">
-                  <span data-feather="corner-down-right"></span> Formulario: Tutoras
+                <a href="/admin/rrhh-forms/?type=tutoras_secundaria" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Formulario: Tutoras secundaria
                 </a>
               </li>
-
+              <li class="nav-item">
+                <a href="/admin/rrhh-forms/?type=docnete_parimaria_2019" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Formulario: Docentes primaria
+                </a>
+              </li>
             </ul>
           </li>
 
@@ -152,9 +156,7 @@
 
 <script>
 @section('scripts')
-feather.replace()
-
-
+  feather.replace()
 </script>
 @show
 

@@ -19,11 +19,7 @@ include 'redirect_oldweb.php';
 Route::name('prueba')->get('/prueba', function () {
    return view('academia.test');
 });
-Route::get('/prueba2', 'Prueba2Controller@index');
-Route::get('/img', 'prueba@index');
-Route::get('/prueba3', 'prueba3@index');
 Route::get('/ecotrilce', 'Out\EcotrilceController@index');
-Route::get('/navidad', 'NavidadController@index');
 Route::get('/academia_prematricula', 'Academia\Enrollment\TestController@show');
 
 Route::get('/tyc-lp.pdf', function(){
@@ -41,7 +37,8 @@ Route::get('/tyc-lp.pdf', function(){
 // Index
 Auth::routes();
 Route::get('/admin', 'Admin\IndexController@index');
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function(){
+Route::get('/admin/salir', 'Auth\LogoutController@logout');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'rolepageadmin']], function(){
   Route::resource('/blog', 'BlogController');
   Route::resource('/math-olympics', 'MathOlympicsController');
   Route::resource('/math-olympics/results', 'MathOlympicsResultsController');

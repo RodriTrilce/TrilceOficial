@@ -64,7 +64,7 @@
                   </p>
 
                   <p>
-                    <strong class="orange">Semestral:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y que desean postular a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Semestral:</strong> Dirigido a estudiantes que cuenten con preparación preuniversitaria previa y postulen a San Marcos.
                   </p>
 
                   <p>
@@ -72,18 +72,18 @@
                   </p>
 
                   <p>
-                    <strong class="orange">Intensivo:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y que desean postular a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Intensivo:</strong> Dirigido a estudiantes que no cuenten con preparación preuniversitaria previa y postulen a San Marcos en el examen de admisión de marzo.
                   </p>
 
                 </div>
                 <div class="col-xs-12 col-sm-6 preparation__cicles__section preparation__cicles__section--double">
 
                   <p>
-                    <strong class="orange">Repaso:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y que desean postular a San Marcos en el examen de admisión de marzo.
+                    <strong class="orange">Repaso:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y postulen a San Marcos en el examen de admisión de marzo.
                   </p>
 
                   <p>
-                    <strong class="orange">Reforzamiento:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y desean postular a San Marcos en el examen de admisión de septiembre.
+                    <strong class="orange">Reforzamiento:</strong> Dirigido a estudiantes que acaban de culminar un ciclo completo de preparación preuniversitaria y postulen a San Marcos en el examen de admisión de setiembre.
                   </p>
 
                   <p>

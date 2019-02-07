@@ -17,6 +17,7 @@ class RhFormsController extends Controller
     public function index()
     {
 
+/*
         echo Route::currentRouteName();
         echo "<br>\n";
 
@@ -33,7 +34,7 @@ class RhFormsController extends Controller
         echo "<br>\n";
 
         die;
-
+*/
 
 
         $data = Form::where([

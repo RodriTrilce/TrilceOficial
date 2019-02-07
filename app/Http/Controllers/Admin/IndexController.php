@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\AdminPageModel;
+use Auth;
 
 class IndexController extends Controller
 {
@@ -25,11 +26,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-
-        dd($this->auth());
+/*
+        dd(Auth::user()->posts);
 
         die;
-
+*/
         return view('admin.index')->with([
             'page'      => 'index',
             'pages'     => AdminPageModel::all()

@@ -28,6 +28,7 @@
       <th>Email</th>
       <th>Telefono</th>
       <th>Carrera</th>
+      <th>Centro de Estudios</th>
       <th>Distrito</th>
       <th>Expectativa salarial</th>
       <th>Experiencia</th>
@@ -46,6 +47,7 @@
       <td>{{$fila->email}}</td>
       <td>{{$fila->telefono}}</td>
       <td>{{$fila->carrera}}</td>
+      <td>{{$fila->centro_estudios}}</td>
       <td>{{$fila->distrito}}</td>
       <td>{{$fila->expectativa_salarial}}</td>
       <td>{{$fila->experiencia}}</td>

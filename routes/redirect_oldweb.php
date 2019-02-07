@@ -1,5 +1,8 @@
 <?php
 
+Route::get('/academia/sede/torrico', function(){
+  return Redirect::to('/academia/sede/cercado-de-lima', 301);
+});
 
 Route::get('/politica-de-datos-personales.pdf', function(){
   return Redirect::to('/storage/other/documents/politica-de-datos-personales.pdf', 301);

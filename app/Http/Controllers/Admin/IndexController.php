@@ -25,6 +25,11 @@ class IndexController extends Controller
      */
     public function index()
     {
+
+        dd($this->auth());
+
+        die;
+
         return view('admin.index')->with([
             'page'      => 'index',
             'pages'     => AdminPageModel::all()

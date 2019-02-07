@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class AdminPageModel extends Model
 {
-	protected $table = 'admin_page';
+	protected $table = 'role_adminpage';
+
+	public function roles()
+	{
+	  return $this
+	      ->belongsTo('App\Role')
+	      ->withTimestamps();
+	}
+
 }

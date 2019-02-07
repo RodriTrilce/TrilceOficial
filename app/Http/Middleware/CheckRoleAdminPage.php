@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Route;
+use App\Models\Admin\AdminPageModel;
+use Auth;
 
 class CheckRoleAdminPage
 {
@@ -17,6 +19,25 @@ class CheckRoleAdminPage
     public function handle($request, Closure $next)
     {
 
+/*
+        $c = Auth::user()->roles()->adminPages();
+        dd($c);
+*/
+
+/*
+        $route = explode('.', Route::currentRouteName());
+        $route = $route[0];
+
+        $c = Auth::user()->roles;
+        foreach ($c as $key) {
+            $id = $key->id;
+            $v = AdminPageModel::where('role_id', $id);
+            
+            dd($v);
+
+        }
+
+        die;
 
 
 /*

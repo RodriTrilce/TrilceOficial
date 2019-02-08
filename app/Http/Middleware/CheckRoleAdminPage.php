@@ -18,12 +18,14 @@ class CheckRoleAdminPage
     public function handle($request, Closure $next)
     {
 
-        $passed = null;
-        $route = explode('.', Route::currentRouteName());
+//        dd(Auth::user()->rolesPages());
 
+        $passed = 0;
+        $route = explode('.', Route::currentRouteName());
         $roles = Auth::user()->rolesPages();
+
         foreach ($roles as $space) {
-            if(trim($space->info['controller']) == $route[0]){
+            if(trim($space->info['controller']) == $route[0])
                 $passed++;
         }
 

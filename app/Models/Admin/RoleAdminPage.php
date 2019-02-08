@@ -16,6 +16,6 @@ class RoleAdminPage extends Model
 
     public function info()
     {
-        return $this->hasOne('App\Models\Admin\AdminPage', 'id');
+        return $this->hasOne('App\Models\Admin\AdminPage', 'id', 'admin_page_id');
     }
 }

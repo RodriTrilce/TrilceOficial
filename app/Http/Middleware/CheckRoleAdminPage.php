@@ -19,10 +19,19 @@ class CheckRoleAdminPage
     public function handle($request, Closure $next)
     {
 
-/*
-        $c = Auth::user()->roles()->adminPages();
-        dd($c);
-*/
+        $passed = null;
+        $route = explode('.', Route::currentRouteName());
+
+        $roles = Auth::user()->rolesPages();
+        foreach ($roles as $space) {
+
+            if(trim($space->info['controller']) == $route[0]){
+                $passed++;
+            }
+        }
+
+        if(!$passed)
+          abort(403, "No tienes autorización para ingresar.");
 
 /*
         $route = explode('.', Route::currentRouteName());

@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Models\Post;
+use App\Models\Admin\RoleAdminPage;
 
 class User extends Authenticatable
 {
@@ -33,6 +34,13 @@ class User extends Authenticatable
         return $this
             ->belongsToMany('App\Role')
             ->withTimestamps();
+    }
+
+    public function rolesPages()
+    {
+        foreach ($this->roles as $key) {
+            return RoleAdminPage::where('role_id', $key->id)->get();
+        }
     }
 
     public function authorizeRoles($roles)

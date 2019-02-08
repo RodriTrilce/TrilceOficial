@@ -3,11 +3,10 @@
 namespace App\Models\Admin;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Role;
 
-class AdminPageModel extends Model
+class RoleAdminPage extends Model
 {
-	protected $table = 'role_adminpage';
-
 	public function roles()
 	{
 	  return $this
@@ -15,4 +14,8 @@ class AdminPageModel extends Model
 	      ->withTimestamps();
 	}
 
+    public function info()
+    {
+        return $this->hasOne('App\Models\Admin\AdminPage', 'id');
+    }
 }

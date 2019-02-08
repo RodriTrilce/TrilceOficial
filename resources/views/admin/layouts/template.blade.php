@@ -71,7 +71,7 @@
             </ul>
           </li>
 
-<!--
+
           <li class="nav-item">
             <a class="nav-link" href="/email-manager">
               <span data-feather="file-text"></span>
@@ -90,9 +90,9 @@
               <li class="nav-item"><a href="/admin/blog/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear</a></li>
             </ul>
           </li>
--->
 
-<!--
+
+
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file-text"></span>
@@ -103,9 +103,7 @@
               <li class="nav-item"><a href="/admin/math-olympics/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear</a></li>
             </ul>
           </li>
-        -->
 
-<!--
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file-text"></span>
@@ -122,9 +120,8 @@
               <li class="nav-item"><a href="/admin/venue-academia/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear Academia</a></li>
             </ul>
 
-          </li>-->
+          </li>
 
-<!--
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file-text"></span>
@@ -136,8 +133,6 @@
               <li class="nav-item"><a href="/admin/banners/?type=index_colegio" class="nav-link"><span data-feather="corner-down-right"></span> index Colegio</a></li>
             </ul>
           </li>
-    -->  
-
 
         </ul>
 

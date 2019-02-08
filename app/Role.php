@@ -12,9 +12,9 @@ class Role extends Model
 		->belongsToMany('App\User');
 	}
 
-	public function adminPages()
-	{
+	public function adminPage()
+ 	{
 		return $this
-		->belongsTo('App\Models\Admin\AdminPageModel');
+		->belongsToMany('App\Models\Admin\RoleAdminPage', 'role_id');
 	}
 }

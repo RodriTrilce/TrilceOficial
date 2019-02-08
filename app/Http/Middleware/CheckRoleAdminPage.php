@@ -23,10 +23,8 @@ class CheckRoleAdminPage
 
         $roles = Auth::user()->rolesPages();
         foreach ($roles as $space) {
-
             if(trim($space->info['controller']) == $route[0]){
                 $passed++;
-            }
         }
 
         if(!$passed)

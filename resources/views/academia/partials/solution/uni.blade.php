@@ -13,6 +13,17 @@
       <tbody>
         <tr>
         </tr>
+
+          <tr>
+            <td data-label=""> Año 2019 - I</td>
+            <td data-label="Aptitud académica y humanidades">
+              <a href="/storage/academia/documents/solutions/uni/2019/1/examen-2019-uni-i-solucionario-aptitudes-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a>
+            </td>
+
+            <td data-label="Matemática"></td>
+            <td data-label="Física y química"></td>
+          </tr>
+
           <tr>
             <td data-label=""> Año 2018 - I</td>
             <td data-label="Aptitud académica y humanidades"><a href="/storage/academia/documents/solutions/uni/2018/1/examen-2018-uni-i-solucionario-aptitudes-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a></td>

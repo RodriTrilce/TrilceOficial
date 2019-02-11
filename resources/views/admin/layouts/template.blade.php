@@ -134,6 +134,21 @@
             </ul>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Popups
+            </a>
+            <ul class="nav flex-column mb-5">
+             
+              <li class="nav-item">
+                <a href="/admin/popup/" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Listar popups
+                </a>
+              </li>
+            </ul>
+          </li>
+
         </ul>
 
       </div>

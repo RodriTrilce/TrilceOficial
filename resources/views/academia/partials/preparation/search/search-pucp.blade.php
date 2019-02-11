@@ -12,7 +12,7 @@
   <select id="beginning-venue">
     <option value="0" selected hidden disable>Sedes</option>
     <option value="0">Todos</option>
-    <option value=14>Torrico</option>
+    <option value=14>Cercado de Lima</option>
     <option value=20>San Isidro</option>
     <option value=23>Los Olivos</option>
   </select>

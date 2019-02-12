@@ -32,7 +32,13 @@ class BeginningsApiResourceController extends Controller
      */
     public function index(Request $request)
     {
-      $data = $this->makeResponse($request->university, $request->combo, $request->venue, $request->cycle, $request->turn);
+      $data = $this->makeResponse(
+                    $request->university,
+                    $request->combo,
+                    $request->venue,
+                    $request->cycle,
+                    $request->turn);
+
       return collect($data);
     }
 
@@ -46,7 +52,8 @@ class BeginningsApiResourceController extends Controller
       return $this->source->{$university};
     }
 
-    private function makeRequest($url, $data)
+    private function makeRequest($url,
+      $data)
     {
       $client = new ClientGuzzle(['base_uri' => $this->source->base]);
       $response = $client->post($url, [
@@ -94,12 +101,9 @@ class BeginningsApiResourceController extends Controller
           break;
       }
 
-      if(Cache::has($data)){
-        $buffer = Cache::get($data);
 
-      }else{
         $crawler = new Crawler($this->makeRequest($this->makeSource($university), $data));
-        $buffer = $crawler->filter('table')->each(function ($node){
+        $buffer = $crawler->filter('table')->each(function ($node) use ($venue){
 
           $_type = $node->filter('thead')->each(function($n){
             return $n->filter('tr div')->getNode(0)->textContent;
@@ -112,6 +116,11 @@ class BeginningsApiResourceController extends Controller
 
           $temp = $node->filter('tbody tr')->each(function($b) use ($_type, $_head){
             return $b->children()->each(function($c, $i) use ($_head){
+
+
+              if((strpos($_head[$i], 'Pago')) !== false){
+                return 'S/' . $c->getNode(0)->textContent;
+              }
 
               /*if($_head[$i] == 'Inicio'){
                 $newformat = date('Y-m-d', strtotime($c->getNode(0)->textContent));
@@ -128,13 +137,37 @@ class BeginningsApiResourceController extends Controller
 
           $_body[$_type[0]] = ($temp);
 
+
+          $money = 0;
+          for ($i=0; $i <count($_head); $i++) { 
+            if($venue == "20" || $venue == "23")
+            {
+
+              if($_head[$i] == 'Pago Único'){
+                $money = $i;
+                $_head[$i] = '*Inversión por ciclo'; 
+              }
+
+            }else{
+              switch ($_head[$i]) {
+                case 'Pago Mensual':
+                    $money = $i;
+                    $_head[$i] = 'Inversión Mensual';
+                  break;
+
+                case 'Pago Único':
+                $money = $i;
+                $_head[$i] = 'Inversión';
+                  break;
+              }
+            }
+          }
           $_body['head'] = $_head;
+
 
           return $_body;
         });
 
-        Cache::put($data, $buffer, 1440);
-      }
 
       return $buffer;
     }

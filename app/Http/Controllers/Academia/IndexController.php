@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\BannersModel as Banner;
 use Meta;
+use Route;
+use App\Models\Popup;
 
 class IndexController extends Controller
 {
@@ -16,6 +18,7 @@ class IndexController extends Controller
    */
   public function index()
   {
+
     $banners = Banner::where([
       ['type',  '=', 'index_academia'],
       ['state', '=', '1']
@@ -23,6 +26,10 @@ class IndexController extends Controller
     ->orderBy('position', 'asc')
     ->get();
 
+    $popup = Popup::where([
+      ['type',   '=', Route::currentRouteName()]
+    ])
+    ->get();
 
     Meta::set('title', ' Academia Trilce');
     Meta::set('description', 'Academia Trilce con más de 38 años de experiencia potenciando el nivel académico y desarrollo personal de nuestros alumnos.');
@@ -32,7 +39,8 @@ class IndexController extends Controller
     return view('/academia/index')
     ->with([
       'print'   => (parse_url(request()->headers->get('referer'), PHP_URL_PATH) == '/' ? true : false),
-      'banners' => $banners
+      'banners' => $banners,
+      'popup'   => $popup
     ]);
 
   }

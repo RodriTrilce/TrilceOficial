@@ -17,4 +17,29 @@
   </div>
 
   <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs table-responsive preparation-overflow" id="drawTables"></div>
+
+  @if($type == 'pucp')
+  <div class="row col-xs-12 col-sm-9 col-md-8 start-sm start-xs" id="academia-aviso" style="display: none;">
+    <span style="
+    font-family: Geogrotesque-Lt;
+    font-size: 1.1rem;
+    color: #f4633a;
+    padding-right: 2px;
+    ">
+    <span>*</span>Consultar por nuestra modalidad en cuotas.
+  </span>
+  </div>
+  @endif
+
 </div>
+
+<script>
+  var v = document.getElementById("beginning-venue"),
+      b = document.getElementById("academia-aviso");
+  v.addEventListener("change", function(){
+    b.style.display = "none";
+    let sede = v.options[v.selectedIndex].value;
+    if(sede == 23 || sede == 20)
+      b.style.display = "flex";
+  })
+</script>

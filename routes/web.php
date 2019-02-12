@@ -46,6 +46,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/venue-academia', 'VenueAcademiaController');
   Route::resource('/banners', 'BannersController');
   Route::resource('/rrhh-forms', 'RhFormsController');
+  Route::resource('/popup', 'PopupController');  
 });
 
 

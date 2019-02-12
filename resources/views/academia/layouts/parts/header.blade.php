@@ -20,6 +20,7 @@
                 <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>6198 100</b></a></div>
               </li>
               <li class="nav__highlight"><a href="/colegio">Colegio</a></li>
+
               <li class=""><a href="/academia/#inicios">Ciclos</a></li>
               <li class=""><a href="/academia/preinscripcion" class="{{ (Request::is('academia/preinscripcion')?'nav-item-active nav-item-noclick':'') }}">Preinscripción</a></li>
               <li class="nav-venues xs-hide" id="sedes">
@@ -29,6 +30,9 @@
                     <div>
                       <h3>UNI - San Marcos - Católica</h3>
                       <ul>
+
+                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cerado de Lima</a></li>
+
                         <li class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                       </ul>
                     </div>
@@ -75,6 +79,7 @@
               </li>
               <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
               <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
+              <li class=""><a target="_blank" href="/academia-sorteo-laptop/">SORTEOS</a></li>
               <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctanos</a></li>
             </ul>
           </nav>

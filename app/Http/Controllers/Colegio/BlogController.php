@@ -60,7 +60,6 @@ class BlogController extends Controller
         ['type', '=', $this->typePost],
         ['site', '=', $this->site],
         ['id', '<>', $post->id],
-        ['visible', '1'],
         ['approved', '=', '1'],
       ])
       ->take(4)

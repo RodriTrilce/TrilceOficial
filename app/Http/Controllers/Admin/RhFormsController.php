@@ -16,27 +16,6 @@ class RhFormsController extends Controller
      */
     public function index()
     {
-
-/*
-        echo Route::currentRouteName();
-        echo "<br>\n";
-
-        print_r(Route::getCurrentRoute()->controller);
-        echo "<br>\n";
-
-
-        $name = Route::currentRouteName();
-        echo($name);
-        echo "<br>\n";
-
-        $action = Route::currentRouteAction();
-        echo $action;
-        echo "<br>\n";
-
-        die;
-*/
-
-
         $data = Form::where([
           ['form',    '=', $_GET['type']]
         ])

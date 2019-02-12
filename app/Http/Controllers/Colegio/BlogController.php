@@ -52,7 +52,7 @@ class BlogController extends Controller
     $post = Post::where('slug', $post)->firstOrFail();
 
     //\Event::fire(new PostViewed($post));
-    if($post->visible) {
+    if($post->approved) {
       $post->visits()->increment();
 
       $related = Post::inRandomOrder()
@@ -60,6 +60,7 @@ class BlogController extends Controller
         ['type', '=', $this->typePost],
         ['site', '=', $this->site],
         ['id', '<>', $post->id],
+        ['visible', '1'],
         ['approved', '=', '1'],
       ])
       ->take(4)

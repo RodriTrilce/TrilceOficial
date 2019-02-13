@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With");
+
+
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -36,3 +42,8 @@ Route::post('/academia/beginnings', 'Academia\BeginningsApiResourceController@in
 
 // Out/Inscription = Landing academia pre-matricula en linea
 Route::post('/out/inscription', 'Out\InscriptionController@store');
+
+// San Valentin
+Route::post('/out/valentin', 'Out\ValentinController@insert')->middleware('cors');
+Route::get('/out/valentin/{id}', 'Out\ValentinController@read')->middleware('cors');
+

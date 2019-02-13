@@ -1,5 +1,11 @@
 <?php
 
+
+Route::get('/l/claves-uni-matematica', function(){
+  return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/claves/examen-2019-uni-i-claves-matematica.pdf', 301);
+});
+
+
 Route::get('/academia/sede/torrico', function(){
   return Redirect::to('/academia/sede/cercado-de-lima', 301);
 });

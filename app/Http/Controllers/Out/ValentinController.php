@@ -14,8 +14,9 @@ class ValentinController extends Controller
     public function insert(Request $request)
     {
 
-      $mensaje = str_word_count($request->mensaje, 1);
-      $mensaje = str_replace("\n", " ", $mensaje);
+      $mensaje = str_replace("\n", " ", $request->mensaje);
+      $mensaje = explode(" ", $mensaje);
+
       $mensaje2 = '';
 
       for ($i=0; $i < count($mensaje); $i++) { 
@@ -24,8 +25,6 @@ class ValentinController extends Controller
       	if(($i== 0 ? 1 : $i) % 6 == 0) $mensaje2 .= "\n";
       }
 
-
-    
       $img = storage_path('app/public/static/images/other/valentin-template.png');
 
       $img = Image::make($img);

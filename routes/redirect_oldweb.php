@@ -1,6 +1,13 @@
 <?php
 
 
+// Preparación (Preparation)
+Route::name('xx')
+      ->get('/envia-un-mensaje-de-amor-y-amistad/{id}', function($id){
+          return Redirect::to('/envia-un-mensaje-de-amor-y-amistad/#'.$id);
+      });
+
+
 Route::get('/l/claves-uni-matematica', function(){
   return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/claves/examen-2019-uni-i-claves-matematica.pdf', 301);
 });

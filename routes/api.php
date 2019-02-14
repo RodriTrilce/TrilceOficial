@@ -46,4 +46,5 @@ Route::post('/out/inscription', 'Out\InscriptionController@store');
 // San Valentin
 Route::post('/out/valentin', 'Out\ValentinController@insert')->middleware('cors');
 Route::get('/out/valentin/{id}', 'Out\ValentinController@read')->middleware('cors');
+Route::get('/out/valentin/download/{id}', 'Out\ValentinController@download');
 

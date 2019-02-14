@@ -15,6 +15,7 @@ class ValentinController extends Controller
     {
 
       $mensaje = str_word_count($request->mensaje, 1);
+      $mensaje = str_replace("\n", " ", $mensaje);
       $mensaje2 = '';
 
       for ($i=0; $i < count($mensaje); $i++) { 
@@ -36,7 +37,7 @@ class ValentinController extends Controller
         $font->valign('top');
       });
 
-      $img = $img->text($request->de, 350, 626, function($font) {
+      $img = $img->text($request->de, 350, 666, function($font) {
         $font->file(resource_path('assets/fonts/33FA0F_E_0.ttf'));
         $font->size(30);
         $font->color('#f4633a');
@@ -87,6 +88,20 @@ class ValentinController extends Controller
         'url'		=> $url,
         'id'		=> $v->id
       ]));
+    }
 
+    public function download($id)
+    {
+      $v = Valentin::find($id);
+
+      $url = storage_path("app/public/static/images/other/valentin/{$v->hash}.jpg");
+
+      $name = 'Un-mensaje-para-ti.jpg';
+
+
+        $headers = ['Content-Type: application/pdf'];
+
+
+        return response()->download($url, $name, $headers);
     }
 }

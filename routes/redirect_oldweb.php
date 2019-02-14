@@ -7,6 +7,16 @@ Route::name('xx')
           return Redirect::to('/envia-un-mensaje-de-amor-y-amistad/#'.$id);
       });
 
+
+Route::get('/l/solucionario-uni-fisica-quimica', function(){
+  return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/solutions/uni/2019/1/examen-2019-uni-i-solucionario-fisica-quimica.pdf', 301);
+});
+
+Route::get('/l/claves-uni-fisica-quimica', function(){
+  return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/claves/examen-2019-uni-i-claves-fisica-quimica.pdf', 301);
+});
+
+
 Route::get('/l/claves-uni-matematica', function(){
   return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/claves/examen-2019-uni-i-claves-matematica.pdf', 301);
 });

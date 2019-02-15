@@ -118,6 +118,7 @@ class BeginningsApiResourceController extends Controller
             return $b->children()->each(function($c, $i) use ($_head){
 
 
+
               if((strpos($_head[$i], 'Pago')) !== false){
                 return 'S/' . $c->getNode(0)->textContent;
               }
@@ -126,7 +127,12 @@ class BeginningsApiResourceController extends Controller
                 $newformat = date('Y-m-d', strtotime($c->getNode(0)->textContent));
                 return $newformat;
               }else{*/
-                return $c->getNode(0)->textContent;
+
+
+                return str_replace(
+                  ['Torrico', 'VES'],
+                  ['Cercado de Lima', 'Villa El Salvador'],
+                  $c->getNode(0)->textContent);
               //}
 
             //return $c->getNode(0)->textContent;

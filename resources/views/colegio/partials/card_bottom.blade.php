@@ -1,6 +1,7 @@
 <div class="card2">
   <div class="container-fluid">
     <div class="row">
+      <!--
       <div class="row col-xs-12 col-sm-6 col-md-3 nuevos-i__vacations-v2">
         <a href="/colegio/vacaciones-utiles">
           <svg version="1.1" class="card__svg-vacations" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -188,6 +189,15 @@
           </svg>
         </a>
       </div>
+    -->
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <a href="/colegio/propuesta-educativa">
+          <i class="fa fa-graduation-cap"></i>
+          <h3>Propuesta educativa</h3>
+          <p>Conoce más sobre nosotros</p>
+        </a>
+      </div>
+      
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="/colegio/guia-de-pagos-en-linea">
             <i class="fa fa-credit-card"></i>

@@ -92,15 +92,9 @@ class ValentinController extends Controller
     public function download($id)
     {
       $v = Valentin::find($id);
-
       $url = storage_path("app/public/static/images/other/valentin/{$v->hash}.jpg");
-
       $name = 'Un-mensaje-para-ti.jpg';
-
-
-        $headers = ['Content-Type: application/pdf'];
-
-
-        return response()->download($url, $name, $headers);
+      $headers = ['Content-Type: image/jpeg'];
+      return response()->download($url, $name, $headers);
     }
 }

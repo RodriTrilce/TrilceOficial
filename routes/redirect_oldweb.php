@@ -1,6 +1,11 @@
 <?php
 
 
+Route::get('/l/reconstruido-catolica-evaluacion-del-talento-1', function(){
+  return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/solutions/pucp/2019/evaluacion-del-talento-reconstruido-1.pdf', 301);
+});
+
+
 // Preparación (Preparation)
 Route::name('xx')
       ->get('/envia-un-mensaje-de-amor-y-amistad/{id}', function($id){

@@ -74,8 +74,9 @@
           <span>San Marcos</span>
         </div>
 
-      </div>
+e
 
+      </div>
     </div>
       <div class="banner__style_primer-reverse banner__style_primer--colegio">
         <div class="banner__title">

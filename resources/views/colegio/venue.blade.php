@@ -161,7 +161,7 @@
     page = 'venue_colegio';
 
   @parent
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD1wH_2k0jIxbUwc1TUI40RANtmuMIbMU8" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBObmnhVKsSfktTRd_gOP7mUtE6KKRIyBs" charset="utf-8"></script>
   <script type="text/javascript">
     function initMap(){
         var options = {

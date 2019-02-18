@@ -101,6 +101,12 @@ Breadcrumbs::for('academia-preparation', function ($trail, $modality) {
     $trail->push('Preparación ' . $modality, route('academia-preparation', $modality));
 });
 
+// Academia > Venues
+Breadcrumbs::for('academia-venues', function ($trail) {
+    $trail->parent('academia-index');
+    $trail->push('Sedes', route('academia-venues'));
+});
+
 // Academia > Venue
 Breadcrumbs::for('academia-venue', function ($trail, $modality) {
     $trail->parent('academia-index');

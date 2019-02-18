@@ -72,7 +72,7 @@
                   <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
                   <li><a href="/academia/sede/comas">Comas</a></li>
                   <li><a href="/academia/sede/villa-el-salvador">Villa El Salvador</a></li>
-                  <li><a href="/academia/sede/torrico">Torrico</a></li>
+                  <li><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></li>
                   <li><a href="/academia/sede/marsano">Marsano</a></li>
                   <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
                 </ul>

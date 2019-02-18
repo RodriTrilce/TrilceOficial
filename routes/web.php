@@ -77,6 +77,10 @@ Route::name('academia-index')
 Route::name('academia-preparation')
       ->get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
+// Página Princial (Index)
+Route::name('academia-venues')
+      ->get('/academia/sedes', 'Academia\VenuesController@index');
+
 // Sedes (Venue)
 Route::name('academia-venue')
       ->get('/academia/sede/{barrack}', 'Academia\VenueController@index');

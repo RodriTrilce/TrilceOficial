@@ -19,21 +19,16 @@
 
       <div class="col-xs-12 col-sm container-base venue-info-container">
         <div class="row col-xs-12 col-sm-12 table-responsive">
-          <table class="venue-table">
-            <thead>
-              <tr>
-                <th>Sede</th>
-              </tr>
-            </thead>
+          <table>
             <tbody>
                 <tr>
-					<td data-label="Sede"><a href="/academia/sede/los-olivos">Los Olivos</a></td>
-					<td data-label="Sede"><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></td>
-					<td data-label="Sede"><a href="/academia/sede/comas">Comas</a></td>
-					<td data-label="Sede"><a href="/academia/sede/villa-el-salvador">Villa El Salvador</a></td>
-					<td data-label="Sede"><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></td>
-					<td data-label="Sede"><a href="/academia/sede/marsano">Marsano</a></td>
-					<td data-label="Sede"><a href="/academia/sede/san-isidro">San Isidro</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/los-olivos">Los Olivos</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/comas">Comas</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/villa-el-salvador">Villa El Salvador</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/marsano">Marsano</a></td>
+        					<td data-label="Sede"><a href="/academia/sede/san-isidro">San Isidro</a></td>
                 </tr>
             </tbody>
           </table>

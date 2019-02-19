@@ -21,7 +21,7 @@ class MathOlympicsResultsController extends Controller
      */
     public function store(Request $request){
       $result = MathOlympics::find($request->matholympic_id);
-      $mime = new Mime;
+      $mime   = new Mime;
 
       $i=0;
       foreach ($request->file('file_type') as $uploadme) {
@@ -43,7 +43,9 @@ class MathOlympicsResultsController extends Controller
         $i++;
       }
 
-      return redirect()->action('Admin\MathOlympicsController@edit', $request->matholympic_id)->with('success', 'Subido correctamente');
+      return redirect()
+      ->action('Admin\MathOlympicsController@edit', $request->matholympic_id)
+      ->with('success', 'Subido correctamente');
     }
 
     /**
@@ -58,6 +60,8 @@ class MathOlympicsResultsController extends Controller
         Storage::delete('public/' . $file->location_folder . '/' . $file->token . '.' . $file->extension);
         $file->delete();
 
-        return redirect()->action('Admin\MathOlympicsController@edit', $request->matholympic_id)->with('success','Resultado eliminado correctamente');
+        return redirect()
+        ->action('Admin\MathOlympicsController@edit', $request->matholympic_id)
+        ->with('success','Resultado eliminado correctamente');
     }
 }

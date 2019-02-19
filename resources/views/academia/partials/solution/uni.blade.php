@@ -20,8 +20,14 @@
               <a href="/storage/academia/documents/solutions/uni/2019/1/examen-2019-uni-i-solucionario-aptitudes-humanidades.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a>
             </td>
 
-            <td data-label="Matemática"></td>
-            <td data-label="Física y química"></td>
+            <td data-label="Matemática">
+              
+               <a href="/storage/academia/documents/solutions/uni/2019/1/examen-2019-uni-i-solucionario-matematica.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar</a>
+
+            </td>
+            <td data-label="Física y química">
+              <a href="/storage/academia/documents/solutions/uni/2019/1/examen-2019-uni-i-solucionario-fisica-quimica.pdf"><i class="fa fa-file-pdf-o"></i> Descargar</a>
+            </td>
           </tr>
 
           <tr>

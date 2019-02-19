@@ -23,7 +23,7 @@ class PopupController extends Controller
         return view('admin/popup/index')
         ->with([
           'data' => $data
-        ]);        
+        ]);
     }
 
     /**
@@ -84,9 +84,7 @@ class PopupController extends Controller
         $popup->link = $request->link;
         $popup->image_url = $request->image_url;
         $popup->image_url_movil = $request->image_url_movil;
-
         $popup->state    = ($request->state == 'on' ? 1 : 0);
-
         $popup->save();
 
         return back()->with('success', 'Popup actualizado correctamente');

@@ -15,7 +15,9 @@
               </div>
 
               <ul>
+                <!--
                 <li class=""><a href="/colegio/vacaciones-utiles" class="{{ (Request::is('*vacaciones-utiles*')?'nav-item-active':'') }}">Vacaciones Útiles</a></li>
+              -->
 
                 <li class="nav-info-responsive nav-info-colegio">
                   <div><a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a></div>

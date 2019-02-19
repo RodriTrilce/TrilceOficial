@@ -161,7 +161,6 @@
     
     mymap.addControl(new L.Control.Fullscreen());
 
-
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
       maxZoom: 18,
       id: 'mapbox.streets',

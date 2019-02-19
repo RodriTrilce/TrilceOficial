@@ -3,6 +3,15 @@
 @section('title', $data->name)
 @section('content')
 
+  <!-- map -->
+  <style>
+    #mapid { height: 100%; }
+    .leaflet-control-attribution{
+      opacity: .6;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>  
+
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
@@ -93,7 +102,7 @@
       </div>
 
       <div class="col-xs-12 col-sm map-container">
-        <div id="map"></div>
+        <div id="mapid"></div>
       </div>
 
     </div>
@@ -107,55 +116,29 @@
     page = 'venue';
 
   @parent
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBK8azPdLctGr7HLhHaI134hHsGTYkK3S4" charset="utf-8"></script>
-  <script type="text/javascript">
-  function initMap(){
-      var options = {
-          zoom:13,
-          center:{lat:{{$data->logitude}},lng:{{$data->latitude}}},
-      }
 
-      var map = new google.maps.Map(document.getElementById('map'), options);
-
-      var markers = [
-        {
-          coords:{lat:{{ $data->logitude }},lng: {{ $data->latitude }} },
-          content: `<span style="color:#f4633a">{{ $data->name }}</span><br>{!! $data->direction !!} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $data->phone }}`
-        },
-
-      ];
-
-      for(var i = 0;i < markers.length;i++){
-          addMarker(markers[i]);
-      }
-
-      function addMarker(props){
-          var marker = new google.maps.Marker({
-              position:props.coords,
-              map:map
-          });
-
-
-          let ico = {url:'{{url('/static/images/map-marker.svg')}}',
-          scaledSize: new google.maps.Size(50, 50), // scaled size
-          origin: new google.maps.Point(0,0), // origin
-          anchor: new google.maps.Point(0, 0) // anchor
-          };
-          marker.setIcon(ico);
-
-
-          if(props.content){
-              var infoWindow = new google.maps.InfoWindow({
-                  content:props.content
-              });
-
-              marker.addListener('click', function(){
-                  infoWindow.open(map, marker);
-                  map.setCenter(marker.getPosition());
-              });
-          }
-      }
-  }
-  initMap();
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin="">
   </script>
+
+  <script>
+    var mymap = L.map('mapid').setView([{{$data->logitude}},{{$data->latitude}}], 17);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        maxZoom: 18,
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1IjoiemVudGlkbyIsImEiOiJjanNidW5oNzgwZWFrNDNvODdkYzRvb2RpIn0.tZbhzFp5-WPfsxvutTL00w'
+    }).addTo(mymap);
+
+    var greenIcon = L.icon({
+        iconUrl: 'https://www.trilce.edu.pe/static/images/map-marker.svg',
+
+        iconSize:     [50, 55], // size of the icon
+        iconAnchor:   [30, 55], // point of the icon which will correspond to marker's location
+        popupAnchor:  [-5, -55] // point from which the popup should open relative to the iconAnchor
+    });
+
+    var marker = L.marker([{{$data->logitude}},{{$data->latitude}}], {icon: greenIcon}).addTo(mymap);
+    marker.bindPopup(`<span style="color:#f4633a">{{ $data->name }}</span><br>{!! $data->direction !!} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $data->phone }}`).openPopup();
+  </script>
+
+
 @endsection

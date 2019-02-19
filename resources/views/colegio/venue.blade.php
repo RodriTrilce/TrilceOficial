@@ -3,6 +3,16 @@
 @section('title', $data->name)
 @section('content')
 
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin=""/>
+    <style>
+    #mapid { height: 100%; }
+    .leaflet-control-attribution{
+      opacity: .6;
+    }
+  </style>
+
   <div class="header-double-image">
     <div class="row col-xs-12 header-double-image-desk">
       <img src="{{ url('/static/images/colegio/pages-banners/banner-sedes.jpg') }}" alt="">
@@ -14,7 +24,6 @@
 
   <div class="row col-xs-12 center-xs venue">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
-
       <div class="col-xs-12 col-sm container-base venue-info-container">
         <div class="col-xs-12 venue-info-title"><h2 class="colegio">{{ $data->name}}</h2></div>
         <div class="row col-xs-12 col-sm-12 table-responsive" id="tableade">
@@ -91,12 +100,10 @@
 
           </div>
         </div>
-
       </div>
       <div class="col-xs-12 col-sm map-container">
-        <div id="map"></div>
+        <div id="mapid"></div>
       </div>
-
     </div>
   </div>
 
@@ -109,25 +116,6 @@
       </div>
 
       <div class="row col-xs-12 col-sm investment-block">
-{{--
-        @foreach ($investment as $k)
-          <div class="row col-xs-12 investment-block-item">
-            <div class="col-xs-12 col-sm-2 start-xs center-sm"><span class="venue-colegio-title-span"><strong>{!! $k->range !!}</strong></span></div>
-
-            @if($k->admissionfee)
-            <div class="col-xs-12 col-sm-3 start-xs center-sm"><span class="venue-colegio-title-span">Cuota de ingreso: {!! $k->admissionfee !!}</span></div>
-            @endif
-
-            @if($k->enrollment)
-            <div class="col-xs-12 col-sm-3 start-xs center-sm"><span class="venue-colegio-title-span">Matrícula: {!! $k->enrollment !!}</span></div>
-            @endif
-
-            @if($k->monthlypayment)
-            <div class="col-xs-12 col-sm start-xs center-sm"><span class="venue-colegio-title-span">Mensualidad: {!! $k->monthlypayment !!}</span></div>
-            @endif
-          </div>
-        @endforeach --}}
-
 
         @foreach ($investment as $k)
           <div class="row col-xs-12 investment-block-item">
@@ -161,57 +149,38 @@
     page = 'venue_colegio';
 
   @parent
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBK8azPdLctGr7HLhHaI134hHsGTYkK3S4" charset="utf-8"></script>
+
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+
+
   <script type="text/javascript">
-    function initMap(){
-        var options = {
-            zoom:13,
-            @foreach ($address as $k)
-            center:{lat:{{ $k->logitude }},lng:{{ $k->latitude }}},
-            @endforeach
-        }
+    var mymap = L.map('mapid').setView([-12.049882,-77.038304], 13);
 
-        var map = new google.maps.Map(document.getElementById('map'), options);
 
-        var markers = [
-          @foreach ($address as $k)
-          {
-            coords:{lat:{{ $k->logitude }},lng: {{ $k->latitude }} },
-            content: `<span style="color:#f4633a">{{ $data->name }}</span><br>{!! $k->grades !!} <br> {{ $k->address }} <br> <i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $k->phone }}`
-          },
-          @endforeach
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'pk.eyJ1IjoiemVudGlkbyIsImEiOiJjanNidW5oNzgwZWFrNDNvODdkYzRvb2RpIn0.tZbhzFp5-WPfsxvutTL00w'
+    }).addTo(mymap);
 
-        ];
+    var greenIcon = L.icon({
+      iconUrl: 'https://www.trilce.edu.pe/static/images/map-marker.svg',
 
-        for(var i = 0;i < markers.length;i++){
-            addMarker(markers[i]);
-        }
+      iconSize:     [50, 55], // size of the icon
+      iconAnchor:   [30, 55], // point of the icon which will correspond to marker's location
+      popupAnchor:  [-5, -55] // point from which the popup should open relative to the iconAnchor
+    });
 
-        function addMarker(props){
-            var marker = new google.maps.Marker({
-                position:props.coords,
-                map:map
-            });
+    @foreach ($address as $k)
 
-            let ico = {url:'{{url('/static/images/map-marker.svg')}}',
-            scaledSize: new google.maps.Size(50, 50), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor
-            };
-            marker.setIcon(ico);
+      var marker = L.marker([{{ $k->logitude }},{{ $k->latitude }}], {icon: greenIcon}).addTo(mymap);
+      marker.bindPopup(`<span style="color:#f4633a">{{ $data->name }}</span>
+        <br>{!! $k->grades !!}
+        <br>{{!! $k->address !!}}
+        <br><i class="fa fa-phone" aria-hidden="true" style="color: #f4633a;"></i> {{ $k->phone }}`).openPopup();
+    @endforeach
 
-            if(props.content){
-                var infoWindow = new google.maps.InfoWindow({
-                    content:props.content
-                });
-
-                marker.addListener('click', function(){
-                    infoWindow.open(map, marker);
-                    map.setCenter(marker.getPosition());
-                });
-            }
-        }
-    }
-    initMap();
   </script>
 @endsection

@@ -404,7 +404,7 @@ $banner__box--size-mobile: 5px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right,#00000094 0%, #00000070 50%, transparent 90%, transparent 100%);
+    background: linear-gradient(to right,unquote('#00000094') 0%, unquote('#00000070') 50%, transparent 90%, transparent 100%);
     opacity: .3;
     z-index: 0;
     box-sizing: border-box;
@@ -673,15 +673,6 @@ $banner__box--size-mobile: 5px;
 .banner__content--desktop-padding-left{
     padding-right: 30%;
 }
-
-
-
-
-
-
-
-
-
 
 
 // Loading block effect

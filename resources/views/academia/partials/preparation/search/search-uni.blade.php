@@ -5,7 +5,7 @@
     <option value="0">Todos</option>
     <option value=30>Anual</option>
     <option value=35>Semestral</option>
-    <option value=46>Verano</option>
+
   </select>
 </div>
 

@@ -1,7 +1,6 @@
 <div class="col-xs-12 col-sm">
   <select id="beginning-cyle">
     <option value="0" selected hidden disable>Ciclos</option>
-
     <option value="0">Todos</option>
     <option value=30>Anual</option>
     <option value=40>Intensivo</option>

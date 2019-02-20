@@ -25,6 +25,28 @@ const Preparation = function()
     this.hearSelectCycle();
     this.hearSelectVenue();
     this.hearSelectTurn();
+    this.hearUrlVenue();
+  }
+
+  this.hearUrlVenue = function()
+  {
+    try{
+
+      var aURL = window.location.href;
+      var hashes = aURL.slice(aURL.indexOf('#') + 1).split('&');
+
+      if(hashes[0])
+      {
+        var nowVenue = hashes[0];
+
+        [].forEach.call(this.selectVenue,
+          option => this.slugify(option.text) == nowVenue
+            ? (option.selected=true, this.fireEvent(this.selectVenue, 'change'))
+            : ''
+          );
+      }
+
+    }catch(err){}
   }
 
   this.hearSelectCycle = function()
@@ -153,6 +175,23 @@ const Preparation = function()
 
     this.paintable.innerHTML = tables;
   }
+
+  this.fireEvent = function(element, event) {
+      var evt = document.createEvent("HTMLEvents");
+      evt.initEvent(event, true, true);
+      return !element.dispatchEvent(evt);
+  }
+
+  this.slugify = function(text)
+  {
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w\-]+/g, '')
+      .replace(/\-\-+/g, '-')
+      .replace(/^-+/, '')
+      .replace(/-+$/, '')
+  }
+
 }
 
 export default Preparation;

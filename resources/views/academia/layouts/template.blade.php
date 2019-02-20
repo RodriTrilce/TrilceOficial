@@ -35,7 +35,7 @@
 var page;
 @section('scripts')
 </script>
-<script src="{{ mix('/js/app_academia.js') }}" charset="utf-8"></script>
+<script src="{{ mix('/js/app_academia.js') }}?v1.2" charset="utf-8"></script>
 @show
 
 @include('tracking.before_end_body')

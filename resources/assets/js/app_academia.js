@@ -142,19 +142,6 @@ String.prototype.capitalize = function(){
 
     init_tabs.init();
     init_preparation.init();
-
-    /*
-        switch (type) {
-          case 'uni':
-          break;
-
-          case 'san-marcos':
-          break;
-
-          case 'pucp':
-          break;
-        }
-    */
   }
 
 /**!

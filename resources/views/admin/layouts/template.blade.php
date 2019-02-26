@@ -71,13 +71,17 @@
             </ul>
           </li>
 
+  
 
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="/email-manager">
               <span data-feather="file-text"></span>
               Email manager
             </a>
           </li>
+        -->
+
           <br>
 
           <li class="nav-item">
@@ -144,6 +148,21 @@
               <li class="nav-item">
                 <a href="/admin/popup/" class="nav-link">
                   <span data-feather="corner-down-right"></span> Listar popups
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              File manager
+            </a>
+            <ul class="nav flex-column mb-5">
+             
+              <li class="nav-item">
+                <a href="/admin/filemanager/" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Listar archivos
                 </a>
               </li>
             </ul>

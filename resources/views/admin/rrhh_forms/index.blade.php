@@ -20,28 +20,37 @@
 <br><br>
 
 
-<table data-toggle="table" id="my-table">
+<table
+    id="my-table" 
+    data-toggle="table"
+    data-sort-name="date"
+    data-sort-order="desc"
+    data-height="760"
+    >
   <thead>
     <tr>
-      <th>DNI</th>
-      <th>Nombre</th>
-      <th>Email</th>
-      <th>Telefono</th>
-      <th>Carrera</th>
-      <th>Centro de Estudios</th>
-      <th>Distrito</th>
-      <th>Expectativa salarial</th>
-      <th>Experiencia</th>
-      <th>Experiencia detalle</th>
-      <th>Porque Trilce</th>
-      <th>Porque el puesto</th>
-      <th>Fecha de registro</th>
+      <th data-field="nro" data-sortable="true">#</th>
+      <th data-field="register" data-sortable="true">Fecha de registro</th>
+      <th data-field="dni" data-sortable="true">DNI</th>
+      <th data-field="nombre" data-sortable="true">Nombre</th>
+      <th data-field="email" data-sortable="true">Email</th>
+      <th data-field="telefono" data-sortable="true">Telefono</th>
+      <th data-field="carrera" data-sortable="true">Carrera</th>
+      <th data-field="centro_estudios" data-sortable="true">Centro de Estudios</th>
+      <th data-field="distrito" data-sortable="true">Distrito</th>
+      <th data-field="expectativa_salarial" data-sortable="true">Expectativa salarial</th>
+      <th data-field="experiencia" data-sortable="true">Experiencia</th>
+      <th data-field="experiencia_detalle" data-sortable="true">Experiencia detalle</th>
+      <th data-field="porque_trilce" data-sortable="true">Porque Trilce</th>
+      <th data-field="porque_tutora" data-sortable="true">Porque el puesto</th>
     </tr>
   </thead>
-  <tbody>
 
+  <tbody>
     @foreach($data as $fila)
     <tr>
+      <td>{{$loop->index}}</td>
+      <td>{{$fila->register}}</td>
       <td>{{$fila->dni}}</td>
       <td>{{$fila->nombre}}</td>
       <td>{{$fila->email}}</td>
@@ -54,14 +63,10 @@
       <td>{{$fila->experiencia_detalle}}</td>
       <td>{{$fila->porque_trilce}}</td>
       <td>{{$fila->porque_tutora}}</td>
-      <td>{{$fila->register}}</td>
     </tr>
     @endforeach
-
-
   </tbody>
 </table>
-
 
 @endsection
 

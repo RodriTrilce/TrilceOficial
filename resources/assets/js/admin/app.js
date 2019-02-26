@@ -10,7 +10,7 @@ import BootstrapTable from 'bootstrap-table';
 import xlsx from 'xlsx';
 
 
-//import tableExport from 'tableexport.jquery.plugin/tableExport.js';
+import tableExport from 'tableexport.jquery.plugin/tableExport.js';
 //import jspdf from 'tableexport.jquery.plugin/libs/jsPDF/jspdf.min.js'
 //import jspdf-autotable from 'tableexport.jquery.plugin/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js'
 //import * as jsPDF from 'jspdf'
@@ -411,13 +411,28 @@ if(page == 'banners_create'){
 
 
 if(page == 'rrhh_forms'){
+/**
+ * @author: general
+ * @version: 1.0.0
+ * @website: note.generals.space
+ * @email: generals.space@gmail.com
+ */
+
+  var tableOpts = {
+      addrbar: true,
+      sortable: true,
+      search: true,
+      pagination: true,
+      paginationVAlign: 'bottom',
+      paginationHAlign: 'left',
+      paginationDetailHAlign: 'right',
+      pageList: [100, 50, 100, 500],
+  }
 
 
-    var tableOpts = {
-        addrbar: true,
-    }
+//  $('#my-table').tableExport({type:'csv'});
 
-    $('#my-table').bootstrapTable(tableOpts);
+  $('#my-table').bootstrapTable(tableOpts);
 
 
   let excel = document.getElementById("export_excel");

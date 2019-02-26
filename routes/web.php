@@ -47,6 +47,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/banners', 'BannersController');
   Route::resource('/rrhh-forms', 'RhFormsController');
   Route::resource('/popup', 'PopupController');  
+  Route::resource('/filemanager', 'FileManagerController');
 });
 
 

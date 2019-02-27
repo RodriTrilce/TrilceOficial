@@ -17,9 +17,9 @@
 
 <div id="toolbar">
   <select class="form-control">
-    <option value="">Export Basic</option>
-    <option value="all">Export All</option>
-    <option value="selected">Export Selected</option>
+    <option value="">Exportacion basica</option>
+    <option value="all">Exportar todos</option>
+    <option value="selected">Exportar selección</option>
   </select>
 </div>
 
@@ -29,6 +29,7 @@
     data-show-export="true"
     data-pagination="true"
     data-click-to-select="true"
+    data-maintain-selected="true"
     data-toolbar="#toolbar"
     data-show-toggle="true"
 
@@ -38,9 +39,14 @@
     data-height="760"
     data-show-pagination-switch="true"
     data-page-list="[10, 25, 50, 100, 200, All]"
+    data-export-options='{
+      "fileName": "{{$type}}_{{date("Y-m-d")}}",
+      "ignoreColumn": ["state"]
+    }'
     >
   <thead>
     <tr>
+      <th data-field="state" data-checkbox="true"></th>
       <th data-field="nro" data-sortable="true">#</th>
       <th data-field="register" data-sortable="true">Fecha de registro</th>
       <th data-field="dni" data-sortable="true">DNI</th>
@@ -52,15 +58,16 @@
       <th data-field="distrito" data-sortable="true">Distrito</th>
       <th data-field="expectativa_salarial" data-sortable="true">Expectativa salarial</th>
       <th data-field="experiencia" data-sortable="true">Experiencia</th>
-      <th data-field="experiencia_detalle" data-sortable="true">Experiencia detalle</th>
-      <th data-field="porque_trilce" data-sortable="true">Porque Trilce</th>
-      <th data-field="porque_tutora" data-sortable="true">Porque el puesto</th>
+      <th data-field="experiencia_detalle" >Experiencia detalle</th>
+      <th data-field="porque_trilce" >Porque Trilce</th>
+      <th data-field="porque_tutora" >Porque el puesto</th>
     </tr>
   </thead>
 
   <tbody>
     @foreach($data as $fila)
     <tr>
+      <td></td>
       <td>{{$loop->index}}</td>
       <td>{{$fila->register}}</td>
       <td>{{$fila->dni}}</td>

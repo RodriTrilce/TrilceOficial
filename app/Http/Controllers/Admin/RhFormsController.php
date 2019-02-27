@@ -16,14 +16,17 @@ class RhFormsController extends Controller
      */
     public function index()
     {
+        $type = strip_tags($_GET['type']);
+
         $data = Form::where([
-          ['form',    '=', $_GET['type']]
+          ['form',    '=', $type]
         ])
         ->orderBy('register', 'asc')
         ->get();
 
         return view('admin.rrhh_forms.index')->with([
-            'data' => $data
+            'data' => $data,
+            'type' => $type
         ]);
     }
 

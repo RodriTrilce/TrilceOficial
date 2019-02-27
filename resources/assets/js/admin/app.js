@@ -428,17 +428,24 @@ if(page == 'rrhh_forms'){
       showPaginationSwitch: true,
   }
 
-  var $table = $('#table');
+  window.$table = $('#table');
   $table.bootstrapTable(tableOpts);
 
-  $(function () {
-    $('#toolbar').find('select').change(function () {
-      console.log($(this).val());
-      $table.bootstrapTable('refreshOptions', {
-        exportDataType: $(this).val()
-      });
-    });
+$('#toolbar').find('select').change(function () {
+  
+
+  $table.bootstrapTable('refreshOptions', {
+    exportDataType: $(this).val()
   });
+
+  $table.bootstrapTable('refreshOptions', {
+    showColumns: true,
+    search: true,
+    showRefresh: true
+  });
+
+});
+
 
 /*
   let excel = document.getElementById("export_excel");

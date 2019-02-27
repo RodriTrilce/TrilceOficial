@@ -13,19 +13,31 @@
 
 
 <!--<button class="btn btn-primary" id="exportar_pdf">Exportar a PDF</button> -->
+<!--<input type="submit" id="export_excel" class="btn btn-primary" value="Exportar a Excel">-->
 
-
-  
-<input type="submit" id="export_excel" class="btn btn-primary" value="Exportar a Excel">
-<br><br>
-
+<div id="toolbar">
+  <select class="form-control">
+    <option value="">Export Basic</option>
+    <option value="all">Export All</option>
+    <option value="selected">Export Selected</option>
+  </select>
+</div>
 
 <table
     id="my-table" 
+
+    data-show-export="true"
+    data-pagination="true"
+    data-click-to-select="true"
+    data-toolbar="#toolbar"
+    data-show-toggle="true"
+
     data-toggle="table"
     data-sort-name="date"
     data-sort-order="desc"
     data-height="760"
+    data-show-pagination-switch="true"
+    data-page-list="[10, 25, 50, 100, 200, All]"
     >
   <thead>
     <tr>

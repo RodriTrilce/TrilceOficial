@@ -1,4 +1,5 @@
 import './jquery-global.js';
+import 'bootstrap';
 import flatpickr from "flatpickr";
 import { Spanish } from "flatpickr/dist/l10n/es.js"
 import dragula from "dragula"
@@ -9,7 +10,7 @@ import SlimSelect from 'slim-select';
 import BootstrapTable from 'bootstrap-table';
 import xlsx from 'xlsx';
 
-
+import bootstrapTableExport from './plugin.bootstrapTableExport.js';
 import tableExport from 'tableexport.jquery.plugin/tableExport.js';
 //import jspdf from 'tableexport.jquery.plugin/libs/jsPDF/jspdf.min.js'
 //import jspdf-autotable from 'tableexport.jquery.plugin/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js'
@@ -27,6 +28,11 @@ window.rasterizeHTML = rasterizeHTML;
 window.XLSX = xlsx;
 
 flatpickr.localize(Spanish);
+
+
+
+
+
 
 
 
@@ -411,13 +417,6 @@ if(page == 'banners_create'){
 
 
 if(page == 'rrhh_forms'){
-/**
- * @author: general
- * @version: 1.0.0
- * @website: note.generals.space
- * @email: generals.space@gmail.com
- */
-
   var tableOpts = {
       addrbar: true,
       sortable: true,
@@ -426,15 +425,12 @@ if(page == 'rrhh_forms'){
       paginationVAlign: 'bottom',
       paginationHAlign: 'left',
       paginationDetailHAlign: 'right',
-      pageList: [100, 50, 100, 500],
+      showPaginationSwitch: true,
   }
-
-
-//  $('#my-table').tableExport({type:'csv'});
 
   $('#my-table').bootstrapTable(tableOpts);
 
-
+/*
   let excel = document.getElementById("export_excel");
 
   excel.addEventListener('click', () => {
@@ -463,4 +459,10 @@ if(page == 'rrhh_forms'){
 
   });
   */
+}
+
+
+window.onload = function()
+{
+  $('.dropdown-toggle').dropdown();
 }

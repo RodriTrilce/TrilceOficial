@@ -9,8 +9,6 @@
     {{Session::get('success')}}</h3>
   </div>
   @endif
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.13.1/bootstrap-table.min.css">
-
 
 <!--<button class="btn btn-primary" id="exportar_pdf">Exportar a PDF</button> -->
 <!--<input type="submit" id="export_excel" class="btn btn-primary" value="Exportar a Excel">-->

@@ -39,7 +39,7 @@ class File extends Model
 
     if($this->filesable_type == 'App\Models\GalleryBlogModel')
     {
-      $url .= $url . '_' . $this->dimension;
+      $url .= '_' . $this->dimension;
     }
 
     return $url . '.' . $this->extension;

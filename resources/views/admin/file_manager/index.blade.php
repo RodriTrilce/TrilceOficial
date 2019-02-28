@@ -68,7 +68,7 @@
       <td>{{$file->name}}</td>
       <td>{{$file->description}}</td>
       <td><span class="filesize" data-filesize="{{$file->size}}">{{$file->size}}</span></td>
-      <td><a href="http://www.trilce.edu.pe/{{$file->fileUrl()}}" target="_blank">{{$file->fileUrl()}}</a></td>
+      <td><a href="http://www.trilce.edu.pe/{{$file->realFileUrl()}}" target="_blank">{{$file->realFileUrl()}}</a></td>
       <td>{{$file->location_driver}}</td>
       <td>{{$file->dimension}}</td>
       <td>

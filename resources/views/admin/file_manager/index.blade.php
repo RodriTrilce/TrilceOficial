@@ -31,10 +31,16 @@
     data-toolbar="#toolbar"
     data-show-toggle="true"
     data-show-footer="true"
-    data-toggle="table"
-    data-sort-name="date"
+    data-toggle="true"
+
+    data-sort-name="fecha_creacion"
     data-sort-order="desc"
+
     data-height="760"
+
+   data-show-refresh="true"
+   data-show-columns="true"
+
     data-show-pagination-switch="true"
     data-page-list="[10, 25, 50, 100, 200, All]"
     data-export-options='{

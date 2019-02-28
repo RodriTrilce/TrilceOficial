@@ -447,7 +447,7 @@
                 <div class="col-xs-12 ingresantes__text">
                   <span class="title">¡Máximo puntaje!</span>
                   <span class="subtitle">1<sup>er</sup> Puesto 2019<br>Católica - POP</span>
-                  <span class="name">Jim cisneros</span>
+                  <span class="name">Jim Cisneros</span>
                 </div>
               </div>
 
@@ -543,7 +543,7 @@
 
   <div class="row center-xs center-sm container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md educationalproposal__video">
-      <h1 class="educationalproposal__video-title">Nuestra propuesta</h1>
+      <h1 class="educationalproposal__video-title">¡Conoce más sobre nosotros!</h1>
       <br><br>
       <div class="educationalproposal__video">
         <div class="educationalproposal__video-bg"></div>

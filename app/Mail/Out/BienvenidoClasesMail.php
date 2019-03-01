@@ -30,7 +30,7 @@ class BienvenidoClasesMail extends Mailable
      {
        return $this->from(env('MAIL_DEFAULT_SENDER'), env('MAIL_FROM_NAME'))
                    ->to($this->data->email)
-                   ->subject('¡Comprometidos con el medio ambiente! 🌏')
+                   ->subject('Regreso a clases 📚')
                    ->view('resources.mail.out.bienvenido_a_clases.finish')
                    ->with(
                      [

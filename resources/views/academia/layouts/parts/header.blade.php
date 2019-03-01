@@ -31,7 +31,7 @@
                       <h3>UNI - San Marcos - Católica</h3>
                       <ul>
 
-                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cerado de Lima</a></li>
+                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></li>
 
                         <li class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                       </ul>

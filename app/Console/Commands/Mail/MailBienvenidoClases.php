@@ -19,7 +19,7 @@ class MailBienvenidoClases extends Command
      *
      * @var string
      */
-    protected $signature = 'command:send_mail_vacaciones';
+    protected $signature = 'command:send_mail_out';
 
     /**
      * The console command description.

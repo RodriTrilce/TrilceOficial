@@ -18,7 +18,6 @@ class IndexController extends Controller
    */
   public function index()
   {
-
     $banners = Banner::where([
       ['type',  '=', 'index_academia'],
       ['state', '=', '1']
@@ -29,7 +28,8 @@ class IndexController extends Controller
     $popup = Popup::where([
       ['type',   '=', Route::currentRouteName()]
     ])
-    ->get();
+    ->first();
+    $popup = ($popup->state == '0' ? null : $popup);
 
     Meta::set('title', ' Academia Trilce');
     Meta::set('description', 'Academia Trilce con más de 38 años de experiencia potenciando el nivel académico y desarrollo personal de nuestros alumnos.');

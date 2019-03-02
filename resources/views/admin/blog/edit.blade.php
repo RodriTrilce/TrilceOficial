@@ -29,7 +29,6 @@
        <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" value="{{ $post->title }}" required>
     </div>
 
-
     <div class="form-group">
       <input type="checkbox" id="create_marker" name="marker" class="switch-input"
       {{ ($post->marker==1?'checked':'') }}
@@ -40,20 +39,6 @@
         <span class="toggle--off">No</span></label>      
     </div>
 
-    @if(Auth::user()->hasRole('admin'))
-
-      <div class="form-group">
-        <input type="checkbox" id="create_approved" name="approved" class="switch-input"
-        {{ ($post->approved==1?'checked':'') }}
-        >
-        <label for="create_approved" class="switch-label">
-          Aprobado:
-          <span class="toggle--on">Si</span>
-          <span class="toggle--off">No</span></label>      
-      </div>
-
-    @endif
-
     <div class="form-group">
       <input type="checkbox" id="create_draft" name="visible" class="switch-input"
       {{ ($post->visible==1?'checked':'') }}
@@ -63,6 +48,18 @@
         <span class="toggle--on">Si</span>
         <span class="toggle--off">No</span></label>      
     </div>
+
+    @if(Auth::user()->hasRole('admin'))
+      <div class="form-group">
+        <input type="checkbox" id="create_approved" name="approved" class="switch-input"
+        {{ ($post->approved==1?'checked':'') }}
+        >
+        <label for="create_approved" class="switch-label">
+          Aprobado:
+          <span class="toggle--on">Si</span>
+          <span class="toggle--off">No</span></label>      
+      </div>
+    @endif
 
      <div class="form-group">
        <label for="create_site">Sección</label>

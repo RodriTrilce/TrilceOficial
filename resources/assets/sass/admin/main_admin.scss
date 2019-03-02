@@ -1,7 +1,9 @@
 @import "~flatpickr/dist/flatpickr";
-@import '../helpers/all';
 @import '~dragula/dist/dragula';
+@import '~bootstrap-table/src/bootstrap-table';
+@import '../helpers/all';
 @import "../vendor/all";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 
 body {
@@ -446,4 +448,17 @@ $gris     : #53565a;
 
 .banner--desactive{
   opacity: 0.3;
+}
+
+span.filesize{
+  position: relative;
+
+  &::before{
+    content: attr(data-friendsize);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
 }

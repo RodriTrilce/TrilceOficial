@@ -75,11 +75,20 @@ class BlogController extends Controller
       $extension    = $mime->getExtension($image->getMimeType());
       $dimensionCut = explode('x', $dimension);
 
+      /*
+        Tengo un problema de logica:
+        No estoy guardando los thumb en la base de datos, pero esto genera problema
+        al administrar los archivos. Creo que simplemente no lo guardare, y a eliminar
+        el archivo de la foto se tendria que añadir una linea de codigo más para eliminar
+        también el thumb.
+
+        En todo caso el else en el if($dimensio..) podria solucionarlo llamnando a \File modelo
+      */
 
       if($dimension == '290x290')
         $imageSave->fit($dimensionCut[0], $dimensionCut[1]);
       else
-        $imageSave->resize($dimensionCut[0], $dimensionCut[1]);
+        $imageSave->fit($dimensionCut[0], $dimensionCut[1]);
 
       Storage::put('public/static/images/blog/' . $tokenSave . '.' . $extension, $imageSave->encode(null, 80));
 
@@ -95,6 +104,8 @@ class BlogController extends Controller
           'size'            => $image->getClientSize(),
           'dimension'       => $dimension
         ]);
+      }else{
+
       }
 
       return true;

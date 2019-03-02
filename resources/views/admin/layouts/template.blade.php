@@ -71,13 +71,17 @@
             </ul>
           </li>
 
+  
 
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="/email-manager">
               <span data-feather="file-text"></span>
               Email manager
             </a>
           </li>
+        -->
+
           <br>
 
           <li class="nav-item">
@@ -149,6 +153,28 @@
             </ul>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              File manager
+            </a>
+            <ul class="nav flex-column mb-5">
+             
+              <li class="nav-item">
+                <a href="/admin/filemanager/" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Listar archivos
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/admin/filemanager/create" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Subir archivos
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
         </ul>
 
       </div>
@@ -161,7 +187,6 @@
 </div>
 
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 
 <script>

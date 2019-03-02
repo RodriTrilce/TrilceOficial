@@ -86,14 +86,16 @@
                   '<a href',
                   'title="UNI"></a>',
                   'title="San Marcos"></a>',
-                  'title="PUCP"></a>'
+                  'title="PUCP"></a>',
+                  '"><img'
                 ],
                 [
                   'title=',
                   '<a class="venue-preparation-item" href',
                   'title="UNI"><strong>UNI</strong></a>',
                   'title="San Marcos"><strong>San Marcos</strong></a>',
-                  'title="PUCP"><strong>PUCP</strong></a>'
+                  'title="PUCP"><strong>PUCP</strong></a>',
+                  '#' . Str::slug($data->name) . '"><img'
                 ]
                 ,$data->content) !!}
           </div>

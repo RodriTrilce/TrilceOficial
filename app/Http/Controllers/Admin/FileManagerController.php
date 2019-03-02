@@ -4,10 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Landing\FormTrabajaTutorasModel as Form;
-use Illuminate\Support\Facades\Route;
+use App\Models\File;
 
-class RhFormsController extends Controller
+class FileManagerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,17 +15,10 @@ class RhFormsController extends Controller
      */
     public function index()
     {
-        $type = strip_tags($_GET['type']);
+        $files = File::all();
 
-        $data = Form::where([
-          ['form',    '=', $type]
-        ])
-        ->orderBy('register', 'asc')
-        ->get();
-
-        return view('admin.rrhh_forms.index')->with([
-            'data' => $data,
-            'type' => $type
+        return view('admin.file_manager.index')->with([
+            'files' => $files
         ]);
     }
 
@@ -37,7 +29,7 @@ class RhFormsController extends Controller
      */
     public function create()
     {
-        //
+      return view('admin.file_manager.create')->with(['mode' => 'new']);
     }
 
     /**

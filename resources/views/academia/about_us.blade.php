@@ -38,7 +38,7 @@
             </p>
 
             <p>
-              Actualmente, Trilce cuenta con 18 colegios en Lima, 6 en provincias, 6 academias, 2000 trabajadores y más de 24 000 alumnos.
+              Actualmente, Trilce cuenta con 18 colegios en Lima, 6 en provincias, 7 academias, 2000 trabajadores y más de 24 000 alumnos.
             </p>
           </div>
         </div>

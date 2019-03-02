@@ -9,39 +9,65 @@
     {{Session::get('success')}}</h3>
   </div>
   @endif
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.13.1/bootstrap-table.min.css">
-
 
 <!--<button class="btn btn-primary" id="exportar_pdf">Exportar a PDF</button> -->
+<!--<input type="submit" id="export_excel" class="btn btn-primary" value="Exportar a Excel">-->
 
+<div id="toolbar">
+  <select class="form-control">
+    <option value="">Exportacion basica</option>
+    <option value="all">Exportar todos</option>
+    <option value="selected">Exportar selección</option>
+  </select>
+</div>
 
-  
-<input type="submit" id="export_excel" class="btn btn-primary" value="Exportar a Excel">
-<br><br>
+<table
+    id="my-table" 
 
+    data-show-export="true"
+    data-pagination="true"
+    data-click-to-select="true"
+    data-maintain-selected="true"
+    data-toolbar="#toolbar"
+    data-show-toggle="true"
 
-<table data-toggle="table" id="my-table">
+    data-toggle="table"
+    data-sort-name="date"
+    data-sort-order="desc"
+    data-height="760"
+    data-show-pagination-switch="true"
+    data-page-list="[10, 25, 50, 100, 200, All]"
+    data-export-options='{
+      "fileName": "{{$type}}_{{date("Y-m-d")}}",
+      "ignoreColumn": ["state"]
+    }'
+    >
   <thead>
     <tr>
-      <th>DNI</th>
-      <th>Nombre</th>
-      <th>Email</th>
-      <th>Telefono</th>
-      <th>Carrera</th>
-      <th>Centro de Estudios</th>
-      <th>Distrito</th>
-      <th>Expectativa salarial</th>
-      <th>Experiencia</th>
-      <th>Experiencia detalle</th>
-      <th>Porque Trilce</th>
-      <th>Porque el puesto</th>
-      <th>Fecha de registro</th>
+      <th data-field="state" data-checkbox="true"></th>
+      <th data-field="nro" data-sortable="true">#</th>
+      <th data-field="register" data-sortable="true">Fecha de registro</th>
+      <th data-field="dni" data-sortable="true">DNI</th>
+      <th data-field="nombre" data-sortable="true">Nombre</th>
+      <th data-field="email" data-sortable="true">Email</th>
+      <th data-field="telefono" data-sortable="true">Telefono</th>
+      <th data-field="carrera" data-sortable="true">Carrera</th>
+      <th data-field="centro_estudios" data-sortable="true">Centro de Estudios</th>
+      <th data-field="distrito" data-sortable="true">Distrito</th>
+      <th data-field="expectativa_salarial" data-sortable="true">Expectativa salarial</th>
+      <th data-field="experiencia" data-sortable="true">Experiencia</th>
+      <th data-field="experiencia_detalle" >Experiencia detalle</th>
+      <th data-field="porque_trilce" >Porque Trilce</th>
+      <th data-field="porque_tutora" >Porque el puesto</th>
     </tr>
   </thead>
-  <tbody>
 
+  <tbody>
     @foreach($data as $fila)
     <tr>
+      <td></td>
+      <td>{{$loop->index}}</td>
+      <td>{{$fila->register}}</td>
       <td>{{$fila->dni}}</td>
       <td>{{$fila->nombre}}</td>
       <td>{{$fila->email}}</td>
@@ -54,14 +80,10 @@
       <td>{{$fila->experiencia_detalle}}</td>
       <td>{{$fila->porque_trilce}}</td>
       <td>{{$fila->porque_tutora}}</td>
-      <td>{{$fila->register}}</td>
     </tr>
     @endforeach
-
-
   </tbody>
 </table>
-
 
 @endsection
 

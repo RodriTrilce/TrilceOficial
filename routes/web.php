@@ -47,6 +47,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/banners', 'BannersController');
   Route::resource('/rrhh-forms', 'RhFormsController');
   Route::resource('/popup', 'PopupController');  
+  Route::resource('/filemanager', 'FileManagerController');
 });
 
 
@@ -142,10 +143,6 @@ Route::name('academia-blogpost')
 
 Route::name('academia-blog')
       ->get('/academia/blog', 'Academia\BlogController@index');
-
-// Matricula en linea (Enrollment)
-Route::name('academia-your-best-option')
-      ->get('/academia/por-que-somos-tu-mejor-opcion', 'Academia\YourBestOptionController@index');
 
 // Multimedia
 Route::name('academia-multimedia')

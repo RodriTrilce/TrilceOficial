@@ -29,26 +29,39 @@
        <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" value="{{ $post->title }}" required>
     </div>
 
-    <div class="form-group">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="marker" id="create_marker"
-        
-        {{ ($post->marker==1?'checked':'') }}
 
-        >
-        <label class="form-check-label" for="create_marker">Marcado (Fijo)</label>
-      </div>
+    <div class="form-group">
+      <input type="checkbox" id="create_marker" name="marker" class="switch-input"
+      {{ ($post->marker==1?'checked':'') }}
+      >
+      <label for="create_state" class="switch-label">
+        Marcado (fijo):
+        <span class="toggle--on">Si</span>
+        <span class="toggle--off">No</span></label>      
     </div>
 
-    <div class="form-group">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="visible" id="create_draft"
-        
-        {{ ($post->visible==0?'checked':'') }}
-        >
+    @if(Auth::user()->hasRole('admin'))
 
-        <label class="form-check-label" for="create_draft">Borrador</label>
+      <div class="form-group">
+        <input type="checkbox" id="create_approved" name="approved" class="switch-input"
+        {{ ($post->approved==1?'checked':'') }}
+        >
+        <label for="create_state" class="switch-label">
+          Aprobado:
+          <span class="toggle--on">Si</span>
+          <span class="toggle--off">No</span></label>      
       </div>
+
+    @endif
+
+    <div class="form-group">
+      <input type="checkbox" id="create_draft" name="visible" class="switch-input"
+      {{ ($post->visible==1?'checked':'') }}
+      >
+      <label for="create_state" class="switch-label">
+        Visible:
+        <span class="toggle--on">Si</span>
+        <span class="toggle--off">No</span></label>      
     </div>
 
      <div class="form-group">

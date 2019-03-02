@@ -125,8 +125,11 @@ class BlogController extends Controller
       $post->content  = Purifier::clean($request->content);
       $post->site     = $request->site;
 
-      $post->marker   = ($request->marker == 'on' ? '1' : '0');
-      $post->visible  = ($request->visible == 'on' ? '0' : '1');
+      $post->marker   = ($request->marker == 'on' ? 1 : 0);
+      $post->visible  = ($request->visible == 'on' ? 1 : 0);
+
+      if($request->approved)
+        $post->approved = ($request->approved == 'on' ? 1 : 0);
 
       $post->save();
 

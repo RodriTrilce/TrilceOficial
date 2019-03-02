@@ -165,6 +165,13 @@
                   <span data-feather="corner-down-right"></span> Listar archivos
                 </a>
               </li>
+
+              <li class="nav-item">
+                <a href="/admin/filemanager/create" class="nav-link">
+                  <span data-feather="corner-down-right"></span> Subir archivos
+                </a>
+              </li>
+
             </ul>
           </li>
 

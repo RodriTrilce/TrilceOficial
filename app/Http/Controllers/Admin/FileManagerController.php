@@ -29,7 +29,7 @@ class FileManagerController extends Controller
      */
     public function create()
     {
-        //
+      return view('admin.file_manager.create')->with(['mode' => 'new']);
     }
 
     /**

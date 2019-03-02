@@ -1,7 +1,7 @@
 @extends('admin.layouts.template')
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Crear olimpiada matemática</h1>
+    <h1 class="h2">Subir archivos</h1>
   </div>
 
 @if(Session::has('success'))
@@ -20,7 +20,7 @@
   </div>
 @endif
 
-  <form method="post" action="/admin/math-olympics" enctype="multipart/form-data">
+  <form method="post" action="/admin/filemanager" enctype="multipart/form-data">
     {{ csrf_field() }}
 
     <div class="form-group">
@@ -35,22 +35,6 @@
      <input type="text" class="form-control" name="grade" id="create_grade" autocomplete="off" placeholder="Escribe aquí los grados" required>
     </div>
 
-    <!--
-    <div class="form-group">
-      <label for="create_venue">Sede</label>
-      <select class="form-control" name="venue" id="create_venue">
-         <option selected hidden disabled>Selecionar sede</option>
-
-         @foreach ($venueColegio as $venue)
-           <option value="{{$venue->name}}">{{$venue->name}}</option>
-         @endforeach
-
-         @foreach ($venueAcademia as $venue)
-           <option value="{{$venue->name}}">{{$venue->name}}</option>
-         @endforeach
-      </select>
-    </div>
-  -->
 
     <div class="form-group">
       <label for="create_venue">Sede</label>
@@ -60,7 +44,7 @@
     <div class="form-group">
       <label for="create_bases">Bases</label>
       <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
-      <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>
+      <small class="form-text text-muted">Seleciona los archivos</small>
     </div>
 
     <div class="form-group">

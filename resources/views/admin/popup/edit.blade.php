@@ -31,6 +31,7 @@
     <div class="form-group">
        <label for="create_title">link</label>
        <input type="text" class="form-control" name="link" id="create_title" autocomplete="off" placeholder="Link" value="{{$data->link}}">
+       <small class="form-text text-muted">Para que el link cierre el popup poner: #close</small>
     </div>
 
     <div class="form-group">

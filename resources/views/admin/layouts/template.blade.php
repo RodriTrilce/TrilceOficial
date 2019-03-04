@@ -16,7 +16,7 @@
 
   <div class="modal">
     <div class="modal-inner">
-      <span data-modal-close>&times;</span>
+      <span data-modal-close data-modal-close-desing>&times;</span>
       <div class="modal-content"></div>
     </div>
   </div>

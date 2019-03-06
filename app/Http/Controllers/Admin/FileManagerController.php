@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\FileStorage;
 use App\Models\File;
-use \Mimey\MimeTypes as Mime;
+use \Mimey\MimeTypes;
+use Uuid;
+use Image;
 
 class FileManagerController extends Controller
 {
@@ -39,30 +42,56 @@ class FileManagerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FileStorage $request)
     {
-        if ($request->hasFile('file') && $request->file('file')->isValid()) {
-            $file = $request->file('file');
-            dd($file);
+
+        if ($request->validated()) {
 
             $file = new File;
-            /*
-            $file->token = 
-            $file->type = 
-            $file->mime = 
-            $file->extension = 
+            $mime = new MimeTypes;
+            
+            $file->token        = Uuid::generate()->string;
 
-            $file->location_folder = 
-            $file->location_driver = 
+            $file->type         = $mime->getExtension($request->file('file')->getMimeType());
+            $file->extension    = $mime->getExtension($request->file('file')->getMimeType());
+            $file->mime         = $request->file('file')->getMimeType(); 
 
-            $file->name = 
-            $file->description
-            $file->size
-            $file->dimension
+            $file->location_folder = 'static/upload';
+            $file->location_driver = 'local';
+
+            $file->name = $request->file('file')->getClientOriginalName();
+            $file->size = $request->file('file')->getClientSize();
+            $file->dimension = '';
             $file->trash = '0';
-            */
+
+            $type_images = ['jpg', 'jpeg', 'png', 'gif', 'apng'];
+
+            if(in_array($file->extension, $type_images))
+            {
+                $temp_image = Image::make($request->file('file'));
+                $file->dimension = $temp_image->width() . 'x' . $temp_image->height();
+                unset($temp_image);
+            }
 
             $file->save();
+            $request->file('file')->storeAs('public/' . $file->location_folder, $file->token. '.' . $file->extension);
+
+            return response()->json([
+                'status'    => '1',
+                'message'   => 'Subido correctamente',
+                'data'      => [
+                    'id' => $file->id,
+                    'name' => $file->name,
+                    'url' => $file->fileUrl()
+                ]
+            ]);
+
+        }else{
+
+            return response()->json([
+                'status' => '2',
+                'message' => 'Tipo de archivo no permitido'
+                ]);
         }
     }
 

@@ -271,7 +271,7 @@
 
     </div>
   </div>
-
+  <!-- Dev: franco.salcedo.i3@gmail.com -->
   {{-- <script src="{{ mix('/js/app_home5.js') }}" charset="utf-8"></script> --}}
 </body>
 </html>

@@ -40,9 +40,23 @@
   </form>
     <div id="fileTemplate" class="dz-preview dz-file-preview" style="display: none;">
       <div class="dz-details">
-        <div class="dz-filename"><span data-dz-name></span></div>
-        <div class="dz-size" data-dz-size></div>
-        <img data-dz-thumbnail />
+        <div class="row col-xs-12">
+          <div class="col-xs-12 col-sm-2">
+            <img data-dz-thumbnail />            
+          </div>
+          <div class="col-xs-12 col-sm">
+            <div class="dz-filename">Nombre: <span data-dz-name></span></div>
+            <div class="dz-size">Peso: <strong data-dz-size></strong></div>
+          </div>
+          <br>
+          <div class="col-xs-12 col-sm-12 col-lg-12">
+            <div class="form-group">
+              <textarea type="text" class="form-control dropzone__fileurl" autocomplete="off" data-dz-url>
+              </textarea>
+            </div>            
+          </div>
+        </div>
+
       </div>
       <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
       <div class="dz-success-mark"><span>✔</span></div>

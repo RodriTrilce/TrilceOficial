@@ -1,5 +1,5 @@
 /*!
- * App.js v0.1
+ * App.js v1.1
  * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
  * Released under the Trilce Group.
  */

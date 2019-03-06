@@ -28,6 +28,7 @@
         "setasign/fpdi": "^2.0",
         "spatie/image-optimizer": "^1.1",
         "squareboat/sneaker": "^4.0",
+        "webpatser/laravel-uuid": "^3.0",
         "yadahan/laravel-authentication-log": "^1.1"
     },
     "require-dev": {

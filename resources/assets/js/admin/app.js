@@ -1,3 +1,9 @@
+/*!
+ * App.js v1.1
+ * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
+ * Released under the Trilce Group.
+ */
+
 import './jquery-global.js';
 import 'bootstrap';
 import flatpickr from "flatpickr";
@@ -484,11 +490,12 @@ if(page == 'file_manager_create')
     });
 
     dropZone.on('addedfile', file => {
-        console.log(file);
     });
 
     dropZone.on('success', (file, responseText) => {
-      console.log(responseText);
+      var response = JSON.parse(JSON.stringify(responseText));
+      $(file.previewElement).find('[data-dz-id]').html(response.data.id);
+      $(file.previewElement).find('[data-dz-url]').html(response.data.url);
     })
 
 

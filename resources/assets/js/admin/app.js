@@ -18,10 +18,14 @@ import 'jspdf-autotable'
 
 import rasterizeHTML from 'rasterizehtml/dist/rasterizeHTML.min.js' 
 
+import Dropzone from 'dropzone';
+
+
 window.SlimSelect = SlimSelect;
 window.modal      = new VanillaModal();
 window.rasterizeHTML = rasterizeHTML;
 window.XLSX = xlsx;
+
 
 flatpickr.localize(Spanish);
 
@@ -464,9 +468,33 @@ if(page == 'file_manager'){
 
 
   }catch(err){}
+}
+
+if(page == 'file_manager_create')
+{
+  try{
+
+    var dropZone = new Dropzone('#dropZoneForm', {
+      maxFilesize: 50,
+      previewTemplate: document.querySelector('#fileTemplate').innerHTML,
+      previewsContainer: '.dropzone-previews',
+      params : {
+      },
+      acceptedFiles : 'image/*,video/*,application/pdf'
+    });
+
+    dropZone.on('addedfile', file => {
+        console.log(file);
+    });
+
+    dropZone.on('success', (file, responseText) => {
+      console.log(responseText);
+    })
 
 
-
+  }catch(err){
+    console.log(err);
+  }
 }
 
 

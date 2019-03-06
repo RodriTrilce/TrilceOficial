@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\File;
+use \Mimey\MimeTypes as Mime;
 
 class FileManagerController extends Controller
 {
@@ -40,7 +41,29 @@ class FileManagerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->hasFile('file') && $request->file('file')->isValid()) {
+            $file = $request->file('file');
+            dd($file);
+
+            $file = new File;
+            /*
+            $file->token = 
+            $file->type = 
+            $file->mime = 
+            $file->extension = 
+
+            $file->location_folder = 
+            $file->location_driver = 
+
+            $file->name = 
+            $file->description
+            $file->size
+            $file->dimension
+            $file->trash = '0';
+            */
+
+            $file->save();
+        }
     }
 
     /**

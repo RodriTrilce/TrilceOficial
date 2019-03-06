@@ -32,6 +32,7 @@
     "cleave.js": "^1.4.7",
     "datalist-polyfill": "^1.23.2",
     "dragula": "^3.7.2",
+    "dropzone": "^5.5.1",
     "flatpickr": "^4.5.2",
     "froala-editor": "^2.9.1",
     "html2canvas": "github:niklasvh/html2canvas",

@@ -1,6 +1,11 @@
 <?php
 
 
+Route::get('/l/taller-de-teatro-audiciones', function(){
+  return Redirect::to('https://www.trilce.edu.pe/storage/static/upload/pdf/3455835473457667345467554_pfd-teatro.pdf', 301);
+});
+
+
 Route::get('/l/reconstruido-catolica-evaluacion-del-talento-1', function(){
   return Redirect::to('https://www.trilce.edu.pe/storage/academia/documents/solutions/pucp/2019/evaluacion-del-talento-reconstruido-1.pdf', 301);
 });

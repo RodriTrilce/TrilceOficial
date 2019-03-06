@@ -49,11 +49,19 @@
             <div class="dz-size">Peso: <strong data-dz-size></strong></div>
           </div>
           <br>
-          <div class="col-xs-12 col-sm-12 col-lg-12">
+          <div class="col-xs-12 col-sm-12 col-lg-12 dropzone__fileurl">
             <div class="form-group">
-              <textarea type="text" class="form-control dropzone__fileurl" autocomplete="off" data-dz-url>
+              <label for="url_estatico">URL USO INTERNO:</label>
+              <textarea onclick="this.focus();this.select()" readonly="readonly" type="text" id="url_estatico" class="form-control" autocomplete="off" data-dz-url>
               </textarea>
-            </div>            
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-12 dropzone__fileurl">
+            <div class="form-group">
+              <label for="url_cute">URL USO INTERNO:</label>
+              <textarea onclick="this.focus();this.select()" readonly="readonly" type="text" id="url_cute" class="form-control" autocomplete="off" data-dz-urlcute>
+              </textarea>
+            </div>
           </div>
         </div>
 

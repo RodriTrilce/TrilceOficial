@@ -59,7 +59,8 @@ class FileManagerController extends Controller
             $file->location_folder = 'static/upload';
             $file->location_driver = 'local';
 
-            $file->name = $request->file('file')->getClientOriginalName();
+            $name = pathinfo($request->file('file')->getClientOriginalName(), PATHINFO_FILENAME);
+            $file->name = $name;
             $file->size = $request->file('file')->getClientSize();
             $file->dimension = '';
             $file->trash = '0';
@@ -82,7 +83,8 @@ class FileManagerController extends Controller
                 'data'      => [
                     'id' => $file->id,
                     'name' => $file->name,
-                    'url' => $file->fileUrl()
+                    'url' => $file->fileUrl(),
+                    'urlcute' => '/d/' . $file->id . '/' . str_slug($name, '-') . '.' . $file->extension
                 ]
             ]);
 

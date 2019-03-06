@@ -54,4 +54,14 @@ class File extends Model
     }
   }
 
+  public function downloadUrl()
+  {
+    return substr($this->fileUrl(), 1);    
+  }
+
+  public function nameSlugExtension()
+  {
+    return str_slug($this->name, '-') . '.' . $this->extension;
+  }
+
 }

@@ -496,6 +496,7 @@ if(page == 'file_manager_create')
       var response = JSON.parse(JSON.stringify(responseText));
       $(file.previewElement).find('[data-dz-id]').html(response.data.id);
       $(file.previewElement).find('[data-dz-url]').html(response.data.url);
+      $(file.previewElement).find('[data-dz-urlcute]').html(response.data.urlcute);
     })
 
 

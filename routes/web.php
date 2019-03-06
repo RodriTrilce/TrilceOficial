@@ -65,6 +65,9 @@ Route::name('menu-trilce')
         return Redirect::to('/storage/other/documents/menu/2018/menu.pdf');
 });
 
+Route::name('downloader')
+      ->get('/d/{id}/{slug}', 'DownloadController@download');
+
 
 /**
  *  Academia

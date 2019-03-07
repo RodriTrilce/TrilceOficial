@@ -58,7 +58,7 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-lg-12 dropzone__fileurl">
             <div class="form-group">
-              <label for="url_cute">URL USO INTERNO:</label>
+              <label for="url_cute">URL DESCARGAR:</label>
               <textarea onclick="this.focus();this.select()" readonly="readonly" type="text" id="url_cute" class="form-control" autocomplete="off" data-dz-urlcute>
               </textarea>
             </div>

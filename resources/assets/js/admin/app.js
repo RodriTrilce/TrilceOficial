@@ -499,7 +499,6 @@ if(page == 'file_manager_create')
       $(file.previewElement).find('[data-dz-urlcute]').html(response.data.urlcute);
     })
 
-
   }catch(err){
     console.log(err);
   }

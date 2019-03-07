@@ -5,10 +5,12 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\FileStorage;
+use App\Http\Requests\Admin\FileEditRequest;
 use App\Models\File;
 use \Mimey\MimeTypes;
 use Uuid;
 use Image;
+use Storage;
 
 class FileManagerController extends Controller
 {
@@ -116,7 +118,11 @@ class FileManagerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $file = File::find($id);
+
+        return view('admin.file_manager.edit')->with([
+            'file' => $file
+        ]);        
     }
 
     /**
@@ -126,9 +132,12 @@ class FileManagerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(FileEditRequest $request, $id)
     {
-        //
+        $data = $request->validated();
+        $file = File::findOrFail($id);
+        $file->update($data);
+        return redirect()->route('filemanager.index')->with('success', '<i>' . $file->name . '</i> Editado correctamente');
     }
 
     /**
@@ -139,6 +148,9 @@ class FileManagerController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $file = File::find($id);
+        Storage::delete('/public/' . $file->location_folder . '/' . $file->token . '.' . $file->extension);
+        File::destroy($file->id);
+        return redirect()->route('filemanager.index')->with('success', '<i>' . $file->name . '</i> Eliminado correctamente');
     }
 }

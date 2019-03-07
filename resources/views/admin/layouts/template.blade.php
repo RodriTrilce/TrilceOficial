@@ -84,6 +84,21 @@
 
           <br>
 
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Academia: Simulacros
+            </a>
+            <ul class="nav flex-column mb-5">
+              <li class="nav-item"><a href="/admin/simulacrum/?id=1" class="nav-link"><span data-feather="corner-down-right"></span> UNI</a></li>
+              <li class="nav-item"><a href="/admin/simulacrum/?id=3" class="nav-link"><span data-feather="corner-down-right"></span> Católica</a></li>
+              <li class="nav-item"><a href="/admin/simulacrum/?id=2" class="nav-link"><span data-feather="corner-down-right"></span> San Marcos</a></li>
+              <li class="nav-item"><a href="/admin/simulacrum/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear</a></li>
+            </ul>
+          </li>
+
+
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file-text"></span>

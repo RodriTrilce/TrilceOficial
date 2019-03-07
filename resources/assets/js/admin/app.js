@@ -566,7 +566,41 @@ if(page == 'shortlink'){
 }
 
 
+if(page == 'simulacrum'){
+  try{
+    // Mostramos el peso amigablemente
+    var tableOpts = {
+        addrbar: true,
+        sortable: true,
+        search: true,
+        pagination: true,
+        paginationVAlign: 'bottom',
+        paginationHAlign: 'left',
+        paginationDetailHAlign: 'right',
+        showPaginationSwitch: true,
+    }
 
+    window.$table = $('#my-table');
+    $table.bootstrapTable(tableOpts);
+
+    $('#toolbar').find('select').change(function () {
+      window.$table.bootstrapTable('refreshOptions', {
+        exportDataType: $(this).val()
+      });
+    });
+
+
+  }catch(err){
+    console.log(err)
+  }  
+}
+
+if(page == 'simulacrum_create' || page == 'simulacrum_edit'){
+  flatpickr("#mo_finish",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:S",
+  });  
+}
 
 
 

@@ -19,7 +19,6 @@ class VenueColegioController extends Controller
     public function index()
     {
       $venue = VenueDB::all();
-
       return view('admin.venue_colegio.index')->with(['data' => $venue]);
     }
 

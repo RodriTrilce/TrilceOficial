@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Colegio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\BannersModel as Banner;
+use Meta;
+use Route;
+use App\Models\Popup;
 
 class IndexController extends Controller
 {
@@ -22,10 +25,17 @@ class IndexController extends Controller
     ->orderBy('position', 'asc')
     ->get();
 
+    $popup = Popup::where([
+      ['type',   '=', Route::currentRouteName()]
+    ])
+    ->first();
+    $popup = ($popup->state == '0' ? null : $popup);
+
     return view('/colegio/index')
     ->with([
       'print'   => (parse_url(request()->headers->get('referer'), PHP_URL_PATH) == '/' ? true : false),
-      'banners' => $banners
+      'banners' => $banners,
+      'popup'   => $popup
     ]);
   }
 }

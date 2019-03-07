@@ -31,10 +31,10 @@
         <td>{{$key->finish_at}}</td>
         <td>{{$key->venue}}</td>
         <td><a href="{{action('Admin\MathOlympicsController@edit', $key->id)}}">{{$key->title}}</a></td>
-        <td>{{$key->grade}}</td>
+        <td>{!!$key->grade !!}</td>
         <td>
           @if($key->file_id)
-            <a href="{{$key->file_id}}">Ver</a>
+            <a href="{{$key->getBaseRules()}}">Ver</a>
           @else
             -
           @endif

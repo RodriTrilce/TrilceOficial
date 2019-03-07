@@ -19,7 +19,7 @@
   @endif
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">Editar popup</h1>
+  <h1 class="h2">Editar popup: {{$data->type}}</h1>
 </div>
 
 <div class="admin-banners" id="banners">
@@ -30,17 +30,18 @@
 
     <div class="form-group">
        <label for="create_title">link</label>
-       <input type="text" class="form-control" name="link" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" value="{{$data->link}}">
+       <input type="text" class="form-control" name="link" id="create_title" autocomplete="off" placeholder="Link" value="{{$data->link}}">
+       <small class="form-text text-muted">Para que el link cierre el popup poner: #close</small>
     </div>
 
     <div class="form-group">
        <label for="create_image_url">Url de imagen</label>
-       <input type="text" class="form-control" name="image_url" id="create_image_url" autocomplete="off" placeholder="Escribe aquí el titulo" value="{{$data->image_url}}" required>
+       <input type="text" class="form-control" name="image_url" id="create_image_url" autocomplete="off" placeholder="Url" value="{{$data->image_url}}" required>
     </div>
 
     <div class="form-group">
        <label for="create_image_url_movil">Url de imagen movil</label>
-       <input type="text" class="form-control" name="image_url_movil" id="create_image_url_movil" autocomplete="off" placeholder="Escribe aquí el titulo" value="{{$data->image_url_movil}}" required>
+       <input type="text" class="form-control" name="image_url_movil" id="create_image_url_movil" autocomplete="off" placeholder="Url movil" value="{{$data->image_url_movil}}" required>
     </div>
   
 

@@ -20,53 +20,60 @@
   </div>
 @endif
 
-  <form method="post" action="/admin/filemanager" enctype="multipart/form-data">
+  <form
+    method="post"
+    action="/admin/filemanager"
+    enctype="multipart/form-data"
+    id="dropZoneForm"
+    >
     {{ csrf_field() }}
 
     <div class="form-group">
-      <label for="create_title">Titulo</label>
-      <input type="text" class="form-control" name="title" id="create_title" autocomplete="off" placeholder="Escribe aquí el titulo" required>
+      <div class="fallback">
+        <input type="file" name="file" multiple>
+      </div>
     </div>
-
-    <input type="text" name="type" value="academia" hidden>
-
-    <div class="form-group">
-     <label for="create_grade">Grado</label>
-     <input type="text" class="form-control" name="grade" id="create_grade" autocomplete="off" placeholder="Escribe aquí los grados" required>
-    </div>
-
-
-    <div class="form-group">
-      <label for="create_venue">Sede</label>
-      <input type="text" class="form-control" name="venue" id="create_venue" autocomplete="off" placeholder="Escribir la sede" required>
-    </div>
-
-    <div class="form-group">
-      <label for="create_bases">Bases</label>
-      <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
-      <small class="form-text text-muted">Seleciona los archivos</small>
-    </div>
-
-    <div class="form-group">
-      <label for="inscription_individual_create">Inscripcion individual URL</label>
-      <input type="text" class="form-control" name="inscription_url" id="inscription_individual_create" autocomplete="off" placeholder="Url individual">
-    </div>
-
-    <div class="form-group">
-      <label for="inscription_group_create">Inscripcion grupal URL</label>
-      <input type="text" class="form-control" name="inscription_group_url" id="inscription_group_create" autocomplete="off" placeholder="Url grupal">
-    </div>
-
-    <div class="form-group">
-      <label for="create_finish">Fecha de finalización</label>
-      <input type="text" class="form-control" id="mo_finish" name="finish_at" id="create_finish" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
-    </div>
-
-    <div class="form-group">
-     <button class="btn btn-primary" type="submit">Enviar</button>
+    
+    <div class="dropzone-previews">
     </div>
 
   </form>
+    <div id="fileTemplate" class="dz-preview dz-file-preview" style="display: none;">
+      <div class="dz-details">
+        <div class="row col-xs-12">
+          <div class="col-xs-12 col-sm-2">
+            <img data-dz-thumbnail />            
+          </div>
+          <div class="col-xs-12 col-sm">
+            <div class="dz-filename">Nombre: <span data-dz-name></span></div>
+            <div class="dz-size">Peso: <strong data-dz-size></strong></div>
+          </div>
+          <br>
+          <div class="col-xs-12 col-sm-12 col-lg-12 dropzone__fileurl">
+            <div class="form-group">
+              <label for="url_estatico">URL USO INTERNO:</label>
+              <textarea onclick="this.focus();this.select()" readonly="readonly" type="text" id="url_estatico" class="form-control" autocomplete="off" data-dz-url>
+              </textarea>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-12 dropzone__fileurl">
+            <div class="form-group">
+              <label for="url_cute">URL DESCARGAR:</label>
+              <textarea onclick="this.focus();this.select()" readonly="readonly" type="text" id="url_cute" class="form-control" autocomplete="off" data-dz-urlcute>
+              </textarea>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+      <div class="dz-success-mark"><span>✔</span></div>
+      <div class="dz-error-mark"><span>✘</span></div>
+      <div class="dz-error-message"><span data-dz-errormessage></span></div>
+    </div>
+
+
+  <br>
 
 @endsection
 

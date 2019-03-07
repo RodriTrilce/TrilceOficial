@@ -4,11 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\VenueAcademiaRequest;
-use App\Models\Academia\VenueModel;
-use Purifier;
+use App\Models\Shortlink;
+use App\Http\Requests\Admin\ShortlinkRequest;
 
-class VenueAcademiaController extends Controller
+class ShortlinkController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,8 @@ class VenueAcademiaController extends Controller
      */
     public function index()
     {
-        $venue = VenueModel::all();
-        return view('admin.venue_academia.index')->with(['data' => $venue]);
+        $links = Shortlink::all();
+        return view('admin.shortlink.index')->with('links', $links);
     }
 
     /**
@@ -28,7 +27,7 @@ class VenueAcademiaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.shortlink.create');
     }
 
     /**
@@ -37,9 +36,15 @@ class VenueAcademiaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ShortlinkRequest $request)
     {
-        //
+        $request->validated();
+        $new = new Shortlink();
+        $new->slug = str_slug($request->slug, '-');
+        $new->url = $request->url;
+        $new->save();
+
+        return redirect()->route('shortlink.index')->with('success', 'Creado correctamente');
     }
 
     /**
@@ -48,9 +53,16 @@ class VenueAcademiaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $short = Shortlink::where('slug', $slug)->first();
+
+        if(is_null($short))
+        {
+            return redirect('https://www.trilce.edu.pe/');
+        }
+
+        return redirect($short->url, 302);
     }
 
     /**
@@ -61,8 +73,8 @@ class VenueAcademiaController extends Controller
      */
     public function edit($id)
     {
-        $venue = VenueModel::find($id);
-        return view('admin.venue_academia.edit')->with(['venue' => $venue]);
+        $link = Shortlink::findOrFail($id);
+        return view('admin.shortlink.edit')->with('link', $link);
     }
 
     /**
@@ -72,16 +84,16 @@ class VenueAcademiaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(VenueAcademiaRequest $request, $id)
+    public function update(ShortlinkRequest $request, $id)
     {
         $data = $request->validated();
-        $data['horary']   = Purifier::clean($data['horary']);
-        $data['content']  = Purifier::clean($data['content']);
+        Shortlink::findOrFail($id)->update([
+            'slug' => str_slug($data['slug']),
+            'URL'  => $data['url']
+        ]);
 
-        VenueModel::find($id)->update($data);
-        
         return redirect()
-        ->action('Admin\VenueAcademiaController@edit', $id)
+        ->action('Admin\ShortlinkController@edit', $id)
         ->with('success', 'Editado correctamente');
     }
 
@@ -93,6 +105,7 @@ class VenueAcademiaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Shortlink::findOrFail($id)->delete();
+        return redirect()->route('shortlink.index')->with('success', 'Eliminado correctamente');
     }
 }

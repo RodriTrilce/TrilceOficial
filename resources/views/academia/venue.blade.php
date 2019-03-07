@@ -18,7 +18,13 @@
       <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-venues"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>{{ $data->name }}</h1>
+        <h1>
+          @if($data->name == 'Cercado de Lima')
+            Cercado de Lima (Torrico)
+          @else
+            {{ $data->name }}
+          @endif
+        </h1>
       </div>
     </div>
   </div>

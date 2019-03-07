@@ -6,12 +6,20 @@
 
   @if(Session::has('success'))
   <div class="alert alert-success" role="alert">
-    {{Session::get('success')}}</h3>
+    {!!Session::get('success') !!}</h3>
   </div>
   @endif
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.13.1/bootstrap-table.min.css">
 
-
+<i>Importante:</i><br>
+<code>
+* Los archivos que no tienen opción de eliminar es por que estan relacionados con alguna sección de la página que se administra aparte. Ejemplo: blog, olimpiadas matemáticas.<br>
+* Eliminar con cuidado los archivos para evitar roturas de enlaces.<br>
+* Al eliminar un archivo se elimina realmente de la base de datos y los binarios del servidor (SER CUIDADOSO).<br>
+</code>
+<br>
+<br>
+<br>
 
 <div id="toolbar">
   <select class="form-control">
@@ -60,7 +68,7 @@
       <th data-field="url">URL</th>
       <th data-field="driver" data-sortable="true">Almacenamiento</th>
       <th data-field="dimension" data-sortable="true">Dimensiones</th>
-      <th></th>
+      <th>Operaciones</th>
     </tr>
   </thead>
 
@@ -74,15 +82,45 @@
       <td>{{$file->name}}</td>
       <td>{{$file->description}}</td>
       <td><span class="filesize" data-filesize="{{$file->size}}">{{$file->size}}</span></td>
-      <td><a href="http://www.trilce.edu.pe{{$file->realFileUrl()}}" target="_blank">{{$file->realFileUrl()}}</a></td>
+      <td>
+
+        URL E
+        <input
+          type="text"
+          onclick="this.focus();this.select()"
+          readonly="readonly"
+          value="http://www.trilce.edu.pe{{$file->realFileUrl()}}"
+        >
+        <a href="http://www.trilce.edu.pe{{$file->realFileUrl()}}" target="_blank">ver</a> <br><br>
+
+        URL D
+        <input
+          type="text"
+          onclick="this.focus();this.select()"
+          readonly="readonly"
+          value="http://www.trilce.edu.pe/d/{{$file->id}}/{{str_slug($file->name, '-')}}.{{$file->extension}}"
+        >
+        <a href="http://www.trilce.edu.pe/d/{{$file->id}}/{{str_slug($file->name, '-')}}.{{$file->extension}}" target="_blank">ver</a> <br>
+
+      </td>
       <td>{{$file->location_driver}}</td>
       <td>{{$file->dimension}}</td>
       <td>
       
-        @if(!$file->lesable_id)
-          <button class="btn btn-secondary btn-undefined" title="Eliminar" type="button">
-            <i class="fa fa-trash"></i>
-          </button>
+        @if($file->filesable_type === null)
+
+          <form action="{{action('Admin\FileManagerController@destroy', $file->id)}}" method="post" onsubmit="return secureDelete(this);">
+          {{csrf_field()}}
+          <input name="_method" type="hidden" value="DELETE">
+            <button class="btn btn-secondary btn-undefined" title="Eliminar" type="submit">
+              <i class="fa fa-trash"></i>
+            </button>
+          </form>
+          <br>
+          <a href="{{action('Admin\FileManagerController@edit', $file->id)}}" class="btn btn-secondary btn-undefined" alt="Editar" role="button">
+            <i class="fa fa-edit"></i>
+          </a>            
+
         @endif
 
       </td>

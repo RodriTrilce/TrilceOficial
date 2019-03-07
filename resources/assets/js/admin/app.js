@@ -1,3 +1,9 @@
+/*!
+ * App.js v1.1
+ * (c) 2018 Fraco Salcedo (franco.salcedo.i3@gmail.com)
+ * Released under the Trilce Group.
+ */
+
 import './jquery-global.js';
 import 'bootstrap';
 import flatpickr from "flatpickr";
@@ -18,10 +24,14 @@ import 'jspdf-autotable'
 
 import rasterizeHTML from 'rasterizehtml/dist/rasterizeHTML.min.js' 
 
+import Dropzone from 'dropzone';
+
+
 window.SlimSelect = SlimSelect;
 window.modal      = new VanillaModal();
 window.rasterizeHTML = rasterizeHTML;
 window.XLSX = xlsx;
+
 
 flatpickr.localize(Spanish);
 
@@ -155,6 +165,35 @@ function manageImages()
       .replace(/\-\-+/g, '-')
       .replace(/^-+/, '')
       .replace(/-+$/, '');
+  }
+}
+
+if(page == 'blog_index'){
+  try{
+    // Mostramos el peso amigablemente
+    var tableOpts = {
+        addrbar: true,
+        sortable: true,
+        search: true,
+        pagination: true,
+        paginationVAlign: 'bottom',
+        paginationHAlign: 'left',
+        paginationDetailHAlign: 'right',
+        showPaginationSwitch: true,
+    }
+
+    window.$table = $('#my-table');
+    $table.bootstrapTable(tableOpts);
+
+    $('#toolbar').find('select').change(function () {
+      window.$table.bootstrapTable('refreshOptions', {
+        exportDataType: $(this).val()
+      });
+    });
+
+
+  }catch(err){
+    console.log(err)
   }
 }
 
@@ -464,15 +503,67 @@ if(page == 'file_manager'){
 
 
   }catch(err){}
+}
 
+if(page == 'file_manager_create')
+{
+  try{
 
+    var dropZone = new Dropzone('#dropZoneForm', {
+      maxFilesize: 50,
+      previewTemplate: document.querySelector('#fileTemplate').innerHTML,
+      previewsContainer: '.dropzone-previews',
+      params : {
+      },
+      acceptedFiles : 'image/*,video/*,application/pdf'
+    });
 
+    dropZone.on('addedfile', file => {
+    });
+
+    dropZone.on('success', (file, responseText) => {
+      var response = JSON.parse(JSON.stringify(responseText));
+      $(file.previewElement).find('[data-dz-id]').html(response.data.id);
+      $(file.previewElement).find('[data-dz-url]').html(response.data.url);
+      $(file.previewElement).find('[data-dz-urlcute]').html(response.data.urlcute);
+    })
+
+  }catch(err){
+    console.log(err);
+  }
 }
 
 
 
 
+if(page == 'shortlink'){
+  try{
+    // Mostramos el peso amigablemente
+    var tableOpts = {
+        addrbar: true,
+        sortable: true,
+        search: true,
+        pagination: true,
+        paginationVAlign: 'bottom',
+        paginationHAlign: 'left',
+        paginationDetailHAlign: 'right',
+        showPaginationSwitch: true,
+    }
 
+    window.$table = $('#my-table');
+    $table.bootstrapTable(tableOpts);
+
+    $('#toolbar').find('select').change(function () {
+      window.$table.bootstrapTable('refreshOptions', {
+        exportDataType: $(this).val()
+      });
+    });
+
+
+  }catch(err){
+    console.log(err)
+  }  
+}
 
 
 

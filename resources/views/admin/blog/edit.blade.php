@@ -10,6 +10,12 @@
 	</div>
 @endif
 
+@if (Session::has('error'))
+  <div class="alert alert-danger" role="alert">
+    {{Session::get('error')}}</h3>
+  </div>
+@endif
+
 @if ($errors->any())
 	<div class="alert alert-danger">
 		<ul>
@@ -30,26 +36,36 @@
     </div>
 
     <div class="form-group">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="marker" id="create_marker"
-        
-        {{ ($post->marker==1?'checked':'') }}
-
-        >
-        <label class="form-check-label" for="create_marker">Marcado (Fijo)</label>
-      </div>
+      <input type="checkbox" id="create_marker" name="marker" class="switch-input"
+      {{ ($post->marker==1?'checked':'') }}
+      >
+      <label for="create_marker" class="switch-label">
+        Marcado (fijo):
+        <span class="toggle--on">Si</span>
+        <span class="toggle--off">No</span></label>      
     </div>
 
     <div class="form-group">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="visible" id="create_draft"
-        
-        {{ ($post->visible==0?'checked':'') }}
-        >
-
-        <label class="form-check-label" for="create_draft">Borrador</label>
-      </div>
+      <input type="checkbox" id="create_draft" name="visible" class="switch-input"
+      {{ ($post->visible==1?'checked':'') }}
+      >
+      <label for="create_draft" class="switch-label">
+        Visible:
+        <span class="toggle--on">Si</span>
+        <span class="toggle--off">No</span></label>      
     </div>
+
+    @if(Auth::user()->hasRole('admin'))
+      <div class="form-group">
+        <input type="checkbox" id="create_approved" name="approved" class="switch-input"
+        {{ ($post->approved==1?'checked':'') }}
+        >
+        <label for="create_approved" class="switch-label">
+          Aprobado:
+          <span class="toggle--on">Si</span>
+          <span class="toggle--off">No</span></label>      
+      </div>
+    @endif
 
      <div class="form-group">
        <label for="create_site">Sección</label>
@@ -60,23 +76,12 @@
        </select>
      </div>
 
-     {{-- <div class="form-group">
-       <label for="exampleFormControlSelect2">Example multiple select</label>
-     </div> --}}
-
      <div class="form-group">
        <textarea class="form-control" id="create_content" name="content" rows="3">
        	{!! $post->content !!}
        </textarea>
      </div>
 
-	<!--
-     <div class="form-group">
-       <label for="imagesMulti">Selecione imagenes y de clic en la principal</label><br>
-       <input type='file' id="imagesMulti" name="image[]" accept="image/*" required multiple />
-       <div class="showimages"></div>
-     </div>
-	 -->
 
 	<!--
      <div class="form-group">
@@ -88,9 +93,122 @@
 	<div class="form-group">
 		<button class="btn btn-primary" type="submit">Enviar</button>
 	</div>
-
   </form>
 
+  <hr>
+  <h3>Imagenes del post</h3>
+
+<style>
+  
+  .X{
+    padding: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .X:hover .img-delete{
+    visibility: visible;
+  }
+
+  .X img{
+    border:1px solid #ccc;
+    transition: all .1s ease-in-out;
+  }
+
+  .X img.principal{
+    position: relative;
+    margin:3px;
+  }
+
+  .X img.principal::before{
+    display: block;
+    content: "PRINCIPAL";
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+  }
+
+  .X img:hover{
+    border: 1px dashed blue;
+    padding: 3px;
+
+  }
+
+  .imss{
+    margin-left: 0;
+  }
+
+  .img-delete{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-btn-op{
+    display: inline-block;
+    margin: 5px;
+  }
+
+</style>
+    <div class="row imss">
+      <div class="row col-xs-12 col-md-12">
+        @foreach ($post->blogGallery->images as $image)
+          <div class="row col-xs-12 col-sm-6 col-md X">
+  
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              @if($image->id == $post->file_id)
+                <h3>Principal</h3>
+              @endif
+              <a href="{{$image->blogImage()}}" target="_blank">
+                <img src="{{$image->blogImage(true)}}" class="{{ ($image->id == $post->file_id ? 'principal' : '') }}" width="200px" height="200px" alt="">
+              </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <form class="img-btn-op" action="{{action('Admin\FileManagerController@destroy', $image->id)}}" method="post" onsubmit="return secureDelete(this);">
+              {{csrf_field()}}
+              <input name="_method" type="hidden" value="DELETE">
+              <input name="_filesable" type="hidden" value="blog">
+              <input name="post_id" type="hidden" value="{{$post->id}}">
+                <button class="btn btn-secondary btn-undefined" title="Eliminar" type="submit">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </form>
+
+              <form class="img-btn-op" action="{{action('Admin\FileManagerController@destroy', $image->id)}}" method="post"">
+              {{csrf_field()}}
+              <input name="_method" type="hidden" value="DELETE">
+              <input name="_filesable" type="hidden" value="blog-hacer-principal">
+              <input name="post_id" type="hidden" value="{{$post->id}}">
+                <button class="btn btn-secondary btn-undefined" title="Convertir en principal" type="submit">
+                  <i class="fa fa-star"></i>
+                </button>
+              </form>
+
+            </div>
+
+
+          </div>
+        @endforeach
+      </div>
+    </div>
+
+  <br>
+  <br>
+  <br>
 @endsection
 
 @section('scripts')

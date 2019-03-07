@@ -31,7 +31,7 @@
                       <h3>UNI - San Marcos - Católica</h3>
                       <ul>
 
-                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></li>
+                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cercado de Lima (Torrico)</a></li>
 
                         <li class="{{ (Request::is('academia/sede/los-olivos')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/los-olivos">Los Olivos</a></li>
                       </ul>
@@ -47,7 +47,7 @@
                     <div>
                       <h3>UNI - Católica</h3>
                       <ul>
-                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></li>
+                        <li class="{{ (Request::is('academia/sede/cercado-de-lima')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/academia/sede/cercado-de-lima">Cercado de Lima (Torrico)</a></li>
                       </ul>
                     </div>
                     <div>
@@ -72,7 +72,7 @@
                   <li><a href="/academia/sede/santa-beatriz">Santa Beatriz</a></li>
                   <li><a href="/academia/sede/comas">Comas</a></li>
                   <li><a href="/academia/sede/villa-el-salvador">Villa El Salvador</a></li>
-                  <li><a href="/academia/sede/cercado-de-lima">Cercado de Lima</a></li>
+                  <li><a href="/academia/sede/cercado-de-lima">Cercado de Lima (Torrico)</a></li>
                   <li><a href="/academia/sede/marsano">Marsano</a></li>
                   <li><a href="/academia/sede/san-isidro">San Isidro</a></li>
                 </ul>

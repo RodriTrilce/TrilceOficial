@@ -18,7 +18,7 @@ class VenueAcademiaController extends Controller
     public function index()
     {
         $venue = VenueModel::all();
-        return view('admin.venue_academia.index')->with(['venue' => $venue]);
+        return view('admin.venue_academia.index')->with(['data' => $venue]);
     }
 
     /**

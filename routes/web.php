@@ -39,7 +39,10 @@ Auth::routes();
 Route::get('/admin', 'Admin\IndexController@index');
 Route::get('/admin/salir', 'Auth\LogoutController@logout');
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'rolepageadmin']], function(){
+  
+  // Single image delete
   Route::resource('/blog', 'BlogController');
+  
   Route::resource('/math-olympics', 'MathOlympicsController');
   Route::resource('/math-olympics/results', 'MathOlympicsResultsController');
   Route::resource('/venue-colegio', 'VenueColegioController');

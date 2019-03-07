@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\FileStorage;
 use App\Http\Requests\Admin\FileEditRequest;
 use App\Models\File;
+use App\Models\Post;
 use \Mimey\MimeTypes;
 use Uuid;
 use Image;
@@ -146,11 +147,59 @@ class FileManagerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
+    {
+        switch ($request->_filesable) {
+            case 'blog':
+                    return $this->destroyFileBlog($request, $id);
+                break;
+            
+            case 'blog-hacer-principal':
+                    return $this->makeFirstImage($request, $id);
+                break;
+
+            default:
+                    return $this->destroyFile($id);
+                break;
+        }
+    }
+
+    public function makeFirstImage($request, $id)
+    {
+        $post = Post::find($request->post_id);
+        $post->update(['file_id' => $id]);
+
+        return redirect()
+        ->action('Admin\BlogController@edit', $post->id)
+        ->with('success', 'Nueva imagen principal');        
+    }
+
+    public function destroyFileBlog($request, $id)
+    {
+        $post = Post::find($request->post_id);
+
+        if($post->file_id == $id)
+        {
+            return redirect()
+            ->action('Admin\BlogController@edit', $post->id)
+            ->with('error', 'Error: no puede eliminar la imagen principal');
+        }
+
+        $file = File::find($id);
+        Storage::delete('/public/' . $file->location_folder . '/' . $file->token . '.' . $file->extension);
+        File::destroy($file->id);
+
+        return redirect()
+        ->action('Admin\BlogController@edit', $post->id)
+        ->with('success', '<i>' . $file->name . '</i> Eliminado correctamente');
+    }
+
+    public function destroyFile($id)
     {
         $file = File::find($id);
         Storage::delete('/public/' . $file->location_folder . '/' . $file->token . '.' . $file->extension);
         File::destroy($file->id);
+
         return redirect()->route('filemanager.index')->with('success', '<i>' . $file->name . '</i> Eliminado correctamente');
     }
 }

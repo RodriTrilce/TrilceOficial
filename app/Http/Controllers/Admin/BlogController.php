@@ -113,13 +113,13 @@ class BlogController extends Controller
 
     public function edit($id)
     {
-        $post = Post::find($id);
+        $post = Post::findOrFail($id);
         return view('admin.blog.edit')->with(['post' => $post]);
     }
 
     public function update(Request $request, $id)
     {
-      $post           = Post::find($id);
+      $post           = Post::findOrFail($id);
 
       $post->title    = $request->title;
       $post->content  = Purifier::clean($request->content);

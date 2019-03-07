@@ -10,6 +10,18 @@ class Post extends Model
 {
   protected $table = 'posts';
 
+  protected $fillable = [
+    'file_id',
+    'site',
+    'title',
+    'content',
+    'slug',
+    'tags',
+    'marker',
+    'visible',
+    'approve'
+  ];
+
   protected static function boot()
   {
       parent::boot();

@@ -38,9 +38,10 @@ class ShortlinkController extends Controller
      */
     public function store(ShortlinkRequest $request)
     {
-        $data = $request->validated;
-        $new = new Shortlink;
-        $new->fill($request->all());
+        $request->validated();
+        $new = new Shortlink();
+        $new->slug = str_slug($request->slug, '-');
+        $new->url = $request->url;
         $new->save();
 
         return redirect()->route('shortlink.index')->with('success', 'Creado correctamente');
@@ -86,7 +87,10 @@ class ShortlinkController extends Controller
     public function update(ShortlinkRequest $request, $id)
     {
         $data = $request->validated();
-        Shortlink::findOrFail($id)->update($data);
+        Shortlink::findOrFail($id)->update([
+            'slug' => str_slug($data['slug']),
+            'URL'  => $data['url']
+        ]);
 
         return redirect()
         ->action('Admin\ShortlinkController@edit', $id)

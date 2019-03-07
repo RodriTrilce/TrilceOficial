@@ -39,10 +39,7 @@ Auth::routes();
 Route::get('/admin', 'Admin\IndexController@index');
 Route::get('/admin/salir', 'Auth\LogoutController@logout');
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'rolepageadmin']], function(){
-  
-  // Single image delete
   Route::resource('/blog', 'BlogController');
-  
   Route::resource('/math-olympics', 'MathOlympicsController');
   Route::resource('/math-olympics/results', 'MathOlympicsResultsController');
   Route::resource('/venue-colegio', 'VenueColegioController');
@@ -51,6 +48,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/rrhh-forms', 'RhFormsController');
   Route::resource('/popup', 'PopupController');  
   Route::resource('/filemanager', 'FileManagerController');
+  Route::resource('/shortlink', 'ShortlinkController');
 });
 
 
@@ -68,9 +66,13 @@ Route::name('menu-trilce')
         return Redirect::to('/storage/other/documents/menu/2018/menu.pdf');
 });
 
+// Downloader
 Route::name('downloader')
       ->get('/d/{id}/{slug}', 'DownloadController@download');
 
+// Shortlink
+Route::name('shortlink-dinamic')
+      ->get('/l/{slug}', 'Admin\ShortlinkController@show');
 
 /**
  *  Academia

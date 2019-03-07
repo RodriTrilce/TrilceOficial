@@ -87,6 +87,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file-text"></span>
+              Shortlinks
+            </a>
+            <ul class="nav flex-column mb-5">
+              <li class="nav-item"><a href="/admin/shortlink/" class="nav-link"><span data-feather="corner-down-right"></span> Listar</a></li>
+              <li class="nav-item"><a href="/admin/shortlink/create" class="nav-link"><span data-feather="corner-down-right"></span> Crear</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
               Blog
             </a>
             <ul class="nav flex-column mb-5">

@@ -4,7 +4,6 @@
     <h1 class="h2">Lista posts blog</h1>
   </div>
 
-
 <div id="toolbar">
   <select class="form-control">
     <option value="">Exportacion basica</option>
@@ -68,7 +67,6 @@
     @endforeach
   </tbody>
 </table>
-
 
 
 @endsection

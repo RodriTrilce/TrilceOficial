@@ -536,7 +536,34 @@ if(page == 'file_manager_create')
 
 
 
+if(page == 'shortlink'){
+  try{
+    // Mostramos el peso amigablemente
+    var tableOpts = {
+        addrbar: true,
+        sortable: true,
+        search: true,
+        pagination: true,
+        paginationVAlign: 'bottom',
+        paginationHAlign: 'left',
+        paginationDetailHAlign: 'right',
+        showPaginationSwitch: true,
+    }
 
+    window.$table = $('#my-table');
+    $table.bootstrapTable(tableOpts);
+
+    $('#toolbar').find('select').change(function () {
+      window.$table.bootstrapTable('refreshOptions', {
+        exportDataType: $(this).val()
+      });
+    });
+
+
+  }catch(err){
+    console.log(err)
+  }  
+}
 
 
 

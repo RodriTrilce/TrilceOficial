@@ -124,7 +124,14 @@ class EnrollmentController extends Controller
           'TIPO_SERVICIO'     => 'ACADE'
         ];
 
-      $this->client = new \SoapClient(\Config::get('constants.API_ClientePublicoServicio'), [
+      if(env('APP_ENV') == 'local')
+      {
+        $url = \Config::get('constants.API_ClientePublicoServicioLocal');
+      }else{
+        $url = \Config::get('constants.API_ClientePublicoServicioProduction');
+      }
+
+      $this->client = new \SoapClient($url, [
         'trace' => 1
       ]);
 
@@ -147,7 +154,7 @@ class EnrollmentController extends Controller
       $internal_path = str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/';
       $cost = json_decode('{
          "one" : {
-           "ACACAT" : {
+           "ACACA" : {
              "san isidro" : {
                "cost" : "100",
                "time" : "30"
@@ -187,7 +194,7 @@ class EnrollmentController extends Controller
              "ciencia" : "12",
              "letras" : "15"
            },
-           "ACACAT" : {
+           "ACACA" : {
              "ciencia" : "30",
              "letras" : "30"
            }
@@ -264,7 +271,7 @@ class EnrollmentController extends Controller
           $enrollment_interest_university_print = 'UNI';
          break;
 
-       case 'ACACAT':
+       case 'ACACA':
           $enrollment_interest_university_print = 'Católica';
          break;
       }

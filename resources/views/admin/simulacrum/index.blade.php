@@ -91,6 +91,6 @@
 @endsection
 
 @section('scripts')
-  var page = 'shortlink'
+  var page = 'simulacrum'
   @parent
 @endsection

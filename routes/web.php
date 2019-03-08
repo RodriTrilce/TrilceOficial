@@ -50,6 +50,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/filemanager', 'FileManagerController');
   Route::resource('/shortlink', 'ShortlinkController');
   Route::resource('/simulacrum', 'SimulacrumResource');
+  Route::resource('/solutions', 'SolutionResource');
 });
 
 

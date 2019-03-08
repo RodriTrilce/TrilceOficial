@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Academia;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Models\Academia\Solution;
 use App\Models\UniversityModel as University;
 
 class SolutionsController extends Controller
@@ -21,9 +21,13 @@ class SolutionsController extends Controller
       if(empty($university->name))
         return abort(404);
       
+      $solutions = Solution::where('university_id', $university->id)
+      ->orderBy('created_at', 'desc')
+      ->get();
 
      return view('/academia/solution')->with([
-       'university' => $university
+       'university' => $university,
+       'solutions'  => $solutions
      ]);
    }
 

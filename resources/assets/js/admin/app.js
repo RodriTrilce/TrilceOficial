@@ -602,6 +602,57 @@ if(page == 'simulacrum_create' || page == 'simulacrum_edit'){
   });  
 }
 
+if(page == 'solution'){
+  try{
+    // Mostramos el peso amigablemente
+    var tableOpts = {
+        addrbar: true,
+        sortable: true,
+        search: true,
+        pagination: true,
+        paginationVAlign: 'bottom',
+        paginationHAlign: 'left',
+        paginationDetailHAlign: 'right',
+        showPaginationSwitch: true,
+    }
+
+    window.$table = $('#my-table');
+    $table.bootstrapTable(tableOpts);
+
+    $('#toolbar').find('select').change(function () {
+      window.$table.bootstrapTable('refreshOptions', {
+        exportDataType: $(this).val()
+      });
+    });
+
+
+  }catch(err){
+    console.log(err)
+  }  
+}
+
+if(page == 'solution_create'){
+
+  flatpickr("#mo_finish",{
+      enableTime: true,
+      dateFormat: "Y-m-d H:i:S",
+  });  
+
+  var list = document.getElementById('f_university');
+  list.addEventListener('change', () => {
+    var university = list.options[list.selectedIndex].value;
+    var exm3 = document.getElementById('solution_f_exm3');
+    switch(university){
+      case '2':
+        exm3.style.display = 'none';
+      break;
+
+      default:
+        exm3.style.display = 'block';
+    }
+  });
+
+}
 
 
 

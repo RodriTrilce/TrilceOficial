@@ -51,6 +51,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/shortlink', 'ShortlinkController');
   Route::resource('/simulacrum', 'SimulacrumResource');
   Route::resource('/solutions', 'SolutionResource');
+  Route::resource('/form-sorteo', 'FormSorteoController');  
+  Route::resource('/form-claves', 'FormClavesSanMarcosController');
 });
 
 

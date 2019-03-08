@@ -8,6 +8,21 @@ use Yadahan\AuthenticationLog\AuthenticationLogable;
 use App\Models\Post;
 use App\Models\Admin\RoleAdminPage;
 
+/*
+ Asignar un rol a un usuario en tinker
+ php artisan tinker
+
+ use Role;
+ use User;
+
+ $u = User::find(id_usuario);
+ $rol = Role::find(1); // 1->admin
+
+ $u->roles()->attach($rol);
+ $u->save();
+
+*/
+
 class User extends Authenticatable
 {
     use Notifiable, AuthenticationLogable;

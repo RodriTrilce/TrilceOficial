@@ -82,7 +82,16 @@
           </li>
         -->
 
-          <br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Formularios
+            </a>
+            <ul class="nav flex-column mb-5">
+              <li class="nav-item"><a href="/admin/form-sorteo" class="nav-link"><span data-feather="corner-down-right"></span> Sorteo laptop</a></li>
+              <li class="nav-item"><a href="/admin/form-claves" class="nav-link"><span data-feather="corner-down-right"></span> Claves San Marcos</a></li>
+            </ul>
+          </li>
 
 
           <li class="nav-item">

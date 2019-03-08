@@ -68,7 +68,7 @@
                           <option value="" selected disabled hidden>Tipo de preparación</option>
                           <option value="ACAUN">UNI</option>
                           <option value="ACASM">San Marcos</option>
-                          <option value="ACACAT">Católica</option>
+                          <option value="ACACA">Católica</option>
                         </select>
                       </fieldset>
                     </div>

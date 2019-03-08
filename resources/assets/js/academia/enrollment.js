@@ -71,7 +71,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
    this.step1Venue;
    this.cost = [{
      one : {
-       "ACACAT" : {
+       "ACACA" : {
          "san isidro" : {
            "cost" : 100,
            "time" : 30
@@ -107,7 +107,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
          "ciencia" : 12,
          "letras" : 15
        },
-       "ACACAT" : {
+       "ACACA" : {
          "ciencia" : 30,
          "letras" : 30,
        }
@@ -451,7 +451,7 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
      term2.innerHTML  = cost;
      term21.innerHTML = time;
 
-     if(university !== 'ACACAT'){
+     if(university !== 'ACACA'){
        term9.style.display = 'inline-block';
        let b = term9a.options[term9a.selectedIndex].value;
        term91.innerHTML = '12';

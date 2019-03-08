@@ -131,15 +131,15 @@ class EnrollmentController extends Controller
         $url = \Config::get('constants.API_ClientePublicoServicioProduction');
       }
 
-      $this->client = new \SoapClient($url, [
+      $client = new \SoapClient($url, [
         'trace' => 1
       ]);
 
       try {
-        $result = $this->client->FichaAtencion($data);
+        $result = $client->FichaAtencion($data);
 
       }catch(SoapFault $e){
-        die;
+
       }
    }
 
@@ -211,8 +211,8 @@ class EnrollmentController extends Controller
       $terms_route = $cost->one->{$enrollment->interest_university};
 
       if(count((array)$terms_route) > 1){
-       $terms_cost = $terms_route->{$enrollment->interest_venue}->cost;
-       $terms_time = $terms_route->{$enrollment->interest_venue}->time;
+       $terms_cost = $terms_route->{strtolower($enrollment->interest_venue_key)}->cost;
+       $terms_time = $terms_route->{strtolower($enrollment->interest_venue_key)}->time;
       }else{
        $terms_cost = $terms_route->all->cost;
        $terms_time = $terms_route->all->time;

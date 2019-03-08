@@ -25,6 +25,7 @@ class EnrollmentResourceController extends Controller
       $this->client = new \SoapClient($url, [
         'trace' => 1
       ]);
+    }
 
 
     public $url = [

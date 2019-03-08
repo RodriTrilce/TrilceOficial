@@ -83,6 +83,10 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
          "torrico" : {
            "cost" : 50,
            "time" : 15
+         },
+         "santa beatriz" :{
+           "cost" : 50,
+           "time" : 15          
          }
        },
        "ACAUN" : {

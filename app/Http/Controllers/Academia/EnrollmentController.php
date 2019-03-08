@@ -159,7 +159,11 @@ class EnrollmentController extends Controller
              "torrico" : {
                "cost" : "50",
                "time" : "15"
-             }
+             },
+             "santa beatriz" : {
+               "cost" : "50",
+               "time" : "15"
+             }             
            },
            "ACAUN" : {
              "all" : {

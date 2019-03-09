@@ -87,9 +87,10 @@ class ShortlinkController extends Controller
     public function update(ShortlinkRequest $request, $id)
     {
         $data = $request->validated();
-        Shortlink::findOrFail($id)->update([
+        
+        Shortlink::find($id)->update([
             'slug' => str_slug($data['slug']),
-            'URL'  => $data['url']
+            'url'  => $data['url']
         ]);
 
         return redirect()

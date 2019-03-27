@@ -16,8 +16,12 @@
 
             <ul>
               <li class="nav-info-responsive nav-info-academia">
-                <div><a class="nav-info-colegio__intranet" href="http://app.trilce.edu.pe/App/" target="_blank">Intranet para alumnos</a></div>
-                <div><a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>6198 100</b></a></div>
+                <div>
+                  <a class="nav-info-colegio__intranet" href="http://intranet.trilce.edu.pe/" target="_blank">Intranet para alumnos</a>
+                </div>
+                <div>
+                  <a class="nav-info-colegio__phone" href="tel:016198100">Call center: <b>6198 100</b></a><
+                  /div>
               </li>
               <li class="nav__highlight"><a href="/colegio">Colegio</a></li>
 

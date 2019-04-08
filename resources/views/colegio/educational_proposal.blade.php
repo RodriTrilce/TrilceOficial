@@ -440,18 +440,30 @@
             
             <div class="row ingresantes col-xs-12 center-xs">
 
-              <div class="row col-xs-12 col-sm-5 ingresantes__item">
+              <div class="row col-xs-12 col-sm-4 ingresantes__item" style="margin: 0 !important;">
+                <div class="col-xs-12 ingresantes__img">
+                  <img src="/storage/static/upload/65828b70-45ac-11e9-b148-8fadf5feb56c.png" alt="">
+                </div>
+                <div class="col-xs-12 ingresantes__text">
+                  <span class="title">¡Máximo puntaje!</span>
+                  <span class="subtitle">1<sup>er</sup> Puesto San Marcos</span>
+                  <span class="subtitle2">Examen 2019-II</span>
+                  <span class="name">Rafael Salas Meléndez</span>
+                </div>
+              </div>
+
+              <div class="row col-xs-12 col-sm-4 ingresantes__item" style="margin: 0 !important;">
                 <div class="col-xs-12 ingresantes__img">
                   <img src="{{ url('/static/images/colegio/propuesta-feb/7-resultados-1.png') }}" alt="">
                 </div>
                 <div class="col-xs-12 ingresantes__text">
                   <span class="title">¡Máximo puntaje!</span>
                   <span class="subtitle">1<sup>er</sup> Puesto 2019<br>Católica - POP</span>
-                  <span class="name">Jim Cisneros</span>
+                  <span class="name">Jimm Cisneros</span>
                 </div>
               </div>
 
-              <div class="row col-xs-12 col-sm-5 ingresantes__item">
+              <div class="row col-xs-12 col-sm-4 ingresantes__item" style="margin: 0 !important;">
                 <div class="col-xs-12 ingresantes__img">
                   <img src="{{ url('/static/images/colegio/propuesta-feb/7-resultados-2.png') }}" alt="">
                 </div>
@@ -471,6 +483,13 @@
             <div class="row col-xs-12 col-sm-12 table-responsive" id="tableade">
               <table class="ep-stepseven-table">
                 <tbody>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto San Marcos</td>
+                    <td data-label="Examen">2019-II</td>
+                    <td data-label="Nombres">Rafael Salas Meléndez</td>
+                    <td data-label="Carrera"><strong>Máximo puntaje</strong></td>
+                  </tr>
 
                   <tr>
                     <td data-label="">1.<sup>er</sup> puesto UNI Examen Escolares</td>

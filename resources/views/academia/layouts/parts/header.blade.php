@@ -83,7 +83,7 @@
               </li>
               <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
               <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
-              <!--<li class=""><a target="_blank" href="/academia-sorteo-laptop/">SORTEOS</a></li>-->
+              
               <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctanos</a></li>
             </ul>
           </nav>

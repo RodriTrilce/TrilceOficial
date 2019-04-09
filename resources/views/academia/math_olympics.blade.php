@@ -26,6 +26,7 @@
 
           <div class="js-tabs__content js-badger-accordion_1">
             @foreach ($lima as $v)
+               @if($v->finish_at > date("Y-m-d H:i:s"))
               <div class="om__item row col-xs-12">
                   <h3 class="om__title js-badger-accordion-header">
                     <div class="om__signed"></div>
@@ -71,11 +72,15 @@
                   </dd>
 
               </div>
+              @endif
             @endforeach
           </div>
 
           <div class="js-tabs__content js-badger-accordion_2">
+            
             @foreach ($province as $v)
+               @if($v->finish_at > date("Y-m-d H:i:s"))
+              
               <div class="om__item row col-xs-12">
                   <h3 class="om__title js-badger-accordion-header">
                     <div class="om__signed"></div>
@@ -119,10 +124,11 @@
                       </ul>
                     </div>
                   </dd>
-
               </div>
-            @endforeach
 
+
+             @endif
+            @endforeach
           </div>
 
       </div>
@@ -172,7 +178,6 @@
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-arsam.png') }}}" alt="Arsam"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-maped.png') }}}" alt="Maped"></div>
-         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>
         {{-- <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div> --}}
       </div>
     </div>

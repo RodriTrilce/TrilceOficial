@@ -58,6 +58,15 @@
     </div>
 
     <div class="form-group">
+      <label for="select_ubigeo">Ubicación</label>
+      <select class="form-control" name="select_ubigeo">
+        <option value="" selected >Elegir Opción </option>
+        <option value="0">Lima</option> 
+        <option value="1" >Provincia</option>
+      </select>
+    </div>
+
+    <div class="form-group">
       <label for="create_bases">Bases</label>
       <input class="form-control-file" id="create_bases" type='file' name="base_url" accept=".pdf">
       <small class="form-text text-muted">Selecionar el archivo pdf de las bases</small>

@@ -161,6 +161,7 @@ class MathOlympicsController extends Controller
       $olympic->inscription_url = $request->inscription_url;
       $olympic->inscription_group_url = $request->inscription_group_url;
       $olympic->finish_at = $request->finish_at;
+      $olympic->isprovince =$request->isprovince;
       $olympic->save();
 
       return redirect()->action('Admin\MathOlympicsController@edit', $id)->with('success','Editado correctamente');

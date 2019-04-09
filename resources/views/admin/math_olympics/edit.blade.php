@@ -42,6 +42,16 @@
       <input type="text" class="form-control" name="venue" value="{{$olympic->venue}}" id="create_venue" autocomplete="off" placeholder="Escribir la sede" required>
     </div>
 
+
+    <div class="form-group">
+      <label for="create_venue">Ubicación</label>
+      <input type="text" class="form-control" name="isprovince" value="{{$olympic->isprovince}}" id="create_isprovince" autocomplete="off" placeholder="Escribir 0 si es provicia" >
+    </div>
+
+
+
+    
+
     <div class="form-group">
       <label for="create_bases">Bases</label><br>
       @if($olympic->file_id)

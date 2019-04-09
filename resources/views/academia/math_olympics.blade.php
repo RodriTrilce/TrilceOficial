@@ -135,10 +135,10 @@
     </div>
   </div>
 
-  <div class="row center-xs center-sm math-olympic-onam">
+  {{--<div class="row center-xs center-sm math-olympic-onam">
     <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
     <div class="row col-xs-12 col-sm-8 between-xs between-sm data">
-      <div class="col-xs-12 col-sm">25 de noviembre</div>
+      <div class="col-xs-12 col-sm">24 de noviembre</div>
       <div class="col-xs-12 col-sm">XXX OLIMPIADA NACIONAL DE MATEMÁTICA</div>
       <div class="col-xs-12 col-sm">2.° prim a 5.° sec.</div>
     </div>
@@ -178,10 +178,10 @@
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-arsam.png') }}}" alt="Arsam"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-maped.png') }}}" alt="Maped"></div>
-        {{-- <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div> --}}
+        <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>
       </div>
     </div>
-  </div>
+  </div>--}}
 
   @include('academia.partials.card_bottom')
 @endsection

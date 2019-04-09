@@ -168,12 +168,12 @@
         </div>
       </div>
 
-      <div class="row col-xs-12 col-sm-6">
+      <!--<div class="row col-xs-12 col-sm-6">
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-artesco.jpg') }}}" alt="Aresto"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-dgnotas.jpg') }}}" alt="Gnotas"></div>
         {{-- <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div> --}}
-      </div>
+      </div>-->
     </div>
   </div>
 

@@ -165,7 +165,7 @@
 
     <div class="row col-xs-12 col-sm-9 text-init sponsor">
 
-      <div class="row col-xs-12 col-sm-12 middle-sm information" style="margin-bottom: 50px;margin-top: 25px">
+      <div class="row col-xs-12 col-sm-12 middle-sm information" style="margin-bottom: 50px">
         <div class="col-xs-12 col-sm-12 center-xs">
           <p>
             <span>Informes e inscripciones</span> <br/>

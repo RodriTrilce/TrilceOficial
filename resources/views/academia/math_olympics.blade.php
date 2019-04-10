@@ -161,7 +161,7 @@
           <div class="col-xs texts desactive-link"><a href="" target="_blank"><i class="fa fa-bullhorn"></i> Resultados</a></div>
         </div>
       </div>
-    </div>
+    </div>--}}
 
     <div class="row col-xs-12 col-sm-9 text-init sponsor">
 
@@ -178,10 +178,10 @@
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-arsam.png') }}}" alt="Arsam"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-maped.png') }}}" alt="Maped"></div>
-        <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>
+        {{--<div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>--}}
       </div>
     </div>
-  </div>--}}
+  </div>
 
   @include('academia.partials.card_bottom')
 @endsection

@@ -9,7 +9,7 @@
       <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-matholympics"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>Olimpiadas de matemáticas</h1>
+        <h1>Olimpiadas de Matemática</h1>
       </div>
     </div>
   </div>
@@ -135,8 +135,8 @@
     </div>
   </div>
 
-  {{--<div class="row center-xs center-sm math-olympic-onam">
-    <div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
+  <div class="row center-xs center-sm math-olympic-onam">
+    {{--<div class="col-xs-12 title"><h2>ONAM TRILCE</h2></div>
     <div class="row col-xs-12 col-sm-8 between-xs between-sm data">
       <div class="col-xs-12 col-sm">24 de noviembre</div>
       <div class="col-xs-12 col-sm">XXX OLIMPIADA NACIONAL DE MATEMÁTICA</div>
@@ -165,7 +165,7 @@
 
     <div class="row col-xs-12 col-sm-9 text-init sponsor">
 
-      <div class="row col-xs-12 col-sm-6 middle-sm information">
+      <div class="row col-xs-12 col-sm-12 middle-sm information" style="margin-bottom: 50px;margin-top: 25px">
         <div class="col-xs-12 col-sm-12 center-xs">
           <p>
             <span>Informes e inscripciones</span> <br/>
@@ -178,8 +178,8 @@
         <div class="row col-sm col-xs-12 middle-sm middle-xs center-xs title"><div class="col-xs-12">Auspiciadores</div></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-arsam.png') }}}" alt="Arsam"></div>
         <div class="col-sm col-xs-4"><img src="{{{ asset('/static/images/academia/logo-maped.png') }}}" alt="Maped"></div>
-        <div class="col-sm col-xs-4"><img src="{{{ asset('static/images/academia/logo-fru.jpg') }}}" alt="Fru+"></div>
       </div>--}}
+
     </div>
   </div>
 

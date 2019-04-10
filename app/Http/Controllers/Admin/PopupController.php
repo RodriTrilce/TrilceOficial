@@ -16,7 +16,7 @@ class PopupController extends Controller
     public function index()
     {
         $data = Popup::where([
-          ['state',   '=', '1']
+          ['id',   '>', '0']
         ])
         ->get();
 

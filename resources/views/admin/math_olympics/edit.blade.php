@@ -45,7 +45,7 @@
 
     <div class="form-group">
       <label for="create_venue">Ubicación</label>
-      <input type="text" class="form-control" name="isprovince" value="{{$olympic->isprovince}}" id="create_isprovince" autocomplete="off" placeholder="Escribir 0 si es provicia" >
+      <input type="text" class="form-control" name="isprovince" value="{{$olympic->isprovince}}" id="create_isprovince" autocomplete="off" placeholder="Escribir 1 si es provicia" >
     </div>
 
 

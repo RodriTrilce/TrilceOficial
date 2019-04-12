@@ -223,21 +223,3 @@ Route::name('colegio-vacations')
 
 Route::name('colegio-vacations-venue')
       ->get('/colegio/sede/{barrack}/vacaciones-utiles', 'Colegio\VacationsController@venue');
-
-
-// Pruebas Crismit
-Route::get('/academia/datasoap', function () {
-      $opts = array(
-          'ssl' => array('ciphers'=>'RC4-SHA', 'verify_peer'=>false, 'verify_peer_name'=>false)
-      );
-      $params = array ('encoding' => 'UTF-8', 'verifypeer' => false, 'verifyhost' => false, 'soap_version' => SOAP_1_2, 'trace' => 1, 'exceptions' => 1, "connection_timeout" => 180, 'stream_context' => stream_context_create($opts) );
-      $url = "http://181.177.236.201/General/ClientePublicoServicio.svc?wsdl";
-      try{
-          $client = new SoapClient($url,$params);
-          //dd($client->GetCitiesByCountry(['CountryName' => 'Peru'])->GetCitiesByCountryResult);
-          dd($client->__getTypes());
-      }
-      catch(SoapFault $fault) {
-          echo '<br>'.$fault;
-      }
-  });

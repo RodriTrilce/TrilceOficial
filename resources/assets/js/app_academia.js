@@ -14,10 +14,10 @@ import SlimSelect from 'slim-select'
 import BadgerAccordion from './require/badger_accordion';
 import SliderTrilce from './require/slider_trilce';
 import Enrollment from './academia/enrollment';
+import Cycles from './academia/cycles';
 import Preparation from './academia/preparation';
 import backgroundEffect from './academia/blog';
 import AcorditionProposal from './colegio/educational_proposal';
-
 
 
 window.SlimSelect = SlimSelect;
@@ -136,12 +136,15 @@ String.prototype.capitalize = function(){
   * Preparation
   */
   if(page == 'preparation'){
+    var init_cycles = new Cycles();
+
     var init_preparation = new Preparation(),
         init_tabs = new Tabs({
           elem : 'preparation_tabs',
           open : 0
         });
 
+    init_cycles.init();
     init_tabs.init();
     init_preparation.init();
   }

@@ -1,19 +1,12 @@
 <div class="col-xs-12 col-sm">
   <select id="beginning-cyle">
     <option value="0" selected hidden disable>Ciclos</option>
-    <option value="0">Todos</option>
-    <option value=80>Primera Opción</option>
-    <option value=35>Semestral</option>
   </select>
 </div>
 
 <div class="col-xs-12 col-sm">
   <select id="beginning-venue">
     <option value="0" selected hidden disable>Sedes</option>
-    <option value="0">Todos</option>
-    <option value=14>Cercado de Lima</option>
-    <option value=20>San Isidro</option>
-    <option value=23>Los Olivos</option>
   </select>
 </div>
 <div class="col-xs-12 col-sm">

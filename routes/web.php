@@ -67,7 +67,7 @@ Route::name('home')->get('/', function () {
 
 Route::name('menu-trilce')
       ->get('/menu-trilce', function(){
-        return Redirect::to('/storage/other/documents/menu/2018/menu.pdf');
+        return Redirect::to('/storage/other/documents/menu/2019/menu.pdf');
 });
 
 // Downloader
@@ -90,6 +90,33 @@ Route::name('academia-index')
 Route::name('academia-preparation')
       ->get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
+// Test New Preparación
+/*Route::get('/datanew', function () {
+      $opts = array(
+          'ssl' => array('ciphers'=>'RC4-SHA', 'verify_peer'=>false, 'verify_peer_name'=>false)
+      );
+      $params = array ('encoding' => 'UTF-8', 'verifypeer' => false, 'verifyhost' => false, 'soap_version' => SOAP_1_2, 'trace' => 1, 'exceptions' => 1, "connection_timeout" => 180, 'stream_context' => stream_context_create($opts) );
+      $url = "http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl";
+  
+      try{
+          $client = new SoapClient($url,$params);
+          dd($client->__getTypes());
+          dd($client);
+          /*dd($client->FA_Bldg(
+            [
+                  'ANIO_ACADEMICO'  => date("Y"),
+                  'TIPO_SERVICIO'   => 'ACADE',
+                  'SERVICIO'        => 'ACAUN',
+                  'NIVEL_ESTUDIO'   => $request->cycle
+                ]
+          )->GetCitiesByCountryResult);
+      }
+      catch(SoapFault $fault) {
+          echo '<br>'.$fault;
+      }
+  
+  });*/
+
 // Página Princial (Index)
 Route::name('academia-venues')
       ->get('/academia/sedes', 'Academia\VenuesController@index');
@@ -106,9 +133,16 @@ Route::get('/academia/sede', function(){
 Route::name('academia-simulacrum')
       ->get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
 
+Route::name('academia-inscriptions')
+->get('/academia/registro-simulacro', 'Academia\SimulacrumController@create');
+
 Route::get('/academia/simulacros', function(){
   return redirect('/academia');
 });
+
+//Route::name('simulacrum-inscriptions')
+//->get('/academia/simulacrum-inscriptions', 'Academia\SimulacrumController@inscripciones');
+
 
 // Solucionarios (Solutions)
 Route::name('academia-solutions')
@@ -129,6 +163,7 @@ Route::get('/academia/lista-de-cachimbos', function(){
 // Olimpiadas Matematicas (MathOlympics)
 Route::name('academia-matholympics')
       ->get('/academia/olimpiadas-matematicas', 'Academia\MathOlympicsController@index');
+
 
 // Nosotros (AboutUs)
 Route::name('academia-aboutus')

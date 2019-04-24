@@ -18,7 +18,7 @@ import Cycles from './academia/cycles';
 import Preparation from './academia/preparation';
 import backgroundEffect from './academia/blog';
 import AcorditionProposal from './colegio/educational_proposal';
-
+import SimulacrumExam from './academia/simulacrum_exam';
 
 window.SlimSelect = SlimSelect;
 
@@ -127,7 +127,6 @@ String.prototype.capitalize = function(){
 
   SliderTrilce.init(slider);
 
-
   if(modal_open.length) modal.open(modal_open[0]);
 
  }
@@ -223,3 +222,11 @@ String.prototype.capitalize = function(){
 
    tabs.init();
  }
+
+ /**!
+ *  Simulacrum > Exam
+ */
+if(page == 'simulacrum-exam'){
+  let exam = new SimulacrumExam();
+  exam.init();
+}

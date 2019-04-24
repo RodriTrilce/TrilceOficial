@@ -113,6 +113,12 @@ Breadcrumbs::for('academia-venue', function ($trail, $modality) {
     $trail->push('Sede ' . ucwords($modality), route('academia-venue', $modality));
 });
 
+// Academia > Simulacrum > Exam
+Breadcrumbs::for('academia-simulacrum-exam', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Simulacro ' . ucwords($modality), route('academia-simulacrum-exam', [$modality, 'xx']));
+});
+
 // Academia > Simulacrum
 Breadcrumbs::for('academia-simulacrum', function ($trail, $modality) {
     $trail->parent('academia-index');

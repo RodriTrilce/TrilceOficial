@@ -129,9 +129,14 @@ Route::get('/academia/sede', function(){
   return redirect('/academia');
 });
 
+// Simulacrum > Exam
+Route::name('academia-simulacrum-exam')
+      ->get('/academia/simulacros-{university}/inscripcion/{idexam}', 'Academia\SimulacrumExamController@index');
+
 // Simulacros (Simulacrum)
 Route::name('academia-simulacrum')
       ->get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');
+
 
 Route::name('academia-inscriptions')
 ->get('/academia/registro-simulacro', 'Academia\SimulacrumController@create');

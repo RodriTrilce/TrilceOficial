@@ -39,7 +39,7 @@ Route::get('/academia/enrollment/{university}/cycle/{cycle}', 'Academia\Enrollme
 Route::get('/academia/enrollment/{university}/{venue}', 'Academia\EnrollmentResourceController@venue');
 #Route::get('/academia/enrollment/{university}/{venue}/{cycle}', 'Academia\EnrollmentResourceController@{cycle}');
 
-Route::post('/academia/preparation/cycles', 'Academia\PreparationApiController@cycle');
+Route::get('/academia/preparation/cycles', 'Academia\PreparationApiController@cycle');
 
 // Academia/Beginnings = Nuevos inicios
 Route::post('/academia/beginnings', 'Academia\BeginningsApiResourceController@index');

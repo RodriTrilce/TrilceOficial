@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Http\Controllers\Academia\Apis;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\Academia\Apis\SimulacrumApiResource; 
+
+class SimulacrumApiController extends Controller
+{
+
+    public function __construct()
+    {
+      if(env('APP_ENV') == 'local')
+      {
+        $url = \Config::get('constants.API_ClientePublicoServicioLocal');
+      }else{
+        $url = \Config::get('constants.API_ClientePublicoServicioProduction');
+      }
+
+      $this->client = new \SoapClient($url, [
+        'trace' => 1
+      ]);
+    }
+
+    public function venue(Request $request)
+    {
+        try {
+          $result = $this->client->SI_LOCAL([
+            'CODE_URL'  => $request->CODE_URL
+          ]);
+
+          $collection = collect($result->SI_LocalResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new SimulacrumApiResource($collection);
+    }
+
+    public function type(Request $request)
+    {
+        try {
+          $result = $this->client->SI_Nivel([
+            'CODE_URL'  => $request->CODE_URL,
+            'BLDG_TBL'  => $request->BLDG_TBL
+          ]);
+
+          $collection = collect($result->SI_NivelResul);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new SimulacrumApiResource($collection);
+    }
+
+    public function area(Request $request)
+    {
+        try {
+          $result = $this->client->SI_Are([
+            'SERVICIO'  => $request->SERVICIO
+          ]);
+
+          $collection = collect($result->SI_NivelResul);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new SimulacrumApiResource($collection);
+    }
+}

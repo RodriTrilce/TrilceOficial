@@ -29,6 +29,11 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
   Route::post('/banners', 'BannersController@storePositions');
 });
 
+Route::post('/academia/simulacros/venue',   'Academia\Apis\SimulacrumApiController@venue');
+Route::post('/academia/simulacros/type',    'Academia\Apis\SimulacrumApiController@type');
+Route::post('/academia/simulacros/area',    'Academia\Apis\SimulacrumApiController@area');
+Route::post('/academia/simulacros/carrera', 'Academia\Apis\SimulacrumApiController@carrera');
+
 // Academia/Entering = Lista de cachimbos api
 Route::get('/academia/entering/{university}/{year}', 'Academia\EnteringResourceController@show');
 

@@ -708,7 +708,7 @@ $banner__box--size-mobile: 5px;
 
       @for $i from 0 to 10{
         &:nth-child(#{$i}){
-          width: (random(80))+20 + 0.1%;
+          width: (random(80))+20 + "%";
         }
       }
   }

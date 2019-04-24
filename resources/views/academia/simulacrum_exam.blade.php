@@ -22,14 +22,11 @@
   @if($university->short_name=='UNI')
 
     <br><br>
-
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
                 <h1>¡Participa en nuestro Simulacro {{$university->short_name}}!</h1>
             </div>
     </div>
-
-
   @endif
 
 
@@ -59,18 +56,19 @@
         </ul>
       </div>
 
-      <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form">
+      <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
+        @csrf
         <div class="row start-xs step-1 step-container" data-step="0">
           <h2>Regístrate para participar</h2>
 
           <div class="row col-xs-12 start-xs simulacrum-step1-steps">
             <div class="col-xs-4">
               <div class="number">1</div>
-              <div class="text">Ingresa tu DNI</div>
+              <div class="text">Ingresa tus datos</div>
             </div>
             <div class="col-xs-4">
               <div class="number">2</div>
-              <div class="text">Presiona "Vallidar"</div>
+              <div class="text">Presiona "Registrarme"</div>
             </div>
             <div class="col-xs-4">
               <div class="number">3</div>
@@ -78,93 +76,141 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 start-xs">
-            <input type="text" name="f1_dni step-container" id="s1_dni" placeholder="DNI">
-          </div>
-
-          <div class="row col-xs-12">
-            <div class="row col-xs-12 col-sm-6 end-xs start-sm">
-              <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
-            </div>
-          </div>
         </div>
+
         <div class="row start-x step-2 step-container" data-step="1">
           <h2>Déjanos tus datos</h2>
           <div class="col-xs-12 start-xs">
+            
             <fieldset>
-              <input type="text" name="s2_dni" id="s2_dni" readonly>
+              <input 
+                type="hidden"
+                name="SERVICIO"
+                value="{{ ($university->short_name=='UNI'?'ACAUN':'') }}{{ ($university->short_name=='PUCP'?'ACACA':'') }}{{ ($university->short_name=='SM'?'ACASA':'') }}">
+              <input type="hidden" name="TIPO_DOCUMENTO" value="01" />
+              <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $idexam }}">
             </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Apellido paterno">
+            <div class="col-xs-12">
+              <fieldset class="form-group">
+                <input
+                  type="number"
+                  name="NRO_DOCUMENTO"
+                  id="step1_dni"
+                  placeholder="DNI"
+                  aria-label="DNI"
+                  min="0"
+                  max="99999999"
+                  minlength="8"
+                  maxLength="8"
+                  required
+                />
+              </fieldset>
+            </div>
+
+            <fieldset class="form-group">
+              <input
+              type="onlytext"
+              name="NOMBRES"
+              id="names"
+              placeholder="Nombres"
+              required
+              />
             </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Apellido materno">
+            <fieldset class="form-group">
+              <input
+                type="onlytext"
+                name="PRIMER_APELLIDO"
+                id="step1_PRIMER_APELLIDO"
+                placeholder="Apellido paterno"
+                aria-label="Apellido paterno"
+                required
+              />
             </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Nombres">
+            <fieldset class="form-group">
+              <input
+                type="onlytext"
+                name="SEGUNDO_APELLIDO"
+                id="step1_SEGUNDO_APELLIDO"
+                placeholder="Apellido materno"
+                required
+              />
             </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Email">
+            <fieldset class="form-group">
+              <input
+              type="email"
+              name="CORREO_E"
+              id="email"
+              placeholder="Email"
+              required
+              />
             </fieldset>
 
-
-            <fieldset>
-              <label for="s2_venue">Local Inscripción</label>
-              <div>
-                <select id="s2_venue" name="s2_venue">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
+            <fieldset class="form-group">
+              <select
+                name="BLDG_TBL"
+                id="cbx_venue"
+                data-name="Local Inscripción"
+                aria-label="Local inscripción"
+                required>
+                  <option value="" selected disabled hidden>Local inscripción</option>
+              </select>
             </fieldset>
 
-            <fieldset>
-              <label for="s2_type_exam">Tipo de examen</label>
-              <div>
-                <select id="s2_type_exam" name="s2_type_exam">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
+            <!--
+            <fieldset class="form-group">
+              <select
+                name="NIVEL_ESTUDIO"
+                id="cbx_type"
+                data-name="Tipo examen"
+                aria-label="Tipo examen"
+                required>
+                  <option value="" selected disabled hidden>Tipo examen</option>
+              </select>
             </fieldset>
+          -->
 
-            <fieldset>
-              <label for="s2_area">Área</label>
-              <div>
-                <select id="s2_area" name="s2_area">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
+            <!--
+            <fieldset class="form-group">
+              <select
+                name="CODIGO_AREA"
+                id="cbx_area"
+                data-name="Área"
+                aria-label="Área"
+                required>
+                  <option value="" selected disabled hidden>Área</option>
+              </select>
             </fieldset>
+          -->
+          <input type="hidden" value="1" name="CODIGO_AREA">
 
-            <fieldset>
-            <label for="s2_career">Carrera</label>
-              <div>
-                <select id="s2_career" name="s2_career">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
+          <!--
+            <fieldset class="form-group">
+              <select
+                name="CODIGO_CARRERA"
+                id="cbx_carrera"
+                data-name="Carrera"
+                aria-label="Carrera"
+                required>
+                  <option value="" selected disabled hidden>Carrera</option>
+              </select>
             </fieldset>
+          -->
+          <input type="hidden" value="1" name="CODIGO_AREA">
 
-            <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
 
-            <button type="button" name="s2_validate" id="s2_validate" class="validate">Registrar <i class="fa fa-check"></i></button>
+
+          <fieldset class="form-group">
+            <textarea name="COMENTARIO" id="step1_comment" maxlength="500" rows="8" cols="80" placeholder="Comentarios"></textarea>            
+          </fieldset>
+
+            <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>
           </div>
         </div>
+
       </form>
 
     </div>

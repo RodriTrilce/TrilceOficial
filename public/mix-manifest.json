@@ -1,8 +1,11 @@
 {
     "/js/app_academia.js": "/js/app_academia.js",
     "/js/app_colegio.js": "/js/app_colegio.js",
+    "/css/main_colegio.css": "/css/main_colegio.css",
+    "/css/main_academia.css": "/css/main_academia.css",
     "/css/main_home.css": "/css/main_home.css",
     "/css/main.css": "/css/main.css",
+    "/css/admin_main.css": "/css/admin_main.css",
     "/js/admin_main.js": "/js/admin_main.js",
     "/favicon.ico": "/favicon.ico"
 }

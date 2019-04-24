@@ -7,59 +7,6 @@
     "content-hash": "d3b515626aaab800108e87bf87d80246",
     "packages": [
         {
-            "name": "artisaninweb/laravel-soap",
-            "version": "0.3.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/artisaninweb/laravel-soap.git",
-                "reference": "48f16b0d56c565bbe776d3242865e4b5c47d53e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/artisaninweb/laravel-soap/zipball/48f16b0d56c565bbe776d3242865e4b5c47d53e4",
-                "reference": "48f16b0d56c565bbe776d3242865e4b5c47d53e4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-soap": "*",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Artisaninweb\\SoapWrapper\\ServiceProvider"
-                    ],
-                    "aliases": {
-                        "SoapWrapper": "Artisaninweb\\SoapWrapper\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Artisaninweb\\SoapWrapper": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael van de Rijt",
-                    "email": "me@mvdrijt.com"
-                }
-            ],
-            "description": "A SoapClient wrapper integration for Laravel",
-            "keywords": [
-                "client",
-                "laravel",
-                "soap",
-                "wrapper"
-            ],
-            "time": "2018-05-28T08:54:07+00:00"
-        },
-        {
             "name": "aws/aws-php-sns-message-validator",
             "version": "1.5.0",
             "source": {

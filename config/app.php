@@ -165,9 +165,6 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         jdavidbakr\MailTracker\MailTrackerServiceProvider::class,
         Eusonlito\LaravelMeta\MetaServiceProvider::class,
-        Artisaninweb\SoapWrapper\ServiceProvider::class,
-
-
 
     ],
 
@@ -221,8 +218,6 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Str' => Illuminate\Support\Str::class,
         'Meta'    => Eusonlito\LaravelMeta\Facade::class,
-        'SoapWrapper' => Artisaninweb\SoapWrapper\Facade\SoapWrapper::class,
-
     ],
 
 ];

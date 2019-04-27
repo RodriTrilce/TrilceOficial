@@ -39,7 +39,41 @@ class SimulacrumApiController extends Controller
     	return new SimulacrumApiResource($collection);
     }
 
-    public function type(Request $request)
+    public function area(Request $request)
+    {
+        try {
+          $result = $this->client->SI_Area([
+            'SERVICIO'  => $request->SERVICIO   
+          ]);
+
+          $collection = collect($result->SI_AreaResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new SimulacrumApiResource($collection);
+    }
+
+    public function carrera(Request $request)
+    {
+        try {
+          $result = $this->client->SI_Carrera([
+            'SERVICIO'  => $request->SERVICIO,  
+            'CODIGO_AREA'  => $request->CODIGO_AREA
+          ]);
+
+          $collection = collect($result->SI_CarreraResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new SimulacrumApiResource($collection);
+    }
+
+    /*Nivel de Estudios No es Necesario*/
+    /*public function type(Request $request)
     {
         try {
           $result = $this->client->SI_Nivel([
@@ -54,21 +88,7 @@ class SimulacrumApiController extends Controller
         }
 
     	return new SimulacrumApiResource($collection);
-    }
+    }*/
 
-    public function area(Request $request)
-    {
-        try {
-          $result = $this->client->SI_Are([
-            'SERVICIO'  => $request->SERVICIO
-          ]);
-
-          $collection = collect($result->SI_NivelResul);
-
-        } catch ( SoapFault $e ) {
-          dd($e->getMessage());
-        }
-
-    	return new SimulacrumApiResource($collection);
-    }
+    
 }

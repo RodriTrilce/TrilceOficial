@@ -83,11 +83,8 @@
           <div class="col-xs-12 start-xs">
             
             <fieldset>
-              <input 
-                type="hidden"
-                name="SERVICIO"
-                value="{{ ($university->short_name=='UNI'?'ACAUN':'') }}{{ ($university->short_name=='PUCP'?'ACACA':'') }}{{ ($university->short_name=='SM'?'ACASA':'') }}">
               <input type="hidden" name="TIPO_DOCUMENTO" value="01" />
+              <input type="hidden" name="SERVICIO" id="SERVICIO" value="{{ ($university->short_name=='UNI'?'ACAUN':'') }}{{ ($university->short_name=='PUCP'?'ACACA':'') }}{{ ($university->short_name=='SM'?'ACASA':'') }}">
               <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $idexam }}">
             </fieldset>
 
@@ -173,7 +170,7 @@
             </fieldset>
           -->
 
-            <!--
+            
             <fieldset class="form-group">
               <select
                 name="CODIGO_AREA"
@@ -184,10 +181,10 @@
                   <option value="" selected disabled hidden>Área</option>
               </select>
             </fieldset>
-          -->
-          <input type="hidden" value="1" name="CODIGO_AREA">
+          
+          
 
-          <!--
+          
             <fieldset class="form-group">
               <select
                 name="CODIGO_CARRERA"
@@ -198,13 +195,13 @@
                   <option value="" selected disabled hidden>Carrera</option>
               </select>
             </fieldset>
-          -->
-          <input type="hidden" value="1" name="CODIGO_AREA">
+          
+          
 
 
 
           <fieldset class="form-group">
-            <textarea name="COMENTARIO" id="step1_comment" maxlength="500" rows="8" cols="80" placeholder="Comentarios"></textarea>            
+            <textarea name="COMENTARIO" id="COMENTARIO" maxlength="500" rows="8" cols="80" placeholder="Comentarios"></textarea>            
           </fieldset>
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>

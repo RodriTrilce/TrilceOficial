@@ -67,6 +67,7 @@ const SimulacrumExam = function()
      this.setSteps();
      this.setListener();
      this.setContentCbx();
+     this.hearCarreras();
 	}
 
 	this.setVariables = function()
@@ -80,24 +81,58 @@ const SimulacrumExam = function()
 
     // Forms static inputs hidden
     this.input_CODE_URL = document.getElementById('CODE_URL');
+    this.input_SERVICIO = document.getElementById('SERVICIO');
 
     // Cbx variables
     this.cbx_venue   = document.getElementById('cbx_venue'),
-    this.cbx_type    = document.getElementById('cbx_type'),
+    //this.cbx_type    = document.getElementById('cbx_type'),
     this.cbx_area    = document.getElementById('cbx_area'),
     this.cbx_carrera = document.getElementById('cbx_carrera');
   }
+
+   
+  this.hearCarreras = function()
+   {
+     this.cbx_area.addEventListener('change', async () => {
+       this.areaSelect = this.cbx_area.options[this.cbx_area.selectedIndex].value;
+
+       // Set key
+       //document.getElementById(this.cbx_area).value = this.cbx_area.options[this.cbx_area.selectedIndex].text;
+
+       this.cbxReset(this.cbx_carrera);
+       //this.cleanSelect(this.selectVenue, 'Sede');
+       //this.selectCycle.style.cursor  = 'wait';
+       //this.cbx_carrera.disabled      = true;
+
+       //let response = await(await fetch(`/api/academia/enrollment/${this.step1University}/cycle/${this.step1Select}`)).json();
+       let response = await(await fetch('/api/academia/simulacros/carrera', {
+        method: 'POST',
+        body  :  JSON.stringify({
+          SERVICIO: this.input_SERVICIO.value,
+          CODIGO_AREA: this.areaSelect
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })).json();
+       
+      this.fillCbx(this.cbx_carrera, response);
+       
+     });
+   } 
 
   this.setContentCbx = async function(select='')
   {
     switch(select.id)
     {
-      case 'cbx_type':
-        let response = await(await fetch('/api/academia/simulacros/type', {
+      
+
+      /*case 'cbx_carrera':
+        let response = await(await fetch('/api/academia/simulacros/carrera', {
           method: 'POST',
           body  :  JSON.stringify({
-            CODE_URL: this.input_CODE_URL.value,
-            BLDG_TBL: this.cbx_venue.options[this.cbx_venue.selectedIndex].value
+            SERVICIO: this.input_SERVICIO.value,
+            CODIGO_AREA: this.cbx_area.options[this.cbx_area.selectedIndex].value
           }),
           headers: {
             'Content-Type': 'application/json'
@@ -105,7 +140,21 @@ const SimulacrumExam = function()
         })).json();
 
         this.fillCbx(this.cbx_type, response);
-      break;
+      break;*/
+
+      /*case 'cbx_area':
+        let response = await(await fetch('/api/academia/simulacros/area', {
+          method: 'POST',
+          body  :  JSON.stringify({
+            SERVICIO: this.input_SERVICIO.value,
+          }),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })).json();
+
+        this.fillCbx(this.cbx_area, response);
+      break;*/
 
       default:
         // Set content cbx venue
@@ -115,8 +164,16 @@ const SimulacrumExam = function()
           body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
          })).json();
 
+         let response2 = await(await fetch('/api/academia/simulacros/area', {
+          method: 'POST',
+          body  : new URLSearchParams('SERVICIO=' + this.input_SERVICIO.value)
+         })).json();
+         this.fillCbx(this.cbx_area, response2);
+
          this.fillCbx(this.cbx_venue, response);
+         
         }
+                     
     }
   }
 
@@ -151,17 +208,17 @@ const SimulacrumExam = function()
     select.add(v);
 
     switch(select.id){
-      case 'cbx_venue':
-        this.cbxReset(this.cbx_type);
-      break;
-
-      case 'cbx_type':
-        this.cbxReset(this.cbx_area);
-      break;
-
       case 'cbx_area':
         this.cbxReset(this.cbx_carrera);
       break;
+
+      /*case 'cbx_type':
+        this.cbxReset(this.cbx_area);
+      break;*/
+
+      /*case 'cbx_area':
+        this.cbxReset(this.cbx_carrera);
+      break;*/
 
       case 'cbx_carrera':
       break;

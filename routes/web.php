@@ -117,6 +117,9 @@ Route::name('academia-preparation')
   
   });*/
 
+  /*Route::name('academia-soap')
+      ->get('/soap','Academia\SimulacrumExamController@store');*/
+
 // Página Princial (Index)
 Route::name('academia-venues')
       ->get('/academia/sedes', 'Academia\VenuesController@index');

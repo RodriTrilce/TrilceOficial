@@ -156,8 +156,7 @@
                   <option value="" selected disabled hidden>Local inscripción</option>
               </select>
             </fieldset>
-
-            <!--
+            
             <fieldset class="form-group">
               <select
                 name="NIVEL_ESTUDIO"
@@ -165,11 +164,9 @@
                 data-name="Tipo examen"
                 aria-label="Tipo examen"
                 required>
-                  <option value="" selected disabled hidden>Tipo examen</option>
+                  <option value="" selected disabled hidden>Tipo de Examen</option>
               </select>
             </fieldset>
-          -->
-
             
             <fieldset class="form-group">
               <select
@@ -181,9 +178,6 @@
                   <option value="" selected disabled hidden>Área</option>
               </select>
             </fieldset>
-          
-          
-
           
             <fieldset class="form-group">
               <select
@@ -200,9 +194,9 @@
 
 
 
-          <fieldset class="form-group">
+          <!--<fieldset class="form-group">
             <textarea name="COMENTARIO" id="COMENTARIO" maxlength="500" rows="8" cols="80" placeholder="Comentarios"></textarea>            
-          </fieldset>
+          </fieldset>-->
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>
           </div>

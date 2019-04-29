@@ -90,36 +90,6 @@ Route::name('academia-index')
 Route::name('academia-preparation')
       ->get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
-// Test New Preparación
-/*Route::get('/datanew', function () {
-      $opts = array(
-          'ssl' => array('ciphers'=>'RC4-SHA', 'verify_peer'=>false, 'verify_peer_name'=>false)
-      );
-      $params = array ('encoding' => 'UTF-8', 'verifypeer' => false, 'verifyhost' => false, 'soap_version' => SOAP_1_2, 'trace' => 1, 'exceptions' => 1, "connection_timeout" => 180, 'stream_context' => stream_context_create($opts) );
-      $url = "http://10.107.0.253:20169/General/ClientePublicoServicio.svc?wsdl";
-  
-      try{
-          $client = new SoapClient($url,$params);
-          dd($client->__getTypes());
-          dd($client);
-          /*dd($client->FA_Bldg(
-            [
-                  'ANIO_ACADEMICO'  => date("Y"),
-                  'TIPO_SERVICIO'   => 'ACADE',
-                  'SERVICIO'        => 'ACAUN',
-                  'NIVEL_ESTUDIO'   => $request->cycle
-                ]
-          )->GetCitiesByCountryResult);
-      }
-      catch(SoapFault $fault) {
-          echo '<br>'.$fault;
-      }
-  
-  });*/
-
-  /*Route::name('academia-soap')
-      ->get('/soap','Academia\SimulacrumExamController@store');*/
-
 // Página Princial (Index)
 Route::name('academia-venues')
       ->get('/academia/sedes', 'Academia\VenuesController@index');

@@ -39,6 +39,23 @@ class SimulacrumApiController extends Controller
     	return new SimulacrumApiResource($collection);
     }
 
+    public function type(Request $request)
+    {
+        try {
+          $result = $this->client->SI_Nivel([
+            'CODE_URL'  => $request->CODE_URL,
+            'BLDG_TBL'  => $request->BLDG_TBL,
+          ]);
+
+          $collection = collect($result->SI_NivelResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new SimulacrumApiResource($collection);
+    }
+
     public function area(Request $request)
     {
         try {

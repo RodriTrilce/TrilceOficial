@@ -68,6 +68,7 @@ const SimulacrumExam = function()
      this.setListener();
      this.setContentCbx();
      this.hearCarreras();
+     this.loadingType();
 	}
 
 	this.setVariables = function()
@@ -85,12 +86,40 @@ const SimulacrumExam = function()
 
     // Cbx variables
     this.cbx_venue   = document.getElementById('cbx_venue'),
-    //this.cbx_type    = document.getElementById('cbx_type'),
+    this.cbx_type    = document.getElementById('cbx_type'),
     this.cbx_area    = document.getElementById('cbx_area'),
     this.cbx_carrera = document.getElementById('cbx_carrera');
   }
 
-   
+  this.loadingType = function()
+   {
+     this.cbx_venue.addEventListener('change', async () => {
+       this.localSelect = this.cbx_venue.options[this.cbx_venue.selectedIndex].value;
+
+       // Set key
+       //document.getElementById(this.cbx_area).value = this.cbx_area.options[this.cbx_area.selectedIndex].text;
+
+       this.cbxReset(this.cbx_type);
+       //this.cleanSelect(this.selectVenue, 'Sede');
+       //this.selectCycle.style.cursor  = 'wait';
+       //this.cbx_carrera.disabled      = true;
+
+       let response = await(await fetch('/api/academia/simulacros/type', {
+        method: 'POST',
+        body  :  JSON.stringify({
+          CODE_URL: this.input_CODE_URL.value,
+          BLDG_TBL: this.localSelect
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })).json();
+       
+      this.fillCbx(this.cbx_type, response);
+       
+     });
+   } 
+  
   this.hearCarreras = function()
    {
      this.cbx_area.addEventListener('change', async () => {

@@ -15,7 +15,7 @@ class SimulacrumController extends Controller
 
      public function index($university)
      {
-        $university = University::validate( ucwords(Str::slug($university, '')) );
+        $university = University::validate( ucwords(Str::slug($university, ' ')) );
         
         if(!$university)
           return abort(404);

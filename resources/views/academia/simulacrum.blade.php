@@ -15,6 +15,7 @@
     </div>
   </div>
 
+
   <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-sm center-md">
       <div class="row col-xs-12 col-sm-8 col-md-7 start-xs start-sm start-md beginning-container beginning-minus">
@@ -56,166 +57,138 @@
       </div>
     </div>
   </div>
-
   <div class="clearfix"></div>
 
 
 
-  @if($university->short_name=='UNI')
 
-    <br><br>
-<!--
-    <div class="row col-xs-12 center-xs admission-ads">
-            <div class="admission-ads__container">
-              <a href="http://app.trilce.edu.pe/uni/registro/" target="_blank" class="admission-ads__link">
-                <h1>¡Participa en nuestro Simulacro UNI - Ciclo Verano!</h1>
-                <button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
-                  Inscríbete aquí
-                </button>
-              </a>
-            </div>
-    </div>
+{{--
+  @if($university->short_name=='UNI'|| $university->short_name=='PUCP')
 
--->
+  <br><br>
+
+  
+  <div class="row col-xs-12 center-xs">
+  <h1 class="preparation__title preparation__title--and">¡PARTICIPA EN NUESTROS SIMULACROS!</h1>
+  </div>
+
   @endif
 
+  <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
+    <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-sm center-md">
+      <div class="row col-xs-12 col-sm-8 col-md-7 start-xs start-sm start-md beginning-container beginning-minus">
 
-
-  {{-- <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
-    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
-
-      <div class="col-xs-12 col-sm simulacrum-info">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
-        <ul class="simulacrum-info-ul">
-          <li>
-            <span class="simulacrum-info-li-title">Inscripciones:</span>
-            <p>{$data->date_signup}</p>
-          </li>
-          <li>
-            <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>{$data->date_exam}</p>
-          </li>
-          <li>
-            <span class="simulacrum-info-li-title">Hora:</span>
-            <p>$date->hour</p>
-          </li>
-          <li>
-            <span class="simulacrum-info-li-title">Locales</span>
-            <p>$date->avenue</p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-xs-12 col-sm simulacrum-form">
-        <div class="row start-xs step-1 step-container" id="step1">
-          <h2>Regístrate para participar</h2>
-
-          <div class="row col-xs-12 start-xs simulacrum-step1-steps">
-            <div class="col-xs-4">
-              <div class="number">1</div>
-              <div class="text">Ingresa tu DNI</div>
+        <div class="col-xs beginning--item @if($university->short_name=='UNI') beginning--item-active @endif">
+          <a href="/academia/simulacros-uni" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-uni.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">UNI</span>
             </div>
-            <div class="col-xs-4">
-              <div class="number">2</div>
-              <div class="text">Presiona "Vallidar datos"</div>
-            </div>
-            <div class="col-xs-4">
-              <div class="number">3</div>
-              <div class="text">Anota tu código de Inscripción</div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 start-xs">
-            <input type="text" name="f1_dni step-container" id="s1_dni" placeholder="DNI">
-          </div>
-
-          <div class="row col-xs-12">
-            <div class="row col-xs-12 col-sm-6 end-xs start-sm">
-              <button type="button" name="f1_validate" id="f1_validate" class="validate">Validar <i class="fa fa-check"></i></button>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="row start-x step-2 step-container" id="step2">
-          <h2>Déjanos tus datos</h2>
-          <div class="col-xs-12 start-xs">
-            <fieldset>
-              <input type="text" name="s2_dni" id="s2_dni" readonly>
-            </fieldset>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Apellido paterno">
-            </fieldset>
+        <div class="beginning-breakline"></div>
 
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Apellido materno">
-            </fieldset>
-
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Nombres">
-            </fieldset>
-
-            <fieldset>
-              <input type="text" name="" id="" placeholder="Email">
-            </fieldset>
-
-
-            <fieldset>
-              <label for="s2_venue">Local Inscripción</label>
-              <div>
-                <select id="s2_venue" name="s2_venue">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <label for="s2_type_exam">Tipo de examen</label>
-              <div>
-                <select id="s2_type_exam" name="s2_type_exam">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <label for="s2_area">Área</label>
-              <div>
-                <select id="s2_area" name="s2_area">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
-
-            <fieldset>
-            <label for="s2_career">Carrera</label>
-              <div>
-                <select id="s2_career" name="s2_career">
-                  <option value="volvo">Ciclos...</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-            </fieldset>
-
-            <textarea name="name" rows="8" cols="80" placeholder="Comentarios"></textarea>
-
-            <button type="button" name="s2_validate" id="s2_validate" class="validate">Registrar <i class="fa fa-check"></i></button>
-          </div>
+        <div class="col-xs beginning--item @if($university->short_name=='San Marcos') beginning--item-active @endif">
+          <a href="/academia/simulacros-san-marcos" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">SAN MARCOS</span>
+            </div>
+          </a>
         </div>
-      </div>
 
+        <div class="beginning-breakline"></div>
+
+        <div class="col-xs beginning--item @if($university->short_name=='PUCP') beginning--item-active @endif">
+          <a href="/academia/simulacros-pucp" class="item-a">
+            <div class="item-a-container">
+              <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-pucp.svg') }}" alt="Nuevos Inicios">
+              <div class="item-a-preparation">Preparación</div>
+              <span class="item-a-university">CATÓLICA</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
     </div>
-  </div> --}}
+  </div>
+  <div class="clearfix"></div>
+
+  <br><br>
+  @if($university->short_name=='UNI')
+    <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+      <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+      <div class="row col-xs-12 center-xs about-v--vgrid">
+
+          <div class="vgrid-item">
+            <div class="row col-xs-12 start-xs align-content-baseline">
+              
+              <div class="row col-xs-10 col-sm-12 vgrid-item--text" style="text-align: center;">
+                <div class="col-xs-12">
+                  <h3>Simulacro Semestral</h3>
+                  <h3><strong>05 Mayo</strong></h3>
+                </div>
+                <div class="col-xs-12">
+                <a href="/academia/simulacros-uni/inscripcion/aedd8971b7" class="admission-ads__container-cta banner__button-cta banner__button-cta--white">Inscríbete aquí</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vgrid-item">
+            <div class="row col-xs-12 start-xs align-content-baseline">
+              
+              <div class="row col-xs-10 col-sm-12 vgrid-item--text" style="text-align: center;">
+                <div class="col-xs-12">
+                  <h3>Simulacro Anual</h3>
+                  <h3><strong>05 Mayo</strong></h3>
+                </div>
+                <div class="col-xs-12">
+                <a href="/academia/simulacros-uni/inscripcion/8616c8e111" class="admission-ads__container-cta banner__button-cta banner__button-cta--white">Inscríbete aquí</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  @endif
+
+  @if($university->short_name=='San Marcos')
+  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+      <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+      <div class="row col-xs-12 center-xs about-v--vgrid">
+
+    <div class="row col-xs-12 col-sm-9 col-md-8 start-xs" style="text-align: center;">
+      <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros Activos</h2>
+      
+    </div>
+
+      </div>
+      </div>
+  </div>
+  @endif
+
+  @if($university->short_name=='PUCP')
+  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+      <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+      <div class="row col-xs-12 center-xs about-v--vgrid">
+
+      <div class="row col-xs-12 col-sm-9 col-md-8 center-xs">
+      <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros Activos</h2>
+      
+    </div>
+
+      </div>
+      </div>
+  </div>
+  @endif
+
+  <br><br>--}}
 
   <div class="row center-xs center-sm text-init simulacrum container-base">
 

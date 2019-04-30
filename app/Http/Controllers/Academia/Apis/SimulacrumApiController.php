@@ -23,6 +23,27 @@ class SimulacrumApiController extends Controller
       ]);
     }
 
+    public function data(Request $request)
+    {
+        try {
+          $result = $this->client->SI_Dato([
+            'CODE_URL'  => $request->CODE_URL
+          ]);
+
+          $collection = collect($result->SI_DatoResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+      //return new SimulacrumApiResource($collection);
+      //return view("/academia/simulacrum_exam", compact('collection'));
+      //return view('/academia/simulacros-uni/inscripcion/aedd8971b7')->with([
+        //'post'      => $post,
+        //'related'   => $related
+      //]);
+    }
+
     public function venue(Request $request)
     {
         try {

@@ -68,6 +68,7 @@ class SimulacrumExamController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		return new SimulacrumApiResource($collection);
+		//return new SimulacrumApiResource($collection);
+		return redirect()->route('academia-index');
 	}
 }

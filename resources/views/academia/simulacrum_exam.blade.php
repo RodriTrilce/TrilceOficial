@@ -13,14 +13,8 @@
       </div>
     </div>
   </div>
-
-
   <div class="clearfix"></div>
-
-
-
   @if($university->short_name=='UNI')
-
     <br><br>
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
@@ -28,9 +22,6 @@
             </div>
     </div>
   @endif
-
-
-
   <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
     <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
@@ -39,7 +30,7 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Inscripciones:</span>
-            <p>{$data->date_signup}</p>
+            <p>acb</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
@@ -84,7 +75,7 @@
             
             <fieldset>
               <input type="hidden" name="TIPO_DOCUMENTO" value="01" />
-              <input type="hidden" name="SERVICIO" id="SERVICIO" value="{{ ($university->short_name=='UNI'?'ACAUN':'') }}{{ ($university->short_name=='PUCP'?'ACACA':'') }}{{ ($university->short_name=='SM'?'ACASA':'') }}">
+              <input type="hidden" name="SERVICIO" id="SERVICIO" value="{{ ($university->short_name=='UNI'?'ACAUN':'') }}{{ ($university->short_name=='PUCP'?'ACACA':'') }}{{ ($university->short_name=='San Marcos'?'ACASM':'') }}">
               <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $idexam }}">
             </fieldset>
 
@@ -189,11 +180,6 @@
                   <option value="" selected disabled hidden>Carrera</option>
               </select>
             </fieldset>
-          
-          
-
-
-
           <!--<fieldset class="form-group">
             <textarea name="COMENTARIO" id="COMENTARIO" maxlength="500" rows="8" cols="80" placeholder="Comentarios"></textarea>            
           </fieldset>-->

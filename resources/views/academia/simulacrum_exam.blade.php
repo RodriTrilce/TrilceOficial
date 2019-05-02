@@ -65,7 +65,7 @@
 
         </div>
 
-        <div class="">
+        <div class="row start-x step-2 step-container">
           <h2>Déjanos tus datos</h2>
           <div class="col-xs-12 start-xs">
             

@@ -75,12 +75,12 @@
               <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $idexam }}">
             </fieldset>
 
-            <div class="col-xs-12">
+           
               <fieldset class="form-group">
                 <input
                   type="number"
                   name="NRO_DOCUMENTO"
-                  id="step1_dni"
+                  
                   placeholder="DNI"
                   aria-label="DNI"
                   min="0"
@@ -90,13 +90,13 @@
                   required
                 />
               </fieldset>
-            </div>
+            
 
             <fieldset class="form-group">
               <input
               type="onlytext"
               name="NOMBRES"
-              id="names"
+              
               placeholder="Nombres"
               required
               />
@@ -106,7 +106,7 @@
               <input
                 type="onlytext"
                 name="PRIMER_APELLIDO"
-                id="step1_PRIMER_APELLIDO"
+                
                 placeholder="Apellido paterno"
                 aria-label="Apellido paterno"
                 required
@@ -117,7 +117,7 @@
               <input
                 type="onlytext"
                 name="SEGUNDO_APELLIDO"
-                id="step1_SEGUNDO_APELLIDO"
+                
                 placeholder="Apellido materno"
                 required
               />
@@ -193,7 +193,7 @@
 @endsection
 
 @section('scripts')
-    
+   
   @parent
 
 @endsection

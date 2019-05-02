@@ -49,27 +49,23 @@
 
       <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
         @csrf
-        <div class="row start-xs step-1 step-container" data-step="0">
+        <div class="row start-xs step-1 step-container">
           <h2>Regístrate para participar</h2>
 
           <div class="row col-xs-12 start-xs simulacrum-step1-steps">
-            <div class="col-xs-4">
+            <div class="col-xs-6">
               <div class="number">1</div>
               <div class="text">Ingresa tus datos</div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-6">
               <div class="number">2</div>
               <div class="text">Presiona "Registrarme"</div>
-            </div>
-            <div class="col-xs-4">
-              <div class="number">3</div>
-              <div class="text">Anota tu código de Inscripción</div>
             </div>
           </div>
 
         </div>
 
-        <div class="row start-x step-2 step-container" data-step="1">
+        <div class="row start-x step-2 step-container">
           <h2>Déjanos tus datos</h2>
           <div class="col-xs-12 start-xs">
             

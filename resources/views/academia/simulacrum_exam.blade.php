@@ -53,11 +53,11 @@
           <h2>Regístrate para participar</h2>
 
           <div class="row col-xs-12 start-xs simulacrum-step1-steps">
-            <div class="col-xs-6">
+            <div class="col-xs-4">
               <div class="number">1</div>
               <div class="text">Ingresa tus datos</div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-4">
               <div class="number">2</div>
               <div class="text">Presiona "Registrarme"</div>
             </div>
@@ -75,12 +75,12 @@
               <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $idexam }}">
             </fieldset>
 
-           
+            <div class="col-xs-12">
               <fieldset class="form-group">
                 <input
                   type="number"
                   name="NRO_DOCUMENTO"
-                  
+                  id="step1_dni"
                   placeholder="DNI"
                   aria-label="DNI"
                   min="0"
@@ -90,13 +90,13 @@
                   required
                 />
               </fieldset>
-            
+            </div>
 
             <fieldset class="form-group">
               <input
               type="onlytext"
               name="NOMBRES"
-              
+              id="names"
               placeholder="Nombres"
               required
               />
@@ -106,7 +106,7 @@
               <input
                 type="onlytext"
                 name="PRIMER_APELLIDO"
-                
+                id="step1_PRIMER_APELLIDO"
                 placeholder="Apellido paterno"
                 aria-label="Apellido paterno"
                 required
@@ -117,7 +117,7 @@
               <input
                 type="onlytext"
                 name="SEGUNDO_APELLIDO"
-                
+                id="step1_SEGUNDO_APELLIDO"
                 placeholder="Apellido materno"
                 required
               />
@@ -193,7 +193,7 @@
 @endsection
 
 @section('scripts')
-   
+    page = 'simulacrum-exam';
   @parent
 
 @endsection

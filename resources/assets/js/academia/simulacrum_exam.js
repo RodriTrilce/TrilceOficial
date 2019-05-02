@@ -64,7 +64,7 @@ const SimulacrumExam = function()
 	{
      Validation.init(document.forms[0], true);
      this.setVariables();
-     this.setSteps();
+     //this.setSteps();
      this.setListener();
      this.setContentCbx();
      this.hearCarreras();

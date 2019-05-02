@@ -67,8 +67,8 @@ const SimulacrumExam = function()
      //this.setSteps();
      this.setListener();
      this.setContentCbx();
-     this.hearCarreras();
-     this.loadingType();
+     this.setCarreras();
+     this.setType();
 	}
 
 	this.setVariables = function()
@@ -91,7 +91,7 @@ const SimulacrumExam = function()
     this.cbx_carrera = document.getElementById('cbx_carrera');
   }
 
-  this.loadingType = function()
+  this.setType = function()
    {
      this.cbx_venue.addEventListener('change', async () => {
        this.localSelect = this.cbx_venue.options[this.cbx_venue.selectedIndex].value;
@@ -120,7 +120,7 @@ const SimulacrumExam = function()
      });
    } 
   
-  this.hearCarreras = function()
+  this.setCarreras = function()
    {
      this.cbx_area.addEventListener('change', async () => {
        this.areaSelect = this.cbx_area.options[this.cbx_area.selectedIndex].value;
@@ -150,60 +150,23 @@ const SimulacrumExam = function()
      });
    } 
 
-  this.setContentCbx = async function(select='')
+  this.setContentCbx = function()
   {
-    switch(select.id)
-    {
+    window.onload = async () => {
+      let response = await(await fetch('/api/academia/simulacros/venue', {
+       method: 'POST',
+       body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
+      })).json();
+
+      let response2 = await(await fetch('/api/academia/simulacros/area', {
+       method: 'POST',
+       body  : new URLSearchParams('SERVICIO=' + this.input_SERVICIO.value)
+      })).json();
+      this.fillCbx(this.cbx_area, response2);
+
+      this.fillCbx(this.cbx_venue, response);
       
-
-      /*case 'cbx_carrera':
-        let response = await(await fetch('/api/academia/simulacros/carrera', {
-          method: 'POST',
-          body  :  JSON.stringify({
-            SERVICIO: this.input_SERVICIO.value,
-            CODIGO_AREA: this.cbx_area.options[this.cbx_area.selectedIndex].value
-          }),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })).json();
-
-        this.fillCbx(this.cbx_type, response);
-      break;*/
-
-      /*case 'cbx_area':
-        let response = await(await fetch('/api/academia/simulacros/area', {
-          method: 'POST',
-          body  :  JSON.stringify({
-            SERVICIO: this.input_SERVICIO.value,
-          }),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })).json();
-
-        this.fillCbx(this.cbx_area, response);
-      break;*/
-
-      default:
-        // Set content cbx venue
-        window.onload = async () => {
-         let response = await(await fetch('/api/academia/simulacros/venue', {
-          method: 'POST',
-          body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
-         })).json();
-
-         let response2 = await(await fetch('/api/academia/simulacros/area', {
-          method: 'POST',
-          body  : new URLSearchParams('SERVICIO=' + this.input_SERVICIO.value)
-         })).json();
-         this.fillCbx(this.cbx_area, response2);
-
-         this.fillCbx(this.cbx_venue, response);
-         
-        }
-                     
-    }
+     }
   }
 
   this.fillCbx = function(select, response)

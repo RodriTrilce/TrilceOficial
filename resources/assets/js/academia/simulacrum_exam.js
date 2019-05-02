@@ -77,8 +77,8 @@ const SimulacrumExam = function()
     this.form = document.querySelector('.simulacrum-form');
 
     // Steps variables
-		this.steps = this.form.querySelectorAll('[data-step]');
-    this.StepsButtons = this.form.querySelectorAll('[data-step-button]');
+		//this.steps = this.form.querySelectorAll('[data-step]');
+    //this.StepsButtons = this.form.querySelectorAll('[data-step-button]');
 
     // Forms static inputs hidden
     this.input_CODE_URL = document.getElementById('CODE_URL');

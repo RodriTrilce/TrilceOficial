@@ -193,7 +193,7 @@
 @endsection
 
 @section('scripts')
-    page = 'simulacrum-exam';
+    
   @parent
 
 @endsection

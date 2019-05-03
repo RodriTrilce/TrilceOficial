@@ -83,6 +83,10 @@
       '#modal-1'
     @endif
 
+    @if(session('simulacrum'))
+      '#modal-1'
+    @endif
+
     @if(session('contact'))
       '#modal-1'
     @endif

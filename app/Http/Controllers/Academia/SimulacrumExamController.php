@@ -69,6 +69,13 @@ class SimulacrumExamController extends Controller
 			dd($e->getMessage());
 		}
 		//return new SimulacrumApiResource($collection);
-		return redirect()->route('academia-index');
+		/*return view('/academia/simulacrum_exam_exito')->with([
+			'university' => $request->NIVEL_ESTUDIO,
+			'idexam' => $request->idexam
+		]);;*/
+
+		return redirect()->route('academia-index')->with([
+			'simulacrum'  => true
+		  ]);
 	}
 }

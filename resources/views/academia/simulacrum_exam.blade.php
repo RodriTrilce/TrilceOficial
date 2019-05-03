@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="clearfix"></div>
-  @if($university->short_name=='UNI')
+  @if($university->short_name=='UNI' || $university->short_name=='San Marcos' || $university->short_name=='PUCP')
     <br><br>
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">

@@ -69,14 +69,11 @@ class SimulacrumExamController extends Controller
 			dd($e->getMessage());
 		}
 		//return new SimulacrumApiResource($collection);
-		/*return view('/academia/simulacrum_exam_exito')->with([
-			'university' => $request->NIVEL_ESTUDIO,
-			'idexam' => $request->idexam
-		]);;*/
+		return view('/academia/simulacrum_exam_exito');
 
-		return redirect()->route('academia-index')->with([
-			'enrollment'  => true,
-			'dni'         => encrypt($request->step1_dni)
-		  ]);
+		//return redirect()->route('academia-index')->with([
+			//'enrollment'  => true,
+			//'dni'         => encrypt($request->step1_dni)
+		 // ]);
 	}
 }

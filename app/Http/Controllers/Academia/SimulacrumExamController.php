@@ -75,7 +75,8 @@ class SimulacrumExamController extends Controller
 		]);;*/
 
 		return redirect()->route('academia-index')->with([
-			'simulacrum'  => true
+			'enrollment'  => true,
+			'dni'         => encrypt($request->step1_dni)
 		  ]);
 	}
 }

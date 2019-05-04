@@ -25,7 +25,7 @@
           <h1 class="about-history--title">Registro Exitoso</h1>
           <div class="about-history--pcontainer">
             <p>
-              Gracias por permitinos alcanzar tus metas.
+              Gracias por permitirnos ayudarte a alcanzar tus metas.
             </p>
           </div>
         </div>

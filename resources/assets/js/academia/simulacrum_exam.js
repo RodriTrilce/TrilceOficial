@@ -69,6 +69,7 @@ const SimulacrumExam = function()
      this.setContentCbx();
      this.setCarreras();
      this.setType();
+     this.setDatos();
 	}
 
 	this.setVariables = function()
@@ -91,19 +92,21 @@ const SimulacrumExam = function()
     this.cbx_carrera = document.getElementById('cbx_carrera');
   }
 
+  
+
   this.setType = function()
    {
+
      this.cbx_venue.addEventListener('change', async () => {
        this.localSelect = this.cbx_venue.options[this.cbx_venue.selectedIndex].value;
 
        // Set key
        //document.getElementById(this.cbx_area).value = this.cbx_area.options[this.cbx_area.selectedIndex].text;
 
-       this.cbxReset(this.cbx_type);
-       //this.cleanSelect(this.selectVenue, 'Sede');
-       //this.selectCycle.style.cursor  = 'wait';
-       //this.cbx_carrera.disabled      = true;
-
+       this.cleanSelect(this.cbx_type, 'Tipo de Examen');
+       this.cbx_type.style.cursor  = 'wait';
+       this.cbx_type.disabled      = true;
+     
        let response = await(await fetch('/api/academia/simulacros/type', {
         method: 'POST',
         body  :  JSON.stringify({
@@ -114,8 +117,13 @@ const SimulacrumExam = function()
           'Content-Type': 'application/json'
         }
       })).json();
-       
+
+      if(response){
+        this.cbx_type.style.cursor  = 'auto';
+        this.cbx_type.disabled = false;
       this.fillCbx(this.cbx_type, response);
+      } 
+      
        
      });
    } 
@@ -128,10 +136,10 @@ const SimulacrumExam = function()
        // Set key
        //document.getElementById(this.cbx_area).value = this.cbx_area.options[this.cbx_area.selectedIndex].text;
 
-       this.cbxReset(this.cbx_carrera);
-       //this.cleanSelect(this.selectVenue, 'Sede');
-       //this.selectCycle.style.cursor  = 'wait';
-       //this.cbx_carrera.disabled      = true;
+       //this.cbxReset(this.cbx_carrera);
+       this.cleanSelect(this.cbx_carrera, 'Carrera');
+       this.cbx_carrera.style.cursor  = 'wait';
+       this.cbx_carrera.disabled      = true;
 
        //let response = await(await fetch(`/api/academia/enrollment/${this.step1University}/cycle/${this.step1Select}`)).json();
        let response = await(await fetch('/api/academia/simulacros/carrera', {
@@ -145,7 +153,11 @@ const SimulacrumExam = function()
         }
       })).json();
        
+      if(response){
+        this.cbx_carrera.style.cursor  = 'auto';
+        this.cbx_carrera.disabled = false;
       this.fillCbx(this.cbx_carrera, response);
+      } 
        
      });
    } 
@@ -186,6 +198,18 @@ const SimulacrumExam = function()
       s.value = response.data.ItemOfstring.Value;
       select.add(s);
     }
+  }
+
+  this.cleanSelect = function(select, title)
+  {
+    while (select.options.length) select.remove(0);
+    let v = document.createElement('option');
+    v.text = title;
+    v.selected = true;
+    v.disabled = true;
+    v.hidden   = true;
+    select.add(v);
+    return select;
   }
 
   this.cbxReset = function(select)
@@ -233,7 +257,18 @@ const SimulacrumExam = function()
 		Array.from(this.steps).forEach( step => {
 
     });
-	}
+  }
+  
+  this.activeCloseAlert = function(active = true)
+   {
+      if(active)
+        window.onbeforeunload = function()
+        {
+          return "Ha intentado salir de esta pagina. Si ha realizado algun cambio en los campos sin hacer clic en el boton Guardar, los cambios se perderan. Seguro que desea salir de esta pagina? ";
+        }
+      else
+        window.onbeforeunload = false;
+   }
 
 }
 

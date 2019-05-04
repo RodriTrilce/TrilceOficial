@@ -145,6 +145,14 @@ Route::get('/academia/lista-de-cachimbos', function(){
 Route::name('academia-matholympics')
       ->get('/academia/olimpiadas-matematicas', 'Academia\MathOlympicsController@index');
 
+// Inscripcion Olimpiadas Matematicas (RegisterMathOlympics)
+Route::name('academia-matholympics-register')
+      ->get('/academia/olimpiadas-matematicas/inscripcion/{codurl}', 'Academia\MathOlympicsRegisterController@index');
+
+Route::name('academia-matholympics-register-finish')
+      ->post('/academia/olimpiadas-matematicas/inscripcion/{codurl}', 'Academia\MathOlympicsRegisterController@store');
+
+
 
 // Nosotros (AboutUs)
 Route::name('academia-aboutus')

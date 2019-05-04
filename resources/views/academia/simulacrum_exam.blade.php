@@ -29,20 +29,20 @@
         <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
         <ul class="simulacrum-info-ul">
           <li>
-            <span class="simulacrum-info-li-title">Inscripciones:</span>
-            <p>acb</p>
+            <span class="simulacrum-info-li-title">Descripción:</span>
+            <p id='data'>Simulacro UNI</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>{$data->date_exam}</p>
-          </li>
-          <li>
-            <span class="simulacrum-info-li-title">Hora:</span>
-            <p>$date->hour</p>
+            <p>04/05/2019 - 09/05/2019</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales</span>
-            <p>$date->avenue</p>
+            <p>Comas</p>
+            <p>Los Olivos Academia</p>
+            <p>Santa Beatriz</p>
+            <p>Torrico</p>
+            <p>Villa el Salvador Academia</p>
           </li>
         </ul>
       </div>

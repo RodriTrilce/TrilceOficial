@@ -15,7 +15,7 @@
 </div>
 
 <div class="clearfix"></div>
-
+<br><br>
   {{--@if($university->short_name=='UNI' || $university->short_name=='San Marcos' || $university->short_name=='PUCP')--}}
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
@@ -24,8 +24,34 @@
     </div>
   {{--@endif--}}
 
+  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+    <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
-<form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
+      <div class="col-xs-12 col-sm simulacrum-info">
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información de Olimpiada</h2>
+        <ul class="simulacrum-info-ul">
+          <li>
+            <span class="simulacrum-info-li-title">Descripción:</span>
+            <p id='data'>Olimpiadas de Matemática SJL</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Fecha del examen:</span>
+            <p>13/05/2019 - Aptitud Académica y Humanidades</p>
+            <p>15/05/2019 - Matemática</p>
+            <p>17/05/2019 - Física y Química</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Locales</span>
+            <p>Comas</p>
+            <p>Los Olivos Academia</p>
+            <p>Santa Beatriz</p>
+            <p>Torrico</p>
+            <p>Villa el Salvador Academia</p>
+          </li>
+        </ul>
+      </div>
+
+      <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
         @csrf
         <div class="row start-xs step-1 step-container">
           <h2>Regístrate para participar</h2>
@@ -134,13 +160,24 @@
                 aria-label="Tipo examen"
                 required>
                   <option value="" selected disabled hidden>Nivel de Estudios</option>
+                  <option value="1">Primaria 1er Grado</option>
+                  
               </select>
             </fieldset>
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>
           </div>
         </div>
-
       </form>
+
+    </div>
+  </div>
+
       @include('academia.partials.card_bottom')
+@endsection
+
+@section('scripts')
+    page = 'olympics';
+  @parent
+
 @endsection

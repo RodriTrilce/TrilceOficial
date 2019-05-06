@@ -131,7 +131,7 @@
               <div class="row col-xs-12 col-sm-12 vgrid-item--text" style="text-align: center;">
                 <div class="col-xs-12">
                   <h3>Simulacro Anual y Semestral</h3>
-                  <h3><strong>04 Mayo</strong></h3>
+                  <h3><strong>13, 15, 17 Mayo</strong></h3>
                 </div>
                 <div class="col-xs-12">
                 <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" class="admission-ads__container-cta banner__button-cta banner__button-cta--white">Inscríbete aquí</a>

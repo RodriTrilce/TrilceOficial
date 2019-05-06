@@ -19,6 +19,7 @@ import Preparation from './academia/preparation';
 import backgroundEffect from './academia/blog';
 import AcorditionProposal from './colegio/educational_proposal';
 import SimulacrumExam from './academia/simulacrum_exam';
+import OlimpicsRegister from './academia/olympics';
 
 window.SlimSelect = SlimSelect;
 
@@ -228,5 +229,13 @@ String.prototype.capitalize = function(){
  */
 if(page == 'simulacrum-exam'){
   let exam = new SimulacrumExam();
+  exam.init();
+}
+
+/**!
+ *  Math Olympics > Register
+ */
+if(page == 'olympics'){
+  let exam = new OlimpicsRegister();
   exam.init();
 }

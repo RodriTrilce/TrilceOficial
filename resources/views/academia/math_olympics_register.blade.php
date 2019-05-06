@@ -1,3 +1,30 @@
+{{! $breadcrumbs = Breadcrumbs::render('academia-matholympics') }}
+@extends('academia.layouts.template')
+@section('title', 'Olimpiadas Matemáticas')
+@section('content')
+
+<div class="header-double-top">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
+      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-matholympics"></div>
+      <div class="header-double-border"></div>
+      <div class="header-double-title">
+        <h1>Olimpiadas de Matemática</h1>
+      </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+  {{--@if($university->short_name=='UNI' || $university->short_name=='San Marcos' || $university->short_name=='PUCP')--}}
+    <div class="row col-xs-12 center-xs admission-ads">
+            <div class="admission-ads__container">
+                <h1> ¡ Participa de en nuestra Olimpiada SJL !</h1>
+            </div>
+    </div>
+  {{--@endif--}}
+
+
 <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
         @csrf
         <div class="row start-xs step-1 step-container">
@@ -90,18 +117,15 @@
                     <option value="2">PARTICULAR</option>
                 </select>
             </fieldset>
-
             <fieldset class="form-group">
-              <select
-                name="BLDG_TBL"
-                id="cbx_venue"
-                data-name="Local Inscripción"
-                aria-label="Local inscripción"
-                required>
-                  <option value="" selected disabled hidden>Local inscripción</option>
-              </select>
+              <input
+              type="onlytext"
+              name="COLEGIO_PROCEDENCIA"
+              id="colegio_procedencia"
+              placeholder="Colegio de Procedencia"
+              required
+              />
             </fieldset>
-            
             <fieldset class="form-group">
               <select
                 name="NIVEL_ESTUDIO"
@@ -109,14 +133,14 @@
                 data-name="Tipo examen"
                 aria-label="Tipo examen"
                 required>
-                  <option value="" selected disabled hidden>Tipo de Examen</option>
+                  <option value="" selected disabled hidden>Nivel de Estudios</option>
               </select>
             </fieldset>
-                      
-            
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>
           </div>
         </div>
 
       </form>
+      @include('academia.partials.card_bottom')
+@endsection

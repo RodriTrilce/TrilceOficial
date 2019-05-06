@@ -13,6 +13,7 @@
       </div>
     </div>
   </div>
+
   <div class="clearfix"></div>
   @if($university->short_name=='UNI' || $university->short_name=='San Marcos' || $university->short_name=='PUCP')
     <br><br>
@@ -34,7 +35,9 @@
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>04/05/2019 - 09/05/2019</p>
+            <p>13/05/2019 - Aptitud Académica y Humanidades</p>
+            <p>15/05/2019 - Matemática</p>
+            <p>17/05/2019 - Física y Química</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales</span>

@@ -24,24 +24,24 @@
     </div>
   {{--@endif--}}
 
-  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+  <div class="row col-xs-12 start-xs center-sm olympic container-base">
     <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
-      <div class="col-xs-12 col-sm simulacrum-info">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información de Olimpiada</h2>
-        <ul class="simulacrum-info-ul">
+      <div class="col-xs-12 col-sm olympic-info">
+        <h2 class="olympic-info-title olympic-info-title-bottom">Información de Olimpiada</h2>
+        <ul class="olympic-info-ul">
           <li>
-            <span class="simulacrum-info-li-title">Descripción:</span>
+            <span class="olympic-info-li-title">Descripción:</span>
             <p id='data'>Olimpiadas de Matemática SJL</p>
           </li>
           <li>
-            <span class="simulacrum-info-li-title">Fecha del examen:</span>
+            <span class="olympic-info-li-title">Fecha del examen:</span>
             <p>13/05/2019 - Aptitud Académica y Humanidades</p>
             <p>15/05/2019 - Matemática</p>
             <p>17/05/2019 - Física y Química</p>
           </li>
           <li>
-            <span class="simulacrum-info-li-title">Locales</span>
+            <span class="olympic-info-li-title">Locales</span>
             <p>Comas</p>
             <p>Los Olivos Academia</p>
             <p>Santa Beatriz</p>
@@ -51,12 +51,12 @@
         </ul>
       </div>
 
-      <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
+      <form class="col-xs-12 col-sm col-md-7 col-lg-7 olympic-form" name="olimpiada_form" id="olimpiada_form" method="post" action="">
         @csrf
         <div class="row start-xs step-1 step-container">
           <h2>Regístrate para participar</h2>
 
-          <div class="row col-xs-12 start-xs simulacrum-step1-steps">
+          <div class="row col-xs-12 start-xs olympic-step1-steps">
             <div class="col-xs-4">
               <div class="number">1</div>
               <div class="text">Ingresa tus datos</div>
@@ -159,9 +159,7 @@
                 data-name="Tipo examen"
                 aria-label="Tipo examen"
                 required>
-                  <option value="" selected disabled hidden>Nivel de Estudios</option>
-                  <option value="1">Primaria 1er Grado</option>
-                  
+                  <option value="" selected disabled hidden>Nivel de Estudios</option>                  
               </select>
             </fieldset>
 

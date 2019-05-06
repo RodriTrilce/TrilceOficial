@@ -63,16 +63,63 @@ const OlimpicsRegister = function()
 	this.init = function()
 	{
      Validation.init(document.forms[0], true);
-     //this.setVariables();
+     this.setVariables();
      //this.setSteps();
      //this.setListener();
-     //this.setContentCbx();
+     this.setContentCbx();
      //this.setCarreras();
      //this.setType();
      //this.setDatos();
-	}
+  }
+  
+  this.setVariables = function()
+	{
+    // Form global
+    this.form = document.querySelector('.olympic-form');
 
-	
+    // Steps variables
+		//this.steps = this.form.querySelectorAll('[data-step]');
+    //this.StepsButtons = this.form.querySelectorAll('[data-step-button]');
+
+    // Forms static inputs hidden
+    this.input_CODE_URL = document.getElementById('CODE_URL');
+
+    // Cbx variables
+   
+    this.cbx_type    = document.getElementById('cbx_type');
+  }
+
+	this.setContentCbx = function()
+  {
+    window.onload = async () => {
+      let response = await(await fetch('/api/academia/olimpiadas-matematicas/type', {
+       method: 'POST',
+       body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
+      })).json();
+
+      this.fillCbx(this.cbx_type, response);
+      
+     }
+  }
+
+  this.fillCbx = function(select, response)
+  {
+    if(Array.isArray(response.data.ItemOfstring))
+    {
+      Object.keys(response.data.ItemOfstring).forEach(function(e) {
+        let s = document.createElement('option');
+        s.text = response.data.ItemOfstring[e].Text;
+        s.value = response.data.ItemOfstring[e].Value;
+        select.add(s);
+      });
+
+    }else{
+      let s = document.createElement('option');
+      s.text = response.data.ItemOfstring.Text;
+      s.value = response.data.ItemOfstring.Value;
+      select.add(s);
+    }
+  }
 
 }
 

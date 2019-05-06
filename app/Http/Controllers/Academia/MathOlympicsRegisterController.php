@@ -31,6 +31,15 @@ class MathOlympicsRegisterController extends Controller
     {
         return view('/academia/math_olympics_register')->with([
 			'codurl' => $request->codurl
+        ]);
+        
+        //$university = University::validate( ucwords(Str::slug($request->university, ' ')) );
+
+		//if(!$university)
+		//return abort(404);
+
+		return view('/academia/math_olympics_register')->with([
+			'codurl' => $request->codurl
 		]);
     }
 

@@ -135,6 +135,38 @@
               required
               />
             </fieldset>
+            
+            <fieldset class="form-group">
+                <select name="DEPTO_UBIG" id="cbx_ubigeo" data-name="Departamento" aria-label="Departamento" required>
+                    <option value="" selected="" disabled="" hidden="">Departamento</option>
+                    <option value="01">Amazonas</option>
+                    <option value="02">Ancash</option>
+                    <option value="03">Apurimac</option>
+                    <option value="04">Arequipa</option>
+                    <option value="05">Ayacucho</option>
+                    <option value="06">Cajamarca</option>
+                    <option value="07">Callao</option>
+                    <option value="08">Cusco</option>
+                    <option value="09">Huancavelica</option>
+                    <option value="10">Huanuco</option>
+                    <option value="11">Ica</option>
+                    <option value="12">Junin</option>
+                    <option value="13">La Libertad</option>
+                    <option value="14">Lambayeque</option>
+                    <option value="15">Lima</option>
+                    <option value="16">Loreto</option>
+                    <option value="17">Madre de Dios</option>
+                    <option value="18">Moquegua</option>
+                    <option value="19">Pasco</option>
+                    <option value="20">Piura</option>
+                    <option value="21">Puno</option>
+                    <option value="22">San Martin</option>
+                    <option value="23">Tacna</option>
+                    <option value="24">Tumbes</option>
+                    <option value="25">Ucayali</option>
+                    <option value="99">Extranjero</option>
+                </select>
+            </fieldset>
 
             <fieldset class="form-group">
                 <select name="TIPO_INSTITUCION" id="cbx_institucion" data-name="Tipo de Institución" aria-label="Tipo de Institución" required>
@@ -143,6 +175,7 @@
                     <option value="2">PARTICULAR</option>
                 </select>
             </fieldset>
+
             <fieldset class="form-group">
               <input
               type="onlytext"
@@ -152,6 +185,7 @@
               required
               />
             </fieldset>
+
             <fieldset class="form-group">
               <select
                 name="NIVEL_ESTUDIO"

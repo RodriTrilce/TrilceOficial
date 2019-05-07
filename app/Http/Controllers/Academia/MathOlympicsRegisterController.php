@@ -29,10 +29,6 @@ class MathOlympicsRegisterController extends Controller
      */
     public function index(Request $request)
     {
-        return view('/academia/math_olympics_register')->with([
-			'codurl' => $request->codurl
-        ]);
-        
         //$university = University::validate( ucwords(Str::slug($request->university, ' ')) );
 
 		//if(!$university)
@@ -61,51 +57,33 @@ class MathOlympicsRegisterController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $data = [];
+		$data['request'] = [
+            'CODE_URL' 			    => $request->CODE_URL,
+            'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO,
+            'NOMBRES'	            => $request->NOMBRES,
+			'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO,
+            'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO,
+            'CORREO_E'	            => $request->CORREO_E,
+            'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
+            'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
+            'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
+			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
+		];
+		try {
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+			$result = $this->client->SimulacroInscripcion($data);
+			$collection = collect($result->SimulacroInscripcionResult);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+		} catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		}
+		//return new SimulacrumApiResource($collection);
+		return view('/academia/simulacrum_exam_exito');
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+		//return redirect()->route('academia-index')->with([
+			//'enrollment'  => true,
+			//'dni'         => encrypt($request->step1_dni)
+		 // ]);
     }
 }

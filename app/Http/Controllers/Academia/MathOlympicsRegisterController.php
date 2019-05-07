@@ -78,8 +78,8 @@ class MathOlympicsRegisterController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		//return new SimulacrumApiResource($collection);
-		return view('/academia/simulacrum_exam_exito');
+		return new SimulacrumApiResource($collection);
+		//return view('/academia/simulacrum_exam_exito');
 
 		//return redirect()->route('academia-index')->with([
 			//'enrollment'  => true,

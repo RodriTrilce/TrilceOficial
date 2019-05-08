@@ -87,6 +87,10 @@
       '#modal-1'
     @endif
 
+    @if(session('olympic'))
+      '#modal-1'
+    @endif
+
     @if(session('contact'))
       '#modal-1'
     @endif

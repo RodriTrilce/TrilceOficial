@@ -69,7 +69,7 @@ const SimulacrumExam = function()
      this.setContentCbx();
      this.setCarreras();
      this.setType();
-     this.setDatos();
+     //this.setDatos();
 	}
 
 	this.setVariables = function()
@@ -131,6 +131,7 @@ const SimulacrumExam = function()
   this.setCarreras = function()
    {
      this.cbx_area.addEventListener('change', async () => {
+
        this.areaSelect = this.cbx_area.options[this.cbx_area.selectedIndex].value;
 
        // Set key
@@ -170,13 +171,14 @@ const SimulacrumExam = function()
        body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
       })).json();
 
+      this.fillCbx(this.cbx_venue, response);
+
       let response2 = await(await fetch('/api/academia/simulacros/area', {
        method: 'POST',
        body  : new URLSearchParams('SERVICIO=' + this.input_SERVICIO.value)
       })).json();
-      this.fillCbx(this.cbx_area, response2);
 
-      this.fillCbx(this.cbx_venue, response);
+      this.fillCbx(this.cbx_area, response2);
       
      }
   }
@@ -240,6 +242,7 @@ const SimulacrumExam = function()
       break;
     }
   }
+  
 
   this.setListener = function()
   {
@@ -247,7 +250,7 @@ const SimulacrumExam = function()
     // Listeners cbx
     this.cbx_venue.addEventListener('change', evt => {
       //this.cbxReset(this.cbx_type);
-      //this.setContentCbx(this.cbx_type);
+      this.setContentCbx(this.cbx_type);
     });
 
   }
@@ -258,17 +261,6 @@ const SimulacrumExam = function()
 
     });
   }
-  
-  this.activeCloseAlert = function(active = true)
-   {
-      if(active)
-        window.onbeforeunload = function()
-        {
-          return "Ha intentado salir de esta pagina. Si ha realizado algun cambio en los campos sin hacer clic en el boton Guardar, los cambios se perderan. Seguro que desea salir de esta pagina? ";
-        }
-      else
-        window.onbeforeunload = false;
-   }
 
 }
 

@@ -72,13 +72,13 @@ class MathOlympicsRegisterController extends Controller
 		];
 		try {
 
-			$result = $this->client->SimulacroInscripcion($data);
-			$collection = collect($result->SimulacroInscripcionResult);
+			$result = $this->client->OlimpiadasInscripcion($data);
+			$collection = collect($result->OlimpiadasInscripcionResult);
 
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		return new SimulacrumApiResource($collection);
+		return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');
 
 		//return redirect()->route('academia-index')->with([

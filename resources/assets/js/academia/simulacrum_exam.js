@@ -69,7 +69,7 @@ const SimulacrumExam = function()
      this.setContentCbx();
      this.setCarreras();
      this.setType();
-     //this.setDatos();
+     
 	}
 
 	this.setVariables = function()

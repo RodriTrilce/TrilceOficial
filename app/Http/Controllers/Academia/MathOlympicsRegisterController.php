@@ -1,9 +1,12 @@
 <?php
 namespace App\Http\Controllers\Academia;
 
-use \Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\Controller;
+use App\Http\Resources\Academia\Apis\OlympicsApiResource; 
 
 class MathOlympicsRegisterController extends Controller
 {
@@ -37,16 +40,6 @@ class MathOlympicsRegisterController extends Controller
 		return view('/academia/math_olympics_register')->with([
 			'codurl' => $request->codurl
 		]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**

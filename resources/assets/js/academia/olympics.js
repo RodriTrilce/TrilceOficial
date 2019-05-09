@@ -70,6 +70,9 @@ const OlimpicsRegister = function()
      //this.setCarreras();
      //this.setType();
   }
+
+
+  
   
   this.setVariables = function()
 	{

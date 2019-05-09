@@ -73,7 +73,7 @@ class MathOlympicsRegisterController extends Controller
 		}
 
 		return redirect()->route('academia-index')->with([
-			'contact'  => true,
+			'olympics'  => true,
 		  ]);
 		
 		//return new OlympicsApiResource($collection);

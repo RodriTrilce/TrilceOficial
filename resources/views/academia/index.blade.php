@@ -75,7 +75,7 @@
 
     var modal_open = [
 
-    @if(!session('enrollment') && !session('contact'))
+    @if(!session('enrollment') && !session('contact') && !session('olympics'))
       '#modal-ads',
     @endif
 
@@ -83,11 +83,11 @@
       '#modal-1',
     @endif
 
-    @if(session('olympics'))
+    @if(session('contact'))
       '#modal-1',
     @endif
 
-    @if(session('contact'))
+    @if(session('olympics'))
       '#modal-1'
     @endif
 

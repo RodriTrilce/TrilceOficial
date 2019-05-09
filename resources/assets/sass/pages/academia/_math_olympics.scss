@@ -502,4 +502,55 @@
      }
    }
  }// End olympic-results
+
+ .olympic-finish{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .finish-title{
+    font-family: $font_geo_smbold;
+    display: block;
+    font-size: 2.8rem;
+  }
+
+  .finish-thanks{
+    width: 100%;
+    max-width: 80px;
+    margin-left: 5px;
+
+    @include breakpoint(baby){
+      max-width: 50px;
+    }
+  }
+
+  .finish-text{
+    font-family: $font_geo_reg;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+
+    @include breakpoint(baby){
+      font-size: 1rem;
+    }
+  }
+
+  .finish-button-container{
+    margin-top: 25px;
+  }
+
+  .enrollment-finish--button{
+    border: 0;
+    background: transparent;
+    color: white;
+    font-family: $font_cae_rom;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    width: 280px;
+
+    @include breakpoint(baby){
+      font-size: 1.5rem;
+    }
+  }
+}
  

@@ -188,15 +188,6 @@
 
 @section('scripts')
     page = 'math_olympics';
-
-    var modal_open = [
-
-    @if(session('olympics_modal'))
-      '#modal-1'
-    @endif
-
-    ];
-
   @parent
 <script>
     var conf = function(id)

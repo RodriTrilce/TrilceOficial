@@ -72,9 +72,10 @@ class MathOlympicsRegisterController extends Controller
 			dd($e->getMessage());
 		}
 
-		return redirect()->route('academia-matholympics')->with([
+		return redirect()->route('academia-index')->with([
 			'olympics_modal'  => true,
 		  ]);
+		
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');
 

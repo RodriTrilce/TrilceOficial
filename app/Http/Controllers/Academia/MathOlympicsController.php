@@ -26,11 +26,18 @@ class MathOlympicsController extends Controller
      ->orderBy('finish_at', 'asc')
      ->get();
 
+     $popup = Popup::where([
+      ['type',   '=', Route::currentRouteName()]
+      ])
+      ->first();
+      $popup = ($popup->state == '0' ? null : $popup);
+
 
      return view('/academia/math_olympics')->with([
        'lima'       => $lima,
        'province'   => $province,
-       'data'       => $data
+       'data'       => $data,
+       'popup'      => $popup
      ]);
    }
 }

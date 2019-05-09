@@ -161,3 +161,30 @@
     font-family: $font_cae_heavy;
   }
 }
+
+.modal-olympics{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .finish-title{
+    font-family: $font_cae_heavy;
+    display: block;
+  }
+
+  .finish-thanks{
+    max-width: 60px;
+    margin-left: 5px;
+
+    @media (max-width: 767px){
+      max-width: 50px;
+    }
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .finish-text{
+    font-family: $font_cae_heavy;
+  }
+}

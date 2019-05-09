@@ -235,7 +235,7 @@ if(page == 'simulacrum-exam'){
 /**!
  *  Math Olympics > Register
  */
-if(page == 'olympic'){
+if(page == 'olympics'){
   let exam = new OlimpicsRegister();
   exam.init();
 }

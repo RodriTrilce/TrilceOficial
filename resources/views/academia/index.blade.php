@@ -87,7 +87,7 @@
       '#modal-1'
     @endif
 
-    @if(session('olympic'))
+    @if(session('olympics'))
       '#modal-1'
     @endif
 

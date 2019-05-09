@@ -69,9 +69,9 @@ class MathOlympicsRegisterController extends Controller
 			$collection = collect($result->OlimpiadasInscripcionResult);
 
 		} catch ( SoapFault $e ) {
-			//dd($e->getMessage());
+			dd($e->getMessage());
 		}
-		return view('/academia/index')->with(['page' => 'olympic']);
+		//return view('/academia/index')->with(['page' => 'olympic']);
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');
 

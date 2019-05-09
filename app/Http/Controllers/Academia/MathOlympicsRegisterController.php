@@ -71,8 +71,8 @@ class MathOlympicsRegisterController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		
-		return redirect()->route('academia-index')->with([
+
+		return redirect()->route('academia-matholympics')->with([
 			'enrollment'  => true,
 			'dni'         => encrypt($request->step1_dni)
 		  ]);

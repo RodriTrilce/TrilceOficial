@@ -191,11 +191,27 @@
 
     var modal_open = [
 
-      @if(session('olympics'))
-        '#modal-1'
-      @endif
+    @if(!session('enrollment') && !session('contact'))
+      '#modal-ads',
+    @endif
 
-      ];
+    @if(session('enrollment'))
+      '#modal-1',
+    @endif
+
+    @if(session('simulacrum'))
+      '#modal-1',
+    @endif
+
+    @if(session('olympics'))
+      '#modal-1',
+    @endif
+
+    @if(session('contact'))
+      '#modal-1'
+    @endif
+
+    ];
 
   @parent
 <script>

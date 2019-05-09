@@ -73,8 +73,7 @@ class MathOlympicsRegisterController extends Controller
 		}
 
 		return redirect()->route('academia-matholympics')->with([
-			'enrollment'  => true,
-			'dni'         => encrypt($request->step1_dni)
+			'olympics_modal'  => true,
 		  ]);
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');

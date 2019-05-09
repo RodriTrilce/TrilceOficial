@@ -1,4 +1,4 @@
-@if (session('olympics'))
+@if (session('olympics_modal'))
   <div id="modal-1" style="display:none;">
     <div class="modal-b50">
       <div class="col-xs-12 center-xs enrollment-finish">

@@ -209,7 +209,7 @@
 @endsection
 
 @section('scripts')
-    page = 'olympic';
+    page = 'olympics';
   @parent
 
 @endsection

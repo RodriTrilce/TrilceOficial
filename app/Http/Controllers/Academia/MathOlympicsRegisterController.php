@@ -71,7 +71,7 @@ class MathOlympicsRegisterController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		return redirect()->route('olimpiadas-matematicas')->with(['page' => 'olympics']);
+		return redirect()->route('academia-index')->with(['page' => 'olympics']);
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');
 

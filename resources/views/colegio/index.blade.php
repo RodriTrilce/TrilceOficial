@@ -29,7 +29,7 @@
       <div class="row col-xs-12 col-sm-10 colegio-cardsv2">
 
         <div class="colegio-cardsv2__title">
-          <div class="colegio-cardsv2__herotitle"><span>Matrícula<br class="salt"> 2019</span></div>
+          <div class="colegio-cardsv2__herotitle"><span>Matrícula<br class="salt"> 2020</span></div>
           <div class="colegio-cardsv2__herosubtitle"><span>Elige la modalidad que más se<br class="salt">adecúe a tus necesidades</span></div>
         </div>
 

@@ -15,4 +15,5 @@ npm-debug.log
 yarn-error.log
 .env
 /public/matricula-2019
+/public/matricula-2020
 /public/inscripcion-academia

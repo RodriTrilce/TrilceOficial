@@ -2,7 +2,7 @@
   <div class="col-xs-12">
     <!--<h2 class="new-t-symbol"><span><i class="fa fa-plus"></i></span></h2>-->
     <h2 class="new-t-title"><span class="alumno">Alumno</span> nuevo</h2>
-    <h3 class="new-t-subtitle">Periodo: julio 2018 a abril 2019</h3>
+    <h3 class="new-t-subtitle">Periodo: 2020</h3>
   </div>
   <div class="col-xs-12 col-sm-4 new-t-p">
     <p>Modalidad por la cual alumnos de otras entidades educativas deciden iniciar un nuevo año escolar en Colegios Trilce.</p>
@@ -21,7 +21,7 @@
       <div class="col-xs admission-new-item-content">
         <h3 class="item-content-title">Inscripción</h3>
         <ul>
-          <li>Completar la ficha de matrícula 2019 de cada sede</li>
+          <li>Completar la ficha de matrícula 2020 de cada sede</li>
           <li>Pago por derecho de evaluación</li>
           <li>Entrega de:</li>
           <ul>

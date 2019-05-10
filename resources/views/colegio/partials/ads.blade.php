@@ -2,8 +2,8 @@
         <div class="admission-ads__container">
         	<div class="row col-xs-12">
 				<div class="col-xs-12 col-sm">				
-					<a href="/matricula-2019/" target="_blank" class="admission-ads__link">
-					<h1>¿Quieres saber más sobre nuestro<br>proceso de matrícula 2019?</h1>
+					<a href="/matricula-2020/" target="_blank" class="admission-ads__link">
+					<h1>¿Quieres saber más sobre nuestro<br>proceso de matrícula 2020?</h1>
 					<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
 					  Regístrate aquí
 					</button>

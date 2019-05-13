@@ -120,10 +120,12 @@ const Enrollment = function(nextBtn,prevBtn,form, type)
 
    this.init = function()
    {
+     this.alert();
      Validation.init(document.forms[0], true);
      this.setVaraibles();
      this.showTab(this.currentTab);
      this.dispatcher();
+     
 
      document.getElementById(this.prevBtn).addEventListener('click', e => this.nextPrev(-1,e));
      document.getElementById(this.nextBtn).addEventListener('click', e => this.nextPrev(1,e));

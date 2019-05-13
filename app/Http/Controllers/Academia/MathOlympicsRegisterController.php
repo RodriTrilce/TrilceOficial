@@ -40,7 +40,20 @@ class MathOlympicsRegisterController extends Controller
 		return view('/academia/math_olympics_register')->with([
 			'codurl' => $request->codurl
 		]);
+	}
+	
+	public function indexGroup(Request $request)
+    {
+        //$university = University::validate( ucwords(Str::slug($request->university, ' ')) );
+
+		//if(!$university)
+		//return abort(404);
+
+		return view('/academia/math_olympics_group_register')->with([
+			'codurl' => $request->codurl
+		]);
     }
+
 
     /**
      * Store a newly created resource in storage.

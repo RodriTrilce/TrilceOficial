@@ -69,10 +69,8 @@ const OlimpicsRegister = function()
      this.setContentCbx();
      //this.setCarreras();
      //this.setType();
-  }
-
-
-  
+     this.addUser();
+  } 
   
   this.setVariables = function()
 	{
@@ -88,8 +86,28 @@ const OlimpicsRegister = function()
 
     // Cbx variables
    
-    this.cbx_type    = document.getElementById('cbx_type');
+    this.cbx_type     = document.getElementById('cbx_type');
+    this.btn_add       = document.getElementById('addRow');
+    this.div_info       = document.getElementById('info');
+
   }
+
+
+
+  this.addUser = function()
+  {
+     this.btn_add.addEventListener('click', async () => {  
+      this.addRow();
+     });
+  } 
+
+  this.addRow = function()
+   {
+    var row = '<button type="submit" id="form_submit" class="validate"> <i class="fa fa-trash"></i></button>';
+
+    this.div_info.prepend(row);
+    
+   }
 
 	this.setContentCbx = function()
   {

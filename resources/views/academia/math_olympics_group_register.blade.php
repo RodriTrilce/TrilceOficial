@@ -76,7 +76,7 @@
               <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $codurl }}">
           </fieldset>
 
-          <div class="col-xs-12 start-xs">
+          <div class="col-xs-12 start-xs" id="more_user">
             
             <fieldset class="form-group">
               <input
@@ -191,7 +191,7 @@
                 </fieldset>
               </div>
               <div class="col-xs-12 col-sm-1">
-              <button type="button" id="addRow" class="addRow"> <i class="fa fa-user-plus"></i></button>
+              <button type="button" id="addRow" class="validate addRow"> <i class="fa fa-user-plus"></i></button>
               </div>
             </div>
 

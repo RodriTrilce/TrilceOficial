@@ -22,21 +22,21 @@
     </div>
 </div>
 
-  <div class="row col-xs-12 center-xs about-container container-base">
+  <div class="row col-xs-12 center-xs venue-container container-base">
     <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
-      <div class="row col-xs-12 about-history">
-        <div class="row col-xs-12 xs-hide col-sm-4 about-history--left">
+      <div class="row col-xs-12 venue-infolist">
+        <div class="row col-xs-12 xs-hide col-sm-4 venue-infolist--left">
           <img src="{{ url('/static/images/academia/img-sedes-academia.png') }}" alt="Sobre nosotros">
         </div>
-        <div class="col-xs-12 col-sm about-history--right">
+        <div class="col-xs-12 col-sm venue-infolist--right">
         <h2 class="contact-subtitle">Conoce Nuestras Sedes</h2>
-          <div class="about-history--pcontainer">
+          <div class="venue-infolist--pcontainer">
 
           <div class="row col-xs-12 center-xs venue">
             <div class="row col-xs-12 col-sm-12 col-md-12 start-xs start-md">
               <div class="col-xs-12 col-sm container-base venue-info-container">
-                <div class="row col-xs-12 col-sm-12 table-responsive">
+                <div class="row col-xs-12 col-sm-12">
                   <ul>
                     <li>
                       <strong>Los Olivos</strong>

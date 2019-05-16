@@ -71,8 +71,9 @@
 
   
   <div class="row col-xs-12 center-xs">
-  <h1 class="preparation__title preparation__title--and">¡PARTICIPA EN NUESTROS SIMULACROS!</h1>
+  <h1 class="simulacrum__title simulacrum__title--and">¡Participa en nuestro Simulacro!</h1>
   </div>
+  <br><br>
 
   @endif
 
@@ -121,31 +122,77 @@
 
   <br><br>
   @if($university->short_name=='UNI')
-    <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+    <div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
-      <div class="row col-xs-12 center-xs about-v--vgrid">
 
-          <div class="vgrid-item">
+
+      <div class="row col-xs-12 center-xs register-ads">
+        <div class="register-ads__container">
+        	<div class="row col-xs-12">
+              <div class="col-xs-12 col-sm">				
+                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" target="_blank" class="register-ads__link">
+                <h1>Simulacro Anual y Semestral<br><strong>13, 15 y 17 de Mayo</strong></h1>
+                <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
+                  Regístrate aquí
+                </button>
+                </a>
+              </div>
+              <div class="row col-xs-4 bottom-xs center-xs xs-hide">
+                <img src="{{ url('/static/images/academia/inscripcion-uni.png') }}" alt="">	
+              </div>        		
+        	  </div>
+          </div>
+        </div>
+
+      {{--<div class="row col-xs-12 center-xs about-v--vgrid">
+        <div class="vgrid-item">
             <div class="row col-xs-12 start-xs align-content-baseline">
-              
               <div class="row col-xs-12 col-sm-12 vgrid-item--text" style="text-align: center;">
                 <div class="col-xs-12">
                   <h3>Simulacro Anual y Semestral</h3>
-                  <h3><strong>13, 15, 17 Mayo</strong></h3>
+                  <h3><strong>13, 15 y 17 Mayo</strong></h3>
                 </div>
                 <div class="col-xs-12">
                 <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" class="admission-ads__container-cta banner__button-cta banner__button-cta--white">Inscríbete aquí</a>
                 </div>
               </div>
             </div>
-          </div>
         </div>
+      </div>--}}
+      
       </div>
     </div>
   @endif
 
   @if($university->short_name=='San Marcos')
-  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+  {{--<div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
+      <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+
+      <div class="row col-xs-12 center-xs register-ads">
+        <div class="register-ads__container">
+        	<div class="row col-xs-12">
+              <div class="col-xs-12 col-sm">				
+                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" target="_blank" class="register-ads__link">
+                <h1>Simulacro Anual y Semestral<br><strong>13, 15 y 17 de Mayo</strong></h1>
+                <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
+                  Regístrate aquí
+                </button>
+                </a>
+              </div>
+              <div class="row col-xs-4 bottom-xs center-xs xs-hide">
+                <img src="{{ url('/static/images/academia/inscripcion-sm.png') }}" alt="">	
+              </div>        		
+        	  </div>
+          </div>
+        </div>
+        <div class="row col-xs-12 col-sm-9 col-md-8 center-xs">
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros Activos</h2>
+      </div>
+
+      </div>
+    </div>--}}
+
+    <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
       <div class="row col-xs-12 center-xs about-v--vgrid">
 
@@ -155,7 +202,7 @@
 
       </div>
       </div>
-  </div>
+    </div>
   @endif
 
   @if($university->short_name=='PUCP')

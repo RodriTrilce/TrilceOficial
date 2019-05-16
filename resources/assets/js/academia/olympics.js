@@ -70,6 +70,7 @@ const OlimpicsRegister = function()
      //this.setCarreras();
      //this.setType();
      this.addUser();
+     //this.deleteUser();
   } 
   
   this.setVariables = function()
@@ -88,21 +89,42 @@ const OlimpicsRegister = function()
    
     this.cbx_type     = document.getElementById('cbx_type');
     this.btn_add       = document.getElementById('addRow');
-    this.div_info       = document.getElementById('info');
+    this.div_addcol       = document.getElementById('addcol');
+    this.btn_delete    = document.getElementById('deleteRow');
+
+    this.count_click = 0;
 
   }
 
+   this.addDisabled = function(){
+    this.btn_add.disabled = true;
+  }
 
+  this.count_click_add = function() {
+    this.count_click += 1;
+    if(this.count_click >= 6){
+      alert('Solo se pueden registrar 6 alumnos');
+      this.addDisabled();
+    }
+    
+  }
 
   this.addUser = function()
   {
      this.btn_add.addEventListener('click', e => this.addRow());
+
   } 
 
   this.addRow = function()
   {
-    this.div_info.innerHTML=this.div_info.innerHTML+
-    "<div class='row col-xs-12'>"+
+    var total_text=document.getElementsByClassName("container_btn");
+    total_text=total_text.length+1;
+    /*var total_text=document.getElementsByClassName("input_text");
+  total_text=Math.random();
+  document.getElementById("addcol").innerHTML=document.getElementById("addcol").innerHTML+
+  "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"' placeholder='Enter Text'><input type='button' value='Remove' onclick=remove_field('input_text"+total_text+"');></p>";*/
+    this.div_addcol.innerHTML=this.div_addcol.innerHTML+
+    "<div class='row col-xs-12 container_btn' id='"+total_text+"'>"+
       "<div class='col-xs-12 col-sm-2'>"+
         "<fieldset class='form-group'>"+
           "<input type='number' name='NRO_DOCUMENTO'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
@@ -124,9 +146,23 @@ const OlimpicsRegister = function()
         "</fieldset>"+
       "</div>"+
       "<div class='col-xs-12 col-sm-1'>"+
-        "<button type='button' id='deleteRow' class='validate deleteRow'> <i class='fa fa-trash'></i></button>"+
+        "<button type='button' id='deleteRow' class='validate deleteRow' onclick=remove_field('"+total_text+"');> <i class='fa fa-trash'></i></button>"+
       "</div>"+
     "</div>";
+    //this.count_click_add();
+    
+  }
+
+
+  this.deleteUser = function()
+  {
+    
+     this.btn_delete.addEventListener('click', e => this.deleteRow());
+  } 
+
+  this.deleteRow = function()
+  {
+    alert('hola');
   }
   
 	this.setContentCbx = function()

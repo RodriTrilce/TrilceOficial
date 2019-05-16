@@ -99,7 +99,7 @@ Route::name('academia-venue')
       ->get('/academia/sede/{barrack}', 'Academia\VenueController@index');
 
 Route::get('/academia/sede', function(){
-  return redirect('/academia');
+  return redirect('/academia/sede', 'Academia\VenuesController@index');
 });
 
 // Simulacrum > Exam

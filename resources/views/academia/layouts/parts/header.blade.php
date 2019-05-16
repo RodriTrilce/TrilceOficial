@@ -28,8 +28,8 @@
               <li class=""><a href="/academia/#inicios">Ciclos</a></li>
               <li class=""><a href="/academia/preinscripcion" class="{{ (Request::is('academia/preinscripcion')?'nav-item-active nav-item-noclick':'') }}">Preinscripción</a></li>
               <li class="nav-venues xs-hide" id="sedes">
-                <a href="#" class="{{ (Request::is('academia/sede/*')?'nav-item-active':'') }}">Sedes</a>
-                <div class="dropdown-desk">
+                <a href="/academia/sedes" class="{{ (Request::is('academia/sedes')?'nav-item-active':'') }}">Sedes</a>
+                {{--<div class="dropdown-desk">
                   <div class="dropdown-desk-content dropdown-desk-academia">
                     <div>
                       <h3>UNI - San Marcos - Católica</h3>
@@ -67,7 +67,7 @@
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div>--}}
               </li>
               <li class="menu-click-sedes">
                 <a>Sedes </a>

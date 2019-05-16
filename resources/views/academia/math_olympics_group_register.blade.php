@@ -76,7 +76,7 @@
               <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $codurl }}">
           </fieldset>
 
-          <div class="col-xs-12 start-xs" id="more_user">
+          <div class="col-xs-12 start-xs">
             
             <fieldset class="form-group">
               <input
@@ -139,7 +139,21 @@
               </select>
             </fieldset>
             
-            <div class="row col-xs-12">
+            {{--<div id="addcol">
+            <p id='input_text1_wrapper'>
+              <input type='text' class='input_text' id='input_text1' placeholder='Enter Text'>
+              <button type='button' id='deleteRow' class='validate deleteRow'> <i class='fa fa-trash'></i>
+              </button>
+            </p>
+            </div>--}}
+
+            <div class="col-xs-12 col-sm-2">
+              <button type="button" id="addRow" class="validate addRow"> <i class="fa fa-user-plus"></i></button>
+            </div>
+
+            
+            
+            {{--<div class="row col-xs-12">
               <div class="col-xs-12 col-sm-2">
                   <fieldset class="form-group">
                       <input
@@ -191,15 +205,11 @@
                 </fieldset>
               </div>
               <div class="col-xs-12 col-sm-1">
-              <button type="button" id="addRow" class="validate addRow"> <i class="fa fa-user-plus"></i></button>
+              
               </div>
-            </div>
+            </div>--}}
 
-            
-            <div id="info" class="info">
-
-            
-            </div>
+            <div id="addcol"></div>
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>
           </div>
@@ -216,5 +226,15 @@
 @section('scripts')
     page = 'olympics';
   @parent
+
+
+  <script>
+    function remove_field(id)
+    {
+      var element = document.getElementById(id);
+    element.parentNode.removeChild(element);
+
+    }
+  </script>
 
 @endsection

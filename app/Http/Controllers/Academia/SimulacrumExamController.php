@@ -70,9 +70,28 @@ class SimulacrumExamController extends Controller
 			dd($e->getMessage());
 		}
 
-		dd($collection);
+		
 
 		//return new SimulacrumApiResource($collection);
+		//$area = new SimulacrumApiResource($collection);
+		 
+		  $area = json_decode($collection, true);
+			$newdata= $area['MENSAJE'];
+			foreach($newdata as $posicion=>$jugador)
+			{
+				if($jugador == "El campo ACTIVO no admite el valor ACTIVO."){
+					return redirect()->route('academia-index');
+				}else{
+					return view('/academia/simulacrum_exam_exito');
+				}
+			
+			}
+
+		  
+
+
+			//return $area['MENSAJE'];
+			
 		//return view('/academia/simulacrum_exam_exito');
 
 		//return redirect()->route('academia-index')->with([

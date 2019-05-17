@@ -22,9 +22,27 @@ class SimulacrumController extends Controller
         
         $results = Simulacrum::where('university_id', $university->id)
         ->orderBy('created_at', 'DESC')
+        ->limit(5)
         ->get();
 
        return view('/academia/simulacrum')->with([
+         'university' => $university,
+         'data' => $results
+       ]);
+     }
+
+     public function show($university)
+     {
+        $university = University::validate( ucwords(Str::slug($university, ' ')) );
+        
+        if(!$university)
+          return abort(404);
+        
+        $results = Simulacrum::where('university_id', $university->id)
+        ->orderBy('created_at', 'DESC')
+        ->get();
+
+       return view('/academia/simulacrum_results')->with([
          'university' => $university,
          'data' => $results
        ]);

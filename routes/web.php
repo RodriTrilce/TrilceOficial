@@ -114,6 +114,10 @@ Route::name('academia-simulacrum-exam')
 Route::name('academia-simulacrum-exam-finish')
       ->post('/academia/simulacros-{university}/inscripcion/{idexam}', 'Academia\SimulacrumExamController@store');
 
+Route::get('/academia/simulacros-{university}/inscripcion', function(){
+      return redirect('/academia');
+      });
+
 // Simulacros (Simulacrum)
 Route::name('academia-simulacrum')
       ->get('/academia/simulacros-{university}', 'Academia\SimulacrumController@index');

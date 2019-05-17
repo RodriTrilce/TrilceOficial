@@ -65,11 +65,15 @@ class SimulacrumExamController extends Controller
 			$result = $this->client->SimulacroInscripcion($data);
 			$collection = collect($result->SimulacroInscripcionResult);
 
+
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
+
+		dd($collection);
+
 		//return new SimulacrumApiResource($collection);
-		return view('/academia/simulacrum_exam_exito');
+		//return view('/academia/simulacrum_exam_exito');
 
 		//return redirect()->route('academia-index')->with([
 			//'enrollment'  => true,

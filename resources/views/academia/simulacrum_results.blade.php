@@ -146,8 +146,9 @@
       @endforeach
     </div>
   </div>
-  {{--
+
   <br><br>
+  {{--
   @if($university->short_name=='UNI')
     <div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">

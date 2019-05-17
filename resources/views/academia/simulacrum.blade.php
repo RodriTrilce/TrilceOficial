@@ -130,7 +130,7 @@
         <div class="register-ads__container">
         	<div class="row col-xs-12">
               <div class="col-xs-12 col-sm">				
-                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" target="_blank" class="register-ads__link">
+                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" class="register-ads__link">
                 <h1>Simulacro Anual y Semestral<br><strong>13, 15 y 17 de Mayo</strong></h1>
                 <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
                   Regístrate aquí
@@ -172,7 +172,7 @@
         <div class="register-ads__container">
         	<div class="row col-xs-12">
               <div class="col-xs-12 col-sm">				
-                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" target="_blank" class="register-ads__link">
+                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" class="register-ads__link">
                 <h1>Simulacro Anual y Semestral<br><strong>13, 15 y 17 de Mayo</strong></h1>
                 <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
                   Regístrate aquí
@@ -185,9 +185,6 @@
         	  </div>
           </div>
         </div>
-        <div class="row col-xs-12 col-sm-9 col-md-8 center-xs">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros Activos</h2>
-      </div>
 
       </div>
     </div>--}}
@@ -197,7 +194,7 @@
       <div class="row col-xs-12 center-xs about-v--vgrid">
 
       <div class="row col-xs-12 col-sm-9 col-md-8 center-xs">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros Activos</h2>
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros activos</h2>
       </div>
 
       </div>
@@ -206,17 +203,41 @@
   @endif
 
   @if($university->short_name=='PUCP')
-  <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+  {{--<div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
+      <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
+
+      <div class="row col-xs-12 center-xs register-ads">
+        <div class="register-ads__container">
+        	<div class="row col-xs-12">
+              <div class="col-xs-12 col-sm">				
+                <a href="/academia/simulacros-uni/inscripcion/2a595a4caa" class="register-ads__link">
+                <h1>Simulacro Anual y Semestral<br><strong>13, 15 y 17 de Mayo</strong></h1>
+                <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
+                  Regístrate aquí
+                </button>
+                </a>
+              </div>
+              <div class="row col-xs-4 bottom-xs center-xs xs-hide">
+                <img src="{{ url('/static/images/academia/inscripcion-cat.png') }}" alt="">	
+              </div>        		
+        	  </div>
+          </div>
+        </div>
+
+      </div>
+    </div>--}}
+
+    <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
       <div class="row col-xs-12 center-xs about-v--vgrid">
 
       <div class="row col-xs-12 col-sm-9 col-md-8 center-xs">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros Activos</h2>
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">No hay Simulacros activos</h2>
       </div>
 
       </div>
       </div>
-  </div>
+    </div>
   @endif
 
   <br><br>

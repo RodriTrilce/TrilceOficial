@@ -59,8 +59,8 @@ $simulacrum-form-background: #ededed;
 
 .simulacrum-info-title{
   position: relative;
-  color: $orange;
-  font-family: $font_cae_bold;
+  color: $gray;
+  font-family: $font_geo_smbold;
   //
   // &::before{
   //   content: "";
@@ -169,7 +169,7 @@ $simulacrum-form-background: #ededed;
     color: $orange;
     max-width: 700px;
     /* border: 1px solid $orange; */
-    background: #efefef;
+    background:$simulacrum-form-background;;
 
 
   h1{

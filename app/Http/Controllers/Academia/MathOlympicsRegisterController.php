@@ -77,8 +77,11 @@ class MathOlympicsRegisterController extends Controller
 			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
 		];
 		try {
-			
+			for($i=0;$i<2;$i++)
+ 			{		
+
 				$result = $this->client->OlimpiadasInscripcion($data);
+			}
 			
 
 			

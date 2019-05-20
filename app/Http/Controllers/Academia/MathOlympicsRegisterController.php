@@ -77,9 +77,9 @@ class MathOlympicsRegisterController extends Controller
 			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
 		];
 		try {
-			foreach($request->input('name') as $key => $value) {
+			
 				$result = $this->client->OlimpiadasInscripcion($data);
-			}
+			
 
 			
 			$collection = collect($result->OlimpiadasInscripcionResult);
@@ -87,10 +87,11 @@ class MathOlympicsRegisterController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
+		return OlympicsApiResource($result);
 
-		return redirect()->route('academia-index')->with([
-			'olympics'  => true,
-		  ]);
+		//return redirect()->route('academia-index')->with([
+			//'olympics'  => true,
+		  //]);
 		
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');

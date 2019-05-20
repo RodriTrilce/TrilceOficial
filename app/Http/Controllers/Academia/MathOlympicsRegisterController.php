@@ -77,8 +77,11 @@ class MathOlympicsRegisterController extends Controller
 			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
 		];
 		try {
+			foreach($request->input('name') as $key => $value) {
+				$result = $this->client->OlimpiadasInscripcion($data);
+			}
 
-			$result = $this->client->OlimpiadasInscripcion($data);
+			
 			$collection = collect($result->OlimpiadasInscripcionResult);
 
 		} catch ( SoapFault $e ) {

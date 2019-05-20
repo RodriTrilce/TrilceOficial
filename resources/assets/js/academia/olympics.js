@@ -127,22 +127,22 @@ const OlimpicsRegister = function()
     "<div class='row col-xs-12 container_btn' id='"+total_text+"'>"+
       "<div class='col-xs-12 col-sm-2'>"+
         "<fieldset class='form-group'>"+
-          "<input type='number' name='NRO_DOCUMENTO'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
+          "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
         "</fieldset>"+
       "</div>"+
       "<div class='col-xs-12 col-sm-3'>"+
         "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='NOMBRES' id='names' placeholder='Nombres' required />"+
+          "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
         "</fieldset>"+
       "</div>"+
       "<div class='col-xs-12 col-sm-3'>"+
         "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='PRIMER_APELLIDO' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
+          "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
         "</fieldset>"+
       "</div>"+
       "<div class='col-xs-12 col-sm-3'>"+
         "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='SEGUNDO_APELLIDO' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
+          "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
         "</fieldset>"+
       "</div>"+
       "<div class='col-xs-12 col-sm-1'>"+

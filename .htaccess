@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^trilce.edu.pe [NC]
+RewriteRule ^(.*)$ http://www.trilce.edu.pe/$1 [L,R=301]

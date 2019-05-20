@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\Academia\Apis\OlympicsApiResource; 
+use App\Http\Resources\Academia\Apis\OlympicsApiResource;
 
 class MathOlympicsRegisterController extends Controller
 {
@@ -77,24 +77,67 @@ class MathOlympicsRegisterController extends Controller
 			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
 		];
 		try {
-			for($i=0;$i<count($$request->NOMBRES);$i++)
- 			{		
+				
 
-				$result = $this->client->OlimpiadasInscripcion($data);
-			}
-			
-
-			
+			$result = $this->client->OlimpiadasInscripcion($data);
 			$collection = collect($result->OlimpiadasInscripcionResult);
 
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		//return OlympicsApiResource($result);
 
 		return redirect()->route('academia-index')->with([
 			'olympics'  => true,
 		]);
+		
+		//return new OlympicsApiResource($collection);
+		//return view('/academia/simulacrum_exam_exito');
+
+		//return redirect()->route('academia-index')->with([
+			//'enrollment'  => true,
+			//'dni'         => encrypt($request->step1_dni)
+		 // ]);
+	}
+	
+	public function storeGroup(Request $request)
+    {
+		try {
+				$longitud = count($request->NRO_DOCUMENTO);
+				for($i=0;$i<$longitud;$i++)
+ 				{
+
+					$data = [];
+					$data['request'] = [
+						'CODE_URL' 			    => $request->CODE_URL,
+						'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO[$i],
+						'NOMBRES'	            => $request->NOMBRES[$i],
+						'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO[$i],
+						'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO[$i],
+						//'CORREO_E'	            => $request->CORREO_E,
+						'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
+						'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
+						'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
+						'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
+					];
+
+					$result = $this->client->OlimpiadasInscripcion($data);
+				}
+
+				$collection = collect($result->OlimpiadasInscripcionResult);
+
+		} catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		}
+
+		return redirect()->route('academia-index')->with([
+			'olympics'  => true,
+		]);
+
+		//dd($collection);
+
+		/*return redirect()->route('academia-index')->with([
+			'olympics'  => true,
+		]);*/
 		
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');

@@ -170,7 +170,7 @@
       </svg>
     </div>
 
-    <div class="container-adrian">
+    <div class="container-mobile">
       <div class="block block__colegio">
         <a href="/colegio" class="href2">
           <div class="part human-girl">

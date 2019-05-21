@@ -10,6 +10,7 @@
   <meta name="keywords" content="colegios, academias, colegios trilces, academias trilce, trilce peru, colegios en lima, academias en lima, preparacion preuniversitaria, preparacion uni, preparacion san marcos, preparacion catolica, uni, san marcos, catolica, matricula escolar,simulacros, admision,primaria, secundaria, inicial" />
   <meta name="robots" content="index,follow" />		
   <link rel="canonical" href="https://www.trilce.edu.pe/" />
+  <link rel="shortlink" href="https://www.trilce.edu.pe/" />
   <meta itemprop="image" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
 
   <!-- facebook meta -->
@@ -17,13 +18,17 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.trilce.edu.pe/" />
   <meta property="og:image" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <meta property="og:image:url" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <meta property="og:image:secure_url" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
   <meta property="og:site_name" content="Trilce" />
   <meta property="og:description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!" />
+
   <!-- twitter meta -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Trilce" />
   <meta name="twitter:description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!" />
   <meta name="twitter:image" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+
   
   {{--<meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal.">--}}
   

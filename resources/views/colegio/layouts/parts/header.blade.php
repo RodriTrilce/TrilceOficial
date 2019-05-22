@@ -64,7 +64,7 @@
                                 <li class="item {{ (Request::is('colegio/sede/san-juan-de-lurigancho-wiesse')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/san-juan-de-lurigancho-wiesse">San Juan de Lurigancho (Wiesse)</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/santa-anita*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/santa-anita">Santa Anita</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/santa-beatriz-roma*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/santa-beatriz-roma">Santa Beatriz (Roma)</a></li>
-                                <li class="item {{ (Request::is('colegio/sede/surco*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/surco">Surco</a></li>
+                                <li class="item {{ (Request::is('colegio/sede/surco*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/surco">Surco (Marsano)</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/villa-el-salvador*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/villa-el-salvador">Villa El Salvador</a></li>
                                 <li class="item {{ (Request::is('colegio/sede/villa-maria*')?'nav-item-active--indeskblock nav-item-noclick--indeskblock':'') }}"><a href="/colegio/sede/villa-maria">Villa María</a></li>
                               </ul>

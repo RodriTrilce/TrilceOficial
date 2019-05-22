@@ -71,7 +71,27 @@
     ul > li{
       font-size: 0.8rem;
     }
+
+    button.groupadd{
+      background-color: #53565a !important;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-size:17px;
+      padding:10px 76px;
+      text-decoration:none;
+      width: 100%;
+    }
+    button.groupadd:hover {
+      background-color:#f4633a;
+    }
+    button.groupadd:active {
+      position:relative;
+      top:1px;
+    }
+
   }
+  
 }
 
 .step-container{
@@ -84,6 +104,29 @@
 
   @include breakpoint(baby){
     padding: 0;
+  }
+
+  button.groupadd{
+      background-color:#53565a;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-size:17px;
+      padding:10px 76px;
+      text-decoration:none;
+      width: 100%;
+  }
+
+  button.groupadd:hover {
+    background-color:#f4633a;
+  }
+  button.groupadd:active {
+    position:relative;
+    top:1px;
+  }
+
+  .form-group{
+    margin-right: 30px;
   }
 }
 .olympic-step1-steps{
@@ -143,3 +186,4 @@
     font-size: .9rem;
   }
 }
+

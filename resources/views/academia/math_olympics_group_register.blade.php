@@ -152,7 +152,7 @@
             </div>--}}
 
             <div class="col-xs-12 col-sm-12">
-            <button type="button" id="addRow" class="groupadd addRow"> <i class="fa fa-user-plus"></i> Agregar Participante</button>
+            <button type="button" id="addRow" class="groupadd addRow"> <i class="fa fa-user-plus"></i> Agregar participante</button>
             </div>
 
 

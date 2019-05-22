@@ -90,6 +90,17 @@
       top:1px;
     }
 
+    button.groupdelete{
+      background-color: #dc3545 !important;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-size:17px;
+      padding:10px 76px;
+      text-decoration:none;
+      width: 100%;
+    }
+
   }
   
 }
@@ -107,6 +118,7 @@
   }
 
   button.groupadd{
+      margin: 5px 0 5px 0;
       background-color:#53565a;
       display:inline-block;
       cursor:pointer;
@@ -116,7 +128,6 @@
       text-decoration:none;
       width: 100%;
   }
-
   button.groupadd:hover {
     background-color:#f4633a;
   }
@@ -128,6 +139,29 @@
   .form-group{
     margin-right: 30px;
   }
+
+  button.groupdelete{
+    margin: -5px 0 12px 0;
+    background-color:#dc3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    padding:5px 36px;
+    text-decoration:none;
+    width: 100%;
+  }
+  button.groupdelete:hover {
+    background-color:#bd2130;
+  }
+  button.groupdelete:active {
+    position:relative;
+    top:1px;
+  }
+
+.form-group{
+  margin-right: 30px;
+}
 }
 .olympic-step1-steps{
   margin-bottom: 20px;

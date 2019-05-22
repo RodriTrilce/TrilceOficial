@@ -99,13 +99,23 @@ const OlimpicsRegister = function()
    this.addDisabled = function(){
     this.btn_add.disabled = true;
   }
+  this.addEnable = function(){
+    this.btn_add.disabled = false;
+  }
 
   this.count_click_add = function() {
-    this.count_click += 1;
+    var divs = document.getElementsByClassName("container_btn").length;
+    if (divs > 5){
+    alert("Soló se permitirán 6 participantes");
+    this.addDisabled();
+    } if (divs < 5){
+      this.addEnable();
+    }
+    /*this.count_click += 1;
     if(this.count_click >= 6){
       alert('Solo se pueden registrar 6 alumnos');
       this.addDisabled();
-    }
+    }*/
     
   }
 
@@ -123,7 +133,7 @@ const OlimpicsRegister = function()
   total_text=Math.random();
   document.getElementById("addcol").innerHTML=document.getElementById("addcol").innerHTML+
   "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"' placeholder='Enter Text'><input type='button' value='Remove' onclick=remove_field('input_text"+total_text+"');></p>";*/
-    this.div_addcol.innerHTML=this.div_addcol.innerHTML+
+    /*this.div_addcol.innerHTML=this.div_addcol.innerHTML+
     "<div class='row col-xs-12 container_btn' id='"+total_text+"'>"+
       "<div class='col-xs-12 col-sm-2'>"+
         "<fieldset class='form-group'>"+
@@ -148,8 +158,36 @@ const OlimpicsRegister = function()
       "<div class='col-xs-12 col-sm-1'>"+
         "<button type='button' id='deleteRow' class='validate deleteRow' onclick=remove_field('"+total_text+"');> <i class='fa fa-trash'></i></button>"+
       "</div>"+
+    "</div>";*/
+
+    this.div_addcol.innerHTML=this.div_addcol.innerHTML+
+    "<div class='row col-xs-12 container_btn' id='"+total_text+"'>"+
+      "<div class='col-xs-12 col-sm-3'>"+
+        "<fieldset class='form-group'>"+
+          "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
+        "</fieldset>"+
+      "</div>"+
+      "<div class='col-xs-12 col-sm-3'>"+
+        "<fieldset class='form-group'>"+
+          "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
+        "</fieldset>"+
+      "</div>"+
+      "<div class='col-xs-12 col-sm-3'>"+
+        "<fieldset class='form-group'>"+
+          "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
+        "</fieldset>"+
+      "</div>"+
+      "<div class='col-xs-12 col-sm-3'>"+
+        "<fieldset class='form-group'>"+
+          "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
+        "</fieldset>"+
+      "</div>"+
+      "<div class='col-xs-12 col-sm-12'>"+
+        "<button type='button' id='deleteRow' class='groupdelete deleteRow' onclick=remove_field('"+total_text+"');> <i class='fa fa-trash'></i> Eliminar participante</button>"+
+      "</div>"+
     "</div>";
-    //this.count_click_add();
+
+    this.count_click_add();
     
   }
 

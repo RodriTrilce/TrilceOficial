@@ -92,116 +92,64 @@ const OlimpicsRegister = function()
     this.div_addcol       = document.getElementById('addcol');
     this.btn_delete    = document.getElementById('deleteRow');
 
-    this.count_click = 0;
-
+    this.acount_users_omlympics = 0;
   }
 
    this.addDisabled = function(){
     this.btn_add.disabled = true;
   }
-  this.addEnable = function(){
-    this.btn_add.disabled = false;
-  }
 
   this.count_click_add = function() {
     var divs = document.getElementsByClassName("container_btn").length;
-    if (divs > 5){
-    alert("Soló se permitirán 6 participantes");
-    this.addDisabled();
-    } if (divs < 5){
-      this.addEnable();
-    }
-    /*this.count_click += 1;
-    if(this.count_click >= 6){
-      alert('Solo se pueden registrar 6 alumnos');
+    if(divs >= 6){
       this.addDisabled();
-    }*/
-    
+    }
   }
 
   this.addUser = function()
   {
      this.btn_add.addEventListener('click', e => this.addRow());
-
   } 
 
   this.addRow = function()
   {
-    var total_text=document.getElementsByClassName("container_btn");
-    total_text=total_text.length+1;
-    /*var total_text=document.getElementsByClassName("input_text");
-  total_text=Math.random();
-  document.getElementById("addcol").innerHTML=document.getElementById("addcol").innerHTML+
-  "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"' placeholder='Enter Text'><input type='button' value='Remove' onclick=remove_field('input_text"+total_text+"');></p>";*/
-    /*this.div_addcol.innerHTML=this.div_addcol.innerHTML+
-    "<div class='row col-xs-12 container_btn' id='"+total_text+"'>"+
-      "<div class='col-xs-12 col-sm-2'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-1'>"+
-        "<button type='button' id='deleteRow' class='validate deleteRow' onclick=remove_field('"+total_text+"');> <i class='fa fa-trash'></i></button>"+
-      "</div>"+
-    "</div>";*/
+    this.acount_users_omlympics++;
 
-    this.div_addcol.innerHTML=this.div_addcol.innerHTML+
-    "<div class='row col-xs-12 container_btn' id='"+total_text+"'>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-3'>"+
-        "<fieldset class='form-group'>"+
-          "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
-        "</fieldset>"+
-      "</div>"+
-      "<div class='col-xs-12 col-sm-12'>"+
-        "<button type='button' id='deleteRow' class='groupdelete deleteRow' onclick=remove_field('"+total_text+"');> <i class='fa fa-trash'></i> Eliminar participante</button>"+
-      "</div>"+
-    "</div>";
+    this.divuser = document.createElement('div');
+    this.divuser.setAttribute('class', 'container_btn');
+    this.divuser.setAttribute('id', this.acount_users_omlympics);
 
-    this.count_click_add();
-    
+        this.divuser.innerHTML = "<div class='row col-xs-12'>"+
+        "<div class='col-xs-12 col-sm-3'>"+
+            "<fieldset class='form-group'>"+
+            "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
+            "</fieldset>"+
+        "</div>"+
+        "<div class='col-xs-12 col-sm-3'>"+
+            "<fieldset class='form-group'>"+
+            "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
+            "</fieldset>"+
+        "</div>"+
+        "<div class='col-xs-12 col-sm-3'>"+
+            "<fieldset class='form-group'>"+
+            "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
+            "</fieldset>"+
+        "</div>"+
+        "<div class='col-xs-12 col-sm-3'>"+
+            "<fieldset class='form-group'>"+
+            "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
+            "</fieldset>"+
+        "</div>"+
+        "<div class='col-xs-12 col-sm-12'>"+
+            "<button type='button' id='deleteRow' class='groupdelete deleteRow'  onclick=remove_field('"+this.acount_users_omlympics+"');> <i class='fa fa-trash'></i> Eliminar participante</button>"+
+        "</div>"+
+        "</div>";
+
+        this.div_addcol.appendChild(this.divuser);
+        this.count_click_add();
+     
   }
 
-
-  this.deleteUser = function()
-  {
-    
-     this.btn_delete.addEventListener('click', e => this.deleteRow());
-  } 
-
-  this.deleteRow = function()
-  {
-    alert('hola');
-  }
   
 	this.setContentCbx = function()
   {

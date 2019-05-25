@@ -23,6 +23,22 @@ class OlympicsApiController extends Controller
       ]);
     }
 
+    public function info(Request $request)
+    {
+        try {
+          $result = $this->client->OI_Dato([
+            'CODE_URL'  => $request->CODE_URL
+          ]);
+
+          $collection = collect($result->OI_DatoResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new OlympicsApiResource($collection);
+    }
+
     public function type(Request $request)
     {
         try {

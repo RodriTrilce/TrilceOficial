@@ -67,6 +67,7 @@ const OlimpicsRegister = function()
      //this.setSteps();
      //this.setListener();
      this.setContentCbx();
+     this.setInfo();
      //this.setCarreras();
      //this.setType();
      this.addUser();
@@ -163,6 +164,25 @@ const OlimpicsRegister = function()
       
      }
   }
+
+  this.setInfo = function()
+  {
+    window.onload = async () => {
+      let response = await(await fetch('/api/academia/olimpiadas-matematicas/info', {
+       method: 'POST',
+       body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
+      })).json();
+
+      //console.log(response);
+      this.fillText(response);
+      
+     }
+  }
+   this.fillText = function(response) {
+
+  
+     
+   }
 
   this.fillCbx = function(select, response)
   {

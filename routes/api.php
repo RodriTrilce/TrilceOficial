@@ -32,6 +32,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
 
 // Academia/Olimpiadas = Inscripción en linea
 Route::post('/academia/olimpiadas-matematicas/type',    'Academia\Apis\OlympicsApiController@type');
+Route::post('/academia/olimpiadas-matematicas/info',    'Academia\Apis\OlympicsApiController@info');
 
 // Academia/Simulacro = Inscripción en linea
 Route::post('/academia/simulacros/venue',   'Academia\Apis\SimulacrumApiController@venue');

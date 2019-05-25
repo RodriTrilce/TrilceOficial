@@ -54,7 +54,8 @@
       <form class="col-xs-12 col-sm col-md-12 col-lg-12 olympic-form" name="olimpiada_form" id="olimpiada_form" method="post" action="">
         @csrf
         <div class="row start-xs step-1 step-container">
-          <h2>Regístrate para participar</h2>
+          <h2>Regístrate para participar         
+         </h2>
 
           <div class="row col-xs-12 start-xs olympic-step1-steps">
             <div class="col-xs-4">
@@ -214,7 +215,7 @@
               </div>
             </div>--}}
             <div id="addcol">
-            
+
               <div class="container_btn" id="1">
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">

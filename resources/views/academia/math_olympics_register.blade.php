@@ -32,21 +32,16 @@
         <ul class="olympic-info-ul">
           <li>
             <span class="olympic-info-li-title">Descripción:</span>
-            <p id='data'>Olimpiadas de Matemática SJL</p>
+            <p> {{$descripcion}}</p>
           </li>
           <li>
-            <span class="olympic-info-li-title">Fecha del examen:</span>
-            <p>13/05/2019 - Aptitud Académica y Humanidades</p>
-            <p>15/05/2019 - Matemática</p>
-            <p>17/05/2019 - Física y Química</p>
+            <span class="olympic-info-li-title">Fecha de Inscripción:</span>
+            <p>Inicio - {{$inicio}}</p>
+            <p>Fin - {{$fin}}</p>
           </li>
           <li>
-            <span class="olympic-info-li-title">Locales</span>
-            <p>Comas</p>
-            <p>Los Olivos Academia</p>
-            <p>Santa Beatriz</p>
-            <p>Torrico</p>
-            <p>Villa el Salvador Academia</p>
+            <span class="olympic-info-li-title">Local de Realización:</span>
+            <p>{{$lugar}}</p>
           </li>
         </ul>
       </div>

@@ -37,8 +37,27 @@ class MathOlympicsRegisterController extends Controller
 		//if(!$university)
 		//return abort(404);
 
+		try {
+			$result = $this->client->OI_Dato([
+			  'CODE_URL'  => $request->codurl
+			]);
+  
+			$collection = collect($result->OI_DatoResult);
+
+			//$result = $this->client->OlimpiadasInscripcion($data);
+  
+		  } catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		  }
+
 		return view('/academia/math_olympics_register')->with([
-			'codurl' => $request->codurl
+			'codurl' => $request->codurl,
+			'descripcion' => $collection['DESCRIPCION'],
+			'distrito' => $collection['DISTRITO'],
+			'inicio' => $collection['FECHA_INICIO'],
+			'fin' => $collection['FECHA_FIN'],
+			'lugar' => $collection['INSTITUCION_EDUCATIVA'],
+
 		]);
 	}
 	
@@ -48,9 +67,24 @@ class MathOlympicsRegisterController extends Controller
 
 		//if(!$university)
 		//return abort(404);
+		try {
+			$result = $this->client->OI_Dato([
+			  'CODE_URL'  => $request->codurl
+			]);
+  
+			$collection = collect($result->OI_DatoResult);
+
+			//$result = $this->client->OlimpiadasInscripcion($data);
+  
+		  } catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		  }
+		
+		  
 
 		return view('/academia/math_olympics_group_register')->with([
-			'codurl' => $request->codurl
+			'codurl' => $request->codurl,
+			'key' => $collection['DESCRIPCION']
 		]);
     }
 

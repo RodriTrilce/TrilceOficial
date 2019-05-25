@@ -92,7 +92,7 @@ const OlimpicsRegister = function()
     this.div_addcol       = document.getElementById('addcol');
     this.btn_delete    = document.getElementById('deleteRow');
 
-    this.acount_users_omlympics = 0;
+    this.acount_users_omlympics = 1;
   }
 
    this.addDisabled = function(){

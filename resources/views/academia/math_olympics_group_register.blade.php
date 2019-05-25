@@ -132,8 +132,8 @@
               <select
                 name="NIVEL_ESTUDIO"
                 id="cbx_type"
-                data-name="Tipo examen"
-                aria-label="Tipo examen"
+                data-name="Nivel de Estudios"
+                aria-label="Nivel de Estudios"
                 required>
                   <option value="" selected disabled hidden>Nivel de Estudios</option>                  
               </select>
@@ -213,7 +213,34 @@
               
               </div>
             </div>--}}
-            <div id="addcol"></div>
+            <div id="addcol">
+            
+              <div class="container_btn" id="1">
+                <div class="row col-xs-12">
+                  <div class="col-xs-12 col-sm-3">
+                    <fieldset class="form-group">
+                      <input type="number" name="NRO_DOCUMENTO[]"id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" required />
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <fieldset class="form-group">
+                      <input type="onlytext" name="NOMBRES[]" id="names" placeholder="Nombres" required />
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <fieldset class="form-group">
+                      <input type="onlytext" name="PRIMER_APELLIDO[]" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno" required />
+                    </fieldset>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <fieldset class="form-group">
+                      <input type="onlytext" name="SEGUNDO_APELLIDO[]" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" required />
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+
+            </div>
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>
           </div>

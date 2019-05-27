@@ -19,6 +19,7 @@
  import AcorditionProposal from './colegio/educational_proposal';
  import SimulacrumExam from './academia/simulacrum_exam';
  import OlimpicsRegister from './academia/olympics';
+ import OlimpicsRegisterGroup from './academia/olympics_group';
  
  
  
@@ -236,5 +237,13 @@ if(page == 'simulacrum-exam'){
  */
 if(page == 'olympics'){
   let olymp = new OlimpicsRegister();
+  olymp.init();
+}
+
+/**!
+ *  Math Olympics > Register Group
+ */
+if(page == 'olympics_group'){
+  let olymp = new OlimpicsRegisterGroup();
   olymp.init();
 }

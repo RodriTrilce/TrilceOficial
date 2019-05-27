@@ -67,11 +67,7 @@ const OlimpicsRegister = function()
      //this.setSteps();
      //this.setListener();
      this.setContentCbx();
-     this.setInfo();
-     //this.setCarreras();
-     //this.setType();
-     this.addUser();
-     //this.deleteUser();
+
   } 
   
   this.setVariables = function()
@@ -89,68 +85,7 @@ const OlimpicsRegister = function()
     // Cbx variables
    
     this.cbx_type     = document.getElementById('cbx_type');
-    this.btn_add       = document.getElementById('addRow');
-    this.div_addcol       = document.getElementById('addcol');
-    this.btn_delete    = document.getElementById('deleteRow');
-
-    this.acount_users_omlympics = 1;
   }
-
-   this.addDisabled = function(){
-    this.btn_add.disabled = true;
-  }
-
-  this.count_click_add = function() {
-    var divs = document.getElementsByClassName("container_btn").length;
-    if(divs >= 6){
-      this.addDisabled();
-    }
-  }
-
-  this.addUser = function()
-  {
-     this.btn_add.addEventListener('click', e => this.addRow());
-  } 
-
-  this.addRow = function()
-  {
-    this.acount_users_omlympics++;
-
-    this.divuser = document.createElement('div');
-    this.divuser.setAttribute('class', 'container_btn');
-    this.divuser.setAttribute('id', this.acount_users_omlympics);
-
-        this.divuser.innerHTML = "<div class='row col-xs-12'>"+
-        "<div class='col-xs-12 col-sm-3'>"+
-            "<fieldset class='form-group'>"+
-            "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
-            "</fieldset>"+
-        "</div>"+
-        "<div class='col-xs-12 col-sm-3'>"+
-            "<fieldset class='form-group'>"+
-            "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
-            "</fieldset>"+
-        "</div>"+
-        "<div class='col-xs-12 col-sm-3'>"+
-            "<fieldset class='form-group'>"+
-            "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
-            "</fieldset>"+
-        "</div>"+
-        "<div class='col-xs-12 col-sm-3'>"+
-            "<fieldset class='form-group'>"+
-            "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
-            "</fieldset>"+
-        "</div>"+
-        "<div class='col-xs-12 col-sm-12'>"+
-            "<button type='button' id='deleteRow' class='groupdelete deleteRow'  onclick=remove_field('"+this.acount_users_omlympics+"');> <i class='fa fa-trash'></i> Eliminar participante</button>"+
-        "</div>"+
-        "</div>";
-
-        this.div_addcol.appendChild(this.divuser);
-        this.count_click_add();
-     
-  }
-
   
 	this.setContentCbx = function()
   {
@@ -163,26 +98,7 @@ const OlimpicsRegister = function()
       this.fillCbx(this.cbx_type, response);
       
      }
-  }
-
-  this.setInfo = function()
-  {
-    window.onload = async () => {
-      let response = await(await fetch('/api/academia/olimpiadas-matematicas/info', {
-       method: 'POST',
-       body  : new URLSearchParams('CODE_URL=' + this.input_CODE_URL.value)
-      })).json();
-
-      //console.log(response);
-      this.fillText(response);
-      
-     }
-  }
-   this.fillText = function(response) {
-
-  
-     
-   }
+  }   
 
   this.fillCbx = function(select, response)
   {

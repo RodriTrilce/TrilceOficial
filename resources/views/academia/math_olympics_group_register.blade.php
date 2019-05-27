@@ -19,38 +19,34 @@
   {{--@if($university->short_name=='UNI' || $university->short_name=='San Marcos' || $university->short_name=='PUCP')--}}
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
-                <h1> ¡ Participa de en nuestra Olimpiada SJL !</h1>
+            <h1> ¡Participa en nuestra olimpiada!</h1>
             </div>
     </div>
   {{--@endif--}}
 
   <div class="row col-xs-12 start-xs center-sm olympic container-base">
-    <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
-      {{--<div class="col-xs-12 col-sm olympic-info">
-        <h2 class="olympic-info-title olympic-info-title-bottom">Información de Olimpiada</h2>
-        <ul class="olympic-info-ul">
-          <li>
+  <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md olympic-info">
+        <h2 class="olympic-info-title olympic-info-title-bottom">Información</h2>
+        <ul class="row col-xs-12 olympic-info-ul">
+          <li class="col-xs-12 col-sm-4">
             <span class="olympic-info-li-title">Descripción:</span>
-            <p id='data'>Olimpiadas de Matemática SJL - Grupal</p>
+            <p> {{$descripcion}}</p>
           </li>
-          <li>
-            <span class="olympic-info-li-title">Fecha del examen:</span>
-            <p>13/05/2019 - Aptitud Académica y Humanidades</p>
-            <p>15/05/2019 - Matemática</p>
-            <p>17/05/2019 - Física y Química</p>
+          <li class="col-xs-12 col-sm-4">
+            <span class="olympic-info-li-title">Fecha de Inscripción:</span>
+            <p>Inicio: {{ date('d/m/Y',strtotime($inicio))}}</p>
+            <p>Fin: {{ date('d/m/Y',strtotime($fin))}}</p>
           </li>
-          <li>
-            <span class="olympic-info-li-title">Locales</span>
-            <p>Comas</p>
-            <p>Los Olivos Academia</p>
-            <p>Santa Beatriz</p>
-            <p>Torrico</p>
-            <p>Villa el Salvador Academia</p>
+          <li class="col-xs-12 col-sm-4">
+            <span class="olympic-info-li-title">Lugar:</span>
+            <p>{{$lugar}}</p>
           </li>
         </ul>
-      </div>--}}
-
+        
+        
+      </div>
+    <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
       <form class="col-xs-12 col-sm col-md-12 col-lg-12 olympic-form" name="olimpiada_form" id="olimpiada_form" method="post" action="">
         @csrf
         <div class="row start-xs step-1 step-container">
@@ -80,13 +76,7 @@
           <div class="col-xs-12 start-xs">
             
             <fieldset class="form-group">
-              <input
-              type="onlytext"
-              name="COLEGIO_PROCEDENCIA"
-              id="colegio_procedencia"
-              placeholder="Colegio de Procedencia"
-              required
-              />
+              <input type="text" name="COLEGIO_PROCEDENCIA" id="colegio_procedencia" placeholder="Colegio de procedencia" required />
             </fieldset>
             
             <fieldset class="form-group">
@@ -103,7 +93,7 @@
                     <option value="09">Huancavelica</option>
                     <option value="10">Huanuco</option>
                     <option value="11">Ica</option>
-                    <option value="12">Junin</option>
+                    <option value="12">Junín</option>
                     <option value="13">La Libertad</option>
                     <option value="14">Lambayeque</option>
                     <option value="15">Lima</option>
@@ -113,7 +103,7 @@
                     <option value="19">Pasco</option>
                     <option value="20">Piura</option>
                     <option value="21">Puno</option>
-                    <option value="22">San Martin</option>
+                    <option value="22">San Martín</option>
                     <option value="23">Tacna</option>
                     <option value="24">Tumbes</option>
                     <option value="25">Ucayali</option>
@@ -122,98 +112,23 @@
             </fieldset>
 
             <fieldset class="form-group">
-                <select name="TIPO_INSTITUCION" id="cbx_institucion" data-name="Tipo de Institución" aria-label="Tipo de Institución" required>
-                    <option value="" selected="" disabled="" hidden="">Tipo de Institución</option>
-                    <option value="1">NACIONAL</option>
-                    <option value="2">PARTICULAR</option>
+                <select name="TIPO_INSTITUCION" id="cbx_institucion" data-name="Tipo de institución" aria-label="Tipo de institución" required>
+                    <option value="" selected="" disabled="" hidden="">Tipo de institución</option>
+                    <option value="1">Nacional</option>
+                    <option value="2">Particular</option>
                 </select>
             </fieldset>
 
             <fieldset class="form-group">
-              <select
-                name="NIVEL_ESTUDIO"
-                id="cbx_type"
-                data-name="Nivel de Estudios"
-                aria-label="Nivel de Estudios"
-                required>
-                  <option value="" selected disabled hidden>Nivel de Estudios</option>                  
+              <select name="NIVEL_ESTUDIO" id="cbx_type" data-name="Nivel de estudios" aria-label="Nivel de estudios" required >
+                  <option value="" selected disabled hidden>Nivel de estudios</option>                  
               </select>
             </fieldset>
-            
-            {{--<div id="addcol">
-            <p id='input_text1_wrapper'>
-              <input type='text' class='input_text' id='input_text1' placeholder='Enter Text'>
-              <button type='button' id='deleteRow' class='validate deleteRow'> <i class='fa fa-trash'></i>
-              </button>
-            </p>
-            </div>--}}
-
-            {{--<div class="col-xs-12 col-sm-2">
-              <button type="button" id="addRow" class="validate addRow"> <i class="fa fa-user-plus"></i></button>
-            </div>--}}
-
-            {{--<div id="elclonado"><div class="row col-xs-12 container_btn" id="1"><div class="col-xs-12 col-sm-3"><fieldset class="form-group"><input type="number" name="NRO_DOCUMENTO[]"id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" required /></fieldset></div><div class="col-xs-12 col-sm-3"><fieldset class="form-group"><input type="onlytext" name="NOMBRES[]" id="names" placeholder="Nombres" required /></fieldset></div><div class="col-xs-12 col-sm-3"><fieldset class="form-group"><input type="onlytext" name="PRIMER_APELLIDO[]" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno" required /></fieldset></div><div class="col-xs-12 col-sm-3"><fieldset class="form-group"><input type="onlytext" name="SEGUNDO_APELLIDO[]" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" required /></fieldset></div><div class="col-xs-12 col-sm-12"><button type="button" id="deleteRow" class="groupdelete deleteRow" onclick=remove_field()> <i class="fa fa-trash"></i> Eliminar participante</button></div></div></div>--}}
 
             <div class="col-xs-12 col-sm-12">
             <button type="button" id="addRow" class="groupadd addRow"> <i class="fa fa-user-plus"></i> Agregar participante</button>
             </div>
 
-            {{--<div id="clonados"></div>--}}
-            {{--<div class="row col-xs-12">
-              <div class="col-xs-12 col-sm-2">
-                  <fieldset class="form-group">
-                      <input
-                        type="number"
-                        name="NRO_DOCUMENTO"
-                        id="step1_dni"
-                        placeholder="DNI"
-                        aria-label="DNI"
-                        min="0"
-                        max="99999999"
-                        minlength="8"
-                        maxLength="8"
-                        required
-                      />
-                  </fieldset>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                  <fieldset class="form-group">
-                    <input
-                    type="onlytext"
-                    name="NOMBRES"
-                    id="names"
-                    placeholder="Nombres"
-                    required
-                    />
-                  </fieldset>
-                </div>
-              <div class="col-xs-12 col-sm-3">
-                <fieldset class="form-group">
-                  <input
-                    type="onlytext"
-                    name="PRIMER_APELLIDO"
-                    id="step1_PRIMER_APELLIDO"
-                    placeholder="Apellido paterno"
-                    aria-label="Apellido paterno"
-                    required
-                  />
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <fieldset class="form-group">
-                  <input
-                    type="onlytext"
-                    name="SEGUNDO_APELLIDO"
-                    id="step1_SEGUNDO_APELLIDO"
-                    placeholder="Apellido materno"
-                    required
-                  />
-                </fieldset>
-              </div>
-              <div class="col-xs-12 col-sm-1">
-              
-              </div>
-            </div>--}}
             <div id="addcol">
 
               <div class="container_btn" id="1">
@@ -256,7 +171,7 @@
 @endsection
 
 @section('scripts')
-    page = 'olympics';
+    page = 'olympics_group';
   @parent
 
 

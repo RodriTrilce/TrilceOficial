@@ -23,7 +23,20 @@ class MathOlympicsRegisterController extends Controller
 		$this->client = new \SoapClient($url, [
 			'trace' => 1
 		]);
-    }
+		}
+		
+		//Agregar Manualmente los codidos de los simulacros no activos
+		public function blacklist($codurl)
+		{
+			$notactive = array();
+			$longitud = count($notactive);
+			for($i=0; $i<$longitud; $i++)
+				{
+					if($codurl == $notactive[$i]){
+						return true;
+					}
+				}
+		}
     
     /**
      * Display a listing of the resource.
@@ -36,29 +49,33 @@ class MathOlympicsRegisterController extends Controller
 
 		//if(!$university)
 		//return abort(404);
+			if(!$this->blacklist($request->codurl)){
+				try {
+					$result = $this->client->OI_Dato([
+						'CODE_URL'  => $request->codurl
+					]);
+			
+					$collection = collect($result->OI_DatoResult);
 
-		try {
-			$result = $this->client->OI_Dato([
-			  'CODE_URL'  => $request->codurl
-			]);
-  
-			$collection = collect($result->OI_DatoResult);
+					//$result = $this->client->OlimpiadasInscripcion($data);
+			
+					} catch ( SoapFault $e ) {
+					dd($e->getMessage());
+					}
 
-			//$result = $this->client->OlimpiadasInscripcion($data);
-  
-		  } catch ( SoapFault $e ) {
-			dd($e->getMessage());
-		  }
+				return view('/academia/math_olympics_register')->with([
+					'codurl' => $request->codurl,
+					'descripcion' => $collection['DESCRIPCION'],
+					'distrito' => $collection['DISTRITO'],
+					'inicio' =>  $collection['FECHA_INICIO'],
+					'fin' => $collection['FECHA_FIN'],
+					'lugar' => $collection['INSTITUCION_EDUCATIVA'],
 
-		return view('/academia/math_olympics_register')->with([
-			'codurl' => $request->codurl,
-			'descripcion' => $collection['DESCRIPCION'],
-			'distrito' => $collection['DISTRITO'],
-			'inicio' => $collection['FECHA_INICIO'],
-			'fin' => $collection['FECHA_FIN'],
-			'lugar' => $collection['INSTITUCION_EDUCATIVA'],
+				]);
+			}else{
+				return abort(404);
+			}
 
-		]);
 	}
 	
 	public function indexGroup(Request $request)
@@ -84,7 +101,11 @@ class MathOlympicsRegisterController extends Controller
 
 		return view('/academia/math_olympics_group_register')->with([
 			'codurl' => $request->codurl,
-			'key' => $collection['DESCRIPCION']
+			'descripcion' => $collection['DESCRIPCION'],
+			'distrito' => $collection['DISTRITO'],
+			'inicio' =>  $collection['FECHA_INICIO'],
+			'fin' => $collection['FECHA_FIN'],
+			'lugar' => $collection['INSTITUCION_EDUCATIVA'],
 		]);
     }
 

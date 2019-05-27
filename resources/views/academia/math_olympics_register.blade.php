@@ -19,7 +19,7 @@
   {{--@if($university->short_name=='UNI' || $university->short_name=='San Marcos' || $university->short_name=='PUCP')--}}
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
-                <h1> ¡ Participa de en nuestra Olimpiada SJL !</h1>
+                <h1> ¡Participa en nuestra olimpiada! </h1>
             </div>
     </div>
   {{--@endif--}}
@@ -28,7 +28,7 @@
     <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
       <div class="col-xs-12 col-sm olympic-info">
-        <h2 class="olympic-info-title olympic-info-title-bottom">Información de Olimpiada</h2>
+        <h2 class="olympic-info-title olympic-info-title-bottom">Información</h2>
         <ul class="olympic-info-ul">
           <li>
             <span class="olympic-info-li-title">Descripción:</span>
@@ -36,11 +36,11 @@
           </li>
           <li>
             <span class="olympic-info-li-title">Fecha de Inscripción:</span>
-            <p>Inicio - {{$inicio}}</p>
-            <p>Fin - {{$fin}}</p>
+            <p>Inicio: {{ date('d/m/Y',strtotime($inicio))}}</p>
+            <p>Fin: {{ date('d/m/Y',strtotime($fin))}}</p>
           </li>
           <li>
-            <span class="olympic-info-li-title">Local de Realización:</span>
+            <span class="olympic-info-li-title">Lugar:</span>
             <p>{{$lugar}}</p>
           </li>
         </ul>
@@ -75,60 +75,24 @@
 
             <div class="col-xs-12">
               <fieldset class="form-group">
-                <input
-                  type="number"
-                  name="NRO_DOCUMENTO"
-                  id="step1_dni"
-                  placeholder="DNI"
-                  aria-label="DNI"
-                  min="0"
-                  max="99999999"
-                  minlength="8"
-                  maxLength="8"
-                  required
-                />
+                <input type="number" name="NRO_DOCUMENTO" id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" required />
               </fieldset>
             </div>
 
             <fieldset class="form-group">
-              <input
-              type="onlytext"
-              name="NOMBRES"
-              id="names"
-              placeholder="Nombres"
-              required
-              />
+              <input type="onlytext" name="NOMBRES" id="names" placeholder="Nombres" required />
             </fieldset>
 
             <fieldset class="form-group">
-              <input
-                type="onlytext"
-                name="PRIMER_APELLIDO"
-                id="step1_PRIMER_APELLIDO"
-                placeholder="Apellido paterno"
-                aria-label="Apellido paterno"
-                required
-              />
+              <input type="onlytext" name="PRIMER_APELLIDO" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno" required />
             </fieldset>
 
             <fieldset class="form-group">
-              <input
-                type="onlytext"
-                name="SEGUNDO_APELLIDO"
-                id="step1_SEGUNDO_APELLIDO"
-                placeholder="Apellido materno"
-                required
-              />
+              <input type="onlytext" name="SEGUNDO_APELLIDO" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" aria-label="Apellido materno" required />
             </fieldset>
 
             <fieldset class="form-group">
-              <input
-              type="email"
-              name="CORREO_E"
-              id="email"
-              placeholder="Email"
-              required
-              />
+              <input type="email" name="CORREO_E" id="email" placeholder="Email" required />
             </fieldset>
             
             <fieldset class="form-group">
@@ -145,7 +109,7 @@
                     <option value="09">Huancavelica</option>
                     <option value="10">Huanuco</option>
                     <option value="11">Ica</option>
-                    <option value="12">Junin</option>
+                    <option value="12">Junín</option>
                     <option value="13">La Libertad</option>
                     <option value="14">Lambayeque</option>
                     <option value="15">Lima</option>
@@ -155,7 +119,7 @@
                     <option value="19">Pasco</option>
                     <option value="20">Piura</option>
                     <option value="21">Puno</option>
-                    <option value="22">San Martin</option>
+                    <option value="22">San Martín</option>
                     <option value="23">Tacna</option>
                     <option value="24">Tumbes</option>
                     <option value="25">Ucayali</option>
@@ -164,21 +128,15 @@
             </fieldset>
 
             <fieldset class="form-group">
-                <select name="TIPO_INSTITUCION" id="cbx_institucion" data-name="Tipo de Institución" aria-label="Tipo de Institución" required>
-                    <option value="" selected="" disabled="" hidden="">Tipo de Institución</option>
-                    <option value="1">NACIONAL</option>
-                    <option value="2">PARTICULAR</option>
+                <select name="TIPO_INSTITUCION" id="cbx_institucion" data-name="Tipo de institución" aria-label="Tipo de institución" required>
+                    <option value="" selected="" disabled="" hidden="">Tipo de institución</option>
+                    <option value="1">Nacional</option>
+                    <option value="2">Particular</option>
                 </select>
             </fieldset>
 
             <fieldset class="form-group">
-              <input
-              type="onlytext"
-              name="COLEGIO_PROCEDENCIA"
-              id="colegio_procedencia"
-              placeholder="Colegio de Procedencia"
-              required
-              />
+              <input type="text" name="COLEGIO_PROCEDENCIA" id="colegio_procedencia" placeholder="Colegio de procedencia" required />
             </fieldset>
 
             <fieldset class="form-group">
@@ -188,7 +146,7 @@
                 data-name="Tipo examen"
                 aria-label="Tipo examen"
                 required>
-                  <option value="" selected disabled hidden>Nivel de Estudios</option>                  
+                  <option value="" selected disabled hidden>Nivel de estudios</option>                  
               </select>
             </fieldset>
 

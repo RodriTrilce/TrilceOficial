@@ -23,6 +23,22 @@ class OlympicsApiController extends Controller
       ]);
     }
 
+    public function type(Request $request)
+    {
+        try {
+          $result = $this->client->OI_NivelEstudio([
+            'CODE_URL'  => $request->CODE_URL
+          ]);
+
+          $collection = collect($result->OI_NivelEstudioResult);
+
+        } catch ( SoapFault $e ) {
+          dd($e->getMessage());
+        }
+
+    	return new OlympicsApiResource($collection);
+    }   
+    
     public function info(Request $request)
     {
         try {
@@ -38,20 +54,4 @@ class OlympicsApiController extends Controller
 
     	return new OlympicsApiResource($collection);
     }
-
-    public function type(Request $request)
-    {
-        try {
-          $result = $this->client->OI_NivelEstudio([
-            'CODE_URL'  => $request->CODE_URL
-          ]);
-
-          $collection = collect($result->OI_NivelEstudioResult);
-
-        } catch ( SoapFault $e ) {
-          dd($e->getMessage());
-        }
-
-    	return new OlympicsApiResource($collection);
-    }    
 }

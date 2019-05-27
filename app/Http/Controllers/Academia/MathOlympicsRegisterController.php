@@ -28,7 +28,7 @@ class MathOlympicsRegisterController extends Controller
 		//Agregar Manualmente los codidos de los simulacros no activos
 		public function blacklist($codurl)
 		{
-			$notactive = array();
+			$notactive = array('');
 			$longitud = count($notactive);
 			for($i=0; $i<$longitud; $i++)
 				{
@@ -79,11 +79,9 @@ class MathOlympicsRegisterController extends Controller
 	}
 	
 	public function indexGroup(Request $request)
-    {
-        //$university = University::validate( ucwords(Str::slug($request->university, ' ')) );
+  {
 
-		//if(!$university)
-		//return abort(404);
+		if(!$this->blacklist($request->codurl)){
 		try {
 			$result = $this->client->OI_Dato([
 			  'CODE_URL'  => $request->codurl
@@ -99,15 +97,18 @@ class MathOlympicsRegisterController extends Controller
 		
 		  
 
-		return view('/academia/math_olympics_group_register')->with([
-			'codurl' => $request->codurl,
-			'descripcion' => $collection['DESCRIPCION'],
-			'distrito' => $collection['DISTRITO'],
-			'inicio' =>  $collection['FECHA_INICIO'],
-			'fin' => $collection['FECHA_FIN'],
-			'lugar' => $collection['INSTITUCION_EDUCATIVA'],
-		]);
-    }
+			return view('/academia/math_olympics_group_register')->with([
+				'codurl' => $request->codurl,
+				'descripcion' => $collection['DESCRIPCION'],
+				'distrito' => $collection['DISTRITO'],
+				'inicio' =>  $collection['FECHA_INICIO'],
+				'fin' => $collection['FECHA_FIN'],
+				'lugar' => $collection['INSTITUCION_EDUCATIVA'],
+			]);
+		}else{
+			return abort(404);
+		}
+  }
 
 
     /**

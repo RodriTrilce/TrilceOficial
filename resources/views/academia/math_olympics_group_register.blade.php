@@ -40,7 +40,7 @@
           </li>
           <li class="col-xs-12 col-sm-4">
             <span class="olympic-info-li-title">Lugar:</span>
-            <p>{{$lugar}}</p>
+            <p>{{$lugar}} ({{$distrito}})</p>
           </li>
         </ul>
         

@@ -27,12 +27,29 @@ class SimulacrumExamController extends Controller
 		]);
 	}
 
+	//Agregar en el array manualmente los codidos de las Olimpiadas ya no activas
+	// Example: array('CODEURL','CODEURL'.....);
+	public function blacklist($codurl)
+	{
+		$notactive = array('');
+		$longitud = count($notactive);
+		for($i=0; $i<$longitud; $i++)
+			{
+				if($codurl == $notactive[$i]){
+					return true;
+				}
+			}
+	}
+
 	public function index(Request $request)
 	{
 
 		$university = University::validate( ucwords(Str::slug($request->university, ' ')) );
 
 		if(!$university)
+		return abort(404);
+
+		if($this->blacklist($request->idexam))
 		return abort(404);
 
 		return view('/academia/simulacrum_exam')->with([
@@ -43,6 +60,7 @@ class SimulacrumExamController extends Controller
 
 	public function store(Request $request)
 	{
+		
 		$data = [];
 		$data['request'] = [
 			'CODE_URL' 			=> $request->CODE_URL,

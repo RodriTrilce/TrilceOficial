@@ -67,6 +67,7 @@ const OlimpicsRegister = function()
      //this.setSteps();
      //this.setListener();
      this.setContentCbx();
+     this.solonumeros();
 
   } 
   
@@ -85,6 +86,7 @@ const OlimpicsRegister = function()
     // Cbx variables
    
     this.cbx_type     = document.getElementById('cbx_type');
+    this.txtnumber    = document.getElementById("step1_dni");
   }
   
 	this.setContentCbx = function()
@@ -117,6 +119,19 @@ const OlimpicsRegister = function()
       s.value = response.data.ItemOfstring.Value;
       select.add(s);
     }
+  }
+
+  this.solonumeros = function(){
+    this.txtnumber.addEventListener('keydown', (event) => {
+     // const keyName = event.keyCode;
+      //alert(event.keyCode);
+      if((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105) && event.keyCode !==190  && event.keyCode !==110 && event.keyCode !==8 && event.keyCode !==9 && event.keyCode !==116){
+        event.returnValue = false;
+       
+      }
+      
+  
+    });
   }
 
 }

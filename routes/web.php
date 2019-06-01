@@ -259,3 +259,33 @@ Route::name('colegio-vacations')
 
 Route::name('colegio-vacations-venue')
       ->get('/colegio/sede/{barrack}/vacaciones-utiles', 'Colegio\VacationsController@venue');
+
+/**
+ *  Dashboard 2019
+ */
+
+Route::name('dashboard-index')
+      ->get('/dashboard', 'Dashboard\IndexController@index');
+
+
+//GUIA
+// Index
+/*Auth::routes();
+Route::get('/admin', 'Admin\IndexController@index');
+Route::get('/admin/salir', 'Auth\LogoutController@logout');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'rolepageadmin']], function(){
+  Route::resource('/blog', 'BlogController');
+  Route::resource('/math-olympics', 'MathOlympicsController');
+  Route::resource('/math-olympics/results', 'MathOlympicsResultsController');
+  Route::resource('/venue-colegio', 'VenueColegioController');
+  Route::resource('/venue-academia', 'VenueAcademiaController');
+  Route::resource('/banners', 'BannersController');
+  Route::resource('/rrhh-forms', 'RhFormsController');
+  Route::resource('/popup', 'PopupController');  
+  Route::resource('/filemanager', 'FileManagerController');
+  Route::resource('/shortlink', 'ShortlinkController');
+  Route::resource('/simulacrum', 'SimulacrumResource');
+  Route::resource('/solutions', 'SolutionResource');
+  Route::resource('/form-sorteo', 'FormSorteoController');  
+  Route::resource('/form-claves', 'FormClavesSanMarcosController');
+});*/

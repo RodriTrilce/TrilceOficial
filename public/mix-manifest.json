@@ -7,5 +7,6 @@
     "/css/main.css": "/css/main.css",
     "/css/admin_main.css": "/css/admin_main.css",
     "/js/admin_main.js": "/js/admin_main.js",
+    "/js/app_home.js": "/js/app_home.js",
     "/favicon.ico": "/favicon.ico"
 }

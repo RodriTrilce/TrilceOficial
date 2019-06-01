@@ -76,7 +76,7 @@
           <div class="col-xs-12 start-xs">
             
             <fieldset class="form-group">
-              <input type="text" name="COLEGIO_PROCEDENCIA" id="colegio_procedencia" placeholder="Colegio de procedencia" required />
+              <input type="text" name="COLEGIO_PROCEDENCIA" id="colegio_procedencia" placeholder="Colegio de procedencia" minlength="4" maxlength="50" autocomplete="off" required />
             </fieldset>
             
             <fieldset class="form-group">
@@ -135,22 +135,22 @@
                 <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="number" name="NRO_DOCUMENTO[]"id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" required />
+                      <input type="onlynumber" name="NRO_DOCUMENTO[]"id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" autocomplete="off" required />
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="onlytext" name="NOMBRES[]" id="names" placeholder="Nombres" required />
+                      <input type="onlytext" name="NOMBRES[]" id="names" placeholder="Nombres" minlength="2" maxlength="40" autocomplete="off" required />
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="onlytext" name="PRIMER_APELLIDO[]" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno" required />
+                      <input type="onlytext" name="PRIMER_APELLIDO[]" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno"  minlength="3" maxlength="40" autocomplete="off" required />
                     </fieldset>
                   </div>
                   <div class="col-xs-12 col-sm-3">
                     <fieldset class="form-group">
-                      <input type="onlytext" name="SEGUNDO_APELLIDO[]" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" required />
+                      <input type="onlytext" name="SEGUNDO_APELLIDO[]" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" aria-label="Apellido paterno" minlength="3" maxlength="40" autocomplete="off" required />
                     </fieldset>
                   </div>
                 </div>
@@ -175,17 +175,23 @@
   @parent
 
 
-  <script>
-    function remove_field(id)
-    {
-      var element = document.getElementById(id);
-      element.parentNode.removeChild(element);
-      var numbers_containers = document.getElementsByClassName("container_btn").length;
-      if(numbers_containers < 6 ){
-        var btnadd = document.getElementById('addRow');
-        btnadd.disabled = false;
-      }
-    }
-  </script>
+<script>
+function snumber(event){
+  //alert(event.keyCode);
+  if((event.keyCode < 48 || event.keyCode > 57)){
+    event.returnValue = false;
+  }
+}
+function remove_field(id)
+{
+  var element = document.getElementById(id);
+  element.parentNode.removeChild(element);
+  var numbers_containers = document.getElementsByClassName("container_btn").length;
+  if(numbers_containers < 6 ){
+    var btnadd = document.getElementById('addRow');
+    btnadd.disabled = false;
+  }
+}
+</script>
 
 @endsection

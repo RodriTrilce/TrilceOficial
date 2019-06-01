@@ -17,3 +17,5 @@ yarn-error.log
 /public/matricula-2019
 /public/matricula-2020
 /public/inscripcion-academia
+app/Http/Controllers/Dashboard
+resources/views/dashboard

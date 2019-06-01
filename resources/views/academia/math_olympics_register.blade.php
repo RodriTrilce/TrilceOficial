@@ -75,24 +75,24 @@
 
             <div class="col-xs-12">
               <fieldset class="form-group">
-                <input type="number" name="NRO_DOCUMENTO" id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" required />
+                <input type="onlynumber" name="NRO_DOCUMENTO" id="step1_dni" placeholder="DNI" aria-label="DNI" min="0" max="99999999" minlength="8" maxLength="8" autocomplete="off" required />
               </fieldset>
             </div>
 
             <fieldset class="form-group">
-              <input type="onlytext" name="NOMBRES" id="names" placeholder="Nombres" required />
+              <input type="onlytext" name="NOMBRES" id="names" placeholder="Nombres" minlength="2" maxlength="40" autocomplete="off" required />
             </fieldset>
 
             <fieldset class="form-group">
-              <input type="onlytext" name="PRIMER_APELLIDO" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno" required />
+              <input type="onlytext" name="PRIMER_APELLIDO" id="step1_PRIMER_APELLIDO" placeholder="Apellido paterno" aria-label="Apellido paterno" minlength="3" maxlength="40" autocomplete="off" required />
             </fieldset>
 
             <fieldset class="form-group">
-              <input type="onlytext" name="SEGUNDO_APELLIDO" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" aria-label="Apellido materno" required />
+              <input type="onlytext" name="SEGUNDO_APELLIDO" id="step1_SEGUNDO_APELLIDO" placeholder="Apellido materno" aria-label="Apellido materno" minlength="3" maxlength="40" autocomplete="off" required />
             </fieldset>
 
             <fieldset class="form-group">
-              <input type="email" name="CORREO_E" id="email" placeholder="Email" required />
+              <input type="email" name="CORREO_E" id="email" placeholder="Email" autocomplete="off" required />
             </fieldset>
             
             <fieldset class="form-group">
@@ -136,7 +136,7 @@
             </fieldset>
 
             <fieldset class="form-group">
-              <input type="text" name="COLEGIO_PROCEDENCIA" id="colegio_procedencia" placeholder="Colegio de procedencia" required />
+              <input type="text" name="COLEGIO_PROCEDENCIA" id="colegio_procedencia" placeholder="Colegio de procedencia" minLength="3" maxLength="50" autocomplete="off" required />
             </fieldset>
 
             <fieldset class="form-group">

@@ -20,6 +20,7 @@ mix.js('resources/assets/js/app_academia.js', 'public/js/app_academia.js');
 mix.sass('resources/assets/sass/main_academia.scss','public/css');
 
 // mix:Home
+mix.js('resources/assets/js/app_home.js', 'public/js/app_home.js');
 mix.sass('resources/assets/sass/main_home.scss','public/css');
 
 // mix:All

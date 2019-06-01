@@ -513,3 +513,69 @@ body, html{
     max-width: 300px !important;
   }
 }
+// Cambios Para Los 40 años Trilce
+#logo-40year{
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 999999;
+  opacity: 1 !important;
+  bottom: 0px;
+  right: 0px;
+  display:block;
+  width: 240px;
+  svg{
+    
+    width: 240px;
+    height: 110px;
+    max-width: 300px !important;
+  }         
+}
+.container_new {
+   
+  position: absolute;
+  top: 0;
+  background: #fff;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  z-index: 99999999999
+}
+
+#lottie{
+  position: absolute;
+  left: 0%;
+  top: -5%;
+  transform: translate(-0%, -0%);
+  -webkit-transform: translate(-0%, -0%);
+          background-color:#fff;
+          width:100%;
+          height:100%;
+          display:block;
+          overflow: hidden;
+          transform: translate3d(0,0,0);
+          text-align: center;
+          opacity: 1;
+      }
+
+.cerrar {
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+body {
+  margin: 0;
+  overflow-Y: hidden; /*quitar el scroll*/
+}
+@keyframes preloader {
+    90% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}

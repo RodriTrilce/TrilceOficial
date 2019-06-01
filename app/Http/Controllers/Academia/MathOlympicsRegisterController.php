@@ -25,7 +25,8 @@ class MathOlympicsRegisterController extends Controller
 		]);
 		}
 		
-		//Agregar Manualmente los codidos de los simulacros no activos
+		//Agregar en el array manualmente los codidos de las Olimpiadas ya no activas
+		// Example: array('CODEURL','CODEURL'.....);
 		public function blacklist($codurl)
 		{
 			$notactive = array('');

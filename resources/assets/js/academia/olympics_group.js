@@ -19,6 +19,7 @@ const ValidationLang = {
   minLength     : "'{label}' debe tener mínimo {minLength} dígitos.",
   tel           : "{label} debe ser un número de teléfono.",
   onlytext      : "Solo se permite texto.",
+  onlynumber      : "Solo se permite números.",
   captcha       : "Verfica el captcha."
 };
 
@@ -63,6 +64,24 @@ Validation.validators.onlytext = input => {
  });
 };
 
+Validation.validators.onlynumber = input => {
+  return new Promise((valid, invalid) => {
+     if (input.value.length > 0 && input.getAttribute('type') === 'onlynumber') {
+         const Regex = new RegExp(/^[0-9\s]*$/);
+         if (Regex.test(input.value)) {
+             valid();
+         } else {
+             invalid();
+         }
+     } else {
+         valid();
+     }
+  });
+ };
+
+ 
+
+
 const OlimpicsRegisterGroup = function()
 {
 
@@ -74,19 +93,9 @@ const OlimpicsRegisterGroup = function()
     //this.setListener();
     this.setContentCbx();
     this.addUser();
+    this.solonumeros();
 
  }
-
-  this.addDisabled = function(){
-    this.btn_add.disabled = true;
-  }
-
-  this.count_click_add = function() {
-    var divs = document.getElementsByClassName("container_btn").length;
-    if(divs >= 6){
-      this.addDisabled();
-    }
-  }
  
  this.setVariables = function()
  {
@@ -105,14 +114,41 @@ const OlimpicsRegisterGroup = function()
    this.cbx_type                = document.getElementById('cbx_type');
    this.btn_add                 = document.getElementById('addRow');
    this.div_addcol              = document.getElementById('addcol');
+   this.txtnumber               = document.getElementById("step1_dni");
    this.btn_delete              = document.getElementById('deleteRow');
    this.acount_users_omlympics  = 1;
  }
 
- this.addUser = function()
- {
-    this.btn_add.addEventListener('click', e => this.addRow());
- } 
+ 
+
+this.addDisabled = function(){
+  this.btn_add.disabled = true;
+}
+
+this.count_click_add = function() {
+  var divs = document.getElementsByClassName("container_btn").length;
+  if(divs >= 6){
+    this.addDisabled();
+  }
+}
+
+this.solonumeros = function(){
+  this.txtnumber.addEventListener('keydown', (event) => {
+   // const keyName = event.keyCode;
+    //alert(event.keyCode);
+    if((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105) && event.keyCode !==190  && event.keyCode !==110 && event.keyCode !==8 && event.keyCode !==9 && event.keyCode !==116){
+      event.returnValue = false;
+     
+    }
+    
+
+  });
+}
+
+this.addUser = function()
+{
+  this.btn_add.addEventListener('click', e => this.addRow());
+} 
 
  this.addRow = function()
  {
@@ -125,22 +161,22 @@ const OlimpicsRegisterGroup = function()
        this.divuser.innerHTML = "<div class='row col-xs-12'>"+
        "<div class='col-xs-12 col-sm-3'>"+
            "<fieldset class='form-group'>"+
-           "<input type='number' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' required />"+
+           "<input type='onlynumber' name='NRO_DOCUMENTO[]'id='step1_dni' placeholder='DNI' aria-label='DNI' min='0' max='99999999' minlength='8' maxLength='8' autocomplete='off' onKeyPress=snumber(event) required  />"+
            "</fieldset>"+
        "</div>"+
        "<div class='col-xs-12 col-sm-3'>"+
            "<fieldset class='form-group'>"+
-           "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' required />"+
+           "<input type='onlytext' name='NOMBRES[]' id='names' placeholder='Nombres' minlength='2' maxlength='40' autocomplete='off' required/>"+
            "</fieldset>"+
        "</div>"+
        "<div class='col-xs-12 col-sm-3'>"+
            "<fieldset class='form-group'>"+
-           "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' required />"+
+           "<input type='onlytext' name='PRIMER_APELLIDO[]' id='step1_PRIMER_APELLIDO' placeholder='Apellido paterno' aria-label='Apellido paterno' minlength='3' maxlength='40' autocomplete='off' required />"+
            "</fieldset>"+
        "</div>"+
        "<div class='col-xs-12 col-sm-3'>"+
            "<fieldset class='form-group'>"+
-           "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' required />"+
+           "<input type='onlytext' name='SEGUNDO_APELLIDO[]' id='step1_SEGUNDO_APELLIDO' placeholder='Apellido materno' aria-label='Apellido materno' minlength='3' maxlength='40' autocomplete='off' required />"+
            "</fieldset>"+
        "</div>"+
        "<div class='col-xs-12 col-sm-12'>"+

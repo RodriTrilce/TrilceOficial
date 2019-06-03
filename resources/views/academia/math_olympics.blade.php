@@ -107,8 +107,8 @@
 
                       <ul class="math-olympic-list">
                         <li {!! ($v->file_id ? 'class="active"' : '') !!}><a href="{{$v->getBaseRules()}}" target="_blank">Bases</a></li>
-                        <li {!! ($v->inscription_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_url}}" target="_blank">Inscripción individual</a></li>
-                        <li {!! ($v->inscription_group_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_group_url}}" target="_blank">Inscripción grupal</a></li>
+                        <li {!! ($v->inscription_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_url}}">Inscripción individual</a></li>
+                        <li {!! ($v->inscription_group_url ? 'class="active"' : 'class="hidden"') !!}><a href="{{$v->inscription_group_url}}">Inscripción grupal</a></li>
                         <li {!! (count($v->results) ? 'class="active"' : 'class="hidden"') !!}>
                           @if(count($v->results))
                             <select id="result_{{$v->id}}">

@@ -19,3 +19,6 @@ yarn-error.log
 /public/inscripcion-academia
 app/Http/Controllers/Dashboard
 resources/views/dashboard
+resources/assets/images/patterns
+resources/assets/sass/dashboard
+resources/assets/sass/main_dashboard.scss

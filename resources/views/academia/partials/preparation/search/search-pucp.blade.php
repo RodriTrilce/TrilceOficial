@@ -2,7 +2,7 @@
   <select id="beginning-cyle">
     <option value="0" selected hidden disable>Ciclos</option>
     <option value=0>Todos</option>
-    <option value=30>Anual</option>
+    {{--<option value=30>Anual</option>--}}
     <option value=35>Semestral</option>
     <option value=46>Verano</option>
     <option value=50>Repaso</option>
@@ -15,7 +15,7 @@
     <option value="0">Todos</option>
     <option value=13>Santa Beatriz</option>
     <option value=14>Cercado de Lima</option>
-    <option value=20>San Insidro</option>
+    <option value=20>San Isidro</option>
     <option value=23>Los Olivos</option>    
   </select>
 </div>

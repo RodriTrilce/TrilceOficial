@@ -28,6 +28,6 @@
     <option value=0>Todos</option>
     <option value=1>Mañana</option>
     <option value=2>Tarde</option>
-    <option value=3>Noche</option>
+    {{--<option value=3>Noche</option>--}}
   </select>
 </div>

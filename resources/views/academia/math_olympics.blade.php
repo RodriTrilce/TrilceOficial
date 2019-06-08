@@ -26,7 +26,10 @@
 
           <div class="js-tabs__content js-badger-accordion_1">
             @foreach ($lima as $v)
-               @if($v->finish_at > date("Y-m-d H:i:s"))
+              @php                
+                  $anio = date("Y", strtotime($v->finish_at));
+              @endphp
+              @if($anio == date("Y"))
               <div class="om__item row col-xs-12">
                   <h3 class="om__title js-badger-accordion-header">
                     <div class="om__signed"></div>
@@ -73,14 +76,17 @@
 
               </div>
               @endif
+             
             @endforeach
           </div>
 
           <div class="js-tabs__content js-badger-accordion_2">
             
             @foreach ($province as $v)
-               @if($v->finish_at > date("Y-m-d H:i:s"))
-              
+              @php                
+                $anio = date("Y", strtotime($v->finish_at));
+              @endphp
+              @if($anio == date("Y"))
               <div class="om__item row col-xs-12">
                   <h3 class="om__title js-badger-accordion-header">
                     <div class="om__signed"></div>
@@ -125,8 +131,6 @@
                     </div>
                   </dd>
               </div>
-
-
              @endif
             @endforeach
           </div>

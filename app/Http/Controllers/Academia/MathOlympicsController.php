@@ -16,21 +16,20 @@ class MathOlympicsController extends Controller
    public function index()
    {
 
-     $data =  MathOlympicsModel::all();
-
      $lima = MathOlympicsModel::whereNull('isprovince')
+     ->whereYear('finish_at', '=', date("Y"))
      ->orderBy('finish_at', 'asc')
      ->get();
 
      $province = MathOlympicsModel::where('isprovince',  '=', '1')
+     ->whereYear('finish_at', '=', date("Y"))
      ->orderBy('finish_at', 'asc')
      ->get();
-
 
      return view('/academia/math_olympics')->with([
        'lima'       => $lima,
        'province'   => $province,
-       'data'       => $data
+       'data'       => $lima->merge($province),
      ]);
    }
 }

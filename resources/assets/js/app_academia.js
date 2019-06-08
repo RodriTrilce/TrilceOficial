@@ -26,7 +26,7 @@
  window.SlimSelect = SlimSelect;
  
  window.UID        = {
-   _current: 0,
+   _current: 1,
    getNew: function(){
      this._current++;
      return this._current;

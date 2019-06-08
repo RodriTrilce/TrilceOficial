@@ -33,7 +33,7 @@
               <div class="om__item row col-xs-12">
                   <h3 class="om__title js-badger-accordion-header">
                     <div class="om__signed"></div>
-                    <span class="om__date">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span>
+                    <span class="om__date">{{ Date::parse($v->finish_at)->format('j \d\e F Y') }}</span>
 
                     @if(count($v->results))
                       <span class="om__state om__state--end">CULMINADO</span>
@@ -90,7 +90,7 @@
               <div class="om__item row col-xs-12">
                   <h3 class="om__title js-badger-accordion-header">
                     <div class="om__signed"></div>
-                    <span class="om__date">{{ Date::parse($v->finish_at)->format('j \d\e F ') }}</span>
+                    <span class="om__date">{{ Date::parse($v->finish_at)->format('j \d\e F Y') }}</span>
 
                     @if(count($v->results))
                       <span class="om__state om__state--end">CULMINADO</span>

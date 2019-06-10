@@ -87,13 +87,16 @@ class SimulacrumExamController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-
+		
+		return redirect()->route('academia-index')->with([
+			'olympics'  => true,
+		]);
 		
 
 		//return new SimulacrumApiResource($collection);
 		//$area = new SimulacrumApiResource($collection);
 		 
-		  $area = json_decode($collection, true);
+		 /* $area = json_decode($collection, true);
 			$newdata= $area['MENSAJE'];
 			foreach($newdata as $posicion=>$jugador)
 			{
@@ -103,7 +106,7 @@ class SimulacrumExamController extends Controller
 					return view('/academia/simulacrum_exam_exito');
 				}
 			
-			}
+			}*/
 
 		  
 

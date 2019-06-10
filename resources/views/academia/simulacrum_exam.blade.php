@@ -31,21 +31,17 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>
-            <p id='data'>Simulacro UNI</p>
+            <p id='data'>Simulacro PUCP</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>13/05/2019 - Aptitud Académica y Humanidades</p>
-            <p>15/05/2019 - Matemática</p>
-            <p>17/05/2019 - Física y Química</p>
+            <p>15/05/2019 - 8:00 a 11:30 am</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales</span>
-            <p>Comas</p>
-            <p>Los Olivos Academia</p>
-            <p>Santa Beatriz</p>
-            <p>Torrico</p>
-            <p>Villa el Salvador Academia</p>
+            <p>San Isidro: Av. Arequipa 3505  - San isidro</p>
+            <p>Los Olivos: Av. Tomas Valle 845 - Los Olivos</p>
+            <p>Santa Beatriz: Av arequipa 1250 - Santa beatriz</p>
           </li>
         </ul>
       </div>

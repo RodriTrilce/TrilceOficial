@@ -19,7 +19,7 @@
     <br><br>
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
-                <h1>¡Participa en nuestro Simulacro {{$university->short_name}}!</h1>
+                <h1>¡Participa en nuestro Simulacro POP!</h1>
             </div>
     </div>
   @endif
@@ -31,17 +31,17 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>
-            <p id='data'>Simulacro PUCP</p>
+            <p id='data'>Simulacro Tipo POP Católica</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>15/05/2019 - 8:00 a 11:30 am</p>
+            <p>15/06/2019 - 8:00 a 11:30 am</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales</span>
-            <p>San Isidro: Av. Arequipa 3505  - San isidro</p>
-            <p>Los Olivos: Av. Tomas Valle 845 - Los Olivos</p>
-            <p>Santa Beatriz: Av arequipa 1250 - Santa beatriz</p>
+            <p>San Isidro: Av. Arequipa 3505</p>
+            <p>Los Olivos: Av. Tomás Valle 845</p>
+            <p>Santa Beatriz: Av Arequipa 1250</p>
           </li>
         </ul>
       </div>

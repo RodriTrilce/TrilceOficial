@@ -35,13 +35,17 @@
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>15/06/2019 - 8:00 a 11:30 am</p>
+            <p>15/06/2019</p>
           </li>
           <li>
-            <span class="simulacrum-info-li-title">Locales</span>
+            <span class="simulacrum-info-li-title">Hora:</span>
+            <p>8:00 a. m. - 11:30 a. m.</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Locales:</span>
             <p>San Isidro: Av. Arequipa 3505</p>
             <p>Los Olivos: Av. Tomás Valle 845</p>
-            <p>Santa Beatriz: Av Arequipa 1250</p>
+            <p>Santa Beatriz: Av. Arequipa 1250</p>
           </li>
         </ul>
       </div>
@@ -127,7 +131,7 @@
               type="email"
               name="CORREO_E"
               id="email"
-              placeholder="Email"
+              placeholder="Correo electrónico"
               required
               />
             </fieldset>
@@ -150,7 +154,7 @@
                 data-name="Tipo examen"
                 aria-label="Tipo examen"
                 required>
-                  <option value="" selected disabled hidden>Tipo de Examen</option>
+                  <option value="" selected disabled hidden>Tipo de examen</option>
               </select>
             </fieldset>
             

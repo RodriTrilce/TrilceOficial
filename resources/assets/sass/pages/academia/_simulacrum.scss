@@ -46,6 +46,10 @@ $simulacrum-form-background: #ededed;
     }
 
     &:nth-child(3)::before {
+      content: "\f18f";
+    }
+
+    &:nth-child(4)::before {
       content: "\f27d";
     }
 

@@ -127,13 +127,56 @@
  
    } catch (e) {
    }
- 
+
+
    SliderTrilce.init(slider);
- 
- 
-   if(modal_open.length) modal.open(modal_open[0]);
+   //if(modal_open.length) modal.open(modal_open[0]);
+  
+   var v = getCookie('academina-popup');
+   if(v == 'false'){
+    //modal.open(modal_open[0]);
+   }else{
+  
+    modal.open(modal_open[0]);
+    document.cookie = "academina-popup=false";
+    
+   }
+
+   window.onbeforeunload = function (e) {
+    var e = e || window.event;
+       if (e) {
+         deleteCookie('academina-popup');
+         //e.returnValue = 'Se perderan todos los datos que no hayas guardado';
+    }
+  }
+
  
   }
+
+  //read and create cookie to popup
+
+  function deleteCookie(){
+    log("eliminarCookie: " + key);
+    return document.cookie = key + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+
+  function getCookie(cname)
+  {
+    var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+          return "";
+  }
+  
  
  /**!
    * Preparation

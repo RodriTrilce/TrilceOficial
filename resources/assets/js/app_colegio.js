@@ -160,7 +160,24 @@ if(page == 'index'){
   }
 
   SliderTrilce.init(slider);
-  if(modal_open.length) modal.open(modal_open[0]);
+  //if(modal_open.length) modal.open(modal_open[0]);
+  var v = getCookie('colegio-popup');
+   if(v == 'false'){
+    //modal.open(modal_open[0]);
+   }else{
+  
+    modal.open(modal_open[0]);
+    document.cookie = "colegio-popup=false";
+    
+   }
+
+   window.onbeforeunload = function (e) {
+    var e = e || window.event;
+       if (e) {
+         deleteCookie('colegio-popup');
+         //e.returnValue = 'Se perderan todos los datos que no hayas guardado';
+    }
+  }
 }
 
 /**!

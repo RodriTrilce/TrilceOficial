@@ -133,7 +133,7 @@
             <div class="enter">Ingresar <span><i class="fa fa-play"></i></span></div>
           </div>
           <div class="human">
-            <img src="{{ url('/static/images/home4/boy.png') }}" alt="">
+            <img src="{{ url('/static/images/home4/foto-cole.png') }}" alt="">
           </div>
         </a>
       </div>
@@ -173,7 +173,7 @@
             <div class="enter">Ingresar <span><i class="fa fa-play"></i></span></div>
           </div>
           <div class="human">
-            <img src="{{ url('/static/images/home4/girl.png') }}" alt="">
+            <img src="{{ url('/static/images/home4/foto-academia.png') }}" alt="">
           </div>
         </a>
       </div>
@@ -196,7 +196,7 @@
       <div class="block block__colegio">
         <a href="/colegio" class="href2">
           <div class="part human-girl">
-            <img src="{{ url('/static/images/home4/boy.png') }}" alt="">
+            <img src="{{ url('/static/images/home4/foto-cole.png') }}" alt="">
           </div>
           <div class="part part__logo">
             <svg class="part__colegio" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -278,7 +278,7 @@
             <div class="enter">Ingresar <span><i class="fa fa-play"></i></span></div>
           </div>
           <div class="part human-girl">
-              <img src="{{ url('/static/images/home4/girl.png') }}" alt="">
+              <img src="{{ url('/static/images/home4/foto-academia.png') }}" alt="">
           </div>
         </a>
       </div>

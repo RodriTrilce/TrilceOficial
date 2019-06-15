@@ -19,13 +19,69 @@
     <br><br>
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
-                <h1>¡Participa en nuestro Simulacro POP!</h1>
+                <h1>¡Participa en nuestro simulacro!</h1>
             </div>
     </div>
   @endif
   <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
     <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
+    @if($university->short_name=='UNI')
+      <div class="col-xs-12 col-sm simulacrum-info">
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
+        <ul class="simulacrum-info-ul">
+          <li>
+            <span class="simulacrum-info-li-title">Descripción:</span>
+            <p id='data'>Simulacro Semestral UNI</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Fecha del examen:</span>
+            <p>23/06/2019</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Hora:</span>
+            <p>9:00 a. m. - 12:00 m.</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Locales:</span>
+            <p>Comas: Av. Universitaria 6102</p>
+            <p>Los Olivos: Av. Tomás Valle 845</p>
+            <p>Santa Beatriz: Av. Arequipa 1250</p>
+          </li>
+        </ul>
+      </div>
+    @endif
+
+    @if($university->short_name=='San Marcos')
+      <div class="col-xs-12 col-sm simulacrum-info">
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
+        <ul class="simulacrum-info-ul">
+          <li>
+            <span class="simulacrum-info-li-title">Descripción:</span>
+            <p id='data'>Simulacro Anual y Semestral San Marcos</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Fecha del examen:</span>
+            <p>23/06/2019</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Hora:</span>
+            <p>9:00 a. m. - 12:00 m.</p>
+          </li>
+          <li>
+            <span class="simulacrum-info-li-title">Locales:</span>
+            <p>Los Olivos: Av. Tomás Valle 845</p>
+            <p>Santa Beatriz: Av. Arequipa 1250</p>
+            <p>Marsano: Av. Tomás Marsano 4773, Surco</p>
+            <p>Cercado de Lima (Torrico): Jr. Rufino Torrico 862</p>
+            <p>Villa El Salvador: Av. Pastor Sevilla s/n mz. D lote 3</p>
+            <p>Comas: Av. Universitaria 6102</p>
+          </li>
+        </ul>
+      </div>
+    @endif
+
+    @if($university->short_name=='PUCP')
       <div class="col-xs-12 col-sm simulacrum-info">
         <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
         <ul class="simulacrum-info-ul">
@@ -49,6 +105,7 @@
           </li>
         </ul>
       </div>
+    @endif 
 
       <form class="col-xs-12 col-sm col-md-7 col-lg-7 simulacrum-form" name="simulacro_form" id="simulacro_form" method="post" action="">
         @csrf

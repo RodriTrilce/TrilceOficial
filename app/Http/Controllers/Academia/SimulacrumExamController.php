@@ -88,9 +88,13 @@ class SimulacrumExamController extends Controller
 			dd($e->getMessage());
 		}
 		
-		return redirect()->route('academia-index')->with([
+		return view('/academia/simulacrum_exam_exito');
+
+
+
+		/*return redirect()->route('academia-index')->with([
 			'olympics'  => true,
-		]);
+		]);*/
 		
 
 		//return new SimulacrumApiResource($collection);

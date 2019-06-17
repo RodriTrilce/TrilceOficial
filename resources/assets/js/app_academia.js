@@ -130,7 +130,7 @@
 
 
    SliderTrilce.init(slider);
-   if(modal_open2.length) modal.open(modal_open[0]);
+   if(modal_open2.length) modal.open(modal_open2[0]);
    //if(modal_open.length) modal.open(modal_open[0]);
   
    var v = getCookie('academina-popup');

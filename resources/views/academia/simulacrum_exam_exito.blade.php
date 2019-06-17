@@ -1,4 +1,4 @@
-{{! $breadcrumbs = Breadcrumbs::render('academia-aboutus') }}
+{{! $breadcrumbs = Breadcrumbs::render('academia-simulacrum', $university->short_name) }}
 @extends('academia.layouts.template')
 @section('title', 'Simulacro - Registro Exitoso')
 @section('content')
@@ -22,10 +22,10 @@
           <img src="{{ url('/static/images/academia/img-nosotros-academia.jpg') }}" alt="Sobre nosotros">
         </div>
         <div class="col-xs-12 col-sm about-history--right">
-          <h1 class="about-history--title">Registro Exitoso</h1>
+          <h1 class="about-history--title">¡Gracias!</h1>
           <div class="about-history--pcontainer">
             <p>
-              Gracias por permitirnos ayudarte a alcanzar tus metas.
+              Tu registro fue exitoso.
             </p>
           </div>
         </div>

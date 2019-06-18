@@ -101,7 +101,7 @@
             <span class="simulacrum-info-li-title">Locales:</span>
             <p>San Isidro: Av. Arequipa 3505</p>
             <p>Los Olivos: Av. Tomás Valle 845</p>
-            <p>Santa Beatriz: Av. Arequipa 1250</p>
+            <p>Cercado de Lima (Torrico): Jr. Rufino Torrico 862</p>
           </li>
         </ul>
       </div>

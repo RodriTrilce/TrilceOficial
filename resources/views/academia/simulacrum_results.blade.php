@@ -227,15 +227,15 @@
   @endif
 
   @if($university->short_name=='PUCP')
-  {{--<div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
+  <div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
       <div class="row col-xs-12 center-xs register-ads">
         <div class="register-ads__container">
         	<div class="row col-xs-12">
               <div class="col-xs-12 col-sm">				
-                <a href="/academia/simulacros-pucp/inscripcion/1ccbec3ab3" class="register-ads__link">
-                <h1>Simulacro Tipo POP<br><strong>15 de Junio</strong></h1>
+                <a href="/academia/simulacros-pucp/inscripcion/e5b0ecc941" class="register-ads__link">
+                <h1>Simulacro Evaluación del Talento<br><strong>22 de Junio</strong></h1>
                 <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
                   Regístrate aquí
                 </button>
@@ -249,7 +249,7 @@
         </div>
 
       </div>
-    </div>--}}
+    </div>
 
     {{--<div class="row col-xs-12 start-xs center-sm simulacrum container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">

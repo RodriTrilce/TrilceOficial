@@ -87,11 +87,11 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>
-            <p id='data'>Simulacro Tipo POP Católica</p>
+            <p id='data'>Simulacro Evaluación del Talento - Católica</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>15/06/2019</p>
+            <p>22/06/2019</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Hora:</span>

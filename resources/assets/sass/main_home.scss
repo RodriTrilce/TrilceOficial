@@ -509,8 +509,8 @@ body, html{
   pointer-events: none;
 
   svg{
-    width: 240px;
-    max-width: 300px !important;
+    width: 100px;
+    max-width: 200px !important;
   }
 }
 // Cambios Para Los 40 años Trilce
@@ -525,19 +525,25 @@ body, html{
   right: 0px;
   display:block;
   width: 240px;
+  text-align:center;
   svg{
-    
-    width: 240px;
-    height: 110px;
+    height: 130px;
     max-width: 300px !important;
+  }
+  p{
+    font-family: $font_geo_reg;
+    color: white;
+    text-align:center;
+    width: 240px;
+    padding: 0 55px;
   }         
 }
 .container_new {
    
   position: absolute;
   top: 0;
-  background: #fff;
-  color: #fff;
+  background: #ff5000;
+  color: #ff5000;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -550,19 +556,28 @@ body, html{
   top: -5%;
   transform: translate(-0%, -0%);
   -webkit-transform: translate(-0%, -0%);
-          background-color:#fff;
-          width:100%;
-          height:100%;
-          display:block;
-          overflow: hidden;
-          transform: translate3d(0,0,0);
-          text-align: center;
-          opacity: 1;
-      }
+  background-color:#ff5000;
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+
+  @media screen and (max-width: 768px) {
+    transform: scale(2.5);
+  }
+
+}
 
 .cerrar {
   transform: translateY(-100%);
   transition: all 0.5s;
+  @media screen and (max-width: 768px) {
+    transform: translateY(-200%);
+    transition: all 0.5s;
+  }
 }
 
 body {

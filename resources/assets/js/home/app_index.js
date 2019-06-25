@@ -29,7 +29,7 @@ this.load = function(){
         container.classList.add('cerrar');
         //document.body.style.overflowY= "visible";// después de cargar le devolvemos el scroll
         //document.cookie = "loader=false";
-    }, 3500);
+    }, 4500);
   }
 }
 

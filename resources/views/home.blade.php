@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Colegio y Academia Trilce - Tu mejor opción</title>
+  <title>Colegio y Academia Trilce - Alumnos mejor preparados</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">	
   <meta name="description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!">
   <meta name="keywords" content="colegios, academias, colegios trilces, academias trilce, trilce peru, colegios en lima, academias en lima, preparacion preuniversitaria, preparacion uni, preparacion san marcos, preparacion catolica, uni, san marcos, catolica, matricula escolar,simulacros, admision,primaria, secundaria, inicial" />
   <meta name="robots" content="index,follow" />		
-  <link rel="canonical" href="https://www.trilce.edu.pe/" />
-  <link rel="shortlink" href="https://www.trilce.edu.pe/" />
-  <meta itemprop="image" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <link rel="canonical" href="http://www.trilce.edu.pe/" />
+  <link rel="shortlink" href="http://www.trilce.edu.pe/" />
+  <meta itemprop="image" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
 
   <!-- facebook meta -->
   <meta property="og:title" content="Trilce" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.trilce.edu.pe/" />
-  <meta property="og:image" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
-  <meta property="og:image:url" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
-  <meta property="og:image:secure_url" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <meta property="og:url" content="http://www.trilce.edu.pe/" />
+  <meta property="og:image" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <meta property="og:image:url" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <meta property="og:image:secure_url" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
   <meta property="og:site_name" content="Trilce" />
   <meta property="og:description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!" />
 
@@ -27,7 +27,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Trilce" />
   <meta name="twitter:description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!" />
-  <meta name="twitter:image" content="https://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
+  <meta name="twitter:image" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
 
   
   {{--<meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal.">--}}

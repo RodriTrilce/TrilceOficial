@@ -111,7 +111,6 @@ class BeginningsApiResourceController extends Controller
 
           $_head = $node->filter('thead th')->each(function($v){
             return $v->getNode(0)->textContent;
-
           });
 
           $temp = $node->filter('tbody tr')->each(function($b) use ($_type, $_head){
@@ -122,6 +121,20 @@ class BeginningsApiResourceController extends Controller
               if((strpos($_head[$i], 'Pago')) !== false){
                 return 'S/' . $c->getNode(0)->textContent;
               }
+
+              if($_head[$i] == 'Local'){
+                
+                  switch ($c->getNode(0)->textContent) {
+                    case 'Torrico':
+                        return '-';
+                      break;
+                  }            
+                
+              }
+
+              
+                      
+
 
               /*if($_head[$i] == 'Inicio'){
                 $newformat = date('Y-m-d', strtotime($c->getNode(0)->textContent));

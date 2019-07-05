@@ -567,16 +567,21 @@ body, html{
 
   @media screen and (max-width: 768px) {
     transform: scale(2.5);
+    -webkit-transform: scale(2.5)
   }
 
 }
 
 .cerrar {
   transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
   transition: all 0.5s;
+  -webkit-transition: all 0.5;
   @media screen and (max-width: 768px) {
     transform: translateY(-200%);
+    -webkit-transform: translate(-200%);
     transition: all 0.5s;
+    -webkit-transition: all 0.5;
   }
 }
 

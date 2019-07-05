@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Colegio y Academia Trilce - Alumnos mejor preparados</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">	
-  <meta name="description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!">
-  <meta name="keywords" content="colegios, academias, colegios trilces, academias trilce, trilce peru, colegios en lima, academias en lima, preparacion preuniversitaria, preparacion uni, preparacion san marcos, preparacion catolica, uni, san marcos, catolica, matricula escolar,simulacros, admision,primaria, secundaria, inicial" />
+  <meta name="description" content="Colegio y Academia Trilce - ¡Alumnos mejor preparados!, más de 40 años de experiencia, elevado nivel académico y desarrollo personal.">
+  <meta name="keywords" content="colegio, academia, colegios, academias, colegios trilces, academias trilce, trilce peru, colegios en lima, academias en lima, preparacion preuniversitaria, preparacion uni, preparacion san marcos, preparacion catolica, uni, san marcos, catolica, matricula escolar,simulacros, admision,primaria, secundaria, inicial" />
   <meta name="robots" content="index,follow" />		
   <link rel="canonical" href="http://www.trilce.edu.pe/" />
   <link rel="shortlink" href="http://www.trilce.edu.pe/" />
@@ -21,16 +21,13 @@
   <meta property="og:image:url" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
   <meta property="og:image:secure_url" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
   <meta property="og:site_name" content="Trilce" />
-  <meta property="og:description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!" />
+  <meta property="og:description" content="Colegio y Academia Trilce - ¡Alumnos mejor preparados!, más de 40 años de experiencia, elevado nivel académico y desarrollo personal." />
 
   <!-- twitter meta -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Trilce" />
-  <meta name="twitter:description" content="Colegios y Academias Trilce - ¡Alumnos mejor preparados!" />
+  <meta name="twitter:description" content="Colegio y Academia Trilce - ¡Alumnos mejor preparados!, más de 40 años de experiencia, elevado nivel académico y desarrollo personal." />
   <meta name="twitter:image" content="http://www.trilce.edu.pe/static/images/colegios-academias-trilce.png" />
-
-  
-  {{--<meta name="description" content="Más de 38 años de Experiencia, Elevado nivel académico y desarrollo personal.">--}}
   
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />

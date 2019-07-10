@@ -32,21 +32,22 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>
-            <p id='data'>Simulacro Semestral UNI</p>
+            <p id='data'>Simulacro Anual y Semestral UNI</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>23/06/2019</p>
+            <p>15, 17 y 19 de Julio</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Hora:</span>
-            <p>9:00 a. m. - 12:00 m.</p>
+            <p>4:00 p. m. - 7:00 p. m.</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales:</span>
             <p>Comas: Av. Universitaria 6102</p>
             <p>Los Olivos: Av. Tomás Valle 845</p>
             <p>Santa Beatriz: Av. Arequipa 1250</p>
+            <p>Cercado de Lima (Torrico): Jr. Rufino Torrico 862</p>
           </li>
         </ul>
       </div>

@@ -387,3 +387,133 @@
   }// End block-effecthover-item not hover
 
 }
+
+//simulacrum-inscriptions
+
+.ads-news-margins{
+margin: 10% 0 0 0 !important;
+background:#f7f7f7 !important;
+}
+
+.incriptions-acade-ads{
+  //background:#f7f7f7;
+  //background: red;
+  margin-top: 20px;
+  margin-bottom: 0px;
+
+  @include breakpoint(baby){
+    margin-top: 19px;
+    margin-bottom: 20px;
+  }
+}
+
+.incriptions-acade-ads__link{
+  //background:#f7f7f7;
+  width: 400px;
+  //background: magenta;
+	
+	@include breakpoint(baby){
+		padding: 15px;
+	}
+}
+
+.incriptions-acade-ads__container{
+    color: $orange;
+    padding-top: 20px !important;  
+    /* border: 1px solid $orange; */
+   //background:#f7f7f7;
+
+
+  h1{
+    font-size: 3rem;
+    @include breakpoint(baby){
+      font-size: 1.8rem;
+    }
+  }
+
+  p{
+    color: #53565a;
+    font-size: 1rem;
+    font-family: $font_geo_reg;
+    padding-bottom: 20px; 
+
+  }
+
+
+  h1,h2{
+    color: $orange;
+    font-family: $font_geo_md;
+    margin-bottom: 10px;
+  }
+}
+
+.incriptions-acade-ads__container-cta{
+  padding: 10px;
+  margin-bottom: 10px;
+  background:  $orange;
+  color: white;
+}
+//Title silulacrum
+
+.simulacrum__title{
+  display: block;
+  font-size: 3.5rem;
+  font-family: $font_cae_heavy;
+
+  @include breakpoint(baby){
+    font-size: 1.3rem;
+  }
+
+  &.simulacrum__title--and{
+    color: $gray;
+    font-size: 2rem;
+    font-family: $font_geo_reg;
+
+    @include breakpoint(baby){
+      font-size: 1.1rem;
+    }
+  }
+}
+//Registrate Flotante
+.more_information{
+  background: $orange;
+  min-height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+
+  @include breakpoint(baby){
+    padding: 10px;
+  }
+}
+
+.more_information__call{
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+
+  @include breakpoint(baby){
+    font-size: 1.2rem;
+  }
+
+  a{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    color:white;
+    text-decoration: none;
+
+    &:visited{
+      color:white;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<footer>
+<footer style="margin-bottom: 65px;">
   <div class="row col-xs-12 center-xs">
     <div class="row col-xs-12 center-xs footer-top">
       <div class="col-xs-12 col-sm-11 start-xs container-padding-mobile">
@@ -32,3 +32,8 @@
     </div>
   </div>
 </footer>
+<div class="more_information md-hide sm-hide">
+	<span data-v-58fdb035="" class="more_information__call">
+		<a data-v-58fdb035="" href="/?rel=landing_colegio"><i data-v-58fdb035="" class="fa fa-pencil-square-o"></i> Regístrate</a>
+	</span>
+</div>

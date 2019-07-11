@@ -1,4 +1,5 @@
-  <div class="card">
+@include('academia.partials.modal.ads_academia')
+<div class="card">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">

@@ -94,7 +94,7 @@
 
                 </li>
 
-                <li><a href="/colegio/matricula-nuevo" class="nav-item-active nav-item-noclicktton active_ever">Matrícula 2020</a></li>
+                <li class="pulse"><a href="/colegio/matricula-nuevo" class="nav-item-active nav-item-noclicktton active_ever">Matrícula 2020</a></li>
                 {{--<li><a href="/colegio/matricula-nuevo" class="{{ (Request::is('colegio/matricula*')?'nav-item-active nav-item-noclick':'') }}"><strong>Matrícula 2020</strong></a></li>--}}
 
                 <!-- Only mobile -->

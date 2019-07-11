@@ -33,7 +33,7 @@
   </div>
 </footer>
 <div class="more_information md-hide sm-hide">
-	<span data-v-58fdb035="" class="more_information__call">
-		<a data-v-58fdb035="" href="/?rel=landing_colegio"><i data-v-58fdb035="" class="fa fa-pencil-square-o"></i> Regístrate</a>
+	<span class="more_information__call">
+		<a href="http://www.trilce.edu.pe/inscripcion-academia/"><i class="fa fa-pencil-square-o"></i> Regístrate</a>
 	</span>
 </div>

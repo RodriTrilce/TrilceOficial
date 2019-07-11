@@ -1,4 +1,4 @@
-<footer style="margin-bottom: 65px;">
+<footer>
   <div class="row col-xs-12 center-xs">
     <div class="row col-xs-12 center-xs footer-top">
       <div class="col-xs-12 col-sm-11 start-xs container-padding-mobile">

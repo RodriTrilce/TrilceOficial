@@ -84,7 +84,8 @@
               <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
               <li class=""><a href="/academia/nosotros" class="{{ (Request::is('academia/nosotros')?'nav-item-active nav-item-noclick':'') }}">Nosotros</a></li>
               
-              <li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Contáctanos</a></li>
+              <li class="pulse"><a href="/academia/contacto" class="nav-item-active" ><strong>Escríbenos</strong></a></li>
+              {{--<li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Escríbenos</a></li>--}}
             </ul>
           </nav>
 

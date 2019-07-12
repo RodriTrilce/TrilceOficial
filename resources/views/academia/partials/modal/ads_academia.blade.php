@@ -1,5 +1,5 @@
 <div class="row col-xs-12start-xs center-sm container-base ads-news-margins xs-hide">
-    <div class="row col-xs-12 col-sm-6 col-md-6 start-xs center-sm center-md">
+    <div class="row col-xs-12 col-sm-12 col-md-6 start-xs center-sm center-md">
 
       <div class="row col-xs-12 col-sm-12 col-md-4 center-xs incriptions-acade-ads">
       <div class="row col-xs-12 col-sm-12 col-md-12 incriptions-acade-ads__container">

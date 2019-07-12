@@ -18,101 +18,7 @@
       </ul>
 
       <div class="js-tabs__content js-badger-accordion_1">
-        <div class="frequentquestions-question row col-xs-12">
-          <div class="col-xs question-content">
-            <h3 class="question-title js-badger-accordion-header">
-              <div class="question-title__signe"></div>
-              Anual
-            </h3>
-            <dd class="badger-accordion__panel js-badger-accordion-panel">
-              <div class="js-badger-accordion-panel-inner">
-                <div class="question-answer">
-                  <div class="row col-xs-12 col-sm-12 col-md-12 start-sm start-xs table-responsive preparation-overflow"
-                    id="drawTables" style="background: white">
-                    <table class="preparation-table">
-                      <thead>
-                        <tr>
-                          <th>Local</th>
-                          <th>Turno</th>
-                          <th>Inicio</th>
-                          <th>Fin</th>
-                          <th>Inversión Mensual</th>
-                          <th>Horario</th>
-                          <th>Estado</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                          <td data-label="Local"> Comas</td>
-                          <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 18/02/2019</td>
-                          <td data-label="Fin"> 07/12/2019</td>
-                          <td data-label="Inversión Mensual"> S/230</td>
-                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                        <tr>
-                          <td data-label="Local"> Santa Beatriz</td>
-                          <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 11/03/2019</td>
-                          <td data-label="Fin"> 07/12/2019</td>
-                          <td data-label="Inversión Mensual"> S/250</td>
-                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                        <tr>
-                          <td data-label="Local"> Los Olivos</td>
-                          <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 11/03/2019</td>
-                          <td data-label="Fin"> 07/12/2019</td>
-                          <td data-label="Inversión Mensual"> S/230</td>
-                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                        <tr>
-                          <td data-label="Local"> Marsano</td>
-                          <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 11/03/2019</td>
-                          <td data-label="Fin"> 07/12/2019</td>
-                          <td data-label="Inversión Mensual"> S/270</td>
-                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                        <tr>
-                          <td data-label="Local"> Villa El Salvador</td>
-                          <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 18/03/2019</td>
-                          <td data-label="Fin"> 07/12/2019</td>
-                          <td data-label="Inversión Mensual"> S/250</td>
-                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                        <tr>
-                          <td data-label="Local"> Marsano</td>
-                          <td data-label="Turno"> Tarde</td>
-                          <td data-label="Inicio"> 18/03/2019</td>
-                          <td data-label="Fin"> 07/12/2019 </td>
-                          <td data-label="Inversión Mensual"> S/210</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                        <tr>
-                          <td data-label="Local"> Los Olivos</td>
-                          <td data-label="Turno"> Tarde</td>
-                          <td data-label="Inicio"> 01/04/2019</td>
-                          <td data-label="Fin"> 07/12/2019</td>
-                          <td data-label="Inversión Mensual"> S/200</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
-                          <td data-label="Estado"> Disponible</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </dd>
-          </div>
-        </div>
+       
         <div class="frequentquestions-question row col-xs-12">
           <div class="col-xs question-content">
             <h3 class="question-title js-badger-accordion-header">
@@ -179,6 +85,64 @@
                           <td data-label="Inicio"> 12/08/2019</td>
                           <td data-label="Fin"> 13/09/2019</td>
                           <td data-label="Inversión Mensual"> S/288</td>
+                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+            </dd>
+          </div>
+        </div>
+        <div class="frequentquestions-question row col-xs-12">
+          <div class="col-xs question-content">
+            <h3 class="question-title js-badger-accordion-header">
+              <div class="question-title__signe"></div>
+              Repaso Semestral
+            </h3>
+            <dd class="badger-accordion__panel js-badger-accordion-panel">
+              <div class="js-badger-accordion-panel-inner">
+                <div class="question-answer">
+                  <div class="row col-xs-12 col-sm-12 col-md-12 start-sm start-xs table-responsive preparation-overflow"
+                    id="drawTables" style="background: white">
+                    <table class="preparation-table">
+                      <thead>
+                        <tr>
+                          <th>Local</th>
+                          <th>Turno</th>
+                          <th>Inicio</th>
+                          <th>Fin</th>
+                          <th>Inversión Mensual</th>
+                          <th>Horario</th>
+                          <th>Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Local"> Santa Beatriz</td>
+                          <td data-label="Turno"> Mañana</td>
+                          <td data-label="Inicio"> 16/09/2019</td>
+                          <td data-label="Fin"> 13/03/2020</td>
+                          <td data-label="Inversión Mensual"> S/250</td>
+                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Local"> Los Olivos</td>
+                          <td data-label="Turno"> Mañana</td>
+                          <td data-label="Inicio"> 16/09/2019</td>
+                          <td data-label="Fin"> 13/03/2020</td>
+                          <td data-label="Inversión Mensual"> S/250</td>
+                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Local"> Comas</td>
+                          <td data-label="Turno"> Mañana</td>
+                          <td data-label="Inicio"> 16/09/2019</td>
+                          <td data-label="Fin"> 13/03/2020</td>
+                          <td data-label="Inversión Mensual"> S/230</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
@@ -363,7 +327,7 @@
           <div class="col-xs question-content">
             <h3 class="question-title js-badger-accordion-header">
               <div class="question-title__signe"></div>
-              Repaso Semestral
+              Anual
             </h3>
             <dd class="badger-accordion__panel js-badger-accordion-panel">
               <div class="js-badger-accordion-panel-inner">
@@ -383,11 +347,20 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <tr>
+                          <td data-label="Local"> Comas</td>
+                          <td data-label="Turno"> Mañana</td>
+                          <td data-label="Inicio"> 18/02/2019</td>
+                          <td data-label="Fin"> 07/12/2019</td>
+                          <td data-label="Inversión Mensual"> S/230</td>
+                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
                         <tr>
                           <td data-label="Local"> Santa Beatriz</td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 16/09/2019</td>
-                          <td data-label="Fin"> 13/03/2020</td>
+                          <td data-label="Inicio"> 11/03/2019</td>
+                          <td data-label="Fin"> 07/12/2019</td>
                           <td data-label="Inversión Mensual"> S/250</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
                           <td data-label="Estado"> Disponible</td>
@@ -395,25 +368,53 @@
                         <tr>
                           <td data-label="Local"> Los Olivos</td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 16/09/2019</td>
-                          <td data-label="Fin"> 13/03/2020</td>
+                          <td data-label="Inicio"> 11/03/2019</td>
+                          <td data-label="Fin"> 07/12/2019</td>
+                          <td data-label="Inversión Mensual"> S/230</td>
+                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Local"> Marsano</td>
+                          <td data-label="Turno"> Mañana</td>
+                          <td data-label="Inicio"> 11/03/2019</td>
+                          <td data-label="Fin"> 07/12/2019</td>
+                          <td data-label="Inversión Mensual"> S/270</td>
+                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Local"> Villa El Salvador</td>
+                          <td data-label="Turno"> Mañana</td>
+                          <td data-label="Inicio"> 18/03/2019</td>
+                          <td data-label="Fin"> 07/12/2019</td>
                           <td data-label="Inversión Mensual"> S/250</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         <tr>
-                          <td data-label="Local"> Comas</td>
-                          <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 16/09/2019</td>
-                          <td data-label="Fin"> 13/03/2020</td>
-                          <td data-label="Inversión Mensual"> S/230</td>
-                          <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
+                          <td data-label="Local"> Marsano</td>
+                          <td data-label="Turno"> Tarde</td>
+                          <td data-label="Inicio"> 18/03/2019</td>
+                          <td data-label="Fin"> 07/12/2019 </td>
+                          <td data-label="Inversión Mensual"> S/210</td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Estado"> Disponible</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Local"> Los Olivos</td>
+                          <td data-label="Turno"> Tarde</td>
+                          <td data-label="Inicio"> 01/04/2019</td>
+                          <td data-label="Fin"> 07/12/2019</td>
+                          <td data-label="Inversión Mensual"> S/200</td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
+              </div>
             </dd>
           </div>
         </div>

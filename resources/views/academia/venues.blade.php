@@ -54,18 +54,18 @@
                       <strong>Villa El Salvador</strong>
                       <p><a href="/academia/sede/villa-el-salvador">Más Información</a></p>
                     </li>
-                    <li>
+                    {{--<li>
                       <strong>Cercado de Lima</strong>
                       <p><a href="/academia/sede/cercado-de-lima">Más Información</a></p>
-                    </li>
+                    </li>--}}
                     <li>
                       <strong>Marsano</strong>
                       <p><a href="/academia/sede/marsano">Más Información</a></p>
                     </li>
-                    <li>
+                    {{--<li>
                     <strong>San Isidro</strong>
                       <p><a href="/academia/sede/san-isidro">Más Información</a></p>
-                    </li>
+                    </li>--}}
                   </ul>
                   {{--<table>
                     <tbody>

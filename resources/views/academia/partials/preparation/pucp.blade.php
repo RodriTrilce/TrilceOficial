@@ -36,8 +36,9 @@
                           <th>Turno</th>
                           <th>Inicio</th>
                           <th>Fin</th>
-                          <th>Inversión Mensual</th>
-                          <th>Horario</th>
+                          <th>Pago Único</th>
+                          <th colspan=4 WIDTH="28%">Pago en cuotas</th>
+                          <th WIDTH="20%">Horario</th>
                           <th>Estado</th>
                         </tr>
                       </thead>
@@ -47,7 +48,11 @@
                           <td data-label="Turno"> Mañana</td>
                           <td data-label="Inicio"> 22/07/2019</td>
                           <td data-label="Fin"> 07/02/2020</td>
-                          <td data-label="Inversión Mensual"> S/2750</td>
+                          <td data-label="Pago Único"> S/2750</td>
+                          <td data-label="Pago en cuotas">C1 S/850</td>
+                          <td data-label="Pago en cuotas">C2 S/850</td>
+                          <td data-label="Pago en cuotas">C3 S/850</td>
+                          <td data-label="Pago en cuotas">C4 S/400</td>
                           <td data-label="Horario"> Lunes a Viernes 08:00-17:00 Sábado 08:00-12:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
@@ -56,7 +61,11 @@
                           <td data-label="Turno"> Mañana</td>
                           <td data-label="Inicio"> 22/07/2019</td>
                           <td data-label="Fin"> 07/02/2020</td>
-                          <td data-label="Inversión Mensual"> S/2750</td>
+                          <td data-label="Pago Único"> S/2750</td>
+                          <td data-label="Pago en cuotas">C1 S/850</td>
+                          <td data-label="Pago en cuotas">C2 S/850</td>
+                          <td data-label="Pago en cuotas">C3 S/850</td>
+                          <td data-label="Pago en cuotas">C4 S/400</td>
                           <td data-label="Horario"> Lunes a Viernes 08:00-17:00 Sábado 08:00-12:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
@@ -86,8 +95,9 @@
                           <th>Turno</th>
                           <th>Inicio</th>
                           <th>Fin</th>
-                          <th>Inversión Mensual</th>
-                          <th>Horario</th>
+                          <th>Pago Único</th>
+                          <th colspan=3 WIDTH="21%">Pago en cuotas</th>
+                          <th WIDTH="20%">Horario</th>
                           <th>Estado</th>
                         </tr>
                       </thead>
@@ -98,6 +108,9 @@
                           <td data-label="Inicio"> 22/07/2019</td>
                           <td data-label="Fin"> 15/11/2019</td>
                           <td data-label="Inversión Mensual"> S/1100</td>
+                          <td data-label="Pago en cuotas" >C1 S/600</td>
+                          <td data-label="Pago en cuotas" >C2 S/400</td>
+                          <td data-label="Pago en cuotas" >C3 S/250</td>
                           <td data-label="Horario"> Lunes a Viernes 16:30-20:30 Sábado 08:00-12:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
@@ -107,6 +120,9 @@
                           <td data-label="Inicio"> 22/07/2019</td>
                           <td data-label="Fin"> 15/11/2019</td>
                           <td data-label="Inversión Mensual"> S/1100</td>
+                          <td data-label="Pago en cuotas" >C1 S/600</td>
+                          <td data-label="Pago en cuotas" >C2 S/400</td>
+                          <td data-label="Pago en cuotas" >C3 S/250</td>
                           <td data-label="Horario"> Lunes a Viernes 16:30-20:30 Sábado 08:00-12:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>

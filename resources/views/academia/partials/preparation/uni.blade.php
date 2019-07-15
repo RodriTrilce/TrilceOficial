@@ -55,7 +55,7 @@
                           <td data-label="Local"> Santa Beatriz</td>
                           <td data-label="Turno"> Tarde</td>
                           <td data-label="Inicio"> 19/08/2019</td>
-                          <td data-label="Fin"> 23/12/2019</td>
+                          <td data-label="Fin"> 23/11/2019</td>
                           <td data-label="Inversión Mensual"> S/200</td>
                           <td data-label="Horario"> Lunes a Viernes 16:00-20:00 Sábado 15:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
@@ -73,7 +73,7 @@
                           <td data-label="Local"> Los Olivos</td>
                           <td data-label="Turno"> Tarde</td>
                           <td data-label="Inicio"> 19/08/2019</td>
-                          <td data-label="Fin"> 23/12/2019</td>
+                          <td data-label="Fin"> 23/11/2019</td>
                           <td data-label="Inversión Mensual"> S/200</td>
                           <td data-label="Horario"> Lunes a Viernes 16:00-20:00 Sábado 15:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
@@ -91,7 +91,7 @@
                           <td data-label="Local"> Comas</td>
                           <td data-label="Turno"> Tarde</td>
                           <td data-label="Inicio"> 19/08/2019</td>
-                          <td data-label="Fin"> 23/12/2019</td>
+                          <td data-label="Fin"> 23/11/2019</td>
                           <td data-label="Inversión Mensual"> S/190</td>
                           <td data-label="Horario"> Lunes a Viernes 16:00-20:00 Sábado 15:00-20:00</td>
                           <td data-label="Estado"> Disponible</td>

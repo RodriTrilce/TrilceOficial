@@ -122,6 +122,7 @@
 
   <br><br>
   @if($university->short_name=='UNI')
+  {{--
   <div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
@@ -146,8 +147,9 @@
 
       </div>
     </div>
+    --}}
 
-    {{--<div class="row col-xs-12 start-xs center-sm simulacrum container-base">
+    <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
         <div class="row col-xs-12 center-xs about-v--vgrid">
 
@@ -157,7 +159,7 @@
 
         </div>
       </div>
-    </div>--}}
+    </div>
   @endif
 
   @if($university->short_name=='San Marcos')

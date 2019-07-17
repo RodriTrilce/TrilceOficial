@@ -350,7 +350,7 @@
                       <tr>
                           <td data-label="Local"> Comas</td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 18/02/2019</td>
+                          <td data-label="Inicio"> 18/03/2019</td>
                           <td data-label="Fin"> 07/12/2019</td>
                           <td data-label="Inversión Mensual"> S/230</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>

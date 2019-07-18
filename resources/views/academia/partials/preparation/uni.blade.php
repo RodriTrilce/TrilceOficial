@@ -268,7 +268,7 @@
           <div class="row col-xs-12 col-sm-10 start-sm preparation__courses">
             <div class="col-xs-12 col-sm-6 preparation__courses-list">
               <ul class="preparation__list-ul ul-li-squared">
-                <li>Más de 38 años de experiencia</li>
+                <li>Con 40 años de experiencia</li>
                 <li>Becas mensuales para nuestros alumnos más destacados*</li>
                 <li>La mejor plana docente</li>
                 <li>Orientación vocacional y psicopedagógica</li>

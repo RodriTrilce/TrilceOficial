@@ -491,8 +491,7 @@
               </p>
 
               <p>
-                <strong class="orange">Semestral Avanzado:</strong> Es 30 % teórico y 70 % práctico; está dirigido a los
-                alumnos que se han preparado anteriormente.
+                <strong class="orange">Repaso Semestral:</strong> Se divide en dos bloques, el primer bloque esta compuesto por 30 % teórico y 70 % práctico; el segundo bloque es 100% práctico. Está dirigido a los alumnos que se han preparado anteriormente.
               </p>
 
               <p>
@@ -510,7 +509,7 @@
 
               <p>
                 <strong class="orange">Reforzamiento:</strong> Dirigido a estudiantes que acaban de culminar un ciclo
-                completo de preparación preuniversitaria y postulen a San Marcos en el examen de admisión de setiembre.
+                completo de preparación preuniversitaria y postulen a San Marcos en el examen de admisión de septiembre.
               </p>
 
               <p>
@@ -549,7 +548,7 @@
                 <li>Libros totalmente gratis</li>
                 <li>Control tutorial</li>
                 <li>Exigencia y disciplina</li>
-                <li>Más de 38 años de experiencia </li>
+                <li>Con 40 años de experiencia </li>
                 <li>Más horas de clases por menos costo</li>
               </ul>
               <br>

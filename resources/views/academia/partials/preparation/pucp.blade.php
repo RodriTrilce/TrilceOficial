@@ -239,13 +239,12 @@
                 <li>Orientación vocacional y psicopedagógica</li>
                 <li>Asesorías y seminarios gratuitos</li>
                 <li>Exámenes semanales</li>
-                <li>Más de 38 años de experiencia</li>
-                <li>Becas mensuales para nuestros alumnos más destacados (sede Torrico)</li>
+                <li>Con 40 años de experiencia</li>
                 <li>Exámenes tipo admisión</li>
               </ul>
             </div>
             <div class="col-sm-6 xs-hide">
-              <img src="/static/images/academia/preparacion/pucp-3-beneficios.png" class="preparation__item-image"
+              <img src="/static/images/academia/preparacion/3-beneficios.png" class="preparation__item-image"
                 alt="">
             </div>
           </div>

@@ -143,9 +143,13 @@ class MathOlympicsRegisterController extends Controller
 			dd($e->getMessage());
 		}
 
-		return redirect()->route('academia-index')->with([
+		return view('/academia/simulacrum_exam_exito')->with([
+			'data'  => $request->NRO_DOCUMENTO
+		 ]);
+
+		/*return redirect()->route('academia-index')->with([
 			'olympics'  => true,
-		]);
+		]);*/
 		
 		//return new OlympicsApiResource($collection);
 		//return view('/academia/simulacrum_exam_exito');
@@ -170,7 +174,7 @@ class MathOlympicsRegisterController extends Controller
 						'NOMBRES'	            => $request->NOMBRES[$i],
 						'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO[$i],
 						'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO[$i],
-						//'CORREO_E'	            => $request->CORREO_E,
+						//'CORREO_E'	        => $request->CORREO_E,
 						'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
 						'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
 						'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
@@ -186,9 +190,13 @@ class MathOlympicsRegisterController extends Controller
 			dd($e->getMessage());
 		}
 
-		return redirect()->route('academia-index')->with([
+		return view('/academia/simulacrum_exam_exito')->with([
+			'data'  => $request->NRO_DOCUMENTO[$i]
+		 ]);
+
+		/*return redirect()->route('academia-index')->with([
 			'olympics'  => true,
-		]);
+		]);*/
 
 		//dd($collection);
 
@@ -197,7 +205,7 @@ class MathOlympicsRegisterController extends Controller
 		]);*/
 		
 		//return new OlympicsApiResource($collection);
-		//return view('/academia/simulacrum_exam_exito');
+
 
 		//return redirect()->route('academia-index')->with([
 			//'enrollment'  => true,

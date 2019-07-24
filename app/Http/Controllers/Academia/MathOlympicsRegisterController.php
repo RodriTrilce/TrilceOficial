@@ -7,12 +7,12 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Academia\Apis\OlympicsApiResource;
+use Mpdf\Mpdf;
 
 class MathOlympicsRegisterController extends Controller
 {
 
-    public function __construct()
-	{
+    public function __construct(){
 		if(env('APP_ENV') == 'local')
 		{
 			$url = \Config::get('constants.API_ClientePublicoServicioLocal');
@@ -44,8 +44,7 @@ class MathOlympicsRegisterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
-    {
+    public function index(Request $request){
         //$university = University::validate( ucwords(Str::slug($request->university, ' ')) );
 
 		//if(!$university)
@@ -76,11 +75,118 @@ class MathOlympicsRegisterController extends Controller
 			/*}else{
 				return abort(404);
 			}*/
+		
 
 	}
+
+	public function store(Request $request){
+        $data = [];
+		$data['request'] = [
+            'CODE_URL' 			    => $request->CODE_URL,
+            'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO,
+            'NOMBRES'	            => $request->NOMBRES,
+			'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO,
+            'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO,
+            'CORREO_E'	            => $request->CORREO_E,
+            'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
+            'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
+            'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
+			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
+		];
+		try {
+
+			$var = new OlympicsApiResource($data);
+			pdfdigital($accion='ver',$tipo='digital',$request->NRO_DOCUMENTO);
+
+			//$result = $this->client->OlimpiadasInscripcion($data);
+			//$collection = collect($result->OlimpiadasInscripcionResult);
+			
+
+		} catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		}	
+
+		return view('/academia/math_olympics_exito')->with([
+				'dni' => $request->NRO_DOCUMENTO,
+				'nombres' => $request->NOMBRES,
+				'apellidos' => $request->PRIMER_APELLIDO.''.$request->SEGUNDO_APELLIDO,
+				'correo' => $request->CORREO_E,
+				'ie' => $request->TIPO_INSTITUCION,
+				'colegio' => $request->TIPO_INSTITUCION,
+				'departamento' => $request->DEPTO_UBIG,
+				'nivel' => $request->NIVEL_ESTUDIO,
+		 ]);
+		$var = ['nombres' => $request->NOMBRES];
+
+		$this->pdfdigital('ver','digital',$var);
+
+		/*return redirect()->route('academia-index')->with([
+			'olympics'  => true,
+		]);*/
+		
+		//return new OlympicsApiResource($collection);
+		//return view('/academia/simulacrum_exam_exito');
+
+		//return redirect()->route('academia-index')->with([
+			//'enrollment'  => true,
+			//'dni'         => encrypt($request->step1_dni)
+		 // ]);
+	}
+
+	public function getGenerar(Request $request){
+        $accion = $request->get('accion');
+        $tipo = $request->get('tipo');
+        return $this->pdfdigital($accion,$tipo);
+	}
 	
-	public function indexGroup(Request $request)
-  {
+	//public function pdfdigital($accion='ver',$tipo='digital'){
+
+	public function pdfdigital($accion='ver',$tipo='digital',$var){
+		$data=$var;
+		//return view("/academia/math_olympics_pdf", ["nombres"=>$posts]); 
+		//return $data->all();
+ 
+        if($accion=='html'){
+            return view('/academia/math_olympics_pdf',$data);
+        }else{
+            $html = view('/academia/math_olympics_pdf',$data)->render();
+        }
+        $namefile = 'boleta_de_venta_'.time().'.pdf';
+ 
+        $defaultConfig = (new \Mpdf\Config\ConfigVariables())->getDefaults();
+        $fontDirs = $defaultConfig['fontDir'];
+ 
+        $defaultFontConfig = (new \Mpdf\Config\FontVariables())->getDefaults();
+        $fontData = $defaultFontConfig['fontdata'];
+        $mpdf = new Mpdf([
+            'fontDir' => array_merge($fontDirs, [
+                public_path() . '/fonts',
+            ]),
+            /*'fontdata' => $fontData + [
+                'arial' => [
+                    'R' => 'arial.ttf',
+                    'B' => 'arialbd.ttf',
+                ],
+            ],*/
+            'default_font' => 'arial',
+            "format" => "A4",
+            //"format" => [264.8,188.9],
+        ]);
+    	$mpdf->SetTopMargin(5);
+        $mpdf->SetDisplayMode('fullpage');
+        $mpdf->WriteHTML($html);
+        // dd($mpdf);
+        if($accion=='ver'){
+            $mpdf->Output($namefile,"I");
+        }elseif($accion=='descargar'){
+            $mpdf->Output($namefile,"D");
+        }
+    }
+
+	
+	/*****************************************************************/
+	
+	public function indexGroup(Request $request){
 
 		if(!$this->blacklist($request->codurl)){
 		try {
@@ -109,7 +215,7 @@ class MathOlympicsRegisterController extends Controller
 		}else{
 			return abort(404);
 		}
-  }
+  	}
 
 
     /**
@@ -118,62 +224,9 @@ class MathOlympicsRegisterController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $data = [];
-		$data['request'] = [
-            'CODE_URL' 			    => $request->CODE_URL,
-            'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO,
-            'NOMBRES'	            => $request->NOMBRES,
-			'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO,
-            'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO,
-            'CORREO_E'	            => $request->CORREO_E,
-            'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
-            'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
-            'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
-			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO			
-		];
-		try {
-				
-
-			//$result = $this->client->OlimpiadasInscripcion($data);
-			//$collection = collect($result->OlimpiadasInscripcionResult);
-
-		} catch ( SoapFault $e ) {
-			dd($e->getMessage());
-		}
 
 	
-
-		return view('/academia/simulacrum_exam_exito')->with([
-			'descripcion' => $request->NOMBRES,
-			/*'descripcion' => $collection['DESCRIPCION'],
-			'distrito' => $collection['DISTRITO'],
-			'inicio' =>  $collection['FECHA_INICIO'],
-			'fin' => $collection['FECHA_FIN'],
-			'lugar' => $collection['INSTITUCION_EDUCATIVA'],*/
-
-		]);
-
-		/*return view('/academia/simulacrum_exam_exito')->with([
-			'nombre'  => $request->NOMBRES
-		 ]);*/
-
-		/*return redirect()->route('academia-index')->with([
-			'olympics'  => true,
-		]);*/
-		
-		//return new OlympicsApiResource($collection);
-		//return view('/academia/simulacrum_exam_exito');
-
-		//return redirect()->route('academia-index')->with([
-			//'enrollment'  => true,
-			//'dni'         => encrypt($request->step1_dni)
-		 // ]);
-	}
-	
-	public function storeGroup(Request $request)
-    {
+	public function storeGroup(Request $request){
 		/*try {
 				$longitud = count($request->NRO_DOCUMENTO);
 				for($i=0;$i<$longitud;$i++)

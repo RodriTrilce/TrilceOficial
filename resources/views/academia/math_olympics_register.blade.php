@@ -27,7 +27,7 @@
   <div class="row col-xs-12 start-xs center-sm olympic container-base">
     <div class="row col-xs-12 col-sm-10 col-md-9 start-xs start-sm start-md">
 
-      <div class="col-xs-12 col-sm olympic-info">
+      {{--<div class="col-xs-12 col-sm olympic-info">
         <h2 class="olympic-info-title olympic-info-title-bottom">Información</h2>
         <ul class="olympic-info-ul">
           <li>
@@ -44,7 +44,7 @@
             <p>{{$lugar}} ({{$distrito}})</p>
           </li>
         </ul>
-      </div>
+      </div>--}}
 
       <form class="col-xs-12 col-sm col-md-7 col-lg-7 olympic-form" name="olimpiada_form" id="olimpiada_form" method="post" action="">
         @csrf
@@ -140,14 +140,17 @@
             </fieldset>
 
             <fieldset class="form-group">
-              <select
+              <!--<select
                 name="NIVEL_ESTUDIO"
                 id="cbx_type"
                 data-name="Tipo examen"
                 aria-label="Tipo examen"
                 required>
                   <option value="" selected disabled hidden>Nivel de estudios</option>                  
-              </select>
+              </select>-->
+              <select name="NIVEL_ESTUDIO" id="cbx_type" data-name="Tipo examen" aria-label="Tipo examen" required="">
+                  <option value="" selected="" disabled="" hidden="">Nivel de estudios</option>                  
+              <option value="00006">Primaria 1.° grado</option><option value="00007">Primaria 2.° grado</option><option value="00008">Primaria 3.° grado</option><option value="00009">Primaria 4.° grado</option><option value="00010">Primaria 5.° grado</option><option value="00011">Primaria 6.° grado</option><option value="00013">Secundaria 1.° año</option><option value="00014">Secundaria 2.° año</option><option value="00015">Secundaria 3.° año</option><option value="00016">Secundaria 4.° año</option><option value="00019">Secundaria 5.° año Generales</option></select>
             </fieldset>
 
             <button type="submit" id="form_submit" class="validate">Registrarme <i class="fa fa-check"></i></button>

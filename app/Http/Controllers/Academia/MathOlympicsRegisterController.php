@@ -50,32 +50,32 @@ class MathOlympicsRegisterController extends Controller
 
 		//if(!$university)
 		//return abort(404);
-			if(!$this->blacklist($request->codurl)){
+			/*if(!$this->blacklist($request->codurl)){
 				try {
 					$result = $this->client->OI_Dato([
 						'CODE_URL'  => $request->codurl
-					]);
+					]);*/
 			
-					$collection = collect($result->OI_DatoResult);
+					/*$collection = collect($result->OI_DatoResult);
 
 					//$result = $this->client->OlimpiadasInscripcion($data);
 			
 					} catch ( SoapFault $e ) {
 					dd($e->getMessage());
-					}
+					}*/
 
 				return view('/academia/math_olympics_register')->with([
 					'codurl' => $request->codurl,
-					'descripcion' => $collection['DESCRIPCION'],
+					/*'descripcion' => $collection['DESCRIPCION'],
 					'distrito' => $collection['DISTRITO'],
 					'inicio' =>  $collection['FECHA_INICIO'],
 					'fin' => $collection['FECHA_FIN'],
-					'lugar' => $collection['INSTITUCION_EDUCATIVA'],
+					'lugar' => $collection['INSTITUCION_EDUCATIVA'],*/
 
 				]);
-			}else{
+			/*}else{
 				return abort(404);
-			}
+			}*/
 
 	}
 	
@@ -136,16 +136,28 @@ class MathOlympicsRegisterController extends Controller
 		try {
 				
 
-			$result = $this->client->OlimpiadasInscripcion($data);
-			$collection = collect($result->OlimpiadasInscripcionResult);
+			//$result = $this->client->OlimpiadasInscripcion($data);
+			//$collection = collect($result->OlimpiadasInscripcionResult);
 
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
 
+	
+
 		return view('/academia/simulacrum_exam_exito')->with([
-			'data'  => $request->NRO_DOCUMENTO
-		 ]);
+			'descripcion' => $request->NOMBRES,
+			/*'descripcion' => $collection['DESCRIPCION'],
+			'distrito' => $collection['DISTRITO'],
+			'inicio' =>  $collection['FECHA_INICIO'],
+			'fin' => $collection['FECHA_FIN'],
+			'lugar' => $collection['INSTITUCION_EDUCATIVA'],*/
+
+		]);
+
+		/*return view('/academia/simulacrum_exam_exito')->with([
+			'nombre'  => $request->NOMBRES
+		 ]);*/
 
 		/*return redirect()->route('academia-index')->with([
 			'olympics'  => true,
@@ -162,7 +174,7 @@ class MathOlympicsRegisterController extends Controller
 	
 	public function storeGroup(Request $request)
     {
-		try {
+		/*try {
 				$longitud = count($request->NRO_DOCUMENTO);
 				for($i=0;$i<$longitud;$i++)
  				{
@@ -188,10 +200,10 @@ class MathOlympicsRegisterController extends Controller
 
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
-		}
+		}*/
 
 		return view('/academia/simulacrum_exam_exito')->with([
-			'data'  => $request->NRO_DOCUMENTO[$i]
+			'nombre'  => $request->NRO_DOCUMENTO[$i]
 		 ]);
 
 		/*return redirect()->route('academia-index')->with([

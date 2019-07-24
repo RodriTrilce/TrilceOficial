@@ -157,6 +157,11 @@ Route::name('academia-matholympics-register')
 Route::name('academia-matholympics-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion/{codurl}', 'Academia\MathOlympicsRegisterController@store');
 
+      Route::name('academia-matholympics')
+      ->get('/academia/olimpiadas-matematicas/crendencial/', 'Academia\MathOlympicsRegisterController@pdfdigital');
+
+//Route::get('/academia/olimpiadas-matematicas','Academia\MathOlympicsRegisterController@getGenerar');
+
 // Inscripcion Olimpiadas Matematicas Grupal (RegisterMathOlympics)
 Route::name('academia-matholympics-group-register')
       ->get('/academia/olimpiadas-matematicas/inscripcion-grupal/{codurl}', 'Academia\MathOlympicsRegisterController@indexGroup');

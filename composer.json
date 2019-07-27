@@ -20,6 +20,7 @@
         "laravel/tinker": "~1.0",
         "laraveles/spanish": "^1.0",
         "mews/purifier": "^2.1",
+        "mpdf/mpdf": "^8.0",
         "phpoffice/phpspreadsheet": "^1.6",
         "predis/predis": "^1.1",
         "ralouphie/mimey": "^2.0",

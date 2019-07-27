@@ -157,10 +157,12 @@ Route::name('academia-matholympics-register')
 Route::name('academia-matholympics-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion/{codurl}', 'Academia\MathOlympicsRegisterController@store');
 
-      Route::name('academia-matholympics')
-      ->get('/academia/olimpiadas-matematicas/crendencial/', 'Academia\MathOlympicsRegisterController@pdfdigital');
+Route::name('academia-matholympics')
+      ->post('/academia/olimpiadas-matematicas/crendencial-imprimir/', 'Academia\MathOlympicsRegisterController@imprimirPDF');
 
-//Route::get('/academia/olimpiadas-matematicas','Academia\MathOlympicsRegisterController@getGenerar');
+Route::name('academia-matholympics')
+      ->post('/academia/olimpiadas-matematicas/crendencial-descargar/', 'Academia\MathOlympicsRegisterController@descargarPDF');
+
 
 // Inscripcion Olimpiadas Matematicas Grupal (RegisterMathOlympics)
 Route::name('academia-matholympics-group-register')
@@ -168,6 +170,9 @@ Route::name('academia-matholympics-group-register')
 
 Route::name('academia-matholympics-group-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion-grupal/{codurl}', 'Academia\MathOlympicsRegisterController@storeGroup');
+
+Route::name('academia-matholympics-group')
+->post('/academia/olimpiadas-matematicas/crendencial-imprimir/', 'Academia\MathOlympicsRegisterController@imprimirPDF');
 
 
 

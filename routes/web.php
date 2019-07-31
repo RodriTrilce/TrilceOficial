@@ -102,6 +102,18 @@ Route::get('/academia/sede', function(){
   return redirect('/academia/sede', 'Academia\VenuesController@index');
 });
 
+// Seminary > Exam
+
+Route::name('academia-simulacrum-exam')
+      ->get('/academia/seminario-{university}/inscripcion/{idexam}', 'Academia\SeminaryExamController@index');
+
+/*Route::name('academia-seminary-exam-finish')
+      ->post('/academia/seminario-uni/inscripcion/{idexam}', 'Academia\SeminaryExamController@store');
+
+Route::get('/academia/seminario-uni/inscripcion', function(){
+      return redirect('/academia');
+      });*/
+
 
 //Simulacrum > Results All
 Route::name('academia-simulacrum-results')
@@ -171,8 +183,11 @@ Route::name('academia-matholympics-group-register')
 Route::name('academia-matholympics-group-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion-grupal/{codurl}', 'Academia\MathOlympicsRegisterController@storeGroup');
 
-Route::name('academia-matholympics-group')
-->post('/academia/olimpiadas-matematicas/crendencial-imprimir/', 'Academia\MathOlympicsRegisterController@imprimirPDF');
+Route::name('academia-matholympics-group-print')
+      ->post('/academia/olimpiadas-matematicas/crendencial-imprimir-grupal/', 'Academia\MathOlympicsRegisterController@imprimirPDFGROUP');
+
+Route::name('academia-matholympics-group-donwload')
+      ->post('/academia/olimpiadas-matematicas/crendencial-descargar-grupal/', 'Academia\MathOlympicsRegisterController@descargarPDFGROUP');
 
 
 

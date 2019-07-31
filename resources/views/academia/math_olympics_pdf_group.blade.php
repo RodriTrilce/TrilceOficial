@@ -244,149 +244,154 @@ footer {
             <th class="desc" width="13%">NIVEL DE ESTUDIO</th>
           </tr>
         </thead>
-        @foreach ($NRO_DOCUMENTO as $NRO_DOCUMENTO)
-                  {{$NRO_DOCUMENTO}}
-        @endforeach
-        {{--<tbody>
+       
+        <tbody>
+       
+
+        @for ($i = 0; $i < 2; $i++)
+        <tbody>
           <tr>
-            <td class="no">01</td>
+            <td class="no">{{$a=$i+1}}</td>
             <td class="desc">
-              <h3>{{$NOMBRES}} {{$PRIMER_APELLIDO}} {{$SEGUNDO_APELLIDO}}</h3>
-                DNI: {{$NRO_DOCUMENTO}}
+            <h3>{{$NOMBRES[$i]}} {{$PRIMER_APELLIDO[$i]}} {{$SEGUNDO_APELLIDO[$i]}}</h3>
+                DNI: {{$NRO_DOCUMENTO[$i]}}
             </td>
             <td class="unit">
-            @switch($TIPO_INSTITUCION)
-                @case(1)
-                    Nacional
-                    @break
-                @case(2)
-                    Particular
-                    @break
-            @endswitch
+              @switch($TIPO_INSTITUCION)
+                  @case(1)
+                      Nacional
+                      @break
+                  @case(2)
+                      Particular
+                      @break
+              @endswitch
             </td>
             <td class="desc">{{$COLEGIO_PROCEDENCIA}}</td>
             <td class="unit">
-            @switch($DEPTO_UBIG)
-                @case(1)
-                    Amazonas
-                    @break
-                @case(2)
-                    Ancash
-                    @break
-                @case(3)
-                    Apurimac
-                    @break
-                @case(4)
-                    Arequipa
-                    @break
-                @case(5)
-                    Ayacucho
-                    @break
-                @case(6)
-                    Cajamarca
-                    @break
-                @case(7)
-                    Callao
-                    @break
-                @case(8)
-                    Cusco
-                    @break
-                @case(9)
-                    Huancavelica
-                    @break
-                @case(10)
-                    Huanuco
-                    @break
-                @case(11)
-                    Ica
-                    @break
-                @case(12)
-                    Junín
-                    @break
-                @case(13)
-                    La Libertad
-                    @break
-                @case(14)
-                    Lambayeque
-                    @break
-                @case(15)
-                    Lima
-                    @break
-                @case(16)
-                    Loreto
-                    @break
-                @case(17)
-                    Madre de Dios
-                    @break
-                @case(18)
-                    Moquegua
-                    @break
-                @case(19)
-                    Pasco
-                    @break
-                @case(20)
-                    Piura
-                    @break
-                @case(21)
-                    Puno
-                    @break
-                @case(22)
-                    San Martín
-                    @break
-                @case(23)
-                    Tacna
-                    @break
-                @case(24)
-                    Tumbes
-                    @break
-                @case(25)
-                    Ucayali
-                    @break
-                @case(99)
-                    Extranjero
-                    @break
-            @endswitch
+              @switch($DEPTO_UBIG)
+                  @case(1)
+                      Amazonas
+                      @break
+                  @case(2)
+                      Ancash
+                      @break
+                  @case(3)
+                      Apurimac
+                      @break
+                  @case(4)
+                      Arequipa
+                      @break
+                  @case(5)
+                      Ayacucho
+                      @break
+                  @case(6)
+                      Cajamarca
+                      @break
+                  @case(7)
+                      Callao
+                      @break
+                  @case(8)
+                      Cusco
+                      @break
+                  @case(9)
+                      Huancavelica
+                      @break
+                  @case(10)
+                      Huanuco
+                      @break
+                  @case(11)
+                      Ica
+                      @break
+                  @case(12)
+                      Junín
+                      @break
+                  @case(13)
+                      La Libertad
+                      @break
+                  @case(14)
+                      Lambayeque
+                      @break
+                  @case(15)
+                      Lima
+                      @break
+                  @case(16)
+                      Loreto
+                      @break
+                  @case(17)
+                      Madre de Dios
+                      @break
+                  @case(18)
+                      Moquegua
+                      @break
+                  @case(19)
+                      Pasco
+                      @break
+                  @case(20)
+                      Piura
+                      @break
+                  @case(21)
+                      Puno
+                      @break
+                  @case(22)
+                      San Martín
+                      @break
+                  @case(23)
+                      Tacna
+                      @break
+                  @case(24)
+                      Tumbes
+                      @break
+                  @case(25)
+                      Ucayali
+                      @break
+                  @case(99)
+                      Extranjero
+                      @break
+              @endswitch
             </td>
             <td class="desc">
-            @switch($NIVEL_ESTUDIO)
-                @case(6)
-                Primaria 1.° grado
-                    @break
-                @case(7)
-                Primaria 2.° grado
-                    @break
-                @case(8)
-                Primaria 3.° grado
-                    @break
-                @case(9)
-                Primaria 4.° grado
-                    @break
-                @case(10)
-                Primaria 5.° grado
-                    @break
-                @case(11)
-                Primaria 6.° grado
-                    @break
-                @case(13)
-                Secundaria 1.° año
-                    @break
-                @case(14)
-                Secundaria 2.° año
-                    @break
-                @case(15)
-                Secundaria 3.° año
-                    @break
-                @case(16)
-                Secundaria 4.° año
-                    @break
-                @case(19)
-                Secundaria 5.° año Generales
-                    @break
+              @switch($NIVEL_ESTUDIO)
+                  @case(6)
+                  Primaria 1.° grado
+                      @break
+                  @case(7)
+                  Primaria 2.° grado
+                      @break
+                  @case(8)
+                  Primaria 3.° grado
+                      @break
+                  @case(9)
+                  Primaria 4.° grado
+                      @break
+                  @case(10)
+                  Primaria 5.° grado
+                      @break
+                  @case(11)
+                  Primaria 6.° grado
+                      @break
+                  @case(13)
+                  Secundaria 1.° año
+                      @break
+                  @case(14)
+                  Secundaria 2.° año
+                      @break
+                  @case(15)
+                  Secundaria 3.° año
+                      @break
+                  @case(16)
+                  Secundaria 4.° año
+                      @break
+                  @case(19)
+                  Secundaria 5.° año Generales
+                      @break
 
-            @endswitch
+              @endswitch
             </td>
           </tr>
-        </tbody>--}}
+        </tbody>
+        @endfor
+         
+        </tbody>
        
       </table>
       <div id="thanks">Felicitaciones su inscripción fue satisfactoria</div>

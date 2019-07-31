@@ -174,13 +174,11 @@ class MathOlympicsRegisterController extends Controller
 			dd($e->getMessage());
 		}
 
-		//return redirect()->route('academia-index')->with([
-			//'olympics'  => true,
-		//]);
+		//return view('/academia/math_olympics_exito_group');
 
 		if($collection['EST_PROCESO']== 1)
 		{
-			return view('/academia/math_olympics_grupal_exito')->with([
+			return view('/academia/math_olympics_exito_group')->with([
 				'CODE_URL' 			    => $request->CODE_URL,
 				'NOMBRES' 	    		=> $request->NOMBRES,
 				'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO,
@@ -248,7 +246,7 @@ class MathOlympicsRegisterController extends Controller
 			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO
 		];
 		
-		 return view('/academia/math_olympics_pdf',$data);
+		 //return view('/academia/math_olympics_pdf',$data);
 		 $mpdf = new Mpdf([
 			 'margin_top' => 10,
 			 'margin_left' => 10,
@@ -321,6 +319,116 @@ class MathOlympicsRegisterController extends Controller
 		 $mpdf->WriteHTML($html);
 		 $namefile = 'Centificado-Olimpiadas-Trilce'.time().'.pdf';
 		 $mpdf->Output($namefile,"D");
+	}
+
+	public function imprimirPDFGROUP(Request $request){
+		try {
+			$result = $this->client->OI_Dato([
+				'CODE_URL'  => $request->CODE_URL
+			]);
+	
+			$collection = collect($result->OI_DatoResult);
+
+			//$result = $this->client->OlimpiadasInscripcion($data);
+	
+			} catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		}
+
+		//dd($data = $request->all());
+		$data = [
+			'descripcion' 			=> $collection['DESCRIPCION'],
+			'distrito' 				=> $collection['DISTRITO'],
+			'inicio' 				=>  $collection['FECHA_INICIO'],
+			'fin' 					=> $collection['FECHA_FIN'],
+			'fecha_olimpiada'		=> $collection['FECHA_OLIMPIADA'],
+			'lugar' 				=> $collection['INSTITUCION_EDUCATIVA'],
+
+			'CODE_URL' 			    => $request->CODE_URL,
+			'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO,
+			'NOMBRES'	            => $request->NOMBRES,
+			'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO,
+			'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO,
+		
+			'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
+			'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
+			'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
+			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO
+		];
+		
+		 //return view('/academia/math_olympics_pdf_group',$data);
+		 $mpdf = new Mpdf([
+			 'margin_top' => 10,
+			 'margin_left' => 10,
+			 'margin_right' => 10,
+			 'mirrorMargins' => true,
+			 'default_font' => 'arial',
+			 "format" => "A4",
+			 
+ 
+		 ]);
+
+		 $html = view('/academia/math_olympics_pdf_group',$data)->render();
+		 $mpdf->SetDisplayMode('fullpage');
+		 
+		 $mpdf->WriteHTML($html);
+		 $namefile = 'Certificado-Grupal-Olimpiadas-Trilce'.time().'.pdf';
+		 $mpdf->SetJS('this.print();');
+         $mpdf->Output($namefile,"I");
+	}
+
+	public function descargarPDFGROUP(Request $request){
+		/*try {
+			$result = $this->client->OI_Dato([
+				'CODE_URL'  => $request->CODE_URL
+			]);
+	
+			$collection = collect($result->OI_DatoResult);
+
+			//$result = $this->client->OlimpiadasInscripcion($data);
+	
+			} catch ( SoapFault $e ) {
+			dd($e->getMessage());
+		}*/
+
+		dd($data = $request->all());
+		/*$data = [
+			'descripcion' 			=> $collection['DESCRIPCION'],
+			'distrito' 				=> $collection['DISTRITO'],
+			'inicio' 				=>  $collection['FECHA_INICIO'],
+			'fin' 					=> $collection['FECHA_FIN'],
+			'fecha_olimpiada'		=> $collection['FECHA_OLIMPIADA'],
+			'lugar' 				=> $collection['INSTITUCION_EDUCATIVA'],
+
+			'CODE_URL' 			    => $request->CODE_URL,
+			'NRO_DOCUMENTO' 	    => $request->NRO_DOCUMENTO,
+			'NOMBRES'	            => $request->NOMBRES,
+			'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO,
+			'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO,
+
+			'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
+			'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
+			'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
+			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO	
+		];*/
+		
+		 return view('/academia/math_olympics_pdf_group',$data);
+		 /*$mpdf = new Mpdf([
+			 'margin_top' => 10,
+			 'margin_left' => 10,
+			 'margin_right' => 10,
+			 'mirrorMargins' => true,
+			 'default_font' => 'arial',
+			 "format" => "A4",
+			 
+ 
+		 ]);
+
+		 $html = view('/academia/math_olympics_pdf_group',$data)->render();
+		 $mpdf->SetDisplayMode('fullpage');
+		 $mpdf->WriteHTML($html);
+		 $namefile = 'Certificado-Grupal-Olimpiadas-Trilce'.time().'.pdf';
+		 $mpdf->Output($namefile,"D");*/
 	}
 	 
 }

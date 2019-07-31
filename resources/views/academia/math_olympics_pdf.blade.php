@@ -244,17 +244,13 @@ footer {
             <th class="desc" width="13%">NIVEL DE ESTUDIO</th>
           </tr>
         </thead>
-       
-        <tbody>
-       
 
-        @for ($i = 0; $i < 2; $i++)
         <tbody>
           <tr>
-            <td class="no">{{$a=$i+1}}</td>
+            <td class="no">01</td>
             <td class="desc">
-            <h3>{{$NOMBRES[$i]}} {{$PRIMER_APELLIDO[$i]}} {{$SEGUNDO_APELLIDO[$i]}}</h3>
-                DNI: {{$NRO_DOCUMENTO[$i]}}
+              <h3>{{$NOMBRES}} {{$PRIMER_APELLIDO}} {{$SEGUNDO_APELLIDO}}</h3>
+                DNI: {{$NRO_DOCUMENTO}}
             </td>
             <td class="unit">
             @switch($TIPO_INSTITUCION)
@@ -389,10 +385,7 @@ footer {
             </td>
           </tr>
         </tbody>
-        @endfor
-         
-        </tbody>
-       
+
       </table>
       <div id="thanks">Felicitaciones su inscripción fue satisfactoria</div>
       <div id="notices">

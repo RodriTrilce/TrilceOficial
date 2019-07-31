@@ -6,7 +6,7 @@
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
-      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-simulacrum"></div>
+      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-seminary"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Seminario Fija Uni</h1>
@@ -28,7 +28,7 @@
 
     @if($university->short_name=='UNI')
       <div class="col-xs-12 col-sm simulacrum-info">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del simulacro</h2>
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del seminario</h2>
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>

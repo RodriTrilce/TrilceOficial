@@ -1,12 +1,12 @@
-{{! $breadcrumbs = Breadcrumbs::render('academia-simulacrum-exam') }}
+{{! $breadcrumbs = Breadcrumbs::render('academia-aboutus') }}
 @extends('academia.layouts.template')
-@section('title', 'Seminario - Registro Exitoso')
+@section('title', 'Simulacro - Registro Exitoso')
 @section('content')
 
 <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
-      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-seminary"></div>
+      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-simulacrum"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Seminario</h1>
@@ -39,6 +39,6 @@
 @endsection
 
 @section('scripts')
-    page = 'simulacrum-exam;
+    page = 'about_us';
   @parent
 @endsection

@@ -88,7 +88,9 @@ class SeminaryExamController extends Controller
 			dd($e->getMessage());
 		}
 		
-		return view('/academia/seminary_exam_exito');
+		return view('/academia/seminary_exam_exito')->with([
+			'name'  => $request->NOMBRES
+		]);
 
 
 

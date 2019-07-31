@@ -9,7 +9,7 @@
       <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-seminary"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
-        <h1>Seminario Fija Uni</h1>
+        <h1>Seminarios</h1>
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@
     <br><br>
     <div class="row col-xs-12 center-xs admission-ads">
             <div class="admission-ads__container">
-                <h1>¡Participa en nuestro seminario!</h1>
+                <h1>¡Participa en nuestro seminario Fijas UNI!</h1>
             </div>
     </div>
   @endif
@@ -36,11 +36,15 @@
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>4, 6 y 8 de agosto</p>
+            <p>4 de agosto: Aptitud Académica y Humanidades</p>
+            <p>6 de agosto: Matemática</p>
+            <p>8 de agosto: Física-Química</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Hora:</span>
-            <p>8:00 p. m. - 2:00 p. m.</p>
+            <p> 4 de agosto (8:00 a. m. a 5:00 p. m.)</p>
+            <p> 6 de agosto (8:00 a. m. a 2:00 p. m.)</p>
+            <p> 8 de agosto (8:00 a. m. a 2:00 p. m.)</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales:</span>

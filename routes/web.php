@@ -107,12 +107,12 @@ Route::get('/academia/sede', function(){
 Route::name('academia-simulacrum-exam')
       ->get('/academia/seminario-{university}/inscripcion/{idexam}', 'Academia\SeminaryExamController@index');
 
-/*Route::name('academia-seminary-exam-finish')
+Route::name('academia-seminary-exam-finish')
       ->post('/academia/seminario-uni/inscripcion/{idexam}', 'Academia\SeminaryExamController@store');
 
 Route::get('/academia/seminario-uni/inscripcion', function(){
       return redirect('/academia');
-      });*/
+      });
 
 
 //Simulacrum > Results All

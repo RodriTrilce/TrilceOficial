@@ -20,7 +20,9 @@
                   </div>
                   <div class="row col-xs-12 between-xs blog-home-top-bottom">
                     <div class="col-xs start-xs blog-home-top-bottom--more"><a href="/{{$markers->first()->site}}/blog/{{$markers->first()->slug}}">Leer más <i class="fa fa-search"></i></a></div>
-                    <div class="col-xs end-xs blog-home-top--view"><i class="fa fa-eye"></i> {{$markers->first()->visits()->count()}}</div>
+                    <div class="col-xs end-xs blog-home-top--view">
+                      <!--<i class="fa fa-eye"></i> $markers->first()->visits()->count()-->
+                    </div>
                   </div>
                 </section>
               </div>

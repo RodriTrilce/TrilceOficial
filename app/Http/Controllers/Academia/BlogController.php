@@ -53,7 +53,7 @@ class BlogController extends Controller
 
     //\Event::fire(new PostViewed($post));
     if($post->visible) {
-      $post->visits()->increment();
+      //$post->visits()->increment();
 
       $related = Post::inRandomOrder()
       ->where([

@@ -78,9 +78,10 @@ class SeminaryExamController extends Controller
 			'NRO_CELULAR' 		=> $request->NRO_CELULAR
 			//'COMENTARIO' 		=> $request->COMENTARIO
 		];
+		dd($data);
 		try {
 			
-			dd($data);
+			
 			$result = $this->client->SimulacroInscripcion($data);
 			
 			$collection = collect($result->SimulacroInscripcionResult);

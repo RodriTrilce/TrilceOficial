@@ -317,5 +317,5 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
 
 Route::get('/academia/pruebas', function(){
       //$temp = tempnam(sys_get_temp_dir(), 'trilce_');
-      echo str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/';
+      echo __DIR__.'/../storage/framework/pdf/';
     });

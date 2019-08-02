@@ -80,15 +80,16 @@ class SeminaryExamController extends Controller
 		];
 		try {
 			
-
+			dd($data);
 			$result = $this->client->SimulacroInscripcion($data);
+			
 			$collection = collect($result->SimulacroInscripcionResult);
 
 
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		dd($request->all(),$collection);
+		//dd($request->all(),$collection);
 		return view('/academia/seminary_exam_exito')->with([
 			'name'  => $request->NOMBRES
 		]);

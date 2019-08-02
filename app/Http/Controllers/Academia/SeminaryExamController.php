@@ -88,7 +88,7 @@ class SeminaryExamController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		
+		dd($collection);
 		return view('/academia/seminary_exam_exito')->with([
 			'name'  => $request->NOMBRES
 		]);

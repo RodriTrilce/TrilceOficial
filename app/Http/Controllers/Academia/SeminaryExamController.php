@@ -60,7 +60,6 @@ class SeminaryExamController extends Controller
 
 	public function store(Request $request)
 	{
-		dd($request->all());
 		$data = [];
 		$data['request'] = [
 			'CODE_URL' 			=> $request->CODE_URL,
@@ -88,7 +87,7 @@ class SeminaryExamController extends Controller
 		} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		//dd($collection);
+		dd($request->all(),$collection);
 		return view('/academia/seminary_exam_exito')->with([
 			'name'  => $request->NOMBRES
 		]);

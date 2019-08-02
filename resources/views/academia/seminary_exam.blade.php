@@ -202,7 +202,8 @@
               id="celular"
               placeholder="Número de celular"
               min="0"
-              max="9"
+              min="0"
+              max="999999999"
               minlength="9"
               maxLength="9"
               required

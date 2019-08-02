@@ -196,6 +196,20 @@
             </fieldset>
 
             <fieldset class="form-group">
+              <input
+              type="number"
+              name="NRO_CELULAR"
+              id="celular"
+              placeholder="Número de celular"
+              min="0"
+              max="9"
+              minlength="9"
+              maxLength="9"
+              required
+              />
+            </fieldset>
+
+            <fieldset class="form-group">
               <select
                 name="BLDG_TBL"
                 id="cbx_venue"

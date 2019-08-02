@@ -1,6 +1,9 @@
 <?php
 namespace App\Http\Controllers\Academia;
 
+define("_MPDF_TEMP_PATH", __DIR__.'/../storage/framework/pdf/');
+define("_MPDF_TTFONTDATAPATH", __DIR__.'/../storage/framework/pdf/fonts/');
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
@@ -358,6 +361,7 @@ class MathOlympicsRegisterController extends Controller
 		
 		 //return view('/academia/math_olympics_pdf_group',$data);
 		 $mpdf = new Mpdf([
+			'tempDir' => __DIR__ . 'resources/internal/academia/pdf/', // uses the current directory's parent "tmp" subfolder
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,

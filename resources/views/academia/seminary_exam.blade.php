@@ -195,20 +195,22 @@
               />
             </fieldset>
 
-            <fieldset class="form-group">
-              <input
-              type="number"
-              name="NRO_CELULAR"
-              id="celular"
-              placeholder="Número de celular"
-              min="0"
-              min="0"
-              max="999999999"
-              minlength="9"
-              maxLength="9"
-              required
-              />
-            </fieldset>
+            <div class="col-xs-12">
+              <fieldset class="form-group">
+                <input
+                  type="number"
+                  name="NRO_CELULAR"
+                  id="step1_NRO_CELULAR"
+                  placeholder="Número de Celular"
+                  aria-label="Número de Celular"
+                  min="0"
+                  max="999999999"
+                  minlength="9"
+                  maxLength="9"
+                  required
+                />
+              </fieldset>
+            </div>
 
             <fieldset class="form-group">
               <select

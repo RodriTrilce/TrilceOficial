@@ -314,3 +314,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/form-sorteo', 'FormSorteoController');  
   Route::resource('/form-claves', 'FormClavesSanMarcosController');
 });*/
+
+Route::get('/academia/pruebas', function(){
+      //$temp = tempnam(sys_get_temp_dir(), 'trilce_');
+      echo str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/';
+    });

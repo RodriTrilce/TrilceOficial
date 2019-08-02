@@ -195,7 +195,7 @@
               />
             </fieldset>
 
-            {{--<fieldset class="form-group">
+            <fieldset class="form-group">
               <input
               type="number"
               name="NRO_CELULAR"
@@ -207,7 +207,7 @@
               maxLength="9"
               required
               />
-            </fieldset>--}}
+            </fieldset>
 
             <fieldset class="form-group">
               <select

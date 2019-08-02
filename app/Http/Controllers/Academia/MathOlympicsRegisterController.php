@@ -250,7 +250,7 @@ class MathOlympicsRegisterController extends Controller
 		
 		 //return view('/academia/math_olympics_pdf',$data);
 		 $mpdf = new Mpdf([
-			'tempDir' => '/var/www/trilce.edu.pe/web/custom/temp/dir/path',
+			 'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf/',
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -265,7 +265,7 @@ class MathOlympicsRegisterController extends Controller
 		 $mpdf->SetDisplayMode('fullpage');
 		 
 		 $mpdf->WriteHTML($html);
-		 $namefile = 'Centificado-Olimpiadas-Trilce'.time().'.pdf';
+		 $namefile = 'Certificado-Olimpiadas-Trilce'.time().'.pdf';
 		 $mpdf->SetJS('this.print();');
          $mpdf->Output($namefile,"I");
 	}
@@ -307,6 +307,7 @@ class MathOlympicsRegisterController extends Controller
 		
 		 //return view('/academia/math_olympics_pdf',$data);
 		 $mpdf = new Mpdf([
+			 'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf/',
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -320,7 +321,7 @@ class MathOlympicsRegisterController extends Controller
 		 $html = view('/academia/math_olympics_pdf',$data)->render();
 		 $mpdf->SetDisplayMode('fullpage');
 		 $mpdf->WriteHTML($html);
-		 $namefile = 'Centificado-Olimpiadas-Trilce'.time().'.pdf';
+		 $namefile = 'Certificado-Olimpiadas-Trilce'.time().'.pdf';
 		 $mpdf->Output($namefile,"D");
 	}
 
@@ -362,6 +363,7 @@ class MathOlympicsRegisterController extends Controller
 		 //return view('/academia/math_olympics_pdf_group',$data);
 		 
 		 $mpdf = new Mpdf([
+			 'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf/',			  
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,

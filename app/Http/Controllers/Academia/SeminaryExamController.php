@@ -75,8 +75,8 @@ class SeminaryExamController extends Controller
 			'NOMBRES'			=> $request->NOMBRES,
 			'PRIMER_APELLIDO' 	=> $request->PRIMER_APELLIDO,
 			'SEGUNDO_APELLIDO'	=> $request->SEGUNDO_APELLIDO,
-			'CORREO_E' 			=> $request->CORREO_E
-			//'NRO_CELULAR' 		=> $request->NRO_CELULAR
+			'CORREO_E' 			=> $request->CORREO_E,
+			'NRO_CELULAR' 		=> $request->NRO_CELULAR
 			//'COMENTARIO' 		=> $request->COMENTARIO
 		];
 		try {

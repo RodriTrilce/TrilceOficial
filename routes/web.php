@@ -170,10 +170,10 @@ Route::name('academia-matholympics-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion/{codurl}', 'Academia\MathOlympicsRegisterController@store');
 
 Route::name('academia-matholympics')
-      ->post('/academia/olimpiadas-matematicas/crendencial-imprimir/', 'Academia\MathOlympicsRegisterController@imprimirPDF');
+      ->post('/academia/olimpiadas-matematicas/credencial-imprimir/', 'Academia\MathOlympicsRegisterController@imprimirPDF');
 
 Route::name('academia-matholympics')
-      ->post('/academia/olimpiadas-matematicas/crendencial-descargar/', 'Academia\MathOlympicsRegisterController@descargarPDF');
+      ->post('/academia/olimpiadas-matematicas/credencial-descargar/', 'Academia\MathOlympicsRegisterController@descargarPDF');
 
 
 // Inscripcion Olimpiadas Matematicas Grupal (RegisterMathOlympics)
@@ -184,10 +184,10 @@ Route::name('academia-matholympics-group-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion-grupal/{codurl}', 'Academia\MathOlympicsRegisterController@storeGroup');
 
 Route::name('academia-matholympics-group-print')
-      ->post('/academia/olimpiadas-matematicas/crendencial-imprimir-grupal/', 'Academia\MathOlympicsRegisterController@imprimirPDFGROUP');
+      ->post('/academia/olimpiadas-matematicas/credencial-imprimir-grupal/', 'Academia\MathOlympicsRegisterController@imprimirPDFGROUP');
 
 Route::name('academia-matholympics-group-donwload')
-      ->post('/academia/olimpiadas-matematicas/crendencial-descargar-grupal/', 'Academia\MathOlympicsRegisterController@descargarPDFGROUP');
+      ->post('/academia/olimpiadas-matematicas/credencial-descargar-grupal/', 'Academia\MathOlympicsRegisterController@descargarPDFGROUP');
 
 
 
@@ -314,8 +314,3 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
   Route::resource('/form-sorteo', 'FormSorteoController');  
   Route::resource('/form-claves', 'FormClavesSanMarcosController');
 });*/
-
-Route::get('/academia/pruebas', function(){
-      //$temp = tempnam(sys_get_temp_dir(), 'trilce_');
-      echo __DIR__.'/../storage/framework/pdf/';
-    });

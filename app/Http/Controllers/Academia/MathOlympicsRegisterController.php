@@ -361,7 +361,7 @@ class MathOlympicsRegisterController extends Controller
 		
 		 //return view('/academia/math_olympics_pdf_group',$data);
 		 $mpdf = new Mpdf([
-			'tempDir' => str_replace('/public','/',getcwd()).'resources/internal/academia/pdf/',
+			'tempDir' => '/var/www/trilce.edu.pe/web/resources/internal/academia/pdf/',
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,

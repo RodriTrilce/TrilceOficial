@@ -60,7 +60,7 @@ class SeminaryExamController extends Controller
 
 	public function store(Request $request)
 	{
-		
+		dd($request->all());
 		$data = [];
 		$data['request'] = [
 			'CODE_URL' 			=> $request->CODE_URL,

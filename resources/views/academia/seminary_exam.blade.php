@@ -198,7 +198,7 @@
             <div class="col-xs-12">
               <fieldset class="form-group">
                 <input
-                  type="text"
+                  type="number"
                   name="NRO_CELULAR"
                   id="step1_NRO_CELULAR"
                   placeholder="Número de Celular"

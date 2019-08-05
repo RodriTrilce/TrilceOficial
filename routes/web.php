@@ -169,10 +169,10 @@ Route::name('academia-matholympics-register')
 Route::name('academia-matholympics-register-finish')
       ->post('/academia/olimpiadas-matematicas/inscripcion/{codurl}', 'Academia\MathOlympicsRegisterController@store');
 
-Route::name('academia-matholympics')
+Route::name('academia-matholympics-print')
       ->post('/academia/olimpiadas-matematicas/credencial-imprimir/', 'Academia\MathOlympicsRegisterController@imprimirPDF');
 
-Route::name('academia-matholympics')
+Route::name('academia-matholympics-donwload')
       ->post('/academia/olimpiadas-matematicas/credencial-descargar/', 'Academia\MathOlympicsRegisterController@descargarPDF');
 
 

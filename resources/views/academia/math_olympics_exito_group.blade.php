@@ -22,7 +22,7 @@
           <img src="{{ url('/static/images/academia/img-nosotros-academia.jpg') }}" alt="Sobre nosotros">
         </div>
         <div class="col-xs-12 col-sm about-history--right">
-          <h1 class="about-history--title">¡Gracias I.E {{$COLEGIO_PROCEDENCIA}}!</h1>
+          <h1 class="about-history--title">¡Gracias I.E. {{$COLEGIO_PROCEDENCIA}}!</h1>
           <div class="about-history--pcontainer">
             <p>
              Tu registro fue exitoso.
@@ -58,7 +58,7 @@
                       <input type="hidden" name="TIPO_INSTITUCION" id="TIPO_INSTITUCION" value="{{$TIPO_INSTITUCION}}">
                       <input type="hidden" name="COLEGIO_PROCEDENCIA" id="COLEGIO_PROCEDENCIA" value="{{$COLEGIO_PROCEDENCIA}}">
                       <input type="hidden" name="NIVEL_ESTUDIO" id="NIVEL_ESTUDIO" value="{{$NIVEL_ESTUDIO}}">
-                        Descargar credencial
+                        Descargar ficha de inscripción
                       </button>
                       
                     </form>

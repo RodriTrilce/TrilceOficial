@@ -44,7 +44,7 @@
                   <input type="hidden" name="COLEGIO_PROCEDENCIA" id="COLEGIO_PROCEDENCIA" value="{{$COLEGIO_PROCEDENCIA}}">
                   <input type="hidden" name="NIVEL_ESTUDIO" id="NIVEL_ESTUDIO" value="{{$NIVEL_ESTUDIO}}">
                   <button class="incriptions-acade-ads__container-cta banner__button-cta banner__button-cta--white" type="submit" name="button">
-                    Descargar credencial
+                    Descargar ficha de inscripción
                   </button>
                   </form>
                 </div>

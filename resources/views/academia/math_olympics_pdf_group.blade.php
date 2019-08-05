@@ -238,7 +238,7 @@ footer {
           <tr>
             <th class="no"   width="7%">#</th>
             <th class="desc" width="23%">NOMBRES Y APELLIDOS</th>
-            <th class="unit" width="15%">I.E</th>
+            <th class="unit" width="15%">I.E.</th>
             <th class="desc" width="20%">COLEGIO DE PROCEDENCIA</th>
             <th class="unit" width="17%">DEPARTAMENTO</th>
             <th class="desc" width="13%">NIVEL DE ESTUDIO</th>
@@ -394,10 +394,10 @@ footer {
         </tbody>
        
       </table>
-      <div id="thanks">Felicitaciones su inscripción fue satisfactoria</div>
+      <div id="thanks">Felicitaciones su inscripción fue satisfactoria.</div>
       <div id="notices">
-        <div>RECUERDA:</div>
-        <div class="notice">Debes presenta impreso este documento al momento la olimpiada.</div>
+        <div>IMPORTANTE</div>
+        <div class="notice">No olvides presentar impreso este documento el día de la olimpiada junto a tu DNI.</div>
       </div>
     </main>
     <footer>

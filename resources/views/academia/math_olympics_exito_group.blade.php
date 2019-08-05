@@ -22,7 +22,7 @@
           <img src="{{ url('/static/images/academia/img-nosotros-academia.jpg') }}" alt="Sobre nosotros">
         </div>
         <div class="col-xs-12 col-sm about-history--right">
-          <h1 class="about-history--title">¡Gracias {{$CODE_URL}}!</h1>
+          <h1 class="about-history--title">¡Gracias I.E {{$COLEGIO_PROCEDENCIA}}!</h1>
           <div class="about-history--pcontainer">
             <p>
              Tu registro fue exitoso.
@@ -59,23 +59,45 @@
                       <input type="hidden" name="COLEGIO_PROCEDENCIA" id="COLEGIO_PROCEDENCIA" value="{{$COLEGIO_PROCEDENCIA}}">
                       <input type="hidden" name="NIVEL_ESTUDIO" id="NIVEL_ESTUDIO" value="{{$NIVEL_ESTUDIO}}">
                     
-                        Imprime credencial
+                        Imprime y descargar credencial
                       </button>
                       
                     </form>
                   </div>
-                  <div class="col-xs-12 col-sm-6">
+                  {{--<div class="col-xs-12 col-sm-6">
                     <form action="/academia/olimpiadas-matematicas/credencial-descargar-grupal/" method="post" target="_blank">
-                      @csrf	                        
+                    @csrf			
+                      
                       <button class="incriptions-acade-ads__container-cta banner__button-cta banner__button-cta--white" type="submit" name="button">
                         
-                        <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $CODE_URL }}">
-  
-                       
-                          Descargar credencial
-                        </button>
+                      <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $CODE_URL }}">
+
+                      @foreach ($NRO_DOCUMENTO as $NRO_DOCUMENTO)
+                      <input type="hidden" name="NRO_DOCUMENTO[]" id="NRO_DOCUMENTO" value="{{$NRO_DOCUMENTO}}">
+                      @endforeach
+
+                      @foreach ($NOMBRES as $NOMBRE)
+                        <input type="hidden" name="NOMBRES[]" id="NOMBRE" value="{{$NOMBRE}}" />
+                      @endforeach
+
+                      @foreach ($PRIMER_APELLIDO as $PRIMER_APELLIDO)
+                        <input type="hidden" name="PRIMER_APELLIDO[]" id="PRIMER_APELLIDO" value="{{$PRIMER_APELLIDO}}" />
+                      @endforeach
+
+                      @foreach ($SEGUNDO_APELLIDO as $SEGUNDO_APELLIDO)
+                        <input type="hidden" name="SEGUNDO_APELLIDO[]" id="SEGUNDO_APELLIDO" value="{{$SEGUNDO_APELLIDO}}" />
+                      @endforeach
+
+                      <input type="hidden" name="DEPTO_UBIG" id="DEPTO_UBIG" value="{{$DEPTO_UBIG}}">
+                      <input type="hidden" name="TIPO_INSTITUCION" id="TIPO_INSTITUCION" value="{{$TIPO_INSTITUCION}}">
+                      <input type="hidden" name="COLEGIO_PROCEDENCIA" id="COLEGIO_PROCEDENCIA" value="{{$COLEGIO_PROCEDENCIA}}">
+                      <input type="hidden" name="NIVEL_ESTUDIO" id="NIVEL_ESTUDIO" value="{{$NIVEL_ESTUDIO}}">
+                    
+                        Descargar credencial
+                      </button>
+                      
                     </form>
-                  </div>
+                  </div>--}}
                 </div>
               </div>
           </div>

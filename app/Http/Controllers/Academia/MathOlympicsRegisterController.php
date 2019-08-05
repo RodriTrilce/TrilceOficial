@@ -251,7 +251,7 @@ class MathOlympicsRegisterController extends Controller
 		 //return view('/academia/math_olympics_pdf',$data);
 		 $mpdf = new Mpdf([
 			//'tempDir' => '/var/www/trilce.edu.pe/web/custom/temp/dir/path',
-			 'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',
+			 'tempDir' => str_replace('/public','/',getcwd()).'storage/framework/pdf',
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -308,7 +308,8 @@ class MathOlympicsRegisterController extends Controller
 		
 		 //return view('/academia/math_olympics_pdf',$data);
 		 $mpdf = new Mpdf([
-			 'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',
+			 //'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',
+			 'tempDir' => str_replace('/public','/',getcwd()).'storage/framework/pdf',
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -364,7 +365,8 @@ class MathOlympicsRegisterController extends Controller
 		 //return view('/academia/math_olympics_pdf_group',$data);
 		 
 		 $mpdf = new Mpdf([
-			 'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',			  
+			 //'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',	
+			 'tempDir' => str_replace('/public','/',getcwd()).'storage/framework/pdf',		  
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -385,7 +387,7 @@ class MathOlympicsRegisterController extends Controller
 	}
 
 	public function descargarPDFGROUP(Request $request){
-		/*try {
+		try {
 			$result = $this->client->OI_Dato([
 				'CODE_URL'  => $request->CODE_URL
 			]);
@@ -396,10 +398,10 @@ class MathOlympicsRegisterController extends Controller
 	
 			} catch ( SoapFault $e ) {
 			dd($e->getMessage());
-		}*/
+		}
 
-		dd($data = $request->all());
-		/*$data = [
+		//dd($data = $request->all());
+		$data = [
 			'descripcion' 			=> $collection['DESCRIPCION'],
 			'distrito' 				=> $collection['DISTRITO'],
 			'inicio' 				=>  $collection['FECHA_INICIO'],
@@ -412,15 +414,18 @@ class MathOlympicsRegisterController extends Controller
 			'NOMBRES'	            => $request->NOMBRES,
 			'PRIMER_APELLIDO'	    => $request->PRIMER_APELLIDO,
 			'SEGUNDO_APELLIDO' 	    => $request->SEGUNDO_APELLIDO,
-
+		
 			'DEPTO_UBIG' 	        => $request->DEPTO_UBIG,
 			'TIPO_INSTITUCION' 	    => $request->TIPO_INSTITUCION,
 			'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
-			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO	
-		];*/
+			'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO
+		];
 		
-		 return view('/academia/math_olympics_pdf_group',$data);
-		 /*$mpdf = new Mpdf([
+		 //return view('/academia/math_olympics_pdf_group',$data);
+		 
+		 $mpdf = new Mpdf([
+			 //'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',	
+			 'tempDir' => str_replace('/public','/',getcwd()).'storage/framework/pdf',		  
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -433,9 +438,11 @@ class MathOlympicsRegisterController extends Controller
 
 		 $html = view('/academia/math_olympics_pdf_group',$data)->render();
 		 $mpdf->SetDisplayMode('fullpage');
+		 
 		 $mpdf->WriteHTML($html);
 		 $namefile = 'Certificado-Grupal-Olimpiadas-Trilce'.time().'.pdf';
-		 $mpdf->Output($namefile,"D");*/
+		 $mpdf->SetJS('this.print();');
+         $mpdf->Output($namefile,"I");
 	}
 	 
 }

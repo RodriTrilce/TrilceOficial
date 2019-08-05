@@ -388,6 +388,8 @@ class MathOlympicsRegisterController extends Controller
 	}
 
 	public function descargarPDFGROUP(Request $request){
+		dd($data = $request->all());
+
 		try {
 			$result = $this->client->OI_Dato([
 				'CODE_URL'  => $request->CODE_URL
@@ -400,8 +402,7 @@ class MathOlympicsRegisterController extends Controller
 			} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-
-		//dd($data = $request->all());
+		
 		$data = [
 			'descripcion' 			=> $collection['DESCRIPCION'],
 			'distrito' 				=> $collection['DISTRITO'],

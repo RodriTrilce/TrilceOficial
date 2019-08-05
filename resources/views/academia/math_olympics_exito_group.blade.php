@@ -31,7 +31,7 @@
         
               <div class="row col-xs-12">
                   <div class="col-xs-12 col-sm-12">
-                    <form action="/academia/olimpiadas-matematicas/credencial-descargar-grupal/" method="post" target="_blank">
+                    <form action="{{ action('Academia\MathOlympicsRegisterController@descargarPDFGROUP') }}" method="post" target="_blank">
                     @csrf			
                       
                       <button class="incriptions-acade-ads__container-cta banner__button-cta banner__button-cta--white" type="submit" name="button">

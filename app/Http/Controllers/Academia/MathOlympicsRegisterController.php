@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Academia;
 
-define("_MPDF_TEMP_PATH", '/var/www/trilce.edu.pe/web/storage/framework/pdf/');
+//define("_MPDF_TEMP_PATH", '/var/www/trilce.edu.pe/web/storage/framework/pdf/');
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

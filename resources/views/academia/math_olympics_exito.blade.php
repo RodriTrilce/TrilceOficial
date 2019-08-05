@@ -30,28 +30,7 @@
             <div class="row col-xs-12 center-xs">
         
             <div class="row col-xs-12">
-                <div class="col-xs-12 col-sm-6">
-                <form action=" {{ action('Academia\MathOlympicsRegisterController@imprimirPDF') }}" method="post" target="_blank">
-                @csrf			
-                  
-                  <button class="incriptions-acade-ads__container-cta banner__button-cta banner__button-cta--white" type="submit" name="button">
-                  <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $CODE_URL }}">
-                  <input type="hidden" name="NRO_DOCUMENTO" id="NRO_DOCUMENTO" value="{{$NRO_DOCUMENTO}}">
-                  <input type="hidden" name="NOMBRES" id="NOMBRES" value="{{$NOMBRES}}">
-                  <input type="hidden" name="PRIMER_APELLIDO" id="PRIMER_APELLIDO" value="{{$PRIMER_APELLIDO}}">
-                  <input type="hidden" name="SEGUNDO_APELLIDO" id="SEGUNDO_APELLIDO" value="{{$SEGUNDO_APELLIDO}}">
-                  <input type="hidden" name="CORREO_E" id="CORREO_E" value="{{$CORREO_E}}">
-                  <input type="hidden" name="DEPTO_UBIG" id="DEPTO_UBIG" value="{{$DEPTO_UBIG}}">
-                  <input type="hidden" name="TIPO_INSTITUCION" id="TIPO_INSTITUCION" value="{{$TIPO_INSTITUCION}}">
-                  <input type="hidden" name="COLEGIO_PROCEDENCIA" id="COLEGIO_PROCEDENCIA" value="{{$COLEGIO_PROCEDENCIA}}">
-                  <input type="hidden" name="NIVEL_ESTUDIO" id="NIVEL_ESTUDIO" value="{{$NIVEL_ESTUDIO}}">
-
-                    Imprime credencial
-                  </button>
-                  
-                  </form>
-                </div>
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-12">
                 <form action="{{ action('Academia\MathOlympicsRegisterController@descargarPDF') }}" method="post" target="_blank">
                 @csrf				
                 <input type="hidden" name="CODE_URL" id="CODE_URL" value="{{ $CODE_URL }}">

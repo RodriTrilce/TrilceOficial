@@ -441,9 +441,8 @@ class MathOlympicsRegisterController extends Controller
 		 $mpdf->SetDisplayMode('fullpage');
 		 
 		 $mpdf->WriteHTML($html);
-		 $namefile = 'Certificado-Grupal-Olimpiadas-Trilce'.time().'.pdf';
-		 $mpdf->SetJS('this.print();');
-         $mpdf->Output($namefile,"I");
+		 $namefile = 'Certificado-Olimpiadas-Trilce'.time().'.pdf';
+		 $mpdf->Output($namefile,"D");
 	}
 	 
 }

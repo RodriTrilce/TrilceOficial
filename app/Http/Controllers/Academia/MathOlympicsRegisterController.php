@@ -388,7 +388,7 @@ class MathOlympicsRegisterController extends Controller
 	}
 
 	public function descargarPDFGROUP(Request $request){
-		dd($data = $request->all());
+		//dd($data = $request->all());
 
 		try {
 			$result = $this->client->OI_Dato([

@@ -402,7 +402,7 @@ class MathOlympicsRegisterController extends Controller
 			} catch ( SoapFault $e ) {
 			dd($e->getMessage());
 		}
-		
+
 		$data = [
 			'descripcion' 			=> $collection['DESCRIPCION'],
 			'distrito' 				=> $collection['DISTRITO'],

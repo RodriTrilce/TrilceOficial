@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Academia;
 
-define("_MPDF_TEMP_PATH", __DIR__.'/../storage/framework/pdf/');
+define("_MPDF_TEMP_PATH", '/var/www/trilce.edu.pe/web/storage/framework/pdf/');
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -250,7 +250,7 @@ class MathOlympicsRegisterController extends Controller
 		
 		 //return view('/academia/math_olympics_pdf',$data);
 		 $mpdf = new Mpdf([
-			'tempDir' => '/var/www/trilce.edu.pe/web/resources/internal/academia/pdf/',
+			'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf/',
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,

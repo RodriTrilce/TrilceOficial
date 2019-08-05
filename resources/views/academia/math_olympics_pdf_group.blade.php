@@ -215,7 +215,7 @@ footer {
       <div id="company">
         <div>Av. Arequipa 1381, Santa Beatriz</div>
         <div>(01) 6198 100 </div>
-        <div><a href="mailto:company@example.com">olimpiadas@trilce.edu.pe</a></div>
+        <div><a href="mailto:olimpiadas@trilce.edu.pe">olimpiadas@trilce.edu.pe</a></div>
       </div>
       </div>
     </header>

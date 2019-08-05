@@ -328,6 +328,7 @@ class MathOlympicsRegisterController extends Controller
 	}
 
 	public function imprimirPDFGROUP(Request $request){
+		dd($request->all());
 		try {
 			$result = $this->client->OI_Dato([
 				'CODE_URL'  => $request->CODE_URL

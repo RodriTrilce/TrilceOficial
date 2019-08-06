@@ -248,7 +248,7 @@ footer {
         <tbody>
        
 
-        @for ($i = 0; $i < 2; $i++)
+        @for ($i = 0; $i < count($NRO_DOCUMENTO); $i++)
         <tbody>
           <tr>
             <td class="no">{{$a=$i+1}}</td>

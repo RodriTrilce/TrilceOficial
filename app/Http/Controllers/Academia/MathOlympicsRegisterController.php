@@ -191,26 +191,11 @@ class MathOlympicsRegisterController extends Controller
 				'COLEGIO_PROCEDENCIA'   => $request->COLEGIO_PROCEDENCIA,
 				'NIVEL_ESTUDIO' 	    => $request->NIVEL_ESTUDIO
 			 ]);
-			//dd($data = $request->all());
+
 		}else{
 			 print_r($collection['MENSAJE']);
 			 return redirect()->route('academia-matholympics');
 		}
-
-		
-
-
-		/*return redirect()->route('academia-index')->with([
-			'olympics'  => true,
-		]);*/
-		
-		//return new OlympicsApiResource($collection);
-		//return view('/academia/simulacrum_exam_exito');
-
-		//return redirect()->route('academia-index')->with([
-			//'enrollment'  => true,
-			//'dni'         => encrypt($request->step1_dni)
-		 // ]);
 	}
 	
 	public function imprimirPDF(Request $request){
@@ -427,7 +412,8 @@ class MathOlympicsRegisterController extends Controller
 		 
 		 $mpdf = new Mpdf([
 			 //'tempDir' => '/var/www/trilce.edu.pe/web/storage/framework/pdf',	
-			 'tempDir' => str_replace('/public','/',getcwd()).'storage/framework/pdf',		  
+			 'tempDir' => str_replace('/public','/',getcwd()).'storage/framework/pdf',
+			 'autoPageBreak' => true,	  
 			 'margin_top' => 10,
 			 'margin_left' => 10,
 			 'margin_right' => 10,
@@ -437,9 +423,13 @@ class MathOlympicsRegisterController extends Controller
 			 
  
 		 ]);
-
-		 $html = view('/academia/math_olympics_pdf_group',$data)->render();
+			
+		 $html = view('/academia/math_olympics_pdf_group_unique',$data)->render();
 		 $mpdf->SetDisplayMode('fullpage');
+
+		 $mpdf->autoPageBreak = true;
+
+		 $mpdf->AddPage();
 		 
 		 $mpdf->WriteHTML($html);
 		 $namefile = 'Certificado-Olimpiadas-Trilce'.time().'.pdf';

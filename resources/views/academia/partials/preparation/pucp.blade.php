@@ -46,7 +46,7 @@
                         <tr>
                           <td data-label="Local"> Santa Beatriz</td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 22/07/2019</td>
+                          <td data-label="Inicio"> 12/08/2019</td>
                           <td data-label="Fin"> 07/02/2020</td>
                           <td data-label="Pago Único"> S/2750</td>
                           <td data-label="Pago en cuotas">C1 S/850</td>
@@ -105,7 +105,7 @@
                         <tr>
                           <td data-label="Local"> Santa Beatriz</td>
                           <td data-label="Turno"> Tarde</td>
-                          <td data-label="Inicio"> 22/07/2019</td>
+                          <td data-label="Inicio"> 12/08/2019</td>
                           <td data-label="Fin"> 15/11/2019</td>
                           <td data-label="Inversión Mensual"> S/1100</td>
                           <td data-label="Pago en cuotas" >C1 S/600</td>

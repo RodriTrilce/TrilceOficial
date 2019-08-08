@@ -101,6 +101,12 @@ Breadcrumbs::for('academia-preparation', function ($trail, $modality) {
     $trail->push('Preparación ' . $modality, route('academia-preparation', $modality));
 });
 
+// Academia > Preparation New
+Breadcrumbs::for('academia-preparation2', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Preparación ' . $modality, route('academia-preparation2', $modality));
+});
+
 // Academia > Venues
 Breadcrumbs::for('academia-venues', function ($trail) {
     $trail->parent('academia-index');
@@ -111,6 +117,12 @@ Breadcrumbs::for('academia-venues', function ($trail) {
 Breadcrumbs::for('academia-venue', function ($trail, $modality) {
     $trail->parent('academia-index');
     $trail->push('Sede ' . ucwords($modality), route('academia-venue', $modality));
+});
+
+// Academia > Studentship > Exam
+Breadcrumbs::for('academia-studentship-exam', function ($trail, $modality) {
+    $trail->parent('academia-index');
+    $trail->push('Becas ' . ucwords($modality), route('academia-studentship-exam', [$modality, 'xx']));
 });
 
 // Academia > Simulacrum > Exam

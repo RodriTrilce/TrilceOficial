@@ -90,6 +90,10 @@ Route::name('academia-index')
 Route::name('academia-preparation')
       ->get('/academia/preparacion-{university}', 'Academia\PreparationController@index');
 
+// Preparación (Preparation SAT)
+Route::name('academia-preparation2')
+      ->get('/academia/preparacion2-{university}', 'Academia\PreparationNewController@index');
+
 // Página Princial (Index)
 Route::name('academia-venues')
       ->get('/academia/sedes', 'Academia\VenuesController@index');
@@ -102,6 +106,18 @@ Route::get('/academia/sede', function(){
   return redirect('/academia/sede', 'Academia\VenuesController@index');
 });
 
+// Studentship > Exam
+
+Route::name('academia-studentship-exam')
+      ->get('/academia/becas-{university}/inscripcion/{idexam}', 'Academia\StudentshipExamController@index');
+
+Route::name('academia-studentship-exam-finish')
+      ->post('/academia/becas-{university}/inscripcion/{idexam}', 'Academia\StudentshipExamController@store');
+
+Route::get('/academia/becas-{university}/inscripcion', function(){
+      return redirect('/academia');
+      });
+
 // Seminary > Exam
 
 Route::name('academia-simulacrum-exam')
@@ -113,7 +129,6 @@ Route::name('academia-seminary-exam-finish')
 Route::get('/academia/seminario-uni/inscripcion', function(){
       return redirect('/academia');
       });
-
 
 //Simulacrum > Results All
 Route::name('academia-simulacrum-results')
@@ -137,10 +152,6 @@ Route::name('academia-simulacrum')
 Route::get('/academia/simulacros', function(){
   return redirect('/academia');
 });
-
-//Route::name('simulacrum-inscriptions')
-//->get('/academia/simulacrum-inscriptions', 'Academia\SimulacrumController@inscripciones');
-
 
 // Solucionarios (Solutions)
 Route::name('academia-solutions')

@@ -28,7 +28,7 @@
 
     @if($university->short_name=='UNI')
       <div class="col-xs-12 col-sm simulacrum-info">
-        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del seminario</h2>
+        <h2 class="simulacrum-info-title simulacrum-info-title-bottom">Información del examen</h2>
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>

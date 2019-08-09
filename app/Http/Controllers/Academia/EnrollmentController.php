@@ -89,8 +89,13 @@ class EnrollmentController extends Controller
       // Store in trilce system
       $this->storeAPI($request->step1_dni);
 
-      return redirect()->route('academia-index')->with([
+      /*return redirect()->route('academia-index')->with([
         'enrollment'  => true,
+        'dni'         => encrypt($request->step1_dni)
+      ]);*/
+
+      return view('/academia/enrollment_success')->with([
+       'nombre'       => $request->step2_names,
         'dni'         => encrypt($request->step1_dni)
       ]);
    }

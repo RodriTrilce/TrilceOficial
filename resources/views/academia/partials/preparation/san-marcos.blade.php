@@ -186,7 +186,7 @@
                           <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
-                        <tr>
+                        {{--<tr>
                           <td data-label="Local"> Los Olivos</td>
                           <td data-label="Turno"> Tarde</td>
                           <td data-label="Inicio"> 19/08/2019</td>
@@ -194,7 +194,7 @@
                           <td data-label="Inversión Mensual"> S/200</td>
                           <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
                           <td data-label="Estado"> Disponible</td>
-                        </tr>
+                        </tr>--}}
                         <tr>
                           <td data-label="Local"> Comas</td>
                           <td data-label="Turno"> Tarde</td>

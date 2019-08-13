@@ -111,7 +111,7 @@
                 </li>
                 <li>
                     <span class="icon_local_span"><i class="fa fa-stop"></i></span>
-                    Más de 39 años de experiencia potenciando el nivel académico y desarrollo personal de nuestros alumnos.
+                    40 años de experiencia potenciando el nivel académico y desarrollo personal de nuestros alumnos.
                 </li>
                 <li>
                     <span class="icon_local_span"><i class="fa fa-stop"></i></span>
@@ -483,6 +483,33 @@
             <div class="row col-xs-12 col-sm-12 table-responsive" id="tableade">
               <table class="ep-stepseven-table">
                 <tbody>
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto UNI</td>
+                    <td data-label="Examen">2019-II</td>
+                    <td data-label="Nombres">Diego Vargas</td>
+                    <td data-label="Carrera">Ingeniería Civil</td>
+                  </tr>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto UNI</td>
+                    <td data-label="Examen">2019-II</td>
+                    <td data-label="Nombres">Piero Pérez</td>
+                    <td data-label="Carrera">Ingeniería Mecatrónica</td>
+                  </tr>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto UNI</td>
+                    <td data-label="Examen">2019-II</td>
+                    <td data-label="Nombres">Eduardo Díaz</td>
+                    <td data-label="Carrera">Arquitectura</td>
+                  </tr>
+
+                  <tr>
+                    <td data-label="">1.<sup>er</sup> puesto UNI</td>
+                    <td data-label="Examen">2019-II</td>
+                    <td data-label="Nombres">Davis Suarez</td>
+                    <td data-label="Carrera">Física</td>
+                  </tr>
 
                   <tr>
                     <td data-label="">1.<sup>er</sup> puesto San Marcos</td>

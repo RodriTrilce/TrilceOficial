@@ -195,6 +195,7 @@
                           <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>--}}
+
                         {{--<tr>
                           <td data-label="Local"> Comas</td>
                           <td data-label="Turno"> Tarde</td>
@@ -203,7 +204,8 @@
                           <td data-label="Inversión Mensual"> S/190</td>
                           <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
                           <td data-label="Estado"> Disponible</td>
-                        </tr>--}
+                        </tr>--}}
+                        
                       </tbody>
                     </table>
                   </div>

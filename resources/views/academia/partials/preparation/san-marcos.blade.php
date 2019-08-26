@@ -183,7 +183,7 @@
                           <td data-label="Inicio"> 19/08/2019</td>
                           <td data-label="Fin"> 28/12/2019</td>
                           <td data-label="Inversión Mensual"> S/200</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         {{--<tr>
@@ -252,7 +252,7 @@
                           <td data-label="Inicio"> 19/08/2019</td>
                           <td data-label="Fin"> 13/03/2020</td>
                           <td data-label="Inversión Mensual"> S/200</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         <tr>
@@ -270,7 +270,7 @@
                           <td data-label="Inicio"> 19/08/2019</td>
                           <td data-label="Fin"> 13/03/2020</td>
                           <td data-label="Inversión Mensual"> S/190</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         <tr>
@@ -288,7 +288,7 @@
                           <td data-label="Inicio"> 19/08/2019</td>
                           <td data-label="Fin"> 13/03/2020</td>
                           <td data-label="Inversión Mensual"> S/200</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         <tr>
@@ -306,7 +306,7 @@
                           <td data-label="Inicio"> 02/09/2019</td>
                           <td data-label="Fin"> 13/03/2020 </td>
                           <td data-label="Inversión Mensual"> S/210</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         <tr>

@@ -400,7 +400,7 @@
                           <td data-label="Inicio"> 18/03/2019</td>
                           <td data-label="Fin"> 07/12/2019 </td>
                           <td data-label="Inversión Mensual"> S/210</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                         <tr>
@@ -409,7 +409,7 @@
                           <td data-label="Inicio"> 01/04/2019</td>
                           <td data-label="Fin"> 07/12/2019</td>
                           <td data-label="Inversión Mensual"> S/200</td>
-                          <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>
+                          <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>
                           <td data-label="Estado"> Disponible</td>
                         </tr>
                       </tbody>

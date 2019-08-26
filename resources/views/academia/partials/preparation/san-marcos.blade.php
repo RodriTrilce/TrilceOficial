@@ -240,7 +240,7 @@
                         <tr>
                           <td data-label="Local"> Santa Beatriz</td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 19/08/2019</td>
+                          <td data-label="Inicio"> 26/08/2019</td>
                           <td data-label="Fin"> 13/03/2020</td>
                           <td data-label="Inversión Mensual"> S/250</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
@@ -276,7 +276,7 @@
                         <tr>
                           <td data-label="Local"> Los Olivos </td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 19/08/2019</td>
+                          <td data-label="Inicio"> 26/08/2019</td>
                           <td data-label="Fin"> 13/03/2020</td>
                           <td data-label="Inversión Mensual"> S/250</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
@@ -294,7 +294,7 @@
                         <tr>
                           <td data-label="Local"> Marsano</td>
                           <td data-label="Turno"> Mañana</td>
-                          <td data-label="Inicio"> 19/08/2019</td>
+                          <td data-label="Inicio"> 26/08/2019</td>
                           <td data-label="Fin"> 13/03/2020</td>
                           <td data-label="Inversión Mensual"> S/270</td>
                           <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
@@ -303,7 +303,7 @@
                         <tr>
                           <td data-label="Local"> Marsano</td>
                           <td data-label="Turno"> Tarde</td>
-                          <td data-label="Inicio"> 19/08/2019</td>
+                          <td data-label="Inicio"> 02/09/2019</td>
                           <td data-label="Fin"> 13/03/2020 </td>
                           <td data-label="Inversión Mensual"> S/210</td>
                           <td data-label="Horario"> Lunes a Sábado 16:00-21:00 </td>

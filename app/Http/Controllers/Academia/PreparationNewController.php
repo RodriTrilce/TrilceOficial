@@ -76,16 +76,20 @@ class PreparationNewController extends Controller
         
         //dd(count($array['ServiciosAtencionResponse']));
         $arrays =$array['ServiciosAtencionResponse'];
+        //dd($arrays);
         
-        $string='';
-        foreach($arrays as $fila)
-        {
+        
+        foreach($arrays as $fila){
+          //if($fila['SERVICIO']=='ACAUN' && $fila['ESTADO_SESSION']=='ACT')
           if($fila['SERVICIO']=='ACAUN'){
-            echo $fila;
+            $my[] = $fila;
           }          
         }
-        $keywords = explode(' ',$fila);
-        dd($keywords);
+        return $this->groupArray($my,'NIVEL_ESTUDIO_DESCRIPCION');
+        //dd($this->groupArray($my,'NIVEL_ESTUDIO'));
+        
+        //$keywords = explode(' ',$fila);
+        //dd($keywords);
 
         /*$counter= count($array['ServiciosAtencionResponse']);
         $string='';
@@ -156,12 +160,13 @@ class PreparationNewController extends Controller
             if ($busca === false)
             {
               $groupcriteria[]=$value[$groupkey];
-              $return[]=array($groupkey=>$value[$groupkey],'groupeddata'=>array());
+              $return[]=array($groupkey=>$value[$groupkey]);
               $busca=count($return)-1;
             }
-            $return[$busca]['groupeddata'][]=$item;
+            $return[$busca][]=$item;
           }
           return $return;
+          //dd($return);
         }
         else
           return array();

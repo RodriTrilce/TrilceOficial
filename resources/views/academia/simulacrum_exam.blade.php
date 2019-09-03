@@ -59,7 +59,7 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>
-            <p id='data'>Simulacro Anual y Semestral e Intensivo San Marcos</p>
+            <p id='data'>Simulacro Anual, Semestral e Intensivo San Marcos</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>

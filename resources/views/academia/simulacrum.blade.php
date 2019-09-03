@@ -171,7 +171,7 @@
         	<div class="row col-xs-12">
               <div class="col-xs-12 col-sm">				
                 <a href="/academia/simulacros-san-marcos/inscripcion/dc7bf0e36b" class="register-ads__link">
-                <h1>Simulacro Anual y Semestral e Intensivo<br><strong>08 de Septiembre</strong></h1>
+                <h1>Simulacro Anual, Semestral e Intensivo<br><strong>08 de Septiembre</strong></h1>
                 <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
                   Regístrate aquí
                 </button>

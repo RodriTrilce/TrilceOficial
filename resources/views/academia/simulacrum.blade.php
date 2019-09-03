@@ -163,15 +163,15 @@
   @endif
 
   @if($university->short_name=='San Marcos')
-  {{--<div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
+  <div class="row col-xs-12 start-xs center-sm simulacrum register container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
 
       <div class="row col-xs-12 center-xs register-ads">
         <div class="register-ads__container">
         	<div class="row col-xs-12">
               <div class="col-xs-12 col-sm">				
-                <a href="/academia/simulacros-san-marcos/inscripcion/672d3e02a1" class="register-ads__link">
-                <h1>Simulacro Anual y Semestral<br><strong>23 de Junio</strong></h1>
+                <a href="/academia/simulacros-san-marcos/inscripcion/dc7bf0e36b" class="register-ads__link">
+                <h1>Simulacro Anual y Semestral e Intensivo<br><strong>08 de Septiembre</strong></h1>
                 <button class="register-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button">
                   Regístrate aquí
                 </button>
@@ -185,8 +185,9 @@
         </div>
 
       </div>
-    </div>--}}
+    </div>
 
+    {{--
     <div class="row col-xs-12 start-xs center-sm simulacrum container-base">
       <div class="row col-xs-12 col-sm-9 col-md-8 start-xs start-sm start-md">
       <div class="row col-xs-12 center-xs about-v--vgrid">
@@ -198,6 +199,7 @@
       </div>
       </div>
     </div>
+      --}}
   @endif
 
   @if($university->short_name=='PUCP')

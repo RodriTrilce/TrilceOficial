@@ -88,7 +88,9 @@ class SimulacrumExamController extends Controller
 			dd($e->getMessage());
 		}
 		
-		return view('/academia/simulacrum_exam_exito');
+		return view('/academia/simulacrum_exam_exito')->with([
+			'NOMBRES'  => $request->NOMBRES
+		]);
 
 
 

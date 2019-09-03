@@ -59,22 +59,22 @@
         <ul class="simulacrum-info-ul">
           <li>
             <span class="simulacrum-info-li-title">Descripción:</span>
-            <p id='data'>Simulacro Anual y Semestral San Marcos</p>
+            <p id='data'>Simulacro Anual y Semestral e Intensivo San Marcos</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Fecha del examen:</span>
-            <p>23/06/2019</p>
+            <p>08/09/2019</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Hora:</span>
-            <p>9:00 a. m. - 12:00 m.</p>
+            <p>8:30 a. m. - 12:00 m.</p>
           </li>
           <li>
             <span class="simulacrum-info-li-title">Locales:</span>
             <p>Los Olivos: Av. Tomás Valle 845</p>
             <p>Santa Beatriz: Av. Arequipa 1250</p>
             <p>Marsano: Av. Tomás Marsano 4773, Surco</p>
-            <p>Cercado de Lima (Torrico): Jr. Rufino Torrico 862</p>
+            {{--<p>Cercado de Lima (Torrico): Jr. Rufino Torrico 862</p>--}}
             <p>Villa El Salvador: Av. Pastor Sevilla s/n mz. D lote 3</p>
             <p>Comas: Av. Universitaria 6102</p>
           </li>

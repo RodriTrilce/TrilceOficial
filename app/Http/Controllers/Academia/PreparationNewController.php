@@ -27,7 +27,8 @@ class PreparationNewController extends Controller
         case 'san-marcos':
             $var = [
               'title' => 'San Marcos',
-              'type'  => $university
+              'type'  => $university,
+              'data' => $this->BeginnigUNI('ACASM')
             ];
           break;
 
@@ -35,14 +36,15 @@ class PreparationNewController extends Controller
             $var = [
               'title' => 'UNI',
               'type'  => $university,
-              'data' => $this->BeginnigUNI()
+              'data' => $this->BeginnigUNI('ACAUN')
             ];
           break;
 
         case 'pucp':
             $var = [
               'title' => 'PUCP',
-              'type'  => $university
+              'type'  => $university,
+              'data' => $this->BeginnigUNI('ACACA')
             ];
           break;
 
@@ -58,7 +60,7 @@ class PreparationNewController extends Controller
       ]);*/
     }
 
-    public function BeginnigUNI(){
+    public function BeginnigUNI($university){
         try {
             $result = $this->client->ServicioAtencion();
             $data = new PreparationApiResource(collect($result->ServicioAtencionResult));
@@ -80,61 +82,15 @@ class PreparationNewController extends Controller
         
         
         foreach($arrays as $fila){
-          //if($fila['SERVICIO']=='ACAUN' && $fila['ESTADO_SESSION']=='ACT')
-          if($fila['SERVICIO']=='ACAUN'){
+          //if($fila['SERVICIO']==$university && $fila['ESTADO_SESSION']=='ACT'){
+          if($fila['SERVICIO']==$university){
             $my[] = $fila;
           }          
         }
-        return $this->groupArray($my,'NIVEL_ESTUDIO_DESCRIPCION');
-        //dd($this->groupArray($my,'NIVEL_ESTUDIO'));
-        
-        //$keywords = explode(' ',$fila);
-        //dd($keywords);
-
-        /*$counter= count($array['ServiciosAtencionResponse']);
-        $string='';
-        foreach($arrays as $fila)
-        {
-          if($fila['SERVICIO']=='ACAUN'){
-            $string.= json_encode($fila, 1);
-          }          
-        }
-        return $string;*/
-        
-
-
-          /*foreach($arrays as $value) {
-            //dd($value);
-            if($value['TIPO_SERVICIO']=='ACADE' && $value['SERVICIO']=='ACAUN'){
-              //dd($value);
-            }
-          }
-          //echo $i;
-          
-        //}
-        foreach($array['ServiciosAtencionResponse'] as $value) {
-
-          //return $this->groupArray($value,'NIVEL_ESTUDIO');
-         
-          //return count($array['ServiciosAtencionResponse']);
-          if($value['TIPO_SERVICIO']=='ACADE' && $value['SERVICIO']=='ACAUN'){
-
-              
-            //return $value;
-            //print_r($test_array[] = array($value));
-          //echo('<pre>'); print_r(groupArray($value,'NIVEL_ESTUDIO')); echo('</pre>');
-
-              //$arr = array();
-
-            }
-          }*/
-
-        //return 'Hola mundo '.$data;
-       
+        return $this->groupArray($my,'NIVEL_ESTUDIO_DESCRIPCION');       
       }
 
-      function groupArray($array,$groupkey)
-      {
+      function groupArray($array,$groupkey){
         if (count($array)>0)
         {
           $keys = array_keys($array[0]);

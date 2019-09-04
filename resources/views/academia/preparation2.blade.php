@@ -48,52 +48,24 @@
           </ul>
 
           <div class="js-tabs__content js-badger-accordion_1">
-          <?php
-            //$array = [5, 10,  15, 20];
-            //$i=0;
-            
-          // Mostramos mensaje con la posición y  valor de cada elemento
-            /*foreach($array as $valor) {
-              //echo "Elemento  [$i] -> $valor<br>";
-              $i++;
-            }*/
-
-            $array = $data;
-            $i=0;
-            
-          // Mostramos mensaje con la posición, clave  y valor de cada elemento
-            foreach($array as $inquilino=>$datos):
-              echo "<p>Inicios:  $inquilino<br>";
-              foreach($datos as  $dato=>$valor) {
-               print_r($valor).'<br>';
-              }
-              
-            endforeach;
-          ?>
-
           
-         {{-- @for ($i = 0; $i < count($data); $i++)
-              The current value is {{ $i }} <br>
-
-              @for ($j = 0; $j < count($data[$i]); $j++)
-                ar2 {{ getType($j) }} <br>
-              @endfor
-          @endfor --}}
 
           {{--@foreach ($data as $d => $key)
-          {{ $key['NIVEL_ESTUDIO_DESCRIPCION'] }} <br>
+          Inicio:{{ $key['NIVEL_ESTUDIO_DESCRIPCION'] }}
 
-          @for ($i = 0; $i < count($key); $i++)
-            The current value is {{ $i }} <br>
-            @foreach ($key as $k => $value)
-            {{$k}}<br>
-            @endforeach 
-          @endfor
-         
+            @foreach ($key as $k=> $valor)
+              @if (is_array($valor))
 
+              {{$valor['ANIO_ACADEMICO']}}
+
+              @endif
+            @endforeach
           @endforeach--}}
+
           
-            {{--@foreach ($data as $d => $key)
+
+          
+            @foreach ($data as $d => $key)
             <div class="frequentquestions-question row col-xs-12">
               <div class="col-xs question-content">
                 <h3 class="question-title js-badger-accordion-header">
@@ -118,42 +90,24 @@
                             </tr>
                           </thead>
                           <tbody>
-                          <tr>
-                              <td data-label="Local"> Comas</td>
-                              <td data-label="Turno"> Mañana</td>
-                              <td data-label="Inicio"> 18/02/2019</td>
-                              <td data-label="Fin"> 07/12/2019</td>
-                              <td data-label="Inversión Mensual"> S/230</td>
-                              <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                              <td data-label="Estado"> Disponible</td>
-                            </tr>
+
+                          @foreach ($key as $k=> $valor)
+                            @if (is_array($valor))
                             <tr>
-                              <td data-label="Local"> Villa El Salvador</td>
-                              <td data-label="Turno"> Mañana</td>
-                              <td data-label="Inicio"> 18/02/2019</td>
-                              <td data-label="Fin"> 07/12/2019</td>
-                              <td data-label="Inversión Mensual"> S/250</td>
-                              <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                              <td data-label="Estado"> Disponible</td>
+                              <td data-label="Local">{{$valor['BLDG_DESCRIPCION']}}</td>
+                              <td data-label="Turno">{{$valor['TURNO']}}</td>
+                              <td data-label="Inicio"> {{$valor['FECHA_INICIO']}}</td>
+                              <td data-label="Fin">{{$valor['FECHA_FIN']}}</td>
+                              <td data-label="Inversión Mensual">{{$valor['PAGO_MENSUAL']}}</td>
+                              <td data-label="Horario">-</td>
+                              <td data-label="Estado"> {{$valor['VACANTE_SESSION_DESCRIPCION']}}</td>
                             </tr>
-                            <tr>
-                              <td data-label="Local"> Santa Beatriz</td>
-                              <td data-label="Turno"> Mañana</td>
-                              <td data-label="Inicio"> 25/02/2019</td>
-                              <td data-label="Fin"> 07/12/2019</td>
-                              <td data-label="Inversión Mensual"> S/250</td>
-                              <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                              <td data-label="Estado"> Disponible</td>
-                            </tr>
-                            <tr>
-                              <td data-label="Local"> Los Olivos</td>
-                              <td data-label="Turno"> Mañana</td>
-                              <td data-label="Inicio"> 25/02/2019</td>
-                              <td data-label="Fin"> 07/12/2019</td>
-                              <td data-label="Inversión Mensual"> S/250</td>
-                              <td data-label="Horario"> Lunes a Sábado 08:00-15:00 </td>
-                              <td data-label="Estado"> Disponible</td>
-                            </tr>                        
+
+                            @endif
+                          @endforeach
+
+                           
+
                           </tbody>
                         </table>
                       </div>
@@ -162,7 +116,7 @@
                 </dd>
               </div>
             </div>
-            @endforeach--}}
+            @endforeach
 
 
             {{--<div class="frequentquestions-question row col-xs-12">

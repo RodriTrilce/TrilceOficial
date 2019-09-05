@@ -303,7 +303,7 @@
                         <tr>
                           <td data-label="Local"> Marsano</td>
                           <td data-label="Turno"> Tarde</td>
-                          <td data-label="Inicio"> 02/09/2019</td>
+                          <td data-label="Inicio"> 16/09/2019</td>
                           <td data-label="Fin"> 13/03/2020 </td>
                           <td data-label="Inversión Mensual"> S/210</td>
                           <td data-label="Horario"> Lunes a Sábado 16:00-20:00 </td>

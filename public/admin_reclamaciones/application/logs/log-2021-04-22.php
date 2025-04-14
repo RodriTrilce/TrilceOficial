@@ -1,0 +1,32 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: acepto C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 57
+ERROR - 2021-04-22 01:52:17 --> Severity: Notice --> Undefined index: fecha C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
+ERROR - 2021-04-22 01:53:45 --> Severity: Notice --> Undefined index: producto_apoderado C:\xampp\htdocs\admin_reclamaciones\application\views\admin\reclamaciones\reclamacion_list.php 58
